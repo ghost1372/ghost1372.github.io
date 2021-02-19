@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="HandyOrg">
 <meta property="og:description" content="you can bind this pre-definded commands in your xaml Commands   Command Description    OpenLink Open Link   ShutdownApp Close Application   PushMainWindow2Top Open MainWindow in front   CloseWindow Cl">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-25T11:31:48.551Z">
-<meta property="article:modified_time" content="2020-08-13T08:57:36.672Z">
+<meta property="article:published_time" content="2021-02-19T09:00:28.096Z">
+<meta property="article:modified_time" content="2021-02-19T09:00:28.096Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 
@@ -483,9 +483,11 @@
 <td>Take Screenshot</td>
 </tr>
 </tbody></table>
-<p>example:</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Button</span> <span class="attr">Command</span>=<span class="string">&quot;hc:ControlCommands.OpenLink&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;https://google.com&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="OpenLink"><a href="#OpenLink" class="headerlink" title="OpenLink"></a>OpenLink</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Button</span> <span class="attr">Command</span>=<span class="string">&quot;hc:ControlCommands.OpenLink&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;https://google.com&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Open Link&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="ShutdownApp"><a href="#ShutdownApp" class="headerlink" title="ShutdownApp"></a>ShutdownApp</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Button</span> <span class="attr">Command</span>=<span class="string">&quot;hc:ControlCommands.ShutdownApp&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;ShutDown App&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="PushMainWindow2Top"><a href="#PushMainWindow2Top" class="headerlink" title="PushMainWindow2Top"></a>PushMainWindow2Top</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Button</span> <span class="attr">Command</span>=<span class="string">&quot;hc:ControlCommands.PushMainWindow2Top&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Push Main Window&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="CloseWindow"><a href="#CloseWindow" class="headerlink" title="CloseWindow"></a>CloseWindow</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Button</span> <span class="attr">Command</span>=<span class="string">&quot;hc:ControlCommands.CloseWindow&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;&#123;Binding RelativeSource=&#123;RelativeSource Self&#125;&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Close Window&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="StartScreenshot"><a href="#StartScreenshot" class="headerlink" title="StartScreenshot"></a>StartScreenshot</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Button</span> <span class="attr">Command</span>=<span class="string">&quot;hc:ControlCommands.StartScreenshot&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Start Screen Shot&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
       </div>
       
       
@@ -553,7 +555,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Commands"><span class="nav-number">1.</span> <span class="nav-text">Commands</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Commands"><span class="nav-number">1.</span> <span class="nav-text">Commands</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#OpenLink"><span class="nav-number">1.1.</span> <span class="nav-text">OpenLink</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ShutdownApp"><span class="nav-number">1.2.</span> <span class="nav-text">ShutdownApp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PushMainWindow2Top"><span class="nav-number">1.3.</span> <span class="nav-text">PushMainWindow2Top</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CloseWindow"><span class="nav-number">1.4.</span> <span class="nav-text">CloseWindow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StartScreenshot"><span class="nav-number">1.5.</span> <span class="nav-text">StartScreenshot</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
