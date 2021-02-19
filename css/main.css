@@ -18,6 +18,34 @@
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg-color: #282828;
+    --content-bg-color: #333;
+    --card-bg-color: #555;
+    --text-color: #ccc;
+    --blockquote-color: #bbb;
+    --link-color: #ccc;
+    --link-hover-color: #eee;
+    --brand-color: #ddd;
+    --brand-hover-color: #ddd;
+    --table-row-odd-bg-color: #282828;
+    --table-row-hover-bg-color: #363636;
+    --menu-item-bg-color: #555;
+    --btn-default-bg: #222;
+    --btn-default-color: #ccc;
+    --btn-default-border-color: #555;
+    --btn-default-hover-bg: #666;
+    --btn-default-hover-color: #ccc;
+    --btn-default-hover-border-color: #666;
+  }
+  img {
+    opacity: 0.75;
+  }
+  img:hover {
+    opacity: 0.9;
+  }
+}
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -610,22 +638,22 @@ pre .javascript .function {
   padding: 0 2px;
 }
 .post-body .label.default {
-  background: #f0f0f0;
+  background: #e0e0e0;
 }
 .post-body .label.primary {
-  background: #efe6f7;
+  background: #e0d0f0;
 }
 .post-body .label.info {
-  background: #e5f2f8;
+  background: #cee7f1;
 }
 .post-body .label.success {
-  background: #e7f4e9;
+  background: #d3ecd7;
 }
 .post-body .label.warning {
-  background: #fcf6e1;
+  background: #fbefcc;
 }
 .post-body .label.danger {
-  background: #fae8eb;
+  background: #f5d3d8;
 }
 .post-body .tabs {
   margin-bottom: 20px;
@@ -743,8 +771,9 @@ pre .javascript .function {
   margin-bottom: 20px;
   padding: 1em;
   position: relative;
-  border: 1px solid #eee;
-  border-left-width: 5px;
+  background: #f9f9f9;
+  border: initial;
+  border-left: 3px solid #eee;
 }
 .post-body .note h2,
 .post-body .note h3,
@@ -775,6 +804,7 @@ pre .javascript .function {
   margin-bottom: 0;
 }
 .post-body .note.default {
+  background: #e7e7e7;
   border-left-color: #777;
 }
 .post-body .note.default h2,
@@ -785,6 +815,7 @@ pre .javascript .function {
   color: #777;
 }
 .post-body .note.primary {
+  background: #e6d9f3;
   border-left-color: #6f42c1;
 }
 .post-body .note.primary h2,
@@ -795,6 +826,7 @@ pre .javascript .function {
   color: #6f42c1;
 }
 .post-body .note.info {
+  background: #d7ebf4;
   border-left-color: #428bca;
 }
 .post-body .note.info h2,
@@ -805,6 +837,7 @@ pre .javascript .function {
   color: #428bca;
 }
 .post-body .note.success {
+  background: #dbefde;
   border-left-color: #5cb85c;
 }
 .post-body .note.success h2,
@@ -815,6 +848,7 @@ pre .javascript .function {
   color: #5cb85c;
 }
 .post-body .note.warning {
+  background: #fbf2d5;
   border-left-color: #f0ad4e;
 }
 .post-body .note.warning h2,
@@ -825,6 +859,7 @@ pre .javascript .function {
   color: #f0ad4e;
 }
 .post-body .note.danger {
+  background: #f7dce0;
   border-left-color: #d9534f;
 }
 .post-body .note.danger h2,
@@ -1237,6 +1272,7 @@ pre .javascript .function {
   margin: 0 auto;
   max-width: 120px;
   padding: 2px;
+  border-radius: 50%;
 }
 .site-author-name {
   color: var(--text-color);
@@ -1264,7 +1300,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #30fc42;
+  background: #12ffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;

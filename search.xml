@@ -196,14 +196,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Extended Control</title>
-    <url>/handycontrol/extend_controls/index.html</url>
-    <content><![CDATA[<p>HandyControl currently contains more than 80 extended controls, which are gradually increasing.</p>
-<div class="note warning">
-            <p>The resources used in each control case can be found in HC Demo. Please develop the habit of using the key combination <code>Ctrl+F</code> in vs.</p>
-          </div>]]></content>
-  </entry>
-  <entry>
     <title>Helpers</title>
     <url>/handycontrol/helpers/index.html</url>
     <content><![CDATA[<table>
@@ -393,6 +385,14 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Extended Control</title>
+    <url>/handycontrol/extend_controls/index.html</url>
+    <content><![CDATA[<p>HandyControl currently contains more than 80 extended controls, which are gradually increasing.</p>
+<div class="note warning">
+            <p>The resources used in each control case can be found in HC Demo. Please develop the habit of using the key combination <code>Ctrl+F</code> in vs.</p>
+          </div>]]></content>
+  </entry>
+  <entry>
     <title>Intellisense</title>
     <url>/handycontrol/intellisense/index.html</url>
     <content><![CDATA[<p>If Visual Studio Intellisense unable to locate resources that are stored in a ResourceDictionary, follow this guide:</p>
@@ -410,6 +410,25 @@
     <title>Interactivity</title>
     <url>/handycontrol/interactivity/index.html</url>
     <content><![CDATA[<p>In this section you will be introduced to interactivity codes. for example Triggers, Behaviors, Commands, and Hooks.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Native Control</title>
+    <url>/handycontrol/native_controls/index.html</url>
+    <content><![CDATA[<p>Native controls refer to the controls that come with the WPF framework. In addition to this, simple extensions are implemented through additional properties.</p>
+<div class="note warning">
+            <p>In HandyControl, almost all native controls have a base style that is implemented by default (that is, when a style is defined, the given Key value is not displayed).</p>
+          </div>
+
+<div class="note warning">
+            <p>The base style generally has the word “Base”. It is not recommended for users to use it directly in the view layer. The appropriate usage scenario is a resource file.</p>
+          </div>
+
+<h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><div class="note info no-icon">
+            <p>How can I override the default implementation of the style? Can I give BaseOn without a Key?</p>
+          </div>
+
+<p>You can use this syntax: <code>BasedOn=&quot;&#123;StaticResource &#123;x:Type Button&#125;&#125;&quot;</code> to override the default style of <code>Button</code>.</p>
 ]]></content>
   </entry>
   <entry>
@@ -471,25 +490,6 @@
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">MessageBox.Show(LangProvider.GetLang(<span class="string">&quot;About&quot;</span>));</span><br></pre></td></tr></table></figure>
 <h2 id="How-to-Change-language-in-Runtime"><a href="#How-to-Change-language-in-Runtime" class="headerlink" title="How to Change language in Runtime?"></a>How to Change language in Runtime?</h2><p>To change the language in runtime, just write the following code and specify the language code</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ConfigHelper.Instance.SetLang(<span class="string">&quot;en&quot;</span>);</span><br><span class="line">LangProvider.Culture = <span class="keyword">new</span> CultureInfo(<span class="string">&quot;en&quot;</span>);</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>Native Control</title>
-    <url>/handycontrol/native_controls/index.html</url>
-    <content><![CDATA[<p>Native controls refer to the controls that come with the WPF framework. In addition to this, simple extensions are implemented through additional properties.</p>
-<div class="note warning">
-            <p>In HandyControl, almost all native controls have a base style that is implemented by default (that is, when a style is defined, the given Key value is not displayed).</p>
-          </div>
-
-<div class="note warning">
-            <p>The base style generally has the word “Base”. It is not recommended for users to use it directly in the view layer. The appropriate usage scenario is a resource file.</p>
-          </div>
-
-<h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><div class="note info no-icon">
-            <p>How can I override the default implementation of the style? Can I give BaseOn without a Key?</p>
-          </div>
-
-<p>You can use this syntax: <code>BasedOn=&quot;&#123;StaticResource &#123;x:Type Button&#125;&#125;&quot;</code> to override the default style of <code>Button</code>.</p>
-]]></content>
   </entry>
   <entry>
     <title>PersianToolkit</title>
@@ -653,15 +653,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Thanks</title>
-    <url>/handycontrol/tnx/index.html</url>
-    <content><![CDATA[<h1 id="Thanks-to-the-following-Coder-for-providing-code-contributions"><a href="#Thanks-to-the-following-Coder-for-providing-code-contributions" class="headerlink" title="Thanks to the following Coder for providing code contributions"></a>Thanks to the following Coder for providing code contributions</h1><p><a style="border:0" href="https://github.com/ghost1372" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/9213496?s=64&amp;v=4" alt="ghost1372"></a><a style="border:0" href="https://github.com/DingpingZhang" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/8541016?s=64&v=4" alt="Dingping Zhang"></a><a style="border:0" href="https://github.com/M0n7y5" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/17201053?s=64&v=4" alt="M0n7y5"></a><a style="border:0" href="https://github.com/guanguanchuangyu" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/25916858?s=64&v=4" alt="guanguanchuangyu"></a><a style="border:0" href="https://github.com/yanchao891012" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/16846702?s=64&v=4" alt="yanchao891012"></a><a style="border:0" href="https://github.com/noctwolf" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/21022467?s=64&v=4" alt="noctwolf"></a><a style="border:0" href="https://github.com/xianyun666" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/22339210?s=64&v=4" alt="xianyun666"></a><a style="border:0" href="https://github.com/afunc233" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/19919631?s=64&v=4" alt="afunc233"></a><a style="border:0" href="https://github.com/DinoChan" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/6076257?s=64&v=4" alt="DinoChan"></a><a style="border:0" href="https://github.com/MrZhangYuan" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/16384123?s=64&v=4" alt="MrZhangYuan"></a><a style="border:0" href="https://github.com/JinhuaChen-OMEC" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/47024703?s=64&v=4" alt="JinhuaChen-OMEC"></a><a style="border:0" href="https://github.com/seedtyx" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/5851975?s=64&v=4" alt="seedtyx"></a><a style="border:0" href="https://github.com/KleinPan" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/34428802?s=64&v=4" alt="KleinPan"></a><a style="border:0" href="https://github.com/yxhq" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/10378954?s=64&v=4" alt="yxhq"></a><a style="border:0" href="https://github.com/AiHaibara" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/5195234?s=64&v=4" alt="AiHaibara"></a><a style="border:0" href="https://github.com/walterlv" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/9959623?s=64&v=4" alt="walterlv"></a><a style="border:0" href="https://github.com/Luoyingliang" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/29297262?s=64&v=4" alt="Luoyingliang"></a><a style="border:0" href="https://github.com/lindexi" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/16054566?s=64&v=4" alt="lindexi"></a><a style="border:0" href="https://github.com/danwalmsley" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/4672627?s=64&v=4" alt="danwalmsley"></a><a style="border:0" href="https://github.com/varKeytrap" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/17864005?s=64&v=4" alt="varKeytrap"></a></p>
-
-<h1 id="Thanks-to-the-following-organizations-for-providing-open-source-licenses"><a href="#Thanks-to-the-following-organizations-for-providing-open-source-licenses" class="headerlink" title="Thanks to the following organizations for providing open source licenses"></a>Thanks to the following organizations for providing open source licenses</h1><p><a style="border:0" href="https://visualstudio.microsoft.com/free-developer-offers/" target="_blank" rel="noopener"><img width="70" height="70" src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/vs2019_logo.png" alt="Visual Studio Community 2019"></a><a style="border:0" href="https://www.jetbrains.com/?from=HandyControl" target="_blank" rel="noopener"><img width="70" height="70" src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/resharper_logo.png" alt="JetBrains"></a></p>
-
-<h1 id="Thanks-to-the-following-donors"><a href="#Thanks-to-the-following-donors" class="headerlink" title="Thanks to the following donors"></a>Thanks to the following donors</h1><p><a style="border:0" href="https://github.com/bigorange1900" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/49062011?s=64&v=4" alt="bigorange1900"></a><a style="border:0" href="https://github.com/14632791" target="_blank" rel="noopener"><img style="border-radius:50%!important" style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/27358331?s=64&v=4" alt="14632791"></a><a style="border:0" href="https://github.com/IUpdatable" target="_blank" rel="noopener"><img style="border-radius:50%!important" style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/51181716?s=64&v=4" alt="IUpdatable"></a><a style="border:0" href="https://github.com/maplewei" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/13778095?s=64&v=4" alt="maplewei"></a><a style="border:0" href="https://github.com/sunshang-hl" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/34593206?s=64&v=4" alt="sunshang-hl"></a><a style="border:0" href="https://github.com/yangkang326" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/51224259?s=64&v=4" alt="yangkang326"></a><a style="border:0" href="https://github.com/zmrbak" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/7257543?s=64&v=4" alt="zmrbak"></a><a style="border:0" href="https://github.com/AFei19911012" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/31465314?s=64&v=4" alt="AFei19911012"></a><a style="border:0" href="https://github.com/wayne2006" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/21210915?s=64&v=4" alt="wayne2006"></a><a style="border:0" href="https://github.com/towerDLH" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/53053537?s=64&v=4" alt="towerDLH"></a><a style="border:0" href="https://github.com/BluceBosen" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/24750822?s=64&v=4" alt="BluceBosen"></a><a style="border:0" href="https://github.com/MrZhangYuan" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/16384123?s=64&v=4" alt="MrZhangYuan"></a><a style="border:0" href="https://github.com/YC946586" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/49895722?s=64&v=4" alt="YC946586"></a><a style="border:0" href="https://github.com/wihalo" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/26402999?s=64&v=4" alt="wihalo"></a><a style="border:0" href="https://github.com/startewho" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/898009?s=64&v=4" alt="startewho"></a><a style="border:0" href="https://github.com/5653325" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/3361135?s=64&v=4" alt="5653325"></a><a style="border:0" href="https://github.com/LostAsk" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/46678241?s=64&v=4" alt="LostAsk"></a><a style="border:0" href="https://github.com/sanshiliuxiao" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/25658690?s=64&v=4" alt="sanshiliuxiao"></a><a style="border:0" href="https://github.com/QJJMSK" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/28100716?s=64&v=4" alt="QJJMSK"></a></p>]]></content>
-  </entry>
-  <entry>
     <title>Theme</title>
     <url>/handycontrol/theme/handyControl.html</url>
     <content><![CDATA[<h1 id="Changing-Theme"><a href="#Changing-Theme" class="headerlink" title="Changing Theme"></a>Changing Theme</h1><p>There is 3 themes (<code>Light, Dark and Violet</code>) that you can use in your application. </p>
@@ -782,6 +773,15 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Thanks</title>
+    <url>/handycontrol/tnx/index.html</url>
+    <content><![CDATA[<h1 id="Thanks-to-the-following-Coder-for-providing-code-contributions"><a href="#Thanks-to-the-following-Coder-for-providing-code-contributions" class="headerlink" title="Thanks to the following Coder for providing code contributions"></a>Thanks to the following Coder for providing code contributions</h1><p><a style="border:0" href="https://github.com/ghost1372" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/9213496?s=64&amp;v=4" alt="ghost1372"></a><a style="border:0" href="https://github.com/DingpingZhang" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/8541016?s=64&v=4" alt="Dingping Zhang"></a><a style="border:0" href="https://github.com/M0n7y5" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/17201053?s=64&v=4" alt="M0n7y5"></a><a style="border:0" href="https://github.com/guanguanchuangyu" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/25916858?s=64&v=4" alt="guanguanchuangyu"></a><a style="border:0" href="https://github.com/yanchao891012" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/16846702?s=64&v=4" alt="yanchao891012"></a><a style="border:0" href="https://github.com/noctwolf" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/21022467?s=64&v=4" alt="noctwolf"></a><a style="border:0" href="https://github.com/xianyun666" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/22339210?s=64&v=4" alt="xianyun666"></a><a style="border:0" href="https://github.com/afunc233" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/19919631?s=64&v=4" alt="afunc233"></a><a style="border:0" href="https://github.com/DinoChan" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/6076257?s=64&v=4" alt="DinoChan"></a><a style="border:0" href="https://github.com/MrZhangYuan" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/16384123?s=64&v=4" alt="MrZhangYuan"></a><a style="border:0" href="https://github.com/JinhuaChen-OMEC" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/47024703?s=64&v=4" alt="JinhuaChen-OMEC"></a><a style="border:0" href="https://github.com/seedtyx" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/5851975?s=64&v=4" alt="seedtyx"></a><a style="border:0" href="https://github.com/KleinPan" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/34428802?s=64&v=4" alt="KleinPan"></a><a style="border:0" href="https://github.com/yxhq" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/10378954?s=64&v=4" alt="yxhq"></a><a style="border:0" href="https://github.com/AiHaibara" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/5195234?s=64&v=4" alt="AiHaibara"></a><a style="border:0" href="https://github.com/walterlv" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/9959623?s=64&v=4" alt="walterlv"></a><a style="border:0" href="https://github.com/Luoyingliang" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/29297262?s=64&v=4" alt="Luoyingliang"></a><a style="border:0" href="https://github.com/lindexi" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/16054566?s=64&v=4" alt="lindexi"></a><a style="border:0" href="https://github.com/danwalmsley" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/4672627?s=64&v=4" alt="danwalmsley"></a><a style="border:0" href="https://github.com/varKeytrap" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/17864005?s=64&v=4" alt="varKeytrap"></a></p>
+
+<h1 id="Thanks-to-the-following-organizations-for-providing-open-source-licenses"><a href="#Thanks-to-the-following-organizations-for-providing-open-source-licenses" class="headerlink" title="Thanks to the following organizations for providing open source licenses"></a>Thanks to the following organizations for providing open source licenses</h1><p><a style="border:0" href="https://visualstudio.microsoft.com/free-developer-offers/" target="_blank" rel="noopener"><img width="70" height="70" src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/vs2019_logo.png" alt="Visual Studio Community 2019"></a><a style="border:0" href="https://www.jetbrains.com/?from=HandyControl" target="_blank" rel="noopener"><img width="70" height="70" src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/resharper_logo.png" alt="JetBrains"></a></p>
+
+<h1 id="Thanks-to-the-following-donors"><a href="#Thanks-to-the-following-donors" class="headerlink" title="Thanks to the following donors"></a>Thanks to the following donors</h1><p><a style="border:0" href="https://github.com/bigorange1900" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/49062011?s=64&v=4" alt="bigorange1900"></a><a style="border:0" href="https://github.com/14632791" target="_blank" rel="noopener"><img style="border-radius:50%!important" style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/27358331?s=64&v=4" alt="14632791"></a><a style="border:0" href="https://github.com/IUpdatable" target="_blank" rel="noopener"><img style="border-radius:50%!important" style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/51181716?s=64&v=4" alt="IUpdatable"></a><a style="border:0" href="https://github.com/maplewei" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/13778095?s=64&v=4" alt="maplewei"></a><a style="border:0" href="https://github.com/sunshang-hl" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/34593206?s=64&v=4" alt="sunshang-hl"></a><a style="border:0" href="https://github.com/yangkang326" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/51224259?s=64&v=4" alt="yangkang326"></a><a style="border:0" href="https://github.com/zmrbak" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/7257543?s=64&v=4" alt="zmrbak"></a><a style="border:0" href="https://github.com/AFei19911012" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/31465314?s=64&v=4" alt="AFei19911012"></a><a style="border:0" href="https://github.com/wayne2006" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/21210915?s=64&v=4" alt="wayne2006"></a><a style="border:0" href="https://github.com/towerDLH" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/53053537?s=64&v=4" alt="towerDLH"></a><a style="border:0" href="https://github.com/BluceBosen" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/24750822?s=64&v=4" alt="BluceBosen"></a><a style="border:0" href="https://github.com/MrZhangYuan" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/16384123?s=64&v=4" alt="MrZhangYuan"></a><a style="border:0" href="https://github.com/YC946586" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/49895722?s=64&v=4" alt="YC946586"></a><a style="border:0" href="https://github.com/wihalo" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/26402999?s=64&v=4" alt="wihalo"></a><a style="border:0" href="https://github.com/startewho" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/898009?s=64&v=4" alt="startewho"></a><a style="border:0" href="https://github.com/5653325" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/3361135?s=64&v=4" alt="5653325"></a><a style="border:0" href="https://github.com/LostAsk" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/46678241?s=64&v=4" alt="LostAsk"></a><a style="border:0" href="https://github.com/sanshiliuxiao" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/25658690?s=64&v=4" alt="sanshiliuxiao"></a><a style="border:0" href="https://github.com/QJJMSK" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/28100716?s=64&v=4" alt="QJJMSK"></a></p>]]></content>
+  </entry>
+  <entry>
     <title>BackgroundSwitchElement</title>
     <url>/handycontrol/attach/backgroundSwitchElement/index.html</url>
     <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
@@ -809,6 +809,32 @@
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">&quot;IsPressed&quot;</span> <span class="attr">Value</span>=<span class="string">&quot;True&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">&quot;Background&quot;</span> <span class="attr">TargetName</span>=<span class="string">&quot;Chrome&quot;</span> <span class="attr">Value</span>=<span class="string">&quot;&#123;Binding Path=(hc:BackgroundSwitchElement.MouseDownBackground),RelativeSource=&#123;RelativeSource TemplatedParent&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>Then we can use this property:</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Target</span> <span class="attr">control</span> <span class="attr">hc:BackgroundSwitchElement.MouseDownBackground</span> =<span class="string">&quot;Yellow&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>BorderElement</title>
+    <url>/handycontrol/attach/borderElement/index.html</url>
+    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CornerRadius</td>
+<td>Set border fillet values</td>
+</tr>
+<tr>
+<td>Circular</td>
+<td>Whether it is rendered as a circle True is Yes, False is No</td>
+</tr>
+</tbody></table>
+<h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="CornerRadius-Set-the-border-fillet-value"><a href="#CornerRadius-Set-the-border-fillet-value" class="headerlink" title="CornerRadius Set the border fillet value"></a>CornerRadius Set the border fillet value</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Button&quot;</span> <span class="attr">hc:BorderElement.CornerRadius</span>=<span class="string">&quot;15&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Stretch&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Text</span>=<span class="string">&quot;TextBox&quot;</span> <span class="attr">hc:BorderElement.CornerRadius</span>=<span class="string">&quot;15&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,0,0&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/BorderElement.CornerRadius.png" alt="BorderElement.CornerRadius"></p>
+<h2 id="Circular"><a href="#Circular" class="headerlink" title="Circular"></a>Circular</h2><p>Implement a circular border with the attached property of <code>BorderElement.Circular</code></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Border</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource BorderCircular&#125;&quot;</span> <span class="attr">Background</span>=<span class="string">&quot;OrangeRed&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;100&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/BorderElement.Circular.png" alt="BorderElement.Circular"></p>
+]]></content>
   </entry>
   <entry>
     <title>DataGridAttach</title>
@@ -858,32 +884,6 @@
 <td></td>
 </tr>
 </tbody></table>
-]]></content>
-  </entry>
-  <entry>
-    <title>BorderElement</title>
-    <url>/handycontrol/attach/borderElement/index.html</url>
-    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>CornerRadius</td>
-<td>Set border fillet values</td>
-</tr>
-<tr>
-<td>Circular</td>
-<td>Whether it is rendered as a circle True is Yes, False is No</td>
-</tr>
-</tbody></table>
-<h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="CornerRadius-Set-the-border-fillet-value"><a href="#CornerRadius-Set-the-border-fillet-value" class="headerlink" title="CornerRadius Set the border fillet value"></a>CornerRadius Set the border fillet value</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Button&quot;</span> <span class="attr">hc:BorderElement.CornerRadius</span>=<span class="string">&quot;15&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Stretch&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Text</span>=<span class="string">&quot;TextBox&quot;</span> <span class="attr">hc:BorderElement.CornerRadius</span>=<span class="string">&quot;15&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,0,0&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/BorderElement.CornerRadius.png" alt="BorderElement.CornerRadius"></p>
-<h2 id="Circular"><a href="#Circular" class="headerlink" title="Circular"></a>Circular</h2><p>Implement a circular border with the attached property of <code>BorderElement.Circular</code></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Border</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource BorderCircular&#125;&quot;</span> <span class="attr">Background</span>=<span class="string">&quot;OrangeRed&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;100&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/BorderElement.Circular.png" alt="BorderElement.Circular"></p>
 ]]></content>
   </entry>
   <entry>
@@ -1099,23 +1099,6 @@
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Shield</span> <span class="attr">controls:LinkElement.Link</span>=<span class="string">&quot;https://github.com&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;hc:ControlCommands.OpenLink&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
-    <title>MenuTopLineAttach</title>
-    <url>/handycontrol/attach/menuTopLineAttach/index.html</url>
-    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Popup</td>
-<td></td>
-</tr>
-</tbody></table>
-]]></content>
-  </entry>
-  <entry>
     <title>PanelElement</title>
     <url>/handycontrol/attach/panelElement/index.html</url>
     <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
@@ -1133,6 +1116,45 @@
 <h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="FluidMoveBehavior-Set-the-fluid-movement-mode-of-the-panel"><a href="#FluidMoveBehavior-Set-the-fluid-movement-mode-of-the-panel" class="headerlink" title="FluidMoveBehavior Set the fluid movement mode of the panel"></a>FluidMoveBehavior Set the fluid movement mode of the panel</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:HoneycombPanel</span> <span class="attr">hc:PanelElement.FluidMoveBehavior</span>=<span class="string">&quot;&#123;StaticResource BehaviorXY200&#125;&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <p>When adding or removing elements to the panel container, you can see the animation of fluid movement.
  </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>MenuTopLineAttach</title>
+    <url>/handycontrol/attach/menuTopLineAttach/index.html</url>
+    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Popup</td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>PasswordBoxAttach</title>
+    <url>/handycontrol/attach/passwordBoxAttach/index.html</url>
+    <content><![CDATA[<p>This additional attribute is specific to the hc internal password box style and is not recommended for direct use.</p>
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IsMonitoring</td>
+<td>Whether to monitor the password length</td>
+</tr>
+<tr>
+<td>PasswordLength</td>
+<td>Password Length</td>
+</tr>
+</tbody></table>
 ]]></content>
   </entry>
   <entry>
@@ -1156,10 +1178,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title>PasswordBoxAttach</title>
-    <url>/handycontrol/attach/passwordBoxAttach/index.html</url>
-    <content><![CDATA[<p>This additional attribute is specific to the hc internal password box style and is not recommended for direct use.</p>
-<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+    <title>TextBlockAttach</title>
+    <url>/handycontrol/attach/textBlockAttach/index.html</url>
+    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
 <thead>
 <tr>
 <th>Name</th>
@@ -1167,14 +1188,12 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>IsMonitoring</td>
-<td>Whether to monitor the password length</td>
-</tr>
-<tr>
-<td>PasswordLength</td>
-<td>Password Length</td>
+<td>AutoTooltip</td>
+<td>Set whether to show tooltips automatically</td>
 </tr>
 </tbody></table>
+<h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="AutoTooltip-Set-whether-to-show-tooltips-automatically"><a href="#AutoTooltip-Set-whether-to-show-tooltips-automatically" class="headerlink" title="AutoTooltip Set whether to show tooltips automatically"></a>AutoTooltip Set whether to show tooltips automatically</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Width</span>=<span class="string">&quot;100&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Center&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">hc:TextBlockAttach.AutoTooltip</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Text</span>=<span class="string">&quot;EEEEEEEEEEEEEEEEEEEE&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:SimplePanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/TextBlockAttach.AutoTooltip.png" alt="TextBlockAttach.AutoTooltip"></p>
 ]]></content>
   </entry>
   <entry>
@@ -1210,25 +1229,6 @@
           </div>]]></content>
   </entry>
   <entry>
-    <title>TextBlockAttach</title>
-    <url>/handycontrol/attach/textBlockAttach/index.html</url>
-    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>AutoTooltip</td>
-<td>Set whether to show tooltips automatically</td>
-</tr>
-</tbody></table>
-<h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="AutoTooltip-Set-whether-to-show-tooltips-automatically"><a href="#AutoTooltip-Set-whether-to-show-tooltips-automatically" class="headerlink" title="AutoTooltip Set whether to show tooltips automatically"></a>AutoTooltip Set whether to show tooltips automatically</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Width</span>=<span class="string">&quot;100&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Center&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">hc:TextBlockAttach.AutoTooltip</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Text</span>=<span class="string">&quot;EEEEEEEEEEEEEEEEEEEE&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:SimplePanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/TextBlockAttach.AutoTooltip.png" alt="TextBlockAttach.AutoTooltip"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>TipElement</title>
     <url>/handycontrol/attach/tipElement/index.html</url>
     <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
@@ -1256,6 +1256,49 @@
 <p>effect</p>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/TipElement.Default.png" alt="TipElement.Default"></p>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/TipElement.TopLeft.png" alt="TipElement.TopLeft"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>TitleElement</title>
+    <url>/handycontrol/attach/titleElement/index.html</url>
+    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Title</td>
+<td>Title Information</td>
+</tr>
+<tr>
+<td>Background</td>
+<td>Title Background Color</td>
+</tr>
+<tr>
+<td>Foreground</td>
+<td>Title Font Color</td>
+</tr>
+<tr>
+<td>BorderBrush</td>
+<td>Title Border Color</td>
+</tr>
+<tr>
+<td>TitlePlacement</td>
+<td>Title Alignment</td>
+</tr>
+<tr>
+<td>TitleWidth</td>
+<td>Title Width</td>
+</tr>
+</tbody></table>
+<h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="Title"><a href="#Title" class="headerlink" title="Title"></a>Title</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">     <span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:TitleElement.Title</span>=<span class="string">&quot;Title Information&quot;</span></span></span><br><span class="line"><span class="tag">                 <span class="attr">Margin</span>=<span class="string">&quot;10,10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">hc:TextBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/TitleElement.Title.png" alt="TitleElement.Title"></p>
+<h2 id="TitlePlacement"><a href="#TitlePlacement" class="headerlink" title="TitlePlacement"></a>TitlePlacement</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">     <span class="comment">&lt;!--The title is on the top side --&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:TitleElement.Title</span>=<span class="string">&quot;Title Information&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Hc:TitleElement.TitlePlacement</span>=<span class="string">&quot;Top&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Margin</span>=<span class="string">&quot;10,10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">hc:TextBox</span>&gt;</span></span><br><span class="line">     <span class="comment">&lt;!--The title is on the left --&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:TitleElement.Title</span>=<span class="string">&quot;Title Information&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Hc:TitleElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Margin</span>=<span class="string">&quot;10,10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">hc:TextBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/TitleElement.TitlePlacement.png" alt="TitleElement.TitlePlacement"></p>
+<h2 id="TitleWidth"><a href="#TitleWidth" class="headerlink" title="TitleWidth"></a>TitleWidth</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">         <span class="comment">&lt;!--Set TitleWidth to Auto--&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:TitleElement.Title</span>=<span class="string">&quot;Title Information&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Hc:TitleElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Hc:TitleElement.TitleWidth</span>=<span class="string">&quot;Auto&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Margin</span>=<span class="string">&quot;10,10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">hc:TextBox</span>&gt;</span></span><br><span class="line">         <span class="comment">&lt;!--Set TitleWidth to a specific value --&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:TitleElement.Title</span>=<span class="string">&quot;Title Information&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Hc:TitleElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Hc:TitleElement.TitleWidth</span>=<span class="string">&quot;60&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Margin</span>=<span class="string">&quot;10,10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">hc:TextBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/TitleElement.TitleWidth.png" alt="TitleElement.TitleWidth"></p>
 ]]></content>
   </entry>
   <entry>
@@ -1300,49 +1343,6 @@
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">UniformGrid</span> <span class="attr">Margin</span> = <span class="string">&quot;22,22,0,0&quot;</span> <span class="attr">Rows</span> = <span class="string">&quot;2&quot;</span> <span class="attr">Columns</span> = <span class="string">&quot;2&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ProgressBar</span> <span class="attr">Style</span> = <span class="string">&quot;&#123;DynamicResource ProgressBarDanger&#125;&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">hc:</span> <span class="attr">VisualElement.Text</span> = <span class="string">&quot;This is visual text&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">Background</span> = <span class="string">&quot;YellowGreen&quot;</span>&gt;</span> &lt;/ ProgressBar&gt;</span><br><span class="line">    &lt;/ UniformGrid&gt;</span><br></pre></td></tr></table></figure>
 <p>effect:</p>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/VisualElement.Text.png" alt="VisualElement.Text"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>TitleElement</title>
-    <url>/handycontrol/attach/titleElement/index.html</url>
-    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Title</td>
-<td>Title Information</td>
-</tr>
-<tr>
-<td>Background</td>
-<td>Title Background Color</td>
-</tr>
-<tr>
-<td>Foreground</td>
-<td>Title Font Color</td>
-</tr>
-<tr>
-<td>BorderBrush</td>
-<td>Title Border Color</td>
-</tr>
-<tr>
-<td>TitlePlacement</td>
-<td>Title Alignment</td>
-</tr>
-<tr>
-<td>TitleWidth</td>
-<td>Title Width</td>
-</tr>
-</tbody></table>
-<h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="Title"><a href="#Title" class="headerlink" title="Title"></a>Title</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">     <span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:TitleElement.Title</span>=<span class="string">&quot;Title Information&quot;</span></span></span><br><span class="line"><span class="tag">                 <span class="attr">Margin</span>=<span class="string">&quot;10,10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">hc:TextBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/TitleElement.Title.png" alt="TitleElement.Title"></p>
-<h2 id="TitlePlacement"><a href="#TitlePlacement" class="headerlink" title="TitlePlacement"></a>TitlePlacement</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">     <span class="comment">&lt;!--The title is on the top side --&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:TitleElement.Title</span>=<span class="string">&quot;Title Information&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Hc:TitleElement.TitlePlacement</span>=<span class="string">&quot;Top&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Margin</span>=<span class="string">&quot;10,10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">hc:TextBox</span>&gt;</span></span><br><span class="line">     <span class="comment">&lt;!--The title is on the left --&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:TitleElement.Title</span>=<span class="string">&quot;Title Information&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Hc:TitleElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Margin</span>=<span class="string">&quot;10,10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">hc:TextBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/TitleElement.TitlePlacement.png" alt="TitleElement.TitlePlacement"></p>
-<h2 id="TitleWidth"><a href="#TitleWidth" class="headerlink" title="TitleWidth"></a>TitleWidth</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">         <span class="comment">&lt;!--Set TitleWidth to Auto--&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:TitleElement.Title</span>=<span class="string">&quot;Title Information&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Hc:TitleElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Hc:TitleElement.TitleWidth</span>=<span class="string">&quot;Auto&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Margin</span>=<span class="string">&quot;10,10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">hc:TextBox</span>&gt;</span></span><br><span class="line">         <span class="comment">&lt;!--Set TitleWidth to a specific value --&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:TitleElement.Title</span>=<span class="string">&quot;Title Information&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Hc:TitleElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Hc:TitleElement.TitleWidth</span>=<span class="string">&quot;60&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">Margin</span>=<span class="string">&quot;10,10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">hc:TextBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/TitleElement.TitleWidth.png" alt="TitleElement.TitleWidth"></p>
 ]]></content>
   </entry>
   <entry>
@@ -1864,42 +1864,6 @@
           </div>]]></content>
   </entry>
   <entry>
-    <title>Font Size</title>
-    <url>/handycontrol/basic_xaml/fonts/index.html</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Size</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>LargeFontSize</td>
-<td>24</td>
-<td>Page Title</td>
-</tr>
-<tr>
-<td>HeadFontSize</td>
-<td>20</td>
-<td>Feature Title</td>
-</tr>
-<tr>
-<td>SubHeadFontSize</td>
-<td>16</td>
-<td>Subfunction Title</td>
-</tr>
-<tr>
-<td>TextFontSize</td>
-<td>12</td>
-<td>Text</td>
-</tr>
-</tbody></table>
-<div class="note info no-icon">
-            <p>Example: <code>FontSize=&quot;{StaticResource LargeFontSize}&quot;</code></p>
-          </div>]]></content>
-  </entry>
-  <entry>
     <title>Geometric shape</title>
     <url>/handycontrol/basic_xaml/geometries/index.html</url>
     <content><![CDATA[<p>HandyControl comes with some geometric shape definitions, but it is obviously not enough to apply to production. We are not prepared to be all-encompassing. There is never a bottom, so we will do the opposite. It only contains the control library itself (of course users can also use it), and the rest should expand on its own. All shape definitions in the control library are listed in the following table:</p>
@@ -2140,6 +2104,50 @@
           </div>]]></content>
   </entry>
   <entry>
+    <title>Font Size</title>
+    <url>/handycontrol/basic_xaml/fonts/index.html</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Size</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LargeFontSize</td>
+<td>24</td>
+<td>Page Title</td>
+</tr>
+<tr>
+<td>HeadFontSize</td>
+<td>20</td>
+<td>Feature Title</td>
+</tr>
+<tr>
+<td>SubHeadFontSize</td>
+<td>16</td>
+<td>Subfunction Title</td>
+</tr>
+<tr>
+<td>TextFontSize</td>
+<td>12</td>
+<td>Text</td>
+</tr>
+</tbody></table>
+<div class="note info no-icon">
+            <p>Example: <code>FontSize=&quot;{StaticResource LargeFontSize}&quot;</code></p>
+          </div>]]></content>
+  </entry>
+  <entry>
+    <title>Size</title>
+    <url>/handycontrol/basic_xaml/sizes/index.html</url>
+    <content><![CDATA[<p>| Name | Type | Value | Description |<br>|-|-|<br>| DefaultControlHeight | System.Double | 30 | Default Control Height |<br>| DefaultControlPadding | System.Windows.Thickness | 10,6 | Default Control Pitch |<br>| DefaultInputPadding | System.Windows.Thickness | 8,6 | Default input control padding |<br>| DefaultCornerRadius | System.Windows.CornerRadius | 4 | Default Fillet |</p>
+<div class="note info no-icon">
+            <p>Example: <code>CornerRadius=&quot;{StaticResource DefaultCornerRadius}&quot;</code></p>
+          </div>]]></content>
+  </entry>
+  <entry>
     <title>Path</title>
     <url>/handycontrol/basic_xaml/paths/index.html</url>
     <content><![CDATA[<p>Like geometric shapes, we are not prepared to be all-inclusive. All paths in the control library are listed in the following table:</p>
@@ -2225,14 +2233,6 @@
 </tbody></table>
 <div class="note info no-icon">
             <p>Example: <code>Style=&quot;{StaticResource SearchPathStyle}&quot;</code></p>
-          </div>]]></content>
-  </entry>
-  <entry>
-    <title>Size</title>
-    <url>/handycontrol/basic_xaml/sizes/index.html</url>
-    <content><![CDATA[<p>| Name | Type | Value | Description |<br>|-|-|<br>| DefaultControlHeight | System.Double | 30 | Default Control Height |<br>| DefaultControlPadding | System.Windows.Thickness | 10,6 | Default Control Pitch |<br>| DefaultInputPadding | System.Windows.Thickness | 8,6 | Default input control padding |<br>| DefaultCornerRadius | System.Windows.CornerRadius | 4 | Default Fillet |</p>
-<div class="note info no-icon">
-            <p>Example: <code>CornerRadius=&quot;{StaticResource DefaultCornerRadius}&quot;</code></p>
           </div>]]></content>
   </entry>
   <entry>
@@ -2811,6 +2811,71 @@
           </div>]]></content>
   </entry>
   <entry>
+    <title>ChatBubble</title>
+    <url>/handycontrol/extend_controls/chatBubble/index.html</url>
+    <content><![CDATA[<p>Dialogue bubbles often appear in communication software. Compared with the contextual dialogue in the form of plain text, the use of dialogue bubbles can make the chat interface more vivid and interesting. Through extension, bubble skin can also be made, which can make the software personalized functions more abundant.</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ChatBubble</span> : <span class="title">SelectableItem</span></span><br></pre></td></tr></table></figure>
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Role</td>
+<td>Dialogue role</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>Message type</td>
+</tr>
+<tr>
+<td>IsRead</td>
+<td>Read</td>
+</tr>
+<tr>
+<td>ReadAction</td>
+<td>Triggered when the bubble is selected</td>
+</tr>
+</tbody></table>
+<h1 id="Events"><a href="#Events" class="headerlink" title="Events"></a>Events</h1><table>
+<thead>
+<tr>
+<th>Event</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>hc:ChatBubble.Selected</td>
+</tr>
+<tr>
+<td>hc:ChatBubble.Deselected</td>
+</tr>
+</tbody></table>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ChatBubble.png" alt="ChatBubble"></p>
+<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><p>example:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListBox</span> <span class="attr">Name</span>=<span class="string">&quot;ListBoxChat&quot;</span> <span class="attr">ScrollViewer.HorizontalScrollBarVisibility</span>=<span class="string">&quot;Disabled&quot;</span> <span class="attr">ScrollViewer.CanContentScroll</span>=<span class="string">&quot;False&quot;</span> <span class="attr">Background</span>=<span class="string">&quot;Transparent&quot;</span> <span class="attr">hc:ChatBubble.MaxWidth</span>=<span class="string">&quot;300&quot;</span> <span class="attr">BorderThickness</span>=<span class="string">&quot;0&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource StackPanelVerticalListBox&#125;&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding ChatInfos&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ListBox.ItemTemplate</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:ChatBubble</span> <span class="attr">Role</span>=<span class="string">&quot;&#123;Binding Role&#125;&quot;</span> <span class="attr">Type</span>=<span class="string">&quot;&#123;Binding Type&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;Binding Message&#125;&quot;</span> <span class="attr">Tag</span>=<span class="string">&quot;&#123;Binding&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ListBox.ItemTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ListBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>we need to create a model called <code>ChatInfoModel</code></p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">struct</span> ChatInfoModel</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="built_in">object</span> Message &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> <span class="built_in">string</span> SenderId &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> ChatRoleType Role &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> ChatMessageType Type &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> <span class="built_in">object</span> Enclosure &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>we need a list for holding our items:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ObservableCollection</span>&lt;<span class="title">ChatInfoModel</span>&gt; ChatInfos</span> &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125; = <span class="keyword">new</span> ObservableCollection&lt;ChatInfoModel&gt;();</span><br></pre></td></tr></table></figure>
+<p>for sending string chat:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> info = <span class="keyword">new</span> ChatInfoModel</span><br><span class="line">&#123;</span><br><span class="line">    Message = <span class="string">&quot;Hello&quot;</span>,</span><br><span class="line">    SenderId = _id,</span><br><span class="line">    Type = ChatMessageType.String,</span><br><span class="line">    Role = ChatRoleType.Sender</span><br><span class="line">&#125;;</span><br><span class="line">ChatInfos.Add(info);</span><br></pre></td></tr></table></figure>
+<p>sending image:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> dialog = <span class="keyword">new</span> OpenFileDialog();</span><br><span class="line">    <span class="keyword">if</span> (dialog.ShowDialog() == <span class="literal">true</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> fileName = dialog.FileName;</span><br><span class="line">        <span class="keyword">if</span> (File.Exists(fileName))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">var</span> info = <span class="keyword">new</span> ChatInfoModel</span><br><span class="line">            &#123;</span><br><span class="line">                Message = BitmapFrame.Create(<span class="keyword">new</span> Uri(fileName)),</span><br><span class="line">                SenderId = _id,</span><br><span class="line">                Type = ChatMessageType.Image,</span><br><span class="line">                Role = ChatRoleType.Sender,</span><br><span class="line">                Enclosure = fileName</span><br><span class="line">            &#125;;</span><br><span class="line">            ChatInfos.Add(info);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>sending audio:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> info = <span class="keyword">new</span> ChatInfoModel</span><br><span class="line">    &#123;</span><br><span class="line">        Message = <span class="string">&quot;Audio&quot;</span>,</span><br><span class="line">        SenderId = _id,</span><br><span class="line">        Type = ChatMessageType.Audio,</span><br><span class="line">        Role = ChatRoleType.Sender,</span><br><span class="line">        Enclosure = fileName</span><br><span class="line">    &#125;;</span><br><span class="line">    ChatInfos.Add(info);</span><br></pre></td></tr></table></figure>
+<p>for reading audio and image message we need to create a event called <code>hc:ChatBubble.Selected</code>:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListBox</span> <span class="attr">Name</span>=<span class="string">&quot;ListBoxChat&quot;</span> <span class="attr">hc:ChatBubble.Selected</span>=<span class="string">&quot;ListBoxChat_Selected&quot;</span><span class="attr">...</span></span></span><br></pre></td></tr></table></figure>
+<p>now in <code>hc:ChatBubble.Selected</code> event:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">ListBoxChat_Selected</span>(<span class="params"><span class="built_in">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (e.OriginalSource <span class="keyword">is</span> FrameworkElement element &amp;&amp; element.Tag <span class="keyword">is</span> ChatInfoModel info)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> (info.Type == ChatMessageType.Image)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">new</span> ImageBrowser(<span class="keyword">new</span> Uri(info.Enclosure.ToString()))</span><br><span class="line">                    &#123;</span><br><span class="line">                        Owner = WindowHelper.GetActiveWindow()</span><br><span class="line">                    &#125;.Show();</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span> (info.Type == ChatMessageType.Audio)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">var</span> player = <span class="keyword">new</span> SoundPlayer(info.Enclosure.ToString());</span><br><span class="line">                    player.PlaySync();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<div class="note info">
+            <ul><li>You must specify the <code>ChatRoleType</code> to specify the <code>Receiver</code> and <code>Sender</code></li><li>You must specify the <code>ChatMessageType</code> to specify the <code>Message Type</code> (String, Image, Audio, Custom)</li></ul>
+          </div>
+
+]]></content>
+  </entry>
+  <entry>
     <title>CheckComboBox</title>
     <url>/handycontrol/extend_controls/checkComboBox/index.html</url>
     <content><![CDATA[<p>Optionally select combo boxes for multiple items.</p>
@@ -2987,71 +3052,6 @@
 </tbody></table>
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;32&quot;</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:CheckComboBox</span> <span class="attr">ShowClearButton</span>=<span class="string">&quot;True&quot;</span> <span class="attr">MaxWidth</span>=<span class="string">&quot;380&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">ShowSelectAllButton</span>=<span class="string">&quot;True&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:CheckComboBox</span> <span class="attr">MaxWidth</span>=<span class="string">&quot;380&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource CheckComboBoxExtend&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span>  <span class="attr">IsEnabled</span>=<span class="string">&quot;False&quot;</span> <span class="attr">ShowSelectAllButton</span>=<span class="string">&quot;True&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:CheckComboBox</span> <span class="attr">ShowClearButton</span>=<span class="string">&quot;True&quot;</span> <span class="attr">MaxWidth</span>=<span class="string">&quot;380&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource CheckComboBoxExtend&#125;&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr1&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span> <span class="attr">ShowSelectAllButton</span>=<span class="string">&quot;True&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:CheckComboBox</span> <span class="attr">MaxWidth</span>=<span class="string">&quot;380&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;PlsEnterContent&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr2&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource CheckComboBoxExtend&#125;&quot;</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:CheckComboBox</span> <span class="attr">ShowClearButton</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;380&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">&quot;140&quot;</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource CheckComboBoxExtend&#125;&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr3&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span> <span class="attr">ShowSelectAllButton</span>=<span class="string">&quot;True&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:CheckComboBox</span> <span class="attr">Width</span>=<span class="string">&quot;380&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">&quot;140&quot;</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;PlsEnterContent&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr3&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource CheckComboBoxExtend&#125;&quot;</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;32,0,0,0&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:CheckComboBox</span> <span class="attr">ShowClearButton</span>=<span class="string">&quot;True&quot;</span> <span class="attr">MaxWidth</span>=<span class="string">&quot;380&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource CheckComboBoxPlus&#125;&quot;</span> <span class="attr">ShowSelectAllButton</span>=<span class="string">&quot;True&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:CheckComboBox</span> <span class="attr">MaxWidth</span>=<span class="string">&quot;380&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span> <span class="attr">IsEnabled</span>=<span class="string">&quot;False&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource CheckComboBoxPlus&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:CheckComboBox</span> <span class="attr">MaxWidth</span>=<span class="string">&quot;380&quot;</span> <span class="attr">ShowClearButton</span>=<span class="string">&quot;True&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource CheckComboBoxPlus&#125;&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr1&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span> <span class="attr">ShowSelectAllButton</span>=<span class="string">&quot;True&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:CheckComboBox</span> <span class="attr">MaxWidth</span>=<span class="string">&quot;380&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;PlsEnterContent&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr2&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource CheckComboBoxPlus&#125;&quot;</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:CheckComboBox</span> <span class="attr">MaxWidth</span>=<span class="string">&quot;380&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">ShowClearButton</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;380&quot;</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">&quot;140&quot;</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource CheckComboBoxPlus&#125;&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr3&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span> <span class="attr">ShowSelectAllButton</span>=<span class="string">&quot;True&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:CheckComboBox</span> <span class="attr">MaxWidth</span>=<span class="string">&quot;380&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;380&quot;</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">&quot;140&quot;</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;PlsEnterContent&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr3&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource CheckComboBoxPlus&#125;&quot;</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CheckComboBox.png" alt="CheckComboBox"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>ChatBubble</title>
-    <url>/handycontrol/extend_controls/chatBubble/index.html</url>
-    <content><![CDATA[<p>Dialogue bubbles often appear in communication software. Compared with the contextual dialogue in the form of plain text, the use of dialogue bubbles can make the chat interface more vivid and interesting. Through extension, bubble skin can also be made, which can make the software personalized functions more abundant.</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ChatBubble</span> : <span class="title">SelectableItem</span></span><br></pre></td></tr></table></figure>
-<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Role</td>
-<td>Dialogue role</td>
-</tr>
-<tr>
-<td>Type</td>
-<td>Message type</td>
-</tr>
-<tr>
-<td>IsRead</td>
-<td>Read</td>
-</tr>
-<tr>
-<td>ReadAction</td>
-<td>Triggered when the bubble is selected</td>
-</tr>
-</tbody></table>
-<h1 id="Events"><a href="#Events" class="headerlink" title="Events"></a>Events</h1><table>
-<thead>
-<tr>
-<th>Event</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>hc:ChatBubble.Selected</td>
-</tr>
-<tr>
-<td>hc:ChatBubble.Deselected</td>
-</tr>
-</tbody></table>
-<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ChatBubble.png" alt="ChatBubble"></p>
-<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><p>example:</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListBox</span> <span class="attr">Name</span>=<span class="string">&quot;ListBoxChat&quot;</span> <span class="attr">ScrollViewer.HorizontalScrollBarVisibility</span>=<span class="string">&quot;Disabled&quot;</span> <span class="attr">ScrollViewer.CanContentScroll</span>=<span class="string">&quot;False&quot;</span> <span class="attr">Background</span>=<span class="string">&quot;Transparent&quot;</span> <span class="attr">hc:ChatBubble.MaxWidth</span>=<span class="string">&quot;300&quot;</span> <span class="attr">BorderThickness</span>=<span class="string">&quot;0&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource StackPanelVerticalListBox&#125;&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding ChatInfos&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ListBox.ItemTemplate</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:ChatBubble</span> <span class="attr">Role</span>=<span class="string">&quot;&#123;Binding Role&#125;&quot;</span> <span class="attr">Type</span>=<span class="string">&quot;&#123;Binding Type&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;Binding Message&#125;&quot;</span> <span class="attr">Tag</span>=<span class="string">&quot;&#123;Binding&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ListBox.ItemTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ListBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>we need to create a model called <code>ChatInfoModel</code></p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">struct</span> ChatInfoModel</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="built_in">object</span> Message &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> <span class="built_in">string</span> SenderId &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> ChatRoleType Role &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> ChatMessageType Type &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> <span class="built_in">object</span> Enclosure &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>we need a list for holding our items:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ObservableCollection</span>&lt;<span class="title">ChatInfoModel</span>&gt; ChatInfos</span> &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125; = <span class="keyword">new</span> ObservableCollection&lt;ChatInfoModel&gt;();</span><br></pre></td></tr></table></figure>
-<p>for sending string chat:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> info = <span class="keyword">new</span> ChatInfoModel</span><br><span class="line">&#123;</span><br><span class="line">    Message = <span class="string">&quot;Hello&quot;</span>,</span><br><span class="line">    SenderId = _id,</span><br><span class="line">    Type = ChatMessageType.String,</span><br><span class="line">    Role = ChatRoleType.Sender</span><br><span class="line">&#125;;</span><br><span class="line">ChatInfos.Add(info);</span><br></pre></td></tr></table></figure>
-<p>sending image:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> dialog = <span class="keyword">new</span> OpenFileDialog();</span><br><span class="line">    <span class="keyword">if</span> (dialog.ShowDialog() == <span class="literal">true</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> fileName = dialog.FileName;</span><br><span class="line">        <span class="keyword">if</span> (File.Exists(fileName))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">var</span> info = <span class="keyword">new</span> ChatInfoModel</span><br><span class="line">            &#123;</span><br><span class="line">                Message = BitmapFrame.Create(<span class="keyword">new</span> Uri(fileName)),</span><br><span class="line">                SenderId = _id,</span><br><span class="line">                Type = ChatMessageType.Image,</span><br><span class="line">                Role = ChatRoleType.Sender,</span><br><span class="line">                Enclosure = fileName</span><br><span class="line">            &#125;;</span><br><span class="line">            ChatInfos.Add(info);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>sending audio:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> info = <span class="keyword">new</span> ChatInfoModel</span><br><span class="line">    &#123;</span><br><span class="line">        Message = <span class="string">&quot;Audio&quot;</span>,</span><br><span class="line">        SenderId = _id,</span><br><span class="line">        Type = ChatMessageType.Audio,</span><br><span class="line">        Role = ChatRoleType.Sender,</span><br><span class="line">        Enclosure = fileName</span><br><span class="line">    &#125;;</span><br><span class="line">    ChatInfos.Add(info);</span><br></pre></td></tr></table></figure>
-<p>for reading audio and image message we need to create a event called <code>hc:ChatBubble.Selected</code>:</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListBox</span> <span class="attr">Name</span>=<span class="string">&quot;ListBoxChat&quot;</span> <span class="attr">hc:ChatBubble.Selected</span>=<span class="string">&quot;ListBoxChat_Selected&quot;</span><span class="attr">...</span></span></span><br></pre></td></tr></table></figure>
-<p>now in <code>hc:ChatBubble.Selected</code> event:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">ListBoxChat_Selected</span>(<span class="params"><span class="built_in">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (e.OriginalSource <span class="keyword">is</span> FrameworkElement element &amp;&amp; element.Tag <span class="keyword">is</span> ChatInfoModel info)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> (info.Type == ChatMessageType.Image)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">new</span> ImageBrowser(<span class="keyword">new</span> Uri(info.Enclosure.ToString()))</span><br><span class="line">                    &#123;</span><br><span class="line">                        Owner = WindowHelper.GetActiveWindow()</span><br><span class="line">                    &#125;.Show();</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span> (info.Type == ChatMessageType.Audio)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">var</span> player = <span class="keyword">new</span> SoundPlayer(info.Enclosure.ToString());</span><br><span class="line">                    player.PlaySync();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<div class="note info">
-            <ul><li>You must specify the <code>ChatRoleType</code> to specify the <code>Receiver</code> and <code>Sender</code></li><li>You must specify the <code>ChatMessageType</code> to specify the <code>Message Type</code> (String, Image, Audio, Custom)</li></ul>
-          </div>
-
 ]]></content>
   </entry>
   <entry>
@@ -4235,6 +4235,42 @@
 ]]></content>
   </entry>
   <entry>
+    <title>FlipClock</title>
+    <url>/handycontrol/extend_controls/flipClock/index.html</url>
+    <content><![CDATA[<p>A clock scheme in 3D form.</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">FlipClock</span> : <span class="title">Control</span></span><br></pre></td></tr></table></figure>
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Default Value</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NumberList</td>
+<td>Number Collection</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DisplayTime</td>
+<td>Display Time</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:FlipClock</span> <span class="attr">Margin</span>=<span class="string">&quot;32&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/FlipClock.gif" alt="FlipClock"></p>
+<div class="note warning">
+            <p>When you no longer use <code>FlipClock</code>, remember to call the <code>Dispose</code> method to clean up resources.</p>
+          </div>
+<div class="note warning">
+            <p>The size of <code>FlipClock</code> can be adjusted with the help of <code>ViewBox</code>.</p>
+          </div>]]></content>
+  </entry>
+  <entry>
     <title>FloatingBlock</title>
     <url>/handycontrol/extend_controls/floatingBlock/index.html</url>
     <content><![CDATA[<p>Special click effects can be achieved with the help of floating blocks.</p>
@@ -4294,42 +4330,6 @@
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;32&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource ThumbsUpGeometry&#125;&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;180&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:FloatingBlock.ContentTemplate</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Path</span> <span class="attr">Data</span>=<span class="string">&quot;&#123;StaticResource ThumbsUpGeometry&#125;&quot;</span> <span class="attr">Fill</span>=<span class="string">&quot;&#123;DynamicResource DangerBrush&#125;&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;16&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">hc:FloatingBlock.ContentTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Good&quot;</span> <span class="attr">hc:FloatingBlock.Content</span>=<span class="string">&quot;Good&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;180&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,0,0&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource ThumbsUpGeometry&#125;&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;180&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,0,0&quot;</span> <span class="attr">hc:FloatingBlock.Duration</span>=<span class="string">&quot;0:0:1&quot;</span> <span class="attr">hc:FloatingBlock.VerticalOffset</span>=<span class="string">&quot;-20&quot;</span> <span class="attr">hc:FloatingBlock.ToX</span>=<span class="string">&quot;50&quot;</span> <span class="attr">hc:FloatingBlock.ToY</span>=<span class="string">&quot;-80&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:FloatingBlock.ContentTemplate</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Path</span> <span class="attr">Data</span>=<span class="string">&quot;&#123;StaticResource ThumbsUpGeometry&#125;&quot;</span> <span class="attr">Fill</span>=<span class="string">&quot;&#123;DynamicResource DangerBrush&#125;&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;16&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">hc:FloatingBlock.ContentTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/FloatingBlock.gif" alt="FloatingBlock"></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>FlipClock</title>
-    <url>/handycontrol/extend_controls/flipClock/index.html</url>
-    <content><![CDATA[<p>A clock scheme in 3D form.</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">FlipClock</span> : <span class="title">Control</span></span><br></pre></td></tr></table></figure>
-<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-<th>Default Value</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>NumberList</td>
-<td>Number Collection</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>DisplayTime</td>
-<td>Display Time</td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:FlipClock</span> <span class="attr">Margin</span>=<span class="string">&quot;32&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/FlipClock.gif" alt="FlipClock"></p>
-<div class="note warning">
-            <p>When you no longer use <code>FlipClock</code>, remember to call the <code>Dispose</code> method to clean up resources.</p>
-          </div>
-<div class="note warning">
-            <p>The size of <code>FlipClock</code> can be adjusted with the help of <code>ViewBox</code>.</p>
-          </div>]]></content>
   </entry>
   <entry>
     <title>GifImage</title>
@@ -4392,6 +4392,55 @@
 ]]></content>
   </entry>
   <entry>
+    <title>GotoTop</title>
+    <url>/handycontrol/extend_controls/gotoTop/index.html</url>
+    <content><![CDATA[<p>You can scroll the <code>ScrollView</code> or the control with <code>ScrollView</code> to the top position by clicking <code>GotoTop</code>.</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">GotoTop</span> : <span class="title">Button</span></span><br></pre></td></tr></table></figure>
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Default Value</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Target</td>
+<td><code>ScrollView</code> or controls with <code>ScrollView</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Animated</td>
+<td>Whether to use animation</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>AnimationTime</td>
+<td>Animation duration</td>
+<td>0.2s</td>
+<td></td>
+</tr>
+<tr>
+<td>HidingHeight</td>
+<td>When <code>ScrollView</code> scrolls this height, <code>GotoTop</code> will be hidden</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>AutoHiding</td>
+<td>Whether to automatically hide</td>
+<td>true</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Width</span>=<span class="string">&quot;500&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;400&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ScrollViewer</span> <span class="attr">Name</span>=<span class="string">&quot;ScrollViewerDemo&quot;</span> <span class="attr">IsInertiaEnabled</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,0,0&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Height</span>=<span class="string">&quot;2000&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;8,0&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Border.Background</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">LinearGradientBrush</span> <span class="attr">EndPoint</span>=<span class="string">&quot;0.5,1&quot;</span> <span class="attr">StartPoint</span>=<span class="string">&quot;0.5,0&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">&quot;White&quot;</span> <span class="attr">Offset</span>=<span class="string">&quot;0&quot;</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">&quot;Black&quot;</span> <span class="attr">Offset</span>=<span class="string">&quot;1&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">LinearGradientBrush</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">Border.Background</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:ScrollViewer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:GotoTop</span> <span class="attr">Animated</span>=<span class="string">&quot;True&quot;</span> <span class="attr">AutoHiding</span>=<span class="string">&quot;True&quot;</span> <span class="attr">AnimationTime</span>=<span class="string">&quot;500&quot;</span> <span class="attr">Target</span>=<span class="string">&quot;&#123;Binding ElementName=ScrollViewerDemo&#125;&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Bottom&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,0,20,20&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:SimplePanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GoToTop.gif" alt="GotoTop"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Gravatar</title>
     <url>/handycontrol/extend_controls/gravatar/index.html</url>
     <content><![CDATA[<p>A way to implement random avatars for users.</p>
@@ -4446,55 +4495,6 @@
 </tbody></table>
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;32&quot;</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">UniformGrid</span> <span class="attr">Rows</span>=<span class="string">&quot;3&quot;</span> <span class="attr">Columns</span>=<span class="string">&quot;3&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;240&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;240&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Gravatar</span> <span class="attr">Id</span>=<span class="string">&quot;User1&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Gravatar</span> <span class="attr">Id</span>=<span class="string">&quot;User2&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Gravatar</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource GravatarCircleImg&#125;&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Image</span> <span class="attr">Source</span>=<span class="string">&quot;/HandyControlDemo;component/Resources/Img/Album/2.jpg&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">hc:Gravatar</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Gravatar</span> <span class="attr">Id</span>=<span class="string">&quot;User4&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Gravatar</span> <span class="attr">Id</span>=<span class="string">&quot;User5&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource GravatarCircle&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Gravatar</span> <span class="attr">Id</span>=<span class="string">&quot;User6&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Gravatar</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource GravatarCircle&#125;&quot;</span> <span class="attr">Source</span>=<span class="string">&quot;/HandyControlDemo;component/Resources/Img/Album/1.jpg&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Gravatar</span> <span class="attr">Id</span>=<span class="string">&quot;User8&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Gravatar</span> <span class="attr">Id</span>=<span class="string">&quot;User9&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">UniformGrid</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;16,0,0,0&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;220&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Text</span>=<span class="string">&quot;User1&quot;</span> <span class="attr">Name</span>=<span class="string">&quot;TextBoxName&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;180&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Gravatar</span> <span class="attr">Height</span>=<span class="string">&quot;180&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;180&quot;</span> <span class="attr">Id</span>=<span class="string">&quot;&#123;Binding Text,ElementName=TextBoxName&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Gravatar.gif" alt="Gravatar"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>GotoTop</title>
-    <url>/handycontrol/extend_controls/gotoTop/index.html</url>
-    <content><![CDATA[<p>You can scroll the <code>ScrollView</code> or the control with <code>ScrollView</code> to the top position by clicking <code>GotoTop</code>.</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">GotoTop</span> : <span class="title">Button</span></span><br></pre></td></tr></table></figure>
-<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-<th>Default Value</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Target</td>
-<td><code>ScrollView</code> or controls with <code>ScrollView</code></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Animated</td>
-<td>Whether to use animation</td>
-<td>true</td>
-<td></td>
-</tr>
-<tr>
-<td>AnimationTime</td>
-<td>Animation duration</td>
-<td>0.2s</td>
-<td></td>
-</tr>
-<tr>
-<td>HidingHeight</td>
-<td>When <code>ScrollView</code> scrolls this height, <code>GotoTop</code> will be hidden</td>
-<td>0</td>
-<td></td>
-</tr>
-<tr>
-<td>AutoHiding</td>
-<td>Whether to automatically hide</td>
-<td>true</td>
-<td></td>
-</tr>
-</tbody></table>
-<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Width</span>=<span class="string">&quot;500&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;400&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ScrollViewer</span> <span class="attr">Name</span>=<span class="string">&quot;ScrollViewerDemo&quot;</span> <span class="attr">IsInertiaEnabled</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,0,0&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Height</span>=<span class="string">&quot;2000&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;8,0&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Border.Background</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">LinearGradientBrush</span> <span class="attr">EndPoint</span>=<span class="string">&quot;0.5,1&quot;</span> <span class="attr">StartPoint</span>=<span class="string">&quot;0.5,0&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">&quot;White&quot;</span> <span class="attr">Offset</span>=<span class="string">&quot;0&quot;</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">&quot;Black&quot;</span> <span class="attr">Offset</span>=<span class="string">&quot;1&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">LinearGradientBrush</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">Border.Background</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:ScrollViewer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:GotoTop</span> <span class="attr">Animated</span>=<span class="string">&quot;True&quot;</span> <span class="attr">AutoHiding</span>=<span class="string">&quot;True&quot;</span> <span class="attr">AnimationTime</span>=<span class="string">&quot;500&quot;</span> <span class="attr">Target</span>=<span class="string">&quot;&#123;Binding ElementName=ScrollViewerDemo&#125;&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Bottom&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,0,20,20&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:SimplePanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GoToTop.gif" alt="GotoTop"></p>
 ]]></content>
   </entry>
   <entry>
@@ -9411,6 +9411,12 @@
           </div>]]></content>
   </entry>
   <entry>
+    <title>StatusBar</title>
+    <url>/handycontrol/native_controls/statusBar/index.html</url>
+    <content><![CDATA[<h1 id="StatusBarBaseStyle"><a href="#StatusBarBaseStyle" class="headerlink" title="StatusBarBaseStyle"></a>StatusBarBaseStyle</h1><p>The default style of the statusbar is not recommended. It should always be used by other styles as BasedOn.</p>
+]]></content>
+  </entry>
+  <entry>
     <title>TabControl</title>
     <url>/handycontrol/native_controls/tabControl/index.html</url>
     <content><![CDATA[<h1 id="TabControlBaseStyle"><a href="#TabControlBaseStyle" class="headerlink" title="TabControlBaseStyle"></a>TabControlBaseStyle</h1><p>The default style of the tabcontrol is not recommended. It should always be used by other styles as BasedOn.</p>
@@ -9436,12 +9442,6 @@
 <h1 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h1><p>You can use the property <code>TabStripPlacement</code> to set the position of the header title, the effect is as follows:</p>
 <h1 id="TabItemTransparentStyle-Only-Custom-Version"><a href="#TabItemTransparentStyle-Only-Custom-Version" class="headerlink" title="TabItemTransparentStyle Only Custom Version"></a>TabItemTransparentStyle <code>Only Custom Version</code></h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TabControl</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">TabItem</span> <span class="attr">Header</span>=<span class="string">&quot;Test&quot;</span> <span class="attr">Style</span>=<span class="string">&#123;StaticResource</span> <span class="attr">TabItemTransparentStyle</span>&#125;&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TabControl</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/TabControl.TabStripPlacement.png" alt="TabControl.TabStripPlacement"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>StatusBar</title>
-    <url>/handycontrol/native_controls/statusBar/index.html</url>
-    <content><![CDATA[<h1 id="StatusBarBaseStyle"><a href="#StatusBarBaseStyle" class="headerlink" title="StatusBarBaseStyle"></a>StatusBarBaseStyle</h1><p>The default style of the statusbar is not recommended. It should always be used by other styles as BasedOn.</p>
 ]]></content>
   </entry>
   <entry>
@@ -10453,6 +10453,19 @@
 ]]></content>
   </entry>
   <entry>
+    <title>PersianDatePicker</title>
+    <url>/handycontrol/persianToolkit/persianDatePicker/index.html</url>
+    <content><![CDATA[<p>PersianDatePicker is Based on <a href="https://ghost1372.github.io/handycontrol/extend_controls/datePicker/">DatePicker</a> All methods and styles are available in this control</p>
+<div class="note info">
+            <p>Note that you must write <code>Persian</code> at the bottom of the style name ==&gt; <code>DateTimePickerExtendPersian</code></p>
+          </div>
+
+<p>example:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:PersianDatePicker</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/PersianDatePicker.png" alt="PersianDatePicker"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>PersianDateTime</title>
     <url>/handycontrol/persianToolkit/persianDateTime/index.html</url>
     <content><![CDATA[<p>with this class you can convert current date to Persian Date there is also some extension method for <code>DateTime.Now</code></p>
@@ -10503,19 +10516,6 @@
 </tr>
 </tbody></table>
 <h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><p><a href="https://ghost1372.github.io/handycontrol/persianToolkit/extensions/#DateTime">Go Here</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>PersianDatePicker</title>
-    <url>/handycontrol/persianToolkit/persianDatePicker/index.html</url>
-    <content><![CDATA[<p>PersianDatePicker is Based on <a href="https://ghost1372.github.io/handycontrol/extend_controls/datePicker/">DatePicker</a> All methods and styles are available in this control</p>
-<div class="note info">
-            <p>Note that you must write <code>Persian</code> at the bottom of the style name ==&gt; <code>DateTimePickerExtendPersian</code></p>
-          </div>
-
-<p>example:</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:PersianDatePicker</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/PersianDatePicker.png" alt="PersianDatePicker"></p>
 ]]></content>
   </entry>
   <entry>
