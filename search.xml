@@ -10177,7 +10177,9 @@
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> name = AssemblyHelper.GetCallingAssemblyName(); </span><br><span class="line"><span class="comment">// Version</span></span><br><span class="line"><span class="keyword">var</span> ver = AssemblyHelper.GetCallingAssemblyVersion(); </span><br></pre></td></tr></table></figure>
 <p><code>GetExecutingAssembly</code> and <code>GetEntryAssembly</code> assemblies are also available</p>
 <h1 id="DispatcherHelper"><a href="#DispatcherHelper" class="headerlink" title="DispatcherHelper"></a>DispatcherHelper</h1><p>Run codes in Main Thread</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">DispatcherHelper.RunOnMainThread(() =&gt;</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//action</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">DispatcherHelper.RunOnMainThread(() =&gt;</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//action</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h1 id="InternetHelper"><a href="#InternetHelper" class="headerlink" title="InternetHelper"></a>InternetHelper</h1><p>Check your internet connection</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="built_in">bool</span> isAvailable = InternetHelper.IsConnectedToInternet();</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>LoadingIndicator</title>
