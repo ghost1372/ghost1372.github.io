@@ -413,25 +413,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Native Control</title>
-    <url>/handycontrol/native_controls/index.html</url>
-    <content><![CDATA[<p>Native controls refer to the controls that come with the WPF framework. In addition to this, simple extensions are implemented through additional properties.</p>
-<div class="note warning">
-            <p>In HandyControl, almost all native controls have a base style that is implemented by default (that is, when a style is defined, the given Key value is not displayed).</p>
-          </div>
-
-<div class="note warning">
-            <p>The base style generally has the word “Base”. It is not recommended for users to use it directly in the view layer. The appropriate usage scenario is a resource file.</p>
-          </div>
-
-<h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><div class="note info no-icon">
-            <p>How can I override the default implementation of the style? Can I give BaseOn without a Key?</p>
-          </div>
-
-<p>You can use this syntax: <code>BasedOn=&quot;&#123;StaticResource &#123;x:Type Button&#125;&#125;&quot;</code> to override the default style of <code>Button</code>.</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Globalization</title>
     <url>/handycontrol/langs/index.html</url>
     <content><![CDATA[<h1 id="Way-of-use"><a href="#Way-of-use" class="headerlink" title="Way of use"></a>Way of use</h1><p>The language package to be used can be specified by <code>ConfigHelper.Instance.SetLang(string lang)</code>, English (en) is used by default.</p>
@@ -490,6 +471,25 @@
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">MessageBox.Show(LangProvider.GetLang(<span class="string">&quot;About&quot;</span>));</span><br></pre></td></tr></table></figure>
 <h2 id="How-to-Change-language-in-Runtime"><a href="#How-to-Change-language-in-Runtime" class="headerlink" title="How to Change language in Runtime?"></a>How to Change language in Runtime?</h2><p>To change the language in runtime, just write the following code and specify the language code</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ConfigHelper.Instance.SetLang(<span class="string">&quot;en&quot;</span>);</span><br><span class="line">LangProvider.Culture = <span class="keyword">new</span> CultureInfo(<span class="string">&quot;en&quot;</span>);</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Native Control</title>
+    <url>/handycontrol/native_controls/index.html</url>
+    <content><![CDATA[<p>Native controls refer to the controls that come with the WPF framework. In addition to this, simple extensions are implemented through additional properties.</p>
+<div class="note warning">
+            <p>In HandyControl, almost all native controls have a base style that is implemented by default (that is, when a style is defined, the given Key value is not displayed).</p>
+          </div>
+
+<div class="note warning">
+            <p>The base style generally has the word “Base”. It is not recommended for users to use it directly in the view layer. The appropriate usage scenario is a resource file.</p>
+          </div>
+
+<h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><div class="note info no-icon">
+            <p>How can I override the default implementation of the style? Can I give BaseOn without a Key?</p>
+          </div>
+
+<p>You can use this syntax: <code>BasedOn=&quot;&#123;StaticResource &#123;x:Type Button&#125;&#125;&quot;</code> to override the default style of <code>Button</code>.</p>
+]]></content>
   </entry>
   <entry>
     <title>PersianToolkit</title>
@@ -614,45 +614,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Quick start</title>
-    <url>/handycontrol/quick_start/index.html</url>
-    <content><![CDATA[<h1 id="Easy-Ways"><a href="#Easy-Ways" class="headerlink" title="Easy Ways"></a>Easy Ways</h1><p>Download the source code or reference the control library in Nuget mode or use Extension</p>
-<table>
-<thead>
-<tr>
-<th>Nuget</th>
-<th>Github</th>
-<th>Extension</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.nuget.org/packages/HandyControl/">HandyControl-Nuget</a></td>
-<td><a href="https://github.com/HandyOrg/HandyControl">HandyControl-Github</a></td>
-<td><a href="https://marketplace.visualstudio.com/items?itemName=HandyOrg.handycontrolforvs2019">HandyControl-Extension</a></td>
-</tr>
-<tr>
-<td><a href="https://www.nuget.org/packages/HandyControls/">HandyControls-Nuget</a></td>
-<td><a href="https://github.com/ghost1372/HandyControls">HandyControls-Github</a></td>
-<td><a href="https://marketplace.visualstudio.com/items?itemName=MahdiHosseini.HandyControls">HandyControls-Extension</a></td>
-</tr>
-</tbody></table>
-<h1 id="HandyControls"><a href="#HandyControls" class="headerlink" title="HandyControls"></a>HandyControls</h1><p>Add the following code to App.xaml:</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Application</span> <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">Application.Resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">hc:ThemeResources</span>/&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">hc:Theme</span>/&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">Application.Resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Application</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>For more information about the theme click <a href="https://ghost1372.github.io/handycontrol/theme/">here</a></p>
-<h1 id="HandyControl"><a href="#HandyControl" class="headerlink" title="HandyControl"></a>HandyControl</h1><p>Add the following code to App.xaml:</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Application</span> <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">Application.Resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Theme</span> <span class="attr">Name</span>=<span class="string">&quot;HandyTheme&quot;</span>/&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">Application.Resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Application</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<div class="note info">
-            <p>In older versions of 2.5.1, you should add this code</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Application.Resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">Source</span>=<span class="string">&quot;pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">Source</span>=<span class="string">&quot;pack://application:,,,/HandyControl;component/Themes/Theme.xaml&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Application.Resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
-          </div>
-
-<h1 id="Last-step"><a href="#Last-step" class="headerlink" title="Last step"></a>Last step</h1><p>Add a namespace: <code>xmlns:hc=&quot;https://handyorg.github.io/handycontrol&quot;</code></p>
-<h1 id="Extension"><a href="#Extension" class="headerlink" title="Extension"></a>Extension</h1><p>just download and install handycontrol template from marketplace. in this way you dont need to add anything. after installing hc, create new project with handycontrol template</p>
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/vsixTemplate.png" alt="Extension"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Theme</title>
     <url>/handycontrol/theme/handyControl.html</url>
     <content><![CDATA[<h1 id="Changing-Theme"><a href="#Changing-Theme" class="headerlink" title="Changing Theme"></a>Changing Theme</h1><p>There is 3 themes (<code>Light, Dark and Violet</code>) that you can use in your application. </p>
@@ -767,9 +728,42 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Tools</title>
-    <url>/handycontrol/tools/index.html</url>
-    <content><![CDATA[<p>Tools</p>
+    <title>Quick start</title>
+    <url>/handycontrol/quick_start/index.html</url>
+    <content><![CDATA[<h1 id="Easy-Ways"><a href="#Easy-Ways" class="headerlink" title="Easy Ways"></a>Easy Ways</h1><p>Download the source code or reference the control library in Nuget mode or use Extension</p>
+<table>
+<thead>
+<tr>
+<th>Nuget</th>
+<th>Github</th>
+<th>Extension</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.nuget.org/packages/HandyControl/">HandyControl-Nuget</a></td>
+<td><a href="https://github.com/HandyOrg/HandyControl">HandyControl-Github</a></td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=HandyOrg.handycontrolforvs2019">HandyControl-Extension</a></td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/HandyControls/">HandyControls-Nuget</a></td>
+<td><a href="https://github.com/ghost1372/HandyControls">HandyControls-Github</a></td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=MahdiHosseini.HandyControls">HandyControls-Extension</a></td>
+</tr>
+</tbody></table>
+<h1 id="HandyControls"><a href="#HandyControls" class="headerlink" title="HandyControls"></a>HandyControls</h1><p>Add the following code to App.xaml:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Application</span> <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">Application.Resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">hc:ThemeResources</span>/&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">hc:Theme</span>/&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">Application.Resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Application</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>For more information about the theme click <a href="https://ghost1372.github.io/handycontrol/theme/">here</a></p>
+<h1 id="HandyControl"><a href="#HandyControl" class="headerlink" title="HandyControl"></a>HandyControl</h1><p>Add the following code to App.xaml:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Application</span> <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">Application.Resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Theme</span> <span class="attr">Name</span>=<span class="string">&quot;HandyTheme&quot;</span>/&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">Application.Resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Application</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<div class="note info">
+            <p>In older versions of 2.5.1, you should add this code</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Application.Resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">Source</span>=<span class="string">&quot;pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">Source</span>=<span class="string">&quot;pack://application:,,,/HandyControl;component/Themes/Theme.xaml&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Application.Resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
+          </div>
+
+<h1 id="Last-step"><a href="#Last-step" class="headerlink" title="Last step"></a>Last step</h1><p>Add a namespace: <code>xmlns:hc=&quot;https://handyorg.github.io/handycontrol&quot;</code></p>
+<h1 id="Extension"><a href="#Extension" class="headerlink" title="Extension"></a>Extension</h1><p>just download and install handycontrol template from marketplace. in this way you dont need to add anything. after installing hc, create new project with handycontrol template</p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/vsixTemplate.png" alt="Extension"></p>
 ]]></content>
   </entry>
   <entry>
@@ -780,6 +774,12 @@
 <h1 id="Thanks-to-the-following-organizations-for-providing-open-source-licenses"><a href="#Thanks-to-the-following-organizations-for-providing-open-source-licenses" class="headerlink" title="Thanks to the following organizations for providing open source licenses"></a>Thanks to the following organizations for providing open source licenses</h1><p><a style="border:0" href="https://visualstudio.microsoft.com/free-developer-offers/" target="_blank" rel="noopener"><img width="70" height="70" src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/vs2019_logo.png" alt="Visual Studio Community 2019"></a><a style="border:0" href="https://www.jetbrains.com/?from=HandyControl" target="_blank" rel="noopener"><img width="70" height="70" src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/resharper_logo.png" alt="JetBrains"></a></p>
 
 <h1 id="Thanks-to-the-following-donors"><a href="#Thanks-to-the-following-donors" class="headerlink" title="Thanks to the following donors"></a>Thanks to the following donors</h1><p><a style="border:0" href="https://github.com/bigorange1900" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/49062011?s=64&v=4" alt="bigorange1900"></a><a style="border:0" href="https://github.com/14632791" target="_blank" rel="noopener"><img style="border-radius:50%!important" style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/27358331?s=64&v=4" alt="14632791"></a><a style="border:0" href="https://github.com/IUpdatable" target="_blank" rel="noopener"><img style="border-radius:50%!important" style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/51181716?s=64&v=4" alt="IUpdatable"></a><a style="border:0" href="https://github.com/maplewei" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/13778095?s=64&v=4" alt="maplewei"></a><a style="border:0" href="https://github.com/sunshang-hl" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/34593206?s=64&v=4" alt="sunshang-hl"></a><a style="border:0" href="https://github.com/yangkang326" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/51224259?s=64&v=4" alt="yangkang326"></a><a style="border:0" href="https://github.com/zmrbak" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/7257543?s=64&v=4" alt="zmrbak"></a><a style="border:0" href="https://github.com/AFei19911012" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/31465314?s=64&v=4" alt="AFei19911012"></a><a style="border:0" href="https://github.com/wayne2006" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/21210915?s=64&v=4" alt="wayne2006"></a><a style="border:0" href="https://github.com/towerDLH" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/53053537?s=64&v=4" alt="towerDLH"></a><a style="border:0" href="https://github.com/BluceBosen" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/24750822?s=64&v=4" alt="BluceBosen"></a><a style="border:0" href="https://github.com/MrZhangYuan" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/16384123?s=64&v=4" alt="MrZhangYuan"></a><a style="border:0" href="https://github.com/YC946586" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/49895722?s=64&v=4" alt="YC946586"></a><a style="border:0" href="https://github.com/wihalo" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/26402999?s=64&v=4" alt="wihalo"></a><a style="border:0" href="https://github.com/startewho" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/898009?s=64&v=4" alt="startewho"></a><a style="border:0" href="https://github.com/5653325" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars1.githubusercontent.com/u/3361135?s=64&v=4" alt="5653325"></a><a style="border:0" href="https://github.com/LostAsk" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars0.githubusercontent.com/u/46678241?s=64&v=4" alt="LostAsk"></a><a style="border:0" href="https://github.com/sanshiliuxiao" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars3.githubusercontent.com/u/25658690?s=64&v=4" alt="sanshiliuxiao"></a><a style="border:0" href="https://github.com/QJJMSK" target="_blank" rel="noopener"><img style="border-radius:50%!important" width="64" height="64" src="https://avatars2.githubusercontent.com/u/28100716?s=64&v=4" alt="QJJMSK"></a></p>]]></content>
+  </entry>
+  <entry>
+    <title>Tools</title>
+    <url>/handycontrol/tools/index.html</url>
+    <content><![CDATA[<p>Tools</p>
+]]></content>
   </entry>
   <entry>
     <title>BackgroundSwitchElement</title>
@@ -837,6 +837,27 @@
 ]]></content>
   </entry>
   <entry>
+    <title>DropDownElement</title>
+    <url>/handycontrol/attach/dropDownElement/index.html</url>
+    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ConsistentWidth</td>
+<td>Whether the drop-down content is consistent with the width of the drop-down box</td>
+</tr>
+<tr>
+<td>AutoWidth</td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
     <title>DataGridAttach</title>
     <url>/handycontrol/attach/dataGridAttach/index.html</url>
     <content><![CDATA[<p>This additional attribute is specific to the hc internal DataGrid style and is not recommended for direct use.</p>
@@ -881,27 +902,6 @@
 </tr>
 <tr>
 <td>CanUnselectAllWithBlankArea</td>
-<td></td>
-</tr>
-</tbody></table>
-]]></content>
-  </entry>
-  <entry>
-    <title>DropDownElement</title>
-    <url>/handycontrol/attach/dropDownElement/index.html</url>
-    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ConsistentWidth</td>
-<td>Whether the drop-down content is consistent with the width of the drop-down box</td>
-</tr>
-<tr>
-<td>AutoWidth</td>
 <td></td>
 </tr>
 </tbody></table>
@@ -1025,6 +1025,24 @@
 <h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Image</span> <span class="attr">hc:ImageAttach.SourceFailed</span>=<span class="string">&quot;/Resources/Img/chrome_dragon.png&quot;</span> <span class="attr">Source</span>=<span class="string">&quot;&#123;Binding Source&#125;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
+    <title>LinkElement</title>
+    <url>/handycontrol/attach/linkElement/index.html</url>
+    <content><![CDATA[<p>An attached property is intended to be used as a type of global property that is settable on any object.</p>
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Link</td>
+<td>Gets or sets Link Address</td>
+</tr>
+</tbody></table>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Shield</span> <span class="attr">controls:LinkElement.Link</span>=<span class="string">&quot;https://github.com&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;hc:ControlCommands.OpenLink&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
     <title>InfoElement</title>
     <url>/handycontrol/attach/infoElement/index.html</url>
     <content><![CDATA[<div class="note info no-icon">
@@ -1081,10 +1099,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title>LinkElement</title>
-    <url>/handycontrol/attach/linkElement/index.html</url>
-    <content><![CDATA[<p>An attached property is intended to be used as a type of global property that is settable on any object.</p>
-<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+    <title>MenuTopLineAttach</title>
+    <url>/handycontrol/attach/menuTopLineAttach/index.html</url>
+    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
 <thead>
 <tr>
 <th>Name</th>
@@ -1092,11 +1109,11 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>Link</td>
-<td>Gets or sets Link Address</td>
+<td>Popup</td>
+<td></td>
 </tr>
 </tbody></table>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Shield</span> <span class="attr">controls:LinkElement.Link</span>=<span class="string">&quot;https://github.com&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;hc:ControlCommands.OpenLink&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+]]></content>
   </entry>
   <entry>
     <title>PanelElement</title>
@@ -1116,23 +1133,6 @@
 <h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="FluidMoveBehavior-Set-the-fluid-movement-mode-of-the-panel"><a href="#FluidMoveBehavior-Set-the-fluid-movement-mode-of-the-panel" class="headerlink" title="FluidMoveBehavior Set the fluid movement mode of the panel"></a>FluidMoveBehavior Set the fluid movement mode of the panel</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:HoneycombPanel</span> <span class="attr">hc:PanelElement.FluidMoveBehavior</span>=<span class="string">&quot;&#123;StaticResource BehaviorXY200&#125;&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <p>When adding or removing elements to the panel container, you can see the animation of fluid movement.
  </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>MenuTopLineAttach</title>
-    <url>/handycontrol/attach/menuTopLineAttach/index.html</url>
-    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Popup</td>
-<td></td>
-</tr>
-</tbody></table>
 ]]></content>
   </entry>
   <entry>
@@ -1178,25 +1178,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>TextBlockAttach</title>
-    <url>/handycontrol/attach/textBlockAttach/index.html</url>
-    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>AutoTooltip</td>
-<td>Set whether to show tooltips automatically</td>
-</tr>
-</tbody></table>
-<h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="AutoTooltip-Set-whether-to-show-tooltips-automatically"><a href="#AutoTooltip-Set-whether-to-show-tooltips-automatically" class="headerlink" title="AutoTooltip Set whether to show tooltips automatically"></a>AutoTooltip Set whether to show tooltips automatically</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Width</span>=<span class="string">&quot;100&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Center&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">hc:TextBlockAttach.AutoTooltip</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Text</span>=<span class="string">&quot;EEEEEEEEEEEEEEEEEEEE&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:SimplePanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/TextBlockAttach.AutoTooltip.png" alt="TextBlockAttach.AutoTooltip"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>StatusSwitchElement</title>
     <url>/handycontrol/attach/statusSwitchElement/index.html</url>
     <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
@@ -1227,6 +1208,25 @@
 <div class="note info no-icon">
             <p>The above two attributes are used in combination, which can easily control the display function of the state of the selected class control, and can be reasonably adjusted according to the above cases.</p>
           </div>]]></content>
+  </entry>
+  <entry>
+    <title>TextBlockAttach</title>
+    <url>/handycontrol/attach/textBlockAttach/index.html</url>
+    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AutoTooltip</td>
+<td>Set whether to show tooltips automatically</td>
+</tr>
+</tbody></table>
+<h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="AutoTooltip-Set-whether-to-show-tooltips-automatically"><a href="#AutoTooltip-Set-whether-to-show-tooltips-automatically" class="headerlink" title="AutoTooltip Set whether to show tooltips automatically"></a>AutoTooltip Set whether to show tooltips automatically</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Width</span>=<span class="string">&quot;100&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Center&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">hc:TextBlockAttach.AutoTooltip</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Text</span>=<span class="string">&quot;EEEEEEEEEEEEEEEEEEEE&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:SimplePanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/TextBlockAttach.AutoTooltip.png" alt="TextBlockAttach.AutoTooltip"></p>
+]]></content>
   </entry>
   <entry>
     <title>TipElement</title>
@@ -1864,6 +1864,42 @@
           </div>]]></content>
   </entry>
   <entry>
+    <title>Font Size</title>
+    <url>/handycontrol/basic_xaml/fonts/index.html</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Size</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LargeFontSize</td>
+<td>24</td>
+<td>Page Title</td>
+</tr>
+<tr>
+<td>HeadFontSize</td>
+<td>20</td>
+<td>Feature Title</td>
+</tr>
+<tr>
+<td>SubHeadFontSize</td>
+<td>16</td>
+<td>Subfunction Title</td>
+</tr>
+<tr>
+<td>TextFontSize</td>
+<td>12</td>
+<td>Text</td>
+</tr>
+</tbody></table>
+<div class="note info no-icon">
+            <p>Example: <code>FontSize=&quot;{StaticResource LargeFontSize}&quot;</code></p>
+          </div>]]></content>
+  </entry>
+  <entry>
     <title>Geometric shape</title>
     <url>/handycontrol/basic_xaml/geometries/index.html</url>
     <content><![CDATA[<p>HandyControl comes with some geometric shape definitions, but it is obviously not enough to apply to production. We are not prepared to be all-encompassing. There is never a bottom, so we will do the opposite. It only contains the control library itself (of course users can also use it), and the rest should expand on its own. All shape definitions in the control library are listed in the following table:</p>
@@ -2101,42 +2137,6 @@
 </tbody></table>
 <div class="note info no-icon">
             <p>Example: <code>Data=&quot;{StaticResource ErrorGeometry}&quot;</code></p>
-          </div>]]></content>
-  </entry>
-  <entry>
-    <title>Font Size</title>
-    <url>/handycontrol/basic_xaml/fonts/index.html</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Size</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>LargeFontSize</td>
-<td>24</td>
-<td>Page Title</td>
-</tr>
-<tr>
-<td>HeadFontSize</td>
-<td>20</td>
-<td>Feature Title</td>
-</tr>
-<tr>
-<td>SubHeadFontSize</td>
-<td>16</td>
-<td>Subfunction Title</td>
-</tr>
-<tr>
-<td>TextFontSize</td>
-<td>12</td>
-<td>Text</td>
-</tr>
-</tbody></table>
-<div class="note info no-icon">
-            <p>Example: <code>FontSize=&quot;{StaticResource LargeFontSize}&quot;</code></p>
           </div>]]></content>
   </entry>
   <entry>
@@ -3478,12 +3478,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>ContextMenuButton</title>
-    <url>/handycontrol/extend_controls/contextMenuButton/index.html</url>
-    <content><![CDATA[<p>HC provides two context menu buttons, namely <code>ContextMenuButton</code> and <code>ContextMenuToggleButton</code>. Their usage is the same as ordinary <code>Button</code> and <code>ToggleButton</code>. The only difference is that they provide the <code>Menu</code> property, which can be used to click the button. The effect of popping up the context menu.</p>
-]]></content>
-  </entry>
-  <entry>
     <title>CoverFlow</title>
     <url>/handycontrol/extend_controls/coverFlow/index.html</url>
     <content><![CDATA[<p>This control displays the cover in 3D and can be used to enhance the interface effect.</p>
@@ -3624,6 +3618,12 @@
 <p>or</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:CoverView</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:CoverViewItem</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">hc:CoverViewItem.Header</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">Image</span> <span class="attr">Source</span>=<span class="string">&quot;/HandyControlDemo;component/Resources/Img/Album/1.jpg&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">hc:CoverViewItem.Header</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;Content&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">hc:CoverViewItem</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:CoverViewItem</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">hc:CoverViewItem.Header</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">Image</span> <span class="attr">Source</span>=<span class="string">&quot;/HandyControlDemo;component/Resources/Img/Album/2.jpg&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">hc:CoverViewItem.Header</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;Content&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">hc:CoverViewItem</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:CoverView</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CoverView.gif" alt="CoverView"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>ContextMenuButton</title>
+    <url>/handycontrol/extend_controls/contextMenuButton/index.html</url>
+    <content><![CDATA[<p>HC provides two context menu buttons, namely <code>ContextMenuButton</code> and <code>ContextMenuToggleButton</code>. Their usage is the same as ordinary <code>Button</code> and <code>ToggleButton</code>. The only difference is that they provide the <code>Menu</code> property, which can be used to click the button. The effect of popping up the context menu.</p>
 ]]></content>
   </entry>
   <entry>
@@ -3902,6 +3902,73 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Divider</title>
+    <url>/handycontrol/extend_controls/divider/index.html</url>
+    <content><![CDATA[<p>The dividing line that separates the content.</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Divider</span> : <span class="title">Control</span></span><br></pre></td></tr></table></figure>
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Default Value</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Content</td>
+<td>Content</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Orientation</td>
+<td>Orientation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ContentTemplate</td>
+<td>Content Template</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ContentStringFormat</td>
+<td>Content String Format</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ContentTemplateSelector</td>
+<td>Content Template</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LineStroke</td>
+<td>Dividing line color</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LineStrokeThickness</td>
+<td>Dividing line thickness</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>LineStrokeDashArray</td>
+<td>Dividing line gap</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">WrapPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;16&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;16&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;300&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;&quot;</span> <span class="attr">Padding</span>=<span class="string">&quot;10,0&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span> <span class="attr">LineStroke</span>=<span class="string">&quot;&#123;DynamicResource DarkPrimaryBrush&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeDashArray</span>=<span class="string">&quot;2,2&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;16&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;300&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;&quot;</span> <span class="attr">HorizontalContentAlignment</span>=<span class="string">&quot;Left&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;&quot;</span> <span class="attr">Padding</span>=<span class="string">&quot;10,0&quot;</span>  <span class="attr">HorizontalContentAlignment</span>=<span class="string">&quot;Right&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span> <span class="attr">LineStroke</span>=<span class="string">&quot;&#123;DynamicResource DarkPrimaryBrush&#125;&quot;</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span> <span class="attr">LineStroke</span>=<span class="string">&quot;&#123;DynamicResource DarkPrimaryBrush&#125;&quot;</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">WrapPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Divider.png" alt="Divider"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Dialog</title>
     <url>/handycontrol/extend_controls/dialog/index.html</url>
     <content><![CDATA[<p>In the case of retaining the current page status, notify the user and carry related operations.</p>
@@ -3979,73 +4046,6 @@
 <h2 id="A-simpler-asynchronous-way"><a href="#A-simpler-asynchronous-way" class="headerlink" title="A simpler asynchronous way"></a>A simpler asynchronous way</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> d = Dialog.Show&lt;ProgressDialog&gt;();</span><br><span class="line"><span class="keyword">await</span> Task.Delay(<span class="number">5</span> * <span class="number">1000</span>);</span><br><span class="line">d.Close();</span><br></pre></td></tr></table></figure>
 <h1 id="Pop-up-behavior"><a href="#Pop-up-behavior" class="headerlink" title="Pop-up behavior"></a>Pop-up behavior</h1><p>If the <code>token</code> parameter is not given when calling the <code>Show</code> method, it will pop up the currently active window by default. If the value of <code>token</code> is given, the type of the target element will be judged internally. If the type is a window, it will pop up in the decoration layer under the window, otherwise it will look for the child elements of the target element until it finds the type of <code>DialogContainer</code> The child element of will finally pop up inside the child element.</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">&lt;UserControl hc:Dialog.Token=<span class="string">&quot;DialogContainer&quot;</span>&gt;</span><br><span class="line">    &lt;hc:DialogContainer&gt;</span><br><span class="line">        <span class="comment">// Internal controls</span></span><br><span class="line">    &lt;/hc:DialogContainer&gt;</span><br><span class="line">&lt;/UserControl&gt;</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>Divider</title>
-    <url>/handycontrol/extend_controls/divider/index.html</url>
-    <content><![CDATA[<p>The dividing line that separates the content.</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Divider</span> : <span class="title">Control</span></span><br></pre></td></tr></table></figure>
-<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-<th>Default Value</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Content</td>
-<td>Content</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Orientation</td>
-<td>Orientation</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>ContentTemplate</td>
-<td>Content Template</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>ContentStringFormat</td>
-<td>Content String Format</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>ContentTemplateSelector</td>
-<td>Content Template</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>LineStroke</td>
-<td>Dividing line color</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>LineStrokeThickness</td>
-<td>Dividing line thickness</td>
-<td>1</td>
-<td></td>
-</tr>
-<tr>
-<td>LineStrokeDashArray</td>
-<td>Dividing line gap</td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">WrapPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;16&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;16&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;300&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;&quot;</span> <span class="attr">Padding</span>=<span class="string">&quot;10,0&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span> <span class="attr">LineStroke</span>=<span class="string">&quot;&#123;DynamicResource DarkPrimaryBrush&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeDashArray</span>=<span class="string">&quot;2,2&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;16&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;300&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;&quot;</span> <span class="attr">HorizontalContentAlignment</span>=<span class="string">&quot;Left&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;&quot;</span> <span class="attr">Padding</span>=<span class="string">&quot;10,0&quot;</span>  <span class="attr">HorizontalContentAlignment</span>=<span class="string">&quot;Right&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span> <span class="attr">LineStroke</span>=<span class="string">&quot;&#123;DynamicResource DarkPrimaryBrush&#125;&quot;</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span> <span class="attr">LineStroke</span>=<span class="string">&quot;&#123;DynamicResource DarkPrimaryBrush&#125;&quot;</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">WrapPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Divider.png" alt="Divider"></p>
-]]></content>
   </entry>
   <entry>
     <title>Drawer</title>
@@ -8896,6 +8896,14 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Image</title>
+    <url>/handycontrol/native_controls/image/index.html</url>
+    <content><![CDATA[<p>In <code>HandyControl</code>, corresponding to the native<code> Image</code> control, only a default control style is provided, and no special style is provided. For personalized customization, users need to customize it themselves</p>
+<div class="note info no-icon">
+            <p>Example:</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;StackPanel Background&#x3D;&quot;LightGray&quot;&gt;</span><br><span class="line">    &lt;Image Source&#x3D;&quot;Resources&#x2F;Images&#x2F;Image_basestyle.png&quot; Margin&#x3D;&quot;0,10&quot;&gt;&lt;&#x2F;Image&gt;</span><br><span class="line">    &lt;Image Source&#x3D;&quot;Resources&#x2F;Images&#x2F;Image_basestyle.png&quot; RenderOptions.BitmapScalingMode&#x3D;&quot;HighQuality&quot; Stretch&#x3D;&quot;Uniform&quot;&gt;&lt;&#x2F;Image&gt;</span><br><span class="line">&lt;&#x2F;StackPanel&gt;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/image.baseStyle.png" alt="image.baseStyle"></p>
+          </div>]]></content>
+  </entry>
+  <entry>
     <title>GroupBox</title>
     <url>/handycontrol/native_controls/groupBox/index.html</url>
     <content><![CDATA[<h1 id="GroupBoxBaseStyle"><a href="#GroupBoxBaseStyle" class="headerlink" title="GroupBoxBaseStyle"></a>GroupBoxBaseStyle</h1><p>The default style of the GroupBox. It is not recommended to use it directly, and it should always be used by other styles as BasedOn.</p>
@@ -8916,14 +8924,6 @@
 <h1 id="GroupBoxOriginal-GroupBoxOriginalBaseStyle-GroupBoxBaseStyle"><a href="#GroupBoxOriginal-GroupBoxOriginalBaseStyle-GroupBoxBaseStyle" class="headerlink" title="GroupBoxOriginal : GroupBoxOriginalBaseStyle : GroupBoxBaseStyle"></a>GroupBoxOriginal : GroupBoxOriginalBaseStyle : GroupBoxBaseStyle</h1><p>Another style of GroupBox is GroupBoxOriginalBaseStyle which is not recommended to be used directly, it should always be used by other styles in the way of BasedOn.</p>
 <div class="note info no-icon">
             <p>example:</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;GroupBox Grid.Row&#x3D;&quot;2&quot; Grid.Column&#x3D;&quot;0&quot; Width&#x3D;&quot;300&quot; Header&#x3D;&quot;&#123;x:Static langs:Lang.TitleDemoStr1&#125;&quot; Margin&#x3D;&quot;16&quot; </span><br><span class="line">    Style&#x3D;&quot;&#123;StaticResource GroupBoxOriginal&#125;&quot; HorizontalContentAlignment&#x3D;&quot;Left&quot;&gt;</span><br><span class="line">    &lt;TextBox&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;GroupBox&gt;</span><br><span class="line">&lt;GroupBox Grid.Row&#x3D;&quot;2&quot; VerticalAlignment&#x3D;&quot;Bottom&quot; Grid.Column&#x3D;&quot;1&quot; Width&#x3D;&quot;300&quot; hc:TitleElement.TitleWidth&#x3D;&quot;100&quot;</span><br><span class="line">    Header&#x3D;&quot;&#123;x:Static langs:Lang.TitleDemoStr1&#125;&quot; Margin&#x3D;&quot;16&quot; Style&#x3D;&quot;&#123;StaticResource GroupBoxOriginal&#125;&quot;</span><br><span class="line">    HorizontalContentAlignment&#x3D;&quot;Left&quot; hc:TitleElement.TitlePlacement&#x3D;&quot;Left&quot;&gt;</span><br><span class="line">    &lt;ComboBox DataContext&#x3D;&quot;&#123;Binding ComboBoxDemo,Source&#x3D;&#123;StaticResource Locator&#125;&#125;&quot; ItemsSource&#x3D;&quot;&#123;Binding DataList&#125;&quot;&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;GroupBox&gt;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Origin.png" alt="GroupBox_Origin"> <img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Origin_left.png" alt="GroupBox_Origin_left"></p>
-          </div>]]></content>
-  </entry>
-  <entry>
-    <title>Image</title>
-    <url>/handycontrol/native_controls/image/index.html</url>
-    <content><![CDATA[<p>In <code>HandyControl</code>, corresponding to the native<code> Image</code> control, only a default control style is provided, and no special style is provided. For personalized customization, users need to customize it themselves</p>
-<div class="note info no-icon">
-            <p>Example:</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;StackPanel Background&#x3D;&quot;LightGray&quot;&gt;</span><br><span class="line">    &lt;Image Source&#x3D;&quot;Resources&#x2F;Images&#x2F;Image_basestyle.png&quot; Margin&#x3D;&quot;0,10&quot;&gt;&lt;&#x2F;Image&gt;</span><br><span class="line">    &lt;Image Source&#x3D;&quot;Resources&#x2F;Images&#x2F;Image_basestyle.png&quot; RenderOptions.BitmapScalingMode&#x3D;&quot;HighQuality&quot; Stretch&#x3D;&quot;Uniform&quot;&gt;&lt;&#x2F;Image&gt;</span><br><span class="line">&lt;&#x2F;StackPanel&gt;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/image.baseStyle.png" alt="image.baseStyle"></p>
           </div>]]></content>
   </entry>
   <entry>
