@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="You can customize all colors and brushes for dark and light themes. Define resourcesExpand ThemeResources and use a ThemeDictionaries Then define ColorPresetResources in the ThemeDictionaries with the">
+  <meta name="description" content="You can customize all colors and brushes for dark and light themes.              All classes related to Theme Located in the HandyControl.Themes namespace.1Using HandyControl.Themes;             Defin">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ColorPresetResources">
 <meta property="og:url" content="http://example.com/handycontrol/theme/colorPreset/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="You can customize all colors and brushes for dark and light themes. Define resourcesExpand ThemeResources and use a ThemeDictionaries Then define ColorPresetResources in the ThemeDictionaries with the">
+<meta property="og:description" content="You can customize all colors and brushes for dark and light themes.              All classes related to Theme Located in the HandyControl.Themes namespace.1Using HandyControl.Themes;             Defin">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-02-16T16:41:31.490Z">
-<meta property="article:modified_time" content="2021-02-16T16:41:31.490Z">
+<meta property="article:published_time" content="2021-03-05T07:22:01.162Z">
+<meta property="article:modified_time" content="2021-03-05T07:22:01.162Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 
@@ -122,9 +122,9 @@
   </li>
         
             
-  <li class="menu-item menu-item-handycontrol---3.1.1">
+  <li class="menu-item menu-item-handycontrol---3.2.0">
 
-    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.1.1</a>
+    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.2.0</a>
 
   </li>
 
@@ -431,6 +431,10 @@
       
       <div class="post-body">
           <p>You can customize all colors and brushes for dark and light themes.</p>
+<div class="note info">
+            <p>All classes related to Theme Located in the <strong>HandyControl.Themes</strong> namespace.</p><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Using HandyControl.Themes;</span><br></pre></td></tr></table></figure>
+          </div>
+
 <h1 id="Define-resources"><a href="#Define-resources" class="headerlink" title="Define resources"></a>Define resources</h1><p>Expand <code>ThemeResources</code> and use a <code>ThemeDictionaries</code> Then define <code>ColorPresetResources</code> in the <code>ThemeDictionaries</code> with the appropriate <code>key</code></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:ThemeResources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ThemeResources.ThemeDictionaries</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">x:Key</span>=<span class="string">&quot;Light&quot;</span> <span class="attr">hc:ThemeDictionary.Key</span>=<span class="string">&quot;Light&quot;</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">hc:ColorPresetResources</span> <span class="attr">TargetTheme</span>=<span class="string">&quot;Light&quot;</span> /&gt;</span></span><br><span class="line">           <span class="tag">&lt;/<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">x:Key</span>=<span class="string">&quot;Dark&quot;</span> <span class="attr">hc:ThemeDictionary.Key</span>=<span class="string">&quot;Dark&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">hc:ColorPresetResources</span> <span class="attr">TargetTheme</span>=<span class="string">&quot;Dark&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:ThemeResources.ThemeDictionaries</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:ThemeResources</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h1 id="Create-Themes"><a href="#Create-Themes" class="headerlink" title="Create Themes"></a>Create Themes</h1><p>Now it’s time to create our own personalization theme.</p>

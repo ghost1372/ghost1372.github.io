@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="for using extension methods you need to add Using HandyControl.Tools.Extension; T   Name Type Remark    AddOnUI ICollection    Between T IComparable   ToInt32 T return int   GetEnumeratorWithIndex IEn">
+  <meta name="description" content="Extension methods Located in the HandyControl.Tools.Extension namespace.1Using HandyControl.Tools.Extension;             ApplicationGet the path of the executable file of the current appl">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Extensions">
 <meta property="og:url" content="http://example.com/handycontrol/persianToolkit/extensions/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="for using extension methods you need to add Using HandyControl.Tools.Extension; T   Name Type Remark    AddOnUI ICollection    Between T IComparable   ToInt32 T return int   GetEnumeratorWithIndex IEn">
+<meta property="og:description" content="Extension methods Located in the HandyControl.Tools.Extension namespace.1Using HandyControl.Tools.Extension;             ApplicationGet the path of the executable file of the current appl">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-02-15T19:27:25.046Z">
-<meta property="article:modified_time" content="2021-02-15T19:27:25.046Z">
+<meta property="article:published_time" content="2021-03-05T16:33:04.737Z">
+<meta property="article:modified_time" content="2021-03-05T16:33:04.737Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 
@@ -122,9 +122,9 @@
   </li>
         
             
-  <li class="menu-item menu-item-handycontrol---3.1.1">
+  <li class="menu-item menu-item-handycontrol---3.2.0">
 
-    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.1.1</a>
+    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.2.0</a>
 
   </li>
 
@@ -412,6 +412,14 @@
 
 
                         
+  <li class="menu-item menu-item-command">
+
+    <a href="/handycontrol/persianToolkit/command/" rel="section"><i class=" fa-fw"></i>Command</a>
+
+  </li>
+
+
+                        
   <li class="menu-item menu-item-dynamicmultilanguage">
 
     <a href="/handycontrol/persianToolkit/dynamicLanguage/" rel="section"><i class=" fa-fw"></i>DynamicMultiLanguage</a>
@@ -452,9 +460,33 @@
 
 
                         
+  <li class="menu-item menu-item-logger">
+
+    <a href="/handycontrol/persianToolkit/logger/" rel="section"><i class=" fa-fw"></i>Logger</a>
+
+  </li>
+
+
+                        
   <li class="menu-item menu-item-maskedtextbox">
 
     <a href="/handycontrol/persianToolkit/maskedTextBox/" rel="section"><i class=" fa-fw"></i>MaskedTextBox</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-markupifextension">
+
+    <a href="/handycontrol/persianToolkit/markupIfExtension/" rel="section"><i class=" fa-fw"></i>MarkupIfExtension</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-optimizedobservablecollection">
+
+    <a href="/handycontrol/persianToolkit/optimizedObservableCollection/" rel="section"><i class=" fa-fw"></i>OptimizedObservableCollection</a>
 
   </li>
 
@@ -515,6 +547,22 @@
   </li>
 
 
+                        
+  <li class="menu-item menu-item-threadsafeobservablecollection">
+
+    <a href="/handycontrol/persianToolkit/threadSafeObservableCollection/" rel="section"><i class=" fa-fw"></i>ThreadSafeObservableCollection</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-undoredoobservablecollection">
+
+    <a href="/handycontrol/persianToolkit/undoRedoObservableCollection/" rel="section"><i class=" fa-fw"></i>UndoRedoObservableCollection</a>
+
+  </li>
+
+
                     </ul>
                     
                 
@@ -558,53 +606,29 @@
       
       
       <div class="post-body">
-          <p>for using extension methods you need to add <code>Using HandyControl.Tools.Extension;</code></p>
-<h1 id="T"><a href="#T" class="headerlink" title="T"></a>T</h1><table>
+          <div class="note info">
+            <p>Extension methods Located in the <strong>HandyControl.Tools.Extension</strong> namespace.</p><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Using HandyControl.Tools.Extension;</span><br></pre></td></tr></table></figure>
+          </div>
+
+<h1 id="Application"><a href="#Application" class="headerlink" title="Application"></a>Application</h1><p>Get the path of the executable file of the current application</p>
+<table>
 <thead>
 <tr>
 <th>Name</th>
-<th>Type</th>
 <th>Remark</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>AddOnUI</td>
-<td>ICollection</td>
+<td>ExecutablePath</td>
 <td></td>
 </tr>
 <tr>
-<td>Between</td>
-<td>T</td>
-<td>IComparable</td>
-</tr>
-<tr>
-<td>ToInt32</td>
-<td>T</td>
-<td>return int</td>
-</tr>
-<tr>
-<td>GetEnumeratorWithIndex</td>
-<td>IEnumerable</td>
+<td>Restart</td>
 <td></td>
-</tr>
-<tr>
-<td>ShapeView</td>
-<td>IEnumerable</td>
-<td>ICollectionView</td>
 </tr>
 </tbody></table>
-<h2 id="AddOnUi"><a href="#AddOnUi" class="headerlink" title="AddOnUi"></a>AddOnUi</h2><p>This Extension Method Help you to Add Items into ObservableCollection from Another Thread</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DataList.AddOnUI(<span class="keyword">new</span> PackagesModel &#123; Name = name, IsInstalled = isInstalled, Version = version, Id = id &#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="Between"><a href="#Between" class="headerlink" title="Between"></a>Between</h2><p>Compare between 2 things</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (myNumber.Between(<span class="number">3</span>,<span class="number">7</span>))</span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ....</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="ToInt32"><a href="#ToInt32" class="headerlink" title="ToInt32"></a>ToInt32</h2><p>Converts any type in to an Int32</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">int</span> number = <span class="string">&quot;123&quot;</span>.ToInt32();</span><br></pre></td></tr></table></figure>
-<p>Converts any type in to an Int32 but if null then returns the default</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">int</span> badNumber = <span class="string">&quot;a&quot;</span>.ToInt32(<span class="number">100</span>); <span class="comment">// Returns 100 since a is nan</span></span><br></pre></td></tr></table></figure>
-<h2 id="GetEnumeratorWithIndex"><a href="#GetEnumeratorWithIndex" class="headerlink" title="GetEnumeratorWithIndex"></a>GetEnumeratorWithIndex</h2><p>This Extension Help you to access item index in foreach loop</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">&quot;ABCDEFG&quot;</span>;</span><br><span class="line"><span class="keyword">foreach</span> (<span class="keyword">var</span> item <span class="keyword">in</span> s.GetEnumeratorWithIndex())</span><br><span class="line">&#123;</span><br><span class="line">    System.Console.WriteLine(<span class="string">&quot;Character: &#123;0&#125;, Position: &#123;1&#125;&quot;</span>, item.Value, item.Index);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="ShapeView"><a href="#ShapeView" class="headerlink" title="ShapeView"></a>ShapeView</h2><p>This Extension Help you to Easily implement search, sort, and group operations</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">IEnumerable&lt;Person&gt; datalist;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Using query comprehension</span></span><br><span class="line"><span class="keyword">var</span> query =</span><br><span class="line">    <span class="keyword">from</span> p <span class="keyword">in</span> datalist.ShapeView()</span><br><span class="line">    <span class="keyword">where</span> p.Age &gt;= <span class="number">18</span></span><br><span class="line">    <span class="keyword">orderby</span> p.LastName, p.FirstName</span><br><span class="line">    <span class="keyword">group</span> p <span class="keyword">by</span> p.Country;</span><br><span class="line"></span><br><span class="line">query.Apply();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Using extension methods</span></span><br><span class="line">datalist.ShapeView()</span><br><span class="line">      .Where(p =&gt; p.Age &gt;= <span class="number">18</span>)</span><br><span class="line">      .OrderBy(p =&gt; p.LastName)</span><br><span class="line">      .ThenBy(p =&gt; p.FirstName)</span><br><span class="line">      .GroupBy(p =&gt; p.Gender)</span><br><span class="line">      .Apply();</span><br><span class="line"></span><br><span class="line"><span class="comment">//clear</span></span><br><span class="line">datalist.ShapeView().ClearAll().Apply();</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Application app = <span class="keyword">new</span> Application();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> location = app.ExecutablePath();</span><br><span class="line"></span><br><span class="line"><span class="comment">//Restart</span></span><br><span class="line">app.Restart();</span><br></pre></td></tr></table></figure>
+
 <h1 id="String"><a href="#String" class="headerlink" title="String"></a>String</h1><table>
 <thead>
 <tr>
@@ -644,6 +668,14 @@
 <td>ConvertToEnglishDigit</td>
 <td></td>
 </tr>
+<tr>
+<td>ChangeEncoding</td>
+<td></td>
+</tr>
+<tr>
+<td>GetBytes</td>
+<td></td>
+</tr>
 </tbody></table>
 <h2 id="Format"><a href="#Format" class="headerlink" title="Format"></a>Format</h2><p>Enable quick and more natural string.Format calls</p>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">&quot;The co-ordinate is (&#123;0&#125;, &#123;1&#125;)&quot;</span>.Format(point.X, point.Y);</span><br></pre></td></tr></table></figure>
@@ -662,53 +694,10 @@
 <p>There is also an option to choose whether to truncate the string from the beginning (TruncateFrom.Left) or the end (TruncateFrom.Right). Default is the right as shown in the examples above. The examples below show how to truncate from the beginning of the string:</p>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;Long text to truncate&quot;</span>.Truncate(<span class="number">10</span>, Truncator.FixedLength, TruncateFrom.Left) =&gt; <span class="string">&quot;… truncate&quot;</span></span><br><span class="line"><span class="string">&quot;Long text to truncate&quot;</span>.Truncate(<span class="number">10</span>, <span class="string">&quot;---&quot;</span>, Truncator.FixedLength, TruncateFrom.Left) =&gt; <span class="string">&quot;---runcate&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;Long text to truncate&quot;</span>.Truncate(<span class="number">10</span>, Truncator.FixedNumberOfCharacters, TruncateFrom.Left) =&gt; <span class="string">&quot;…o truncate&quot;</span></span><br><span class="line"><span class="string">&quot;Long text to truncate&quot;</span>.Truncate(<span class="number">16</span>, <span class="string">&quot;---&quot;</span>, Truncator.FixedNumberOfCharacters, TruncateFrom.Left) =&gt; <span class="string">&quot;---ext to truncate&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;Long text to truncate&quot;</span>.Truncate(<span class="number">2</span>, Truncator.FixedNumberOfWords, TruncateFrom.Left) =&gt; <span class="string">&quot;…to truncate&quot;</span></span><br><span class="line"><span class="string">&quot;Long text to truncate&quot;</span>.Truncate(<span class="number">2</span>, <span class="string">&quot;---&quot;</span>, Truncator.FixedNumberOfWords, TruncateFrom.Left) =&gt; <span class="string">&quot;---to truncate&quot;</span></span><br></pre></td></tr></table></figure>
 <h2 id="Digits-and-Char"><a href="#Digits-and-Char" class="headerlink" title="Digits and Char"></a>Digits and Char</h2><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;5&quot;</span>.ConvertToPersianDigit(); <span class="comment">// result: ۵</span></span><br><span class="line"><span class="string">&quot;y&quot;</span>.ConvertToPersianChar(); <span class="comment">// result: غ</span></span><br><span class="line"><span class="string">&quot;۵&quot;</span>.ConvertToEnglishDigit(); <span class="comment">// result 5</span></span><br></pre></td></tr></table></figure>
-<h1 id="Application"><a href="#Application" class="headerlink" title="Application"></a>Application</h1><p>Get the path of the executable file of the current application</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Remark</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ExecutablePath</td>
-<td></td>
-</tr>
-<tr>
-<td>Restart</td>
-<td></td>
-</tr>
-</tbody></table>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Application app = <span class="keyword">new</span> Application();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> location = app.ExecutablePath();</span><br><span class="line"></span><br><span class="line"><span class="comment">//Restart</span></span><br><span class="line">app.Restart();</span><br></pre></td></tr></table></figure>
-<h1 id="MergedDictionary"><a href="#MergedDictionary" class="headerlink" title="MergedDictionary"></a>MergedDictionary</h1><table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Remark</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>AddIfNotNull</td>
-<td></td>
-</tr>
-<tr>
-<td>RemoveIfNotNull</td>
-<td></td>
-</tr>
-<tr>
-<td>InsertOrReplace</td>
-<td></td>
-</tr>
-<tr>
-<td>RemoveAll</td>
-<td></td>
-</tr>
-<tr>
-<td>InsertIfNotExists</td>
-<td></td>
-</tr>
-</tbody></table>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ResourceDictioanry.RemoveAll();</span><br></pre></td></tr></table></figure>
+<h2 id="ChangeEncoding"><a href="#ChangeEncoding" class="headerlink" title="ChangeEncoding"></a>ChangeEncoding</h2><p>Change the Encoding of a string</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> test = <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> text = test.ChangeEncoding(Encoding.ASCII, Encoding.UTF8);</span><br></pre></td></tr></table></figure>
+<h2 id="GetBytes"><a href="#GetBytes" class="headerlink" title="GetBytes"></a>GetBytes</h2><p>Get bytes from string</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> test = <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> text = test.GetBytes();</span><br></pre></td></tr></table></figure>
 <h1 id="DateTime"><a href="#DateTime" class="headerlink" title="DateTime"></a>DateTime</h1><table>
 <thead>
 <tr>
@@ -749,6 +738,216 @@
 </tr>
 </tbody></table>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Console.WriteLine(DateTime.Now.ToShamsiDate());</span><br><span class="line"><span class="comment">//Result : 1398/11/03</span></span><br><span class="line"></span><br><span class="line">Console.WriteLine(DateTime.Now.ToShortShamsiDate());</span><br><span class="line"><span class="comment">//Result : 98/11/03</span></span><br><span class="line"></span><br><span class="line">Console.WriteLine(DateTime.Now.ToLongShamsiDate());</span><br><span class="line"><span class="comment">//Result : پنجشنبه 3 بهمن 1398</span></span><br><span class="line"></span><br><span class="line">Console.WriteLine(DateTime.Now.GetDiffrenceToNow());</span><br><span class="line"></span><br><span class="line">Console.WriteLine(DateTime.Now.ToGregorianDate());</span><br><span class="line"><span class="comment">// Result : 16/01/2021</span></span><br><span class="line"></span><br><span class="line">Console.WriteLine(PersianDateTime.Now.ToGregorianDate());</span><br><span class="line"><span class="comment">// Result : 16/01/2021</span></span><br></pre></td></tr></table></figure>
+<h1 id="EnumerableExtension"><a href="#EnumerableExtension" class="headerlink" title="EnumerableExtension"></a>EnumerableExtension</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GetEnumeratorWithIndex</td>
+<td>IEnumerable</td>
+<td></td>
+</tr>
+<tr>
+<td>ShapeView</td>
+<td>IEnumerable</td>
+<td></td>
+</tr>
+<tr>
+<td>ForEach</td>
+<td>IEnumerable</td>
+<td></td>
+</tr>
+<tr>
+<td>ReverseForEach</td>
+<td>IEnumerable</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="GetEnumeratorWithIndex"><a href="#GetEnumeratorWithIndex" class="headerlink" title="GetEnumeratorWithIndex"></a>GetEnumeratorWithIndex</h2><p>This Extension Help you to access item index in foreach loop</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">&quot;ABCDEFG&quot;</span>;</span><br><span class="line"><span class="keyword">foreach</span> (<span class="keyword">var</span> item <span class="keyword">in</span> s.GetEnumeratorWithIndex())</span><br><span class="line">&#123;</span><br><span class="line">    System.Console.WriteLine(<span class="string">&quot;Character: &#123;0&#125;, Position: &#123;1&#125;&quot;</span>, item.Value, item.Index);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="ShapeView"><a href="#ShapeView" class="headerlink" title="ShapeView"></a>ShapeView</h2><p>This Extension Help you to Easily implement search, sort, and group operations</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">IEnumerable&lt;Person&gt; datalist;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Using query comprehension</span></span><br><span class="line"><span class="keyword">var</span> query =</span><br><span class="line">    <span class="keyword">from</span> p <span class="keyword">in</span> datalist.ShapeView()</span><br><span class="line">    <span class="keyword">where</span> p.Age &gt;= <span class="number">18</span></span><br><span class="line">    <span class="keyword">orderby</span> p.LastName, p.FirstName</span><br><span class="line">    <span class="keyword">group</span> p <span class="keyword">by</span> p.Country;</span><br><span class="line"></span><br><span class="line">query.Apply();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Using extension methods</span></span><br><span class="line">datalist.ShapeView()</span><br><span class="line">      .Where(p =&gt; p.Age &gt;= <span class="number">18</span>)</span><br><span class="line">      .OrderBy(p =&gt; p.LastName)</span><br><span class="line">      .ThenBy(p =&gt; p.FirstName)</span><br><span class="line">      .GroupBy(p =&gt; p.Gender)</span><br><span class="line">      .Apply();</span><br><span class="line"></span><br><span class="line"><span class="comment">//clear</span></span><br><span class="line">datalist.ShapeView().ClearAll().Apply();</span><br></pre></td></tr></table></figure>
+<h2 id="ForEach"><a href="#ForEach" class="headerlink" title="ForEach"></a>ForEach</h2><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">actions.ForEach(action =&gt; action.DoSomething());</span><br></pre></td></tr></table></figure>
+<h2 id="ReverseForEach"><a href="#ReverseForEach" class="headerlink" title="ReverseForEach"></a>ReverseForEach</h2><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">actions.ReverseForEach(action =&gt; action.DoSomething());</span><br></pre></td></tr></table></figure>
+<h1 id="CollectionExtension"><a href="#CollectionExtension" class="headerlink" title="CollectionExtension"></a>CollectionExtension</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AddOnUI</td>
+<td>ICollection</td>
+<td></td>
+</tr>
+<tr>
+<td>Shape</td>
+<td>ICollectionView</td>
+<td></td>
+</tr>
+<tr>
+<td>Clone</td>
+<td>ObservableCollection</td>
+<td></td>
+</tr>
+<tr>
+<td>AddIfNotExists</td>
+<td>ObservableCollection</td>
+<td></td>
+</tr>
+<tr>
+<td>UpdateValue</td>
+<td>ObservableCollection</td>
+<td></td>
+</tr>
+<tr>
+<td>DeleteIfExists</td>
+<td>ObservableCollection</td>
+<td></td>
+</tr>
+<tr>
+<td>AreValuesNull</td>
+<td>ObservableCollection</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="AddOnUI"><a href="#AddOnUI" class="headerlink" title="AddOnUI"></a>AddOnUI</h2><p>This Extension Method Help you to Add Items into ObservableCollection from Another Thread</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DataList.AddOnUI(<span class="keyword">new</span> PackagesModel &#123; Name = name, IsInstalled = isInstalled, Version = version, Id = id &#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="Shape"><a href="#Shape" class="headerlink" title="Shape"></a>Shape</h2><p>This Extension Help you to Easily implement search, sort, and group operations</p>
+<p>same as <strong>ShapeView</strong></p>
+<h2 id="Clone"><a href="#Clone" class="headerlink" title="Clone"></a>Clone</h2><p>Clones the observable collection.</p>
+<h2 id="AddIfNotExists"><a href="#AddIfNotExists" class="headerlink" title="AddIfNotExists"></a>AddIfNotExists</h2><p>Adds a value if it doesn’t exist yet.</p>
+<h2 id="UpdateValue"><a href="#UpdateValue" class="headerlink" title="UpdateValue"></a>UpdateValue</h2><p>Updates a value.</p>
+<h2 id="DeleteIfExists"><a href="#DeleteIfExists" class="headerlink" title="DeleteIfExists"></a>DeleteIfExists</h2><p>Deletes a value if it exists.</p>
+<h2 id="AreValuesNull"><a href="#AreValuesNull" class="headerlink" title="AreValuesNull"></a>AreValuesNull</h2><p>Checks whether all values are null or not.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> observableCollection = <span class="keyword">new</span> ObservableCollection&lt;<span class="built_in">string</span>&gt;();</span><br><span class="line"></span><br><span class="line">observableCollection.AddIfNotExists(<span class="string">&quot;a&quot;</span>);</span><br><span class="line"></span><br><span class="line">observableCollection.DeleteIfExists(<span class="string">&quot;a&quot;</span>);</span><br><span class="line"></span><br><span class="line">observableCollection.UpdateValue(<span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>);</span><br><span class="line"></span><br><span class="line">Debug.WriteLine(observableCollection.AreValuesNull());</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> observableCollection1 = <span class="keyword">new</span> ObservableCollection&lt;<span class="built_in">string</span>&gt;();</span><br><span class="line"><span class="keyword">var</span> observableCollection2 = observableCollection1.Clone();</span><br></pre></td></tr></table></figure>
+<h1 id="ListExtension"><a href="#ListExtension" class="headerlink" title="ListExtension"></a>ListExtension</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Clone</td>
+<td>List</td>
+<td></td>
+</tr>
+<tr>
+<td>AddIfNotExists</td>
+<td>List</td>
+<td></td>
+</tr>
+<tr>
+<td>UpdateValue</td>
+<td>List</td>
+<td></td>
+</tr>
+<tr>
+<td>DeleteIfExists</td>
+<td>List</td>
+<td></td>
+</tr>
+<tr>
+<td>AreValuesNull</td>
+<td>List</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="Clone-1"><a href="#Clone-1" class="headerlink" title="Clone"></a>Clone</h2><p>Clones the list.</p>
+<h2 id="AddIfNotExists-1"><a href="#AddIfNotExists-1" class="headerlink" title="AddIfNotExists"></a>AddIfNotExists</h2><p>Adds a value if it doesn’t exist yet.</p>
+<h2 id="UpdateValue-1"><a href="#UpdateValue-1" class="headerlink" title="UpdateValue"></a>UpdateValue</h2><p>Updates a value.</p>
+<h2 id="DeleteIfExists-1"><a href="#DeleteIfExists-1" class="headerlink" title="DeleteIfExists"></a>DeleteIfExists</h2><p>Deletes a value if it exists.</p>
+<h2 id="AreValuesNull-1"><a href="#AreValuesNull-1" class="headerlink" title="AreValuesNull"></a>AreValuesNull</h2><p>Checks whether all values are null or not.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> list = <span class="keyword">new</span> List&lt;<span class="built_in">string</span>&gt;();</span><br><span class="line">list.AddIfNotExists(<span class="string">&quot;a&quot;</span>);</span><br><span class="line"></span><br><span class="line">list.DeleteIfExists(<span class="string">&quot;a&quot;</span>);</span><br><span class="line"></span><br><span class="line">list.UpdateValue(<span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>);</span><br><span class="line"></span><br><span class="line">Debug.WriteLine(list.AreValuesNull());</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> list1 = <span class="keyword">new</span> List&lt;<span class="built_in">string</span>&gt;();</span><br><span class="line"><span class="keyword">var</span> list2 = list1.Clone();</span><br></pre></td></tr></table></figure>
+<h1 id="DictionaryExtension"><a href="#DictionaryExtension" class="headerlink" title="DictionaryExtension"></a>DictionaryExtension</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Clone</td>
+<td>Dictionary</td>
+<td></td>
+</tr>
+<tr>
+<td>AddIfNotExists</td>
+<td>Dictionary</td>
+<td></td>
+</tr>
+<tr>
+<td>Update</td>
+<td>Dictionary</td>
+<td></td>
+</tr>
+<tr>
+<td>DeleteIfExistsKey</td>
+<td>Dictionary</td>
+<td></td>
+</tr>
+<tr>
+<td>DeleteIfExistsValue</td>
+<td>Dictionary</td>
+<td></td>
+</tr>
+<tr>
+<td>AreValuesNull</td>
+<td>Dictionary</td>
+<td></td>
+</tr>
+<tr>
+<td>AreKeysNull</td>
+<td>Dictionary</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="Clone-2"><a href="#Clone-2" class="headerlink" title="Clone"></a>Clone</h2><p>Clones the dictionary.</p>
+<h2 id="AddIfNotExists-2"><a href="#AddIfNotExists-2" class="headerlink" title="AddIfNotExists"></a>AddIfNotExists</h2><p>Adds a value if it doesn’t exist yet.</p>
+<h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><p>Updates a value.</p>
+<h2 id="DeleteIfExistsKey"><a href="#DeleteIfExistsKey" class="headerlink" title="DeleteIfExistsKey"></a>DeleteIfExistsKey</h2><p>Deletes the key if it exists.</p>
+<h2 id="DeleteIfExistsValue"><a href="#DeleteIfExistsValue" class="headerlink" title="DeleteIfExistsValue"></a>DeleteIfExistsValue</h2><p>Deletes a value if it exists.</p>
+<h2 id="AreValuesNull-2"><a href="#AreValuesNull-2" class="headerlink" title="AreValuesNull"></a>AreValuesNull</h2><p>Checks whether all values are null or not.</p>
+<h2 id="AreKeysNull"><a href="#AreKeysNull" class="headerlink" title="AreKeysNull"></a>AreKeysNull</h2><p>Checks whether all keys are null or not.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> dictionary = <span class="keyword">new</span> Dictionary&lt;<span class="built_in">string</span>, <span class="built_in">string</span>&gt;();</span><br><span class="line"></span><br><span class="line">dictionary.AddIfNotExists(<span class="string">&quot;a&quot;</span>, <span class="string">&quot;abc&quot;</span>);</span><br><span class="line"></span><br><span class="line">dictionary.Update(<span class="string">&quot;b&quot;</span>, <span class="string">&quot;defg&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> pair = dictionary.First(x =&gt; x.Key.Equals(<span class="string">&quot;b&quot;</span>));</span><br><span class="line">dictionary.Update(pair);</span><br><span class="line"></span><br><span class="line">dictionary.DeleteIfExistsKey(<span class="string">&quot;a&quot;</span>);</span><br><span class="line"></span><br><span class="line">dictionary.DeleteIfExistsValue(<span class="string">&quot;defg&quot;</span>);</span><br><span class="line"></span><br><span class="line">Debug.WriteLine(dictionary.AreKeysNull());</span><br><span class="line">Debug.WriteLine(dictionary.AreValuesNull());</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> dict1 = <span class="keyword">new</span> Dictionary&lt;<span class="built_in">string</span>, <span class="built_in">string</span>&gt;();</span><br><span class="line"><span class="keyword">var</span> dict2 = dict1.Clone();</span><br></pre></td></tr></table></figure>
+<h1 id="MergedDictionary"><a href="#MergedDictionary" class="headerlink" title="MergedDictionary"></a>MergedDictionary</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AddIfNotNull</td>
+<td></td>
+</tr>
+<tr>
+<td>RemoveIfNotNull</td>
+<td></td>
+</tr>
+<tr>
+<td>InsertOrReplace</td>
+<td></td>
+</tr>
+<tr>
+<td>RemoveAll</td>
+<td></td>
+</tr>
+<tr>
+<td>InsertIfNotExists</td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ResourceDictioanry.RemoveAll();</span><br></pre></td></tr></table></figure>
       </div>
       
       
@@ -816,7 +1015,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#T"><span class="nav-number">1.</span> <span class="nav-text">T</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#AddOnUi"><span class="nav-number">1.1.</span> <span class="nav-text">AddOnUi</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Between"><span class="nav-number">1.2.</span> <span class="nav-text">Between</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ToInt32"><span class="nav-number">1.3.</span> <span class="nav-text">ToInt32</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GetEnumeratorWithIndex"><span class="nav-number">1.4.</span> <span class="nav-text">GetEnumeratorWithIndex</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ShapeView"><span class="nav-number">1.5.</span> <span class="nav-text">ShapeView</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#String"><span class="nav-number">2.</span> <span class="nav-text">String</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Format"><span class="nav-number">2.1.</span> <span class="nav-text">Format</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cryptography"><span class="nav-number">2.2.</span> <span class="nav-text">Cryptography</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Transform"><span class="nav-number">2.3.</span> <span class="nav-text">Transform</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Truncate"><span class="nav-number">2.4.</span> <span class="nav-text">Truncate</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Digits-and-Char"><span class="nav-number">2.5.</span> <span class="nav-text">Digits and Char</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Application"><span class="nav-number">3.</span> <span class="nav-text">Application</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MergedDictionary"><span class="nav-number">4.</span> <span class="nav-text">MergedDictionary</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DateTime"><span class="nav-number">5.</span> <span class="nav-text">DateTime</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Application"><span class="nav-number">1.</span> <span class="nav-text">Application</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#String"><span class="nav-number">2.</span> <span class="nav-text">String</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Format"><span class="nav-number">2.1.</span> <span class="nav-text">Format</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cryptography"><span class="nav-number">2.2.</span> <span class="nav-text">Cryptography</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Transform"><span class="nav-number">2.3.</span> <span class="nav-text">Transform</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Truncate"><span class="nav-number">2.4.</span> <span class="nav-text">Truncate</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Digits-and-Char"><span class="nav-number">2.5.</span> <span class="nav-text">Digits and Char</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ChangeEncoding"><span class="nav-number">2.6.</span> <span class="nav-text">ChangeEncoding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GetBytes"><span class="nav-number">2.7.</span> <span class="nav-text">GetBytes</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DateTime"><span class="nav-number">3.</span> <span class="nav-text">DateTime</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#EnumerableExtension"><span class="nav-number">4.</span> <span class="nav-text">EnumerableExtension</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#GetEnumeratorWithIndex"><span class="nav-number">4.1.</span> <span class="nav-text">GetEnumeratorWithIndex</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ShapeView"><span class="nav-number">4.2.</span> <span class="nav-text">ShapeView</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ForEach"><span class="nav-number">4.3.</span> <span class="nav-text">ForEach</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ReverseForEach"><span class="nav-number">4.4.</span> <span class="nav-text">ReverseForEach</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CollectionExtension"><span class="nav-number">5.</span> <span class="nav-text">CollectionExtension</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#AddOnUI"><span class="nav-number">5.1.</span> <span class="nav-text">AddOnUI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shape"><span class="nav-number">5.2.</span> <span class="nav-text">Shape</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Clone"><span class="nav-number">5.3.</span> <span class="nav-text">Clone</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AddIfNotExists"><span class="nav-number">5.4.</span> <span class="nav-text">AddIfNotExists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UpdateValue"><span class="nav-number">5.5.</span> <span class="nav-text">UpdateValue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DeleteIfExists"><span class="nav-number">5.6.</span> <span class="nav-text">DeleteIfExists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AreValuesNull"><span class="nav-number">5.7.</span> <span class="nav-text">AreValuesNull</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ListExtension"><span class="nav-number">6.</span> <span class="nav-text">ListExtension</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Clone-1"><span class="nav-number">6.1.</span> <span class="nav-text">Clone</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AddIfNotExists-1"><span class="nav-number">6.2.</span> <span class="nav-text">AddIfNotExists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UpdateValue-1"><span class="nav-number">6.3.</span> <span class="nav-text">UpdateValue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DeleteIfExists-1"><span class="nav-number">6.4.</span> <span class="nav-text">DeleteIfExists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AreValuesNull-1"><span class="nav-number">6.5.</span> <span class="nav-text">AreValuesNull</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DictionaryExtension"><span class="nav-number">7.</span> <span class="nav-text">DictionaryExtension</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Clone-2"><span class="nav-number">7.1.</span> <span class="nav-text">Clone</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AddIfNotExists-2"><span class="nav-number">7.2.</span> <span class="nav-text">AddIfNotExists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Update"><span class="nav-number">7.3.</span> <span class="nav-text">Update</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DeleteIfExistsKey"><span class="nav-number">7.4.</span> <span class="nav-text">DeleteIfExistsKey</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DeleteIfExistsValue"><span class="nav-number">7.5.</span> <span class="nav-text">DeleteIfExistsValue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AreValuesNull-2"><span class="nav-number">7.6.</span> <span class="nav-text">AreValuesNull</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AreKeysNull"><span class="nav-number">7.7.</span> <span class="nav-text">AreKeysNull</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MergedDictionary"><span class="nav-number">8.</span> <span class="nav-text">MergedDictionary</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

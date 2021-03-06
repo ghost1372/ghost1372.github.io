@@ -20,17 +20,17 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="This documentation is for the HandyControls (unofficial version) If you are looking for the HandyControl (official version) documentation, read here How to Address Resource?123456&lt;ResourceDictionar">
+  <meta name="description" content="This documentation is for the HandyControls (unofficial version) If you are looking for the HandyControl (official version) documentation, read here              All classes related to Theme Located i">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Theme">
 <meta property="og:url" content="http://example.com/handycontrol/theme/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="This documentation is for the HandyControls (unofficial version) If you are looking for the HandyControl (official version) documentation, read here How to Address Resource?123456&lt;ResourceDictionar">
+<meta property="og:description" content="This documentation is for the HandyControls (unofficial version) If you are looking for the HandyControl (official version) documentation, read here              All classes related to Theme Located i">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9213496/104836729-20619600-58c5-11eb-8d53-4b0485363016.gif">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9213496/101981825-d1509180-3c84-11eb-9dd9-61911ce84d1b.gif">
-<meta property="article:published_time" content="2021-02-15T10:56:15.516Z">
-<meta property="article:modified_time" content="2021-02-15T10:56:15.516Z">
+<meta property="article:published_time" content="2021-03-05T07:21:14.668Z">
+<meta property="article:modified_time" content="2021-03-05T07:21:14.668Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://user-images.githubusercontent.com/9213496/104836729-20619600-58c5-11eb-8d53-4b0485363016.gif">
@@ -125,9 +125,9 @@
   </li>
         
             
-  <li class="menu-item menu-item-handycontrol---3.1.1">
+  <li class="menu-item menu-item-handycontrol---3.2.0">
 
-    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.1.1</a>
+    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.2.0</a>
 
   </li>
 
@@ -433,6 +433,10 @@
       
       <div class="post-body">
           <p>This documentation is for the <code>HandyControls</code> (unofficial version) If you are looking for the <code>HandyControl</code> (official version) documentation, read <a target="_blank" rel="noopener" href="https://ghost1372.github.io/handycontrol/theme/handyControl">here</a></p>
+<div class="note info">
+            <p>All classes related to Theme Located in the <strong>HandyControl.Themes</strong> namespace.</p><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Using HandyControl.Themes;</span><br></pre></td></tr></table></figure>
+          </div>
+
 <h1 id="How-to-Address-Resource"><a href="#How-to-Address-Resource" class="headerlink" title="How to Address Resource?"></a>How to Address Resource?</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">hc:ThemeResources</span>/&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">hc:Theme</span>/&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ResourceDictionary</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h1 id="Set-the-application-theme"><a href="#Set-the-application-theme" class="headerlink" title="Set the application theme"></a>Set the application theme</h1><p>To override the default settings, set properties on the <code>ThemeResources</code> class in App.xaml. For example:</p>
 <h2 id="Xaml"><a href="#Xaml" class="headerlink" title="Xaml"></a>Xaml</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:ThemeResources</span> <span class="attr">RequestedTheme</span>=<span class="string">&quot;Dark&quot;</span> <span class="attr">AccentColor</span>=<span class="string">&quot;Red&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
