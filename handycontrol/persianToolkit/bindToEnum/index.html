@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="with this extension you can bind Enum to itemsources example: 123456789public enum Status   &amp;#123;       Horrible,       Bad,       SoSo,       Good,       Better,       Best   &amp;#125; 12&lt;hc:ComboBo">
+  <meta name="description" content="with this extension you can bind Enum to itemsources Enum123456789public enum Status&amp;#123;    Horrible,    Bad,    SoSo,    Good,    Better,    Best&amp;#125; 1&lt;hc:ComboBox ItemsSource&#x3D;&quot;&amp;#123;Bind">
 <meta property="og:type" content="website">
 <meta property="og:title" content="BindToEnum">
 <meta property="og:url" content="http://example.com/handycontrol/persianToolkit/bindToEnum/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="with this extension you can bind Enum to itemsources example: 123456789public enum Status   &amp;#123;       Horrible,       Bad,       SoSo,       Good,       Better,       Best   &amp;#125; 12&lt;hc:ComboBo">
+<meta property="og:description" content="with this extension you can bind Enum to itemsources Enum123456789public enum Status&amp;#123;    Horrible,    Bad,    SoSo,    Good,    Better,    Best&amp;#125; 1&lt;hc:ComboBox ItemsSource&#x3D;&quot;&amp;#123;Bind">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-25T11:31:48.571Z">
-<meta property="article:modified_time" content="2020-08-13T08:57:36.707Z">
+<meta property="article:published_time" content="2021-03-23T10:25:17.880Z">
+<meta property="article:modified_time" content="2021-03-23T10:25:17.880Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 
@@ -122,9 +122,9 @@
   </li>
         
             
-  <li class="menu-item menu-item-handycontrol---3.2.0">
+  <li class="menu-item menu-item-handycontrol---3.3.0">
 
-    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.2.0</a>
+    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.3.0</a>
 
   </li>
 
@@ -420,9 +420,9 @@
 
 
                         
-  <li class="menu-item menu-item-dynamicmultilanguage">
+  <li class="menu-item menu-item-dynamiclanguage">
 
-    <a href="/handycontrol/persianToolkit/dynamicLanguage/" rel="section"><i class=" fa-fw"></i>DynamicMultiLanguage</a>
+    <a href="/handycontrol/persianToolkit/dynamicLanguage/" rel="section"><i class=" fa-fw"></i>DynamicLanguage</a>
 
   </li>
 
@@ -607,14 +607,31 @@
       
       <div class="post-body">
           <p>with this extension you can bind Enum to itemsources</p>
-<p>example:</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="built_in">enum</span> Status</span><br><span class="line">   &#123;</span><br><span class="line">       Horrible,</span><br><span class="line">       Bad,</span><br><span class="line">       SoSo,</span><br><span class="line">       Good,</span><br><span class="line">       Better,</span><br><span class="line">       Best</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:ComboBox</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding Source=&#123;hc:EnumBindingSource &#123;x:Type local:Status&#125;&#125;&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span> /&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<div class="note info">
+<h1 id="Enum"><a href="#Enum" class="headerlink" title="Enum"></a>Enum</h1><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="built_in">enum</span> Status</span><br><span class="line">&#123;</span><br><span class="line">    Horrible,</span><br><span class="line">    Bad,</span><br><span class="line">    SoSo,</span><br><span class="line">    Good,</span><br><span class="line">    Better,</span><br><span class="line">    Best</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:ComboBox</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding Source=&#123;hc:EnumBindingSource &#123;x:Type local:Status&#125;&#125;&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h1><div class="note info">
             <p>you can create description for enum and bind itemsources to description, you only need to change enum class like this:</p>
           </div>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TypeConverter(typeof(EnumDescriptionTypeConverter))</span>]</span><br><span class="line">   <span class="keyword">public</span> <span class="built_in">enum</span> Status</span><br><span class="line">   &#123;</span><br><span class="line">       [<span class="meta">Description(<span class="meta-string">&quot;This is horrible&quot;</span>)</span>]</span><br><span class="line">       Horrible,</span><br><span class="line">       [<span class="meta">Description(<span class="meta-string">&quot;This is bad&quot;</span>)</span>]</span><br><span class="line">       Bad,</span><br><span class="line">       [<span class="meta">Description(<span class="meta-string">&quot;This is so so&quot;</span>)</span>]</span><br><span class="line">       SoSo,</span><br><span class="line">       [<span class="meta">Description(<span class="meta-string">&quot;This is good&quot;</span>)</span>]</span><br><span class="line">       Good,</span><br><span class="line">       [<span class="meta">Description(<span class="meta-string">&quot;This is better&quot;</span>)</span>]</span><br><span class="line">       Better,</span><br><span class="line">       [<span class="meta">Description(<span class="meta-string">&quot;This is best&quot;</span>)</span>]</span><br><span class="line">       Best</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TypeConverter(typeof(EnumDescriptionTypeConverter))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="built_in">enum</span> Status</span><br><span class="line">&#123;</span><br><span class="line">    [<span class="meta">Description(<span class="meta-string">&quot;This is horrible&quot;</span>)</span>]</span><br><span class="line">    Horrible,</span><br><span class="line">    [<span class="meta">Description(<span class="meta-string">&quot;This is bad&quot;</span>)</span>]</span><br><span class="line">    Bad,</span><br><span class="line">    [<span class="meta">Description(<span class="meta-string">&quot;This is so so&quot;</span>)</span>]</span><br><span class="line">    SoSo,</span><br><span class="line">    [<span class="meta">Description(<span class="meta-string">&quot;This is good&quot;</span>)</span>]</span><br><span class="line">    Good,</span><br><span class="line">    [<span class="meta">Description(<span class="meta-string">&quot;This is better&quot;</span>)</span>]</span><br><span class="line">    Better,</span><br><span class="line">    [<span class="meta">Description(<span class="meta-string">&quot;This is best&quot;</span>)</span>]</span><br><span class="line">    Best</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info">
+            <p>If you are using a built-in or third party enums and you can not add a Description attribute to it, you can use this solution:</p>
+          </div>
+
+<ul>
+<li>Create an string[] Array and create your description in order</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Window.Resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">x:Array</span> <span class="attr">Type</span>=<span class="string">&quot;sys:String&quot;</span> <span class="attr">x:Key</span>=<span class="string">&quot;myDescription&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">sys:String</span>&gt;</span>Left To Right Description<span class="tag">&lt;/<span class="name">sys:String</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">sys:String</span>&gt;</span>Right To Left Description<span class="tag">&lt;/<span class="name">sys:String</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">x:Array</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Window.Resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>Pass your Description Array to EnumBindingSource</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:ComboBox</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding Source=&#123;hc:EnumBindingSource &#123;x:Type FlowDirection&#125;, &#123;StaticResource myDescription&#125;&#125;&#125;&quot;</span> <span class="attr">DisplayMemberPath</span>=<span class="string">&quot;Value&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<div class="note info">
+            <p>Do not forget that in this case you must use DisplayMemberPath.<br>If <code>DisplayMemberPath</code> is set to <code>Value</code>, it displays the <code>Description</code> value and if <code>DisplayMemberPath</code> is set to <code>Key</code>, it displays <code>Enum</code> itself.</p>
+          </div>
+
+<h1 id="Localized-Description"><a href="#Localized-Description" class="headerlink" title="Localized Description"></a>Localized Description</h1><p>you can use this attribute for localize enum</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TypeConverter(typeof(EnumDescriptionTypeConverter))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="built_in">enum</span> Status</span><br><span class="line">&#123;</span><br><span class="line">    [<span class="meta">LocalizedDescription(<span class="meta-string">&quot;Good&quot;</span>, typeof(LangResources))</span>]</span><br><span class="line">    Good,</span><br><span class="line">    [<span class="meta">LocalizedDescription(<span class="meta-string">&quot;Better&quot;</span>, typeof(LangResources))</span>]</span><br><span class="line">    Better,</span><br><span class="line">    [<span class="meta">LocalizedDescription(<span class="meta-string">&quot;Best&quot;</span>, typeof(LangResources))</span>]</span><br><span class="line">    Best</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       </div>
       
       
@@ -682,6 +699,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Enum"><span class="nav-number">1.</span> <span class="nav-text">Enum</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Description"><span class="nav-number">2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Localized-Description"><span class="nav-number">3.</span> <span class="nav-text">Localized Description</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
