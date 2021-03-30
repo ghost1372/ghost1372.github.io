@@ -11490,7 +11490,7 @@
 <td></td>
 </tr>
 </tbody></table>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Application app = <span class="keyword">new</span> Application();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> location = app.ExecutablePath();</span><br><span class="line"></span><br><span class="line"><span class="comment">//Restart</span></span><br><span class="line">app.Restart();</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Application.Current.ExecutablePath();</span><br><span class="line"></span><br><span class="line"><span class="comment">//Restart</span></span><br><span class="line">Application.Current.Restart();</span><br></pre></td></tr></table></figure>
 <h1 id="Cryptography"><a href="#Cryptography" class="headerlink" title="Cryptography"></a>Cryptography</h1><table>
 <thead>
 <tr>
