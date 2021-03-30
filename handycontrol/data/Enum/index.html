@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#f06632">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-HandyOrg.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-HandyOrg.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-HandyOrg.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#f06632">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="enum(int)             BadgeStatus   Name    Text   Dot   Processing   ChatMessageType   Name    String   Image   Audio   Custom   ChatRoleType   Name    Sender   Receiver   ColLayoutStatu">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Enum">
+<meta property="og:url" content="http://example.com/handycontrol/data/Enum/index.html">
+<meta property="og:site_name" content="HandyOrg">
+<meta property="og:description" content="enum(int)             BadgeStatus   Name    Text   Dot   Processing   ChatMessageType   Name    String   Image   Audio   Custom   ChatRoleType   Name    Sender   Receiver   ColLayoutStatu">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-27T07:16:54.800Z">
+<meta property="article:modified_time" content="2021-03-27T07:16:54.800Z">
+<meta property="article:author" content="HandyOrg">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/handycontrol/data/Enum/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Enum | HandyOrg
+</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">HandyOrg</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">everything can be handy</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        
+            
+  <li class="menu-item menu-item-handycontrol---3.3.0">
+
+    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.3.0</a>
+
+  </li>
+
+
+      
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/ghost1372/HandyControls" class="github-corner" title="Follow us on GitHub" aria-label="Follow us on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+  
+
+      
+
+        
+        <ul id="sub-menu" class="sub-menu menu">
+          
+            
+          
+          
+              
+  <li class="menu-item menu-item-thanks">
+
+    <a href="/handycontrol/tnx/" rel="section"><i class="fa fa-user fa-fw"></i>Thanks</a>
+
+  </li>
+
+
+          
+          
+              
+  <li class="menu-item menu-item-quick-start">
+
+    <a href="/handycontrol/quick_start/" rel="section"><i class="fa fa-h-square fa-fw"></i>Quick start</a>
+
+  </li>
+
+
+          
+          
+            
+                
+  <li class="menu-item menu-item-basic-xaml">
+
+    <a href="/handycontrol/basic_xaml/" rel="section"><i class="fab fa-xing fa-fw"></i>Basic xaml</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-attached-property">
+
+    <a href="/handycontrol/attach/" rel="section"><i class="fas fa-paperclip fa-fw"></i>Attached Property</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-native-control">
+
+    <a href="/handycontrol/native_controls/" rel="section"><i class="fas fa-border-style fa-fw"></i>Native control</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-extended-control">
+
+    <a href="/handycontrol/extend_controls/" rel="section"><i class="fab fa-intercom fa-fw"></i>Extended control</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-data">
+
+    <a href="/handycontrol/data/" rel="section"><i class="fas fa-database fa-fw"></i>Data</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-expression">
+
+    <a href="/handycontrol/expression/" rel="section"><i class="fas fa-database fa-fw"></i>Expression</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-media">
+
+    <a href="/handycontrol/media/" rel="section"><i class="fas fa-database fa-fw"></i>Media</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-tools-extensions-helper">
+
+    <a href="/handycontrol/tools/" rel="section"><i class="fas fa-tools fa-fw"></i>Tools-Extensions-Helper</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-globalization">
+
+    <a href="/handycontrol/langs/" rel="section"><i class="fas fa-globe-asia fa-fw"></i>Globalization</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-breaking-changes">
+
+    <a href="/handycontrol/breaking_changes/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>Breaking Changes</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-theme">
+
+    <a href="/handycontrol/theme/" rel="section"><i class="fas fa-palette fa-fw"></i>Theme</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-interactivity">
+
+    <a href="/handycontrol/interactivity/" rel="section"><i class="fas fa-i-cursor fa-fw"></i>Interactivity</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-persian-toolkit">
+
+    <a href="/handycontrol/persianToolkit/" rel="section"><i class="fab fa-jira fa-fw"></i>Persian Toolkit</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-intellisense">
+
+    <a href="/handycontrol/intellisense/" rel="section"><i class="fas fa-brain fa-fw"></i>Intellisense</a>
+
+  </li>
+
+
+        </ul>
+        
+
+        
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+
+                    
+                    <ul id="sub-menu-2" class="sub-menu menu">
+                      
+                        
+  <li class="menu-item menu-item-args">
+
+    <a href="/handycontrol/data/Args/" rel="section"><i class=" fa-fw"></i>Args</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-enum">
+
+    <a href="/handycontrol/data/Enum/" rel="section"><i class=" fa-fw"></i>Enum</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-flex">
+
+    <a href="/handycontrol/data/Flex/" rel="section"><i class=" fa-fw"></i>Flex</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-gif">
+
+    <a href="/handycontrol/data/Gif/" rel="section"><i class=" fa-fw"></i>Gif</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-glowwindow">
+
+    <a href="/handycontrol/data/GlowWindow/" rel="section"><i class=" fa-fw"></i>GlowWindow</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-info">
+
+    <a href="/handycontrol/data/Info/" rel="section"><i class=" fa-fw"></i>Info</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-operation">
+
+    <a href="/handycontrol/data/Operation/" rel="section"><i class=" fa-fw"></i>Operation</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-range">
+
+    <a href="/handycontrol/data/Range/" rel="section"><i class=" fa-fw"></i>Range</a>
+
+  </li>
+
+
+                    </ul>
+                    
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+        
+      
+  
+
+          <div class="content page posts-expand">
+            
+
+    
+    
+    
+    <div class="post-block" lang="en">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Enum
+</h1>
+
+<div class="post-meta">
+  
+  <ul class="breadcrumb">
+          
+            <li><a href="/handycontrol/">HANDYCONTROL</a></li>
+            <li><a href="/handycontrol/data/">DATA</a></li>
+          <li>ENUM</li>
+        
+  </ul>
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <div class="note info no-icon">
+            <p>enum(int)</p>
+          </div>
+
+<h1 id="BadgeStatus"><a href="#BadgeStatus" class="headerlink" title="BadgeStatus"></a>BadgeStatus</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Text</td>
+</tr>
+<tr>
+<td>Dot</td>
+</tr>
+<tr>
+<td>Processing</td>
+</tr>
+</tbody></table>
+<h1 id="ChatMessageType"><a href="#ChatMessageType" class="headerlink" title="ChatMessageType"></a>ChatMessageType</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>String</td>
+</tr>
+<tr>
+<td>Image</td>
+</tr>
+<tr>
+<td>Audio</td>
+</tr>
+<tr>
+<td>Custom</td>
+</tr>
+</tbody></table>
+<h1 id="ChatRoleType"><a href="#ChatRoleType" class="headerlink" title="ChatRoleType"></a>ChatRoleType</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sender</td>
+</tr>
+<tr>
+<td>Receiver</td>
+</tr>
+</tbody></table>
+<h1 id="ColLayoutStatus"><a href="#ColLayoutStatus" class="headerlink" title="ColLayoutStatus"></a>ColLayoutStatus</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Xs</td>
+</tr>
+<tr>
+<td>Sm</td>
+</tr>
+<tr>
+<td>Md</td>
+</tr>
+<tr>
+<td>Lg</td>
+</tr>
+<tr>
+<td>Xl</td>
+</tr>
+<tr>
+<td>Xxl</td>
+</tr>
+<tr>
+<td>Auto</td>
+</tr>
+</tbody></table>
+<h1 id="DrawerShowMode"><a href="#DrawerShowMode" class="headerlink" title="DrawerShowMode"></a>DrawerShowMode</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cover</td>
+</tr>
+<tr>
+<td>Push</td>
+</tr>
+<tr>
+<td>Press</td>
+</tr>
+</tbody></table>
+<h1 id="EnumDataProvider-ObjectDataProvider"><a href="#EnumDataProvider-ObjectDataProvider" class="headerlink" title="EnumDataProvider : ObjectDataProvider"></a>EnumDataProvider : ObjectDataProvider</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Type</td>
+</tr>
+</tbody></table>
+<h1 id="ExpandMode"><a href="#ExpandMode" class="headerlink" title="ExpandMode"></a>ExpandMode</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ShowOne</td>
+</tr>
+<tr>
+<td>ShowAll</td>
+</tr>
+<tr>
+<td>Accordion</td>
+</tr>
+<tr>
+<td>Freedom</td>
+</tr>
+</tbody></table>
+<h1 id="HatchStyle"><a href="#HatchStyle" class="headerlink" title="HatchStyle"></a>HatchStyle</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Horizontal</td>
+</tr>
+<tr>
+<td>Vertical</td>
+</tr>
+<tr>
+<td>ForwardDiagonal</td>
+</tr>
+<tr>
+<td>BackwardDiagonal</td>
+</tr>
+<tr>
+<td>Cross</td>
+</tr>
+<tr>
+<td>DiagonalCross</td>
+</tr>
+<tr>
+<td>Percent05</td>
+</tr>
+<tr>
+<td>Percent10</td>
+</tr>
+<tr>
+<td>Percent20</td>
+</tr>
+<tr>
+<td>Percent25</td>
+</tr>
+<tr>
+<td>Percent30</td>
+</tr>
+<tr>
+<td>Percent40</td>
+</tr>
+<tr>
+<td>Percent50</td>
+</tr>
+<tr>
+<td>Percent60</td>
+</tr>
+<tr>
+<td>Percent70</td>
+</tr>
+<tr>
+<td>Percent75</td>
+</tr>
+<tr>
+<td>Percent80</td>
+</tr>
+<tr>
+<td>Percent90</td>
+</tr>
+<tr>
+<td>LightDownwardDiagonal</td>
+</tr>
+<tr>
+<td>LightUpwardDiagonal</td>
+</tr>
+<tr>
+<td>DarkDownwardDiagonal</td>
+</tr>
+<tr>
+<td>DarkUpwardDiagonal</td>
+</tr>
+<tr>
+<td>WideDownwardDiagonal</td>
+</tr>
+<tr>
+<td>WideUpwardDiagonal</td>
+</tr>
+<tr>
+<td>LightVertical</td>
+</tr>
+<tr>
+<td>LightHorizontal</td>
+</tr>
+<tr>
+<td>NarrowVertical</td>
+</tr>
+<tr>
+<td>NarrowHorizontal</td>
+</tr>
+<tr>
+<td>DarkVertical</td>
+</tr>
+<tr>
+<td>DarkHorizontal</td>
+</tr>
+<tr>
+<td>DashedDownwardDiagonal</td>
+</tr>
+<tr>
+<td>DashedUpwardDiagonal</td>
+</tr>
+<tr>
+<td>DashedHorizontal</td>
+</tr>
+<tr>
+<td>DashedVertical</td>
+</tr>
+<tr>
+<td>SmallConfetti</td>
+</tr>
+<tr>
+<td>LargeConfetti</td>
+</tr>
+<tr>
+<td>ZigZag</td>
+</tr>
+<tr>
+<td>Wave</td>
+</tr>
+<tr>
+<td>DiagonalBrick</td>
+</tr>
+<tr>
+<td>HorizontalBrick</td>
+</tr>
+<tr>
+<td>Weave</td>
+</tr>
+<tr>
+<td>Plaid</td>
+</tr>
+<tr>
+<td>Divot</td>
+</tr>
+<tr>
+<td>DottedGrid</td>
+</tr>
+<tr>
+<td>DottedDiamond</td>
+</tr>
+<tr>
+<td>Shingle</td>
+</tr>
+<tr>
+<td>Trellis</td>
+</tr>
+<tr>
+<td>Sphere</td>
+</tr>
+<tr>
+<td>SmallGrid</td>
+</tr>
+<tr>
+<td>SmallCheckerBoard</td>
+</tr>
+<tr>
+<td>LargeCheckerBoard</td>
+</tr>
+<tr>
+<td>OutlinedDiamond</td>
+</tr>
+<tr>
+<td>SolidDiamond</td>
+</tr>
+</tbody></table>
+<h1 id="HitMode"><a href="#HitMode" class="headerlink" title="HitMode"></a>HitMode</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Click</td>
+</tr>
+<tr>
+<td>Hover</td>
+</tr>
+<tr>
+<td>Focus</td>
+</tr>
+<tr>
+<td>None</td>
+</tr>
+</tbody></table>
+<h1 id="ImageCodecFlags-Flags"><a href="#ImageCodecFlags-Flags" class="headerlink" title="ImageCodecFlags : Flags"></a>ImageCodecFlags : Flags</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Encoder</td>
+</tr>
+<tr>
+<td>Decoder</td>
+</tr>
+<tr>
+<td>SupportBitmap</td>
+</tr>
+<tr>
+<td>SupportVector</td>
+</tr>
+<tr>
+<td>SeekableEncode</td>
+</tr>
+<tr>
+<td>BlockingDecode</td>
+</tr>
+<tr>
+<td>Builtin</td>
+</tr>
+<tr>
+<td>System</td>
+</tr>
+<tr>
+<td>User</td>
+</tr>
+</tbody></table>
+<h1 id="InfoType"><a href="#InfoType" class="headerlink" title="InfoType"></a>InfoType</h1><div class="note info no-icon">
+            <p>Message type</p>
+          </div>
+
+<table>
+<thead>
+<tr>
+<th>Member Name</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Success</td>
+<td>0</td>
+<td>Success</td>
+</tr>
+<tr>
+<td>Info</td>
+<td>1</td>
+<td>Information</td>
+</tr>
+<tr>
+<td>Warning</td>
+<td>2</td>
+<td>Warning</td>
+</tr>
+<tr>
+<td>Error</td>
+<td>3</td>
+<td>Error</td>
+</tr>
+<tr>
+<td>Fatal</td>
+<td>4</td>
+<td>Serious</td>
+</tr>
+<tr>
+<td>Ask</td>
+<td>5</td>
+<td>Ask</td>
+</tr>
+</tbody></table>
+<h1 id="IpType"><a href="#IpType" class="headerlink" title="IpType"></a>IpType</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+</tr>
+<tr>
+<td>B</td>
+</tr>
+<tr>
+<td>C</td>
+</tr>
+<tr>
+<td>D</td>
+</tr>
+<tr>
+<td>E</td>
+</tr>
+</tbody></table>
+<h1 id="MouseHookMessageType"><a href="#MouseHookMessageType" class="headerlink" title="MouseHookMessageType"></a>MouseHookMessageType</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LeftButtonDown</td>
+</tr>
+<tr>
+<td>LeftButtonUp</td>
+</tr>
+<tr>
+<td>MouseMove</td>
+</tr>
+<tr>
+<td>MouseWheel</td>
+</tr>
+<tr>
+<td>RightButtonDown</td>
+</tr>
+<tr>
+<td>RightButtonUp</td>
+</tr>
+</tbody></table>
+<h1 id="NotifyIconInfoType"><a href="#NotifyIconInfoType" class="headerlink" title="NotifyIconInfoType"></a>NotifyIconInfoType</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>None</td>
+</tr>
+<tr>
+<td>Info</td>
+</tr>
+<tr>
+<td>Warning</td>
+</tr>
+<tr>
+<td>Error</td>
+</tr>
+</tbody></table>
+<h1 id="PlacementType"><a href="#PlacementType" class="headerlink" title="PlacementType"></a>PlacementType</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LeftTop</td>
+</tr>
+<tr>
+<td>Left</td>
+</tr>
+<tr>
+<td>LeftBottom</td>
+</tr>
+<tr>
+<td>TopLeft</td>
+</tr>
+<tr>
+<td>Top</td>
+</tr>
+<tr>
+<td>TopRight</td>
+</tr>
+<tr>
+<td>RightTop</td>
+</tr>
+<tr>
+<td>Right</td>
+</tr>
+<tr>
+<td>RightBottom</td>
+</tr>
+<tr>
+<td>BottomLeft</td>
+</tr>
+<tr>
+<td>Bottom</td>
+</tr>
+<tr>
+<td>BottomRight</td>
+</tr>
+</tbody></table>
+<h1 id="ResultType"><a href="#ResultType" class="headerlink" title="ResultType"></a>ResultType</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Success</td>
+</tr>
+<tr>
+<td>Failed</td>
+</tr>
+<tr>
+<td>None</td>
+</tr>
+</tbody></table>
+<h1 id="ShowAnimation"><a href="#ShowAnimation" class="headerlink" title="ShowAnimation"></a>ShowAnimation</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>None</td>
+</tr>
+<tr>
+<td>HorizontalMove</td>
+</tr>
+<tr>
+<td>VerticalMove</td>
+</tr>
+<tr>
+<td>Fade</td>
+</tr>
+</tbody></table>
+<h1 id="SideMenuItemRole"><a href="#SideMenuItemRole" class="headerlink" title="SideMenuItemRole"></a>SideMenuItemRole</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Header</td>
+</tr>
+<tr>
+<td>Item</td>
+</tr>
+</tbody></table>
+<h1 id="StepStatus"><a href="#StepStatus" class="headerlink" title="StepStatus"></a>StepStatus</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Complete</td>
+</tr>
+<tr>
+<td>UnderWay</td>
+</tr>
+<tr>
+<td>Waiting</td>
+</tr>
+</tbody></table>
+<h1 id="StrokePosition"><a href="#StrokePosition" class="headerlink" title="StrokePosition"></a>StrokePosition</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Center</td>
+</tr>
+<tr>
+<td>Outside</td>
+</tr>
+<tr>
+<td>Inside</td>
+</tr>
+</tbody></table>
+<h1 id="TextType"><a href="#TextType" class="headerlink" title="TextType"></a>TextType</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Common</td>
+</tr>
+<tr>
+<td>Phone</td>
+</tr>
+<tr>
+<td>Mail</td>
+</tr>
+<tr>
+<td>Url</td>
+</tr>
+<tr>
+<td>Chinese</td>
+</tr>
+<tr>
+<td>Number</td>
+</tr>
+<tr>
+<td>Digits</td>
+</tr>
+<tr>
+<td>PInt</td>
+</tr>
+<tr>
+<td>NInt</td>
+</tr>
+<tr>
+<td>Int</td>
+</tr>
+<tr>
+<td>NnInt</td>
+</tr>
+<tr>
+<td>NpInt</td>
+</tr>
+<tr>
+<td>PDouble</td>
+</tr>
+<tr>
+<td>NDouble</td>
+</tr>
+<tr>
+<td>Double</td>
+</tr>
+<tr>
+<td>NnDouble</td>
+</tr>
+<tr>
+<td>NpDouble</td>
+</tr>
+<tr>
+<td>Persian</td>
+</tr>
+<tr>
+<td>IranNationalCode</td>
+</tr>
+</tbody></table>
+<h1 id="TitlePlacementType"><a href="#TitlePlacementType" class="headerlink" title="TitlePlacementType"></a>TitlePlacementType</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Left</td>
+</tr>
+<tr>
+<td>Top</td>
+</tr>
+</tbody></table>
+<h1 id="TransitionMode"><a href="#TransitionMode" class="headerlink" title="TransitionMode"></a>TransitionMode</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Right2Left</td>
+</tr>
+<tr>
+<td>Left2Right</td>
+</tr>
+<tr>
+<td>Bottom2Top</td>
+</tr>
+<tr>
+<td>Top2Bottom</td>
+</tr>
+<tr>
+<td>Right2LeftWithFade</td>
+</tr>
+<tr>
+<td>Left2RightWithFade</td>
+</tr>
+<tr>
+<td>Bottom2TopWithFade</td>
+</tr>
+<tr>
+<td>Top2BottomWithFade</td>
+</tr>
+<tr>
+<td>Fade</td>
+</tr>
+<tr>
+<td>Custom</td>
+</tr>
+</tbody></table>
+<h1 id="VisualWrapping"><a href="#VisualWrapping" class="headerlink" title="VisualWrapping"></a>VisualWrapping</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NoWrap</td>
+</tr>
+<tr>
+<td>Wrap</td>
+</tr>
+</tbody></table>
+
+      </div>
+      
+      
+      
+    </div>
+    
+  <ul class="breadcrumb">
+          
+            <li><a href="/handycontrol/">HANDYCONTROL</a></li>
+            <li><a href="/handycontrol/data/">DATA</a></li>
+          <li>ENUM</li>
+        
+  </ul>
+
+    
+    
+    
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#BadgeStatus"><span class="nav-number">1.</span> <span class="nav-text">BadgeStatus</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ChatMessageType"><span class="nav-number">2.</span> <span class="nav-text">ChatMessageType</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ChatRoleType"><span class="nav-number">3.</span> <span class="nav-text">ChatRoleType</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ColLayoutStatus"><span class="nav-number">4.</span> <span class="nav-text">ColLayoutStatus</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DrawerShowMode"><span class="nav-number">5.</span> <span class="nav-text">DrawerShowMode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#EnumDataProvider-ObjectDataProvider"><span class="nav-number">6.</span> <span class="nav-text">EnumDataProvider : ObjectDataProvider</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ExpandMode"><span class="nav-number">7.</span> <span class="nav-text">ExpandMode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HatchStyle"><span class="nav-number">8.</span> <span class="nav-text">HatchStyle</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HitMode"><span class="nav-number">9.</span> <span class="nav-text">HitMode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ImageCodecFlags-Flags"><span class="nav-number">10.</span> <span class="nav-text">ImageCodecFlags : Flags</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#InfoType"><span class="nav-number">11.</span> <span class="nav-text">InfoType</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IpType"><span class="nav-number">12.</span> <span class="nav-text">IpType</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MouseHookMessageType"><span class="nav-number">13.</span> <span class="nav-text">MouseHookMessageType</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NotifyIconInfoType"><span class="nav-number">14.</span> <span class="nav-text">NotifyIconInfoType</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PlacementType"><span class="nav-number">15.</span> <span class="nav-text">PlacementType</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ResultType"><span class="nav-number">16.</span> <span class="nav-text">ResultType</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ShowAnimation"><span class="nav-number">17.</span> <span class="nav-text">ShowAnimation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SideMenuItemRole"><span class="nav-number">18.</span> <span class="nav-text">SideMenuItemRole</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#StepStatus"><span class="nav-number">19.</span> <span class="nav-text">StepStatus</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#StrokePosition"><span class="nav-number">20.</span> <span class="nav-text">StrokePosition</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TextType"><span class="nav-number">21.</span> <span class="nav-text">TextType</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TitlePlacementType"><span class="nav-number">22.</span> <span class="nav-text">TitlePlacementType</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TransitionMode"><span class="nav-number">23.</span> <span class="nav-text">TransitionMode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#VisualWrapping"><span class="nav-number">24.</span> <span class="nav-text">VisualWrapping</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="HandyOrg"
+      src="https://avatars2.githubusercontent.com/u/17383395?s=460&v=4">
+  <p class="site-author-name" itemprop="name">HandyOrg</p>
+  <div class="site-description" itemprop="description">everything can be handy</div>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/HandyOrg" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;HandyOrg" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/ghost1372/HandyControls" title="GitHub (CV) → https:&#x2F;&#x2F;github.com&#x2F;ghost1372&#x2F;HandyControls" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub (CV)</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:mahdidvb72@gmail.com" title="E-Mail → mailto:mahdidvb72@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a target="_blank" rel="noopener" href="//shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1" title="QQ group 1 → &#x2F;&#x2F;shang.qq.com&#x2F;wpa&#x2F;qunwpa?idkey&#x3D;a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1"><i class="fab fa-qq fa-fw"></i>QQ group 1</a>
+      </span>
+      <span class="links-of-author-item">
+        <a target="_blank" rel="noopener" href="//shang.qq.com/wpa/qunwpa?idkey=5c18622a0f6ee07a6f33afa8cdb85b1f72ea50e878271dfcec919c76b55afee7" title="QQ group 2 → &#x2F;&#x2F;shang.qq.com&#x2F;wpa&#x2F;qunwpa?idkey&#x3D;5c18622a0f6ee07a6f33afa8cdb85b1f72ea50e878271dfcec919c76b55afee7"><i class="fab fa-qq fa-fw"></i>QQ group 2</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.nuget.org/packages/HandyControl" title="Nuget → https:&#x2F;&#x2F;www.nuget.org&#x2F;packages&#x2F;HandyControl" rel="noopener" target="_blank"><i class="fab fa-microsoft fa-fw"></i>Nuget</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.nuget.org/packages/HandyControls" title="Nuget (CV) → https:&#x2F;&#x2F;www.nuget.org&#x2F;packages&#x2F;HandyControls" rel="noopener" target="_blank"><i class="fab fa-microsoft fa-fw"></i>Nuget (CV)</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://gitter.im/HandyControl/Lobby" title="Gitter → https:&#x2F;&#x2F;gitter.im&#x2F;HandyControl&#x2F;Lobby" rel="noopener" target="_blank"><i class="fab fa-gitter fa-fw"></i>Gitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/KlausM72" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;KlausM72" rel="noopener" target="_blank"><i class="fab fa-telegram fa-fw"></i>Telegram</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="HandyOrg"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">HandyOrg</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
