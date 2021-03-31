@@ -2947,7 +2947,7 @@
     <content><![CDATA[<table>
 <thead>
 <tr>
-<th>Class name</th>
+<th>name</th>
 <th>Remarks</th>
 </tr>
 </thead>
@@ -2968,6 +2968,11 @@
 <td></td>
 </tr>
 </tbody></table>
+<p>You can use <code>FunctionEventArgs!1</code> to create a custom event args</p>
+<p>step 1: create a EventHandler</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">event</span> EventHandler&lt;FunctionEventArgs&lt;myArgument&gt;&gt; myEventChanged;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">myArgument</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">string</span> OldValue &#123; <span class="keyword">get</span>; <span class="keyword">internal</span> <span class="keyword">set</span>; &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">string</span> NewValue &#123; <span class="keyword">get</span>; <span class="keyword">internal</span> <span class="keyword">set</span>; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>step2: Notify change where necessary</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">myEventChanged?.Invoke(<span class="keyword">this</span>, <span class="keyword">new</span> FunctionEventArgs&lt;myArgument&gt;(OldValue = <span class="string">&quot;Old&quot;</span>, NewValue = <span class="string">&quot;New&quot;</span>));</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -3520,7 +3525,7 @@
     <content><![CDATA[<table>
 <thead>
 <tr>
-<th>Class Name</th>
+<th>Name</th>
 <th>Remarks</th>
 </tr>
 </thead>
@@ -3533,7 +3538,7 @@
 <td></td>
 </tr>
 </tbody></table>
-]]></content>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Arc</span> <span class="attr">StartAngle</span>=<span class="string">&quot;0&quot;</span> <span class="attr">Stretch</span>=<span class="string">&quot;None&quot;</span> <span class="attr">StrokeThickness</span>=<span class="string">&quot;20&quot;</span> <span class="attr">StrokeDashArray</span>=<span class="string">&quot;.25&quot;</span> <span class="attr">EndAngle</span>=<span class="string">&quot;180&quot;</span> <span class="attr">Stroke</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>AnimationPath</title>
@@ -12802,7 +12807,7 @@
 </thead>
 <tbody><tr>
 <td>ColLayout</td>
-<td></td>
+<td>Markup Extension</td>
 </tr>
 <tr>
 <td>ColorExtension</td>
@@ -12830,7 +12835,7 @@
 </tr>
 <tr>
 <td>LangExtension</td>
-<td></td>
+<td>Markup Extension</td>
 </tr>
 <tr>
 <td>StringExtension</td>
@@ -12845,7 +12850,9 @@
 <td></td>
 </tr>
 </tbody></table>
-]]></content>
+<h1 id="ColLayout"><a href="#ColLayout" class="headerlink" title="ColLayout"></a>ColLayout</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Col</span> <span class="attr">Layout</span>=<span class="string">&quot;&#123;hc:ColLayout Xs=4, Sm=6, Md=8, Lg=9, Xl=11&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;36&quot;</span> <span class="attr">CornerRadius</span>=<span class="string">&quot;4&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Col</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="ColorExtension"><a href="#ColorExtension" class="headerlink" title="ColorExtension"></a>ColorExtension</h1><h2 id="ToInt32"><a href="#ToInt32" class="headerlink" title="ToInt32"></a>ToInt32</h2><h2 id="ToInt32Reverse"><a href="#ToInt32Reverse" class="headerlink" title="ToInt32Reverse"></a>ToInt32Reverse</h2><h1 id="DependencyObjectExtension"><a href="#DependencyObjectExtension" class="headerlink" title="DependencyObjectExtension"></a>DependencyObjectExtension</h1><h2 id="GetVisualOrLogicalParent"><a href="#GetVisualOrLogicalParent" class="headerlink" title="GetVisualOrLogicalParent"></a>GetVisualOrLogicalParent</h2><h1 id="DialogExtension"><a href="#DialogExtension" class="headerlink" title="DialogExtension"></a>DialogExtension</h1><h2 id="GetResultAsync"><a href="#GetResultAsync" class="headerlink" title="GetResultAsync"></a>GetResultAsync</h2><h2 id="Initialize"><a href="#Initialize" class="headerlink" title="Initialize"></a>Initialize</h2><h2 id="GetViewModel"><a href="#GetViewModel" class="headerlink" title="GetViewModel"></a>GetViewModel</h2><h1 id="EnumerableExtension"><a href="#EnumerableExtension" class="headerlink" title="EnumerableExtension"></a>EnumerableExtension</h1><h2 id="Do"><a href="#Do" class="headerlink" title="Do"></a>Do</h2><h2 id="DoWithIndex"><a href="#DoWithIndex" class="headerlink" title="DoWithIndex"></a>DoWithIndex</h2><h1 id="FrameworkElementExtension"><a href="#FrameworkElementExtension" class="headerlink" title="FrameworkElementExtension"></a>FrameworkElementExtension</h1><h2 id="GetValidWidth"><a href="#GetValidWidth" class="headerlink" title="GetValidWidth"></a>GetValidWidth</h2><h2 id="GetValidHeight"><a href="#GetValidHeight" class="headerlink" title="GetValidHeight"></a>GetValidHeight</h2><h1 id="GeometryExtension"><a href="#GeometryExtension" class="headerlink" title="GeometryExtension"></a>GeometryExtension</h1><h2 id="GetTotalLength"><a href="#GetTotalLength" class="headerlink" title="GetTotalLength"></a>GetTotalLength</h2><h2 id="GetTotalLength-1"><a href="#GetTotalLength-1" class="headerlink" title="GetTotalLength"></a>GetTotalLength</h2><h1 id="LangExtension"><a href="#LangExtension" class="headerlink" title="LangExtension"></a>LangExtension</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;hc:Lang Key=&#123;x:Static langs:LangKeys.BasicLayout&#125;&#125;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="StringExtension"><a href="#StringExtension" class="headerlink" title="StringExtension"></a>StringExtension</h1><h2 id="Value"><a href="#Value" class="headerlink" title="Value"></a>Value</h2><h1 id="UIElementExtension"><a href="#UIElementExtension" class="headerlink" title="UIElementExtension"></a>UIElementExtension</h1><h2 id="Show"><a href="#Show" class="headerlink" title="Show"></a>Show</h2><h2 id="Hide"><a href="#Hide" class="headerlink" title="Hide"></a>Hide</h2><h2 id="Colapse"><a href="#Colapse" class="headerlink" title="Colapse"></a>Colapse</h2><h1 id="ValueExtension"><a href="#ValueExtension" class="headerlink" title="ValueExtension"></a>ValueExtension</h1><h2 id="Add"><a href="#Add" class="headerlink" title="Add"></a>Add</h2><h2 id="IsZero"><a href="#IsZero" class="headerlink" title="IsZero"></a>IsZero</h2>]]></content>
   </entry>
   <entry>
     <title>Helper</title>
@@ -12853,7 +12860,7 @@
     <content><![CDATA[<table>
 <thead>
 <tr>
-<th>Class Name</th>
+<th>Name</th>
 <th>Remarks</th>
 </tr>
 </thead>
@@ -12922,7 +12929,7 @@
 <td></td>
 </tr>
 </tbody></table>
-<h1 id="ConfigHelper"><a href="#ConfigHelper" class="headerlink" title="ConfigHelper"></a>ConfigHelper</h1><table>
+<h1 id="AnimationHelper"><a href="#AnimationHelper" class="headerlink" title="AnimationHelper"></a>AnimationHelper</h1><h2 id="CreateAnimation"><a href="#CreateAnimation" class="headerlink" title="CreateAnimation"></a>CreateAnimation</h2><h1 id="ConfigHelper"><a href="#ConfigHelper" class="headerlink" title="ConfigHelper"></a>ConfigHelper</h1><table>
 <thead>
 <tr>
 <th>Name</th>
@@ -12950,7 +12957,7 @@
 <td></td>
 </tr>
 </tbody></table>
-<p>Example:</p>
+<h2 id="SetLang"><a href="#SetLang" class="headerlink" title="SetLang"></a>SetLang</h2><p>Change program language and culture</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ConfigHelper.Instance.SetLang(<span class="string">&quot;en&quot;</span>);</span><br></pre></td></tr></table></figure>
 
 <h1 id="DesignerHelper"><a href="#DesignerHelper" class="headerlink" title="DesignerHelper"></a>DesignerHelper</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> isDesign = DesignerHelper.IsInDesignMode;</span><br></pre></td></tr></table></figure>
@@ -13063,7 +13070,8 @@
   <entry>
     <title>P/Invoke</title>
     <url>/handycontrol/tools/PInvoke/index.html</url>
-    <content><![CDATA[<h1 id="InteropMethods"><a href="#InteropMethods" class="headerlink" title="InteropMethods"></a>InteropMethods</h1><table>
+    <content><![CDATA[<p>We have a lot of WinAPI functions that You can easily use them in your applications</p>
+<h1 id="InteropMethods"><a href="#InteropMethods" class="headerlink" title="InteropMethods"></a>InteropMethods</h1><table>
 <thead>
 <tr>
 <th>Name</th>
@@ -13745,6 +13753,9 @@
 <td></td>
 </tr>
 </tbody></table>
-]]></content>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><h2 id="InternetGetConnectedState"><a href="#InternetGetConnectedState" class="headerlink" title="InternetGetConnectedState"></a>InternetGetConnectedState</h2><p>With the help of this method, you can check the status of the Internet</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="built_in">bool</span> <span class="title">IsConnectedToInternet</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> InteropMethods.InternetGetConnectedState(<span class="keyword">out</span> <span class="built_in">int</span> Desc, <span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="GetCursorPos"><a href="#GetCursorPos" class="headerlink" title="GetCursorPos"></a>GetCursorPos</h2><p>Get mouse Position</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> position = InteropMethods.GetCursorPos();</span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span> X = position.X;</span><br><span class="line"><span class="built_in">int</span> Y = position.Y;</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
 </search>
