@@ -28,8 +28,8 @@
 <meta property="og:description" content="A simple ContentControl to display on a page where there is no information 1public class Empty : ContentControl Attributes   Name Use    Description Get or set Description Text   Logo Get or set Logo">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9213496/104848126-cbd80e00-58f8-11eb-9a79-6e9285cbd06e.png">
-<meta property="article:published_time" content="2021-01-31T17:23:36.621Z">
-<meta property="article:modified_time" content="2021-01-31T17:23:36.621Z">
+<meta property="article:published_time" content="2021-04-06T13:21:48.580Z">
+<meta property="article:modified_time" content="2021-04-06T13:21:48.580Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://user-images.githubusercontent.com/9213496/104848126-cbd80e00-58f8-11eb-9a79-6e9285cbd06e.png">
@@ -124,9 +124,9 @@
   </li>
         
             
-  <li class="menu-item menu-item-handycontrol---3.3.3">
+  <li class="menu-item menu-item-handycontrol---3.3.4">
 
-    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.3.3</a>
+    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.3.4</a>
 
   </li>
 
@@ -1144,14 +1144,16 @@
 </tr>
 <tr>
 <td>ShowEmpty</td>
-<td></td>
+<td>Show or Hide Empty View</td>
 </tr>
 </tbody></table>
 <div class="note info">
-            <p>These controls will display an empty view by default if they do not have data</p><ul><li>ListBox</li><li>DataGrid</li><li>TreeView</li><li>ComboBox</li><li>CheckComboBox</li><li>ListView</li></ul>
+            <p>These controls will display an empty view if you set <code>hc:Empty.ShowEmpty=&quot;true&quot;</code></p><ul><li>ListBox</li><li>DataGrid</li><li>TreeView</li><li>ComboBox</li><li>CheckComboBox</li><li>ListView</li></ul>
           </div>
 
-<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:ToggleBlock</span> <span class="attr">IsChecked</span>=<span class="string">&quot;&#123;Binding ElementName=lst, Path=HasItems, Mode=OneWay&#125;&quot;</span> <span class="attr">VerticalContentAlignment</span>=<span class="string">&quot;Stretch&quot;</span> <span class="attr">HorizontalContentAlignment</span>=<span class="string">&quot;Stretch&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ToggleBlock.CheckedContent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ListBox</span> <span class="attr">Name</span>=<span class="string">&quot;lst&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:ToggleBlock.CheckedContent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ToggleBlock.UnCheckedContent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Empty</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- OR --&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- </span></span><br><span class="line"><span class="comment">         &lt;hc:Empty Description=&quot;No Data&quot;&gt;</span></span><br><span class="line"><span class="comment">            &lt;hc:Empty.Logo&gt;</span></span><br><span class="line"><span class="comment">                &lt;Path Data=&quot;&#123;DynamicResource EmptyGeometry&#125;&quot;/&gt;</span></span><br><span class="line"><span class="comment">            &lt;/hc:Empty.Logo&gt;</span></span><br><span class="line"><span class="comment">        &lt;/hc:Empty&gt;</span></span><br><span class="line"><span class="comment">         --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:ToggleBlock.UnCheckedContent</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:ToggleBlock</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListBox</span> <span class="attr">hc:Empty.ShowEmpty</span>=<span class="string">&quot;true&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>or </p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:ToggleBlock</span> <span class="attr">IsChecked</span>=<span class="string">&quot;&#123;Binding ElementName=lst, Path=HasItems, Mode=OneWay&#125;&quot;</span> <span class="attr">VerticalContentAlignment</span>=<span class="string">&quot;Stretch&quot;</span> <span class="attr">HorizontalContentAlignment</span>=<span class="string">&quot;Stretch&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ToggleBlock.CheckedContent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ListBox</span> <span class="attr">Name</span>=<span class="string">&quot;lst&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:ToggleBlock.CheckedContent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ToggleBlock.UnCheckedContent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Empty</span> <span class="attr">hc:Empty.ShowEmpty</span>=<span class="string">&quot;true&quot;</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- OR --&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- </span></span><br><span class="line"><span class="comment">         &lt;hc:Empty Description=&quot;No Data&quot; hc:Empty.ShowEmpty=&quot;true&quot;&gt;</span></span><br><span class="line"><span class="comment">            &lt;hc:Empty.Logo&gt;</span></span><br><span class="line"><span class="comment">                &lt;Path Data=&quot;&#123;DynamicResource EmptyGeometry&#125;&quot;/&gt;</span></span><br><span class="line"><span class="comment">            &lt;/hc:Empty.Logo&gt;</span></span><br><span class="line"><span class="comment">        &lt;/hc:Empty&gt;</span></span><br><span class="line"><span class="comment">         --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:ToggleBlock.UnCheckedContent</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:ToggleBlock</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://user-images.githubusercontent.com/9213496/104848126-cbd80e00-58f8-11eb-9a79-6e9285cbd06e.png" alt="Empty"></p>
 
       </div>
