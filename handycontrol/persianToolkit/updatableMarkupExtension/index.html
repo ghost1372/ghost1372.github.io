@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="A Simple Dynamic Splash Screen.              Available Only in Custom Version             1public class SplashWindow : HandyControl.Controls.Window, ISplashWindow, INotifyPropertyChanged CaseFirst cre">
+  <meta name="description" content="this markup help you to update the target of a markup extension after the initial evaluation.              UpdatableMarkupExtension Located in the HandyControl.Tools namespace.1Using HandyControl.Tool">
 <meta property="og:type" content="website">
-<meta property="og:title" content="SplashWindow">
-<meta property="og:url" content="http://example.com/handycontrol/persianToolkit/splashWindow/index.html">
+<meta property="og:title" content="Updatable Markup Extension">
+<meta property="og:url" content="http://example.com/handycontrol/persianToolkit/updatableMarkupExtension/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="A Simple Dynamic Splash Screen.              Available Only in Custom Version             1public class SplashWindow : HandyControl.Controls.Window, ISplashWindow, INotifyPropertyChanged CaseFirst cre">
+<meta property="og:description" content="this markup help you to update the target of a markup extension after the initial evaluation.              UpdatableMarkupExtension Located in the HandyControl.Tools namespace.1Using HandyControl.Tool">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-11-03T11:24:53.718Z">
-<meta property="article:modified_time" content="2020-11-03T11:24:53.718Z">
+<meta property="article:published_time" content="2021-04-29T14:05:56.775Z">
+<meta property="article:modified_time" content="2021-04-29T14:05:56.775Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/handycontrol/persianToolkit/splashWindow/">
+<link rel="canonical" href="http://example.com/handycontrol/persianToolkit/updatableMarkupExtension/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>SplashWindow | HandyOrg
+  <title>Updatable Markup Extension | HandyOrg
 </title>
   
 
@@ -614,7 +614,7 @@
     <div class="post-block" lang="en">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">SplashWindow
+<h1 class="post-title" itemprop="name headline">Updatable Markup Extension
 </h1>
 
 <div class="post-meta">
@@ -623,7 +623,7 @@
           
             <li><a href="/handycontrol/">HANDYCONTROL</a></li>
             <li><a href="/handycontrol/persianToolkit/">PERSIANTOOLKIT</a></li>
-          <li>SPLASHWINDOW</li>
+          <li>UPDATABLEMARKUPEXTENSION</li>
         
   </ul>
 
@@ -635,20 +635,20 @@
       
       
       <div class="post-body">
-          <p>A Simple Dynamic Splash Screen.</p>
+          <p>this markup help you to update the target of a markup extension after the initial evaluation.</p>
 <div class="note info">
-            <p>Available Only in Custom Version</p>
+            <p><code>UpdatableMarkupExtension</code> Located in the <strong>HandyControl.Tools</strong> namespace.</p><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Using HandyControl.Tools;</span><br></pre></td></tr></table></figure>
           </div>
 
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">SplashWindow</span> : <span class="title">HandyControl.Controls.Window</span>, <span class="title">ISplashWindow</span>, <span class="title">INotifyPropertyChanged</span></span><br></pre></td></tr></table></figure>
-<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><p>First create a Windows (we call it <code>mySplashWindow.xaml</code>) and change <code>&lt;Window</code> to <code>&lt;hc:SplashWindow</code></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:SplashWindow</span> <span class="attr">x:Class</span>=<span class="string">&quot;HandyControlDemo.Window.SplashWindow&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:d</span>=<span class="string">&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:mc</span>=<span class="string">&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">mc:Ignorable</span>=<span class="string">&quot;d&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">WindowStartupLocation</span>=<span class="string">&quot;CenterScreen&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">Title</span>=<span class="string">&quot;Splash Window&quot;</span> </span></span><br><span class="line"><span class="tag">           <span class="attr">Height</span>=<span class="string">&quot;450&quot;</span> </span></span><br><span class="line"><span class="tag">           <span class="attr">Width</span>=<span class="string">&quot;800&quot;</span>&gt;</span></span><br><span class="line">   </span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:SplashWindow</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>Now initialize the <code>SplashWindow</code> in <code>App.cs</code> and <code>OnStartup</code> method</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnStartup</span>(<span class="params">StartupEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    SplashWindow.Init(()=&gt; &#123;</span><br><span class="line">                mySplashWindow splash = <span class="keyword">new</span> mySplashWindow();</span><br><span class="line">                <span class="keyword">return</span> splash;</span><br><span class="line">            &#125;);</span><br><span class="line">    <span class="keyword">base</span>.OnStartup(e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Now to display messages in splash you can use the built-in <code>Message</code> property.<br>Be sure to connect the <code>AncestorType</code> to the <code>hc:SplashWindow</code></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:SplashWindow</span> <span class="attr">x:Class</span>=<span class="string">&quot;HandyControlDemo.Window.SplashWindow&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:d</span>=<span class="string">&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:mc</span>=<span class="string">&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">mc:Ignorable</span>=<span class="string">&quot;d&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">WindowStartupLocation</span>=<span class="string">&quot;CenterScreen&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">Title</span>=<span class="string">&quot;Splash Window&quot;</span> </span></span><br><span class="line"><span class="tag">           <span class="attr">Height</span>=<span class="string">&quot;450&quot;</span> </span></span><br><span class="line"><span class="tag">           <span class="attr">Width</span>=<span class="string">&quot;800&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding Message, RelativeSource=&#123;RelativeSource AncestorType=hc:SplashWindow&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:SplashWindow</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>Now do this to display splash and update messages</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">MainWindow</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    SplashWindow.Instance.AddMessage(<span class="string">&quot;Loading main window&quot;</span>);</span><br><span class="line">    DoSomethingThatTakesALongTime();</span><br><span class="line">    SplashWindow.Instance.AddMessage(<span class="string">&quot;Loading something Witty&quot;</span>);</span><br><span class="line">    DoSomethingElseThatTakesALongTime();</span><br><span class="line">    <span class="comment">//This will probably never actually get seen</span></span><br><span class="line">    SplashWindow.Instance.AddMessage(<span class="string">&quot;Done!&quot;</span>);</span><br><span class="line">    InitializeComponent();</span><br><span class="line">    SplashWindow.Instance.LoadComplete();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><p>Let’s assume we want to create a custom markup extension which indicates whether the network is available. It would be used like that :</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">CheckBox</span> <span class="attr">IsChecked</span>=<span class="string">&quot;&#123;local:NetworkAvailable&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Network is available&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Obviously, we want the checkbox to be updated when the availability of the network changes (e.g. when the network cable is plugged or unplugged, or when the Wifi network is out of reach). So we need to handle the <code>NetworkChange.NetworkAvailabilityChanged</code> event, and update the <code>IsChecked</code> property accordingly. So the extension will inherit the <code>UpdatableMarkupExtension</code> class to take advantage of the <code>UpdateValue</code> method :</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">NetworkAvailableExtension</span> : <span class="title">UpdatableMarkupExtension</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">NetworkAvailableExtension</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        NetworkChange.NetworkAvailabilityChanged += <span class="keyword">new</span> NetworkAvailabilityChangedEventHandler(NetworkChange_NetworkAvailabilityChanged);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="built_in">object</span> <span class="title">ProvideValueInternal</span>(<span class="params">IServiceProvider serviceProvider</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="keyword">return</span> NetworkInterface.GetIsNetworkAvailable();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">NetworkChange_NetworkAvailabilityChanged</span>(<span class="params"><span class="built_in">object</span> sender, NetworkAvailabilityEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        UpdateValue(e.IsAvailable);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<div class="note info">
+            <p>We subscribe to the <code>NetworkAvailabilityChanged</code> event in the class constructor. If we wanted to subscribe to an event of the target object, we would have to do it in the ProvideValueInternal method, so that the target object can be accessed.</p>
+          </div>
+
+
       </div>
       
       
@@ -659,7 +659,7 @@
           
             <li><a href="/handycontrol/">HANDYCONTROL</a></li>
             <li><a href="/handycontrol/persianToolkit/">PERSIANTOOLKIT</a></li>
-          <li>SPLASHWINDOW</li>
+          <li>UPDATABLEMARKUPEXTENSION</li>
         
   </ul>
 
@@ -716,7 +716,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Case"><span class="nav-number">1.</span> <span class="nav-text">Case</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Example"><span class="nav-number">1.</span> <span class="nav-text">Example</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
