@@ -28,8 +28,8 @@
 <meta property="og:description" content="This control can be used when you want to arrange notification information from top to bottom in the right area of the window. Control effect Ready to workAdd a StackPanel container to the right side">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Growl.gif">
-<meta property="article:published_time" content="2020-09-25T11:31:48.510Z">
-<meta property="article:modified_time" content="2020-08-13T08:57:35.785Z">
+<meta property="article:published_time" content="2021-05-29T09:42:55.729Z">
+<meta property="article:modified_time" content="2021-05-29T09:42:55.729Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Growl.gif">
@@ -1134,6 +1134,10 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">&quot;Hidden&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">controls:Growl.GrowlParent</span>=<span class="string">&quot;True&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,10,10&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <div class="note warning">
             <p>Note the code <code>controls:Growl.GrowlParent=&quot;True&quot;</code>。</p>
+          </div>
+
+<div class="note warning">
+            <p>If user do not set <code>hc:Growl.GrowlParent=&quot;True&quot;</code>, growl will create a default panel.</p>
           </div>
 
 <p>Step 2: Call the relevant interface of <code>Growl</code> to display the specified message.</p>

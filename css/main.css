@@ -31,7 +31,7 @@
     --brand-hover-color: #ddd;
     --table-row-odd-bg-color: #282828;
     --table-row-hover-bg-color: #363636;
-    --menu-item-bg-color: #555;
+    --menu-item-bg-color: #222;
     --btn-default-bg: #222;
     --btn-default-color: #ccc;
     --btn-default-border-color: #555;
@@ -351,7 +351,7 @@ td {
   text-decoration: none;
   transition-property: background-color;
   transition-delay: 0s;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 }
 .btn:hover {
@@ -425,7 +425,7 @@ td {
   padding: 2px 6px;
   position: absolute;
   transition-delay: 0s;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
   background-color: #eee;
   background-image: linear-gradient(#fcfcfc, #eee);
@@ -713,7 +713,7 @@ pre .javascript .function {
   padding: 0.25em 0.75em;
   text-align: center;
   transition-delay: 0s;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transition-timing-function: ease-out;
 }
 .post-body .tabs ul.nav-tabs li.tab a i,
@@ -899,7 +899,7 @@ pre .javascript .function {
   border-top: 1px solid #eee;
   transition-property: border-color;
   transition-delay: 0s;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 }
 .pagination .prev:hover,
@@ -1126,7 +1126,7 @@ pre .javascript .function {
   font-size: 0.8125em;
   transition-property: border-color;
   transition-delay: 0s;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 }
 @media (hover: none) {
@@ -1300,7 +1300,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #81ff87;
+  background: #b4c73d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1440,7 +1440,7 @@ pre .javascript .function {
 .post-toc ol a {
   transition-property: all;
   transition-delay: 0s;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 }
 .post-toc .nav-item {
@@ -1583,7 +1583,7 @@ pre .javascript .function {
   font-size: 12px;
   text-align: center;
   transition-delay: 0s;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 }
 .back-to-top {
@@ -1727,7 +1727,7 @@ pre .javascript .function {
   position: relative;
   transition-property: border;
   transition-delay: 0s;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 }
 .posts-collapse .post-header::before {
@@ -1743,7 +1743,7 @@ pre .javascript .function {
   transition-property: background;
   width: 6px;
   transition-delay: 0s;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 }
 .posts-collapse .post-header:hover {
@@ -1908,7 +1908,7 @@ pre .javascript .function {
   visibility: hidden;
   width: 100%;
   transition-delay: 0s;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 }
 .posts-expand .post-title-link:hover::before {
@@ -2496,6 +2496,16 @@ ul.breadcrumb li + li:last-child {
   text-align: left;
   transition-property: background-color;
 }
+@media (prefers-color-scheme: dark) {
+  .menu .menu-item a,
+  .menu .menu-item span.exturl {
+    padding: 5px 20px;
+    position: relative;
+    text-align: left;
+    transition-property: background-color;
+    color: #d0d0d0;
+  }
+}
 @media (max-width: 991px) {
   .menu .menu-item.menu-item-search {
     display: none;
@@ -2533,6 +2543,7 @@ ul.breadcrumb li + li:last-child {
 .sub-menu .menu-item a,
 .sub-menu .menu-item span.exturl {
   background: transparent;
+  color: #555;
   margin: 5px 10px;
   padding: initial;
 }
@@ -2547,6 +2558,36 @@ ul.breadcrumb li + li:last-child {
 }
 .sub-menu .menu-item-active a:hover {
   border-bottom-color: #fc6423;
+}
+@media (prefers-color-scheme: dark) {
+  .sub-menu {
+    background: var(--content-bg-color);
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 6px 0;
+  }
+  .sub-menu .menu-item {
+    display: inline-block;
+  }
+  .sub-menu .menu-item a,
+  .sub-menu .menu-item span.exturl {
+    background: transparent;
+    color: #d0d0d0;
+    margin: 5px 10px;
+    padding: initial;
+  }
+  .sub-menu .menu-item a:hover,
+  .sub-menu .menu-item span.exturl:hover {
+    background: transparent;
+    color: #fc6423;
+  }
+  .sub-menu .menu-item-active a {
+    border-bottom-color: #fc6423;
+    color: #fc6423;
+  }
+  .sub-menu .menu-item-active a:hover {
+    border-bottom-color: #fc6423;
+  }
 }
 .sidebar {
   background: var(--body-bg-color);
@@ -2649,6 +2690,15 @@ ul.breadcrumb li + li:last-child {
 }
 .links-of-blogroll-item {
   padding: 0;
+}
+@media (prefers-color-scheme: dark) {
+  .nav-item a,
+  .nav-item span.exturl {
+    color: #d0d0d0;
+  }
+  .nav-item a:hover {
+    color: #fc6423;
+  }
 }
 .content-wrap {
   background: initial;

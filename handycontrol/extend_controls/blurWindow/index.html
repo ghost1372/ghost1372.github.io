@@ -28,8 +28,8 @@
 <meta property="og:description" content="The background blur window can be used to enhance the UI effect, but it will sacrifice some performance. 1public class BlurWindow : Window              Operating system support range: win10 10240 ~ wi">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/BlurWindow.png">
-<meta property="article:published_time" content="2020-09-25T11:31:48.005Z">
-<meta property="article:modified_time" content="2020-08-23T11:30:37.899Z">
+<meta property="article:published_time" content="2021-05-29T19:22:52.348Z">
+<meta property="article:modified_time" content="2021-05-29T19:22:52.348Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/BlurWindow.png">
@@ -1132,6 +1132,10 @@
           </div>
 <div class="note warning">
             <p>Rewrite the resource <code>BlurGradientValue</code> to customize the blur color</p>
+          </div>
+
+<div class="note info">
+            <p>If you want to enable acrylic blur on unsupported builds (build &gt;= 1903), you can use <code>FORCE_ENABLE_ACRYLIC_BLUR</code> Property.<br> <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:BlurWindow</span> <span class="attr">FORCE_ENABLE_ACRYLIC_BLUR</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag"></span></span><br></pre></td></tr></table></figure></p>
           </div>
 
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">system:UInt32</span> <span class="attr">x:Key</span>=<span class="string">&quot;BlurGradientValue&quot;</span>&gt;</span>0x99FFFFFF<span class="tag">&lt;/<span class="name">system:UInt32</span>&gt;</span></span><br></pre></td></tr></table></figure>
