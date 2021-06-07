@@ -23,9 +23,9 @@
     --body-bg-color: #282828;
     --content-bg-color: #333;
     --card-bg-color: #555;
-    --text-color: #ccc;
+    --text-color: #d0d0d0;
     --blockquote-color: #bbb;
-    --link-color: #ccc;
+    --link-color: #d0d0d0;
     --link-hover-color: #eee;
     --brand-color: #ddd;
     --brand-hover-color: #ddd;
@@ -33,7 +33,7 @@
     --table-row-hover-bg-color: #363636;
     --menu-item-bg-color: #555;
     --btn-default-bg: #222;
-    --btn-default-color: #ccc;
+    --btn-default-color: #d0d0d0;
     --btn-default-border-color: #555;
     --btn-default-hover-bg: #666;
     --btn-default-hover-color: #ccc;
