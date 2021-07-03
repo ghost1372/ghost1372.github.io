@@ -176,6 +176,11 @@
             <p>See <a href="https://github.com/ghost1372/HandyControls/releases">here</a> and <a href="https://github.com/HandyOrg/HandyControl/releases">here</a> for full changes</p>
           </div>
 
+<h2 id="3-3-8-HandyControls"><a href="#3-3-8-HandyControls" class="headerlink" title="3.3.8 (HandyControls)"></a>3.3.8 (HandyControls)</h2><ul>
+<li>All Violet and Default Styles Removed eg: ToggleButtonViolet, SplitButtonDefault</li>
+<li>GithubTimeLine Removed</li>
+<li>TabControl UsingWinUIStyle Property Removed</li>
+</ul>
 <h2 id="3-3-0-HandyControls"><a href="#3-3-0-HandyControls" class="headerlink" title="3.3.0 (HandyControls)"></a>3.3.0 (HandyControls)</h2><ul>
 <li>Legacy Dynamic Localization Removed and The newer version has been replaced with better features See <a href="https://hosseini.ninja/handycontrol/persianToolkit/dynamicLanguage/">here</a></li>
 </ul>
@@ -478,12 +483,6 @@
 <td><a href="https://ghost1372.github.io/handycontrol/extend_controls/coverView/#Attributes">CoverView</a></td>
 </tr>
 <tr>
-<td><a href="https://ghost1372.github.io/handycontrol/extend_controls/tag/#Attributes">Tag</a></td>
-</tr>
-<tr>
-<td><a href="https://ghost1372.github.io/handycontrol/extend_controls/tabControl/#Attributes">TabControl</a></td>
-</tr>
-<tr>
 <td><a href="https://ghost1372.github.io/handycontrol/extend_controls/messageBox/#Customize-Button-Text">MessageBox</a></td>
 </tr>
 <tr>
@@ -496,6 +495,9 @@
 <td><a href="https://ghost1372.github.io/handycontrol/extend_controls/window/#Attributes">Window</a></td>
 </tr>
 <tr>
+<td><a href="https://hosseini.ninja/handycontrol/extend_controls/blurWindow/">BlurWindow</a></td>
+</tr>
+<tr>
 <td><a href="https://ghost1372.github.io/handycontrol/extend_controls/colorPicker/">ColorPicker [Color Picker Can Work outside of Application]</a></td>
 </tr>
 </tbody></table>
@@ -506,43 +508,10 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><a href="https://ghost1372.github.io/handycontrol/native_controls/button/#ButtonViolet-ButtonBaseStyle">Button</a></td>
-</tr>
-<tr>
-<td><a href="https://ghost1372.github.io/handycontrol/native_controls/label/#LabelViolet-LabelBaseStyle">Label</a></td>
-</tr>
-<tr>
 <td><a href="https://ghost1372.github.io/handycontrol/native_controls/listBox/#ListBoxModernStyle">ListBox</a></td>
 </tr>
 <tr>
 <td><a href="https://ghost1372.github.io/handycontrol/native_controls/tabControl/#TabItemTransparentStyle-Only-Custom-Version">TabControl</a></td>
-</tr>
-<tr>
-<td><a href="https://ghost1372.github.io/handycontrol/native_controls/progressBar/#Other-styles">ProgressBar</a></td>
-</tr>
-<tr>
-<td><a href="https://ghost1372.github.io/handycontrol/native_controls/textBlock/#Styles">TextBlock</a></td>
-</tr>
-<tr>
-<td><a href="https://ghost1372.github.io/handycontrol/native_controls/toggleButton/#Related-styles">ToggleButton</a></td>
-</tr>
-<tr>
-<td><a href="https://ghost1372.github.io/handycontrol/extend_controls/badge/#Related-styles">Badge</a></td>
-</tr>
-<tr>
-<td><a href="https://ghost1372.github.io/handycontrol/extend_controls/circleProgressBar/#Styles">CircleProgressBar</a></td>
-</tr>
-<tr>
-<td><a href="https://ghost1372.github.io/handycontrol/extend_controls/progressButton/#Styles">ProgressButton</a></td>
-</tr>
-<tr>
-<td><a href="https://ghost1372.github.io/handycontrol/extend_controls/splitButton/#Styles">SplitButton</a></td>
-</tr>
-<tr>
-<td><a href="https://ghost1372.github.io/handycontrol/extend_controls/tabControl/#IsUWPStyle">TabControl</a></td>
-</tr>
-<tr>
-<td><a href="https://ghost1372.github.io/handycontrol/extend_controls/waveProgressBar/#Styles">WaveProgressBar</a></td>
 </tr>
 <tr>
 <td><a href="https://ghost1372.github.io/handycontrol/native_controls/contentControl/">ContentControl</a></td>
@@ -3743,16 +3712,6 @@
 <td>Anomalous badge style</td>
 <td>BadgeBaseStyle</td>
 </tr>
-<tr>
-<td>BadgeDefault</td>
-<td>Default badge style</td>
-<td><a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-</tr>
-<tr>
-<td>BadgeViolet</td>
-<td>Purple color badge style</td>
-<td><a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-</tr>
 </tbody></table>
 <h2 id="Case-4"><a href="#Case-4" class="headerlink" title="Case"></a>Case</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">&quot;30&quot;</span>  <span class="attr">BadgeMargin</span>=<span class="string">&quot;0,-14,-20,0&quot;</span> <span class="attr">Value</span>=<span class="string">&quot;11&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Default&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">&quot;30&quot;</span>  <span class="attr">BadgeMargin</span>=<span class="string">&quot;0,-14,-20,0&quot;</span> <span class="attr">Value</span>=<span class="string">&quot;11&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource BadgePrimary&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Primary&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">&quot;30&quot;</span>  <span class="attr">BadgeMargin</span>=<span class="string">&quot;0,-14,-20,0&quot;</span> <span class="attr">Value</span>=<span class="string">&quot;11&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource BadgeInfo&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Info&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">&quot;30&quot;</span>  <span class="attr">BadgeMargin</span>=<span class="string">&quot;0,-14,-20,0&quot;</span> <span class="attr">Value</span>=<span class="string">&quot;11&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource BadgeSuccess&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Success&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">&quot;30&quot;</span>  <span class="attr">BadgeMargin</span>=<span class="string">&quot;0,-14,-20,0&quot;</span> <span class="attr">Value</span>=<span class="string">&quot;11&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource BadgeWarning&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Warning&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">&quot;30&quot;</span>  <span class="attr">BadgeMargin</span>=<span class="string">&quot;0,-14,-20,0&quot;</span> <span class="attr">Value</span>=<span class="string">&quot;11&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource BadgeDanger&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Danger&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h2 id="effect-4"><a href="#effect-4" class="headerlink" title="effect"></a>effect</h2><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-Styles.png" alt="Badge-Styles"></p>
@@ -4352,14 +4311,6 @@
 <tr>
 <td>ProgressBarDangerCircle</td>
 <td>Danger style</td>
-</tr>
-<tr>
-<td>ProgressBarDefaultCircle <a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-<td>Default style</td>
-</tr>
-<tr>
-<td>ProgressBarVioletCircle <a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-<td>Violet style</td>
 </tr>
 </tbody></table>
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CircleProgressBar</span> <span class="attr">Value</span>=<span class="string">&quot;&#123;Binding Value,ElementName=SliderDemo&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CircleProgressBar</span> <span class="attr">Value</span>=<span class="string">&quot;&#123;Binding Value,ElementName=SliderDemo&#125;&quot;</span> <span class="attr">FontSize</span>=<span class="string">&quot;30&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;16,0,0,0&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CircleProgressBar</span> <span class="attr">Value</span>=<span class="string">&quot;&#123;Binding Value,ElementName=SliderDemo&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;16,0,0,0&quot;</span> <span class="attr">ShowText</span>=<span class="string">&quot;False&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;20&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;20&quot;</span> <span class="attr">ArcThickness</span>=<span class="string">&quot;2&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ProgressBarSuccessCircle&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CircleProgressBar</span> <span class="attr">Value</span>=<span class="string">&quot;&#123;Binding Value,ElementName=SliderDemo&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;16,0,0,0&quot;</span> <span class="attr">ShowText</span>=<span class="string">&quot;False&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;30&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;30&quot;</span> <span class="attr">ArcThickness</span>=<span class="string">&quot;6&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ProgressBarInfoCircle&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CircleProgressBar</span> <span class="attr">Value</span>=<span class="string">&quot;&#123;Binding Value,ElementName=SliderDemo&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;16,0,0,0&quot;</span> <span class="attr">ShowText</span>=<span class="string">&quot;False&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;40&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;40&quot;</span> <span class="attr">ArcThickness</span>=<span class="string">&quot;10&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ProgressBarWarningCircle&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CircleProgressBar</span> <span class="attr">Value</span>=<span class="string">&quot;&#123;Binding Value,ElementName=SliderDemo&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;16,0,0,0&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;50&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;50&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ProgressBarDangerCircle&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -7639,14 +7590,6 @@
 <td>ProgressButtonDanger</td>
 <td>ToggleButtonLoadingWarning</td>
 </tr>
-<tr>
-<td>ProgressButtonDefault <a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-<td>ToggleButtonLoadingDanger</td>
-</tr>
-<tr>
-<td>ProgressButtonViolet <a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-<td>ToggleButtonLoadingViolet <a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-</tr>
 </tbody></table>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ProgressButton.png" alt="ProgressButton"></p>
 ]]></content>
@@ -8759,12 +8702,6 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>SplitButtonDefault <a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-</tr>
-<tr>
-<td>SplitButtonViolet <a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-</tr>
-<tr>
 <td>SplitButtonPrimary</td>
 </tr>
 <tr>
@@ -8942,18 +8879,6 @@
 <td>false</td>
 <td></td>
 </tr>
-<tr>
-<td>UsingWinUIStyle</td>
-<td>Windows 10 WinUI Style, [Only Available in <a href="https://github.com/ghost1372/handyControls">Custom</a> Version]</td>
-<td>false</td>
-<td></td>
-</tr>
-<tr>
-<td>IndicatorDisplayMode</td>
-<td>dependent on UsingWinUIStyle, The location of the Indicator of the selected item [Only Available in <a href="https://github.com/ghost1372/handyControls">Custom</a> Version]</td>
-<td>Bottom</td>
-<td></td>
-</tr>
 </tbody></table>
 <h1 id="Events"><a href="#Events" class="headerlink" title="Events"></a>Events</h1><table>
 <thead>
@@ -8976,13 +8901,6 @@
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:TabControl</span> <span class="attr">IsAnimationEnabled</span>=<span class="string">&quot;True&quot;</span> <span class="attr">ShowCloseButton</span>=<span class="string">&quot;True&quot;</span> <span class="attr">IsDraggable</span>=<span class="string">&quot;True&quot;</span> <span class="attr">IsTabFillEnabled</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;800&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;300&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:TabItem</span> <span class="attr">Header</span>=<span class="string">&quot;TabItem1&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Background</span>=<span class="string">&quot;&#123;DynamicResource RegionBrush&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:TabItem</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:TabItem</span> <span class="attr">IsSelected</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Header</span>=<span class="string">&quot;TabItem2&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Background</span>=<span class="string">&quot;#FFE8563F&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:TabItem</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:TabItem</span> <span class="attr">Header</span>=<span class="string">&quot;TabItem3&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Background</span>=<span class="string">&quot;#FF3F4EE8&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:TabItem</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:TabItem</span> <span class="attr">Header</span>=<span class="string">&quot;TabItem4&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Background</span>=<span class="string">&quot;#FFE83F6D&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:TabItem</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:TabItem</span> <span class="attr">Header</span>=<span class="string">&quot;TabItem5&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Background</span>=<span class="string">&quot;#FFB23FE8&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:TabItem</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:TabItem</span> <span class="attr">Header</span>=<span class="string">&quot;TabItem6&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Background</span>=<span class="string">&quot;#FF3FE8E8&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:TabItem</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:TabItem</span> <span class="attr">Header</span>=<span class="string">&quot;TabItem7&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Background</span>=<span class="string">&quot;#FFE8E03F&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:TabItem</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:TabControl</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/TabControl.gif" alt="TabControl"></p>
 <h2 id="TabItem"><a href="#TabItem" class="headerlink" title="TabItem"></a>TabItem</h2><p>You can use the <code>IconElement</code> class to set icons for tabs.</p>
-<h1 id="UsingWinUIStyle"><a href="#UsingWinUIStyle" class="headerlink" title="UsingWinUIStyle"></a>UsingWinUIStyle</h1><p>WinUI Style for TabControl</p>
-<div class="note info">
-            <p>Only Custom Version</p>
-          </div>
-
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:TabControl</span> <span class="attr">UsingWinUIStyle</span>=<span class="string">&quot;True&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/TabControlUWPStyle.png" alt="UsingWinUIStyle"></p>
 ]]></content>
   </entry>
   <entry>
@@ -9693,12 +9611,6 @@
 <tr>
 <td>ProgressBarPrimaryWave</td>
 </tr>
-<tr>
-<td>ProgressBarDefaultWave <a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-</tr>
-<tr>
-<td>ProgressBarVioletWave <a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-</tr>
 </tbody></table>
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:WaveProgressBar</span> <span class="attr">Value</span>=<span class="string">&quot;&#123;Binding Value,ElementName=SliderDemo&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:WaveProgressBar</span> <span class="attr">Value</span>=<span class="string">&quot;&#123;Binding Value,ElementName=SliderDemo&#125;&quot;</span> <span class="attr">FontSize</span>=<span class="string">&quot;20&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;16,0,0,0&quot;</span> <span class="attr">WaveThickness</span>=<span class="string">&quot;4&quot;</span> <span class="attr">WaveStroke</span>=<span class="string">&quot;#FFFF0080&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:WaveProgressBar.WaveFill</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">LinearGradientBrush</span> <span class="attr">EndPoint</span>=<span class="string">&quot;0,1&quot;</span> <span class="attr">StartPoint</span>=<span class="string">&quot;0,0&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">&quot;#66FF0080&quot;</span> <span class="attr">Offset</span>=<span class="string">&quot;0&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">&quot;#FFFF0080&quot;</span> <span class="attr">Offset</span>=<span class="string">&quot;1&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">LinearGradientBrush</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">hc:WaveProgressBar.WaveFill</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:WaveProgressBar</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:WaveProgressBar</span> <span class="attr">Value</span>=<span class="string">&quot;&#123;Binding Value,ElementName=SliderDemo&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;16,0,0,0&quot;</span> <span class="attr">ShowText</span>=<span class="string">&quot;False&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;50&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;50&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ProgressBarWarningWave&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/WaveProgressBar.gif" alt="WaveProgressBar"></p>
@@ -10171,15 +10083,6 @@
             <p>Example：</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ButtonDanger&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a button&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ButtonDanger&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a button&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10,0,0,0&quot;</span> <span class="attr">controls:BorderElement.CornerRadius</span>=<span class="string">&quot;15&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ButtonDanger&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a button&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10,0,0,0&quot;</span> <span class="attr">controls:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource GithubGeometry&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ButtonDanger_1.png" alt="ButtonDanger"></p>
           </div>
 
-<h1 id="ButtonViolet-ButtonBaseStyle"><a href="#ButtonViolet-ButtonBaseStyle" class="headerlink" title="ButtonViolet : ButtonBaseStyle"></a>ButtonViolet : ButtonBaseStyle</h1><p>Violet button</p>
-<div class="note info no-icon">
-            <p>Only Custom Version</p>
-          </div>
-
-<div class="note info no-icon">
-            <p>Example：</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ButtonViolet&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a button&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ButtonViolet&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a button&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10,0,0,0&quot;</span> <span class="attr">controls:BorderElement.CornerRadius</span>=<span class="string">&quot;15&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ButtonViolet&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a button&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10,0,0,0&quot;</span> <span class="attr">controls:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource GithubGeometry&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
-          </div>
-
 <h1 id="ButtonDefault-ButtonBaseStyle"><a href="#ButtonDefault-ButtonBaseStyle" class="headerlink" title="ButtonDefault : ButtonBaseStyle"></a>ButtonDefault : ButtonBaseStyle</h1><p>Default button</p>
 <div class="note info no-icon">
             <p>Example：</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ButtonDefault&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a button&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ButtonDefault&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a button&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10,0,0,0&quot;</span> <span class="attr">controls:BorderElement.CornerRadius</span>=<span class="string">&quot;15&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ButtonDefault&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a button&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10,0,0,0&quot;</span> <span class="attr">controls:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource GithubGeometry&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -10212,9 +10115,6 @@
 </tr>
 <tr>
 <td>ButtonWarning</td>
-</tr>
-<tr>
-<td>ButtonViolet (Only Custom Version)</td>
 </tr>
 <tr>
 <td>ButtonDefault</td>
@@ -10537,24 +10437,6 @@
 <h1 id="LabelDanger-LabelBaseStyle"><a href="#LabelDanger-LabelBaseStyle" class="headerlink" title="LabelDanger : LabelBaseStyle"></a>LabelDanger : LabelBaseStyle</h1><p>Danger type style </p>
 <div class="note info no-icon">
             <p>Example：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Label Content&#x3D;&quot;LabelDanger style&quot; Margin&#x3D;&quot;10&quot; Style&#x3D;&quot;&#123;DynamicResource LabelDanger&#125;&quot;&gt;&lt;&#x2F;Label&gt;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/Label.DangerStyle.png" alt="Label.DangerStyle"></p>
-          </div>
-
-<h1 id="LabelViolet-LabelBaseStyle"><a href="#LabelViolet-LabelBaseStyle" class="headerlink" title="LabelViolet : LabelBaseStyle"></a>LabelViolet : LabelBaseStyle</h1><p>Violet type style </p>
-<div class="note info no-icon">
-            <p>Only Custom Version</p>
-          </div>
-
-<div class="note info no-icon">
-            <p>Example：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Label Content&#x3D;&quot;LabelViolet style&quot; Margin&#x3D;&quot;10&quot; Style&#x3D;&quot;&#123;DynamicResource LabelViolet&#125;&quot;&gt;&lt;&#x2F;Label&gt;</span><br></pre></td></tr></table></figure>
-          </div>
-
-<h1 id="LabelDefault-LabelBaseStyle"><a href="#LabelDefault-LabelBaseStyle" class="headerlink" title="LabelDefault : LabelBaseStyle"></a>LabelDefault : LabelBaseStyle</h1><p>Default type style </p>
-<div class="note info no-icon">
-            <p>Only Custom Version</p>
-          </div>
-
-<div class="note info no-icon">
-            <p>Example：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Label Content&#x3D;&quot;LabelDefault style&quot; Margin&#x3D;&quot;10&quot; Style&#x3D;&quot;&#123;DynamicResource LabelDefault&#125;&quot;&gt;&lt;&#x2F;Label&gt;</span><br></pre></td></tr></table></figure>
           </div>]]></content>
   </entry>
   <entry>
@@ -10730,16 +10612,6 @@
 <td>ProgressBarBaseStyle</td>
 </tr>
 <tr>
-<td>ProgressBarViolet</td>
-<td>Violet ProgressBar</td>
-<td>ProgressBarBaseStyle</td>
-</tr>
-<tr>
-<td>ProgressBarDefault</td>
-<td>Default ProgressBar</td>
-<td>ProgressBarBaseStyle</td>
-</tr>
-<tr>
 <td>ProgressBarStripeBaseStyle</td>
 <td>Stripe progressbar default style (not recommended for direct use)</td>
 <td>-</td>
@@ -10767,11 +10639,6 @@
 <tr>
 <td>ProgressBarDangerStripe</td>
 <td>Dangerous Stripe ProgressBar</td>
-<td>ProgressBarStripeBaseStyle</td>
-</tr>
-<tr>
-<td>ProgressBarVioletStripe</td>
-<td>Violet Stripe ProgressBar</td>
 <td>ProgressBarStripeBaseStyle</td>
 </tr>
 <tr>
@@ -10847,15 +10714,6 @@
             <p>Example：</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RepeatButton</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource RepeatButtonDanger&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a RepeatButton&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RepeatButton</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource RepeatButtonDanger&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a RepeatButton&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10,0,0,0&quot;</span> <span class="attr">controls:BorderElement.CornerRadius</span>=<span class="string">&quot;15&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RepeatButton</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource RepeatButtonDanger&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a RepeatButton&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10,0,0,0&quot;</span> <span class="attr">controls:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource GithubGeometry&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ButtonDanger_1.png" alt="ButtonDanger"></p>
           </div>
 
-<h1 id="RepeatButtonViolet-RepeatButtonBaseStyle"><a href="#RepeatButtonViolet-RepeatButtonBaseStyle" class="headerlink" title="RepeatButtonViolet : RepeatButtonBaseStyle"></a>RepeatButtonViolet : RepeatButtonBaseStyle</h1><p>Violet RepeatButton</p>
-<div class="note info no-icon">
-            <p>Only Custom Version</p>
-          </div>
-
-<div class="note info no-icon">
-            <p>Example：</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RepeatButton</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource RepeatButtonViolet&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a RepeatButton&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RepeatButton</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource RepeatButtonViolet&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a RepeatButton&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10,0,0,0&quot;</span> <span class="attr">controls:BorderElement.CornerRadius</span>=<span class="string">&quot;15&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RepeatButton</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource RepeatButtonViolet&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a RepeatButton&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10,0,0,0&quot;</span> <span class="attr">controls:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource GithubGeometry&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
-          </div>
-
 <h1 id="RepeatButtonDefault-RepeatButtonBaseStyle"><a href="#RepeatButtonDefault-RepeatButtonBaseStyle" class="headerlink" title="RepeatButtonDefault : RepeatButtonBaseStyle"></a>RepeatButtonDefault : RepeatButtonBaseStyle</h1><p>Default RepeatButton</p>
 <div class="note info no-icon">
             <p>Example：</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RepeatButton</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource RepeatButtonDefault&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a RepeatButton&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RepeatButton</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource RepeatButtonDefault&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a RepeatButton&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10,0,0,0&quot;</span> <span class="attr">controls:BorderElement.CornerRadius</span>=<span class="string">&quot;15&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RepeatButton</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource RepeatButtonDefault&#125;&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;This is a RepeatButton&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10,0,0,0&quot;</span> <span class="attr">controls:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource GithubGeometry&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -10888,9 +10746,6 @@
 </tr>
 <tr>
 <td>RepeatButtonWarning</td>
-</tr>
-<tr>
-<td>RepeatButtonViolet (Only Custom Version)</td>
 </tr>
 <tr>
 <td>RepeatButtonDefault</td>
@@ -11069,7 +10924,7 @@
 <tr>
 <td>TextBlockDefaultSuccess</td>
 <td>TextBlockDefaultSecLight</td>
-<td>TextBlockDefaultViolet <a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
+<td></td>
 </tr>
 </tbody></table>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/TextBlock.jpg" alt="TextBlockStyle"></p>
@@ -11152,11 +11007,6 @@
 <td>ToggleButtonBaseStyle</td>
 <td>Default</td>
 </tr>
-<tr>
-<td>ToggleButtonViolet <a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-<td>ToggleButtonBaseStyle</td>
-<td>Violet</td>
-</tr>
 </tbody></table>
 <p>Case:</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Center&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">MinWidth</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Default&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">MinWidth</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Primary&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,6,0,0&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ToggleButtonPrimary&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">MinWidth</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Success&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,6,0,0&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ToggleButtonSuccess&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">MinWidth</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Info&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,6,0,0&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ToggleButtonInfo&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">MinWidth</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Warning&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,6,0,0&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ToggleButtonWarning&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">MinWidth</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Danger&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,6,0,0&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ToggleButtonDanger&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -11213,11 +11063,6 @@
 <td>ToggleButtonIconTransparent</td>
 <td>ToggleButtonIconBaseStyle</td>
 <td>Transparent</td>
-</tr>
-<tr>
-<td>ToggleButtonIconViolet <a href="https://github.com/ghost1372/HandyControls">Available Only in Custom Version</a></td>
-<td>ToggleButtonIconBaseStyle</td>
-<td>Violet</td>
 </tr>
 </tbody></table>
 <p>Case:</p>
@@ -12040,33 +11885,6 @@
 <td></td>
 </tr>
 </tbody></table>
-]]></content>
-  </entry>
-  <entry>
-    <title>GithubTimeLine</title>
-    <url>/handycontrol/persianToolkit/githubTimeLine/index.html</url>
-    <content><![CDATA[<p>GithubTimeLine is a Timeline control that Inherited from TreeView</p>
-<p>example:</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Grid</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">hc:GithubTimeLine</span> <span class="attr">Name</span>=<span class="string">&quot;gitTime&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">Grid</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<div class="note warning">
-            <p>be careful not to put this control in the StackPanel, so you cannot scroll content</p>
-          </div>
-
-<p>now you can add some items</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ObservableCollection&lt;GithubTimeLine&gt; data = <span class="keyword">new</span> ObservableCollection&lt;GithubTimeLine&gt;();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> item = <span class="keyword">new</span> GithubTimeLine() &#123; TitleLabel = <span class="string">&quot;3.1.0&quot;</span>, TitleInfo = <span class="string">&quot;Aug 11th 2018&quot;</span>, TitleStyle = ResourceHelper.GetResource&lt;Style&gt;(ResourceToken.LabelViolet) &#125;;</span><br><span class="line">            item.Members.Add(<span class="keyword">new</span> ContentMember() &#123; ContentTitle = <span class="string">&quot;FIXED&quot;</span>, ContentInfo = <span class="string">&quot;Warn when committing to a protected branch&quot;</span>, ContentStyle = ResourceHelper.GetResource&lt;Style&gt;(ResourceToken.LabelSuccess) &#125;);</span><br><span class="line">            item.Members.Add(<span class="keyword">new</span> ContentMember() &#123; ContentTitle = <span class="string">&quot;ADDED&quot;</span>, ContentInfo = <span class="string">&quot;Warn when committing to a repository you don&#x27;t have write access to&quot;</span>, ContentStyle = ResourceHelper.GetResource&lt;Style&gt;(ResourceToken.LabelSuccess) &#125;);</span><br><span class="line">            item.Members.Add(<span class="keyword">new</span> ContentMember() &#123; ContentTitle = <span class="string">&quot;IMPROVED&quot;</span>, ContentInfo = <span class="string">&quot;Adding integration for Xcode as external editor&quot;</span>, ContentStyle = ResourceHelper.GetResource&lt;Style&gt;(ResourceToken.LabelPrimary) &#125;);</span><br><span class="line">            data.Add(item);</span><br><span class="line">            gitTime.ItemsSource = data;</span><br></pre></td></tr></table></figure>
-<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>OrderBy</td>
-<td>Sorts the items in ascending or descending order, <strong>Available Types</strong> [<strong>AssendingTitleLabel</strong>, <strong>DessendingTitleLabel</strong>, <strong>AssendingTitleInfo</strong>, <strong>DessendingTitleInfo</strong>]</td>
-</tr>
-</tbody></table>
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/GithubTimeLine.png" alt="GithubTimeLine"></p>
 ]]></content>
   </entry>
   <entry>
