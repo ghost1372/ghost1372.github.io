@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="HandyOrg">
 <meta property="og:description" content="Attributes   Name Use    MouseHoverBackground Set mouse hover background color   MouseDownBackground Set mouse down background color   Use CasesMouseHoverBackground Set Mouse hover background colorIn">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-25T11:31:47.989Z">
-<meta property="article:modified_time" content="2020-08-13T08:57:35.739Z">
+<meta property="article:published_time" content="2021-07-03T09:26:45.336Z">
+<meta property="article:modified_time" content="2021-07-03T09:26:45.336Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 
@@ -665,6 +665,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -834,6 +835,26 @@
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '2aaa67dfadbccbb97f7c',
+      clientSecret: '4bec06ddb9bf83afbbdc4826459ff249143a85b6',
+      repo        : 'ghost1372.github.io',
+      owner       : 'ghost1372',
+      admin       : [''],
+      id          : '85ee41f8b38a7673fdf18b7d9c88eca3',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>
