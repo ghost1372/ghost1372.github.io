@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="The background blur window can be used to enhance the UI effect, but it will sacrifice some performance. 1public class BlurWindow : Window              Operating system support range: win10 10240 ~ wi">
+  <meta name="description" content="The background blur window can be used to enhance the UI effect, but it will sacrifice some performance. 1public class BlurWindow : Window              Operating system support : windows 10">
 <meta property="og:type" content="website">
 <meta property="og:title" content="BlurWindow">
 <meta property="og:url" content="http://example.com/handycontrol/extend_controls/blurWindow/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="The background blur window can be used to enhance the UI effect, but it will sacrifice some performance. 1public class BlurWindow : Window              Operating system support range: win10 10240 ~ wi">
+<meta property="og:description" content="The background blur window can be used to enhance the UI effect, but it will sacrifice some performance. 1public class BlurWindow : Window              Operating system support : windows 10">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/BlurWindow.png">
-<meta property="article:published_time" content="2021-05-29T19:22:52.348Z">
-<meta property="article:modified_time" content="2021-05-29T19:22:52.348Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/BlurWindow.gif">
+<meta property="article:published_time" content="2021-07-20T16:31:25.666Z">
+<meta property="article:modified_time" content="2021-07-20T16:31:25.666Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/BlurWindow.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/BlurWindow.gif">
 
 <link rel="canonical" href="http://example.com/handycontrol/extend_controls/blurWindow/">
 
@@ -1122,7 +1122,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-07-03 23:08:46" itemprop="dateCreated datePublished" datetime="2021-07-03T23:08:46+04:30">2021-07-03</time>
+              <time title="Created: 2021-07-20 21:31:57" itemprop="dateCreated datePublished" datetime="2021-07-20T21:31:57+04:30">2021-07-20</time>
             </span>
 
           
@@ -1138,19 +1138,15 @@
           <p>The background blur window can be used to enhance the UI effect, but it will sacrifice some performance.</p>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">BlurWindow</span> : <span class="title">Window</span></span><br></pre></td></tr></table></figure>
 <div class="note warning">
-            <p>Operating system support range: win10 10240 ~ win10 18362</p>
+            <p>Operating system support : windows 10</p>
           </div>
 <div class="note warning">
             <p>Rewrite the resource <code>BlurGradientValue</code> to customize the blur color</p>
           </div>
 
-<div class="note info">
-            <p>If you want to enable acrylic blur on unsupported builds (build &gt;= 1903), you can use <code>FORCE_ENABLE_ACRYLIC_BLUR</code> Property.<br> <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:BlurWindow</span> <span class="attr">FORCE_ENABLE_ACRYLIC_BLUR</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag"></span></span><br></pre></td></tr></table></figure></p>
-          </div>
-
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">system:UInt32</span> <span class="attr">x:Key</span>=<span class="string">&quot;BlurGradientValue&quot;</span>&gt;</span>0x99FFFFFF<span class="tag">&lt;/<span class="name">system:UInt32</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:BlurWindow</span> <span class="attr">x:Class</span>=<span class="string">&quot;HandyControlDemo.Window.BlurWindow&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:d</span>=<span class="string">&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:mc</span>=<span class="string">&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:langs</span>=<span class="string">&quot;clr-namespace:HandyControlDemo.Properties.Langs&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:ex</span>=<span class="string">&quot;clr-namespace:HandyControlDemo.Tools.Extension&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">mc:Ignorable</span>=<span class="string">&quot;d&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource WindowBlur&#125;&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">WindowStartupLocation</span>=<span class="string">&quot;CenterScreen&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Title</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Height</span>=<span class="string">&quot;450&quot;</span> </span></span><br><span class="line"><span class="tag">               <span class="attr">Width</span>=<span class="string">&quot;800&quot;</span> </span></span><br><span class="line"><span class="tag">               <span class="attr">Icon</span>=<span class="string">&quot;/HandyControlDemo;component/Resources/Img/icon.ico&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:BlurWindow</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/BlurWindow.png" alt="BlurWindow"></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:BlurWindow</span> <span class="attr">x:Class</span>=<span class="string">&quot;HandyControlDemo.Window.BlurWindow&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:d</span>=<span class="string">&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Title</span>=<span class="string">&quot;Title&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Height</span>=<span class="string">&quot;450&quot;</span> </span></span><br><span class="line"><span class="tag">               <span class="attr">Width</span>=<span class="string">&quot;800&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:BlurWindow</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/BlurWindow.gif" alt="BlurWindow"></p>
 
       </div>
       
