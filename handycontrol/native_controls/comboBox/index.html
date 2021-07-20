@@ -35,8 +35,8 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_3.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_4.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_5.png">
-<meta property="article:published_time" content="2020-09-25T11:31:48.556Z">
-<meta property="article:modified_time" content="2020-08-13T08:57:36.680Z">
+<meta property="article:published_time" content="2021-07-20T18:19:45.547Z">
+<meta property="article:modified_time" content="2021-07-20T18:19:45.547Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxBaseStyle.png">
@@ -721,7 +721,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-07-20 21:31:58" itemprop="dateCreated datePublished" datetime="2021-07-20T21:31:58+04:30">2021-07-20</time>
+              <time title="Created: 2021-07-20 23:05:24" itemprop="dateCreated datePublished" datetime="2021-07-20T23:05:24+04:30">2021-07-20</time>
             </span>
 
           
@@ -736,14 +736,19 @@
       <div class="post-body">
           <h1 id="ComboBoxBaseStyle"><a href="#ComboBoxBaseStyle" class="headerlink" title="ComboBoxBaseStyle"></a>ComboBoxBaseStyle</h1><p>The default style of the original combo box is not recommended for direct use. It should always be used by other styles in the BasedOn method. Native combo box uses this style by default if no style is set:</p>
 <ul>
-<li>Default style<br><code>&lt;ComboBox ItemsSource=&quot;&#123;Binding DataList&#125;&quot; SelectedIndex=&quot;0&quot;/&gt;</code><br><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxBaseStyle.png" alt="ComboBoxBaseStyle"></li>
+<li>Default style<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ComboBox</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">SelectedIndex</span>=<span class="string">&quot;0&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxBaseStyle.png" alt="ComboBoxBaseStyle"></li>
 </ul>
 <h1 id="ComboBoxExtendBaseStyle-ComboBoxBaseStyle"><a href="#ComboBoxExtendBaseStyle-ComboBoxBaseStyle" class="headerlink" title="ComboBoxExtendBaseStyle : ComboBoxBaseStyle"></a>ComboBoxExtendBaseStyle : ComboBoxBaseStyle</h1><p>The native combo box extends the default style and is not recommended for direct use. It should always be used by other styles in the BasedOn method.</p>
 <h1 id="ComboBoxExtend-ComboBoxExtendBaseStyle"><a href="#ComboBoxExtend-ComboBoxExtendBaseStyle" class="headerlink" title="ComboBoxExtend : ComboBoxExtendBaseStyle"></a>ComboBoxExtend : ComboBoxExtendBaseStyle</h1><p>Relative to the default style of the original combo box, it can implement the function of title and watermark by means of additional attributes.</p>
 <ul>
-<li><p>Heading on<br><code>&lt;ComboBox ItemsSource=&quot;&#123;Binding DataList&#125;&quot; SelectedIndex=&quot;0&quot; hc:InfoElement.Title=&quot;This is the title&quot; Style=&quot;&#123;StaticResource ComboBoxExtend&#125;&quot; Text=&quot;Body 1&quot;/&gt;</code><br><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_1.png" alt="ComboBoxExtend_1"></p>
+<li><p>Title on</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ComboBox</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">SelectedIndex</span>=<span class="string">&quot;0&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;This is the title&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ComboBoxExtend&#125;&quot;</span> <span class="attr">Text</span>=<span class="string">&quot;Item 1&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_1.png" alt="ComboBoxExtend_1"></p>
 </li>
-<li><p>Heading left<br><code>&lt;ComboBox ItemsSource=&quot;&#123;Binding DataList&#125;&quot; Width=&quot;380&quot; hc:InfoElement.TitleWidth=&quot;140&quot; hc:InfoElement.TitlePlacement=&quot;Left&quot; hc:InfoElement.Title=&quot;Heading on the left&quot; Style=&quot;&#123;StaticResource ComboBoxExtend&#125;&quot; Text=&quot;Body 1&quot;/&gt;</code><br><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_2.png" alt="ComboBoxExtend_2"></p>
+<li><p>Title left</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ComboBox</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;380&quot;</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">&quot;140&quot;</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;Title on the left&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ComboBoxExtend&#125;&quot;</span> <span class="attr">Text</span>=<span class="string">&quot;Item 1&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_2.png" alt="ComboBoxExtend_2"></p>
 </li>
 </ul>
 <div class="note warning">
@@ -753,13 +758,18 @@
             <p>common problem:<br>The font of Combobox is larger than the original default font, and the title is set to the left, and the title is incomplete due to the font size.<br><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_2_Error1.png" alt="ComboBoxExtend_2_Error1"><br>solution:<br>Add the additional attribute <code>hc:InfoElement.ContentHeight</code> to the Combobox. The default value is 30. The default font number is 12. After the change, the value of the additional attribute can be set according to the new font size. As shown above, the font size is 18. Then set <code>hc:InfoElement.ContentHeight</code> to 38 and the result is as follows: <img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_2_Ok1.png" alt="ComboBoxExtend_2_Ok1"></p>
           </div>
 <ul>
-<li><p>Heading on, with watermark<br><code>&lt;ComboBox ItemsSource=&quot;&#123;Binding DataList&#125;&quot; hc:InfoElement.Placeholder=&quot;Please enter the content&quot; hc:InfoElement.Title=&quot;This field is required&quot; Style=&quot;&#123;StaticResource ComboBoxExtend&#125;&quot;/&gt;</code><br><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_3.png" alt="ComboBoxExtend_3"></p>
+<li><p>Title on, with watermark</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ComboBox</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;Please enter the content&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;This field is required&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ComboBoxExtend&#125;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_3.png" alt="ComboBoxExtend_3"></p>
 </li>
-<li><p>Title is on, with watermark, and is required<br><code>&lt;ComboBox ItemsSource=&quot;&#123;Binding DataList&#125;&quot; hc:InfoElement.Placeholder=&quot;Please enter the content&quot; hc:InfoElement.Title=&quot;This field is required&quot; Style=&quot;&#123;StaticResource ComboBoxExtend&#125;&quot; hc:InfoElement.Necessary=&quot;True&quot;/&gt;</code><br><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_4.png" alt="ComboBoxExtend_4"></p>
+<li><p>Title is on, with watermark, and is required</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ComboBox</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;Please enter the content&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;This field is required&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ComboBoxExtend&#125;&quot;</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">&quot;True&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_4.png" alt="ComboBoxExtend_4"></p>
 </li>
-<li><p>The title is on, with a watermark, and is required, and a custom required prompt<br><code>&lt;ComboBox ItemsSource=&quot;&#123;Binding DataList&#125;&quot; hc:InfoElement.Placeholder=&quot;Please enter the content&quot; hc:InfoElement.Title=&quot;This field is required&quot; Style=&quot;&#123;StaticResource ComboBoxExtend&#125;&quot; hc:InfoElement.Necessary=&quot;True&quot; hc:InfoElement.Symbol=&quot;*&quot;/&gt;</code></p>
+<li><p>The title is on, with a watermark, and is required, and a custom required prompt</p>
 </li>
 </ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ComboBox</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;Please enter the content&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;This field is required&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ComboBoxExtend&#125;&quot;</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">&quot;True&quot;</span> <span class="attr">hc:InfoElement.Symbol</span>=<span class="string">&quot;*&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ComboBoxExtend_5.png" alt="ComboBoxExtend_5"></p>
 <div class="note warning">
             <p>To use Attached Properties (InfoElement), you should set Style to <code>ComboBoxExtend</code></p>
