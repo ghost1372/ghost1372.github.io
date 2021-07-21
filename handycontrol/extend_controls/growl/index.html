@@ -28,8 +28,8 @@
 <meta property="og:description" content="This control can be used when you want to arrange notification information from top to bottom in the right area of the window. Control effect Ready to workAdd a StackPanel container to the right side">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Growl.gif">
-<meta property="article:published_time" content="2021-05-29T09:42:55.729Z">
-<meta property="article:modified_time" content="2021-05-29T09:42:55.729Z">
+<meta property="article:published_time" content="2021-07-21T07:13:16.621Z">
+<meta property="article:modified_time" content="2021-07-21T07:13:16.621Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Growl.gif">
@@ -1122,7 +1122,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-07-21 11:39:53" itemprop="dateCreated datePublished" datetime="2021-07-21T11:39:53+04:30">2021-07-21</time>
+              <time title="Created: 2021-07-21 11:53:22" itemprop="dateCreated datePublished" datetime="2021-07-21T11:53:22+04:30">2021-07-21</time>
             </span>
 
           
@@ -1141,9 +1141,9 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">&quot;Hidden&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,10,10&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>In order to facilitate scrolling, a <code>ScrollViewer</code> is usually wrapped in the outer layer. At the same time, for the sake of beauty, we set <code>VerticalScrollBarVisibility=&quot;Hidden&quot;</code> of <code>ScrollViewer</code>. It is best to add a suitable <code>Margin</code> to <code>StackPanel</code>, which is also for aesthetics.</p>
 <h1 id="Basic-usage"><a href="#Basic-usage" class="headerlink" title="Basic usage"></a>Basic usage</h1><p>Step 1: Set <code>StackPanel</code> to the container of <code>Growl</code></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">&quot;Hidden&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">controls:Growl.GrowlParent</span>=<span class="string">&quot;True&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,10,10&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">&quot;Hidden&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">hc:Growl.GrowlParent</span>=<span class="string">&quot;True&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,10,10&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <div class="note warning">
-            <p>Note the code <code>controls:Growl.GrowlParent=&quot;True&quot;</code>。</p>
+            <p>Note the code <code>hc:Growl.GrowlParent=&quot;True&quot;</code>。</p>
           </div>
 
 <div class="note warning">
@@ -1165,13 +1165,13 @@
           </div>
 
 <div class="note warning">
-            <p>In this case, you don’t need to set <code>controls:Growl.GrowlParent=&quot;True&quot;</code> in xaml.</p>
+            <p>In this case, you don’t need to set <code>hc:Growl.GrowlParent=&quot;True&quot;</code> in xaml.</p>
           </div>
 
 <h1 id="Display-information-notifications-in-any-StackPanel-container"><a href="#Display-information-notifications-in-any-StackPanel-container" class="headerlink" title="Display information notifications in any StackPanel container"></a>Display information notifications in any <code>StackPanel</code> container</h1><p>Step 1: Give the message to the <code>StackPanel</code> container: SuccessMsg</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">&quot;Hidden&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">controls:Growl.Token</span>=<span class="string">&quot;SuccessMsg&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,10,10&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">&quot;Hidden&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">hc:Growl.Token</span>=<span class="string">&quot;SuccessMsg&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,10,10&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <div class="note warning">
-            <p>Note the code<code>controls:Growl.Token=&quot;SuccessMsg&quot;</code>。</p>
+            <p>Note the code<code>hc:Growl.Token=&quot;SuccessMsg&quot;</code>。</p>
           </div>
 
 <p>Step 2: Use the message tag: SuccessMsg and call the relevant interface of <code>Growl</code> to display the specified message.</p>

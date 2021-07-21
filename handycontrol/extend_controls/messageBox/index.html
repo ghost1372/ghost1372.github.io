@@ -28,8 +28,8 @@
 <meta property="og:description" content="HC has rewritten a set of message dialogs, the usage is the same as the original one. 1public sealed class MessageBox : Window Attributes   Property Description Default Value Remarks    Message Messag">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/MessageBox.png">
-<meta property="article:published_time" content="2020-09-25T11:31:48.523Z">
-<meta property="article:modified_time" content="2020-08-13T13:57:57.275Z">
+<meta property="article:published_time" content="2021-07-21T07:16:09.331Z">
+<meta property="article:modified_time" content="2021-07-21T07:16:09.331Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/MessageBox.png">
@@ -1122,7 +1122,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-07-21 11:39:53" itemprop="dateCreated datePublished" datetime="2021-07-21T11:39:53+04:30">2021-07-21</time>
+              <time title="Created: 2021-07-21 11:53:22" itemprop="dateCreated datePublished" datetime="2021-07-21T11:53:22+04:30">2021-07-21</time>
             </span>
 
           
@@ -1215,7 +1215,7 @@
 <td>Show a message</td>
 </tr>
 </tbody></table>
-<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MessageBox.Show(Properties.Langs.Lang.GrowlAsk, Properties.Langs.Lang.Title, MessageBoxButton.YesNo, MessageBoxImage.Question);</span><br></pre></td></tr></table></figure>
+<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MessageBox.Show(<span class="string">&quot;a new version has been detected!Do you want to update?&quot;</span>, <span class="string">&quot;Title&quot;</span>, MessageBoxButton.YesNo, MessageBoxImage.Question);</span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/MessageBox.png" alt="MessageBox"></p>
 <h1 id="Override-styles"><a href="#Override-styles" class="headerlink" title="Override styles"></a>Override styles</h1><p>you can override styles like this:<br>first in your <code>app.xaml</code> add this:</p>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;Style x:Key=<span class="string">&quot;MessageBoxCustom&quot;</span> TargetType=<span class="string">&quot;hc:MessageBox&quot;</span> BasedOn=<span class="string">&quot;&#123;StaticResource &#123;x:Type hc:MessageBox&#125;&#125;&quot;</span>&gt;</span><br><span class="line">       &lt;Setter Property=<span class="string">&quot;NonClientAreaBackground&quot;</span> Value=<span class="string">&quot;#262e2f&quot;</span>/&gt;</span><br><span class="line">       &lt;Setter Property=<span class="string">&quot;OtherButtonHoverBackground&quot;</span> Value=<span class="string">&quot;#888580&quot;</span>/&gt;</span><br><span class="line">       &lt;Setter Property=<span class="string">&quot;OtherButtonForeground&quot;</span> Value=<span class="string">&quot;White&quot;</span>/&gt;</span><br><span class="line">       &lt;Setter Property=<span class="string">&quot;OtherButtonHoverForeground&quot;</span> Value=<span class="string">&quot;White&quot;</span>/&gt;</span><br><span class="line">       &lt;Setter Property=<span class="string">&quot;NonClientAreaForeground&quot;</span> Value=<span class="string">&quot;White&quot;</span>/&gt;</span><br><span class="line">       &lt;Setter Property=<span class="string">&quot;CloseButtonForeground&quot;</span> Value=<span class="string">&quot;White&quot;</span>/&gt;</span><br><span class="line">&lt;/Style&gt;</span><br></pre></td></tr></table></figure>
