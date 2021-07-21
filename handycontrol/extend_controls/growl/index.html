@@ -28,8 +28,8 @@
 <meta property="og:description" content="This control can be used when you want to arrange notification information from top to bottom in the right area of the window. Control effect Ready to workAdd a StackPanel container to the right side">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Growl.gif">
-<meta property="article:published_time" content="2021-07-21T07:13:16.621Z">
-<meta property="article:modified_time" content="2021-07-21T07:13:16.621Z">
+<meta property="article:published_time" content="2021-07-21T07:28:51.837Z">
+<meta property="article:modified_time" content="2021-07-21T07:28:51.837Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Growl.gif">
@@ -1122,7 +1122,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-07-21 11:53:22" itemprop="dateCreated datePublished" datetime="2021-07-21T11:53:22+04:30">2021-07-21</time>
+              <time title="Created: 2021-07-21 12:00:58" itemprop="dateCreated datePublished" datetime="2021-07-21T12:00:58+04:30">2021-07-21</time>
             </span>
 
           
@@ -1379,7 +1379,7 @@
           </div>
 
 <p>The main focus of the Ask method is the second parameter, its type is <code>Func&lt;bool, bool&gt;</code>, let’s look at the sample code:</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Growl.Ask(Properties.Langs.Lang.GrowlAsk, isConfirmed =&gt;</span><br><span class="line">&#123;</span><br><span class="line">    Growl.Info(isConfirmed.ToString());</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Growl.Ask(<span class="string">&quot;do you want to update?&quot;</span>, isConfirmed =&gt;</span><br><span class="line">&#123;</span><br><span class="line">    Growl.Info(isConfirmed.ToString());</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p>By using the Ask method, the “confirm” and “cancel” buttons are displayed by default. When you click “confirm”, the value of <code>isConfirmed</code> in the above code is <code>true</code>, and clicking “cancel” is <code>false&quot;, which can be based on </code>isConfirmed The value of <code>takes the corresponding action. Finally, if you return</code>true<code>, the Growl notification will be closed, and if </code>false` is returned, it will not be closed.</p>
 
       </div>
