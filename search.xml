@@ -877,6 +877,10 @@
 <td>CanUnselectAllWithBlankArea</td>
 <td></td>
 </tr>
+<tr>
+<td>ShowSelectAllButton</td>
+<td></td>
+</tr>
 </tbody></table>
 ]]></content>
   </entry>
@@ -1857,7 +1861,8 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;hc:OutlineText Text&#x3D;&quot;&#123;Binding Text, Converter&#x3D;&#123;StaticResource StringRepeatConverter&#125;, ConverterParameter&#x3D;2&#125;&quot;&#x2F;&gt;</span><br></pre></td></tr></table></figure>
 
 <h1 id="ConverterBindableBinding-Only-Custom-Version"><a href="#ConverterBindableBinding-Only-Custom-Version" class="headerlink" title="ConverterBindableBinding Only Custom Version"></a>ConverterBindableBinding <code>Only Custom Version</code></h1><p>if you need to use binding in Converter Parameter you can use this converter type</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">&quot;Foreground&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Setter.Value</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:ConverterBindableBinding</span> <span class="attr">Binding</span>=<span class="string">&quot;&#123;Binding ElementName=arc, Path=Tag&#125;&quot;</span></span></span><br><span class="line"><span class="tag">                                    <span class="attr">Converter</span>=<span class="string">&quot;&#123;StaticResource ValueToBrushConverter&#125;&quot;</span> <span class="attr">ConverterParameterBinding</span>=<span class="string">&quot;&#123;Binding ElementName=arc, Path=EndAngle&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Setter.Value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Setter</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">&quot;Foreground&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Setter.Value</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:ConverterBindableBinding</span> <span class="attr">Binding</span>=<span class="string">&quot;&#123;Binding ElementName=arc, Path=Tag&#125;&quot;</span></span></span><br><span class="line"><span class="tag">                                    <span class="attr">Converter</span>=<span class="string">&quot;&#123;StaticResource ValueToBrushConverter&#125;&quot;</span> <span class="attr">ConverterParameterBinding</span>=<span class="string">&quot;&#123;Binding ElementName=arc, Path=EndAngle&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Setter.Value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Setter</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="DataGridSelectAllButtonVisibilityConverter"><a href="#DataGridSelectAllButtonVisibilityConverter" class="headerlink" title="DataGridSelectAllButtonVisibilityConverter"></a>DataGridSelectAllButtonVisibilityConverter</h1>]]></content>
   </entry>
   <entry>
     <title>Effect</title>
@@ -9123,7 +9128,11 @@
 </tr>
 </tbody></table>
 <p>you can use regex pattern in texttype</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:InfoElement.RegexPattern</span>=<span class="string">&quot;Regex Pattern&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+<div class="note info">
+            <p>if you want to use RegexPatter, you should Set <code>TextType</code> to Anything except Common</p><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Using HandyControl.Tools;</span><br></pre></td></tr></table></figure>
+          </div>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">TextType</span>=<span class="string">&quot;Mail&quot;</span> <span class="attr">hc:InfoElement.RegexPattern</span>=<span class="string">&quot;^[0-9]*(?:\.[0-9]+)?$&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>TimeBar</title>
@@ -10017,6 +10026,27 @@
 </tr>
 <tr>
 <td>BorderTipSuccess</td>
+</tr>
+<tr>
+<td>BorderRegion</td>
+</tr>
+<tr>
+<td>BorderTipBaseStyle</td>
+</tr>
+<tr>
+<td>BorderVerticallySplitter</td>
+</tr>
+<tr>
+<td>BorderHorizontallySplitter</td>
+</tr>
+<tr>
+<td>BorderCircular</td>
+</tr>
+<tr>
+<td>BorderClip</td>
+</tr>
+<tr>
+<td>BorderCircularClip</td>
 </tr>
 </tbody></table>
 <h1 id="BorderRegionStyle"><a href="#BorderRegionStyle" class="headerlink" title="BorderRegionStyle"></a>BorderRegionStyle</h1><p>This style is used to wrap a control area, with several DropShadowEffect resources in the base xaml definition to make the following effects:</p>
