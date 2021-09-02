@@ -1344,7 +1344,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #36eb33;
+  background: #e4b19c;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2382,6 +2382,12 @@ ul.breadcrumb li + li:last-child {
 }
 .search-popup input.search-input::-webkit-search-cancel-button {
   display: none;
+}
+@media (prefers-color-scheme: dark) {
+  .search-popup a,
+  .search-popup span.exturl {
+    color: #ccc;
+  }
 }
 .search-popup .search-input-container {
   flex-grow: 1;
