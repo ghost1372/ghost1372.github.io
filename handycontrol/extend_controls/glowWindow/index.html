@@ -20,16 +20,17 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="A window with a glow effect on the border, the code is extracted from Visual Studio 1public class GlowWindow : Window Attributes   Property Description Default Value Remarks    ActiveGlowColor Glow co">
+  <meta name="description" content="A window with a glow effect on the border, the code is extracted from Visual Studio 1public class GlowWindow : Window              All hc:Window properties can be used. Click here to view">
 <meta property="og:type" content="website">
 <meta property="og:title" content="GlowWindow">
 <meta property="og:url" content="http://example.com/handycontrol/extend_controls/glowWindow/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="A window with a glow effect on the border, the code is extracted from Visual Studio 1public class GlowWindow : Window Attributes   Property Description Default Value Remarks    ActiveGlowColor Glow co">
+<meta property="og:description" content="A window with a glow effect on the border, the code is extracted from Visual Studio 1public class GlowWindow : Window              All hc:Window properties can be used. Click here to view">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GlowWindow.png">
-<meta property="article:published_time" content="2020-09-25T11:31:48.504Z">
-<meta property="article:modified_time" content="2020-08-13T08:57:35.783Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/9213496/139540320-a2f9e7ff-77dd-4334-8535-31a78626cd1d.png">
+<meta property="article:published_time" content="2021-11-29T15:29:51.201Z">
+<meta property="article:modified_time" content="2021-11-29T15:29:51.201Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GlowWindow.png">
@@ -124,9 +125,9 @@
   </li>
         
             
-  <li class="menu-item menu-item-handycontrol---3.3.8">
+  <li class="menu-item menu-item-handycontrol---3.3.9">
 
-    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.3.8</a>
+    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.3.9</a>
 
   </li>
 
@@ -1138,7 +1139,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-10-02 12:09:54" itemprop="dateCreated datePublished" datetime="2021-10-02T12:09:54+03:30">2021-10-02</time>
+              <time title="Created: 2021-12-06 11:40:54" itemprop="dateCreated datePublished" datetime="2021-12-06T11:40:54+03:30">2021-12-06</time>
             </span>
 
           
@@ -1153,6 +1154,10 @@
       <div class="post-body">
           <p>A window with a glow effect on the border, the code is extracted from Visual Studio</p>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">GlowWindow</span> : <span class="title">Window</span></span><br></pre></td></tr></table></figure>
+<div class="note info">
+            <p>All <code>hc:Window</code> properties can be used. Click <ins><strong><a target="_blank" rel="noopener" href="https://hosseini.ninja/handycontrol/extend_controls/window/#Attributes">here</a></strong></ins> to view</p>
+          </div>
+
 <h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
 <thead>
 <tr>
@@ -1174,9 +1179,19 @@
 <td></td>
 <td></td>
 </tr>
+<tr>
+<td>ApplyBackdropMaterial</td>
+<td>Apply Mica Material for window</td>
+<td>false</td>
+<td>Only Available in Custom Version</td>
+</tr>
 </tbody></table>
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:GlowWindow</span> <span class="attr">x:Class</span>=<span class="string">&quot;HandyControlDemo.Window.GlowWindow&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:d</span>=<span class="string">&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:mc</span>=<span class="string">&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:langs</span>=<span class="string">&quot;clr-namespace:HandyControlDemo.Properties.Langs&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:ex</span>=<span class="string">&quot;clr-namespace:HandyControlDemo.Tools.Extension&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">mc:Ignorable</span>=<span class="string">&quot;d&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource WindowGlow&#125;&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Background</span>=<span class="string">&quot;&#123;DynamicResource MainContentBackgroundBrush&#125;&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">WindowStartupLocation</span>=<span class="string">&quot;CenterScreen&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Title</span>=<span class="string">&quot;&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">ActiveGlowColor</span>=<span class="string">&quot;&#123;DynamicResource PrimaryColor&#125;&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Height</span>=<span class="string">&quot;450&quot;</span> </span></span><br><span class="line"><span class="tag">               <span class="attr">Width</span>=<span class="string">&quot;800&quot;</span> </span></span><br><span class="line"><span class="tag">               <span class="attr">Icon</span>=<span class="string">&quot;/HandyControlDemo;component/Resources/Img/icon.ico&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">&quot;&#123;DynamicResource MainContentForegroundDrawingBrush&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:GlowWindow</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GlowWindow.png" alt="GlowWindow"></p>
+<h1 id="Mica-Material"><a href="#Mica-Material" class="headerlink" title="Mica Material"></a>Mica Material</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Window</span> <span class="attr">x:Class</span>=<span class="string">&quot;HandyControlDemo.MainWindow&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:local</span>=<span class="string">&quot;clr-namespace:WpfApp4&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">ApplyBackdropMaterial</span>=<span class="string">&quot;True&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Grid</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Window</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>For synchronization with the Windows theme, set the <code>UsingSystemTheme=&quot;True&quot;</code> property in the app.xaml file</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:ThemeResources</span> <span class="attr">UsingSystemTheme</span>=<span class="string">&quot;True&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Theme</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ResourceDictionary</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/9213496/139540320-a2f9e7ff-77dd-4334-8535-31a78626cd1d.png" alt="Mica"></p>
 
       </div>
       
@@ -1246,7 +1261,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Attributes"><span class="nav-number">1.</span> <span class="nav-text">Attributes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Case"><span class="nav-number">2.</span> <span class="nav-text">Case</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Attributes"><span class="nav-number">1.</span> <span class="nav-text">Attributes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Case"><span class="nav-number">2.</span> <span class="nav-text">Case</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mica-Material"><span class="nav-number">3.</span> <span class="nav-text">Mica Material</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
