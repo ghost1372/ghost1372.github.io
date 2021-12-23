@@ -174,6 +174,9 @@
             <p>See <a href="https://github.com/ghost1372/HandyControls/releases">here</a> and <a href="https://github.com/HandyOrg/HandyControl/releases">here</a> for full changes</p>
           </div>
 
+<h2 id="3-3-0-and-3-3-10-HandyControls"><a href="#3-3-0-and-3-3-10-HandyControls" class="headerlink" title="3.3.0 and 3.3.10 (HandyControls)"></a>3.3.0 and 3.3.10 (HandyControls)</h2><ul>
+<li>To change the language of the controls, you must first install the desired language pack See <a href="https://ghost1372.github.io/handycontrol/langs/#Language-packs">here</a> for more information</li>
+</ul>
 <h2 id="3-3-8-HandyControls"><a href="#3-3-8-HandyControls" class="headerlink" title="3.3.8 (HandyControls)"></a>3.3.8 (HandyControls)</h2><ul>
 <li>All Violet and Default Styles Removed eg: ToggleButtonViolet, SplitButtonDefault</li>
 <li>GithubTimeLine Removed</li>
@@ -275,6 +278,9 @@
 <p><code>The default is English (en).</code></p>
 <p>If you need to expand on your own, it is recommended to use the open source plugin: <a href="https://marketplace.visualstudio.com/items?itemName=TomEnglert.ResXManager">ResXManager</a> to maintain all language packs.</p>
 <p>After the control library is referenced, the language package folder is generated in the running directory, and its naming style is like zh-cn, en, and so on.</p>
+<h2 id="How-to-Install-and-Use-Language-Packs"><a href="#How-to-Install-and-Use-Language-Packs" class="headerlink" title="How to Install and Use Language Packs?"></a>How to Install and Use Language Packs?</h2><p>Language packs are provided as a nuget package, So just install your favorite language packs as nuget packs.<br>For example, if you want your app to support <code>Persian</code> and <code>Chinese</code>, just add the following packages to your project.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Install-Package HandyControl.Lang.fa</span><br><span class="line">Install-Package HandyControl.Lang.zh-CN</span><br></pre></td></tr></table></figure>
+<p>After that you can change the language of the app as before.</p>
 <h1 id="Dynamic-Multi-Language"><a href="#Dynamic-Multi-Language" class="headerlink" title="Dynamic Multi Language"></a>Dynamic Multi Language</h1><p>You can use this method to bring dynamic multilingual switching features to your applications</p>
 <h2 id="How-to-use"><a href="#How-to-use" class="headerlink" title="How to use?"></a>How to use?</h2><p>First you need to create a folder in properties, here our folder called <code>Langs</code> We are going to create language files in this folder.<br>add resource files into this folder you can Right-click on folder and from the Add New Item option Select <code>Resources file</code> Be careful when naming it.</p>
 <div class="note info">
@@ -3129,6 +3135,10 @@
 <td>AutoHide</td>
 <td></td>
 </tr>
+<tr>
+<td>Orientation</td>
+<td></td>
+</tr>
 </tbody></table>
 <h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:ScrollViewer</span> <span class="attr">hc:ScrollViewerAttach.AutoHide</span>=<span class="string">&quot;False&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
@@ -5685,7 +5695,9 @@ or</li>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="built_in">string</span> fileSize = ToFileSize(<span class="number">564654644</span>);</span><br><span class="line"><span class="comment">//Result: 538/5 MB</span></span><br></pre></td></tr></table></figure>
 <h1 id="XmlHelper"><a href="#XmlHelper" class="headerlink" title="XmlHelper"></a>XmlHelper</h1><p>Serialize and Deserialize properties of a class to xml file.</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Person person = <span class="keyword">new</span> Person() &#123; Name = <span class="string">&quot;Mahdi&quot;</span>, Age = <span class="number">27</span> &#125;;</span><br><span class="line">XmlHelper.Serialize&lt;Person&gt;(person, <span class="string">@&quot;output.xml&quot;</span>);</span><br><span class="line"></span><br><span class="line">Person person2 = <span class="keyword">new</span> Person();</span><br><span class="line">person2 = XmlHelper.Deserialize&lt;Person&gt;(<span class="string">@&quot;output.xml&quot;</span>);</span><br><span class="line"></span><br><span class="line">Console.WriteLine(<span class="string">&quot;Name: &#123;0&#125;&quot;</span>, person2.Name);</span><br><span class="line">Console.WriteLine(<span class="string">&quot;Age: &#123;0&#125;&quot;</span>, person2.Age);</span><br></pre></td></tr></table></figure>
-<h1 id="WindowHelper"><a href="#WindowHelper" class="headerlink" title="WindowHelper"></a>WindowHelper</h1><h2 id="EnableMicaEffect"><a href="#EnableMicaEffect" class="headerlink" title="EnableMicaEffect"></a>EnableMicaEffect</h2><p>You can enable mica material for Windows</p>
+<h1 id="WindowHelper"><a href="#WindowHelper" class="headerlink" title="WindowHelper"></a>WindowHelper</h1><h2 id="DetermineIfInLightThemeMode"><a href="#DetermineIfInLightThemeMode" class="headerlink" title="DetermineIfInLightThemeMode"></a>DetermineIfInLightThemeMode</h2><p>you can determine if windows theme is light or Dark</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="built_in">bool</span> isLight = WindowHelper.DetermineIfInLightThemeMode();</span><br></pre></td></tr></table></figure>
+<h1 id="MicaHelper"><a href="#MicaHelper" class="headerlink" title="MicaHelper"></a>MicaHelper</h1><h2 id="ApplyMicaEffect"><a href="#ApplyMicaEffect" class="headerlink" title="ApplyMicaEffect"></a>ApplyMicaEffect</h2><p>You can enable mica material for Windows</p>
 <div class="note info">
             <p>You do not need to use this helper to activate mica on hc:Window, hc:GlowWindow and BlurWindow, Mica is available on these windows by default through <code>ApplyBackdropMaterial</code> Property.</p>
           </div>
@@ -5696,14 +5708,21 @@ or</li>
           </div>
 
 <p>1.First we need to Create a WindowChrome and then change the background to <code>Transparent</code></p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">MainWindow</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> chrome = <span class="keyword">new</span> WindowChrome</span><br><span class="line">    &#123;</span><br><span class="line">        CornerRadius = <span class="keyword">new</span> CornerRadius(),</span><br><span class="line">        GlassFrameThickness = <span class="keyword">new</span> Thickness(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>),</span><br><span class="line">        UseAeroCaptionButtons = <span class="literal">true</span></span><br><span class="line">    &#125;;</span><br><span class="line">    WindowChrome.SetWindowChrome(<span class="keyword">this</span>, chrome);</span><br><span class="line">    InitializeComponent();</span><br><span class="line">    <span class="keyword">this</span>.Background = Brushes.Transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">MainWindow</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> chrome = <span class="keyword">new</span> WindowChrome</span><br><span class="line">    &#123;</span><br><span class="line">        CornerRadius = <span class="keyword">new</span> CornerRadius(),</span><br><span class="line">        ResizeBorderThickness = <span class="keyword">new</span> Thickness(<span class="number">8</span>),</span><br><span class="line">        GlassFrameThickness = <span class="keyword">new</span> Thickness(<span class="number">-1</span>),</span><br><span class="line">        NonClientFrameEdges = NonClientFrameEdges.None,</span><br><span class="line">        UseAeroCaptionButtons = <span class="literal">false</span></span><br><span class="line">    &#125;;</span><br><span class="line">    WindowChrome.SetWindowChrome(<span class="keyword">this</span>, chrome);</span><br><span class="line">    InitializeComponent();</span><br><span class="line">    <span class="keyword">this</span>.Background = Brushes.Transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ol start="2">
 <li>Now we can Activate mica </li>
 </ol>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> isDark = <span class="literal">false</span>;</span><br><span class="line">WindowHelper.EnableMicaEffect(<span class="keyword">new</span> WindowInteropHelper(<span class="keyword">this</span>).EnsureHandle(), isDark);</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">MicaHelper.ApplyMicaEffect(<span class="keyword">this</span>);</span><br></pre></td></tr></table></figure>
+<p>or you can use another method with support dark mode</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">MicaHelper.ApplyMicaEffect(handle, isDark);</span><br></pre></td></tr></table></figure>
 <div class="note warning">
             <p>If your Windows uses a dark theme, you need to set <code>isDark</code> to <code>true</code></p>
-          </div>]]></content>
+          </div>
+
+<p>if you need to remove Mica you can use RemoveMicaEffect method</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">MicaHelper.RemoveMicaEffect();</span><br><span class="line"><span class="comment">// OR</span></span><br><span class="line">MicaHelper.RemoveMicaEffect(handle);</span><br></pre></td></tr></table></figure>
+<p>if you want to know that mica effect is applied you can use:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="built_in">bool</span> isApplied = MicaHelper.IsMicaEffectApplied;</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>Extensions</title>
@@ -11705,12 +11724,6 @@ or</li>
 </tr>
 </thead>
 <tbody><tr>
-<td>Orientation</td>
-<td>Scrolling Direction</td>
-<td>Orientation.Vertical</td>
-<td></td>
-</tr>
-<tr>
 <td>CanMouseWheel</td>
 <td>Whether to respond to mouse wheel operation</td>
 <td>true</td>
@@ -12243,7 +12256,7 @@ or</li>
 <p>The generated TextBox is shown below:<br><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/TextBox_1.png" alt="TextBox"></p>
 <p>For more examples of TextBox, you can refer to the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox?view=netframework-4.8">Document</a> of its base class.</p>
 <h1 id="Set-title-and-placeholder-text"><a href="#Set-title-and-placeholder-text" class="headerlink" title="Set title and placeholder text"></a>Set title and placeholder text</h1><p>You can add a Header and a Placeholder to a TextBox to indicate to the user its purpose. To use these two attributes</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;Please enter the content&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;This is the content&quot;</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;Please enter the content&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;This is the content&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 <h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
 <thead>
 <tr>
@@ -13403,6 +13416,10 @@ or</li>
 <td>BindingHelper</td>
 <td></td>
 </tr>
+<tr>
+<td>FullScreenHelper</td>
+<td></td>
+</tr>
 </tbody></table>
 <h1 id="AnimationHelper"><a href="#AnimationHelper" class="headerlink" title="AnimationHelper"></a>AnimationHelper</h1><h2 id="CreateAnimation"><a href="#CreateAnimation" class="headerlink" title="CreateAnimation"></a>CreateAnimation</h2><h1 id="ConfigHelper"><a href="#ConfigHelper" class="headerlink" title="ConfigHelper"></a>ConfigHelper</h1><table>
 <thead>
@@ -13533,6 +13550,14 @@ or</li>
 </tr>
 <tr>
 <td>IsInRangeOfNegIntIncludeZero</td>
+<td></td>
+</tr>
+<tr>
+<td>StartFullScreen</td>
+<td></td>
+</tr>
+<tr>
+<td>EndFullScreen</td>
 <td></td>
 </tr>
 </tbody></table>
@@ -13957,6 +13982,22 @@ or</li>
 </tr>
 <tr>
 <td>DwmGetColorizationColor</td>
+<td></td>
+</tr>
+<tr>
+<td>DwmSetWindowAttribute</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindowLongPtr32</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindowLongPtr64</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindowLongPtr</td>
 <td></td>
 </tr>
 <tr>

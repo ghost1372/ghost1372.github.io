@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="HandyOrg">
 <meta property="og:description" content="Way of useThe language package to be used can be specified by ConfigHelper.Instance.SetLang(string lang), English (en) is used by default. The language package that comes with the control library is g">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-01-19T15:56:09.196Z">
-<meta property="article:modified_time" content="2021-01-19T15:56:09.196Z">
+<meta property="article:published_time" content="2021-12-20T08:16:48.327Z">
+<meta property="article:modified_time" content="2021-12-20T08:16:48.327Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 
@@ -122,9 +122,9 @@
   </li>
         
             
-  <li class="menu-item menu-item-handycontrol---3.3.9">
+  <li class="menu-item menu-item-handycontrol---3.3.10">
 
-    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.3.9</a>
+    <a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.3.10</a>
 
   </li>
 
@@ -424,7 +424,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-12-06 11:54:39" itemprop="dateCreated datePublished" datetime="2021-12-06T11:54:39+03:30">2021-12-06</time>
+              <time title="Created: 2021-12-23 15:04:08" itemprop="dateCreated datePublished" datetime="2021-12-23T15:04:08+03:30">2021-12-23</time>
             </span>
 
           
@@ -460,6 +460,9 @@
 <p><code>The default is English (en).</code></p>
 <p>If you need to expand on your own, it is recommended to use the open source plugin: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=TomEnglert.ResXManager">ResXManager</a> to maintain all language packs.</p>
 <p>After the control library is referenced, the language package folder is generated in the running directory, and its naming style is like zh-cn, en, and so on.</p>
+<h2 id="How-to-Install-and-Use-Language-Packs"><a href="#How-to-Install-and-Use-Language-Packs" class="headerlink" title="How to Install and Use Language Packs?"></a>How to Install and Use Language Packs?</h2><p>Language packs are provided as a nuget package, So just install your favorite language packs as nuget packs.<br>For example, if you want your app to support <code>Persian</code> and <code>Chinese</code>, just add the following packages to your project.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Install-Package HandyControl.Lang.fa</span><br><span class="line">Install-Package HandyControl.Lang.zh-CN</span><br></pre></td></tr></table></figure>
+<p>After that you can change the language of the app as before.</p>
 <h1 id="Dynamic-Multi-Language"><a href="#Dynamic-Multi-Language" class="headerlink" title="Dynamic Multi Language"></a>Dynamic Multi Language</h1><p>You can use this method to bring dynamic multilingual switching features to your applications</p>
 <h2 id="How-to-use"><a href="#How-to-use" class="headerlink" title="How to use?"></a>How to use?</h2><p>First you need to create a folder in properties, here our folder called <code>Langs</code> We are going to create language files in this folder.<br>add resource files into this folder you can Right-click on folder and from the Add New Item option Select <code>Resources file</code> Be careful when naming it.</p>
 <div class="note info">
@@ -560,7 +563,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Way-of-use"><span class="nav-number">1.</span> <span class="nav-text">Way of use</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Language-packs"><span class="nav-number">2.</span> <span class="nav-text">Language packs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dynamic-Multi-Language"><span class="nav-number">3.</span> <span class="nav-text">Dynamic Multi Language</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-use"><span class="nav-number">3.1.</span> <span class="nav-text">How to use?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#How-to-use-in-Xaml"><span class="nav-number">3.1.1.</span> <span class="nav-text">How to use in Xaml?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-to-use-in-Csharp"><span class="nav-number">3.1.2.</span> <span class="nav-text">How to use in Csharp?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-Change-language-in-Runtime"><span class="nav-number">3.2.</span> <span class="nav-text">How to Change language in Runtime?</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Way-of-use"><span class="nav-number">1.</span> <span class="nav-text">Way of use</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Language-packs"><span class="nav-number">2.</span> <span class="nav-text">Language packs</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-Install-and-Use-Language-Packs"><span class="nav-number">2.1.</span> <span class="nav-text">How to Install and Use Language Packs?</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dynamic-Multi-Language"><span class="nav-number">3.</span> <span class="nav-text">Dynamic Multi Language</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-use"><span class="nav-number">3.1.</span> <span class="nav-text">How to use?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#How-to-use-in-Xaml"><span class="nav-number">3.1.1.</span> <span class="nav-text">How to use in Xaml?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-to-use-in-Csharp"><span class="nav-number">3.1.2.</span> <span class="nav-text">How to use in Csharp?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-Change-language-in-Runtime"><span class="nav-number">3.2.</span> <span class="nav-text">How to Change language in Runtime?</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
