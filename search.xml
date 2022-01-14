@@ -604,7 +604,7 @@
 
 <h1 id="Last-step"><a href="#Last-step" class="headerlink" title="Last step"></a>Last step</h1><p>Add a namespace: <code>xmlns:hc=&quot;https://handyorg.github.io/handycontrol&quot;</code></p>
 <h1 id="Extension"><a href="#Extension" class="headerlink" title="Extension"></a>Extension</h1><p>just download and install handycontrol template from marketplace. in this way you dont need to add anything. after installing hc, create new project with handycontrol template</p>
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/vsixTemplate.png" alt="Extension"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/HandyControls/Docs/vsixTemplate.png" alt="Extension"></p>
 <h1 id="Nuget-Nightly-Builds"><a href="#Nuget-Nightly-Builds" class="headerlink" title="Nuget Nightly Builds"></a>Nuget Nightly Builds</h1><p>If you want to get the latest changes at the same time as the change in the source code as a nuget package, you can use Nightly Builds.</p>
 <div class="note warning">
             <p>Nightly Builds are not recommended for use in products due to their instability.</p>
@@ -1489,6 +1489,19 @@
 </tr>
 <tr>
 <td>Wrap</td>
+</tr>
+</tbody></table>
+<h1 id="LinearLayout"><a href="#LinearLayout" class="headerlink" title="LinearLayout"></a>LinearLayout</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Stack</td>
+</tr>
+<tr>
+<td>Uniform</td>
 </tr>
 </tbody></table>
 ]]></content>
@@ -4058,7 +4071,7 @@ or</li>
             <p>Only Custom Version</p><h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table><thead><tr><th>Style</th></tr></thead><tbody><tr><td>LiveStyle</td></tr><tr><td>ChessBoard</td></tr></tbody></table><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ContentControl</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ChessBoard&#125;&quot;</span> <span class="attr">hc:BorderElement.CornerRadius</span>=<span class="string">&quot;5&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Click&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;200&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ContentControl</span>&gt;</span></span><br></pre></td></tr></table></figure>
           </div>
 
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/MCBackgroundLiveStyle.gif" alt="ContentControl"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/HandyControls/Docs/MCBackgroundLiveStyle.gif" alt="ContentControl"></p>
 ]]></content>
   </entry>
   <entry>
@@ -4359,7 +4372,7 @@ or</li>
 <h1 id="ListBoxBaseStyle"><a href="#ListBoxBaseStyle" class="headerlink" title="ListBoxBaseStyle"></a>ListBoxBaseStyle</h1><p>  ListBox default style is not recommended to use directly, it should always be used by other styles in BasedOn mode.</p>
 <p>Example：</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListBox</span> <span class="attr">hc:ListBoxAttach.IsOddEvenRow</span>=<span class="string">&quot;True&quot;</span> <span class="attr">AlternationCount</span>=<span class="string">&quot;2&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/ListBoxIsOddOrEven.png" alt="ListBox.IsOddEvenRow"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/HandyControls/Docs/ListBoxIsOddOrEven.png" alt="ListBox.IsOddEvenRow"></p>
 <div class="note info no-icon">
             <p>Example：</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Style</span> <span class="attr">BasedOn</span> = <span class="string">&quot;&#123;StaticResource ListBoxBaseStyle&#125;&quot;</span> <span class="attr">TargetType</span> = <span class="string">&quot;ListBox&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/ListBox.BaseStyle.png" alt="ListBox.BaseStyle"></p>
           </div>
@@ -4393,7 +4406,7 @@ or</li>
             <p>This style is <code>Only Available in Custom Version</code></p><p>you can use <code>IconElement</code> and <code>ListBoxAttach</code> AttachedProperty</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListBox</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ListBoxModernStyle&#125;&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;32&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ListBoxItem</span> <span class="attr">Content</span>=<span class="string">&quot;Item 1&quot;</span> <span class="attr">hc:IconElement.Height</span>=<span class="string">&quot;16&quot;</span> <span class="attr">hc:IconElement.Width</span>=<span class="string">&quot;16&quot;</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource ConfigGeometry&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ListBoxItem</span> <span class="attr">Content</span>=<span class="string">&quot;Item 2&quot;</span> <span class="attr">hc:ListBoxAttach.IsNew</span>=<span class="string">&quot;True&quot;</span> <span class="attr">hc:IconElement.Height</span>=<span class="string">&quot;16&quot;</span> <span class="attr">hc:IconElement.Width</span>=<span class="string">&quot;16&quot;</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource ConfigGeometry&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ListBoxItem</span> <span class="attr">Content</span>=<span class="string">&quot;Item 3&quot;</span> <span class="attr">hc:ListBoxAttach.IsNew</span>=<span class="string">&quot;True&quot;</span> <span class="attr">hc:ListBoxAttach.GeoemtryBrush</span>=<span class="string">&quot;&#123;DynamicResource WarningBrush&#125;&quot;</span> <span class="attr">hc:ListBoxAttach.Geometry</span>=<span class="string">&quot;&#123;DynamicResource ClockGeometry&#125;&quot;</span> <span class="attr">hc:IconElement.Height</span>=<span class="string">&quot;16&quot;</span> <span class="attr">hc:IconElement.Width</span>=<span class="string">&quot;16&quot;</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource ConfigGeometry&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ListBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
           </div>
 
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/ListBoxModernStyle.png" alt="ListBox.ListBoxModernStyle"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/HandyControls/Docs/ListBoxModernStyle.png" alt="ListBox.ListBoxModernStyle"></p>
 <h1 id="ListBoxTransparentStyle"><a href="#ListBoxTransparentStyle" class="headerlink" title="ListBoxTransparentStyle"></a>ListBoxTransparentStyle</h1><p><code>This style is Only Available in Custom Version</code></p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListBox</span> <span class="attr">Style</span>=<span class="string">&#123;StaticResource</span> <span class="attr">ListBoxTransparentStyle</span>&#125;/&gt;</span></span><br></pre></td></tr></table></figure>
 <h1 id="ListBoxItemNewStyle"><a href="#ListBoxItemNewStyle" class="headerlink" title="ListBoxItemNewStyle"></a>ListBoxItemNewStyle</h1><p><code>This style is Only Available in Custom Version</code></p>
@@ -4922,6 +4935,11 @@ or</li>
 <td>TextBlockDefaultSecLight</td>
 <td></td>
 </tr>
+<tr>
+<td>HighlightTextBlockBaseStyle</td>
+<td></td>
+<td></td>
+</tr>
 </tbody></table>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/TextBlock.png" alt="TextBlockStyle"></p>
 ]]></content>
@@ -5363,7 +5381,7 @@ or</li>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:CheckTreeView</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding TreeRoot&#125;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 <p>now you need to create observablecollection</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ObservableCollection</span>&lt;<span class="title">CheckTreeView</span>&gt; TreeRoot</span> &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125; = <span class="keyword">new</span> ObservableCollection&lt;CheckTreeView&gt;();</span><br><span class="line"></span><br><span class="line">CheckTreeView item = <span class="keyword">new</span> CheckTreeView() &#123; Text = <span class="string">&quot;Item 1&quot;</span>, IsChecked = <span class="literal">false</span>, CTag = <span class="string">&quot;TAG&quot;</span> &#125;;</span><br><span class="line"></span><br><span class="line">CheckTreeView subItem1 = <span class="keyword">new</span> CheckTreeView() &#123; Text = <span class="string">&quot;SubItem 1&quot;</span>, IsChecked = <span class="literal">false</span>, CTag = <span class="string">&quot;TAG&quot;</span> &#125;;</span><br><span class="line">CheckTreeView subItem2 = <span class="keyword">new</span> CheckTreeView() &#123; Text = <span class="string">&quot;SubItem 2&quot;</span>, IsChecked = <span class="literal">false</span>, CTag = <span class="string">&quot;TAG&quot;</span> &#125;;</span><br><span class="line">item.Add(subItem1);</span><br><span class="line">item.Add(subItem2);</span><br><span class="line">TreeRoot.Add(item);</span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/CheckTreeView.png" alt="CheckTreeView"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/HandyControls/Docs/CheckTreeView.png" alt="CheckTreeView"></p>
 ]]></content>
   </entry>
   <entry>
@@ -6224,7 +6242,7 @@ or</li>
 </tr>
 </tbody></table>
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:LoadingIndicator</span> <span class="attr">SpeedRatio</span>=<span class="string">&quot;&#123;Binding SpeedRatio&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource LoadingIndicatorArcsStyle&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:LoadingIndicator</span> <span class="attr">SpeedRatio</span>=<span class="string">&quot;&#123;Binding SpeedRatio&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource LoadingIndicatorArcsRingStyle&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:LoadingIndicator</span> <span class="attr">SpeedRatio</span>=<span class="string">&quot;&#123;Binding SpeedRatio&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource LoadingIndicatorDoubleBounceStyle&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:LoadingIndicator</span> <span class="attr">SpeedRatio</span>=<span class="string">&quot;&#123;Binding SpeedRatio&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource LoadingIndicatorFlipPlaneStyle&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:LoadingIndicator</span> <span class="attr">SpeedRatio</span>=<span class="string">&quot;&#123;Binding SpeedRatio&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource LoadingIndicatorPulseStyle&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:LoadingIndicator</span> <span class="attr">SpeedRatio</span>=<span class="string">&quot;&#123;Binding SpeedRatio&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource LoadingIndicatorRingStyle&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:LoadingIndicator</span> <span class="attr">SpeedRatio</span>=<span class="string">&quot;&#123;Binding SpeedRatio&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource LoadingIndicatorThreeDotsStyle&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:LoadingIndicator</span> <span class="attr">SpeedRatio</span>=<span class="string">&quot;&#123;Binding SpeedRatio&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource LoadingIndicatorWaveStyle&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:LoadingIndicator</span> <span class="attr">SpeedRatio</span>=<span class="string">&quot;&#123;Binding SpeedRatio&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource LoadingIndicatorLinesStyle&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:LoadingIndicator</span> <span class="attr">SpeedRatio</span>=<span class="string">&quot;&#123;Binding SpeedRatio&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource LoadingIndicatorGridsStyle&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:LoadingIndicator</span> <span class="attr">SpeedRatio</span>=<span class="string">&quot;&#123;Binding SpeedRatio&#125;&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;DynamicResource LoadingIndicatorRotateStyle&#125;&quot;</span>/&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/Indicator.gif" alt="LoadingIndicator"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/HandyControls/Docs/Indicator.gif" alt="LoadingIndicator"></p>
 ]]></content>
   </entry>
   <entry>
@@ -6570,7 +6588,7 @@ or</li>
     <url>/handycontrol/persianToolkit/persianCalendarWithClock/index.html</url>
     <content><![CDATA[<p>PersianCalendarWithClock is Based on <a href="https://ghost1372.github.io/handycontrol/extend_controls/calendarWithClock/">CalendarWithClock</a> All methods and styles are available in this control </p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:PersianCalendarWithClock</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span> <span class="attr">ConfirmButtonText</span>=<span class="string">&quot;Ok&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/PersianCalendar.png" alt="PersianCalendar"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/HandyControls/Docs/PersianCalendar.png" alt="PersianCalendar"></p>
 ]]></content>
   </entry>
   <entry>
@@ -6698,7 +6716,7 @@ or</li>
     <content><![CDATA[<p>PersianCalendar is Based on <a href="https://ghost1372.github.io/handycontrol/native_controls/calendar/">Calendar</a> All methods and styles are available in this control</p>
 <p>example:</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:PersianCalendar</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/PersianCalendar.png" alt="PersianCalendar"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/HandyControls/Docs/PersianCalendar.png" alt="PersianCalendar"></p>
 <h1 id="Afghanistan-Calendar"><a href="#Afghanistan-Calendar" class="headerlink" title="Afghanistan Calendar"></a>Afghanistan Calendar</h1><p>Since the calendars of Iran and Afghanistan are the same and only the names of the months are different, You can use the Afghan calendar with Afghan names.<br>Put this code in <code>App.xaml.cs</code> and <code>OnStartup</code> Method</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">System.Threading.Thread.CurrentThread.CurrentCulture = <span class="keyword">new</span> CultureInfo(<span class="string">&quot;fa-AF&quot;</span>); <span class="comment">//ps-AF and prs-AF also can be used</span></span><br></pre></td></tr></table></figure>
 <h1 id="Wrapper-for-Material-Design-Style"><a href="#Wrapper-for-Material-Design-Style" class="headerlink" title="Wrapper for Material Design Style"></a>Wrapper for Material Design Style</h1><p>if you want to use PersianCalendar with Material Design Styles follow this instructures</p>
@@ -6749,7 +6767,7 @@ or</li>
 
 <p>example:</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:PersianDatePicker</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/PersianDatePicker.png" alt="PersianDatePicker"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/HandyControls/Docs/PersianDatePicker.png" alt="PersianDatePicker"></p>
 ]]></content>
   </entry>
   <entry>
@@ -6796,7 +6814,7 @@ or</li>
 <td>Angle</td>
 </tr>
 </tbody></table>
-<p><img src="https://raw.githubusercontent.com/ghost1372/HandyControls/develop/Resources/SpeedoMeter.gif" alt="SpeedoMeter"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/HandyControls/Docs/SpeedoMeter.gif" alt="SpeedoMeter"></p>
 ]]></content>
   </entry>
   <entry>
@@ -7105,7 +7123,42 @@ or</li>
   <entry>
     <title>ButtonGroup</title>
     <url>/handycontrol/extend_controls/buttonGroup/index.html</url>
-    <content><![CDATA[<h1 id="RadioGroupItemBaseStyle"><a href="#RadioGroupItemBaseStyle" class="headerlink" title="RadioGroupItemBaseStyle"></a>RadioGroupItemBaseStyle</h1><p>Subset <code>RadioButton</code> style base class in <code>ButtonGroup</code> control. It is not recommended to use it directly. It is often used as <code>Item</code> style base class in <code>ButtonGroup</code>. It is also used in conjunction with <code>ButtonGroup</code> control.</p>
+    <content><![CDATA[<h1 id="Attribute"><a href="#Attribute" class="headerlink" title="Attribute"></a>Attribute</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Layout</td>
+</tr>
+<tr>
+<td>Orientation</td>
+</tr>
+</tbody></table>
+<h1 id="Style"><a href="#Style" class="headerlink" title="Style"></a>Style</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ButtonGroupHorizontalUniformItemsPanelTemplate</td>
+</tr>
+<tr>
+<td>ButtonGroupVerticalUniformItemsPanelTemplate</td>
+</tr>
+<tr>
+<td>ButtonGroupHorizontalStackItemsPanelTemplate</td>
+</tr>
+<tr>
+<td>ButtonGroupVerticalStackItemsPanelTemplate</td>
+</tr>
+<tr>
+<td>ButtonGroupBaseStyle</td>
+</tr>
+</tbody></table>
+<h1 id="RadioGroupItemBaseStyle"><a href="#RadioGroupItemBaseStyle" class="headerlink" title="RadioGroupItemBaseStyle"></a>RadioGroupItemBaseStyle</h1><p>Subset <code>RadioButton</code> style base class in <code>ButtonGroup</code> control. It is not recommended to use it directly. It is often used as <code>Item</code> style base class in <code>ButtonGroup</code>. It is also used in conjunction with <code>ButtonGroup</code> control.</p>
 <p>Case:</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--The internal Item style is automatically attached by the ButtonGroup control-the default is the horizontal item style--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:ButtonGroup</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Content</span>=<span class="string">&quot;RadioButton&quot;</span> <span class="attr">IsChecked</span>=<span class="string">&quot;True&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Content</span>=<span class="string">&quot;RadioButton&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">IsEnabled</span>=<span class="string">&quot;False&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;RadioButton&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Content</span>=<span class="string">&quot;RadioButton&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:ButtonGroup</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:ButtonGroup</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ButtonGroupSolid&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Content</span>=<span class="string">&quot;RadioButton&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Content</span>=<span class="string">&quot;RadioButton&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">IsEnabled</span>=<span class="string">&quot;False&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;RadioButton&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Content</span>=<span class="string">&quot;RadioButton&quot;</span> <span class="attr">IsChecked</span>=<span class="string">&quot;True&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:ButtonGroup</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>effect:</p>
@@ -8026,6 +8079,10 @@ or</li>
 <tbody><tr>
 <td>ComboBoxPlusBaseStyle</td>
 <td>Default Style</td>
+</tr>
+<tr>
+<td>ComboBoxPlus.Small</td>
+<td></td>
 </tr>
 </tbody></table>
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><p>The native functions behave the same on the extended ComboBox.</p>
