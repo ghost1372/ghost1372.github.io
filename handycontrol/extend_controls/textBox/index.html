@@ -29,8 +29,8 @@
 <meta property="og:description" content="Represents a control that can be used to display or edit plain text. 1public class TextBox : System.Windows.Controls.TextBox, IDataInput Create TextBox1&lt;hc:TextBox &#x2F;&gt;  1var textBox &#x3D; new TextBox">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/TextBox_1.png">
-<meta property="article:published_time" content="2021-12-16T15:30:21.204Z">
-<meta property="article:modified_time" content="2021-12-16T15:30:21.204Z">
+<meta property="article:published_time" content="2022-03-13T14:42:09.961Z">
+<meta property="article:modified_time" content="2022-03-13T14:42:09.961Z">
 <meta property="article:author" content="HandyOrg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/TextBox_1.png">
@@ -153,7 +153,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Create-TextBox"><span class="nav-number">1.</span> <span class="nav-text">Create TextBox</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Enter-text"><span class="nav-number">2.</span> <span class="nav-text">Enter text</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Set-title-and-placeholder-text"><span class="nav-number">3.</span> <span class="nav-text">Set title and placeholder text</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Styles"><span class="nav-number">4.</span> <span class="nav-text">Styles</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Attributes"><span class="nav-number">5.</span> <span class="nav-text">Attributes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Method"><span class="nav-number">6.</span> <span class="nav-text">Method</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TextType"><span class="nav-number">7.</span> <span class="nav-text">TextType</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Create-TextBox"><span class="nav-number">1.</span> <span class="nav-text">Create TextBox</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Enter-text"><span class="nav-number">2.</span> <span class="nav-text">Enter text</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Set-title-and-placeholder-text"><span class="nav-number">3.</span> <span class="nav-text">Set title and placeholder text</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Styles"><span class="nav-number">4.</span> <span class="nav-text">Styles</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Attributes"><span class="nav-number">5.</span> <span class="nav-text">Attributes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TextType"><span class="nav-number">6.</span> <span class="nav-text">TextType</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Validation"><span class="nav-number">7.</span> <span class="nav-text">Validation</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -800,38 +800,6 @@
 <td>Text</td>
 <td>Gets or sets the text content of the textbox.</td>
 </tr>
-<tr>
-<td>VerifyFunc</td>
-<td>Gets or sets the data validation delegate.</td>
-</tr>
-<tr>
-<td>IsError</td>
-<td>Gets or sets whether the data is wrong.</td>
-</tr>
-<tr>
-<td>ErrorStr</td>
-<td>Gets or sets the error prompt.</td>
-</tr>
-<tr>
-<td>TextType</td>
-<td>Gets or sets the text type.</td>
-</tr>
-<tr>
-<td>ShowClearButton</td>
-<td>Gets or sets whether to show the clear button.</td>
-</tr>
-</tbody></table>
-<h1 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h1><table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>VerifyData ()</td>
-<td>Verify the data.</td>
-</tr>
 </tbody></table>
 <h1 id="TextType"><a href="#TextType" class="headerlink" title="TextType"></a>TextType</h1><table>
 <thead>
@@ -882,6 +850,11 @@
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Using HandyControl.Tools;</span><br></pre></td></tr></table></figure></div>
 
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">TextType</span>=<span class="string">&quot;Mail&quot;</span> <span class="attr">hc:InfoElement.RegexPattern</span>=<span class="string">&quot;^[0-9]*(?:\.[0-9]+)?$&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Validation"><a href="#Validation" class="headerlink" title="Validation"></a>Validation</h1><p>for validation follow instructions:</p>
+<p>bind to ValidationRule</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;hc:TextBox hc:InfoElement.Placeholder=<span class="string">&quot;Please Enter Email&quot;</span> hc:InfoElement.Title=<span class="string">&quot;Title&quot;</span> hc:InfoElement.Necessary=<span class="string">&quot;True&quot;</span> Margin=<span class="string">&quot;0,16,0,0&quot;</span>&gt;</span><br><span class="line">    &lt;hc:TextBox.Text&gt;</span><br><span class="line">        &lt;Binding Path=<span class="string">&quot;Email1&quot;</span> UpdateSourceTrigger=<span class="string">&quot;PropertyChanged&quot;</span>&gt;</span><br><span class="line">            &lt;Binding.ValidationRules&gt;</span><br><span class="line">                &lt;hc:RegexRule Type=<span class="string">&quot;Mail&quot;</span>/&gt;</span><br><span class="line">            &lt;/Binding.ValidationRules&gt;</span><br><span class="line">        &lt;/Binding&gt;</span><br><span class="line">    &lt;/hc:TextBox.Text&gt;</span><br><span class="line">&lt;/hc:TextBox&gt;</span><br></pre></td></tr></table></figure>
+
       </div>
       
       

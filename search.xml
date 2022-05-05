@@ -179,6 +179,9 @@
 <div class="note info"><p>See <a href="https://github.com/ghost1372/HandyControls/releases">here</a> and <a href="https://github.com/HandyOrg/HandyControl/releases">here</a> for full changes</p>
 </div>
 
+<h2 id="3-4-0-HandyControls"><a href="#3-4-0-HandyControls" class="headerlink" title="3.4.0 (HandyControls)"></a>3.4.0 (HandyControls)</h2><ul>
+<li><code>ApplyBackdropMaterial</code> Changed to <code>SystemBackdropType</code></li>
+</ul>
 <h2 id="3-3-0-and-3-3-10-HandyControls"><a href="#3-3-0-and-3-3-10-HandyControls" class="headerlink" title="3.3.0 and 3.3.10 (HandyControls)"></a>3.3.0 and 3.3.10 (HandyControls)</h2><ul>
 <li>To change the language of the controls, you must first install the desired language pack See <a href="https://ghost1372.github.io/handycontrol/langs/#Language-packs">here</a> for more information</li>
 </ul>
@@ -189,7 +192,7 @@
 <li>FORCE_ENABLE_ACRYLIC_BLUR Property Removed (BlurWindow now can be used in all windows 10 builds)</li>
 </ul>
 <h2 id="3-3-0-HandyControls"><a href="#3-3-0-HandyControls" class="headerlink" title="3.3.0 (HandyControls)"></a>3.3.0 (HandyControls)</h2><ul>
-<li>Legacy Dynamic Localization Removed and The newer version has been replaced with better features See <a href="https://hosseini.ninja/handycontrol/persianToolkit/dynamicLanguage/">here</a></li>
+<li>Legacy Dynamic Localization Removed and The newer version has been replaced with better features See <a href="https://ghost1372.github.io/handycontrol/persianToolkit/dynamicLanguage/">here</a></li>
 </ul>
 <h2 id="3-2-0-HandyControls"><a href="#3-2-0-HandyControls" class="headerlink" title="3.2.0 (HandyControls)"></a>3.2.0 (HandyControls)</h2><ul>
 <li>The namespace of the helper classes has changed from <code>HandyControl.Controls</code> to <code>HandyControl.Tools</code>.</li>
@@ -322,6 +325,9 @@
 <li>Turkish (tr)</li>
 <li>Brazillian (pt-br)</li>
 <li>Polish (pl)</li>
+<li>Spanish (es)</li>
+<li>Catalan (Spain) (ca-ES)</li>
+<li>Japanese (ja)</li>
 </ul>
 <p><code>The default is English (en).</code></p>
 <p>If you need to expand on your own, it is recommended to use the open source plugin: <a href="https://marketplace.visualstudio.com/items?itemName=TomEnglert.ResXManager">ResXManager</a> to maintain all language packs.</p>
@@ -442,7 +448,7 @@
 <td><a href="https://ghost1372.github.io/handycontrol/extend_controls/window/#Attributes">Window</a></td>
 </tr>
 <tr>
-<td><a href="https://hosseini.ninja/handycontrol/extend_controls/blurWindow/">BlurWindow</a></td>
+<td><a href="https://ghost1372.github.io/handycontrol/extend_controls/blurWindow/">BlurWindow</a></td>
 </tr>
 <tr>
 <td><a href="https://ghost1372.github.io/handycontrol/extend_controls/colorPicker/">ColorPicker [Color Picker Can Work outside of Application]</a></td>
@@ -1172,6 +1178,10 @@
 <td>RegexPattern</td>
 <td>Regex Pattern</td>
 </tr>
+<tr>
+<td>ShowClearButton</td>
+<td></td>
+</tr>
 </tbody></table>
 <h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="Placeholder"><a href="#Placeholder" class="headerlink" title="Placeholder"></a>Placeholder</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:SearchBar</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;请输入查询条件&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SearchBarExtend&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -1517,6 +1527,10 @@
 <td>HideWhenClosing</td>
 <td></td>
 </tr>
+<tr>
+<td>SystemBackdropType</td>
+<td></td>
+</tr>
 </tbody></table>
 <h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="IsDragElement-Whether-to-allow-the-current-element-to-drag-the-form"><a href="#IsDragElement-Whether-to-allow-the-current-element-to-drag-the-form" class="headerlink" title="IsDragElement Whether to allow the current element to drag the form"></a>IsDragElement Whether to allow the current element to drag the form</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:SimplePanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Rectangle</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;30&quot;</span> <span class="attr">RadiusX</span>=<span class="string">&quot;4&quot;</span> <span class="attr">RadiusY</span>=<span class="string">&quot;4&quot;</span> <span class="attr">Stroke</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span> <span class="attr">StrokeDashArray</span>=<span class="string">&quot;2,2&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">hc:WindowAttach.IsDragElement</span>=<span class="string">&quot;True&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;11&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;28&quot;</span> <span class="attr">Background</span>=<span class="string">&quot;&#123;DynamicResource DarkDefaultBrush&#125;&quot;</span> <span class="attr">CornerRadius</span>=<span class="string">&quot;4&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;DragHere&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource TextBlockDefault&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,15,15,0&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Padding</span>=<span class="string">&quot;0&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;20&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;20&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ButtonPrimary&#125;&quot;</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource CloseGeometry&#125;&quot;</span> <span class="attr">hc:BorderElement.CornerRadius</span>=<span class="string">&quot;15&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:SimplePanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -1527,7 +1541,10 @@
 <h2 id="ShowInTaskManager-Whether-to-show-the-form-to-the-task-manager"><a href="#ShowInTaskManager-Whether-to-show-the-form-to-the-task-manager" class="headerlink" title="ShowInTaskManager Whether to show the form to the task manager"></a>ShowInTaskManager Whether to show the form to the task manager</h2><p>Prerequisites:</p>
 <p>-The window must be non-modal, that is, you cannot use <code>ShowDialog</code> to display the window.<br>-The window must also set <code>ShowInTaskBar</code> to<code> false</code></p>
 <p>ps: The effect of this additional property is not very obvious in <code>Windows7</code></p>
-]]></content>
+<h2 id="SystemBackdropType"><a href="#SystemBackdropType" class="headerlink" title="SystemBackdropType"></a>SystemBackdropType</h2><p>you can use <strong>SystemBackdropType</strong> Attached Property for Activating Mica for any window (System.Window.Window or HandyControl.Controls.Window). </p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Window</span> <span class="attr">x:Class</span>=<span class="string">&quot;HandyControlDemo.MainWindow&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:local</span>=<span class="string">&quot;clr-namespace:WpfApp4&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">hc:WindowAttach.SystemBackdropType</span>=<span class="string">&quot;Mica&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Grid</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Window</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Window</span> <span class="attr">x:Class</span>=<span class="string">&quot;HandyControlDemo.MainWindow&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:local</span>=<span class="string">&quot;clr-namespace:WpfApp4&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">hc:WindowAttach.SystemBackdropType</span>=<span class="string">&quot;Mica&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Grid</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">Window</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>Behavior</title>
@@ -3712,7 +3729,7 @@
     <content><![CDATA[<p>The background blur window can be used to enhance the UI effect, but it will sacrifice some performance.</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">BlurWindow</span> : <span class="title">Window</span></span><br></pre></td></tr></table></figure>
 
-<div class="note info"><p>All <code>hc:Window</code> properties can be used. Click <ins><strong><a href="https://hosseini.ninja/handycontrol/extend_controls/window/#Attributes">here</a></strong></ins> to view</p>
+<div class="note info"><p>All <code>hc:Window</code> properties can be used. Click <ins><strong><a href="https://ghost1372.github.io/handycontrol/extend_controls/window/#Attributes">here</a></strong></ins> to view</p>
 </div>
 
 <div class="note warning"><p>Operating system support : windows 10</p>
@@ -4960,6 +4977,17 @@
 <h1 id="Set-title-and-placeholder-text"><a href="#Set-title-and-placeholder-text" class="headerlink" title="Set title and placeholder text"></a>Set title and placeholder text</h1><p>You can add Headers and Placeholders to the DatePicker to indicate to the user what they do.</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:DatePicker</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">&quot;140&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;Please enter the content&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;Title&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 
+
+<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
+<thead>
+<tr>
+<th>Available Styles</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DatePickerPlus.Small</td>
+</tr>
+</tbody></table>
 <h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
 <thead>
 <tr>
@@ -5046,6 +5074,29 @@
 
 <h1 id="Set-title-and-placeholder-text"><a href="#Set-title-and-placeholder-text" class="headerlink" title="Set title and placeholder text"></a>Set title and placeholder text</h1><p>You can add Headers and Placeholders to the DatePicker to indicate to the user what they do. To use these two properties, you first need to apply the <strong>DateTimePickerExtend</strong> or <strong>DateTimePickerPlus</strong> styles.</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:DateTimePicker</span> <span class="attr">ShowClearButton</span>=<span class="string">&quot;True&quot;</span></span></span><br><span class="line"><span class="tag">                   <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource DateTimePickerExtend&#125;&quot;</span></span></span><br><span class="line"><span class="tag">                   <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;This is the title&quot;</span></span></span><br><span class="line"><span class="tag">                   <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;Please enter the content&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
+<thead>
+<tr>
+<th>Available Styles</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DateTimePicker.Small</td>
+</tr>
+<tr>
+<td>DateTimePickerExtend</td>
+</tr>
+<tr>
+<td>DateTimePickerExtend.Small</td>
+</tr>
+<tr>
+<td>DateTimePickerPlus</td>
+</tr>
+<tr>
+<td>DateTimePickerPlus.Small</td>
+</tr>
+</tbody></table>
 <h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
 <thead>
 <tr>
@@ -5797,7 +5848,7 @@
     <content><![CDATA[<p>A window with a glow effect on the border, the code is extracted from Visual Studio</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">GlowWindow</span> : <span class="title">Window</span></span><br></pre></td></tr></table></figure>
 
-<div class="note info"><p>All <code>hc:Window</code> properties can be used. Click <ins><strong><a href="https://hosseini.ninja/handycontrol/extend_controls/window/#Attributes">here</a></strong></ins> to view</p>
+<div class="note info"><p>All <code>hc:Window</code> properties can be used. Click <ins><strong><a href="https://ghost1372.github.io/handycontrol/extend_controls/window/#Attributes">here</a></strong></ins> to view</p>
 </div>
 
 <h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
@@ -6623,6 +6674,12 @@
 <td></td>
 </tr>
 <tr>
+<td>ShowToolBar</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td>IsFullScreen</td>
 <td>Is it in full screen display</td>
 <td>false</td>
@@ -7205,26 +7262,6 @@
 <td>Gets or sets the decimal digits to be displayed in NumericUpDown. This property does not affect the Value property.</td>
 </tr>
 <tr>
-<td>VerifyFunc</td>
-<td>Get or Set Data Validation Delegation</td>
-</tr>
-<tr>
-<td>IsError</td>
-<td>Get or set whether the data is wrong</td>
-</tr>
-<tr>
-<td>ErrorStr</td>
-<td>Get or Set Error Alert</td>
-</tr>
-<tr>
-<td>TextType</td>
-<td>Get or Set Text Type</td>
-</tr>
-<tr>
-<td>ShowClearButton</td>
-<td>Gets or sets whether to show the clear button</td>
-</tr>
-<tr>
 <td>SelectionTextBrush</td>
 <td></td>
 </tr>
@@ -7249,18 +7286,6 @@
 <td></td>
 </tr>
 </tbody></table>
-<h1 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h1><table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>VerifyData ()</td>
-<td>Verify Data</td>
-</tr>
-</tbody></table>
 <h1 id="Event"><a href="#Event" class="headerlink" title="Event"></a>Event</h1><table>
 <thead>
 <tr>
@@ -7273,7 +7298,32 @@
 <td>Occurs after the Value property has been changed in some way.</td>
 </tr>
 </tbody></table>
-]]></content>
+<h1 id="Style"><a href="#Style" class="headerlink" title="Style"></a>Style</h1><table>
+<thead>
+<tr>
+<th>name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NumericUpDown.Small</td>
+</tr>
+<tr>
+<td>NumericUpDownExtend</td>
+</tr>
+<tr>
+<td>NumericUpDownExtend.Small</td>
+</tr>
+<tr>
+<td>NumericUpDownPlus</td>
+</tr>
+<tr>
+<td>NumericUpDownPlus.Small</td>
+</tr>
+</tbody></table>
+<h1 id="Validation"><a href="#Validation" class="headerlink" title="Validation"></a>Validation</h1><p>for validation follow instructions:<br>create a Class and inherit from <code>ValidationRule</code></p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">NumericUpDownDemoRule</span> : <span class="title">ValidationRule</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> ValidationResult <span class="title">Validate</span>(<span class="params"><span class="built_in">object</span> <span class="keyword">value</span>, CultureInfo cultureInfo</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">value</span> <span class="keyword">is</span> <span class="keyword">not</span> <span class="built_in">double</span> doubleValue)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> ValidationResult(<span class="literal">false</span>, HandyControl.Properties.Langs.Lang.FormatError);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> doubleValue % <span class="number">2</span> &gt; <span class="built_in">double</span>.Epsilon</span><br><span class="line">            ? <span class="keyword">new</span> ValidationResult(<span class="literal">false</span>, Properties.Langs.Lang.Error)</span><br><span class="line">            : ValidationResult.ValidResult;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>now bind to ValidationRule</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">&lt;hc:NumericUpDown hc:InfoElement.ShowClearButton=<span class="string">&quot;True&quot;</span> Style=<span class="string">&quot;&#123;StaticResource NumericUpDownPlus&#125;&quot;</span>&gt;</span><br><span class="line">    &lt;hc:NumericUpDown.Value&gt;</span><br><span class="line">        &lt;Binding Path=<span class="string">&quot;DoubleValue1&quot;</span> UpdateSourceTrigger=<span class="string">&quot;PropertyChanged&quot;</span>&gt;</span><br><span class="line">            &lt;Binding.ValidationRules&gt;</span><br><span class="line">                &lt;tools:NumericUpDownDemoRule/&gt;</span><br><span class="line">            &lt;/Binding.ValidationRules&gt;</span><br><span class="line">        &lt;/Binding&gt;</span><br><span class="line">    &lt;/hc:NumericUpDown.Value&gt;</span><br><span class="line">&lt;/hc:NumericUpDown&gt;</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>Pagination</title>
@@ -7626,9 +7676,15 @@
 <td></td>
 </tr>
 <tr>
+<td>VerticalOffset</td>
 <td>Offset</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>HorizontalOffset</td>
 <td>Offset</td>
-<td>6</td>
+<td>0</td>
 <td></td>
 </tr>
 <tr>
@@ -8674,8 +8730,24 @@
 <td>SearchBarPlus</td>
 <td>Enhance the style</td>
 </tr>
+<tr>
+<td>SearchBar.Small</td>
+<td></td>
+</tr>
+<tr>
+<td>SearchBarExtend.Small</td>
+<td></td>
+</tr>
+<tr>
+<td>SearchBarPlus.Small</td>
+<td></td>
+</tr>
 </tbody></table>
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;32&quot;</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding SearchCmd&#125;&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;&#123;Binding Text,RelativeSource=&#123;RelativeSource Self&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span> <span class="attr">IsEnabled</span>=<span class="string">&quot;False&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr1&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SearchBarExtend&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;PlsEnterContent&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr1&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SearchBarExtend&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Width</span>=<span class="string">&quot;380&quot;</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">&quot;140&quot;</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;PlsEnterContent&quot;</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr3&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SearchBarExtend&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Width</span>=<span class="string">&quot;380&quot;</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">&quot;140&quot;</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;PlsEnterContent&quot;</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr3&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SearchBarExtend&#125;&quot;</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;32,0,0,0&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Name</span>=<span class="string">&quot;SearchBarCustomVerify&quot;</span> <span class="attr">ShowClearButton</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SearchBarPlus&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span> <span class="attr">IsEnabled</span>=<span class="string">&quot;False&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SearchBarPlus&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">ShowClearButton</span>=<span class="string">&quot;True&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr1&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SearchBarPlus&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">TextType</span>=<span class="string">&quot;Mail&quot;</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;PlsEnterEmail&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr1&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SearchBarPlus&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Width</span>=<span class="string">&quot;380&quot;</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">&quot;140&quot;</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr3&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SearchBarPlus&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">ShowClearButton</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;380&quot;</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">&quot;140&quot;</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;PlsEnterContent&quot;</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">&quot;Left&quot;</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;TitleDemoStr3&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SearchBarPlus&#125;&quot;</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,32,0,0&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Validation"><a href="#Validation" class="headerlink" title="Validation"></a>Validation</h1><p>for validation follow instructions:</p>
+<p>bind to ValidationRule</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"> &lt;hc:SearchBar hc:InfoElement.Placeholder=<span class="string">&quot;Please Enter Email&quot;</span> hc:InfoElement.Title=<span class="string">&quot;Title&quot;</span> Margin=<span class="string">&quot;0,32,0,0&quot;</span> hc:InfoElement.Necessary=<span class="string">&quot;True&quot;</span> Style=<span class="string">&quot;&#123;StaticResource SearchBarPlus&#125;&quot;</span>&gt;</span><br><span class="line">    &lt;hc:SearchBar.Text&gt;</span><br><span class="line">        &lt;Binding Path=<span class="string">&quot;Email1&quot;</span> UpdateSourceTrigger=<span class="string">&quot;PropertyChanged&quot;</span>&gt;</span><br><span class="line">            &lt;Binding.ValidationRules&gt;</span><br><span class="line">                &lt;hc:RegexRule Type=<span class="string">&quot;Mail&quot;</span>/&gt;</span><br><span class="line">            &lt;/Binding.ValidationRules&gt;</span><br><span class="line">        &lt;/Binding&gt;</span><br><span class="line">    &lt;/hc:SearchBar.Text&gt;</span><br><span class="line">&lt;/hc:SearchBar&gt;</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/SearchBar.png" alt="SearchBar"></p>
 ]]></content>
@@ -8984,6 +9056,9 @@
 </tr>
 </thead>
 <tbody><tr>
+<td>SplitButtonDefault</td>
+</tr>
+<tr>
 <td>SplitButtonPrimary</td>
 </tr>
 <tr>
@@ -8997,6 +9072,24 @@
 </tr>
 <tr>
 <td>SplitButtonSuccess</td>
+</tr>
+<tr>
+<td>SplitButtonDefault.Small</td>
+</tr>
+<tr>
+<td>SplitButtonPrimary.Small</td>
+</tr>
+<tr>
+<td>SplitButtonDanger.Small</td>
+</tr>
+<tr>
+<td>SplitButtonWarning.Small</td>
+</tr>
+<tr>
+<td>SplitButtonInfo.Small</td>
+</tr>
+<tr>
+<td>SplitButtonSuccess.Small</td>
 </tr>
 </tbody></table>
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;32&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:SplitButton</span> <span class="attr">Margin</span>=<span class="string">&quot;0,0,0,10&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Default&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding SelectCmd&#125;&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;Command0&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Stretch&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SplitButton.DropDownContent</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">MenuItem</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding SelectCmd&#125;&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;Command1&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">MenuItem</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding SelectCmd&#125;&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;Command2&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">MenuItem</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding SelectCmd&#125;&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;Command3&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">hc:SplitButton.DropDownContent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:SplitButton</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:SplitButton</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SplitButtonPrimary&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,0,0,10&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Primary&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding SelectCmd&#125;&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;Command0&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Stretch&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SplitButton.DropDownContent</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">MenuItem</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding SelectCmd&#125;&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;Command1&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">MenuItem</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding SelectCmd&#125;&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;Command2&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">MenuItem</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding SelectCmd&#125;&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;Command3&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">hc:SplitButton.DropDownContent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:SplitButton</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:SplitButton</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SplitButtonWarning&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,0,0,10&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Warning&quot;</span> <span class="attr">HitMode</span>=<span class="string">&quot;Hover&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Stretch&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SplitButton.DropDownContent</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">MenuItem</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding SelectCmd&#125;&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;Command1&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">MenuItem</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding SelectCmd&#125;&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;Command2&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">MenuItem</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding SelectCmd&#125;&quot;</span> <span class="attr">CommandParameter</span>=<span class="string">&quot;Command3&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">hc:SplitButton.DropDownContent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:SplitButton</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -9053,6 +9146,12 @@
 <td>Dock</td>
 <td>Step bar top method</td>
 <td>Dock.Top</td>
+<td></td>
+</tr>
+<tr>
+<td>IsMouseSelectable</td>
+<td>Change current index by clicking on label and icon</td>
+<td>false</td>
 <td></td>
 </tr>
 </tbody></table>
@@ -9356,38 +9455,6 @@
 <td>Text</td>
 <td>Gets or sets the text content of the textbox.</td>
 </tr>
-<tr>
-<td>VerifyFunc</td>
-<td>Gets or sets the data validation delegate.</td>
-</tr>
-<tr>
-<td>IsError</td>
-<td>Gets or sets whether the data is wrong.</td>
-</tr>
-<tr>
-<td>ErrorStr</td>
-<td>Gets or sets the error prompt.</td>
-</tr>
-<tr>
-<td>TextType</td>
-<td>Gets or sets the text type.</td>
-</tr>
-<tr>
-<td>ShowClearButton</td>
-<td>Gets or sets whether to show the clear button.</td>
-</tr>
-</tbody></table>
-<h1 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h1><table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>VerifyData ()</td>
-<td>Verify the data.</td>
-</tr>
 </tbody></table>
 <h1 id="TextType"><a href="#TextType" class="headerlink" title="TextType"></a>TextType</h1><table>
 <thead>
@@ -9437,7 +9504,12 @@
 <div class="note info"><p>if you want to use RegexPatter, you should Set <code>TextType</code> to Anything except Common</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Using HandyControl.Tools;</span><br></pre></td></tr></table></figure></div>
 
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">TextType</span>=<span class="string">&quot;Mail&quot;</span> <span class="attr">hc:InfoElement.RegexPattern</span>=<span class="string">&quot;^[0-9]*(?:\.[0-9]+)?$&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">TextType</span>=<span class="string">&quot;Mail&quot;</span> <span class="attr">hc:InfoElement.RegexPattern</span>=<span class="string">&quot;^[0-9]*(?:\.[0-9]+)?$&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Validation"><a href="#Validation" class="headerlink" title="Validation"></a>Validation</h1><p>for validation follow instructions:</p>
+<p>bind to ValidationRule</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">&lt;hc:TextBox hc:InfoElement.Placeholder=<span class="string">&quot;Please Enter Email&quot;</span> hc:InfoElement.Title=<span class="string">&quot;Title&quot;</span> hc:InfoElement.Necessary=<span class="string">&quot;True&quot;</span> Margin=<span class="string">&quot;0,16,0,0&quot;</span>&gt;</span><br><span class="line">    &lt;hc:TextBox.Text&gt;</span><br><span class="line">        &lt;Binding Path=<span class="string">&quot;Email1&quot;</span> UpdateSourceTrigger=<span class="string">&quot;PropertyChanged&quot;</span>&gt;</span><br><span class="line">            &lt;Binding.ValidationRules&gt;</span><br><span class="line">                &lt;hc:RegexRule Type=<span class="string">&quot;Mail&quot;</span>/&gt;</span><br><span class="line">            &lt;/Binding.ValidationRules&gt;</span><br><span class="line">        &lt;/Binding&gt;</span><br><span class="line">    &lt;/hc:TextBox.Text&gt;</span><br><span class="line">&lt;/hc:TextBox&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
   </entry>
   <entry>
     <title>TimeBar</title>
@@ -9528,6 +9600,28 @@
 <h1 id="Set-title-and-placeholder-text"><a href="#Set-title-and-placeholder-text" class="headerlink" title="Set title and placeholder text"></a>Set title and placeholder text</h1><p>You can add Headers and Placeholders to the DatePicker to indicate to the user what they do. To use these two properties, you first need to apply the <strong>TimePickerExtend</strong> or <strong>TimePickerPlus</strong> styles.</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:TimePicker</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">&quot;Please enter the content&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">hc:InfoElement.Title</span>=<span class="string">&quot;This is the title&quot;</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource TimePickerExtend&#125;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
+<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
+<thead>
+<tr>
+<th>Available Styles</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TimePicker.Small</td>
+</tr>
+<tr>
+<td>TimePickerExtend</td>
+</tr>
+<tr>
+<td>TimePickerExtend.Small</td>
+</tr>
+<tr>
+<td>TimePickerPlus</td>
+</tr>
+<tr>
+<td>TimePickerPlus.Small</td>
+</tr>
+</tbody></table>
 <h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
 <thead>
 <tr>
@@ -10101,7 +10195,7 @@
 <td></td>
 </tr>
 <tr>
-<td>ApplyBackdropMaterial</td>
+<td>SystemBackdropType</td>
 <td>Apply Mica Material for window</td>
 <td>false</td>
 <td>Only Available in Custom Version</td>
@@ -10131,18 +10225,22 @@
 <div class="note info"><p>Mica can only be used on Windows 11 and above</p>
 </div>
 
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Window</span> <span class="attr">x:Class</span>=<span class="string">&quot;HandyControlDemo.MainWindow&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:local</span>=<span class="string">&quot;clr-namespace:WpfApp4&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">ApplyBackdropMaterial</span>=<span class="string">&quot;True&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Grid</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Window</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Window</span> <span class="attr">x:Class</span>=<span class="string">&quot;HandyControlDemo.MainWindow&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:local</span>=<span class="string">&quot;clr-namespace:WpfApp4&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">SystemBackdropType</span>=<span class="string">&quot;Mica&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Grid</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Window</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>For synchronization with the Windows theme, set the <code>UsingSystemTheme=&quot;True&quot;</code> property in the app.xaml file</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ResourceDictionary</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:ThemeResources</span> <span class="attr">UsingSystemTheme</span>=<span class="string">&quot;True&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Theme</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ResourceDictionary.MergedDictionaries</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ResourceDictionary</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<div class="note warning"><p>In XAML if you set a background brush for the window and the line is AFTER ApplyBackdropMaterial=”true”, in Windows 11 the Mica effect is applied to the Window but immediately overridden by the background brush, Mica effect goes away. if you call EnableMicaEffect in code on this Window the effect doesn’t come back.</p>
-<p>Some XAML formatter extensions will sort the properties alphabetically. <code>ApplyBackdropMaterial</code> is then before Background and the “bug” above occurs.</p>
+<div class="note warning"><p>In XAML if you set a background brush for the window and the line is AFTER SystemBackdropType=”Mica”, in Windows 11 the Mica effect is applied to the Window but immediately overridden by the background brush, Mica effect goes away.</p>
+<p>Some XAML formatter extensions will sort the properties alphabetically. <code>SystemBackdropType</code> is then before Background and the “bug” above occurs.</p>
 </div>
 
 <p><img src="https://user-images.githubusercontent.com/9213496/139540320-a2f9e7ff-77dd-4334-8535-31a78626cd1d.png" alt="Mica"></p>
 <h1 id="Attached-Properties"><a href="#Attached-Properties" class="headerlink" title="Attached Properties"></a>Attached Properties</h1><p>you can use <strong>WindowAttach</strong> Attached Property for dragging window or any control. </p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">hc:Window</span> <span class="attr">WindowAttach:IsDragElement</span>=<span class="string">&quot;True&quot;</span> </span></span><br><span class="line"><span class="tag"><span class="attr">...</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="IsDragElement"><a href="#IsDragElement" class="headerlink" title="IsDragElement"></a>IsDragElement</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">hc:Window</span> <span class="attr">WindowAttach:IsDragElement</span>=<span class="string">&quot;True&quot;</span> </span></span><br><span class="line"><span class="tag"><span class="attr">...</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="SystemBackdropType"><a href="#SystemBackdropType" class="headerlink" title="SystemBackdropType"></a>SystemBackdropType</h2><p>you can use <strong>SystemBackdropType</strong> Attached Property for Activating Mica for any window (System.Window.Window or HandyControl.Controls.Window). </p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Window</span> <span class="attr">x:Class</span>=<span class="string">&quot;HandyControlDemo.MainWindow&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:local</span>=<span class="string">&quot;clr-namespace:WpfApp4&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">hc:WindowAttach.SystemBackdropType</span>=<span class="string">&quot;Mica&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Grid</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Window</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Window</span> <span class="attr">x:Class</span>=<span class="string">&quot;HandyControlDemo.MainWindow&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:hc</span>=<span class="string">&quot;https://handyorg.github.io/handycontrol&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">xmlns:local</span>=<span class="string">&quot;clr-namespace:WpfApp4&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">hc:WindowAttach.SystemBackdropType</span>=<span class="string">&quot;Mica&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Grid</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">Window</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h1 id="Shortcut"><a href="#Shortcut" class="headerlink" title="Shortcut"></a>Shortcut</h1><p>you should use <strong>GlobalShortcut.KeyBindings</strong></p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:GlobalShortcut.KeyBindings</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">KeyBinding</span> <span class="attr">Modifiers</span>=<span class="string">&quot;Control+Alt&quot;</span> <span class="attr">Key</span>=<span class="string">&quot;E&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding GlobalShortcutErrorCmd&#125;&quot;</span>/&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">KeyBinding</span> <span class="attr">Modifiers</span>=<span class="string">&quot;Control+Alt&quot;</span> <span class="attr">Key</span>=<span class="string">&quot;I&quot;</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;Binding Main.GlobalShortcutInfoCmd, Source=&#123;StaticResource Locator&#125;&#125;&quot;</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">hc:GlobalShortcut.KeyBindings</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -11029,7 +11127,23 @@
   <entry>
     <title>DatePicker</title>
     <url>/handycontrol/native_controls/datePicker/index.html</url>
-    <content><![CDATA[<h1 id="DatePickerBaseStyle"><a href="#DatePickerBaseStyle" class="headerlink" title="DatePickerBaseStyle"></a>DatePickerBaseStyle</h1><p>Native datepicker default style, not recommended for direct use, should always be used by other styles in the BasedOn mode. The native datepicker uses this style by default if no style is set:</p>
+    <content><![CDATA[<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
+<thead>
+<tr>
+<th>Available Styles</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DatePicker.Small</td>
+</tr>
+<tr>
+<td>DatePickerExtend</td>
+</tr>
+<tr>
+<td>DatePickerExtend.Small</td>
+</tr>
+</tbody></table>
+<h1 id="DatePickerBaseStyle"><a href="#DatePickerBaseStyle" class="headerlink" title="DatePickerBaseStyle"></a>DatePickerBaseStyle</h1><p>Native datepicker default style, not recommended for direct use, should always be used by other styles in the BasedOn mode. The native datepicker uses this style by default if no style is set:</p>
 <ul>
 <li>Default style<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">DatePicker</span> <span class="attr">SelectedDate</span>=<span class="string">&quot;&#123;x:Static system:DateTime.Now&#125;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 <img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/DatePickerBaseStyle.png" alt="ComboBoxBaseStyle"></li>
@@ -11572,6 +11686,27 @@ Example:
 </tr>
 <tr>
 <td>RadioButtonSameAsButtonDanger</td>
+</tr>
+<tr>
+<td>RadioButtonSameAsButtonDefault.Small</td>
+</tr>
+<tr>
+<td>RadioButtonSameAsButtonPrimary.Small</td>
+</tr>
+<tr>
+<td>RadioButtonSameAsButtonSuccess.Small</td>
+</tr>
+<tr>
+<td>RadioButtonSameAsButtonInfo.Small</td>
+</tr>
+<tr>
+<td>RadioButtonSameAsButtonWarning.Small</td>
+</tr>
+<tr>
+<td>RadioButtonSameAsButtonDanger.Small</td>
+</tr>
+<tr>
+<td>RadioButtonIcon.Small</td>
 </tr>
 </tbody></table>
 <h1 id="RadioButtonBaseStyle"><a href="#RadioButtonBaseStyle" class="headerlink" title="RadioButtonBaseStyle"></a>RadioButtonBaseStyle</h1><p>The default style of the radiobutton is not recommended. It should always be used by other styles as BasedOn.</p>
@@ -13433,214 +13568,6 @@ Example:
 ]]></content>
   </entry>
   <entry>
-    <title>MaskedTextBox</title>
-    <url>/handycontrol/persianToolkit/maskedTextBox/index.html</url>
-    <content><![CDATA[<p>Represents a control that limits the input text to the format determined by the specified mask.</p>
-<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">&lt;hc:MaskedTextBox Mask=<span class="string">&quot;(000) 000-0000&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://user-images.githubusercontent.com/9213496/112822394-203bfe80-909d-11eb-88c9-496ee89d170c.png" alt="MaskText"></p>
-<h1 id="Masks"><a href="#Masks" class="headerlink" title="Masks"></a>Masks</h1><table>
-<thead>
-<tr>
-<th>Masking Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>0</td>
-<td>Digit, required. This element will accept any single digit between 0 and 9.</td>
-</tr>
-<tr>
-<td>9</td>
-<td>Digit or space, optional.</td>
-</tr>
-<tr>
-<td>#</td>
-<td>Digit or space, optional. If this position is blank in the mask, it will be rendered as a space in the Text property. Plus (+) and minus (-) signs are allowed.</td>
-</tr>
-<tr>
-<td>L</td>
-<td>Letter, required. Restricts input to the ASCII letters a-z and A-Z. This mask element is equivalent to a-zA-Z in regular expressions.</td>
-</tr>
-<tr>
-<td>?</td>
-<td>Letter, optional. Restricts input to the ASCII letters a-z and A-Z. This mask element is equivalent to a-zA-Z? in regular expressions.</td>
-</tr>
-<tr>
-<td>&amp;</td>
-<td>Character, required. If the AsciiOnly property is set to true, this element behaves like the “L” element.</td>
-</tr>
-<tr>
-<td>C</td>
-<td>Character, optional. Any non-control character. If the AsciiOnly property is set to true, this element behaves like the “?” element.</td>
-</tr>
-<tr>
-<td>A</td>
-<td>Alphanumeric, optional. If the AsciiOnly property is set to true, the only characters it will accept are the ASCII letters a-z and A-Z.</td>
-</tr>
-<tr>
-<td>a</td>
-<td>Alphanumeric, optional. If the AsciiOnly property is set to true, the only characters it will accept are the ASCII letters a-z and A-Z.</td>
-</tr>
-<tr>
-<td>.</td>
-<td>Decimal placeholder. The actual display character used will be the decimal symbol appropriate to the format provider, as determined by the control’s FormatProvider property.</td>
-</tr>
-<tr>
-<td>,</td>
-<td>Thousands placeholder. The actual display character used will be the thousands placeholder appropriate to the format provider, as determined by the control’s FormatProvider property.</td>
-</tr>
-<tr>
-<td>:</td>
-<td>Time separator. The actual display character used will be the time symbol appropriate to the format provider, as determined by the control’s FormatProvider property.</td>
-</tr>
-<tr>
-<td>/</td>
-<td>Date separator. The actual display character used will be the date symbol appropriate to the format provider, as determined by the control’s FormatProvider property.</td>
-</tr>
-<tr>
-<td>$</td>
-<td>Currency symbol. The actual character displayed will be the currency symbol appropriate to the format provider, as determined by the control’s FormatProvider property.</td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td>Shift down. Converts all characters that follow to lowercase.</td>
-</tr>
-<tr>
-<td>&gt;</td>
-<td>Shift up. Converts all characters that follow to uppercase.</td>
-</tr>
-<tr>
-<td></td>
-<td>Disable a previous shift up or shift down.</td>
-</tr>
-<tr>
-<td>\</td>
-<td>Escape. Escapes a mask character, turning it into a literal. “&quot; is the escape sequence for a backslash.</td>
-</tr>
-</tbody></table>
-<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>AutoMoveFocus</td>
-<td>Gets or sets a value indicating if the focus can navigate in the appropriate flow direction (e.g., from one cell to another when a cell is being edited) when the cursor is at the beginning or end of the auto-select text box. (Inherited from Xceed.Wpf.Toolkit.AutoSelectTextBox)</td>
-</tr>
-<tr>
-<td>AutoSelectBehavior</td>
-<td>Gets or sets a value indicating how the content of the auto-select text box is selected (Never or OnFocus). By default Never.</td>
-</tr>
-<tr>
-<td>BeepOnError</td>
-<td>Gets or sets whether a beep sound will be played on error. (Inherited from Xceed.Wpf.Toolkit.Primitives.ValueRangeTextBox)</td>
-</tr>
-<tr>
-<td>FormatProvider</td>
-<td>Gets or sets the format provider. (Inherited from Xceed.Wpf.Toolkit.Primitives.ValueRangeTextBox)</td>
-</tr>
-<tr>
-<td>HasParsingError</td>
-<td>Gets whether the control has a parsing error. (Inherited from Xceed.Wpf.Toolkit.Primitives.ValueRangeTextBox)</td>
-</tr>
-<tr>
-<td>HasValidationError</td>
-<td>Gets whether the control has a validation error. (Inherited from Xceed.Wpf.Toolkit.Primitives.ValueRangeTextBox)</td>
-</tr>
-<tr>
-<td>InsertKeyMode</td>
-<td>Gets or sets a value representing the text insertion mode of the masked text box.</td>
-</tr>
-<tr>
-<td>IsMaskCompleted</td>
-<td>Gets a value indicating if all required characters have been inputted into the mask.</td>
-</tr>
-<tr>
-<td>IsMaskFull</td>
-<td>Gets a value indicating if all characters, required and optional, have been inputted into the mask.</td>
-</tr>
-<tr>
-<td>IsValueOutOfRange</td>
-<td>Gets whether the control’s value is out of range. (Inherited from Xceed.Wpf.Toolkit.Primitives.ValueRangeTextBox)</td>
-</tr>
-<tr>
-<td>Mask</td>
-<td>Gets or sets the input mask.</td>
-</tr>
-<tr>
-<td>MaskTextProvider</td>
-<td>Gets the MaskedTextProvider that was used to mask the input text.</td>
-</tr>
-<tr>
-<td>MaxValue</td>
-<td>Gets or sets the maximum value of the control. (Inherited from Xceed.Wpf.Toolkit.Primitives.ValueRangeTextBox)</td>
-</tr>
-<tr>
-<td>MinValue</td>
-<td>Gets or sets the minimum value of the control. (Inherited from Xceed.Wpf.Toolkit.Primitives.ValueRangeTextBox)</td>
-</tr>
-<tr>
-<td>NullValue</td>
-<td>Gets or sets the null value. (Inherited from Xceed.Wpf.Toolkit.Primitives.ValueRangeTextBox)</td>
-</tr>
-<tr>
-<td>PromptChar</td>
-<td>Gets or sets the character that represents the positions in the masked text box that require user input.</td>
-</tr>
-<tr>
-<td>RejectInputOnFirstFailure</td>
-<td>Gets or sets a value indicating if inputted text that is pasted into the masked text box can be rejected if it contains an invalid character for the corresponding mask position.</td>
-</tr>
-<tr>
-<td>ResetOnPrompt</td>
-<td>Gets or sets a value indicating if the character at the current caret position should be reset when the prompt character is pressed.</td>
-</tr>
-<tr>
-<td>ResetOnSpace</td>
-<td>Gets or sets a value indicating if the character at the current caret position should be reset when the space bar is pressed.</td>
-</tr>
-<tr>
-<td>RestrictToAscii</td>
-<td>Gets or sets a value indicating if the masked text box accepts non-ASCII characters.</td>
-</tr>
-<tr>
-<td>SkipLiterals</td>
-<td>Gets or sets a value indicating if literal values can be overwritten by their same values.</td>
-</tr>
-<tr>
-<td>Text</td>
-<td>Content of the MaskedTextBox. (Inherited from System.Windows.Controls.TextBox)</td>
-</tr>
-<tr>
-<td>Value</td>
-<td>Gets or sets the value of the MaskedTextBox. (Inherited from Xceed.Wpf.Toolkit.Primitives.ValueRangeTextBox)</td>
-</tr>
-<tr>
-<td>ValueDataType</td>
-<td>Gets or sets the Type of the value. (Inherited from Xceed.Wpf.Toolkit.Primitives.ValueRangeTextBox)</td>
-</tr>
-</tbody></table>
-<h1 id="Events"><a href="#Events" class="headerlink" title="Events"></a>Events</h1><table>
-<thead>
-<tr>
-<th>Event</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>QueryTextFromValue</td>
-<td>Raised when an attempt is made to convert the specified value into its string representation. (Inherited from Xceed.Wpf.Toolkit.Primitives.ValueRangeTextBox)</td>
-</tr>
-<tr>
-<td>QueryValueFromText</td>
-<td>Raised when an attempt is made to extract a value from the specified text. (Inherited from Xceed.Wpf.Toolkit.Primitives.ValueRangeTextBox)</td>
-</tr>
-</tbody></table>
-]]></content>
-  </entry>
-  <entry>
     <title>OptimizedObservableCollection</title>
     <url>/handycontrol/persianToolkit/optimizedObservableCollection/index.html</url>
     <content><![CDATA[<p>A super awesome ObservableCollection that adds important methods such as: AddRange, RemoveRange, Replace, and ReplaceRange with single CollectionChanged notification.</p>
@@ -13834,6 +13761,28 @@ Example:
 <tr>
 <td>CaretBrushProperty</td>
 <td></td>
+</tr>
+</tbody></table>
+<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
+<thead>
+<tr>
+<th>Available Styles</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DateTimePicker</td>
+</tr>
+<tr>
+<td>DateTimePickerPlusPersian</td>
+</tr>
+<tr>
+<td>DateTimePickerPersian.Small</td>
+</tr>
+<tr>
+<td>DateTimePickerExtendPersian.Small</td>
+</tr>
+<tr>
+<td>DateTimePickerPlusPersian.Small</td>
 </tr>
 </tbody></table>
 <p>example:</p>
@@ -14984,5 +14933,30 @@ Example:
 
 <h2 id="GetCursorPos"><a href="#GetCursorPos" class="headerlink" title="GetCursorPos"></a>GetCursorPos</h2><p>Get mouse Position</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> position = InteropMethods.GetCursorPos();</span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span> X = position.X;</span><br><span class="line"><span class="built_in">int</span> Y = position.Y;</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Validation Rule</title>
+    <url>/handycontrol/tools/ValidationRule/index.html</url>
+    <content><![CDATA[<h1 id="Rules"><a href="#Rules" class="headerlink" title="Rules"></a>Rules</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NoBlankTextRule</td>
+<td>Property: ErrorContent</td>
+</tr>
+<tr>
+<td>RegexRule</td>
+<td>Property: ErrorContent, Type, Pattern</td>
+</tr>
+</tbody></table>
+<h1 id="How-to-Create-ValidationRule"><a href="#How-to-Create-ValidationRule" class="headerlink" title="How to Create ValidationRule?"></a>How to Create ValidationRule?</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">NumericUpDownDemoRule</span> : <span class="title">ValidationRule</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> ValidationResult <span class="title">Validate</span>(<span class="params"><span class="built_in">object</span> <span class="keyword">value</span>, CultureInfo cultureInfo</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">value</span> <span class="keyword">is</span> <span class="keyword">not</span> <span class="built_in">double</span> doubleValue)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> ValidationResult(<span class="literal">false</span>, HandyControl.Properties.Langs.Lang.FormatError);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> doubleValue % <span class="number">2</span> &gt; <span class="built_in">double</span>.Epsilon</span><br><span class="line">            ? <span class="keyword">new</span> ValidationResult(<span class="literal">false</span>, Properties.Langs.Lang.Error)</span><br><span class="line">            : ValidationResult.ValidResult;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><h2 id="RegexRule"><a href="#RegexRule" class="headerlink" title="RegexRule"></a>RegexRule</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"> &lt;hc:SearchBar hc:InfoElement.Placeholder=<span class="string">&quot;Please Enter Email&quot;</span> hc:InfoElement.Title=<span class="string">&quot;Title&quot;</span> Margin=<span class="string">&quot;0,32,0,0&quot;</span> hc:InfoElement.Necessary=<span class="string">&quot;True&quot;</span> Style=<span class="string">&quot;&#123;StaticResource SearchBarPlus&#125;&quot;</span>&gt;</span><br><span class="line">    &lt;hc:SearchBar.Text&gt;</span><br><span class="line">        &lt;Binding Path=<span class="string">&quot;Email1&quot;</span> UpdateSourceTrigger=<span class="string">&quot;PropertyChanged&quot;</span>&gt;</span><br><span class="line">            &lt;Binding.ValidationRules&gt;</span><br><span class="line">                &lt;hc:RegexRule Type=<span class="string">&quot;Mail&quot;</span>/&gt;</span><br><span class="line">            &lt;/Binding.ValidationRules&gt;</span><br><span class="line">        &lt;/Binding&gt;</span><br><span class="line">    &lt;/hc:SearchBar.Text&gt;</span><br><span class="line">&lt;/hc:SearchBar&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="NoBlankTextRule"><a href="#NoBlankTextRule" class="headerlink" title="NoBlankTextRule"></a>NoBlankTextRule</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"> &lt;hc:SearchBar Style=<span class="string">&quot;&#123;StaticResource SearchBarPlus&#125;&quot;</span>&gt;</span><br><span class="line">    &lt;hc:SearchBar.Text&gt;</span><br><span class="line">        &lt;Binding Path=<span class="string">&quot;Email1&quot;</span> UpdateSourceTrigger=<span class="string">&quot;PropertyChanged&quot;</span>&gt;</span><br><span class="line">            &lt;Binding.ValidationRules&gt;</span><br><span class="line">                &lt;hc:NoBlankTextRule/&gt;</span><br><span class="line">            &lt;/Binding.ValidationRules&gt;</span><br><span class="line">        &lt;/Binding&gt;</span><br><span class="line">    &lt;/hc:SearchBar.Text&gt;</span><br><span class="line">&lt;/hc:SearchBar&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
   </entry>
 </search>
