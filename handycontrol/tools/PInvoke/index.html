@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#fc6423" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)">
+<meta name="generator" content="Hexo 6.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#fc6423">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<meta name="description" content="We have a lot of WinAPI functions that You can easily use them in your applications InteropMethods   Name Remarks    RegisterWindowMessage    ReadProcessMemory    SendMessage    GetWindowThreadProcess">
+<meta property="og:type" content="website">
+<meta property="og:title" content="P&#x2F;Invoke">
+<meta property="og:url" content="http://example.com/handycontrol/tools/PInvoke/index.html">
+<meta property="og:site_name" content="Ghost1372">
+<meta property="og:description" content="We have a lot of WinAPI functions that You can easily use them in your applications InteropMethods   Name Remarks    RegisterWindowMessage    ReadProcessMemory    SendMessage    GetWindowThreadProcess">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-12-21T14:06:51.646Z">
+<meta property="article:modified_time" content="2021-12-21T14:06:51.646Z">
+<meta property="article:author" content="Ghost1372">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/handycontrol/tools/PInvoke/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/handycontrol/tools/PInvoke/index.html","path":"handycontrol/tools/PInvoke/index.html","title":"P/Invoke"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>P/Invoke | Ghost1372
+</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Ghost1372</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">everything can be handy</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        
+            
+  <li class="menu-item menu-item-handycontrol---3.3.11"><a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.3.11</a></li>
+
+
+      
+        
+            
+  <li class="menu-item menu-item-settingsui---2.0.7"><a href="/settingsui/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>SettingsUI - 2.0.7</a></li>
+
+
+      
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#InteropMethods"><span class="nav-number">1.</span> <span class="nav-text">InteropMethods</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#InteropValues"><span class="nav-number">2.</span> <span class="nav-text">InteropValues</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ExternDll"><span class="nav-number">2.1.</span> <span class="nav-text">ExternDll</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StructLayout"><span class="nav-number">2.2.</span> <span class="nav-text">StructLayout</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Flags"><span class="nav-number">2.3.</span> <span class="nav-text">Flags</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Enum"><span class="nav-number">2.4.</span> <span class="nav-text">Enum</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Example"><span class="nav-number">3.</span> <span class="nav-text">Example</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#InternetGetConnectedState"><span class="nav-number">3.1.</span> <span class="nav-text">InternetGetConnectedState</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GetCursorPos"><span class="nav-number">3.2.</span> <span class="nav-text">GetCursorPos</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Ghost1372"
+      src="https://avatars.githubusercontent.com/u/9213496?v=4">
+  <p class="site-author-name" itemprop="name">Ghost1372</p>
+  <div class="site-description" itemprop="description">everything can be handy</div>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ghost1372" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ghost1372" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:mahdidvb72@gmail.com" title="E-Mail → mailto:mahdidvb72@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.nuget.org/packages/HandyControl" title="Nuget → https:&#x2F;&#x2F;www.nuget.org&#x2F;packages&#x2F;HandyControl" rel="noopener" target="_blank"><i class="fab fa-microsoft fa-fw"></i>Nuget</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.nuget.org/packages/SettingsUI" title="Nuget (SettingsUI) → https:&#x2F;&#x2F;www.nuget.org&#x2F;packages&#x2F;SettingsUI" rel="noopener" target="_blank"><i class="fab fa-microsoft fa-fw"></i>Nuget (SettingsUI)</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/ghost1372/HandyControls" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+  
+
+      
+
+        
+        <ul class="sub-menu menu">
+          
+            
+          
+          
+              
+  <li class="menu-item menu-item-thanks"><a href="/handycontrol/tnx/" rel="section"><i class="fa fa-user fa-fw"></i>Thanks</a></li>
+
+
+          
+          
+              
+  <li class="menu-item menu-item-quick-start"><a href="/handycontrol/quick_start/" rel="section"><i class="fa fa-h-square fa-fw"></i>Quick start</a></li>
+
+
+          
+          
+            
+                
+  <li class="menu-item menu-item-basic-xaml"><a href="/handycontrol/basic_xaml/" rel="section"><i class="fab fa-xing fa-fw"></i>Basic xaml</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-attached-property"><a href="/handycontrol/attach/" rel="section"><i class="fas fa-paperclip fa-fw"></i>Attached Property</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-native-control"><a href="/handycontrol/native_controls/" rel="section"><i class="fas fa-border-style fa-fw"></i>Native control</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-extended-control"><a href="/handycontrol/extend_controls/" rel="section"><i class="fab fa-intercom fa-fw"></i>Extended control</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-data"><a href="/handycontrol/data/" rel="section"><i class="fas fa-database fa-fw"></i>Data</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-expression"><a href="/handycontrol/expression/" rel="section"><i class="fas fa-database fa-fw"></i>Expression</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-media"><a href="/handycontrol/media/" rel="section"><i class="fas fa-database fa-fw"></i>Media</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-tools-extensions-helper"><a href="/handycontrol/tools/" rel="section"><i class="fas fa-tools fa-fw"></i>Tools-Extensions-Helper</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-globalization"><a href="/handycontrol/langs/" rel="section"><i class="fas fa-globe-asia fa-fw"></i>Globalization</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-breaking-changes"><a href="/handycontrol/breaking_changes/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>Breaking Changes</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-theme"><a href="/handycontrol/theme/" rel="section"><i class="fas fa-palette fa-fw"></i>Theme</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-interactivity"><a href="/handycontrol/interactivity/" rel="section"><i class="fas fa-i-cursor fa-fw"></i>Interactivity</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-persian-toolkit"><a href="/handycontrol/persianToolkit/" rel="section"><i class="fab fa-jira fa-fw"></i>Persian Toolkit</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-intellisense"><a href="/handycontrol/intellisense/" rel="section"><i class="fas fa-brain fa-fw"></i>Intellisense</a></li>
+
+
+        </ul>
+        
+
+        
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+
+                    
+                    <ul class="sub-menu menu">
+                      
+                        
+  <li class="menu-item menu-item-extension"><a href="/handycontrol/tools/Extension/" rel="section">Extension</a></li>
+
+
+                        
+  <li class="menu-item menu-item-helper"><a href="/handycontrol/tools/Helper/" rel="section">Helper</a></li>
+
+
+                        
+  <li class="menu-item menu-item-p/invoke"><a href="/handycontrol/tools/PInvoke/" rel="section">P/Invoke</a></li>
+
+
+                        
+  <li class="menu-item menu-item-validation-rule"><a href="/handycontrol/tools/ValidationRule/" rel="section">Validation Rule</a></li>
+
+
+                    </ul>
+                    
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+
+                    
+                    <ul class="sub-menu menu">
+                      
+                    </ul>
+                    
+                
+        
+      
+
+      
+      
+  
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">P/Invoke
+</h1>
+
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/handycontrol/">HANDYCONTROL</a></li>
+            <li><a href="/handycontrol/tools/">TOOLS</a></li>
+          <li>PINVOKE</li>
+        
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <p>We have a lot of WinAPI functions that You can easily use them in your applications</p>
+<h1 id="InteropMethods"><a href="#InteropMethods" class="headerlink" title="InteropMethods"></a>InteropMethods</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>RegisterWindowMessage</td>
+<td></td>
+</tr>
+<tr>
+<td>ReadProcessMemory</td>
+<td></td>
+</tr>
+<tr>
+<td>SendMessage</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindowThreadProcessId</td>
+<td></td>
+</tr>
+<tr>
+<td>AttachThreadInput</td>
+<td></td>
+</tr>
+<tr>
+<td>GetForegroundWindow</td>
+<td></td>
+</tr>
+<tr>
+<td>OpenProcess</td>
+<td></td>
+</tr>
+<tr>
+<td>VirtualAllocEx</td>
+<td></td>
+</tr>
+<tr>
+<td>CloseHandle</td>
+<td></td>
+</tr>
+<tr>
+<td>VirtualFreeEx</td>
+<td></td>
+</tr>
+<tr>
+<td>FindWindow</td>
+<td></td>
+</tr>
+<tr>
+<td>FindWindowEx</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindowRect</td>
+<td></td>
+</tr>
+<tr>
+<td>GetCursorPos</td>
+<td></td>
+</tr>
+<tr>
+<td>GetDesktopWindow</td>
+<td></td>
+</tr>
+<tr>
+<td>AddClipboardFormatListener</td>
+<td></td>
+</tr>
+<tr>
+<td>RemoveClipboardFormatListener</td>
+<td></td>
+</tr>
+<tr>
+<td>GetSystemMenu</td>
+<td></td>
+</tr>
+<tr>
+<td>EnableMenuItem</td>
+<td></td>
+</tr>
+<tr>
+<td>InsertMenu</td>
+<td></td>
+</tr>
+<tr>
+<td>IntDestroyMenu</td>
+<td></td>
+</tr>
+<tr>
+<td>IntGetDC</td>
+<td></td>
+</tr>
+<tr>
+<td>IntReleaseDC</td>
+<td></td>
+</tr>
+<tr>
+<td>GetDeviceCaps</td>
+<td></td>
+</tr>
+<tr>
+<td>GetSystemMetrics</td>
+<td></td>
+</tr>
+<tr>
+<td>IntDestroyIcon</td>
+<td></td>
+</tr>
+<tr>
+<td>IntDeleteObject</td>
+<td></td>
+</tr>
+<tr>
+<td>IntCloseHandle</td>
+<td></td>
+</tr>
+<tr>
+<td>PrivateCreateDIBSection</td>
+<td></td>
+</tr>
+<tr>
+<td>PrivateCreateIconIndirect</td>
+<td></td>
+</tr>
+<tr>
+<td>PrivateCreateBitmap</td>
+<td></td>
+</tr>
+<tr>
+<td>IntGetModuleFileName</td>
+<td></td>
+</tr>
+<tr>
+<td>ExtractIconEx</td>
+<td></td>
+</tr>
+<tr>
+<td>Shell_NotifyIcon</td>
+<td></td>
+</tr>
+<tr>
+<td>CreateWindowEx</td>
+<td></td>
+</tr>
+<tr>
+<td>RegisterClass</td>
+<td></td>
+</tr>
+<tr>
+<td>DefWindowProc</td>
+<td></td>
+</tr>
+<tr>
+<td>SetForegroundWindow</td>
+<td></td>
+</tr>
+<tr>
+<td>CallNextHookEx</td>
+<td></td>
+</tr>
+<tr>
+<td>GetModuleHandle</td>
+<td></td>
+</tr>
+<tr>
+<td>UnhookWindowsHookEx</td>
+<td></td>
+</tr>
+<tr>
+<td>SetWindowsHookEx</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindowDC</td>
+<td></td>
+</tr>
+<tr>
+<td>GetPixel</td>
+<td></td>
+</tr>
+<tr>
+<td>ReleaseDC</td>
+<td></td>
+</tr>
+<tr>
+<td>GetDeviceCaps</td>
+<td></td>
+</tr>
+<tr>
+<td>GetDC</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindowPlacement</td>
+<td></td>
+</tr>
+<tr>
+<td>MonitorFromWindow</td>
+<td></td>
+</tr>
+<tr>
+<td>EnumThreadWindows</td>
+<td></td>
+</tr>
+<tr>
+<td>DeleteDC</td>
+<td></td>
+</tr>
+<tr>
+<td>CreateCompatibleDC</td>
+<td></td>
+</tr>
+<tr>
+<td>SelectObject</td>
+<td></td>
+</tr>
+<tr>
+<td>SendMessage</td>
+<td></td>
+</tr>
+<tr>
+<td>MonitorFromPoint</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindow</td>
+<td></td>
+</tr>
+<tr>
+<td>IsWindowVisible</td>
+<td></td>
+</tr>
+<tr>
+<td>IsIconic</td>
+<td></td>
+</tr>
+<tr>
+<td>IsZoomed</td>
+<td></td>
+</tr>
+<tr>
+<td>SetWindowPos</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindowLong</td>
+<td></td>
+</tr>
+<tr>
+<td>SetWindowLongPtr32</td>
+<td></td>
+</tr>
+<tr>
+<td>SetWindowLongPtr64</td>
+<td></td>
+</tr>
+<tr>
+<td>SetWindowLong</td>
+<td></td>
+</tr>
+<tr>
+<td>SetWindowLongPtr</td>
+<td></td>
+</tr>
+<tr>
+<td>GetCurrentThreadId</td>
+<td></td>
+</tr>
+<tr>
+<td>DestroyWindow</td>
+<td></td>
+</tr>
+<tr>
+<td>UnregisterClass</td>
+<td></td>
+</tr>
+<tr>
+<td>UpdateLayeredWindow</td>
+<td></td>
+</tr>
+<tr>
+<td>RedrawWindow</td>
+<td></td>
+</tr>
+<tr>
+<td>EnumDisplayMonitors</td>
+<td></td>
+</tr>
+<tr>
+<td>IntersectRect</td>
+<td></td>
+</tr>
+<tr>
+<td>GetMonitorInfo</td>
+<td></td>
+</tr>
+<tr>
+<td>CreateDIBSection</td>
+<td></td>
+</tr>
+<tr>
+<td>AlphaBlend</td>
+<td></td>
+</tr>
+<tr>
+<td>ChildWindowFromPointEx</td>
+<td></td>
+</tr>
+<tr>
+<td>CreateCompatibleBitmap</td>
+<td></td>
+</tr>
+<tr>
+<td>BitBlt</td>
+<td></td>
+</tr>
+<tr>
+<td>EnableWindow</td>
+<td></td>
+</tr>
+<tr>
+<td>SHAppBarMessage</td>
+<td></td>
+</tr>
+<tr>
+<td>SetWindowPlacement</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindowText</td>
+<td></td>
+</tr>
+<tr>
+<td>EnumDesktopWindows</td>
+<td></td>
+</tr>
+<tr>
+<td>FindWindowByCaption</td>
+<td></td>
+</tr>
+<tr>
+<td>MouseEvent</td>
+<td></td>
+</tr>
+<tr>
+<td>RtlGetVersion</td>
+<td></td>
+</tr>
+<tr>
+<td>GetImmersiveUserColorSetPreference</td>
+<td></td>
+</tr>
+<tr>
+<td>GetImmersiveColorSetCount</td>
+<td></td>
+</tr>
+<tr>
+<td>GetImmersiveColorFromColorSetEx</td>
+<td></td>
+</tr>
+<tr>
+<td>GetImmersiveColorTypeFromName</td>
+<td></td>
+</tr>
+<tr>
+<td>GetImmersiveColorNamedTypeByIndex</td>
+<td></td>
+</tr>
+<tr>
+<td>InternetGetConnectedState</td>
+<td></td>
+</tr>
+<tr>
+<td>GetModuleFileName</td>
+<td></td>
+</tr>
+<tr>
+<td>WritePrivateProfileString</td>
+<td></td>
+</tr>
+<tr>
+<td>GetPrivateProfileString</td>
+<td></td>
+</tr>
+<tr>
+<td>DwmGetColorizationColor</td>
+<td></td>
+</tr>
+<tr>
+<td>DwmSetWindowAttribute</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindowLongPtr32</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindowLongPtr64</td>
+<td></td>
+</tr>
+<tr>
+<td>GetWindowLongPtr</td>
+<td></td>
+</tr>
+<tr>
+<td>GdipImageGetFrameDimensionsCount</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipImageGetFrameDimensionsList</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipImageGetFrameCount</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipGetPropertyItemSize</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipGetPropertyItem</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipCreateHBITMAPFromBitmap</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipImageSelectActiveFrame</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipCreateBitmapFromFile</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipImageForceValidation</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>IntGdipDisposeImage</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdiplusStartup</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipGetImageRawFormat</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>SetWindowCompositionAttribute</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipCreateBitmapFromStream</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipCreateBitmapFromHBITMAP</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipGetImageEncodersSize</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipGetImageDecodersSize</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipGetImageDecoders</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipGetImageEncoders</td>
+<td>located in Gdip</td>
+</tr>
+<tr>
+<td>GdipSaveImageToStream</td>
+<td>located in Gdip</td>
+</tr>
+</tbody></table>
+<h1 id="InteropValues"><a href="#InteropValues" class="headerlink" title="InteropValues"></a>InteropValues</h1><h2 id="ExternDll"><a href="#ExternDll" class="headerlink" title="ExternDll"></a>ExternDll</h2><p>you can access dll from <code>ExternDll</code></p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">DllImport(InteropValues.ExternDll.User32, CharSet = CharSet.Auto)</span>]</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>User32</td>
+<td></td>
+</tr>
+<tr>
+<td>Gdi32</td>
+<td></td>
+</tr>
+<tr>
+<td>GdiPlus</td>
+<td></td>
+</tr>
+<tr>
+<td>Kernel32</td>
+<td></td>
+</tr>
+<tr>
+<td>Shell32</td>
+<td></td>
+</tr>
+<tr>
+<td>MsImg</td>
+<td></td>
+</tr>
+<tr>
+<td>NTdll</td>
+<td></td>
+</tr>
+<tr>
+<td>WinInet</td>
+<td></td>
+</tr>
+<tr>
+<td>uxtheme</td>
+<td></td>
+</tr>
+<tr>
+<td>dwmapi</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="StructLayout"><a href="#StructLayout" class="headerlink" title="StructLayout"></a>StructLayout</h2><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NOTIFYICONDATA</td>
+<td></td>
+</tr>
+<tr>
+<td>TBBUTTON</td>
+<td></td>
+</tr>
+<tr>
+<td>TRAYDATA</td>
+<td></td>
+</tr>
+<tr>
+<td>POINT</td>
+<td></td>
+</tr>
+<tr>
+<td>MOUSEHOOKSTRUCT</td>
+<td></td>
+</tr>
+<tr>
+<td>RECT</td>
+<td></td>
+</tr>
+<tr>
+<td>BLENDFUNCTION</td>
+<td></td>
+</tr>
+<tr>
+<td>BITMAPINFOHEADER</td>
+<td></td>
+</tr>
+<tr>
+<td>WINDOWPOS</td>
+<td></td>
+</tr>
+<tr>
+<td>WINDOWPLACEMENT</td>
+<td></td>
+</tr>
+<tr>
+<td>SIZE</td>
+<td></td>
+</tr>
+<tr>
+<td>MONITORINFO</td>
+<td></td>
+</tr>
+<tr>
+<td>WNDCLASS</td>
+<td></td>
+</tr>
+<tr>
+<td>WNDCLASS4ICON</td>
+<td></td>
+</tr>
+<tr>
+<td>BITMAPINFO</td>
+<td></td>
+</tr>
+<tr>
+<td>ICONINFO</td>
+<td></td>
+</tr>
+<tr>
+<td>WINCOMPATTRDATA</td>
+<td></td>
+</tr>
+<tr>
+<td>ACCENTPOLICY</td>
+<td></td>
+</tr>
+<tr>
+<td>ImageCodecInfoPrivate</td>
+<td></td>
+</tr>
+<tr>
+<td>MINMAXINFO</td>
+<td></td>
+</tr>
+<tr>
+<td>APPBARDATA</td>
+<td></td>
+</tr>
+<tr>
+<td>RTL_OSVERSIONINFOEX</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="Flags"><a href="#Flags" class="headerlink" title="Flags"></a>Flags</h2><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AllocationType</td>
+<td></td>
+</tr>
+<tr>
+<td>MemoryProtection</td>
+<td></td>
+</tr>
+<tr>
+<td>FreeType</td>
+<td></td>
+</tr>
+<tr>
+<td>SetWindowPosFlags</td>
+<td></td>
+</tr>
+<tr>
+<td>ProcessAccess</td>
+<td></td>
+</tr>
+<tr>
+<td>RedrawWindowFlags</td>
+<td></td>
+</tr>
+<tr>
+<td>WindowPositionFlags</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="Enum"><a href="#Enum" class="headerlink" title="Enum"></a>Enum</h2><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ShowWindowCommands</td>
+<td></td>
+</tr>
+<tr>
+<td>MouseEvent</td>
+<td></td>
+</tr>
+<tr>
+<td>FreeType</td>
+<td></td>
+</tr>
+<tr>
+<td>HookType</td>
+<td></td>
+</tr>
+<tr>
+<td>GWL</td>
+<td></td>
+</tr>
+<tr>
+<td>GWLP</td>
+<td></td>
+</tr>
+<tr>
+<td>SM</td>
+<td></td>
+</tr>
+<tr>
+<td>CacheSlot</td>
+<td></td>
+</tr>
+<tr>
+<td>WINDOWCOMPOSITIONATTRIB</td>
+<td></td>
+</tr>
+<tr>
+<td>ACCENTSTATE</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><h2 id="InternetGetConnectedState"><a href="#InternetGetConnectedState" class="headerlink" title="InternetGetConnectedState"></a>InternetGetConnectedState</h2><p>With the help of this method, you can check the status of the Internet</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="built_in">bool</span> <span class="title">IsConnectedToInternet</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> InteropMethods.InternetGetConnectedState(<span class="keyword">out</span> <span class="built_in">int</span> Desc, <span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="GetCursorPos"><a href="#GetCursorPos" class="headerlink" title="GetCursorPos"></a>GetCursorPos</h2><p>Get mouse Position</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> position = InteropMethods.GetCursorPos();</span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span> X = position.X;</span><br><span class="line"><span class="built_in">int</span> Y = position.Y;</span><br></pre></td></tr></table></figure>
+      </div>
+      
+      
+      
+    </div>
+  <ul class="breadcrumb">
+            <li><a href="/handycontrol/">HANDYCONTROL</a></li>
+            <li><a href="/handycontrol/tools/">TOOLS</a></li>
+          <li>PINVOKE</li>
+        
+  </ul>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="Ghost1372"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ghost1372</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
