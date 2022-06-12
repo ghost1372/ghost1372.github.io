@@ -954,12 +954,142 @@
   <entry>
     <title>Services</title>
     <url>/settingsui/services/index.html</url>
-    <content><![CDATA[<h1 id="NavigationService"><a href="#NavigationService" class="headerlink" title="NavigationService"></a>NavigationService</h1>]]></content>
+    <content><![CDATA[<h1 id="NavigationService"><a href="#NavigationService" class="headerlink" title="NavigationService"></a>NavigationService</h1><p>See <a href="https://github.com/ghost1372/SettingsUI"><code>ShellViewModel</code></a> class for more information.</p>
+]]></content>
   </entry>
   <entry>
     <title>Styles</title>
     <url>/settingsui/styles/index.html</url>
-    <content><![CDATA[<h1 id="TextBlock"><a href="#TextBlock" class="headerlink" title="TextBlock"></a>TextBlock</h1><h2 id="OobeSubtitleStyle"><a href="#OobeSubtitleStyle" class="headerlink" title="OobeSubtitleStyle"></a>OobeSubtitleStyle</h2><h2 id="SecondaryTextStyle"><a href="#SecondaryTextStyle" class="headerlink" title="SecondaryTextStyle"></a>SecondaryTextStyle</h2><h1 id="Expander"><a href="#Expander" class="headerlink" title="Expander"></a>Expander</h1><h2 id="SettingExpanderStyle"><a href="#SettingExpanderStyle" class="headerlink" title="SettingExpanderStyle"></a>SettingExpanderStyle</h2><h1 id="Rectangle"><a href="#Rectangle" class="headerlink" title="Rectangle"></a>Rectangle</h1><h2 id="ExpanderSeparatorStyle"><a href="#ExpanderSeparatorStyle" class="headerlink" title="ExpanderSeparatorStyle"></a>ExpanderSeparatorStyle</h2><h1 id="Button"><a href="#Button" class="headerlink" title="Button"></a>Button</h1><h2 id="SettingButtonStyle"><a href="#SettingButtonStyle" class="headerlink" title="SettingButtonStyle"></a>SettingButtonStyle</h2><h1 id="HyperlinkButton"><a href="#HyperlinkButton" class="headerlink" title="HyperlinkButton"></a>HyperlinkButton</h1><h2 id="HyperlinkButtonStyle"><a href="#HyperlinkButtonStyle" class="headerlink" title="HyperlinkButtonStyle"></a>HyperlinkButtonStyle</h2><h1 id="ToggleSwitch"><a href="#ToggleSwitch" class="headerlink" title="ToggleSwitch"></a>ToggleSwitch</h1><h2 id="ToggleSwitchSettingStyle"><a href="#ToggleSwitchSettingStyle" class="headerlink" title="ToggleSwitchSettingStyle"></a>ToggleSwitchSettingStyle</h2><h1 id="ButtonBase"><a href="#ButtonBase" class="headerlink" title="ButtonBase"></a>ButtonBase</h1><h2 id="TextButtonStyle"><a href="#TextButtonStyle" class="headerlink" title="TextButtonStyle"></a>TextButtonStyle</h2><h1 id="ListViewItem"><a href="#ListViewItem" class="headerlink" title="ListViewItem"></a>ListViewItem</h1><h2 id="ListViewItemSettingStyle"><a href="#ListViewItemSettingStyle" class="headerlink" title="ListViewItemSettingStyle"></a>ListViewItemSettingStyle</h2><h1 id="Border"><a href="#Border" class="headerlink" title="Border"></a>Border</h1><h2 id="BorderPanel"><a href="#BorderPanel" class="headerlink" title="BorderPanel"></a>BorderPanel</h2><h1 id="Grid"><a href="#Grid" class="headerlink" title="Grid"></a>Grid</h1><h2 id="GridPanel"><a href="#GridPanel" class="headerlink" title="GridPanel"></a>GridPanel</h2>]]></content>
+    <content><![CDATA[<h1 id="TextBlock"><a href="#TextBlock" class="headerlink" title="TextBlock"></a>TextBlock</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>OobeSubtitleStyle</td>
+</tr>
+<tr>
+<td>SecondaryTextStyle</td>
+</tr>
+</tbody></table>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;Test&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;ThemeResource OobeSubtitleStyle&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;Test&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;ThemeResource SecondaryTextStyle&#125;&quot;</span>/&gt;</span> </span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TextBlockStyle.png" alt="SettingsUI"></p>
+<h1 id="Expander"><a href="#Expander" class="headerlink" title="Expander"></a>Expander</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SettingExpanderStyle</td>
+</tr>
+</tbody></table>
+<h1 id="Rectangle"><a href="#Rectangle" class="headerlink" title="Rectangle"></a>Rectangle</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ExpanderSeparatorStyle</td>
+</tr>
+</tbody></table>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Rectangle</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ExpanderSeparatorStyle&#125;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ExpanderSeparatorStyle.png" alt="SettingsUI"></p>
+<h1 id="Button"><a href="#Button" class="headerlink" title="Button"></a>Button</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SettingButtonStyle</td>
+</tr>
+</tbody></table>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Button</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SettingButtonStyle&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">controls:Setting</span> <span class="attr">Description</span>=<span class="string">&quot;Remap keys to other keys or shortcuts&quot;</span> <span class="attr">Header</span>=<span class="string">&quot;Remap a key&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ExpanderHeaderSettingStyle&#125;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">controls:Setting.Icon</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">SymbolIcon</span> <span class="attr">Symbol</span>=<span class="string">&quot;Keyboard&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">controls:Setting.Icon</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">controls:Setting.ActionContent</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">FontIcon</span> <span class="attr">FontFamily</span>=<span class="string">&quot;&#123;ThemeResource SymbolThemeFontFamily&#125;&quot;</span> <span class="attr">Glyph</span>=<span class="string">&quot;<span class="symbol">&amp;#xE8A7;</span>&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">controls:Setting.ActionContent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">controls:Setting</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/SettingButtonStyle.png" alt="SettingsUI"></p>
+<h1 id="HyperlinkButton"><a href="#HyperlinkButton" class="headerlink" title="HyperlinkButton"></a>HyperlinkButton</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>HyperlinkButtonStyle</td>
+</tr>
+</tbody></table>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">HyperlinkButton</span> <span class="attr">Content</span>=<span class="string">&quot;Click Here&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;ThemeResource HyperlinkButtonStyle&#125;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/HyperlinkButtonStyle.png" alt="SettingsUI"></p>
+<h1 id="ToggleSwitch"><a href="#ToggleSwitch" class="headerlink" title="ToggleSwitch"></a>ToggleSwitch</h1><h2 id=""><a href="#" class="headerlink" title=""></a></h2><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ToggleSwitchSettingStyle</td>
+</tr>
+</tbody></table>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ToggleSwitch</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;ThemeResource ToggleSwitchSettingStyle&#125;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ToggleSwitchSettingStyle.png" alt="SettingsUI"></p>
+<h1 id="ButtonBase"><a href="#ButtonBase" class="headerlink" title="ButtonBase"></a>ButtonBase</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TextButtonStyle</td>
+</tr>
+</tbody></table>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Click Here&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;ThemeResource TextButtonStyle&#125;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TextButtonStyle.png" alt="SettingsUI"></p>
+<h1 id="ListViewItem"><a href="#ListViewItem" class="headerlink" title="ListViewItem"></a>ListViewItem</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ListViewItemSettingStyle</td>
+</tr>
+</tbody></table>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListView</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Stretch&quot;</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;x:Bind ColorFormats, Mode=TwoWay&#125;&quot;</span> <span class="attr">SelectionMode</span>=<span class="string">&quot;None&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ListView.Resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Style</span> <span class="attr">TargetType</span>=<span class="string">&quot;ListViewItem&quot;</span> <span class="attr">BasedOn</span>=<span class="string">&quot;&#123;StaticResource ListViewItemSettingStyle&#125;&quot;</span>/&gt;</span><span class="xml"></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">ListView.Resources</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">ListView.ItemTemplate</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">DataTemplate</span> <span class="attr">x:DataType</span>=<span class="string">&quot;models:ColorFormatModel&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">Grid</span> <span class="attr">MinHeight</span>=<span class="string">&quot;68&quot;</span> <span class="attr">Padding</span>=<span class="string">&quot;0,0,16,0&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Stretch&quot;</span> <span class="attr">AutomationProperties.Name</span>=<span class="string">&quot;&#123;x:Bind Name&#125;&quot;</span> <span class="attr">Background</span>=<span class="string">&quot;&#123;ThemeResource CardBackgroundBrush&#125;&quot;</span> <span class="attr">BorderBrush</span>=<span class="string">&quot;&#123;ThemeResource CardBorderBrush&#125;&quot;</span> <span class="attr">BorderThickness</span>=<span class="string">&quot;&#123;ThemeResource CardBorderThickness&#125;&quot;</span> <span class="attr">CornerRadius</span>=<span class="string">&quot;&#123;ThemeResource ControlCornerRadius&#125;&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">Grid.RowDefinitions</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">RowDefinition</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">RowDefinition</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">Grid.RowDefinitions</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Margin</span>=<span class="string">&quot;56,8,0,0&quot;</span> <span class="attr">FontSize</span>=<span class="string">&quot;16&quot;</span> <span class="attr">FontWeight</span>=<span class="string">&quot;SemiBold&quot;</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;x:Bind Name&#125;&quot;</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Grid.Row</span>=<span class="string">&quot;1&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;56,0,0,8&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource SecondaryTextStyle&#125;&quot;</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;x:Bind Example&#125;&quot;</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">ToggleSwitch</span> <span class="attr">Grid.RowSpan</span>=<span class="string">&quot;2&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,0,56,0&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span> <span class="attr">AutomationProperties.HelpText</span>=<span class="string">&quot;&#123;x:Bind Name&#125;&quot;</span> <span class="attr">IsOn</span>=<span class="string">&quot;&#123;x:Bind IsShown, Mode=TwoWay&#125;&quot;</span> <span class="attr">OffContent</span>=<span class="string">&quot;&quot;</span> <span class="attr">OnContent</span>=<span class="string">&quot;&quot;</span>/&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Grid.RowSpan</span>=<span class="string">&quot;2&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span> <span class="attr">Background</span>=<span class="string">&quot;Transparent&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;<span class="symbol">&amp;#xE10C;</span>&quot;</span> <span class="attr">FontFamily</span>=<span class="string">&quot;&#123;ThemeResource SymbolThemeFontFamily&#125;&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Button.Flyout</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">MenuFlyout</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">MenuFlyoutItem</span> <span class="attr">Icon</span>=<span class="string">&quot;Up&quot;</span> <span class="attr">IsEnabled</span>=<span class="string">&quot;&#123;x:Bind CanMoveUp&#125;&quot;</span> <span class="attr">Text</span>=<span class="string">&quot;Move up&quot;</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">MenuFlyoutItem</span> <span class="attr">IsEnabled</span>=<span class="string">&quot;&#123;x:Bind CanMoveDown&#125;&quot;</span> <span class="attr">Text</span>=<span class="string">&quot;Move down&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;<span class="name">MenuFlyoutItem.Icon</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;<span class="name">FontIcon</span> <span class="attr">Glyph</span>=<span class="string">&quot;<span class="symbol">&amp;#xE1FD;</span>&quot;</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;/<span class="name">MenuFlyoutItem.Icon</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;/<span class="name">MenuFlyoutItem</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">MenuFlyout</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Button.Flyout</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">ToolTipService.ToolTip</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;More options&quot;</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">ToolTipService.ToolTip</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">Button</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">ListView.ItemTemplate</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">ListView</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ObservableCollection</span>&lt;<span class="title">ColorFormatModel</span>&gt; ColorFormats</span> &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125; = <span class="keyword">new</span> ObservableCollection&lt;ColorFormatModel&gt;();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">InitializeColorFormat</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">var</span> hexFormatName = <span class="string">&quot;HEX&quot;</span>;</span><br><span class="line">    <span class="keyword">var</span> rgbFormatName = <span class="string">&quot;RGB&quot;</span>;</span><br><span class="line">    <span class="keyword">var</span> hslFormatName = <span class="string">&quot;HSL&quot;</span>;</span><br><span class="line">    <span class="keyword">var</span> hsvFormatName = <span class="string">&quot;HSV&quot;</span>;</span><br><span class="line">    <span class="keyword">var</span> cmykFormatName = <span class="string">&quot;CMYK&quot;</span>;</span><br><span class="line">    <span class="keyword">var</span> hsbFormatName = <span class="string">&quot;HSB&quot;</span>;</span><br><span class="line">    <span class="keyword">var</span> hsiFormatName = <span class="string">&quot;HSI&quot;</span>;</span><br><span class="line">    <span class="keyword">var</span> hwbFormatName = <span class="string">&quot;HWB&quot;</span>;</span><br><span class="line">    <span class="keyword">var</span> ncolFormatName = <span class="string">&quot;NCol&quot;</span>;</span><br><span class="line"></span><br><span class="line">    ColorFormats.Add(<span class="keyword">new</span> ColorFormatModel(hexFormatName, <span class="string">&quot;#EF68FF&quot;</span>, <span class="literal">true</span>));</span><br><span class="line">    ColorFormats.Add(<span class="keyword">new</span> ColorFormatModel(rgbFormatName, <span class="string">&quot;rgb(239, 104, 255)&quot;</span>, <span class="literal">true</span>));</span><br><span class="line">    ColorFormats.Add(<span class="keyword">new</span> ColorFormatModel(hslFormatName, <span class="string">&quot;hsl(294, 100%, 70%)&quot;</span>, <span class="literal">true</span>));</span><br><span class="line">    ColorFormats.Add(<span class="keyword">new</span> ColorFormatModel(hsvFormatName, <span class="string">&quot;hsv(294, 59%, 100%)&quot;</span>, <span class="literal">true</span>));</span><br><span class="line">    ColorFormats.Add(<span class="keyword">new</span> ColorFormatModel(cmykFormatName, <span class="string">&quot;cmyk(6%, 59%, 0%, 0%)&quot;</span>, <span class="literal">true</span>));</span><br><span class="line">    ColorFormats.Add(<span class="keyword">new</span> ColorFormatModel(hsbFormatName, <span class="string">&quot;hsb(100, 50%, 75%)&quot;</span>, <span class="literal">true</span>));</span><br><span class="line">    ColorFormats.Add(<span class="keyword">new</span> ColorFormatModel(hsiFormatName, <span class="string">&quot;hsi(100, 50%, 75%)&quot;</span>, <span class="literal">true</span>));</span><br><span class="line">    ColorFormats.Add(<span class="keyword">new</span> ColorFormatModel(hwbFormatName, <span class="string">&quot;hwb(100, 50%, 75%)&quot;</span>, <span class="literal">true</span>));</span><br><span class="line">    ColorFormats.Add(<span class="keyword">new</span> ColorFormatModel(ncolFormatName, <span class="string">&quot;R10, 50%, 75%&quot;</span>, <span class="literal">true</span>));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ColorFormatModel</span> : <span class="title">Observable</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">string</span> _name;</span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">string</span> _example;</span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">bool</span> _isShown;</span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">bool</span> _canMoveUp = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">bool</span> _canMoveDown = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ColorFormatModel</span>(<span class="params"><span class="built_in">string</span> name, <span class="built_in">string</span> example, <span class="built_in">bool</span> isShown</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Name = name;</span><br><span class="line">        Example = example;</span><br><span class="line">        IsShown = isShown;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">string</span> Name</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">get</span> &#123; <span class="keyword">return</span> _name; &#125;</span><br><span class="line">        <span class="keyword">set</span> &#123; Set(<span class="keyword">ref</span> _name, <span class="keyword">value</span>); &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">string</span> Example</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">get</span> &#123; <span class="keyword">return</span> _example; &#125;</span><br><span class="line">        <span class="keyword">set</span> &#123; Set(<span class="keyword">ref</span> _example, <span class="keyword">value</span>); &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">bool</span> IsShown</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">get</span> &#123; <span class="keyword">return</span> _isShown; &#125;</span><br><span class="line">        <span class="keyword">set</span> &#123; Set(<span class="keyword">ref</span> _isShown, <span class="keyword">value</span>); &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">bool</span> CanMoveUp</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">get</span> &#123; <span class="keyword">return</span> _canMoveUp; &#125;</span><br><span class="line">        <span class="keyword">set</span> &#123; Set(<span class="keyword">ref</span> _canMoveUp, <span class="keyword">value</span>); &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">bool</span> CanMoveDown</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">get</span> &#123; <span class="keyword">return</span> _canMoveDown; &#125;</span><br><span class="line">        <span class="keyword">set</span> &#123; Set(<span class="keyword">ref</span> _canMoveDown, <span class="keyword">value</span>); &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ListViewItemSettingStyle.png" alt="SettingsUI"></p>
+<h1 id="Border"><a href="#Border" class="headerlink" title="Border"></a>Border</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BorderPanel</td>
+</tr>
+</tbody></table>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Border</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;ThemeResource BorderPanel&#125;&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/BorderPanel.png" alt="SettingsUI"></p>
+<h1 id="Grid"><a href="#Grid" class="headerlink" title="Grid"></a>Grid</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GridPanel</td>
+</tr>
+</tbody></table>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Grid</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;ThemeResource GridPanel&#125;&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/GridPanel.png" alt="SettingsUI"></p>
+]]></content>
   </entry>
   <entry>
     <title>Tools</title>
@@ -15406,6 +15536,8 @@ Example:
 <div class="note warning"><p>if your app is a Packaged app, please see <a href="https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/notifications/app-notifications/app-notifications-quickstart?tabs=cs#step-2-update-your-apps-manifest">here</a></p>
 </div>
 
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/AppNotificationAvatar.png" alt="SettingsUI"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/AppNotificationTextBox.png" alt="SettingsUI"></p>
 <h1 id="Send-Toast-with-Existing-Payloads"><a href="#Send-Toast-with-Existing-Payloads" class="headerlink" title="Send Toast with Existing Payloads"></a>Send Toast with Existing Payloads</h1><p>in this way you can create and send Toast with Existing Payloads.</p>
 <p>first you need to create a new Class, we call it: <code>ToastWithAvatar.cs</code><br>now inherit it from <code>IScenario</code> Interface:</p>
 <p><code>public class ToastWithAvatar : IScenario</code></p>
@@ -15445,7 +15577,21 @@ Example:
   <entry>
     <title>ApplicationHelper</title>
     <url>/settingsui/helpers/applicationHelper/index.html</url>
-    <content><![CDATA[<h1 id="GetCurrentPackageName"><a href="#GetCurrentPackageName" class="headerlink" title="GetCurrentPackageName"></a>GetCurrentPackageName</h1><h1 id="IsPackaged"><a href="#IsPackaged" class="headerlink" title="IsPackaged"></a>IsPackaged</h1><h1 id="GetPackageDetails"><a href="#GetPackageDetails" class="headerlink" title="GetPackageDetails"></a>GetPackageDetails</h1><h1 id="GetPackageVersion"><a href="#GetPackageVersion" class="headerlink" title="GetPackageVersion"></a>GetPackageVersion</h1><h1 id="GetFullPathToExe"><a href="#GetFullPathToExe" class="headerlink" title="GetFullPathToExe"></a>GetFullPathToExe</h1><h1 id="GetFullPathToAsset"><a href="#GetFullPathToAsset" class="headerlink" title="GetFullPathToAsset"></a>GetFullPathToAsset</h1><h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
+    <content><![CDATA[<h1 id="GetCurrentPackageName"><a href="#GetCurrentPackageName" class="headerlink" title="GetCurrentPackageName"></a>GetCurrentPackageName</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> packageName = ApplicationHelper.GetCurrentPackageName();</span><br><span class="line"></span><br><span class="line"><span class="comment">//return: 6bf3ff99-cad2-4593-95c3-a2b41f92b4f3_1.0.0.0_x86__d945pcw0g0yx4</span></span><br></pre></td></tr></table></figure>
+
+<div class="note warning"><p><code>GetCurrentPackageName</code> Works only in <code>Packaged</code> mode, in UnPackaged mode this will Returns the null value.</p>
+</div>
+
+
+<h1 id="IsPackaged"><a href="#IsPackaged" class="headerlink" title="IsPackaged"></a>IsPackaged</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> isPackagedMode = ApplicationHelper.IsPackaged;</span><br><span class="line"></span><br><span class="line"><span class="comment">//return: true/false </span></span><br></pre></td></tr></table></figure>
+<h1 id="GetPackageDetails"><a href="#GetPackageDetails" class="headerlink" title="GetPackageDetails"></a>GetPackageDetails</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> packageDetails = ApplicationHelper.GetPackageDetails();</span><br></pre></td></tr></table></figure>
+
+<h1 id="GetPackageVersion"><a href="#GetPackageVersion" class="headerlink" title="GetPackageVersion"></a>GetPackageVersion</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> packageVersion = ApplicationHelper.GetPackageVersion();</span><br><span class="line">packageVersion.Major.ToString();</span><br><span class="line">packageVersion.Minor.ToString();</span><br><span class="line">packageVersion.Build.ToString();</span><br><span class="line">packageVersion.Revision.ToString();</span><br><span class="line"><span class="comment">//return: 1.0.0.0</span></span><br></pre></td></tr></table></figure>
+<h1 id="GetFullPathToExe"><a href="#GetFullPathToExe" class="headerlink" title="GetFullPathToExe"></a>GetFullPathToExe</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> pathToExe = ApplicationHelper.GetFullPathToExe();</span><br><span class="line"><span class="comment">//return: C:\\Users\\mahdi\\source\\repos\\App7\\App7\\bin\\x86\\Debug\\net6.0-windows10.0.19041.0\\win10-x86\\AppX&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="GetFullPathToAsset"><a href="#GetFullPathToAsset" class="headerlink" title="GetFullPathToAsset"></a>GetFullPathToAsset</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> pathToAsset = ApplicationHelper.GetFullPathToAsset(<span class="string">&quot;logo.png&quot;</span>);</span><br><span class="line"><span class="comment">//return: &quot;C:\\Users\\mahdi\\source\\repos\\App7\\App7\\bin\\x86\\Debug\\net6.0-windows10.0.19041.0\\win10-x86\\AppX\\Assets\\logo.png&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
 ]]></content>
   </entry>
   <entry>
@@ -15472,6 +15618,7 @@ Example:
     <content><![CDATA[<p>Simple helper for Loading suggestions list in <code>AutoSuggestBox</code></p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">AutoSuggest_TextChanged</span>(<span class="params">AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    AutoSuggestBoxHelper.LoadSuggestions(sender, args, mylist);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/LoadSuggestion.png" alt="SettingsUI"></p>
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
 ]]></content>
   </entry>
@@ -15524,13 +15671,33 @@ Example:
 <p>if you have <code>Microsoft.Xaml.Behaviors.WinUI.Managed</code> nuget package, you can bind <code>Loaded</code> and <code>ItemInvoked</code> events to command</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">UserControl</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i:Interaction.Behaviors</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ic:EventTriggerBehavior</span> <span class="attr">EventName</span>=<span class="string">&quot;Loaded&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ic:InvokeCommandAction</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;x:Bind ViewModel.LoadedCommand&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ic:EventTriggerBehavior</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">i:Interaction.Behaviors</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">NavigationView</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i:Interaction.Behaviors</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ic:EventTriggerBehavior</span> <span class="attr">EventName</span>=<span class="string">&quot;ItemInvoked&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ic:InvokeCommandAction</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;x:Bind ViewModel.ItemInvokedCommand&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ic:EventTriggerBehavior</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">i:Interaction.Behaviors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">NavigationView</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">AutoSuggestBox</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i:Interaction.Behaviors</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ic:EventTriggerBehavior</span> <span class="attr">EventName</span>=<span class="string">&quot;TextChanged&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ic:InvokeCommandAction</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;x:Bind ViewModel.AutoSuggestBoxTextChangedCommand&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ic:EventTriggerBehavior</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ic:EventTriggerBehavior</span> <span class="attr">EventName</span>=<span class="string">&quot;QuerySubmitted&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ic:InvokeCommandAction</span> <span class="attr">Command</span>=<span class="string">&quot;&#123;x:Bind ViewModel.AutoSuggestBoxQuerySubmittedCommand&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ic:EventTriggerBehavior</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">i:Interaction.Behaviors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">NavigationView</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">UserControl</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/NavigationViewHelper.gif" alt="SettingsUI"></p>
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
 ]]></content>
   </entry>
   <entry>
     <title>OSVersionHelper</title>
     <url>/settingsui/helpers/osVersionHelper/index.html</url>
-    <content><![CDATA[<h1 id="IsWindows10-1809"><a href="#IsWindows10-1809" class="headerlink" title="IsWindows10_1809"></a>IsWindows10_1809</h1><h1 id="IsWindows10-1809-OrGreater"><a href="#IsWindows10-1809-OrGreater" class="headerlink" title="IsWindows10_1809_OrGreater"></a>IsWindows10_1809_OrGreater</h1><h1 id="IsWindows11"><a href="#IsWindows11" class="headerlink" title="IsWindows11"></a>IsWindows11</h1><h1 id="IsWindows11-OrGreater"><a href="#IsWindows11-OrGreater" class="headerlink" title="IsWindows11_OrGreater"></a>IsWindows11_OrGreater</h1><h1 id="GetOSVersion"><a href="#GetOSVersion" class="headerlink" title="GetOSVersion"></a>GetOSVersion</h1>]]></content>
+    <content><![CDATA[<h1 id="Available-Methods"><a href="#Available-Methods" class="headerlink" title="Available Methods"></a>Available Methods</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IsWindows10_1809</td>
+</tr>
+<tr>
+<td>IsWindows10_1809_OrGreater</td>
+</tr>
+<tr>
+<td>IsWindows11</td>
+</tr>
+<tr>
+<td>IsWindows11_OrGreater</td>
+</tr>
+</tbody></table>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> getOSVersion = OSVersionHelper.GetOSVersion();</span><br><span class="line"><span class="comment">//return: 10.0.22621.2</span></span><br><span class="line"><span class="keyword">var</span> isWindows11 = OSVersionHelper.IsWindows11;</span><br><span class="line"><span class="comment">//return: true/false</span></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>StorageFileHelper</title>
@@ -15544,7 +15711,12 @@ Example:
   <entry>
     <title>ResourceHelper</title>
     <url>/settingsui/helpers/resourceHelper/index.html</url>
-    <content><![CDATA[<h1 id="GetAllResourcesKeys"><a href="#GetAllResourcesKeys" class="headerlink" title="GetAllResourcesKeys"></a>GetAllResourcesKeys</h1><h1 id="SetLanguage"><a href="#SetLanguage" class="headerlink" title="SetLanguage"></a>SetLanguage</h1><h1 id="GetString"><a href="#GetString" class="headerlink" title="GetString"></a>GetString</h1><h1 id="GetStringWithLanguage"><a href="#GetStringWithLanguage" class="headerlink" title="GetStringWithLanguage"></a>GetStringWithLanguage</h1>]]></content>
+    <content><![CDATA[<h1 id="GetAllResourcesKeys"><a href="#GetAllResourcesKeys" class="headerlink" title="GetAllResourcesKeys"></a>GetAllResourcesKeys</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> getAllResources = ResourceHelper.GetAllResourcesKeys();</span><br></pre></td></tr></table></figure>
+
+<h1 id="SetLanguage"><a href="#SetLanguage" class="headerlink" title="SetLanguage"></a>SetLanguage</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ResourceHelper.SetLanguage(<span class="string">&quot;fa&quot;</span>);</span><br></pre></td></tr></table></figure>
+<h1 id="GetString"><a href="#GetString" class="headerlink" title="GetString"></a>GetString</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="keyword">value</span> = ResourceHelper.GetString(<span class="string">&quot;Test&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h1 id="GetStringWithLanguage"><a href="#GetStringWithLanguage" class="headerlink" title="GetStringWithLanguage"></a>GetStringWithLanguage</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="keyword">value</span> = ResourceHelper.GetStringWithLanguage(<span class="string">&quot;Test&quot;</span>, <span class="string">&quot;fa&quot;</span>);</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>TaskbarHelper</title>
@@ -15552,6 +15724,8 @@ Example:
     <content><![CDATA[<p>you can handle Taskbar for your application:</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">TaskbarHelper.SetProgressState(windowHandle, TaskbarStates.Error);</span><br><span class="line"></span><br><span class="line">TaskbarHelper.SetProgressValue(windowHandle, <span class="number">56</span>, <span class="number">100</span>);</span><br></pre></td></tr></table></figure>
 
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TaskbarError.png" alt="SettingsUI"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TaskbarValue.png" alt="SettingsUI"></p>
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
 ]]></content>
   </entry>
@@ -15575,6 +15749,8 @@ Example:
 </ol>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">backdropsHelper.SetBackdrop(BackdropType.DesktopAcrylic);</span><br></pre></td></tr></table></figure>
 
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Mica.png" alt="SettingsUI"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Acrylic.png" alt="SettingsUI"></p>
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
 ]]></content>
   </entry>
@@ -15602,7 +15778,7 @@ Example:
     <title>TitleBarHelper</title>
     <url>/settingsui/helpers/titleBarHelper/index.html</url>
     <content><![CDATA[<p>We’ve made it easy to use the  <a href="https://docs.microsoft.com/en-us/windows/apps/develop/title-bar?tabs=wasdk">customized Windows title bar</a></p>
-<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/4.png" alt="SettingsUI"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TitleBar.png" alt="SettingsUI"></p>
 <p>first add following xaml in your MainWindow:</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Grid</span> <span class="attr">Background</span>=<span class="string">&quot;&#123;ThemeResource ApplicationPageBackgroundThemeBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Grid.RowDefinitions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">RowDefinition</span> <span class="attr">Height</span>=<span class="string">&quot;Auto&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">RowDefinition</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Grid.RowDefinitions</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Grid</span> <span class="attr">x:Name</span>=<span class="string">&quot;AppTitleBar&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;48&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Grid.ColumnDefinitions</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ColumnDefinition</span> <span class="attr">x:Name</span>=<span class="string">&quot;LeftPaddingColumn&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;0&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ColumnDefinition</span> <span class="attr">x:Name</span>=<span class="string">&quot;IconColumn&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;Auto&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ColumnDefinition</span> <span class="attr">x:Name</span>=<span class="string">&quot;TitleColumn&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;Auto&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ColumnDefinition</span> <span class="attr">x:Name</span>=<span class="string">&quot;LeftDragColumn&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;*&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ColumnDefinition</span> <span class="attr">x:Name</span>=<span class="string">&quot;SearchColumn&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;Auto&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ColumnDefinition</span> <span class="attr">x:Name</span>=<span class="string">&quot;RightDragColumn&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;*&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ColumnDefinition</span> <span class="attr">x:Name</span>=<span class="string">&quot;RightPaddingColumn&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;0&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Grid.ColumnDefinitions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Image</span> <span class="attr">x:Name</span>=<span class="string">&quot;TitleBarIcon&quot;</span> <span class="attr">Source</span>=<span class="string">&quot;/Assets/logo.png&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Grid.Column</span>=<span class="string">&quot;1&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Width</span>=<span class="string">&quot;16&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;16&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Margin</span>=<span class="string">&quot;8,0,0,0&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">x:Name</span>=<span class="string">&quot;TitleTextBlock&quot;</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;SettingsUI Demo&quot;</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource CaptionTextBlockStyle&#125;&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Grid.Column</span>=<span class="string">&quot;2&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Margin</span>=<span class="string">&quot;4,0,0,0&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">AutoSuggestBox</span> <span class="attr">Grid.Column</span>=<span class="string">&quot;4&quot;</span> <span class="attr">QueryIcon</span>=<span class="string">&quot;Find&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">PlaceholderText</span>=<span class="string">&quot;Search&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Width</span>=<span class="string">&quot;260&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;4,0&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">local:ShellPage</span> <span class="attr">Grid.Row</span>=<span class="string">&quot;1&quot;</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -15625,24 +15801,54 @@ Example:
   <entry>
     <title>VisualHelper</title>
     <url>/settingsui/helpers/visualHelper/index.html</url>
-    <content><![CDATA[<h1 id="GetListViewItem"><a href="#GetListViewItem" class="headerlink" title="GetListViewItem"></a>GetListViewItem</h1><h1 id="GetAncestorOfType"><a href="#GetAncestorOfType" class="headerlink" title="GetAncestorOfType"></a>GetAncestorOfType</h1><h1 id="FindVisualChildren"><a href="#FindVisualChildren" class="headerlink" title="FindVisualChildren"></a>FindVisualChildren</h1><h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
+    <content><![CDATA[<h1 id="Available-Methods"><a href="#Available-Methods" class="headerlink" title="Available Methods"></a>Available Methods</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GetListViewItem</td>
+</tr>
+<tr>
+<td>GetAncestorOfType</td>
+</tr>
+<tr>
+<td>FindVisualChildren</td>
+</tr>
+</tbody></table>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
 ]]></content>
   </entry>
   <entry>
     <title>WindowHelper</title>
     <url>/settingsui/helpers/windowHelper/index.html</url>
     <content><![CDATA[<h1 id="SetWindowSize"><a href="#SetWindowSize" class="headerlink" title="SetWindowSize"></a>SetWindowSize</h1><p>you can set your MainWindow Size:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">IntPtr hWnd = WinRT.Interop.WindowNative.GetWindowHandle(<span class="keyword">this</span>);</span><br><span class="line">WindowHelper.SetWindowSize(, <span class="number">200</span>, <span class="number">300</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">WindowHelper.SetWindowSize(window, <span class="number">200</span>, <span class="number">300</span>);</span><br><span class="line"><span class="comment">//OR</span></span><br><span class="line">window.SetWindowSize(<span class="number">200</span>, <span class="number">300</span>);</span><br></pre></td></tr></table></figure>
 
 <h1 id="Window-Height-Width-Min-Max-Size"><a href="#Window-Height-Width-Min-Max-Size" class="headerlink" title="Window Height/Width Min/Max Size"></a>Window Height/Width Min/Max Size</h1><p>you can set Window Height/Width Min/Max Size, first you need to register <code>RegisterWindowMinMax</code> method in your window class:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">MainWindow</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">this</span>.InitializeComponent();</span><br><span class="line">    WindowHelper.RegisterWindowMinMax(<span class="keyword">this</span>);</span><br><span class="line">    <span class="comment">//OR you can use extension method</span></span><br><span class="line">    <span class="comment">//RegisterWindowMinMax();</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">WindowHelper.RegisterWindowMinMax(window);</span><br><span class="line"><span class="comment">//OR you can use extension method</span></span><br><span class="line"><span class="comment">//RegisterWindowMinMax();</span></span><br></pre></td></tr></table></figure>
 <p>now you can change window Min/Max size:</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">WindowHelper.MinWindowWidth = <span class="number">500</span>;</span><br><span class="line">WindowHelper.MinWindowHeight = <span class="number">300</span>;</span><br><span class="line"></span><br><span class="line">WindowHelper.MaxWindowWidth = <span class="number">800</span>;</span><br><span class="line">WindowHelper.MaxWindowHeight = <span class="number">600</span>;</span><br></pre></td></tr></table></figure>
 
 <h1 id="GetAppWindowForCurrentWindow"><a href="#GetAppWindowForCurrentWindow" class="headerlink" title="GetAppWindowForCurrentWindow"></a>GetAppWindowForCurrentWindow</h1><p>you can get AppWindow for Current Window:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> appWindow = WindowHelper.GetAppWindowForCurrentWindow(<span class="keyword">this</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> appWindow = WindowHelper.GetAppWindowForCurrentWindow(window);</span><br></pre></td></tr></table></figure>
 
-<h1 id="GetWindowHandleForCurrentWindow"><a href="#GetWindowHandleForCurrentWindow" class="headerlink" title="GetWindowHandleForCurrentWindow"></a>GetWindowHandleForCurrentWindow</h1><h1 id="GetWindowIdFromCurrentWindow"><a href="#GetWindowIdFromCurrentWindow" class="headerlink" title="GetWindowIdFromCurrentWindow"></a>GetWindowIdFromCurrentWindow</h1><h1 id="GetWindowForElement"><a href="#GetWindowForElement" class="headerlink" title="GetWindowForElement"></a>GetWindowForElement</h1><h1 id="CreateWindow"><a href="#CreateWindow" class="headerlink" title="CreateWindow"></a>CreateWindow</h1><h1 id="TrackWindow"><a href="#TrackWindow" class="headerlink" title="TrackWindow"></a>TrackWindow</h1><h1 id="SwitchToThisWindow"><a href="#SwitchToThisWindow" class="headerlink" title="SwitchToThisWindow"></a>SwitchToThisWindow</h1><h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
+<h1 id="GetWindowHandleForCurrentWindow"><a href="#GetWindowHandleForCurrentWindow" class="headerlink" title="GetWindowHandleForCurrentWindow"></a>GetWindowHandleForCurrentWindow</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> hwnd = WindowHelper.GetWindowHandleForCurrentWindow(window);</span><br></pre></td></tr></table></figure>
+<h1 id="GetWindowIdFromCurrentWindow"><a href="#GetWindowIdFromCurrentWindow" class="headerlink" title="GetWindowIdFromCurrentWindow"></a>GetWindowIdFromCurrentWindow</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> windowId = WindowHelper.GetWindowIdFromCurrentWindow(window);</span><br></pre></td></tr></table></figure>
+
+<h1 id="GetWindowForElement"><a href="#GetWindowForElement" class="headerlink" title="GetWindowForElement"></a>GetWindowForElement</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> window = WindowHelper.GetWindowForElement(uiElement);</span><br></pre></td></tr></table></figure>
+
+<h1 id="Active-Window"><a href="#Active-Window" class="headerlink" title="Active Window"></a>Active Window</h1><h2 id="CreateWindow"><a href="#CreateWindow" class="headerlink" title="CreateWindow"></a>CreateWindow</h2><p>Create a new Window with track of all active Windows ability </p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> window = WindowHelper.CreateWindow();</span><br></pre></td></tr></table></figure>
+
+<h2 id="TrackWindow"><a href="#TrackWindow" class="headerlink" title="TrackWindow"></a>TrackWindow</h2><p>track of all active Windows.  The app code must call WindowHelper.CreateWindow<br>rather than “new Window” so we can keep track of all the relevant windows.</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">WindowHelper.TrackWindow(window);</span><br></pre></td></tr></table></figure>
+
+<h2 id="ActiveWindows"><a href="#ActiveWindows" class="headerlink" title="ActiveWindows"></a>ActiveWindows</h2><p>you can get all Active windows from <code>ActiveWindows</code> property</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> windows = WindowHelper.ActiveWindows;</span><br></pre></td></tr></table></figure>
+<h1 id="SwitchToThisWindow"><a href="#SwitchToThisWindow" class="headerlink" title="SwitchToThisWindow"></a>SwitchToThisWindow</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">WindowHelper.SwitchToThisWindow(window);</span><br></pre></td></tr></table></figure>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
 ]]></content>
   </entry>
 </search>
