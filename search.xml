@@ -2618,6 +2618,10 @@
 <td>SystemBackdropType</td>
 <td></td>
 </tr>
+<tr>
+<td>ExtendContentToNonClientArea</td>
+<td></td>
+</tr>
 </tbody></table>
 <h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="IsDragElement-Whether-to-allow-the-current-element-to-drag-the-form"><a href="#IsDragElement-Whether-to-allow-the-current-element-to-drag-the-form" class="headerlink" title="IsDragElement Whether to allow the current element to drag the form"></a>IsDragElement Whether to allow the current element to drag the form</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:SimplePanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Rectangle</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;30&quot;</span> <span class="attr">RadiusX</span>=<span class="string">&quot;4&quot;</span> <span class="attr">RadiusY</span>=<span class="string">&quot;4&quot;</span> <span class="attr">Stroke</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span> <span class="attr">StrokeDashArray</span>=<span class="string">&quot;2,2&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">hc:WindowAttach.IsDragElement</span>=<span class="string">&quot;True&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;11&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;28&quot;</span> <span class="attr">Background</span>=<span class="string">&quot;&#123;DynamicResource DarkDefaultBrush&#125;&quot;</span> <span class="attr">CornerRadius</span>=<span class="string">&quot;4&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;DragHere&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource TextBlockDefault&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,15,15,0&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Padding</span>=<span class="string">&quot;0&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;20&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;20&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource ButtonPrimary&#125;&quot;</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">&quot;&#123;StaticResource CloseGeometry&#125;&quot;</span> <span class="attr">hc:BorderElement.CornerRadius</span>=<span class="string">&quot;15&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:SimplePanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -8102,6 +8106,12 @@
 <td>false</td>
 <td></td>
 </tr>
+<tr>
+<td>Delay</td>
+<td></td>
+<td>1000.0</td>
+<td></td>
+</tr>
 </tbody></table>
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:Poptip.Instance</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Poptip</span> <span class="attr">Content</span>=<span class="string">&quot;Text&quot;</span> <span class="attr">PlacementType</span>=<span class="string">&quot;TopLeft&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:Poptip.Instance</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Button</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -10586,12 +10596,6 @@
 <td></td>
 </tr>
 <tr>
-<td>ExtendViewIntoNonClientArea</td>
-<td>Extend View Into NonClientArea</td>
-<td>false</td>
-<td>Only Custom Version</td>
-</tr>
-<tr>
 <td>IsFullScreen</td>
 <td>Whether the window is in full screen</td>
 <td>false</td>
@@ -11207,7 +11211,26 @@
   <entry>
     <title>ComboBox</title>
     <url>/handycontrol/native_controls/comboBox/index.html</url>
-    <content><![CDATA[<h1 id="ComboBoxBaseStyle"><a href="#ComboBoxBaseStyle" class="headerlink" title="ComboBoxBaseStyle"></a>ComboBoxBaseStyle</h1><p>The default style of the original combo box is not recommended for direct use. It should always be used by other styles in the BasedOn method. Native combo box uses this style by default if no style is set:</p>
+    <content><![CDATA[<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ComboBoxItem.Small</td>
+</tr>
+<tr>
+<td>ComboBox.Small</td>
+</tr>
+<tr>
+<td>ComboBoxExtend</td>
+</tr>
+<tr>
+<td>ComboBoxExtend.Small</td>
+</tr>
+</tbody></table>
+<h1 id="ComboBoxBaseStyle"><a href="#ComboBoxBaseStyle" class="headerlink" title="ComboBoxBaseStyle"></a>ComboBoxBaseStyle</h1><p>The default style of the original combo box is not recommended for direct use. It should always be used by other styles in the BasedOn method. Native combo box uses this style by default if no style is set:</p>
 <ul>
 <li>Default style<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ComboBox</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">SelectedIndex</span>=<span class="string">&quot;0&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -15851,6 +15874,99 @@ Example:
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> windows = WindowHelper.ActiveWindows;</span><br></pre></td></tr></table></figure>
 <h1 id="SwitchToThisWindow"><a href="#SwitchToThisWindow" class="headerlink" title="SwitchToThisWindow"></a>SwitchToThisWindow</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">WindowHelper.SwitchToThisWindow(window);</span><br></pre></td></tr></table></figure>
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>ClipGrid</title>
+    <url>/handycontrol/extend_controls/clipGrid/index.html</url>
+    <content><![CDATA[<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ClipGrid</span> : <span class="title">Grid</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Property</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IsClipEnabled</td>
+</tr>
+</tbody></table>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:ClipGrid</span> /&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Ribbon</title>
+    <url>/handycontrol/extend_controls/ribbon/index.html</url>
+    <content><![CDATA[<p>Another form of password box.</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">TemplatePart(Name = ElementPanel, Type = typeof(Panel))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">PinBox</span> : <span class="title">Control</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Ribbon"><a href="#Ribbon" class="headerlink" title="Ribbon"></a>Ribbon</h1><h2 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h2><table>
+<thead>
+<tr>
+<th>Property</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IsDropDownOpen</td>
+</tr>
+<tr>
+<td>IsMinimized</td>
+</tr>
+<tr>
+<td>ContentHeight</td>
+</tr>
+<tr>
+<td>PrefixContent</td>
+</tr>
+<tr>
+<td>PostfixContent</td>
+</tr>
+</tbody></table>
+<h1 id="RibbonGroup"><a href="#RibbonGroup" class="headerlink" title="RibbonGroup"></a>RibbonGroup</h1><h2 id="Attributes-1"><a href="#Attributes-1" class="headerlink" title="Attributes"></a>Attributes</h2><table>
+<thead>
+<tr>
+<th>Property</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ShowLauncherButton</td>
+</tr>
+<tr>
+<td>ShowSplitter</td>
+</tr>
+<tr>
+<td>LauncherPoptip</td>
+</tr>
+</tbody></table>
+<h2 id="Events"><a href="#Events" class="headerlink" title="Events"></a>Events</h2><table>
+<thead>
+<tr>
+<th>Property</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LauncherClick</td>
+</tr>
+</tbody></table>
+<h1 id="RibbonTab"><a href="#RibbonTab" class="headerlink" title="RibbonTab"></a>RibbonTab</h1><h2 id="Attributes-2"><a href="#Attributes-2" class="headerlink" title="Attributes"></a>Attributes</h2><table>
+<thead>
+<tr>
+<th>Property</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IsSelected</td>
+</tr>
+</tbody></table>
+<h1 id="RibbonTabHeader"><a href="#RibbonTabHeader" class="headerlink" title="RibbonTabHeader"></a>RibbonTabHeader</h1><h2 id="Attributes-3"><a href="#Attributes-3" class="headerlink" title="Attributes"></a>Attributes</h2><table>
+<thead>
+<tr>
+<th>Property</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IsSelected</td>
+</tr>
+</tbody></table>
 ]]></content>
   </entry>
 </search>
