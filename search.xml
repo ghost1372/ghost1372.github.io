@@ -132,7 +132,7 @@
 <h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Install-Package SettingsUI</span><br></pre></td></tr></table></figure>
 
 <p>After installing, add the following resource to <code>app.xaml</code></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">Source</span>=<span class="string">&quot;ms-appx:///SettingsUI/Themes/SettingsUI.xaml&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">Source</span>=<span class="string">&quot;ms-appx:///SettingsUI/Themes/Generic.xaml&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h1 id="Compile-source-code"><a href="#Compile-source-code" class="headerlink" title="Compile source code"></a>Compile source code</h1><div class="note warning"><p>Please confirm that your development environment meets the requirements before compiling.</p>
 <ul>
@@ -949,7 +949,7 @@
 <h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Install-Package SettingsUI</span><br></pre></td></tr></table></figure>
 
 <p>After installing, add the following resource to <code>app.xaml</code></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">Source</span>=<span class="string">&quot;ms-appx:///SettingsUI/Themes/SettingsUI.xaml&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">Source</span>=<span class="string">&quot;ms-appx:///SettingsUI/Themes/Generic.xaml&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>Services</title>
@@ -15215,7 +15215,10 @@ Example:
 <td>Description</td>
 </tr>
 </tbody></table>
-<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">controls:CheckBoxWithDescriptionControl</span> <span class="attr">Header</span>=<span class="string">&quot;Header&quot;</span> <span class="attr">Description</span>=<span class="string">&quot;Description&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">controls:CheckBoxWithDescriptionControl</span> <span class="attr">Header</span>=<span class="string">&quot;Header&quot;</span> <span class="attr">Description</span>=<span class="string">&quot;Description&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/CheckBoxWithDescriptionControl.png" alt="SettingsUI"></p>
+]]></content>
   </entry>
   <entry>
     <title>InlineAutoCompleteTextBox</title>
@@ -15245,9 +15248,8 @@ Example:
 <h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">controls:InlineAutoCompleteTextBox</span> <span class="attr">IsSuggestionCaseSensitive</span>=<span class="string">&quot;False&quot;</span> <span class="attr">SuggestionsSource</span>=<span class="string">&quot;&#123;x:Bind DemoSuggestions, Mode=OneWay&#125;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> List&lt;<span class="built_in">string</span>&gt; DemoSuggestions &#123; <span class="keyword">get</span>; &#125; = <span class="keyword">new</span>();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">MainWindow</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">this</span>.InitializeComponent();</span><br><span class="line">    DemoSuggestions.Add(<span class="string">&quot;Ted Mosby&quot;</span>);</span><br><span class="line">    DemoSuggestions.Add(<span class="string">&quot;Marshal Eriksen&quot;</span>);</span><br><span class="line">    DemoSuggestions.Add(<span class="string">&quot;Barney Stinson&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
 <p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/InlineAutoComplete.png" alt="SettingsUI"></p>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
 ]]></content>
   </entry>
   <entry>
