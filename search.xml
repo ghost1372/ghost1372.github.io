@@ -16048,7 +16048,7 @@ Example:
     <title>PrintHelper</title>
     <url>/settingsui/helpers/printHelper/index.html</url>
     <content><![CDATA[<div class="note warning"><ul>
-<li><p>Because <code>PrintHelper</code> has not yet been updated to the <code>CommunityToolkit</code> package, we added it. But note that whenever it is updated to the CommunityToolkit package, we will <code>remove</code> this helper class. To avoid any problems in the process of removing and fixing your code, we have used the CommunityToolkit namespaces for this helper class, so you can use <code>using CommunityToolkit.WinUI.Helpers;</code></p>
+<li><p>Because <code>PrintHelper</code> has not yet been updated to the <code>CommunityToolkit</code> package, we added it. But note that whenever it is updated to the CommunityToolkit package, we will <code>remove</code> this helper class.</p>
 </li>
 <li><p><code>PrintHelper</code> is Available Only in <code>Windows10.0.19041_OR_Greater</code> Target Frameworks.</p>
 </li>
