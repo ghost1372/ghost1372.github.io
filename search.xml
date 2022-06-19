@@ -11305,7 +11305,17 @@
   <entry>
     <title>ContextMenu</title>
     <url>/handycontrol/native_controls/contextMenu/index.html</url>
-    <content><![CDATA[<h1 id="ContextMenuBaseStyle"><a href="#ContextMenuBaseStyle" class="headerlink" title="ContextMenuBaseStyle"></a>ContextMenuBaseStyle</h1><p>The default style of the context menu is not recommended for direct use and should always be used by other styles in the BasedOn mode.</p>
+    <content><![CDATA[<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ContextMenu.Small</td>
+</tr>
+</tbody></table>
+<h1 id="ContextMenuBaseStyle"><a href="#ContextMenuBaseStyle" class="headerlink" title="ContextMenuBaseStyle"></a>ContextMenuBaseStyle</h1><p>The default style of the context menu is not recommended for direct use and should always be used by other styles in the BasedOn mode.</p>
 <div class="note info no-icon"><p>Example：</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ContextMenu</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ContextMenu.ItemTemplate</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">HierarchicalDataTemplate</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding Name&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">HierarchicalDataTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ContextMenu.ItemTemplate</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ContextMenu</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -11735,7 +11745,20 @@ Example:
   <entry>
     <title>Menu</title>
     <url>/handycontrol/native_controls/menu/index.html</url>
-    <content><![CDATA[<h1 id="Attached-Property"><a href="#Attached-Property" class="headerlink" title="Attached Property"></a>Attached Property</h1><table>
+    <content><![CDATA[<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Menu.Small</td>
+</tr>
+<tr>
+<td>MenuBaseStyle</td>
+</tr>
+</tbody></table>
+<h1 id="Attached-Property"><a href="#Attached-Property" class="headerlink" title="Attached Property"></a>Attached Property</h1><table>
 <thead>
 <tr>
 <th>Properties</th>
@@ -11763,7 +11786,23 @@ Example:
   <entry>
     <title>ListView</title>
     <url>/handycontrol/native_controls/listView/index.html</url>
-    <content><![CDATA[<p><code>HandyControl</code> only provides a default <code>ListView</code> style, which can be customized according to personal needs.</p>
+    <content><![CDATA[<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ListViewBaseStyle</td>
+</tr>
+<tr>
+<td>ListViewItemBaseStyle.Small</td>
+</tr>
+<tr>
+<td>ListView.Small</td>
+</tr>
+</tbody></table>
+<p><code>HandyControl</code> only provides a default <code>ListView</code> style, which can be customized according to personal needs.</p>
 <div class="note info no-icon"><p>Example：</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListView</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;20&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ListView.View</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">GridView</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">GridViewColumn</span> <span class="attr">Width</span>=<span class="string">&quot;80&quot;</span> <span class="attr">Header</span>=<span class="string">&quot;title1&quot;</span> <span class="attr">DisplayMemberBinding</span>=<span class="string">&quot;&#123;Binding Index&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">GridViewColumn</span> <span class="attr">Width</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Header</span>=<span class="string">&quot;title2&quot;</span> <span class="attr">DisplayMemberBinding</span>=<span class="string">&quot;&#123;Binding Name&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">GridViewColumn</span> <span class="attr">Width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">Header</span>=<span class="string">&quot;title3&quot;</span> <span class="attr">DisplayMemberBinding</span>=<span class="string">&quot;&#123;Binding Remark&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">GridView</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ListView.View</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ListView</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -15967,6 +16006,61 @@ Example:
 <td>IsSelected</td>
 </tr>
 </tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>GridViewAttach</title>
+    <url>/handycontrol/attach/gridViewAttach/index.html</url>
+    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ColumnHeaderHeight</td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>MenuAttach</title>
+    <url>/handycontrol/attach/menuAttach/index.html</url>
+    <content><![CDATA[<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PopupVerticalOffset</td>
+</tr>
+<tr>
+<td>PopupHorizontalOffset</td>
+</tr>
+<tr>
+<td>ItemPadding</td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>PrintHelper</title>
+    <url>/settingsui/helpers/printHelper/index.html</url>
+    <content><![CDATA[<div class="note warning"><ul>
+<li><p>Because <code>PrintHelper</code> has not yet been updated to the <code>CommunityToolkit</code> package, we added it. But note that whenever it is updated to the CommunityToolkit package, we will <code>remove</code> this helper class. To avoid any problems in the process of removing and fixing your code, we have used the CommunityToolkit namespaces for this helper class, so you can use <code>using CommunityToolkit.WinUI.Helpers;</code></p>
+</li>
+<li><p><code>PrintHelper</code> is Available Only in <code>Windows10.0.19041_OR_Greater</code> Target Frameworks.</p>
+</li>
+</ul>
+</div>
+
+
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Grid</span> <span class="attr">x:Name</span>=<span class="string">&quot;DirectPrintContainer&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Grid</span> <span class="attr">x:Name</span>=<span class="string">&quot;PrintableContent&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Rectangle</span> <span class="attr">x:Name</span>=<span class="string">&quot;RectangleToPrint&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;500&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;500&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Rectangle.Fill</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">ImageBrush</span> <span class="attr">ImageSource</span>=<span class="string">&quot;ms-appx:///Assets/AusterNY.jpg&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">Rectangle.Fill</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Rectangle</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> PrintHelper _printHelper;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (PrintManager.IsSupported())</span><br><span class="line">&#123;</span><br><span class="line">    _printHelper = <span class="keyword">new</span> PrintHelper(DirectPrintContainer);</span><br><span class="line"></span><br><span class="line">    _printHelper.OnPrintCanceled += PrintHelper_OnPrintCanceled;</span><br><span class="line">    _printHelper.OnPrintFailed += PrintHelper_OnPrintFailed;</span><br><span class="line">    _printHelper.OnPrintSucceeded += PrintHelper_OnPrintSucceeded;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> printHelperOptions = <span class="keyword">new</span> PrintHelperOptions(<span class="literal">false</span>);</span><br><span class="line">    printHelperOptions.Orientation = PrintOrientation.Default;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">await</span> _printHelper.ShowPrintUIAsync(WinRT.Interop.WindowNative.GetWindowHandle(MainWindow.Instance), <span class="string">&quot;Windows Community Toolkit Sample App&quot;</span>, printHelperOptions, <span class="literal">true</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    PrintingIsNotSupported();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">ReleasePrintHelper</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    _printHelper.Dispose();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!DirectPrintContainer.Children.Contains(PrintableContent))</span><br><span class="line">    &#123;</span><br><span class="line">        DirectPrintContainer.Children.Add(PrintableContent);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">async</span> <span class="keyword">void</span> <span class="title">PrintHelper_OnPrintSucceeded</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ReleasePrintHelper();</span><br><span class="line">    ContentDialog noPrintingDialog = <span class="keyword">new</span> ContentDialog()</span><br><span class="line">    &#123;</span><br><span class="line">        XamlRoot = <span class="keyword">this</span>.Content.XamlRoot,</span><br><span class="line">        Title = <span class="string">&quot;Printing Done&quot;</span>,</span><br><span class="line">        Content = <span class="string">&quot;\nDone, element printed.&quot;</span>,</span><br><span class="line">        PrimaryButtonText = <span class="string">&quot;OK&quot;</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">await</span> noPrintingDialog.ShowAsyncQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">async</span> <span class="keyword">void</span> <span class="title">PrintHelper_OnPrintFailed</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ReleasePrintHelper();</span><br><span class="line">    ContentDialog noPrintingDialog = <span class="keyword">new</span> ContentDialog()</span><br><span class="line">    &#123;</span><br><span class="line">        XamlRoot = <span class="keyword">this</span>.Content.XamlRoot,</span><br><span class="line">        Title = <span class="string">&quot;Printing error&quot;</span>,</span><br><span class="line">        Content = <span class="string">&quot;\nSorry, failed to print.&quot;</span>,</span><br><span class="line">        PrimaryButtonText = <span class="string">&quot;OK&quot;</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">await</span> noPrintingDialog.ShowAsyncQueue();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">PrintHelper_OnPrintCanceled</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ReleasePrintHelper();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
 ]]></content>
   </entry>
 </search>
