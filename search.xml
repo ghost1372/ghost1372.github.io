@@ -15797,21 +15797,14 @@ Example:
     <title>SystemBackdropsHelper</title>
     <url>/settingsui/helpers/systemBackdropsHelper/index.html</url>
     <content><![CDATA[<p>you can use <code>SystemBackdropsHelper</code> for accessing Mica and Acrylic Effect for your Window.</p>
-<h1 id="ThemeHelper"><a href="#ThemeHelper" class="headerlink" title="ThemeHelper"></a>ThemeHelper</h1><p>if you want to Mica/Acrylic effect change with Windows/Application theme (Dark/Light Mode) you can use ThemeHelper with a new Initialize Method:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ThemeHelper.Initialize(m_window, <span class="literal">true</span>);</span><br><span class="line"><span class="comment">// Default Material is Mica if you want to Change to Acrylic:</span></span><br><span class="line"><span class="comment">// ThemeHelper.Initialize(m_window, true, BackdropType.DesktopAcrylic);</span></span><br></pre></td></tr></table></figure>
+<h1 id="ThemeHelper"><a href="#ThemeHelper" class="headerlink" title="ThemeHelper"></a>ThemeHelper</h1><p>if you want to Mica/Acrylic effect change with Windows/Application theme (Dark/Light Mode) you can use <code>ThemeHelper</code>:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ThemeHelper.Initialize(window, BackdropType.Mica);</span><br></pre></td></tr></table></figure>
 
-<p>now if you want to change Material in application runtime, you should use GetCurrent Method, because GetCurrent Returns an instance of <code>SystemBackdropsHelper</code> previously created by the ThemeHelper.</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> SystemBackdropsHelper backdropsHelper = SystemBackdropsHelper.GetCurrent();</span><br><span class="line">backdropsHelper.SetBackdrop(BackdropType.Mica);</span><br></pre></td></tr></table></figure>
+<div class="note info"><p>for more info, please see <a href="https://ghost1372.github.io/settingsui/helpers/themeHelper/">here</a></p>
+</div>
 
-<h1 id="Using-Without-ThemeHelper"><a href="#Using-Without-ThemeHelper" class="headerlink" title="Using Without ThemeHelper"></a>Using Without ThemeHelper</h1><p>you can use <code>SystemBackdropsHelper</code> without ThemeHelper but keep in mind that Materials will not change by changing the theme And you have to handle the theme changes yourself.</p>
-<ol>
-<li>Initialize <code>SystemBackdropsHelper</code></li>
-</ol>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">SystemBackdropsHelper backdropsHelper = SystemBackdropsHelper.CreateInstance();</span><br><span class="line">backdropsHelper.Initialize(window, BackdropType.Mica);</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>for changing Material in runtime:</li>
-</ol>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">backdropsHelper.SetBackdrop(BackdropType.DesktopAcrylic);</span><br></pre></td></tr></table></figure>
+<h1 id="Using-Without-ThemeHelper"><a href="#Using-Without-ThemeHelper" class="headerlink" title="Using Without ThemeHelper"></a>Using Without ThemeHelper</h1><p>you can use <code>SystemBackdropsHelper</code></p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">SystemBackdropsHelper systemBackdropsHelper = <span class="keyword">new</span> SystemBackdropsHelper(m_window);</span><br><span class="line">systemBackdropsHelper.SetBackdrop(BackdropType.Mica);</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Mica.png" alt="SettingsUI"></p>
 <p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Acrylic.png" alt="SettingsUI"></p>
@@ -15821,19 +15814,39 @@ Example:
   <entry>
     <title>ThemeHelper</title>
     <url>/settingsui/helpers/themeHelper/index.html</url>
-    <content><![CDATA[<p>You can simplify the operation of saving, retrieving and selecting the Application theme, All operations are performed automatically.</p>
+    <content><![CDATA[<p>You can simplify the operation of saving, retrieving and selecting the Application theme. All operations are performed automatically.</p>
 <p>first of all, <code>Initialize</code> ThemeHelper (Theme retrieving is done automatically by the Initialize method):</p>
+<h1 id="Initialize"><a href="#Initialize" class="headerlink" title="Initialize"></a>Initialize</h1><h2 id="1-Initialize-with-Window"><a href="#1-Initialize-with-Window" class="headerlink" title="1.Initialize with Window"></a>1.Initialize with Window</h2><p>In this case you are Initializing a Window <code>(MainWindow)</code></p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnLaunched</span>(<span class="params">Microsoft.UI.Xaml.LaunchActivatedEventArgs args</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    m_window = <span class="keyword">new</span> MainWindow();</span><br><span class="line">    ThemeHelper.Initialize(m_window);</span><br><span class="line">    m_window.Activate();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<div class="note info"><p>if you want to activate mica with ThemeHelper, you want Initialize this way:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ThemeHelper.Initialize(m_window, <span class="literal">true</span>);</span><br></pre></td></tr></table></figure></div>
+<h2 id="2-Initialize-with-WindowHelper-ActiveWindows"><a href="#2-Initialize-with-WindowHelper-ActiveWindows" class="headerlink" title="2.Initialize with WindowHelper.ActiveWindows"></a>2.Initialize with WindowHelper.ActiveWindows</h2><p>If you used the <code>WindowHelper.TrackWindow</code> method when creating windows, you can initialize ThemeHelper like this:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnLaunched</span>(<span class="params">Microsoft.UI.Xaml.LaunchActivatedEventArgs args</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    m_window = <span class="keyword">new</span> MainWindow();</span><br><span class="line">    WindowHelper.TrackWindow(m_window);</span><br><span class="line">    ThemeHelper.Initialize(<span class="literal">null</span>);</span><br><span class="line">    m_window.Activate();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>copy this xaml in your page:</p>
+<h2 id="3-Initialize-with-SystemBackdrop-Mica-Acrylic"><a href="#3-Initialize-with-SystemBackdrop-Mica-Acrylic" class="headerlink" title="3.Initialize with SystemBackdrop (Mica/Acrylic)"></a>3.Initialize with SystemBackdrop (Mica/Acrylic)</h2><p>You can Initialize backdrops with ThemeHelper</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnLaunched</span>(<span class="params">Microsoft.UI.Xaml.LaunchActivatedEventArgs args</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    m_window = <span class="keyword">new</span> MainWindow();</span><br><span class="line">    ThemeHelper.Initialize(m_window, BackdropType.Mica);</span><br><span class="line">    m_window.Activate();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>or if you used the <code>WindowHelper.TrackWindow</code> method:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnLaunched</span>(<span class="params">Microsoft.UI.Xaml.LaunchActivatedEventArgs args</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    m_window = <span class="keyword">new</span> MainWindow();</span><br><span class="line">    WindowHelper.TrackWindow(m_window);</span><br><span class="line">    ThemeHelper.Initialize(<span class="literal">null</span>, BackdropType.Mica);</span><br><span class="line">    m_window.Activate();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Changing-SystemBackdrop-Type-in-Runtime"><a href="#Changing-SystemBackdrop-Type-in-Runtime" class="headerlink" title="Changing SystemBackdrop Type in Runtime"></a>Changing SystemBackdrop Type in Runtime</h3><p>you can change SystemBackdrop Type in Runtime like this:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ThemeHelper.SetSystemBackdropType(BackdropType.Mica);</span><br></pre></td></tr></table></figure>
+
+<h3 id="Get-SystemBackdrop-Type"><a href="#Get-SystemBackdrop-Type" class="headerlink" title="Get SystemBackdrop Type"></a>Get SystemBackdrop Type</h3><p>you can get current SystemBackdrop Type.</p>
+<p>if you initialized ThemeHelper with a specific Window, you need to use this method:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> backdropType = ThemeHelper.GetSystemBackdropType();</span><br></pre></td></tr></table></figure>
+
+<p>but if you initialized ThemeHelper with <code>WindowHelper.ActiveWindows</code>, you need to specify a window.</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> backdropType = ThemeHelper.GetSystemBackdropType(WindowHelper.ActiveWindows.FirstOrDefault());</span><br></pre></td></tr></table></figure>
+
+<h1 id="Changing-Theme"><a href="#Changing-Theme" class="headerlink" title="Changing Theme"></a>Changing Theme</h1><h2 id="Auto-Theme-Change"><a href="#Auto-Theme-Change" class="headerlink" title="Auto Theme Change"></a>Auto Theme Change</h2><p>copy this xaml in your page:</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">x:Name</span>=<span class="string">&quot;ThemePanel&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Tag</span>=<span class="string">&quot;Light&quot;</span> <span class="attr">Checked</span>=<span class="string">&quot;OnThemeRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Light&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Tag</span>=<span class="string">&quot;Dark&quot;</span> <span class="attr">Checked</span>=<span class="string">&quot;OnThemeRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Dark&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Tag</span>=<span class="string">&quot;Default&quot;</span> <span class="attr">Checked</span>=<span class="string">&quot;OnThemeRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Use system setting&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>now call <code>OnThemeRadioButtonChecked</code> method for change and save application theme:</p>
+<p>now call <code>OnThemeRadioButtonChecked</code> method for changing and saving application theme:</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">OnThemeRadioButtonChecked</span>(<span class="params"><span class="built_in">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ThemeHelper.OnThemeRadioButtonChecked(sender);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>now call <code>SetThemeRadioButtonChecked</code> method for selecting currect radiobutton item when page is loading:</p>
+<p>now if you want to selecting currect radiobutton item when page is loading, you can call <code>SetThemeRadioButtonChecked</code> method in Page <code>Loaded</code> event:</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ThemeHelper.SetThemeRadioButtonChecked(ThemePanel);</span><br></pre></td></tr></table></figure>
+
+<h2 id="Manuel"><a href="#Manuel" class="headerlink" title="Manuel"></a>Manuel</h2><p>you can change Application Theme with <code>RootTheme</code>, <code>ActualTheme</code> and <code>ChangeTheme</code> method:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ThemeHelper.RootTheme = ElementTheme.Dark;</span><br><span class="line"><span class="comment">//OR</span></span><br><span class="line">ThemeHelper.ActualTheme = ElementTheme.Dark;</span><br><span class="line"><span class="comment">//OR</span></span><br><span class="line">ThemeHelper.ChangeTheme(ElementTheme.Dark);</span><br></pre></td></tr></table></figure>
 
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
 ]]></content>
