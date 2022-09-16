@@ -112,8 +112,7 @@
   <entry>
     <title>Welcome to SettingsUI</title>
     <url>/settingsui/index.html</url>
-    <content><![CDATA[<p>Windows 11 settings page in WinUI 3 applications ported from Powertoys with useful Helper classes.</p>
-<h1 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h1><p><img src="https://img.shields.io/badge/.net-%3E%3D5.0-brightgreen" alt="dotnet-require"> <img src="https://img.shields.io/badge/OS-%3E%3D%20Windows%2010%20Build%201809-orange" alt="os-require"> <img src="https://img.shields.io/badge/IDE-vs2022-red" alt="IDE-require"> <img src="https://img.shields.io/badge/CSharp-Latest-yellow" alt="csharp-require"></p>
+    <content><![CDATA[<h3 id="Experience-WinUI-3-quickly-and-easily-with-the-help-of-SettingsUI-Everything-you-need-to-develop-an-application-is-gathered-in-one-place"><a href="#Experience-WinUI-3-quickly-and-easily-with-the-help-of-SettingsUI-Everything-you-need-to-develop-an-application-is-gathered-in-one-place" class="headerlink" title="Experience WinUI 3 quickly and easily with the help of SettingsUI, Everything you need to develop an application is gathered in one place."></a>Experience WinUI 3 quickly and easily with the help of SettingsUI, Everything you need to develop an application is gathered in one place.</h3><h1 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h1><p><img src="https://img.shields.io/badge/.net-%3E%3D5.0-brightgreen" alt="dotnet-require"> <img src="https://img.shields.io/badge/OS-%3E%3D%20Windows%2010%20Build%201809-orange" alt="os-require"> <img src="https://img.shields.io/badge/IDE-vs2022-red" alt="IDE-require"> <img src="https://img.shields.io/badge/CSharp-Latest-yellow" alt="csharp-require"></p>
 <h1 id="Download-and-Install"><a href="#Download-and-Install" class="headerlink" title="Download and Install"></a>Download and Install</h1><table>
 <thead>
 <tr>
@@ -148,6 +147,16 @@
 
 <p>Open SettingsUI.sln and Build.</p>
 <p>See the Demo app to see how to use it</p>
+<h2 id="Available-Features"><a href="#Available-Features" class="headerlink" title="Available Features"></a>Available Features</h2><ul>
+<li>Dynamic Localization without need to restart Application</li>
+<li>SystemBackdrop Helper class with the Support of <code>Mica, MicaAlt and Acrylic</code></li>
+<li>Multiple Custom Controls such as <code>Windows 11</code> Settings Page Controls</li>
+<li>Extensions Methods</li>
+<li>A lot of useful Helper Classes for working with Window, Application, Taskbar, Resources, Print and more</li>
+<li>NavigationView Services To implement quick and easy Navigation with AutoSuggestBox and Back Button</li>
+<li>Custom Styles for Some Controls such as TextBlock and Button.</li>
+<li>Easy and Quick implementation of <code>Command</code> and <code>INotifyPropertyChanged</code> with <code>Observable</code> and <code>RelayCommand</code> classes.</li>
+</ul>
 <p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/0.png" alt="SettingsUI"></p>
 <p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/1.png" alt="SettingsUI"></p>
 <p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/5.png" alt="SettingsUI"></p>
@@ -1576,7 +1585,7 @@
 <h1 id="ConverterBindableBinding-Only-Custom-Version"><a href="#ConverterBindableBinding-Only-Custom-Version" class="headerlink" title="ConverterBindableBinding Only Custom Version"></a>ConverterBindableBinding <code>Only Custom Version</code></h1><p>if you need to use binding in Converter Parameter you can use this converter type</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">&quot;Foreground&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Setter.Value</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:ConverterBindableBinding</span> <span class="attr">Binding</span>=<span class="string">&quot;&#123;Binding ElementName=arc, Path=Tag&#125;&quot;</span></span></span><br><span class="line"><span class="tag">                                    <span class="attr">Converter</span>=<span class="string">&quot;&#123;StaticResource ValueToBrushConverter&#125;&quot;</span> <span class="attr">ConverterParameterBinding</span>=<span class="string">&quot;&#123;Binding ElementName=arc, Path=EndAngle&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Setter.Value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Setter</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h1 id="DataGridSelectAllButtonVisibilityConverter"><a href="#DataGridSelectAllButtonVisibilityConverter" class="headerlink" title="DataGridSelectAllButtonVisibilityConverter"></a>DataGridSelectAllButtonVisibilityConverter</h1><h1 id="BooleanArr2BooleanConverter"><a href="#BooleanArr2BooleanConverter" class="headerlink" title="BooleanArr2BooleanConverter"></a>BooleanArr2BooleanConverter</h1>]]></content>
+<h1 id="DataGridSelectAllButtonVisibilityConverter"><a href="#DataGridSelectAllButtonVisibilityConverter" class="headerlink" title="DataGridSelectAllButtonVisibilityConverter"></a>DataGridSelectAllButtonVisibilityConverter</h1><h1 id="BooleanArr2BooleanConverter"><a href="#BooleanArr2BooleanConverter" class="headerlink" title="BooleanArr2BooleanConverter"></a>BooleanArr2BooleanConverter</h1><h1 id="Object2BooleanReConverter"><a href="#Object2BooleanReConverter" class="headerlink" title="Object2BooleanReConverter"></a>Object2BooleanReConverter</h1>]]></content>
   </entry>
   <entry>
     <title>Font Size</title>
@@ -7914,7 +7923,7 @@
 </tr>
 <tr>
 <td>IsSafeEnabled</td>
-<td>if this property is false, we can bind UnsagePassword</td>
+<td>if this property is false, we can bind UnsafePassword</td>
 </tr>
 <tr>
 <td>UnsafePassword</td>
@@ -7945,7 +7954,8 @@
 <td>Verify the data.</td>
 </tr>
 </tbody></table>
-<h1 id="Binding"><a href="#Binding" class="headerlink" title="Binding"></a>Binding</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">hc:PasswordBox</span> <span class="attr">Name</span>=<span class="string">&quot;PasswordBoxDemo&quot;</span> <span class="attr">ShowClearButton</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Password</span>=<span class="string">&quot;123456&quot;</span> <span class="attr">IsSafeEnabled</span>=<span class="string">&quot;False&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding UnsafePassword,ElementName=PasswordBoxDemo,UpdateSourceTrigger=PropertyChanged&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,6,0,0&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+<h1 id="Binding"><a href="#Binding" class="headerlink" title="Binding"></a>Binding</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">hc:PasswordBox</span> <span class="attr">Name</span>=<span class="string">&quot;PasswordBoxDemo&quot;</span> <span class="attr">ShowClearButton</span>=<span class="string">&quot;True&quot;</span> <span class="attr">Password</span>=<span class="string">&quot;123456&quot;</span> <span class="attr">IsSafeEnabled</span>=<span class="string">&quot;False&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding UnsafePassword,ElementName=PasswordBoxDemo,UpdateSourceTrigger=PropertyChanged&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,6,0,0&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
   </entry>
   <entry>
     <title>PinBox</title>
@@ -7972,6 +7982,18 @@
 <td>PasswordChar</td>
 <td>Mask character</td>
 <td>●</td>
+<td></td>
+</tr>
+<tr>
+<td>IsSafeEnabled</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>UnsafePassword</td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -11367,9 +11389,29 @@
 <td>Row Header Style</td>
 </tr>
 <tr>
-<td>TextBlockComboBoxStyle</td>
+<td>DataGridComboBoxColumnStyle</td>
 <td>ComboBox</td>
 <td>ComboBox Non-Edit Mode Style</td>
+</tr>
+<tr>
+<td>DataGridEditingComboBoxColumnStyle</td>
+<td>ComboBox</td>
+<td></td>
+</tr>
+<tr>
+<td>DataGridEditingComboBoxColumnStyle.Small</td>
+<td>ComboBox</td>
+<td></td>
+</tr>
+<tr>
+<td>DataGridEditingTextColumnStyle</td>
+<td>TextBox</td>
+<td></td>
+</tr>
+<tr>
+<td>DataGridEditingTextColumnStyle.Small</td>
+<td>TextBox</td>
+<td></td>
 </tr>
 <tr>
 <td>DataGridTextColumnStyle</td>
@@ -11456,7 +11498,20 @@
   <entry>
     <title>Expander</title>
     <url>/handycontrol/native_controls/expander/index.html</url>
-    <content><![CDATA[<h1 id="ExpanderBaseStyle"><a href="#ExpanderBaseStyle" class="headerlink" title="ExpanderBaseStyle"></a>ExpanderBaseStyle</h1><p>Expander Expand Box The default style, which is not recommended for direct use, should always be used by other styles in the BasedOn method.</p>
+    <content><![CDATA[<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ExpanderBaseStyle</td>
+</tr>
+<tr>
+<td>Expander.Small</td>
+</tr>
+</tbody></table>
+<h1 id="ExpanderBaseStyle"><a href="#ExpanderBaseStyle" class="headerlink" title="ExpanderBaseStyle"></a>ExpanderBaseStyle</h1><p>Expander Expand Box The default style, which is not recommended for direct use, should always be used by other styles in the BasedOn method.</p>
 <div class="note info no-icon"><p>Example:</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;32&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span> <span class="attr">Width</span>=<span class="string">&quot;240&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Expander</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">BorderThickness</span>=<span class="string">&quot;1,1,1,0&quot;</span> <span class="attr">BorderBrush</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Height</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Background</span>=<span class="string">&quot;&#123;DynamicResource SecondaryRegionBrush&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Expander</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Expander</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">BorderThickness</span>=<span class="string">&quot;1,1,1,0&quot;</span> <span class="attr">BorderBrush</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Height</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Background</span>=<span class="string">&quot;&#123;DynamicResource SecondaryRegionBrush&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Expander</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Expander</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">BorderThickness</span>=<span class="string">&quot;1,1,1,0&quot;</span> <span class="attr">BorderBrush</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Height</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Background</span>=<span class="string">&quot;&#123;DynamicResource SecondaryRegionBrush&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Expander</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Expander</span> <span class="attr">Header</span>=<span class="string">&quot;Title&quot;</span> <span class="attr">BorderThickness</span>=<span class="string">&quot;1&quot;</span> <span class="attr">BorderBrush</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Height</span>=<span class="string">&quot;100&quot;</span> <span class="attr">Background</span>=<span class="string">&quot;&#123;DynamicResource SecondaryRegionBrush&#125;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Expander</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -15001,6 +15056,10 @@ Example:
 <td>GdipSaveImageToStream</td>
 <td>located in Gdip</td>
 </tr>
+<tr>
+<td>GetActiveWindow</td>
+<td></td>
+</tr>
 </tbody></table>
 <h1 id="InteropValues"><a href="#InteropValues" class="headerlink" title="InteropValues"></a>InteropValues</h1><h2 id="ExternDll"><a href="#ExternDll" class="headerlink" title="ExternDll"></a>ExternDll</h2><p>you can access dll from <code>ExternDll</code></p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">DllImport(InteropValues.ExternDll.User32, CharSet = CharSet.Auto)</span>]</span><br></pre></td></tr></table></figure>
@@ -16077,6 +16136,42 @@ Example:
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> PrintHelper _printHelper;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (PrintManager.IsSupported())</span><br><span class="line">&#123;</span><br><span class="line">    _printHelper = <span class="keyword">new</span> PrintHelper(DirectPrintContainer);</span><br><span class="line"></span><br><span class="line">    _printHelper.OnPrintCanceled += PrintHelper_OnPrintCanceled;</span><br><span class="line">    _printHelper.OnPrintFailed += PrintHelper_OnPrintFailed;</span><br><span class="line">    _printHelper.OnPrintSucceeded += PrintHelper_OnPrintSucceeded;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> printHelperOptions = <span class="keyword">new</span> PrintHelperOptions(<span class="literal">false</span>);</span><br><span class="line">    printHelperOptions.Orientation = PrintOrientation.Default;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">await</span> _printHelper.ShowPrintUIAsync(WinRT.Interop.WindowNative.GetWindowHandle(MainWindow.Instance), <span class="string">&quot;Windows Community Toolkit Sample App&quot;</span>, printHelperOptions, <span class="literal">true</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    PrintingIsNotSupported();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">ReleasePrintHelper</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    _printHelper.Dispose();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!DirectPrintContainer.Children.Contains(PrintableContent))</span><br><span class="line">    &#123;</span><br><span class="line">        DirectPrintContainer.Children.Add(PrintableContent);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">async</span> <span class="keyword">void</span> <span class="title">PrintHelper_OnPrintSucceeded</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ReleasePrintHelper();</span><br><span class="line">    ContentDialog noPrintingDialog = <span class="keyword">new</span> ContentDialog()</span><br><span class="line">    &#123;</span><br><span class="line">        XamlRoot = <span class="keyword">this</span>.Content.XamlRoot,</span><br><span class="line">        Title = <span class="string">&quot;Printing Done&quot;</span>,</span><br><span class="line">        Content = <span class="string">&quot;\nDone, element printed.&quot;</span>,</span><br><span class="line">        PrimaryButtonText = <span class="string">&quot;OK&quot;</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">await</span> noPrintingDialog.ShowAsyncQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">async</span> <span class="keyword">void</span> <span class="title">PrintHelper_OnPrintFailed</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ReleasePrintHelper();</span><br><span class="line">    ContentDialog noPrintingDialog = <span class="keyword">new</span> ContentDialog()</span><br><span class="line">    &#123;</span><br><span class="line">        XamlRoot = <span class="keyword">this</span>.Content.XamlRoot,</span><br><span class="line">        Title = <span class="string">&quot;Printing error&quot;</span>,</span><br><span class="line">        Content = <span class="string">&quot;\nSorry, failed to print.&quot;</span>,</span><br><span class="line">        PrimaryButtonText = <span class="string">&quot;OK&quot;</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">await</span> noPrintingDialog.ShowAsyncQueue();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">PrintHelper_OnPrintCanceled</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ReleasePrintHelper();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>DynamicLanguage</title>
+    <url>/settingsui/tools/dynamicLanguage/index.html</url>
+    <content><![CDATA[<p>The Localizer helps you to localize your app.</p>
+<ul>
+<li>Switch languages without restarting the app</li>
+<li>You (users) can edit localized strings even after deployment</li>
+<li>You (users) can add new languages even after deployment</li>
+<li>Use the starndard Resources.resw</li>
+</ul>
+<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Create your resources in this format:</p>
+<p><code>Strings\en-US\Resources.resw</code></p>
+<p><code>Strings\fa-IR\Resources.resw</code></p>
+<p>Go to <code>App.cs</code> file and Create a new Instance of Localizer:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">App</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  InitializeComponent();</span><br><span class="line">  <span class="built_in">string</span> resourcesFolderPath = Path.Combine(Directory.GetCurrentDirectory(), <span class="string">&quot;Strings&quot;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// For packaged app:</span></span><br><span class="line">  <span class="comment">//string resourcesFolderPath = @&quot;C:\\Projects\\Strings&quot;;</span></span><br><span class="line"></span><br><span class="line">  _ = Localizer.Create(resourcesFolderPath);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note warning"><p>for <code>Packaged</code> mode you need to change <code>ResourcesFolderPath</code></p>
+</div>
+
+<p>we need to copy our resources to output next to <code>Exe</code> file, so copy this codes and put it in <code>CSProj</code> file:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Copy the String folder to output directory --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">Target</span> <span class="attr">Name</span>=<span class="string">&quot;CopyStringResources&quot;</span> <span class="attr">AfterTargets</span>=<span class="string">&quot;Build&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ItemGroup</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">StringResources</span> <span class="attr">Include</span>=<span class="string">&quot;$(ProjectDir)Strings\**\*.*&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ItemGroup</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Copy</span> <span class="attr">SourceFiles</span>=<span class="string">&quot;@(StringResources)&quot;</span> <span class="attr">DestinationFiles</span>=<span class="string">&quot;$(OutDir)Strings\%(RecursiveDir)%(Filename)%(Extension)&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">Target</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>now we need to Initialize <code>MainWindow</code>:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- in MainWindow set Grid name to Root --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">Window</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Grid</span> <span class="attr">Name</span>=<span class="string">&quot;Root&quot;</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line">    <span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Window</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Call <code>InitializeWindow</code>:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">MainWindow</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">this</span>.InitializeComponent();</span><br><span class="line">    Localizer.Get().InitializeWindow(Root, Content);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Change-Language-in-Runtime"><a href="#Change-Language-in-Runtime" class="headerlink" title="Change Language in Runtime"></a>Change Language in Runtime</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Localizer.Get().TrySetCurrentLanguage(<span class="string">&quot;en-US&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<div class="note warning"><p>if you cant see translation in Pages after Navigation you need to Call <code>RunLocalizationOnRegisteredRootElements</code> or <code>RunLocalization</code> method in <code>Loaded</code> event in page</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">DynamicLanguagePage_Loaded</span>(<span class="params"><span class="built_in">object</span> sender, Microsoft.UI.Xaml.RoutedEventArgs e</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  Localizer.Get().RunLocalization(Root);</span><br><span class="line"></span><br><span class="line">  <span class="comment">//OR</span></span><br><span class="line">  <span class="comment">// Localizer.Get().RunLocalizationOnRegisteredRootElements();</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>for more info please see <a href="https://github.com/ghost1372/SettingsUI">Demo</a></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Localization_Demo.gif" alt="SettingsUI"></p>
 ]]></content>
   </entry>
 </search>
