@@ -2538,6 +2538,18 @@
 <td>MarginOnTheLeft</td>
 <td>Margin On The Left</td>
 </tr>
+<tr>
+<td>Padding</td>
+<td></td>
+</tr>
+<tr>
+<td>MinHeight</td>
+<td></td>
+</tr>
+<tr>
+<td>MinWidth</td>
+<td></td>
+</tr>
 </tbody></table>
 <h1 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h1><h2 id="Title"><a href="#Title" class="headerlink" title="Title"></a>Title</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">     <span class="tag">&lt;<span class="name">hc:TextBox</span> <span class="attr">hc:TitleElement.Title</span>=<span class="string">&quot;Title Information&quot;</span></span></span><br><span class="line"><span class="tag">                 <span class="attr">Margin</span>=<span class="string">&quot;10,10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">hc:TextBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -4700,6 +4712,10 @@
 <td>CheckComboBoxPlus.Small</td>
 <td></td>
 </tr>
+<tr>
+<td>CheckComboBoxItem.Small</td>
+<td></td>
+</tr>
 </tbody></table>
 <h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:CheckComboBox</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CheckComboBoxItem</span> <span class="attr">Content</span>=<span class="string">&quot;Item 1&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CheckComboBoxItem</span> <span class="attr">Content</span>=<span class="string">&quot;Item 2&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CheckComboBoxItem</span> <span class="attr">Content</span>=<span class="string">&quot;Item 3&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:CheckComboBox</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>Or</p>
@@ -5633,6 +5649,18 @@
 <tbody><tr>
 <td>IsClosed</td>
 <td>Is it closed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MaskCanClose</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MaskBrush</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -7528,7 +7556,7 @@
     <title>NumericUpDown</title>
     <url>/handycontrol/extend_controls/numericUpDown/index.html</url>
     <content><![CDATA[<p>The NumericUpDown control looks like a pair of arrow buttons and a TextBox that the user can click to adjust the value. The control displays and sets a value. The user can change the Value by clicking the up and down arrows, or by typing a number in the TextBox section of the control.</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">TemplatePart(Name = ElementTextBox, Type = typeof(DatePickerTextBox))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DatePicker</span> : <span class="title">System.Windows.Controls.DatePicker</span>, <span class="title">IDataInput</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">TemplatePart(Name = ElementTextBox, Type = typeof(DatePickerTextBox))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">NumericUpDown</span> : <span class="title">Control</span></span><br></pre></td></tr></table></figure>
 
 <h1 id="Create-NumericUpDown-and-set-Value"><a href="#Create-NumericUpDown-and-set-Value" class="headerlink" title="Create NumericUpDown and set Value"></a>Create NumericUpDown and set Value</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:NumericUpDown</span> <span class="attr">Value</span>=<span class="string">&quot;100&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -7787,6 +7815,12 @@
 <td>IsJumpEnabled</td>
 <td>Whether to display the jump box</td>
 <td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>PaginationButtonStyle</td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -9706,6 +9740,12 @@
 <td>false</td>
 <td></td>
 </tr>
+<tr>
+<td>CanBeClosedByMiddleButton</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </tbody></table>
 <h1 id="Events"><a href="#Events" class="headerlink" title="Events"></a>Events</h1><table>
 <thead>
@@ -10190,24 +10230,31 @@
     <title>Transfer</title>
     <url>/handycontrol/extend_controls/transfer/index.html</url>
     <content><![CDATA[<p>The shuttle selection box uses an intuitive way to move elements in the two columns to complete the selection behavior.</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">DefaultProperty(<span class="meta-string">&quot;Items&quot;</span>)</span>]</span><br><span class="line">[<span class="meta">ContentProperty(<span class="meta-string">&quot;Items&quot;</span>)</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementPanel, Type = typeof(Panel))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">SimpleItemsControl</span> : <span class="title">Control</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">TemplatePart(Name = ElementSelectedListBox, Type = typeof(ListBox))</span>]</span><br><span class="line">[<span class="meta">DefaultEvent(nameof(Transferred))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Transfer</span> : <span class="title">ListBox</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">TemplatePart(Name = ElementItemsOrigin, Type = typeof(SimpleItemsControl))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementItemsSelected, Type = typeof(SimpleItemsControl))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Transfer</span> : <span class="title">SimpleItemsControl</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
 <thead>
 <tr>
-<th>Property</th>
-<th>Description</th>
-<th>Default Value</th>
-<th>Remarks</th>
+<th>Name</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>SelectedItems</td>
-<td>Selected Items</td>
-<td></td>
-<td></td>
+<td>TransferItemBaseStyle.Small</td>
+</tr>
+<tr>
+<td>Transfer.Small</td>
+</tr>
+<tr>
+<td>TransferItemBaseStyle.CheckBox</td>
+</tr>
+<tr>
+<td>Transfer.CheckBox</td>
+</tr>
+<tr>
+<td>TransferItemBaseStyle.CheckBox.Small</td>
+</tr>
+<tr>
+<td>Transfer.CheckBox.Small</td>
 </tr>
 </tbody></table>
 <h1 id="Events"><a href="#Events" class="headerlink" title="Events"></a>Events</h1><table>
@@ -10221,8 +10268,13 @@
 <td>SelectionChanged</td>
 <td>Triggered when the selected item changes</td>
 </tr>
+<tr>
+<td>TransferredItemsChanged</td>
+<td></td>
+</tr>
 </tbody></table>
-<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Transfer</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;32&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;300&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:Transfer.ItemTemplate</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding Name&#125;&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:Transfer.ItemTemplate</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Transfer</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">hc:UniformSpacingPanel</span> <span class="attr">ChildWrapping</span>=<span class="string">&quot;Wrap&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;32&quot;</span> <span class="attr">Spacing</span>=<span class="string">&quot;32&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Transfer</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">MinWidth</span>=<span class="string">&quot;300&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;300&quot;</span> <span class="attr">DisplayMemberPath</span>=<span class="string">&quot;Name&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Transfer</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">MinWidth</span>=<span class="string">&quot;300&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;300&quot;</span> <span class="attr">DisplayMemberPath</span>=<span class="string">&quot;Name&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource Transfer.Small&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Transfer</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">MinWidth</span>=<span class="string">&quot;300&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;300&quot;</span> <span class="attr">DisplayMemberPath</span>=<span class="string">&quot;Name&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource Transfer.CheckBox&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Transfer</span> <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;Binding DataList&#125;&quot;</span> <span class="attr">MinWidth</span>=<span class="string">&quot;300&quot;</span> <span class="attr">Height</span>=<span class="string">&quot;300&quot;</span> <span class="attr">DisplayMemberPath</span>=<span class="string">&quot;Name&quot;</span> <span class="attr">Style</span>=<span class="string">&quot;&#123;StaticResource Transfer.CheckBox.Small&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:UniformSpacingPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Transfer.gif" alt="Transfer"></p>
 ]]></content>
   </entry>
@@ -10442,7 +10494,9 @@
 <td></td>
 </tr>
 </tbody></table>
-<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Watermark</span> <span class="attr">Mark</span>=<span class="string">&quot;Project&quot;</span> <span class="attr">FontSize</span>=<span class="string">&quot;80&quot;</span> <span class="attr">FontWeight</span>=<span class="string">&quot;Bold&quot;</span> <span class="attr">MarkMargin</span>=<span class="string">&quot;30,0&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="Case"><a href="#Case" class="headerlink" title="Case"></a>Case</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">hc:UniformSpacingPanel</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;32&quot;</span> <span class="attr">ChildWrapping</span>=<span class="string">&quot;Wrap&quot;</span> <span class="attr">Spacing</span>=<span class="string">&quot;16&quot;</span> <span class="attr">ItemWidth</span>=<span class="string">&quot;256&quot;</span> <span class="attr">ItemHeight</span>=<span class="string">&quot;128&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Watermark</span> <span class="attr">Mark</span>=<span class="string">&quot;HandyControl&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">BorderThickness</span>=<span class="string">&quot;1&quot;</span> <span class="attr">CornerRadius</span>=<span class="string">&quot;4&quot;</span> <span class="attr">BorderBrush</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Watermark</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Watermark</span> <span class="attr">Mark</span>=<span class="string">&quot;HandyControl&quot;</span> <span class="attr">FontSize</span>=<span class="string">&quot;30&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">BorderThickness</span>=<span class="string">&quot;1&quot;</span> <span class="attr">CornerRadius</span>=<span class="string">&quot;4&quot;</span> <span class="attr">BorderBrush</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Watermark</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Watermark</span> <span class="attr">Mark</span>=<span class="string">&quot;HandyControl&quot;</span> <span class="attr">FontSize</span>=<span class="string">&quot;30&quot;</span> <span class="attr">Angle</span>=<span class="string">&quot;45&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">BorderThickness</span>=<span class="string">&quot;1&quot;</span> <span class="attr">CornerRadius</span>=<span class="string">&quot;4&quot;</span> <span class="attr">BorderBrush</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Watermark</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Watermark</span> <span class="attr">Mark</span>=<span class="string">&quot;HandyControl&quot;</span> <span class="attr">FontSize</span>=<span class="string">&quot;30&quot;</span> <span class="attr">Angle</span>=<span class="string">&quot;45&quot;</span> <span class="attr">MarkBrush</span>=<span class="string">&quot;&#123;DynamicResource DangerBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">BorderThickness</span>=<span class="string">&quot;1&quot;</span> <span class="attr">CornerRadius</span>=<span class="string">&quot;4&quot;</span> <span class="attr">BorderBrush</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Watermark</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Watermark</span> <span class="attr">Mark</span>=<span class="string">&quot;HandyControl&quot;</span> <span class="attr">FontSize</span>=<span class="string">&quot;30&quot;</span> <span class="attr">Angle</span>=<span class="string">&quot;45&quot;</span> <span class="attr">MarkBrush</span>=<span class="string">&quot;&#123;DynamicResource DangerBrush&#125;&quot;</span> <span class="attr">MarkMargin</span>=<span class="string">&quot;10&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">BorderThickness</span>=<span class="string">&quot;1&quot;</span> <span class="attr">CornerRadius</span>=<span class="string">&quot;4&quot;</span> <span class="attr">BorderBrush</span>=<span class="string">&quot;&#123;DynamicResource BorderBrush&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Watermark</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:UniformSpacingPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Watermark</span> <span class="attr">Mark</span>=<span class="string">&quot;Project&quot;</span> <span class="attr">FontSize</span>=<span class="string">&quot;80&quot;</span> <span class="attr">FontWeight</span>=<span class="string">&quot;Bold&quot;</span> <span class="attr">MarkMargin</span>=<span class="string">&quot;30,0&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Watermark_1.png" alt="Watermark"></p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Watermark</span> <span class="attr">Mark</span>=<span class="string">&quot;&#123;StaticResource GitHubStrGeometry&#125;&quot;</span> <span class="attr">MarkMargin</span>=<span class="string">&quot;30,0&quot;</span> <span class="attr">MarkWidth</span>=<span class="string">&quot;200&quot;</span> <span class="attr">MarkHeight</span>=<span class="string">&quot;100&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -11545,7 +11599,35 @@
   <entry>
     <title>GroupBox</title>
     <url>/handycontrol/native_controls/groupBox/index.html</url>
-    <content><![CDATA[<h1 id="GroupBoxBaseStyle"><a href="#GroupBoxBaseStyle" class="headerlink" title="GroupBoxBaseStyle"></a>GroupBoxBaseStyle</h1><p>The default style of the GroupBox. It is not recommended to use it directly, and it should always be used by other styles as BasedOn.</p>
+    <content><![CDATA[<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GroupBoxBaseStyle</td>
+</tr>
+<tr>
+<td>GroupBoxOriginalBaseStyle</td>
+</tr>
+<tr>
+<td>GroupBoxTabBaseStyle</td>
+</tr>
+<tr>
+<td>GroupBox.Small</td>
+</tr>
+<tr>
+<td>GroupBoxOriginal</td>
+</tr>
+<tr>
+<td>GroupBoxTab</td>
+</tr>
+<tr>
+<td>GroupBoxTab.Small</td>
+</tr>
+</tbody></table>
+<h1 id="GroupBoxBaseStyle"><a href="#GroupBoxBaseStyle" class="headerlink" title="GroupBoxBaseStyle"></a>GroupBoxBaseStyle</h1><p>The default style of the GroupBox. It is not recommended to use it directly, and it should always be used by other styles as BasedOn.</p>
 <div class="note info no-icon"><p>Example:</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">     <span class="tag">&lt;<span class="name">GroupBox</span> <span class="attr">Grid.Row</span> = <span class="string">&quot;0&quot;</span> <span class="attr">Grid.Column</span> = <span class="string">&quot;0&quot;</span> <span class="attr">Width</span> = <span class="string">&quot;300&quot;</span> <span class="attr">Height</span> = <span class="string">&quot;200&quot;</span> <span class="attr">Header</span> = <span class="string">&quot;Title&quot;</span></span></span><br><span class="line"><span class="tag">         <span class="attr">Padding</span> = <span class="string">&quot;10&quot;</span> <span class="attr">Margin</span> = <span class="string">&quot;16&quot;</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span> = <span class="string">&quot;&#123;DynamicResource PrimaryBrush&#125;&quot;</span> <span class="attr">CornerRadius</span> = <span class="string">&quot;4&quot;</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span> = <span class="string">&quot;Content&quot;</span> <span class="attr">VerticalAlignment</span> = <span class="string">&quot;Center&quot;</span> <span class="attr">HorizontalAlignment</span> = <span class="string">&quot;Center&quot;</span></span></span><br><span class="line"><span class="tag">             <span class="attr">Foreground</span> = <span class="string">&quot;White&quot;</span> /&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">GroupBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -11591,7 +11673,50 @@ Example:
   <entry>
     <title>Label</title>
     <url>/handycontrol/native_controls/label/index.html</url>
-    <content><![CDATA[<h1 id="LabelBaseStyle"><a href="#LabelBaseStyle" class="headerlink" title="LabelBaseStyle"></a>LabelBaseStyle</h1><p>The default style of the Label. which is not recommended. It should always be used by other styles based on On.</p>
+    <content><![CDATA[<h1 id="Styles"><a href="#Styles" class="headerlink" title="Styles"></a>Styles</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LabelDefault</td>
+</tr>
+<tr>
+<td>LabelDefault.Small</td>
+</tr>
+<tr>
+<td>LabelPrimary</td>
+</tr>
+<tr>
+<td>LabelPrimary.Small</td>
+</tr>
+<tr>
+<td>LabelSuccess</td>
+</tr>
+<tr>
+<td>LabelSuccess.Small</td>
+</tr>
+<tr>
+<td>LabelInfo</td>
+</tr>
+<tr>
+<td>LabelInfo.Small</td>
+</tr>
+<tr>
+<td>LabelWarning</td>
+</tr>
+<tr>
+<td>LabelWarning.Small</td>
+</tr>
+<tr>
+<td>LabelDanger</td>
+</tr>
+<tr>
+<td>LabelDanger.Small</td>
+</tr>
+</tbody></table>
+<h1 id="LabelBaseStyle"><a href="#LabelBaseStyle" class="headerlink" title="LabelBaseStyle"></a>LabelBaseStyle</h1><p>The default style of the Label. which is not recommended. It should always be used by other styles based on On.</p>
 <div class="note info no-icon"><p>Example：</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Label</span> <span class="attr">Content</span>=<span class="string">&quot;Label default style&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -16152,9 +16277,9 @@ Example:
 <p><code>Strings\en-US\Resources.resw</code></p>
 <p><code>Strings\fa-IR\Resources.resw</code></p>
 <p>Go to <code>App.cs</code> file and Create a new Instance of Localizer:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">App</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  InitializeComponent();</span><br><span class="line">  <span class="built_in">string</span> resourcesFolderPath = Path.Combine(Directory.GetCurrentDirectory(), <span class="string">&quot;Strings&quot;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// For packaged app:</span></span><br><span class="line">  <span class="comment">//string resourcesFolderPath = @&quot;C:\\Projects\\Strings&quot;;</span></span><br><span class="line"></span><br><span class="line">  _ = Localizer.Create(resourcesFolderPath);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">App</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  InitializeComponent();</span><br><span class="line"></span><br><span class="line">  ILocalizer localizer = <span class="keyword">new</span> LocalizerBuilder()</span><br><span class="line">            <span class="comment">// For a packaged app:</span></span><br><span class="line">            <span class="comment">//.AddResourcesStringsFolder(new LocalizerResourcesStringsFolder(@&quot;C:/Projects/Strings&quot;))</span></span><br><span class="line">            <span class="comment">// For a non-packaged app:</span></span><br><span class="line">            .AddDefaultResourcesStringsFolder()</span><br><span class="line">            .AddLanguageDictionaries(</span><br><span class="line">                <span class="keyword">new</span> List&lt;LanguageDictionary&gt;()</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">new</span> LanguageDictionary(<span class="string">&quot;ja&quot;</span>)</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="keyword">new</span> StringResource(<span class="string">&quot;ToggleSwitchHeader&quot;</span>, <span class="string">&quot;HeaderProperty&quot;</span>, <span class="string">&quot;トグルスイッチ&quot;</span>),</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;)</span><br><span class="line">            .Build();</span><br><span class="line">        Localizer.Set(localizer);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<div class="note warning"><p>for <code>Packaged</code> mode you need to change <code>ResourcesFolderPath</code></p>
+<div class="note warning"><p>for <code>Packaged</code> mode you need to set <code>AddResourcesStringsFolder(new LocalizerResourcesStringsFolder(@&quot;C:/Projects/Strings&quot;))</code></p>
 </div>
 
 <p>we need to copy our resources to output next to <code>Exe</code> file, so copy this codes and put it in <code>CSProj</code> file:</p>
@@ -16165,7 +16290,7 @@ Example:
 <p>Call <code>InitializeWindow</code>:</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">MainWindow</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">this</span>.InitializeComponent();</span><br><span class="line">    Localizer.Get().InitializeWindow(Root, Content);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="Change-Language-in-Runtime"><a href="#Change-Language-in-Runtime" class="headerlink" title="Change Language in Runtime"></a>Change Language in Runtime</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Localizer.Get().TrySetCurrentLanguage(<span class="string">&quot;en-US&quot;</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="Change-Language-in-Runtime"><a href="#Change-Language-in-Runtime" class="headerlink" title="Change Language in Runtime"></a>Change Language in Runtime</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Localizer.Get().SetLanguage(<span class="string">&quot;en-US&quot;</span>);</span><br></pre></td></tr></table></figure>
 
 <div class="note warning"><p>if you cant see translation in Pages after Navigation you need to Call <code>RunLocalizationOnRegisteredRootElements</code> or <code>RunLocalization</code> method in <code>Loaded</code> event in page</p>
 <figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">DynamicLanguagePage_Loaded</span>(<span class="params"><span class="built_in">object</span> sender, Microsoft.UI.Xaml.RoutedEventArgs e</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  Localizer.Get().RunLocalization(Root);</span><br><span class="line"></span><br><span class="line">  <span class="comment">//OR</span></span><br><span class="line">  <span class="comment">// Localizer.Get().RunLocalizationOnRegisteredRootElements();</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
