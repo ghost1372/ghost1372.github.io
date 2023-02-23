@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#fc6423" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#fc6423">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":350},"copycode":{"enable":true,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Easily implement a NavigationView with Json file (we read navigationview items from a json file) Related Classes   Name    NavigationArgs   NavigationExtension   NavigationHelper   NavigationViewHelpe">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NavigationViewHelper With Json">
+<meta property="og:url" content="http://example.com/winUICommunityCommon/helpers/navigationViewHelperJson/index.html">
+<meta property="og:site_name" content="Ghost1372">
+<meta property="og:description" content="Easily implement a NavigationView with Json file (we read navigationview items from a json file) Related Classes   Name    NavigationArgs   NavigationExtension   NavigationHelper   NavigationViewHelpe">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-02-23T20:53:50.986Z">
+<meta property="article:modified_time" content="2023-02-23T20:53:50.986Z">
+<meta property="article:author" content="Ghost1372">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/winUICommunityCommon/helpers/navigationViewHelperJson/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/winUICommunityCommon/helpers/navigationViewHelperJson/index.html","path":"winUICommunityCommon/helpers/navigationViewHelperJson/index.html","title":"NavigationViewHelper With Json"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>NavigationViewHelper With Json | Ghost1372
+</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Ghost1372</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">everything can be handy</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-handycontrol---3.4.4"><a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.4.4</a></li><li class="menu-item menu-item-winuicommunity.settingsui---3.1.0"><a href="/winUICommunitySettingsUI/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>WinUICommunity.SettingsUI - 3.1.0</a></li><li class="menu-item menu-item-winuicommunity.landingspage---1.1.0"><a href="/winUICommunityLandingsPage/" rel="section"><i class="fab fa-intercom fa-fw"></i>WinUICommunity.LandingsPage - 1.1.0</a></li><li class="menu-item menu-item-winuicommunity.shellcontextmenu---3.1.0"><a href="/winUICommunityShellContextMenu/" rel="section"><i class="fas fa-brain fa-fw"></i>WinUICommunity.ShellContextMenu - 3.1.0</a></li><li class="menu-item menu-item-winuicommunity.common---3.1.0"><a href="/winUICommunityCommon/" rel="section"><i class="fas fa-tools fa-fw"></i>WinUICommunity.Common - 3.1.0</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Related-Classes"><span class="nav-number">1.</span> <span class="nav-text">Related Classes</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Available-Builder-Methods"><span class="nav-number">1.1.</span> <span class="nav-text">Available Builder Methods</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">2.</span> <span class="nav-text">Demo</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Ghost1372"
+      src="https://avatars.githubusercontent.com/u/9213496?v=4">
+  <p class="site-author-name" itemprop="name">Ghost1372</p>
+  <div class="site-description" itemprop="description">everything can be handy</div>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ghost1372" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ghost1372" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:mahdidvb72@gmail.com" title="E-Mail → mailto:mahdidvb72@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.nuget.org/packages/HandyControl" title="Nuget → https:&#x2F;&#x2F;www.nuget.org&#x2F;packages&#x2F;HandyControl" rel="noopener" target="_blank"><i class="fab fa-microsoft fa-fw"></i>Nuget</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.nuget.org/packages/SettingsUI" title="Nuget (SettingsUI) → https:&#x2F;&#x2F;www.nuget.org&#x2F;packages&#x2F;SettingsUI" rel="noopener" target="_blank"><i class="fab fa-microsoft fa-fw"></i>Nuget (SettingsUI)</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/ghost1372/HandyControls" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+    <ul class="sub-menu menu">
+      
+  <li class="menu-item menu-item-extensions"><a href="/winUICommunityCommon/extensions/" rel="section"><i class="fas fa-tools fa-fw"></i>Extensions</a></li>
+
+
+      
+  <li class="menu-item menu-item-helpers"><a href="/winUICommunityCommon/helpers/" rel="section"><i class="fas fa-tools fa-fw"></i>Helpers</a></li>
+
+
+      
+  <li class="menu-item menu-item-services"><a href="/winUICommunityCommon/services/" rel="section"><i class="fas fa-tools fa-fw"></i>Services</a></li>
+
+
+      
+  <li class="menu-item menu-item-tools"><a href="/winUICommunityCommon/tools/" rel="section"><i class="fas fa-tools fa-fw"></i>tools</a></li>
+
+
+    </ul>
+    <ul class="sub-menu menu">
+      
+  <li class="menu-item menu-item-applicationdatacontainerhelper"><a href="/winUICommunityCommon/helpers/applicationDataContainerHelper/" rel="section">ApplicationDataContainerHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-applicationhelper"><a href="/winUICommunityCommon/helpers/applicationHelper/" rel="section">ApplicationHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-appnotification"><a href="/winUICommunityCommon/helpers/appNotification/" rel="section">AppNotification</a></li>
+
+
+      
+  <li class="menu-item menu-item-autosuggestboxhelper"><a href="/winUICommunityCommon/helpers/autoSuggestBoxHelper/" rel="section">AutoSuggestBoxHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-generalhelper"><a href="/winUICommunityCommon/helpers/generalHelper/" rel="section">GeneralHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-navigationviewhelper"><a href="/winUICommunityCommon/helpers/navigationViewHelper/" rel="section">NavigationViewHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-navigationviewhelper-with-json"><a href="/winUICommunityCommon/helpers/navigationViewHelperJson/" rel="section">NavigationViewHelper With Json</a></li>
+
+
+      
+  <li class="menu-item menu-item-osversionhelper"><a href="/winUICommunityCommon/helpers/osVersionHelper/" rel="section">OSVersionHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-printhelper"><a href="/winUICommunityCommon/helpers/printHelper/" rel="section">PrintHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-resourcehelper"><a href="/winUICommunityCommon/helpers/resourceHelper/" rel="section">ResourceHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-storagefilehelper"><a href="/winUICommunityCommon/helpers/storageFileHelper/" rel="section">StorageFileHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-systembackdropshelper"><a href="/winUICommunityCommon/helpers/systemBackdropsHelper/" rel="section">SystemBackdropsHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-taskbarhelper"><a href="/winUICommunityCommon/helpers/taskbarHelper/" rel="section">TaskbarHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-themehelper"><a href="/winUICommunityCommon/helpers/themeHelper/" rel="section">ThemeHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-titlebarhelper"><a href="/winUICommunityCommon/helpers/titleBarHelper/" rel="section">TitleBarHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-updatehelper"><a href="/winUICommunityCommon/helpers/updateHelper/" rel="section">UpdateHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-versionhelper"><a href="/winUICommunityCommon/helpers/versionHelper/" rel="section">VersionHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-visualhelper"><a href="/winUICommunityCommon/helpers/visualHelper/" rel="section">VisualHelper</a></li>
+
+
+      
+  <li class="menu-item menu-item-windowhelper"><a href="/winUICommunityCommon/helpers/windowHelper/" rel="section">WindowHelper</a></li>
+
+
+    </ul>
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">NavigationViewHelper With Json
+</h1>
+
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/winUICommunityCommon/">WINUICOMMUNITY.COMMON - 3.1.0</a></li>
+            <li><a href="/winUICommunityCommon/helpers/">HELPERS</a></li>
+          <li>NAVIGATIONVIEWHELPER WITH JSON</li>
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <p>Easily implement a <code>NavigationView</code> with <code>Json</code> file (we read navigationview items from a json file)</p>
+<h1 id="Related-Classes"><a href="#Related-Classes" class="headerlink" title="Related Classes"></a>Related Classes</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NavigationArgs</td>
+</tr>
+<tr>
+<td>NavigationExtension</td>
+</tr>
+<tr>
+<td>NavigationHelper</td>
+</tr>
+<tr>
+<td>NavigationViewHelper</td>
+</tr>
+</tbody></table>
+<h2 id="Available-Builder-Methods"><a href="#Available-Builder-Methods" class="headerlink" title="Available Builder Methods"></a>Available Builder Methods</h2><ul>
+<li>WithAutoSuggestBox</li>
+<li>WithDefaultPage</li>
+<li>WithIncludedInBuildMode</li>
+<li>WithSettingsPage</li>
+<li>WithMenuFlyout</li>
+</ul>
+<div class="note info"><p>Access methods with <code>GetCurrent</code></p>
+<p><code>NavigationViewHelper.GetCurrent().Navigate</code></p>
+</div>
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">xmlns:data=&quot;using:WinUICommunity.Shared.DataModel&quot;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">NavigationView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">x:Name</span>=<span class="string">&quot;NavigationViewControl&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">Canvas.ZIndex</span>=<span class="string">&quot;0&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">IsTabStop</span>=<span class="string">&quot;False&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">PaneDisplayMode</span>=<span class="string">&quot;Left&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">SelectionChanged</span>=<span class="string">&quot;OnNavigationViewSelectionChanged&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">IsTitleBarAutoPaddingEnabled</span>=<span class="string">&quot;True&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">NavigationView.AutoSuggestBox</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">AutoSuggestBox</span></span></span><br><span class="line"><span class="tag">            <span class="attr">x:Name</span>=<span class="string">&quot;controlsSearchBox&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">MinWidth</span>=<span class="string">&quot;200&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Center&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">x:FieldModifier</span>=<span class="string">&quot;public&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">QuerySubmitted</span>=<span class="string">&quot;controlsSearchBox_QuerySubmitted&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">KeyboardAcceleratorPlacementMode</span>=<span class="string">&quot;Hidden&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">PlaceholderText</span>=<span class="string">&quot;Search&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">QueryIcon</span>=<span class="string">&quot;Find&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">AutoSuggestBox.ItemTemplate</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">DataTemplate</span> <span class="attr">x:DataType</span>=<span class="string">&quot;data:ControlInfoDataItem&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">Grid</span> <span class="attr">AutomationProperties.Name</span>=<span class="string">&quot;&#123;x:Bind Title&#125;&quot;</span> <span class="attr">ColumnSpacing</span>=<span class="string">&quot;12&quot;</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">Grid.ColumnDefinitions</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="name">ColumnDefinition</span> <span class="attr">Width</span>=<span class="string">&quot;16&quot;</span> /&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="name">ColumnDefinition</span> <span class="attr">Width</span>=<span class="string">&quot;*&quot;</span> /&gt;</span></span><br><span class="line">                        <span class="tag">&lt;/<span class="name">Grid.ColumnDefinitions</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">Image</span> <span class="attr">Source</span>=<span class="string">&quot;&#123;x:Bind ImagePath&#125;&quot;</span> /&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Grid.Column</span>=<span class="string">&quot;1&quot;</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;x:Bind Title&#125;&quot;</span> /&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">AutoSuggestBox.ItemTemplate</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">AutoSuggestBox</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">NavigationView.AutoSuggestBox</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">Frame</span></span></span><br><span class="line"><span class="tag">        <span class="attr">x:Name</span>=<span class="string">&quot;rootFrame&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">NavigationView</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>now create a new <code>json</code> file (<code>ControlInfoData.json</code>) in a folder called <code>DataModel</code>:</p>
+<div class="note warning"><ul>
+<li>Set BuildAction for <code>ControlInfoData.json</code> to <code>Content</code> and if you are in a Unpackaged app, also set Copy To Output to Always</li>
+</ul>
+</div>
+
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DataModel\ControlInfoData.json</span><br></pre></td></tr></table></figure>
+
+<p>this is a json file content:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;Groups&quot;</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">&quot;UniqueId&quot;</span>: <span class="string">&quot;Features&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;Features pages&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;SecondaryTitle&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;ApiNamespace&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Subtitle&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;ImagePath&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;ImageIconPath&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;IsSpecialSection&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">      <span class="attr">&quot;Items&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;UniqueId&quot;</span>: <span class="string">&quot;WinUICommunity.DemoApp.Pages.ApplicationDataContainerPage&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;ApplicationDataContainer&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;SecondaryTitle&quot;</span>: <span class="string">&quot;Test SecondaryTitle&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ApiNamespace&quot;</span>: <span class="string">&quot;DemoApp&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Subtitle&quot;</span>: <span class="string">&quot;you can use ApplicationDataContainerHelper for saving and loading application settings.&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImagePath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImageIconPath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Description&quot;</span>: <span class="string">&quot;test description&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Content&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;IsNew&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IsUpdated&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;IsPreview&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IncludedInBuild&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;HideSourceCodeAndRelatedControls&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;Docs&quot;</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">              <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;ApplicationDataContainerPage&quot;</span>,</span><br><span class="line">              <span class="attr">&quot;Uri&quot;</span>: <span class="string">&quot;https://ghost1372.github.io/winUICommunity/helpers/applicationDataContainerHelper/&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">          ],</span><br><span class="line">          <span class="attr">&quot;RelatedControls&quot;</span>: [</span><br><span class="line">            <span class="string">&quot;AppBarToggleButton&quot;</span>,</span><br><span class="line">            <span class="string">&quot;AppBarSeparator&quot;</span>,</span><br><span class="line">            <span class="string">&quot;CommandBar&quot;</span></span><br><span class="line">          ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;UniqueId&quot;</span>: <span class="string">&quot;WinUICommunity.DemoApp.Pages.AppNotificationPage&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;App Notification&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;SecondaryTitle&quot;</span>: <span class="string">&quot;Test SecondaryTitle&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ApiNamespace&quot;</span>: <span class="string">&quot;DemoApp&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Subtitle&quot;</span>: <span class="string">&quot;you can use AppNotificationPage for Sending Toast Notification.&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImagePath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImageIconPath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Content&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;IsNew&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IsUpdated&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IsPreview&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IncludedInBuild&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;HideSourceCodeAndRelatedControls&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;Docs&quot;</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">              <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;AppNotificationPage&quot;</span>,</span><br><span class="line">              <span class="attr">&quot;Uri&quot;</span>: <span class="string">&quot;https://ghost1372.github.io/winUICommunity/helpers/appNotification/&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">          ],</span><br><span class="line">          <span class="attr">&quot;RelatedControls&quot;</span>: []</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;UniqueId&quot;</span>: <span class="string">&quot;WinUICommunity.DemoApp.Pages.CheckUpdatePage&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;Check Update&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ApiNamespace&quot;</span>: <span class="string">&quot;DemoApp&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;SecondaryTitle&quot;</span>: <span class="string">&quot;Test SecondaryTitle&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Subtitle&quot;</span>: <span class="string">&quot;you can use UpdateHelper for checking application updates from github release page.&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImagePath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImageIconPath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Content&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;IsNew&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IsUpdated&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;IsPreview&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IncludedInBuild&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;HideSourceCodeAndRelatedControls&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;Docs&quot;</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">              <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;CheckUpdatePage&quot;</span>,</span><br><span class="line">              <span class="attr">&quot;Uri&quot;</span>: <span class="string">&quot;https://ghost1372.github.io/winUICommunity/helpers/updateHelper/&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">          ],</span><br><span class="line">          <span class="attr">&quot;RelatedControls&quot;</span>: []</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;UniqueId&quot;</span>: <span class="string">&quot;WinUICommunity.DemoApp.Pages.CommandObservablePage&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;Observable and RelayCommand&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ApiNamespace&quot;</span>: <span class="string">&quot;DemoApp&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;SecondaryTitle&quot;</span>: <span class="string">&quot;Test SecondaryTitle&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Subtitle&quot;</span>: <span class="string">&quot;Observable: inherited from INotifyPropertyChanged. - RelayCommand: inherited from ICommand.&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImagePath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImageIconPath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Content&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;IsNew&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IsUpdated&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;IsPreview&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IncludedInBuild&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;HideSourceCodeAndRelatedControls&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;Docs&quot;</span>: [],</span><br><span class="line">          <span class="attr">&quot;RelatedControls&quot;</span>: []</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;UniqueId&quot;</span>: <span class="string">&quot;WinUICommunity.DemoApp.Pages.ContentDialogPage&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;Content Dialog&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ApiNamespace&quot;</span>: <span class="string">&quot;DemoApp&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;SecondaryTitle&quot;</span>: <span class="string">&quot;Test SecondaryTitle&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Subtitle&quot;</span>: <span class="string">&quot;With the help of ShowAsyncQueue extension you can open multiple ContentDialogs.&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImagePath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImageIconPath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Content&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;IsNew&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IsUpdated&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;IsPreview&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IncludedInBuild&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;HideSourceCodeAndRelatedControls&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;Docs&quot;</span>: [],</span><br><span class="line">          <span class="attr">&quot;RelatedControls&quot;</span>: []</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;UniqueId&quot;</span>: <span class="string">&quot;WinUICommunity.DemoApp.Pages.DynamicLanguagePage&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;Dynamic Language&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ApiNamespace&quot;</span>: <span class="string">&quot;DemoApp&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;SecondaryTitle&quot;</span>: <span class="string">&quot;Test SecondaryTitle&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Subtitle&quot;</span>: <span class="string">&quot;With the help of DynamicLanguage you can create a dynamic multi language app.&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImagePath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImageIconPath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Content&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;IsNew&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IsUpdated&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;IsPreview&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IncludedInBuild&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;HideSourceCodeAndRelatedControls&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;Docs&quot;</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">              <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;DynamicLanguagePage&quot;</span>,</span><br><span class="line">              <span class="attr">&quot;Uri&quot;</span>: <span class="string">&quot;https://ghost1372.github.io/winUICommunity/tools/dynamicLanguage/&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">          ],</span><br><span class="line">          <span class="attr">&quot;RelatedControls&quot;</span>: []</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;UniqueId&quot;</span>: <span class="string">&quot;WinUICommunity.DemoApp.Pages.InlineAutoCompleteTextBoxPage&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;Inline AutoCompleteTextBox&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ApiNamespace&quot;</span>: <span class="string">&quot;DemoApp&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;SecondaryTitle&quot;</span>: <span class="string">&quot;Test SecondaryTitle&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Subtitle&quot;</span>: <span class="string">&quot;Inline AutoCompleteTextBox&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImagePath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImageIconPath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Content&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;IsNew&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IsUpdated&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;IsPreview&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IncludedInBuild&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;HideSourceCodeAndRelatedControls&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;Docs&quot;</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">              <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;InlineAutoCompleteTextBoxPage&quot;</span>,</span><br><span class="line">              <span class="attr">&quot;Uri&quot;</span>: <span class="string">&quot;https://ghost1372.github.io/winUICommunity/controls/inlineAutoCompleteTextBox/&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">          ],</span><br><span class="line">          <span class="attr">&quot;RelatedControls&quot;</span>: []</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;UniqueId&quot;</span>: <span class="string">&quot;WinUICommunity.DemoApp.Pages.SettingsControls&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;Settings Controls&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ApiNamespace&quot;</span>: <span class="string">&quot;DemoApp&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;SecondaryTitle&quot;</span>: <span class="string">&quot;Test SecondaryTitle&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Subtitle&quot;</span>: <span class="string">&quot;SettingsControls from Labs&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImagePath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImageIconPath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Content&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;IsNew&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;IsUpdated&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IsPreview&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IncludedInBuild&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;HideSourceCodeAndRelatedControls&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;Docs&quot;</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">              <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;SettingsControls&quot;</span>,</span><br><span class="line">              <span class="attr">&quot;Uri&quot;</span>: <span class="string">&quot;https://ghost1372.github.io/winUICommunity/settingsControls/&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">          ],</span><br><span class="line">          <span class="attr">&quot;RelatedControls&quot;</span>: []</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;UniqueId&quot;</span>: <span class="string">&quot;WinUICommunity.DemoApp.Pages.SystemBackdropsPage&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;SystemBackdrops&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ApiNamespace&quot;</span>: <span class="string">&quot;DemoApp&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;SecondaryTitle&quot;</span>: <span class="string">&quot;Test SecondaryTitle&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Subtitle&quot;</span>: <span class="string">&quot;you can use SystemBackdropsHelper for accessing Mica and Acrylic Effect for your Window.&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImagePath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImageIconPath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Content&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;IsNew&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IsUpdated&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;IsPreview&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IncludedInBuild&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;HideSourceCodeAndRelatedControls&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;Docs&quot;</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">              <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;SystemBackdropsPage&quot;</span>,</span><br><span class="line">              <span class="attr">&quot;Uri&quot;</span>: <span class="string">&quot;https://ghost1372.github.io/winUICommunity/helpers/systemBackdropsHelper/&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">          ],</span><br><span class="line">          <span class="attr">&quot;RelatedControls&quot;</span>: []</span><br><span class="line">        &#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">&quot;UniqueId&quot;</span>: <span class="string">&quot;Settings&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;Settings pages&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;ApiNamespace&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Subtitle&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;ImagePath&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;SecondaryTitle&quot;</span>: <span class="string">&quot;Test SecondaryTitle&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;ImageIconPath&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Items&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;UniqueId&quot;</span>: <span class="string">&quot;WinUICommunity.DemoApp.Pages.OobePage&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Title&quot;</span>: <span class="string">&quot;Oobe Page&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ApiNamespace&quot;</span>: <span class="string">&quot;DemoApp&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;SecondaryTitle&quot;</span>: <span class="string">&quot;Test SecondaryTitle&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Subtitle&quot;</span>: <span class="string">&quot;Settings Page with a Hero Image&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImagePath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ImageIconPath&quot;</span>: <span class="string">&quot;ms-appx:///Assets/Modules/PT.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;Content&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;IsNew&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IsUpdated&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;IsPreview&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">          <span class="attr">&quot;IncludedInBuild&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">&quot;Docs&quot;</span>: [],</span><br><span class="line">          <span class="attr">&quot;RelatedControls&quot;</span>: []</span><br><span class="line">        &#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>UniqueId<br>this is your pages full address, for example: <code>WinUICommunity.DemoApp.Pages.ApplicationDataContainerPage</code></li>
+<li>ApiNamespace<br>this is your apps namespace, for example: <code>WinUICommunity.DemoApp</code></li>
+</ul>
+<p>create <code>Loaded</code> Event and Initialize NavigationView</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">NavigationViewFromJson</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">this</span>.InitializeComponent();</span><br><span class="line">    Loaded += NavigationViewFromJson_Loaded;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">NavigationViewFromJson_Loaded</span>(<span class="params"><span class="built_in">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    NavigationViewHelper.GetCurrent().</span><br><span class="line">        Initialize(<span class="string">&quot;DataModel/ControlInfoData.json&quot;</span>, <span class="keyword">typeof</span>(NavigationViewFromJson), rootFrame, NavigationViewControl)</span><br><span class="line">        .WithAutoSuggestBox(controlsSearchBox);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">controlsSearchBox_QuerySubmitted</span>(<span class="params">AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (args.ChosenSuggestion != <span class="literal">null</span> &amp;&amp; args.ChosenSuggestion <span class="keyword">is</span> ControlInfoDataItem)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> infoDataItem = args.ChosenSuggestion <span class="keyword">as</span> ControlInfoDataItem;</span><br><span class="line">        <span class="keyword">var</span> hasChangedSelection = NavigationViewHelper.GetCurrent().EnsureItemIsVisibleInNavigation(infoDataItem.Title);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// In case the menu selection has changed, it means that it has triggered</span></span><br><span class="line">        <span class="comment">// the selection changed event, that will navigate to the page already</span></span><br><span class="line">        <span class="keyword">if</span> (!hasChangedSelection)</span><br><span class="line">        &#123;</span><br><span class="line">            NavigationViewHelper.GetCurrent().Navigate(<span class="keyword">typeof</span>(ItemPage), infoDataItem.UniqueId);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Navigate</span>(<span class="params">Type type</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    NavigationViewHelper.GetCurrent().Navigate(type);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">OnNavigationViewSelectionChanged</span>(<span class="params">Microsoft.UI.Xaml.Controls.NavigationView sender, Microsoft.UI.Xaml.Controls.NavigationViewSelectionChangedEventArgs args</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (!args.IsSettingsSelected)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> selectedItem = args.SelectedItemContainer;</span><br><span class="line">        <span class="keyword">if</span> (selectedItem.DataContext <span class="keyword">is</span> ControlInfoDataGroup)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">var</span> itemId = ((ControlInfoDataGroup)selectedItem.DataContext).UniqueId;</span><br><span class="line">            NavigationViewHelper.GetCurrent().Navigate(<span class="keyword">typeof</span>(myApp.SectionPage), itemId);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (selectedItem.DataContext <span class="keyword">is</span> ControlInfoDataItem)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">var</span> item = (ControlInfoDataItem)selectedItem.DataContext;</span><br><span class="line">            NavigationViewHelper.GetCurrent().Navigate(<span class="keyword">typeof</span>(ItemPage), item.UniqueId);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning"><p>for Navigate to a Page we used Built-in Host pages such as, ItemPage and SectionPage. you can use only UniqueId to navigate your pages or create a custom host page.</p>
+</div>
+
+<p>also this is SectionPage:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Page</span></span></span><br><span class="line"><span class="tag">    <span class="attr">x:Class</span>=<span class="string">&quot;WinUICommunity.DemoApp.Pages.SectionPage&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:x</span>=<span class="string">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:controls</span>=<span class="string">&quot;using:WinUICommunity.LandingsPage.Controls&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">controls:SectionPage</span> <span class="attr">x:Name</span>=<span class="string">&quot;sectionPage&quot;</span> <span class="attr">OnItemClick</span>=<span class="string">&quot;SectionPage_OnItemClick&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Page</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>and</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">sealed</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">SectionPage</span> : <span class="title">Page</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SectionPage</span>(<span class="params"></span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">this</span>.InitializeComponent();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnNavigatedTo</span>(<span class="params">NavigationEventArgs e</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">base</span>.OnNavigatedTo(e);</span><br><span class="line">        sectionPage.GetDataAsync(e);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">SectionPage_OnItemClick</span>(<span class="params"><span class="built_in">object</span> sender, Microsoft.UI.Xaml.RoutedEventArgs e</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> args = (ItemClickEventArgs)e;</span><br><span class="line">        <span class="keyword">var</span> item = (ControlInfoDataItem)args.ClickedItem;</span><br><span class="line">        WinUICommunity.Common.Helpers.NavigationViewHelper.GetCurrent().Navigate(<span class="keyword">typeof</span>(ItemPage), item.UniqueId);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a target="_blank" rel="noopener" href="https://github.com/WinUICommunity/DemoApp">demo</a> and see this feature.</p>
+
+      </div>
+      
+      
+      
+    </div>
+  <ul class="breadcrumb">
+            <li><a href="/winUICommunityCommon/">WINUICOMMUNITY.COMMON - 3.1.0</a></li>
+            <li><a href="/winUICommunityCommon/helpers/">HELPERS</a></li>
+          <li>NAVIGATIONVIEWHELPER WITH JSON</li>
+  </ul>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="Ghost1372"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ghost1372</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
