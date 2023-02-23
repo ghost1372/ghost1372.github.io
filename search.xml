@@ -17171,4 +17171,34 @@ Example:
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/ghost1372/SettingsUI">demo</a> and see this feature.</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>Welcome to WinUICommunity</title>
+    <url>/winUICommunity/index.html</url>
+    <content><![CDATA[<h3 id="Experience-WinUI-3-quickly-and-easily-with-the-help-of-WinUICommunity-Everything-you-need-to-develop-an-application-is-gathered-in-one-place"><a href="#Experience-WinUI-3-quickly-and-easily-with-the-help-of-WinUICommunity-Everything-you-need-to-develop-an-application-is-gathered-in-one-place" class="headerlink" title="Experience WinUI 3 quickly and easily with the help of WinUICommunity, Everything you need to develop an application is gathered in one place."></a>Experience WinUI 3 quickly and easily with the help of WinUICommunity, Everything you need to develop an application is gathered in one place.</h3><h1 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h1><p><img src="https://img.shields.io/badge/.net-%3E=6.0-brightgreen" alt="dotnet-require"> <img src="https://img.shields.io/badge/OS-%3E%3D%20Windows%2010%20Build%201809-orange" alt="os-require"> <img src="https://img.shields.io/badge/IDE-vs2022-red" alt="IDE-require"> <img src="https://img.shields.io/badge/CSharp-Latest-yellow" alt="csharp-require"></p>
+<h1 id="Download-and-Install"><a href="#Download-and-Install" class="headerlink" title="Download and Install"></a>Download and Install</h1><table>
+<thead>
+<tr>
+<th>Nuget</th>
+<th>Github</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.nuget.org/packages/WinUICommunity.SettingsUI">WinUICommunity.SettingsUI</a></td>
+<td><a href="https://github.com/WinUICommunity/SettingsUI">Github</a></td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/WinUICommunity.LandingsPage">WinUICommunity.LandingsPage</a></td>
+<td><a href="https://github.com/WinUICommunity/LandingsPage">Github</a></td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/WinUICommunity.ShellContextMenu">WinUICommunity.ShellContextMenu</a></td>
+<td><a href="https://github.com/WinUICommunity/ShellContextMenu">Github</a></td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/WinUICommunity.Common">WinUICommunity.Common</a></td>
+<td><a href="https://github.com/WinUICommunity/Common">Github</a></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
 </search>
