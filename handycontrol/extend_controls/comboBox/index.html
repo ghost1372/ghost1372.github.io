@@ -21,16 +21,16 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":350},"copycode":{"enable":true,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="HC extension of native combobox. 1public class ComboBox : System.Windows.Controls.ComboBox, IDataInput Attributes   Property Description Default Value Remarks    VerifyFunc Data Verification Delegatio">
+    <meta name="description" content="HC extension of native combobox. 1public class ComboBox : System.Windows.Controls.ComboBox, IDataInput Attributes   Property Description Default Value Remarks    AutoComplete Whether to automatically">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ComboBox">
 <meta property="og:url" content="http://example.com/handycontrol/extend_controls/comboBox/index.html">
 <meta property="og:site_name" content="Ghost1372">
-<meta property="og:description" content="HC extension of native combobox. 1public class ComboBox : System.Windows.Controls.ComboBox, IDataInput Attributes   Property Description Default Value Remarks    VerifyFunc Data Verification Delegatio">
+<meta property="og:description" content="HC extension of native combobox. 1public class ComboBox : System.Windows.Controls.ComboBox, IDataInput Attributes   Property Description Default Value Remarks    AutoComplete Whether to automatically">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/ComboBox_1.png">
-<meta property="article:published_time" content="2022-01-14T09:10:30.102Z">
-<meta property="article:modified_time" content="2022-01-14T09:10:30.102Z">
+<meta property="article:published_time" content="2023-03-18T21:43:20.150Z">
+<meta property="article:modified_time" content="2023-03-18T21:43:20.150Z">
 <meta property="article:author" content="Ghost1372">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/ComboBox_1.png">
@@ -90,7 +90,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-handycontrol---3.4.4"><a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.4.4</a></li><li class="menu-item menu-item-winuicommunity"><a href="/winUICommunity/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>WinUICommunity</a></li><li class="menu-item menu-item-winuicommunity.settingsui---3.1.1"><a href="/winUICommunitySettingsUI/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>WinUICommunity.SettingsUI - 3.1.1</a></li><li class="menu-item menu-item-winuicommunity.landingspage---1.3.3"><a href="/winUICommunityLandingsPage/" rel="section"><i class="fab fa-intercom fa-fw"></i>WinUICommunity.LandingsPage - 1.3.3</a></li><li class="menu-item menu-item-winuicommunity.shellcontextmenu---3.1.0"><a href="/winUICommunityShellContextMenu/" rel="section"><i class="fas fa-brain fa-fw"></i>WinUICommunity.ShellContextMenu - 3.1.0</a></li><li class="menu-item menu-item-winuicommunity.common---3.2.2"><a href="/winUICommunityCommon/" rel="section"><i class="fas fa-tools fa-fw"></i>WinUICommunity.Common - 3.2.2</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-handycontrol---3.4.5"><a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.4.5</a></li><li class="menu-item menu-item-winuicommunity"><a href="/winUICommunity/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>WinUICommunity</a></li><li class="menu-item menu-item-winuicommunity.settingsui---3.2.2"><a href="/winUICommunitySettingsUI/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>WinUICommunity.SettingsUI - 3.2.2</a></li><li class="menu-item menu-item-winuicommunity.landingspage---1.3.5"><a href="/winUICommunityLandingsPage/" rel="section"><i class="fab fa-intercom fa-fw"></i>WinUICommunity.LandingsPage - 1.3.5</a></li><li class="menu-item menu-item-winuicommunity.shellcontextmenu---3.1.1"><a href="/winUICommunityShellContextMenu/" rel="section"><i class="fas fa-brain fa-fw"></i>WinUICommunity.ShellContextMenu - 3.1.1</a></li><li class="menu-item menu-item-winuicommunity.common---3.2.5"><a href="/winUICommunityCommon/" rel="section"><i class="fas fa-tools fa-fw"></i>WinUICommunity.Common - 3.2.5</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -147,7 +147,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Attributes"><span class="nav-number">1.</span> <span class="nav-text">Attributes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Additional-attributes"><span class="nav-number">2.</span> <span class="nav-text">Additional attributes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Method"><span class="nav-number">3.</span> <span class="nav-text">Method</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Style"><span class="nav-number">4.</span> <span class="nav-text">Style</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Case"><span class="nav-number">5.</span> <span class="nav-text">Case</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Attributes"><span class="nav-number">1.</span> <span class="nav-text">Attributes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Additional-attributes"><span class="nav-number">2.</span> <span class="nav-text">Additional attributes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Style"><span class="nav-number">3.</span> <span class="nav-text">Style</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Case"><span class="nav-number">4.</span> <span class="nav-text">Case</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -643,7 +643,7 @@
 
 <div class="post-meta-container">
   <ul class="breadcrumb">
-            <li><a href="/handycontrol/">HANDYCONTROL - 3.4.4</a></li>
+            <li><a href="/handycontrol/">HANDYCONTROL - 3.4.5</a></li>
             <li><a href="/handycontrol/extend_controls/">EXTENDED CONTROL</a></li>
           <li>COMBOBOX</li>
   </ul>
@@ -666,36 +666,6 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>VerifyFunc</td>
-<td>Data Verification Delegation</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>IsError</td>
-<td>Is the data wrong</td>
-<td>false</td>
-<td></td>
-</tr>
-<tr>
-<td>ErrorStr</td>
-<td>Error prompt</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>TextType</td>
-<td>Text Type</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>ShowClearButton</td>
-<td>Whether to show the clear button</td>
-<td>false</td>
-<td></td>
-</tr>
-<tr>
 <td>AutoComplete</td>
 <td>Whether to automatically complete the input</td>
 <td>false</td>
@@ -790,20 +760,6 @@
 <td></td>
 </tr>
 </tbody></table>
-<h1 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h1><table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Description</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>VerifyData</td>
-<td>Verify Data</td>
-<td>Verification can be triggered manually</td>
-</tr>
-</tbody></table>
 <h1 id="Style"><a href="#Style" class="headerlink" title="Style"></a>Style</h1><table>
 <thead>
 <tr>
@@ -832,7 +788,7 @@
       
     </div>
   <ul class="breadcrumb">
-            <li><a href="/handycontrol/">HANDYCONTROL - 3.4.4</a></li>
+            <li><a href="/handycontrol/">HANDYCONTROL - 3.4.5</a></li>
             <li><a href="/handycontrol/extend_controls/">EXTENDED CONTROL</a></li>
           <li>COMBOBOX</li>
   </ul>
