@@ -21,17 +21,17 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":350},"copycode":{"enable":true,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="you can use SystemBackdropsHelper for accessing Mica and Acrylic Effect for your Window. ThemeHelperif you want to Mica&#x2F;Acrylic effect change with Windows&#x2F;Application theme (Dark&#x2F;Light Mode) you can u">
+    <meta name="description" content="you can use SystemBackdropsHelper for accessing Mica and Acrylic Effect for your Window. ThemeManagerif you want to Mica&#x2F;Acrylic effect change with Windows&#x2F;Application theme (Dark&#x2F;Light Mode) you can">
 <meta property="og:type" content="website">
 <meta property="og:title" content="SystemBackdropsHelper">
 <meta property="og:url" content="http://example.com/winUICommunityCommon/helpers/systemBackdropsHelper/index.html">
 <meta property="og:site_name" content="Ghost1372">
-<meta property="og:description" content="you can use SystemBackdropsHelper for accessing Mica and Acrylic Effect for your Window. ThemeHelperif you want to Mica&#x2F;Acrylic effect change with Windows&#x2F;Application theme (Dark&#x2F;Light Mode) you can u">
+<meta property="og:description" content="you can use SystemBackdropsHelper for accessing Mica and Acrylic Effect for your Window. ThemeManagerif you want to Mica&#x2F;Acrylic effect change with Windows&#x2F;Application theme (Dark&#x2F;Light Mode) you can">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Mica.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Acrylic.png">
-<meta property="article:published_time" content="2022-06-26T09:20:07.963Z">
-<meta property="article:modified_time" content="2022-06-26T09:20:07.963Z">
+<meta property="article:published_time" content="2023-03-24T23:37:29.863Z">
+<meta property="article:modified_time" content="2023-03-24T23:37:29.863Z">
 <meta property="article:author" content="Ghost1372">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Mica.png">
@@ -148,7 +148,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ThemeHelper"><span class="nav-number">1.</span> <span class="nav-text">ThemeHelper</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Using-Without-ThemeHelper"><span class="nav-number">2.</span> <span class="nav-text">Using Without ThemeHelper</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">3.</span> <span class="nav-text">Demo</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ThemeManager"><span class="nav-number">1.</span> <span class="nav-text">ThemeManager</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Using-Without-ThemeHelper"><span class="nav-number">2.</span> <span class="nav-text">Using Without ThemeHelper</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">3.</span> <span class="nav-text">Demo</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -320,10 +320,10 @@
       
       <div class="post-body">
           <p>you can use <code>SystemBackdropsHelper</code> for accessing Mica and Acrylic Effect for your Window.</p>
-<h1 id="ThemeHelper"><a href="#ThemeHelper" class="headerlink" title="ThemeHelper"></a>ThemeHelper</h1><p>if you want to Mica/Acrylic effect change with Windows/Application theme (Dark/Light Mode) you can use <code>ThemeHelper</code>:</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ThemeHelper.Initialize(window, BackdropType.Mica);</span><br></pre></td></tr></table></figure>
+<h1 id="ThemeManager"><a href="#ThemeManager" class="headerlink" title="ThemeManager"></a>ThemeManager</h1><p>if you want to Mica/Acrylic effect change with Windows/Application theme (Dark/Light Mode) you can use <code>ThemeManager</code>:</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ThemeManager.Initialize(window, BackdropType.Mica);</span><br></pre></td></tr></table></figure>
 
-<div class="note info"><p>for more info, please see <a target="_blank" rel="noopener" href="https://ghost1372.github.io/settingsui/helpers/themeHelper/">here</a></p>
+<div class="note info"><p>for more info, please see <a target="_blank" rel="noopener" href="https://ghost1372.github.io/winUICommunityCommon/tools/themeManager/">here</a></p>
 </div>
 
 <h1 id="Using-Without-ThemeHelper"><a href="#Using-Without-ThemeHelper" class="headerlink" title="Using Without ThemeHelper"></a>Using Without ThemeHelper</h1><p>you can use <code>SystemBackdropsHelper</code></p>
