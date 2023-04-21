@@ -21,15 +21,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":270},"copycode":{"enable":true,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="You can simplify the operation of saving, retrieving and selecting the Application theme. All operations are performed automatically. first of all, Initialize ThemeManager (Theme retrieving is done au">
+    <meta name="description" content="We moved all namespaces into a single namespace. No matter which (WinUICommunity) library you use, the namespace is always as followsFor use in the Xaml:xmlns:wuc&#x3D;&quot;using:WinUICommunity&quot;For u">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ThemeManager">
 <meta property="og:url" content="http://example.com/winUICommunityCommon/themeManager/index.html">
 <meta property="og:site_name" content="Ghost1372">
-<meta property="og:description" content="You can simplify the operation of saving, retrieving and selecting the Application theme. All operations are performed automatically. first of all, Initialize ThemeManager (Theme retrieving is done au">
+<meta property="og:description" content="We moved all namespaces into a single namespace. No matter which (WinUICommunity) library you use, the namespace is always as followsFor use in the Xaml:xmlns:wuc&#x3D;&quot;using:WinUICommunity&quot;For u">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-04-13T11:57:36.897Z">
-<meta property="article:modified_time" content="2023-04-13T11:57:36.897Z">
+<meta property="article:published_time" content="2023-04-21T09:26:26.104Z">
+<meta property="article:modified_time" content="2023-04-21T09:26:26.104Z">
 <meta property="article:author" content="Ghost1372">
 <meta name="twitter:card" content="summary">
 
@@ -249,7 +249,10 @@
       
       
       <div class="post-body">
-          <p>You can simplify the operation of saving, retrieving and selecting the Application theme. All operations are performed automatically.</p>
+          <div class="note warning"><p>We moved all namespaces into a single namespace. No matter which (WinUICommunity) library you use, the namespace is always as follows<br>For use in the Xaml:<br><code>xmlns:wuc=&quot;using:WinUICommunity&quot;</code><br>For use in the Csharp:<br><code>using WinUICommunity;</code></p>
+</div>
+
+<p>You can simplify the operation of saving, retrieving and selecting the Application theme. All operations are performed automatically.</p>
 <p>first of all, <code>Initialize</code> ThemeManager (Theme retrieving is done automatically by the Initialize method):</p>
 <h1 id="Initialize"><a href="#Initialize" class="headerlink" title="Initialize"></a>Initialize</h1><h2 id="1-Initialize-with-Window"><a href="#1-Initialize-with-Window" class="headerlink" title="1.Initialize with Window"></a>1.Initialize with Window</h2><p>In this case you are Initializing a Window <code>(MainWindow)</code></p>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> ThemeManager themeManager &#123;<span class="keyword">get</span>; <span class="keyword">set</span>;&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnLaunched</span>(<span class="params">Microsoft.UI.Xaml.LaunchActivatedEventArgs args</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    m_window = <span class="keyword">new</span> MainWindow();</span><br><span class="line">    themeManager = ThemeManager.Initialize(m_window);</span><br><span class="line">    <span class="comment">// OR</span></span><br><span class="line">    <span class="comment">// themeManager = new ThemeManager(m_window);</span></span><br><span class="line">    m_window.Activate();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>

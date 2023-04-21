@@ -39,8 +39,8 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/2.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/3.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/4.png">
-<meta property="article:published_time" content="2023-02-23T20:20:09.353Z">
-<meta property="article:modified_time" content="2023-02-23T20:20:09.353Z">
+<meta property="article:published_time" content="2023-04-21T09:17:04.141Z">
+<meta property="article:modified_time" content="2023-04-21T09:17:04.141Z">
 <meta property="article:author" content="Ghost1372">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img.shields.io/badge/.net-%3E=6.0-brightgreen">
@@ -261,6 +261,9 @@
 
 <p>After installing, add the following resource to <code>app.xaml</code></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">Source</span>=<span class="string">&quot;ms-appx:///SettingsUI/Themes/Generic.xaml&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<div class="note warning"><p>We moved all namespaces into a single namespace. No matter which (WinUICommunity) library you use, the namespace is always as follows<br>For use in the Xaml:<br><code>xmlns:wuc=&quot;using:WinUICommunity&quot;</code><br>For use in the Csharp:<br><code>using WinUICommunity;</code></p>
+</div>
 
 <h1 id="Compile-source-code"><a href="#Compile-source-code" class="headerlink" title="Compile source code"></a>Compile source code</h1><div class="note warning"><p>Please confirm that your development environment meets the requirements before compiling.</p>
 <ul>

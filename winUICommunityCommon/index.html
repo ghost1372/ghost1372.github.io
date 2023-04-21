@@ -32,8 +32,8 @@
 <meta property="og:image" content="https://img.shields.io/badge/OS-%3E%3D%20Windows%2010%20Build%201809-orange">
 <meta property="og:image" content="https://img.shields.io/badge/IDE-vs2022-red">
 <meta property="og:image" content="https://img.shields.io/badge/CSharp-Latest-yellow">
-<meta property="article:published_time" content="2023-02-23T20:21:31.624Z">
-<meta property="article:modified_time" content="2023-02-23T20:21:31.624Z">
+<meta property="article:published_time" content="2023-04-21T09:08:34.522Z">
+<meta property="article:modified_time" content="2023-04-21T09:08:34.522Z">
 <meta property="article:author" content="Ghost1372">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img.shields.io/badge/.net-%3E=6.0-brightgreen">
@@ -265,6 +265,10 @@
 </tbody></table>
 <div class="note warning"><p>Github is generally updated every day and is relatively unsuitable for production.</p>
 </div>
+
+<div class="note warning"><p>We moved all namespaces into a single namespace. No matter which (WinUICommunity) library you use, the namespace is always as follows<br>For use in the Xaml:<br><code>xmlns:wuc=&quot;using:WinUICommunity&quot;</code><br>For use in the Csharp:<br><code>using WinUICommunity;</code></p>
+</div>
+
 
 <h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Install-Package WinUICommunity.Common</span><br></pre></td></tr></table></figure>
 

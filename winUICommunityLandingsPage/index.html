@@ -29,8 +29,8 @@
 <meta property="og:description" content="Create a landings page in the style of WinUI 3 and WinUI-Gallery very quickly and easily ported from https:&#x2F;&#x2F;github.com&#x2F;microsoft&#x2F;WinUI-Gallery   1Install-Package WinUICommunity.LandingsPage After ins">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/LandingsPage/0.png">
-<meta property="article:published_time" content="2023-04-13T00:41:17.301Z">
-<meta property="article:modified_time" content="2023-04-13T00:41:17.301Z">
+<meta property="article:published_time" content="2023-04-21T09:12:10.145Z">
+<meta property="article:modified_time" content="2023-04-21T09:12:10.145Z">
 <meta property="article:author" content="Ghost1372">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/LandingsPage/0.png">
@@ -253,7 +253,7 @@
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Install-Package WinUICommunity.LandingsPage</span><br></pre></td></tr></table></figure>
 <p>After installing, add the following resource to app.xaml</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">xmlns:winui=&quot;using:WinUICommunity&quot;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">Source</span>=<span class="string">&quot;ms-appx:///LandingsPage/Themes/Generic.xaml&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">winui:ItemTemplates</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">xmlns:wuc=&quot;using:WinUICommunity&quot;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">Source</span>=<span class="string">&quot;ms-appx:///LandingsPage/Themes/Generic.xaml&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">wuc:ItemTemplates</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 <p>See the Demo app to see how to use it.</p>
 <h2 id="Dependencies"><a href="#Dependencies" class="headerlink" title="Dependencies"></a>Dependencies</h2><p>This package is based on the following packages</p>
 <ul>
@@ -261,6 +261,9 @@
 <li>CommunityToolkit.WinUI.UI.Animations</li>
 <li>Microsoft.Graphics.Win2D</li>
 </ul>
+<div class="note warning"><p>We moved all namespaces into a single namespace. No matter which (WinUICommunity) library you use, the namespace is always as follows<br>For use in the Xaml:<br><code>xmlns:wuc=&quot;using:WinUICommunity&quot;</code><br>For use in the Csharp:<br><code>using WinUICommunity;</code></p>
+</div>
+
 <p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/LandingsPage/0.png" alt="LandingsPage"></p>
 
       </div>
