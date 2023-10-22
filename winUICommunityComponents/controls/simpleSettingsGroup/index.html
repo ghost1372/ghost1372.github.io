@@ -19,27 +19,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":270},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="HandyControl comes with some geometric shape definitions, but it is obviously not enough to apply to production. We are not prepared to be all-encompassing. There is never a bottom, so we will do the">
+    <meta name="description" content="We moved all namespaces into a single namespace. No matter which (WinUICommunity) library you use, the namespace is always as followsFor use in the Xaml:xmlns:wuc&#x3D;&quot;using:WinUICommunity&quot;For u">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Geometric shape">
-<meta property="og:url" content="http://example.com/handycontrol/basic_xaml/geometries/index.html">
+<meta property="og:title" content="SimpleSettingsGroup">
+<meta property="og:url" content="http://example.com/winUICommunityComponents/controls/simpleSettingsGroup/index.html">
 <meta property="og:site_name" content="Ghost1372">
-<meta property="og:description" content="HandyControl comes with some geometric shape definitions, but it is obviously not enough to apply to production. We are not prepared to be all-encompassing. There is never a bottom, so we will do the">
+<meta property="og:description" content="We moved all namespaces into a single namespace. No matter which (WinUICommunity) library you use, the namespace is always as followsFor use in the Xaml:xmlns:wuc&#x3D;&quot;using:WinUICommunity&quot;For u">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-25T11:31:48.001Z">
-<meta property="article:modified_time" content="2020-08-30T15:41:24.272Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/SimpleSettingsGroup.png">
+<meta property="article:published_time" content="2023-10-21T20:42:06.596Z">
+<meta property="article:modified_time" content="2023-10-21T20:42:06.596Z">
 <meta property="article:author" content="Ghost1372">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/SimpleSettingsGroup.png">
 
 
-<link rel="canonical" href="http://example.com/handycontrol/basic_xaml/geometries/">
+<link rel="canonical" href="http://example.com/winUICommunityComponents/controls/simpleSettingsGroup/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/handycontrol/basic_xaml/geometries/index.html","path":"handycontrol/basic_xaml/geometries/index.html","title":"Geometric shape"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/winUICommunityComponents/controls/simpleSettingsGroup/index.html","path":"winUICommunityComponents/controls/simpleSettingsGroup/index.html","title":"SimpleSettingsGroup"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Geometric shape | Ghost1372
+<title>SimpleSettingsGroup | Ghost1372
 </title>
   
 
@@ -127,7 +129,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -140,6 +142,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Attributes"><span class="nav-number">1.</span> <span class="nav-text">Attributes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Example"><span class="nav-number">2.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">3.</span> <span class="nav-text">Demo</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -178,105 +181,69 @@
     <div class="main-inner page posts-expand">
     <ul class="sub-menu menu">
       
-  <li class="menu-item menu-item-thanks"><a href="/handycontrol/tnx/" rel="section"><i class="fa fa-user fa-fw"></i>Thanks</a></li>
+  <li class="menu-item menu-item-breaking-changes"><a href="/winUICommunityComponents/breaking_changes/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>Breaking Changes</a></li>
 
 
       
-  <li class="menu-item menu-item-quick-start"><a href="/handycontrol/quick_start/" rel="section"><i class="fa fa-h-square fa-fw"></i>Quick start</a></li>
+  <li class="menu-item menu-item-quick-start"><a href="/winUICommunityComponents/quick_start/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>Quick start</a></li>
 
 
       
-  <li class="menu-item menu-item-basic-xaml"><a href="/handycontrol/basic_xaml/" rel="section"><i class="fab fa-xing fa-fw"></i>Basic xaml</a></li>
+  <li class="menu-item menu-item-controls"><a href="/winUICommunityComponents/controls/" rel="section"><i class="fab fa-intercom fa-fw"></i>Controls</a></li>
 
 
       
-  <li class="menu-item menu-item-attached-property"><a href="/handycontrol/attach/" rel="section"><i class="fas fa-paperclip fa-fw"></i>Attached Property</a></li>
+  <li class="menu-item menu-item-styles"><a href="/winUICommunityComponents/styles/" rel="section"><i class="fas fa-palette fa-fw"></i>Styles</a></li>
 
 
       
-  <li class="menu-item menu-item-native-control"><a href="/handycontrol/native_controls/" rel="section"><i class="fas fa-border-style fa-fw"></i>Native control</a></li>
-
-
-      
-  <li class="menu-item menu-item-extended-control"><a href="/handycontrol/extend_controls/" rel="section"><i class="fab fa-intercom fa-fw"></i>Extended control</a></li>
-
-
-      
-  <li class="menu-item menu-item-data"><a href="/handycontrol/data/" rel="section"><i class="fas fa-database fa-fw"></i>Data</a></li>
-
-
-      
-  <li class="menu-item menu-item-expression"><a href="/handycontrol/expression/" rel="section"><i class="fas fa-database fa-fw"></i>Expression</a></li>
-
-
-      
-  <li class="menu-item menu-item-media"><a href="/handycontrol/media/" rel="section"><i class="fas fa-database fa-fw"></i>Media</a></li>
-
-
-      
-  <li class="menu-item menu-item-tools-extensions-helper"><a href="/handycontrol/tools/" rel="section"><i class="fas fa-tools fa-fw"></i>Tools-Extensions-Helper</a></li>
-
-
-      
-  <li class="menu-item menu-item-globalization"><a href="/handycontrol/langs/" rel="section"><i class="fas fa-globe-asia fa-fw"></i>Globalization</a></li>
-
-
-      
-  <li class="menu-item menu-item-breaking-changes"><a href="/handycontrol/breaking_changes/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>Breaking Changes</a></li>
-
-
-      
-  <li class="menu-item menu-item-theme"><a href="/handycontrol/theme/" rel="section"><i class="fas fa-palette fa-fw"></i>Theme</a></li>
-
-
-      
-  <li class="menu-item menu-item-interactivity"><a href="/handycontrol/interactivity/" rel="section"><i class="fas fa-i-cursor fa-fw"></i>Interactivity</a></li>
-
-
-      
-  <li class="menu-item menu-item-persian-toolkit"><a href="/handycontrol/persianToolkit/" rel="section"><i class="fab fa-jira fa-fw"></i>Persian Toolkit</a></li>
-
-
-      
-  <li class="menu-item menu-item-intellisense"><a href="/handycontrol/intellisense/" rel="section"><i class="fas fa-brain fa-fw"></i>Intellisense</a></li>
+  <li class="menu-item menu-item-validation"><a href="/winUICommunityComponents/validation/" rel="section"><i class="fab fa-intercom fa-fw"></i>Validation</a></li>
 
 
     </ul>
     <ul class="sub-menu menu">
       
-  <li class="menu-item menu-item-behavior"><a href="/handycontrol/basic_xaml/behaviors/" rel="section"><i class="fab fa-behance fa-fw"></i>Behavior</a></li>
+  <li class="menu-item menu-item-checkboxwithdescriptioncontrol"><a href="/winUICommunityComponents/controls/checkBoxWithDescriptionControl/" rel="section">CheckBoxWithDescriptionControl</a></li>
 
 
       
-  <li class="menu-item menu-item-brush"><a href="/handycontrol/basic_xaml/brushes/" rel="section"><i class="fas fa-brush fa-fw"></i>Brush</a></li>
+  <li class="menu-item menu-item-inlineautocompletetextbox"><a href="/winUICommunityComponents/controls/inlineAutoCompleteTextBox/" rel="section">InlineAutoCompleteTextBox</a></li>
 
 
       
-  <li class="menu-item menu-item-color"><a href="/handycontrol/basic_xaml/colors/" rel="section"><i class="fas fa-palette fa-fw"></i>Color</a></li>
+  <li class="menu-item menu-item-isenabledtextbox"><a href="/winUICommunityComponents/controls/isEnabledTextBox/" rel="section">IsEnabledTextBox</a></li>
 
 
       
-  <li class="menu-item menu-item-converter"><a href="/handycontrol/basic_xaml/converters/" rel="section"><i class="fab fa-confluence fa-fw"></i>Converter</a></li>
+  <li class="menu-item menu-item-keyvisual"><a href="/winUICommunityComponents/controls/keyVisual/" rel="section">KeyVisual</a></li>
 
 
       
-  <li class="menu-item menu-item-effect"><a href="/handycontrol/basic_xaml/effects/" rel="section"><i class="fab fa-buffer fa-fw"></i>Effect</a></li>
+  <li class="menu-item menu-item-oobepagecontrol"><a href="/winUICommunityComponents/controls/oOBEPageControl/" rel="section">OOBEPageControl</a></li>
 
 
       
-  <li class="menu-item menu-item-font-size"><a href="/handycontrol/basic_xaml/fonts/" rel="section"><i class="fas fa-font fa-fw"></i>Font Size</a></li>
+  <li class="menu-item menu-item-settingscard"><a href="/winUICommunityComponents/controls/settingsCard/" rel="section">SettingsCard</a></li>
 
 
       
-  <li class="menu-item menu-item-geometry"><a href="/handycontrol/basic_xaml/geometries/" rel="section"><i class="fas fa-draw-polygon fa-fw"></i>Geometry</a></li>
+  <li class="menu-item menu-item-settingsgroup"><a href="/winUICommunityComponents/controls/settingsGroup/" rel="section">SettingsGroup</a></li>
 
 
       
-  <li class="menu-item menu-item-path"><a href="/handycontrol/basic_xaml/paths/" rel="section"><i class="fas fa-wave-square fa-fw"></i>Path</a></li>
+  <li class="menu-item menu-item-simplesettingsgroup"><a href="/winUICommunityComponents/controls/simpleSettingsGroup/" rel="section">SimpleSettingsGroup</a></li>
 
 
       
-  <li class="menu-item menu-item-size"><a href="/handycontrol/basic_xaml/sizes/" rel="section"><i class="fas fa-text-height fa-fw"></i>Size</a></li>
+  <li class="menu-item menu-item-settingspagecontrol"><a href="/winUICommunityComponents/controls/settingsPageControl/" rel="section">SettingsPageControl</a></li>
+
+
+      
+  <li class="menu-item menu-item-shortcut"><a href="/winUICommunityComponents/controls/shortcut/" rel="section">Shortcut</a></li>
+
+
+      
+  <li class="menu-item menu-item-windows-11-settings-examples"><a href="/winUICommunityComponents/controls/windows11SettingsExamples/" rel="section">Windows 11 Settings Examples</a></li>
 
 
     </ul>
@@ -287,14 +254,14 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Geometric shape
+<h1 class="post-title" itemprop="name headline">SimpleSettingsGroup
 </h1>
 
 <div class="post-meta-container">
   <ul class="breadcrumb">
-            <li><a href="/handycontrol/">HANDYCONTROL - 3.4.5</a></li>
-            <li><a href="/handycontrol/basic_xaml/">BASIC XAML</a></li>
-          <li>GEOMETRY</li>
+            <li><a href="/winUICommunityComponents/">COMPONENTS - 5.3.1</a></li>
+            <li><a href="/winUICommunityComponents/controls/">CONTROLS</a></li>
+          <li>SIMPLESETTINGSGROUP</li>
   </ul>
 </div>
 
@@ -303,250 +270,36 @@
       
       
       <div class="post-body">
-          <p>HandyControl comes with some geometric shape definitions, but it is obviously not enough to apply to production. We are not prepared to be all-encompassing. There is never a bottom, so we will do the opposite. It only contains the control library itself (of course users can also use it), and the rest should expand on its own. All shape definitions in the control library are listed in the following table:</p>
-<table>
+          <div class="note warning"><p>We moved all namespaces into a single namespace. No matter which (WinUICommunity) library you use, the namespace is always as follows<br>For use in the Xaml:<br><code>xmlns:wuc=&quot;using:WinUICommunity&quot;</code><br>For use in the Csharp:<br><code>using WinUICommunity;</code></p>
+</div>
+
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
 <thead>
 <tr>
 <th>Name</th>
-<th>Description</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>CalendarGeometry</td>
-<td>Calendar</td>
+<td>Header</td>
 </tr>
 <tr>
-<td>DeleteGeometry</td>
-<td>Delete</td>
-</tr>
-<tr>
-<td>DeleteFillCircleGeometry</td>
-<td>Delete (Circular Fill)</td>
-</tr>
-<tr>
-<td>CloseGeometry</td>
-<td>Close</td>
-</tr>
-<tr>
-<td>DownGeometry</td>
-<td>Next</td>
-</tr>
-<tr>
-<td>UpGeometry</td>
-<td>On</td>
-</tr>
-<tr>
-<td>ClockGeometry</td>
-<td>Clock</td>
-</tr>
-<tr>
-<td>LeftGeometry</td>
-<td>Left</td>
-</tr>
-<tr>
-<td>RightGeometry</td>
-<td>Right</td>
-</tr>
-<tr>
-<td>RotateLeftGeometry</td>
-<td>Rotate Left</td>
-</tr>
-<tr>
-<td>RotateRightGeometry</td>
-<td>Rotate Right</td>
-</tr>
-<tr>
-<td>EnlargeGeometry</td>
-<td>Zoom</td>
-</tr>
-<tr>
-<td>ReduceGeometry</td>
-<td>Zoom out</td>
-</tr>
-<tr>
-<td>DownloadGeometry</td>
-<td>Download</td>
-</tr>
-<tr>
-<td>SaveGeometry</td>
-<td>Save</td>
-</tr>
-<tr>
-<td>WindowsGeometry</td>
-<td>Window</td>
-</tr>
-<tr>
-<td>FullScreenGeometry</td>
-<td>Full Screen</td>
-</tr>
-<tr>
-<td>FullScreenReturnGeometry</td>
-<td>Full Screen Back</td>
-</tr>
-<tr>
-<td>SearchGeometry</td>
-<td>Search</td>
-</tr>
-<tr>
-<td>UpDownGeometry</td>
-<td>Upper and lower combinations</td>
-</tr>
-<tr>
-<td>WindowMinGeometry</td>
-<td>Window Minimization</td>
-</tr>
-<tr>
-<td>WindowRestoreGeometry</td>
-<td>Window Restore</td>
-</tr>
-<tr>
-<td>WindowMaxGeometry</td>
-<td>Window Maximization</td>
-</tr>
-<tr>
-<td>PageModeGeometry</td>
-<td>Single page mode</td>
-</tr>
-<tr>
-<td>TwoPageModeGeometry</td>
-<td>Double page mode</td>
-</tr>
-<tr>
-<td>ScrollModeGeometry</td>
-<td>Scroll mode</td>
-</tr>
-<tr>
-<td>AudioGeometry</td>
-<td>Sound</td>
-</tr>
-<tr>
-<td>BubbleTailGeometry</td>
-<td>Bubble Tail</td>
-</tr>
-<tr>
-<td>StarGeometry</td>
-<td>Love</td>
-</tr>
-<tr>
-<td>AddGeometry</td>
-<td>Add</td>
-</tr>
-<tr>
-<td>SubGeometry</td>
-<td>Subtract</td>
-</tr>
-<tr>
-<td>WarningGeometry</td>
-<td>Warning</td>
-</tr>
-<tr>
-<td>InfoGeometry</td>
-<td>Information</td>
-</tr>
-<tr>
-<td>ErrorGeometry</td>
-<td>Error</td>
-</tr>
-<tr>
-<td>SuccessGeometry</td>
-<td>Success</td>
-</tr>
-<tr>
-<td>FatalGeometry</td>
-<td>Critical</td>
-</tr>
-<tr>
-<td>AskGeometry</td>
-<td>Inquiry</td>
-</tr>
-<tr>
-<td>AllGeometry</td>
-<td>All</td>
-</tr>
-<tr>
-<td>DragVerticalGeometry</td>
-<td>Drag and Drop Vertically (for toolbars)</td>
-</tr>
-<tr>
-<td>DragHorizontalGeometry</td>
-<td>Drag and Drop Horizontally (for toolbars)</td>
-</tr>
-<tr>
-<td>CheckedGeometry</td>
-<td>Selected</td>
-</tr>
-<tr>
-<td>EyeOpenGeometry</td>
-<td>Open eyes</td>
-</tr>
-<tr>
-<td>EyeCloseGeometry</td>
-<td>Close eyes</td>
-</tr>
-<tr>
-<td>DropperGeometry</td>
-<td>Select Color from Shell</td>
-</tr>
-<tr>
-<td>VisualStudioGeometry</td>
-<td>Visual Studio Icon</td>
-</tr>
-<tr>
-<td>ConfigGeometry</td>
-<td>Gear Icon</td>
-</tr>
-<tr>
-<td>NewGeometry</td>
-<td>New Icon</td>
-</tr>
-<tr>
-<td>RemoveGeometry</td>
-<td>Remove Icon</td>
-</tr>
-<tr>
-<td>AlignLeftGeometry</td>
-<td></td>
-</tr>
-<tr>
-<td>AlignRightGeometry</td>
-<td></td>
-</tr>
-<tr>
-<td>AlignHCenterGeometry</td>
-<td></td>
-</tr>
-<tr>
-<td>AlignHStretchGeometry</td>
-<td></td>
-</tr>
-<tr>
-<td>AlignTopGeometry</td>
-<td></td>
-</tr>
-<tr>
-<td>AlignBottomGeometry</td>
-<td></td>
-</tr>
-<tr>
-<td>AlignVCenterGeometry</td>
-<td></td>
-</tr>
-<tr>
-<td>AlignVStretchGeometry</td>
-<td></td>
+<td>Description</td>
 </tr>
 </tbody></table>
-<div class="note info no-icon"><p>Example: <code>Data=&quot;{StaticResource ErrorGeometry}&quot;</code></p>
-</div>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">wuc:SimpleSettingsGroup</span> <span class="attr">Header</span>=<span class="string">&quot;Behavior&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">wuc:SettingsCard</span> <span class="attr">Header</span>=<span class="string">&quot;Keep screen on&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">wuc:SettingsCard.HeaderIcon</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">SymbolIcon</span> <span class="attr">Symbol</span>=<span class="string">&quot;SetLockScreen&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">wuc:SettingsCard.HeaderIcon</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ToggleSwitch</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">wuc:SettingsCard</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">wuc:SettingsCard</span> <span class="attr">Header</span>=<span class="string">&quot;Auto Download&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">wuc:SettingsCard.HeaderIcon</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">SymbolIcon</span> <span class="attr">Symbol</span>=<span class="string">&quot;Download&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">wuc:SettingsCard.HeaderIcon</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ToggleSwitch</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">wuc:SettingsCard</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">wuc:SimpleSettingsGroup</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a target="_blank" rel="noopener" href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/SimpleSettingsGroup.png" alt="SettingsUI"></p>
+
       </div>
       
       
       
     </div>
   <ul class="breadcrumb">
-            <li><a href="/handycontrol/">HANDYCONTROL - 3.4.5</a></li>
-            <li><a href="/handycontrol/basic_xaml/">BASIC XAML</a></li>
-          <li>GEOMETRY</li>
+            <li><a href="/winUICommunityComponents/">COMPONENTS - 5.3.1</a></li>
+            <li><a href="/winUICommunityComponents/controls/">CONTROLS</a></li>
+          <li>SIMPLESETTINGSGROUP</li>
   </ul>
 
     
