@@ -28,8 +28,8 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/IsEnabledTextBox_UnChecked.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/IsEnabledTextBox_Checked.png">
-<meta property="article:published_time" content="2023-07-08T12:38:49.032Z">
-<meta property="article:modified_time" content="2023-07-08T12:38:49.032Z">
+<meta property="article:published_time" content="2023-12-20T22:12:20.885Z">
+<meta property="article:modified_time" content="2023-12-20T22:12:20.885Z">
 <meta property="article:author" content="Ghost1372">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/IsEnabledTextBox_UnChecked.png">
@@ -92,7 +92,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-handycontrol---3.4.5"><a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.4.5</a></li><li class="menu-item menu-item-winuicommunity"><a href="/winUICommunity/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>WinUICommunity</a></li><li class="menu-item menu-item-core---5.5.0"><a href="/winUICommunityCore/" rel="section"><i class="fas fa-tools fa-fw"></i>Core - 5.5.0</a></li><li class="menu-item menu-item-landingpages---5.5.0"><a href="/winUICommunityLandingPages/" rel="section"><i class="fab fa-intercom fa-fw"></i>LandingPages - 5.5.0</a></li><li class="menu-item menu-item-components---5.5.0"><a href="/winUICommunityComponents/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>Components - 5.5.0</a></li><li class="menu-item menu-item-contextmenuextensions---5.5.0"><a href="/winUICommunityContextMenuExtensions/" rel="section"><i class="fas fa-brain fa-fw"></i>ContextMenuExtensions - 5.5.0</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-handycontrol---3.4.5"><a href="/handycontrol/" rel="section"><i class="fa fa-h-square fa-fw"></i>HandyControl - 3.4.5</a></li><li class="menu-item menu-item-components---6.0.0"><a href="/winUICommunityComponents/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>Components - 6.0.0</a></li><li class="menu-item menu-item-core---6.0.0"><a href="/winUICommunityCore/" rel="section"><i class="fas fa-tools fa-fw"></i>Core - 6.0.0</a></li><li class="menu-item menu-item-landingpages---6.0.0"><a href="/winUICommunityLandingPages/" rel="section"><i class="fab fa-intercom fa-fw"></i>LandingPages - 6.0.0</a></li><li class="menu-item menu-item-contextmenuextensions---6.0.0"><a href="/winUICommunityContextMenuExtensions/" rel="section"><i class="fas fa-brain fa-fw"></i>ContextMenuExtensions - 6.0.0</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -220,6 +220,10 @@
 
 
       
+  <li class="menu-item menu-item-optionspagecontrol"><a href="/winUICommunityComponents/controls/optionsPageControl/" rel="section">OptionsPageControl</a></li>
+
+
+      
   <li class="menu-item menu-item-oobepagecontrol"><a href="/winUICommunityComponents/controls/oOBEPageControl/" rel="section">OOBEPageControl</a></li>
 
 
@@ -244,6 +248,14 @@
 
 
       
+  <li class="menu-item menu-item-switchpresenter"><a href="/winUICommunityComponents/controls/switchPresenter/" rel="section">SwitchPresenter</a></li>
+
+
+      
+  <li class="menu-item menu-item-uniformgrid"><a href="/winUICommunityComponents/controls/uniformGrid/" rel="section">UniformGrid</a></li>
+
+
+      
   <li class="menu-item menu-item-windows-11-settings-examples"><a href="/winUICommunityComponents/controls/windows11SettingsExamples/" rel="section">Windows 11 Settings Examples</a></li>
 
 
@@ -260,7 +272,7 @@
 
 <div class="post-meta-container">
   <ul class="breadcrumb">
-            <li><a href="/winUICommunityComponents/">COMPONENTS - 5.5.0</a></li>
+            <li><a href="/winUICommunityComponents/">COMPONENTS - 6.0.0</a></li>
             <li><a href="/winUICommunityComponents/controls/">CONTROLS</a></li>
           <li>ISENABLEDTEXTBOX</li>
   </ul>
@@ -287,8 +299,8 @@
 <h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">CheckBox</span> <span class="attr">Name</span>=<span class="string">&quot;check&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">x:Name</span>=<span class="string">&quot;IncludeInGlobalResultTitle&quot;</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">Margin</span>=<span class="string">&quot;0,10,0,0&quot;</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">Text</span>=<span class="string">&quot;Include in global result&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">wuc:IsEnabledTextBlock</span> <span class="attr">FontSize</span>=<span class="string">&quot;&#123;StaticResource SecondaryTextFontSize&#125;&quot;</span></span></span><br><span class="line"><span class="tag">                                        <span class="attr">IsEnabled</span>=<span class="string">&quot;&#123;Binding ElementName=check, Path=IsChecked&#125;&quot;</span></span></span><br><span class="line"><span class="tag">                                        <span class="attr">Text</span>=<span class="string">&quot;Show results on queries without direct activation command&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">CheckBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a target="_blank" rel="noopener" href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
-<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/IsEnabledTextBox_UnChecked.png" alt="SettingsUI"></p>
-<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/IsEnabledTextBox_Checked.png" alt="SettingsUI"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/IsEnabledTextBox_UnChecked.png" alt="WinUICommunity"></p>
+<p><img src="https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/IsEnabledTextBox_Checked.png" alt="WinUICommunity"></p>
 
       </div>
       
@@ -296,7 +308,7 @@
       
     </div>
   <ul class="breadcrumb">
-            <li><a href="/winUICommunityComponents/">COMPONENTS - 5.5.0</a></li>
+            <li><a href="/winUICommunityComponents/">COMPONENTS - 6.0.0</a></li>
             <li><a href="/winUICommunityComponents/controls/">CONTROLS</a></li>
           <li>ISENABLEDTEXTBOX</li>
   </ul>
