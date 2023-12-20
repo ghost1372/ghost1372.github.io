@@ -16105,7 +16105,7 @@ Example:
 <p>then in your <code>viewModel</code></p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> IRainbowFrame RainbowFrame;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">MainViewModel</span>(<span class="params">IRainbowFrame rainbowFrame</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    RainbowFrame.Initialize(App.currentWindow);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDoc/RainbowFrame.gif" alt="WinUICommunity"></p>
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/RainbowFrame.gif" alt="WinUICommunity"></p>
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
 ]]></content>
   </entry>
