@@ -15266,7 +15266,7 @@ Example:
 </tr>
 </thead>
 <tbody><tr>
-<td><a href="https://www.nuget.org/profiles/WinUICommunity">WinUICommunity</a></td>
+<td><a href="https://www.nuget.org/packages/WinUICommunity.Components">WinUICommunity.Components</a></td>
 <td><a href="https://github.com/WinUICommunity/WinUICommunity">Github</a></td>
 </tr>
 </tbody></table>
@@ -15333,6 +15333,8 @@ Example:
 
 <h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Install-Package WinUICommunity.Core</span><br></pre></td></tr></table></figure>
 
+<p>After installing, add the following resource to app.xaml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ResourceDictionary</span> <span class="attr">Source</span>=<span class="string">&quot;ms-appx:///WinUICommunity.Components/Themes/Generic.xaml&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 <p>See the Demo app to see how to use it</p>
 <h1 id="Compile-source-code"><a href="#Compile-source-code" class="headerlink" title="Compile source code"></a>Compile source code</h1><div class="note warning"><p>Please confirm that your development environment meets the requirements before compiling.</p>
 <ul>
