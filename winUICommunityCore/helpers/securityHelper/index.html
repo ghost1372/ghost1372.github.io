@@ -19,15 +19,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":270},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="GetMD5Hash1var md5 &#x3D; SecurityHelper.GetMD5Hash(message);  GetSHA256Hash1var md5 &#x3D; SecurityHelper.GetSHA256Hash(message);  Demoyou can run demo and see this feature.">
+    <meta name="description" content="Hash   Name    MD5   SHA1   SHA256   SHA384   SHA512   GetHashgenerate hash from a string 12345var md5 &#x3D; SecurityHelper.GetHash(text, HashAlgorithm.MD5);&#x2F;&#x2F; C7F373BEB9BC8072DB7B41917B02A788var sha256 &#x3D;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="SecurityHelper">
 <meta property="og:url" content="http://example.com/winUICommunityCore/helpers/securityHelper/index.html">
 <meta property="og:site_name" content="Ghost1372">
-<meta property="og:description" content="GetMD5Hash1var md5 &#x3D; SecurityHelper.GetMD5Hash(message);  GetSHA256Hash1var md5 &#x3D; SecurityHelper.GetSHA256Hash(message);  Demoyou can run demo and see this feature.">
+<meta property="og:description" content="Hash   Name    MD5   SHA1   SHA256   SHA384   SHA512   GetHashgenerate hash from a string 12345var md5 &#x3D; SecurityHelper.GetHash(text, HashAlgorithm.MD5);&#x2F;&#x2F; C7F373BEB9BC8072DB7B41917B02A788var sha256 &#x3D;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-12-20T21:40:38.512Z">
-<meta property="article:modified_time" content="2023-12-20T21:40:38.512Z">
+<meta property="article:published_time" content="2023-12-29T13:52:31.525Z">
+<meta property="article:modified_time" content="2023-12-29T13:52:31.525Z">
 <meta property="article:author" content="Ghost1372">
 <meta name="twitter:card" content="summary">
 
@@ -140,7 +140,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#GetMD5Hash"><span class="nav-number">1.</span> <span class="nav-text">GetMD5Hash</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GetSHA256Hash"><span class="nav-number">2.</span> <span class="nav-text">GetSHA256Hash</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">3.</span> <span class="nav-text">Demo</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hash"><span class="nav-number">1.</span> <span class="nav-text">Hash</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#GetHash"><span class="nav-number">1.1.</span> <span class="nav-text">GetHash</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GetHashFromFileAsync"><span class="nav-number">1.2.</span> <span class="nav-text">GetHashFromFileAsync</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#EncryptBase64-DecryptBase64"><span class="nav-number">1.3.</span> <span class="nav-text">EncryptBase64&#x2F;DecryptBase64</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Symmetric-Encryption"><span class="nav-number">2.</span> <span class="nav-text">Symmetric Encryption</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#EncryptStringAes-DecryptStringAes"><span class="nav-number">2.1.</span> <span class="nav-text">EncryptStringAes&#x2F;DecryptStringAes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#EncryptFileAES-DecryptFileAES"><span class="nav-number">2.2.</span> <span class="nav-text">EncryptFileAES&#x2F;DecryptFileAES</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Asymmetric-Encryption"><span class="nav-number">3.</span> <span class="nav-text">Asymmetric Encryption</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#EncryptStringAsymmetric-DecryptStringAsymmetric"><span class="nav-number">3.1.</span> <span class="nav-text">EncryptStringAsymmetric&#x2F;DecryptStringAsymmetric</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">4.</span> <span class="nav-text">Demo</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -183,6 +183,14 @@
 
 
       
+  <li class="menu-item menu-item-attach"><a href="/winUICommunityCore/attach/" rel="section">Attach</a></li>
+
+
+      
+  <li class="menu-item menu-item-command"><a href="/winUICommunityCore/command/" rel="section">Command</a></li>
+
+
+      
   <li class="menu-item menu-item-dynamiclanguage"><a href="/winUICommunityCore/dynamicLanguage/" rel="section"><i class="fas fa-tools fa-fw"></i>DynamicLanguage</a></li>
 
 
@@ -195,11 +203,23 @@
 
 
       
+  <li class="menu-item menu-item-messaging"><a href="/winUICommunityCore/messaging/" rel="section">Messaging</a></li>
+
+
+      
   <li class="menu-item menu-item-navigationservice"><a href="/winUICommunityCore/navigationService/" rel="section"><i class="fas fa-tools fa-fw"></i>NavigationService</a></li>
 
 
       
+  <li class="menu-item menu-item-persiandatetime"><a href="/winUICommunityCore/persianDateTime/" rel="section">PersianDateTime</a></li>
+
+
+      
   <li class="menu-item menu-item-rainbowframe"><a href="/winUICommunityCore/rainbowFrame/" rel="section">RainbowFrame</a></li>
+
+
+      
+  <li class="menu-item menu-item-relativedate"><a href="/winUICommunityCore/%20%7CrelativeDate%7C" rel="section">RelativeDate</a></li>
 
 
       
@@ -208,6 +228,10 @@
 
       
   <li class="menu-item menu-item-themeservice"><a href="/winUICommunityCore/themeService/" rel="section"><i class="fas fa-tools fa-fw"></i>ThemeService</a></li>
+
+
+      
+  <li class="menu-item menu-item-backdrop"><a href="/winUICommunityCore/backdrop/" rel="section">Backdrop</a></li>
 
 
       
@@ -328,9 +352,118 @@
       
       
       <div class="post-body">
-          <h1 id="GetMD5Hash"><a href="#GetMD5Hash" class="headerlink" title="GetMD5Hash"></a>GetMD5Hash</h1><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> md5 = SecurityHelper.GetMD5Hash(message);</span><br></pre></td></tr></table></figure>
+          <h1 id="Hash"><a href="#Hash" class="headerlink" title="Hash"></a>Hash</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MD5</td>
+</tr>
+<tr>
+<td>SHA1</td>
+</tr>
+<tr>
+<td>SHA256</td>
+</tr>
+<tr>
+<td>SHA384</td>
+</tr>
+<tr>
+<td>SHA512</td>
+</tr>
+</tbody></table>
+<h2 id="GetHash"><a href="#GetHash" class="headerlink" title="GetHash"></a>GetHash</h2><p>generate hash from a string</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> md5 = SecurityHelper.GetHash(text, HashAlgorithm.MD5);</span><br><span class="line"><span class="comment">// C7F373BEB9BC8072DB7B41917B02A788</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> sha256 = SecurityHelper.GetHash(text, HashAlgorithm.SHA256);</span><br><span class="line"><span class="comment">//A69AC8A63339FF52973B6FC4462EB685DF1AA5B795B39FAABE809C0263C8FACB</span></span><br></pre></td></tr></table></figure>
 
-<h1 id="GetSHA256Hash"><a href="#GetSHA256Hash" class="headerlink" title="GetSHA256Hash"></a>GetSHA256Hash</h1><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> md5 = SecurityHelper.GetSHA256Hash(message);</span><br></pre></td></tr></table></figure>
+<h2 id="GetHashFromFileAsync"><a href="#GetHashFromFileAsync" class="headerlink" title="GetHashFromFileAsync"></a>GetHashFromFileAsync</h2><p>generate hash from a file</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> md5 = <span class="keyword">await</span> SecurityHelper.GetHashFromFileAsync(filePath, HashAlgorithm.MD5);</span><br><span class="line"><span class="comment">// C7F373BEB9BC8072DB7B41917B02A788</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> sha256 = <span class="keyword">await</span> SecurityHelper.GetHashFromFileAsync(filePath, HashAlgorithm.SHA256);</span><br><span class="line"><span class="comment">//A69AC8A63339FF52973B6FC4462EB685DF1AA5B795B39FAABE809C0263C8FACB</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="EncryptBase64-DecryptBase64"><a href="#EncryptBase64-DecryptBase64" class="headerlink" title="EncryptBase64/DecryptBase64"></a>EncryptBase64/DecryptBase64</h2><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> encText = SecurityHelper.EncryptBase64(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> decText = SecurityHelper.DecryptBase64(encText);</span><br></pre></td></tr></table></figure>
+
+<h1 id="Symmetric-Encryption"><a href="#Symmetric-Encryption" class="headerlink" title="Symmetric Encryption"></a>Symmetric Encryption</h1><h2 id="EncryptStringAes-DecryptStringAes"><a href="#EncryptStringAes-DecryptStringAes" class="headerlink" title="EncryptStringAes/DecryptStringAes"></a>EncryptStringAes/DecryptStringAes</h2><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> encText = SecurityHelper.EncryptStringAes(<span class="string">&quot;text&quot;</span>, <span class="keyword">out</span> <span class="keyword">var</span> key, <span class="keyword">out</span> <span class="keyword">var</span> iv);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> decText = SecurityHelper.DecryptStringAes(encText, key, iv);</span><br></pre></td></tr></table></figure>
+
+<h2 id="EncryptFileAES-DecryptFileAES"><a href="#EncryptFileAES-DecryptFileAES" class="headerlink" title="EncryptFileAES/DecryptFileAES"></a>EncryptFileAES/DecryptFileAES</h2><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SecurityHelper.EncryptFileAES(inputFilePath, outputFilePath, <span class="keyword">out</span> <span class="keyword">var</span> aes_Key, <span class="keyword">out</span> <span class="keyword">var</span> aes_IV);</span><br><span class="line"></span><br><span class="line">SecurityHelper.DecryptFileAES(outputFilePath, newOutputFilePath, aes_Key, aes_IV);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Asymmetric-Encryption"><a href="#Asymmetric-Encryption" class="headerlink" title="Asymmetric Encryption"></a>Asymmetric Encryption</h1><h2 id="EncryptStringAsymmetric-DecryptStringAsymmetric"><a href="#EncryptStringAsymmetric-DecryptStringAsymmetric" class="headerlink" title="EncryptStringAsymmetric/DecryptStringAsymmetric"></a>EncryptStringAsymmetric/DecryptStringAsymmetric</h2><table>
+<thead>
+<tr>
+<th>Asymmetric Algorithm</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DSA_SHA1</td>
+</tr>
+<tr>
+<td>DSA_SHA256</td>
+</tr>
+<tr>
+<td>ECDSA_P256_SHA256</td>
+</tr>
+<tr>
+<td>ECDSA_P384_SHA384</td>
+</tr>
+<tr>
+<td>ECDSA_P521_SHA512</td>
+</tr>
+<tr>
+<td>RSA_OAEP_SHA1</td>
+</tr>
+<tr>
+<td>RSA_OAEP_SHA256</td>
+</tr>
+<tr>
+<td>RSA_OAEP_SHA384</td>
+</tr>
+<tr>
+<td>RSA_OAEP_SHA512</td>
+</tr>
+<tr>
+<td>RSA_PKCS1</td>
+</tr>
+<tr>
+<td>RSASIGN_PKCS1_SHA1</td>
+</tr>
+<tr>
+<td>RSASIGN_PKCS1_SHA256</td>
+</tr>
+<tr>
+<td>RSASIGN_PKCS1_SHA384</td>
+</tr>
+<tr>
+<td>RSASIGN_PKCS1_SHA512</td>
+</tr>
+<tr>
+<td>RSASIGN_PSS_SHA1</td>
+</tr>
+<tr>
+<td>RSASIGN_PSS_SHA256</td>
+</tr>
+<tr>
+<td>RSASIGN_PSS_SHA384</td>
+</tr>
+<tr>
+<td>RSASIGN_PSS_SHA512</td>
+</tr>
+<tr>
+<td>ECDSA_SHA256</td>
+</tr>
+<tr>
+<td>ECDSA_SHA384</td>
+</tr>
+<tr>
+<td>ECDSA_SHA512</td>
+</tr>
+</tbody></table>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> encText = SecurityHelper.EncryptStringAsymmetric(<span class="string">&quot;Hello&quot;</span>, publicKey);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> decText = SecurityHelper.DecryptStringAsymmetric(encText, privateKey);</span><br></pre></td></tr></table></figure>
+
+<p>if you want, you can generate Public/Private key:</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> keyPair = SecurityHelper.GenerateAsymmetricKeyPair(asymmetricAlgorithm, keySize);</span><br><span class="line">IBuffer publicKeyBuffer = keyPair.ExportPublicKey();</span><br><span class="line">IBuffer privateKeyBuffer = keyPair.Export();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> encText = SecurityHelper.EncryptStringAsymmetric(<span class="string">&quot;Hello&quot;</span>, publicKeyBuffer);</span><br><span class="line"><span class="keyword">var</span> decText = SecurityHelper.DecryptStringAsymmetric(encText, privateKeyBuffer);</span><br></pre></td></tr></table></figure>
+
+<p>or you can convert IBuffer to string:</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> publicKey = CryptographicBuffer.EncodeToHexString(publicKeyBuffer);</span><br><span class="line"><span class="built_in">string</span> privateKey = CryptographicBuffer.EncodeToHexString(privateKeyBuffer);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> encText = SecurityHelper.EncryptStringAsymmetric(<span class="string">&quot;Hello&quot;</span>, publicKey);</span><br><span class="line"><span class="keyword">var</span> decText = SecurityHelper.DecryptStringAsymmetric(encText, privateKey);</span><br></pre></td></tr></table></figure>
+
 
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a target="_blank" rel="noopener" href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
 

@@ -26,8 +26,8 @@
 <meta property="og:site_name" content="Ghost1372">
 <meta property="og:description" content="SetWindowSizeyou can set your MainWindow Size: 1WindowHelper.SetWindowSize(window, 200, 300);  Window Height&#x2F;Width Min&#x2F;Max Sizeyou can set Window Height&#x2F;Width Min&#x2F;Max Size, first you need to register">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-12-20T21:40:38.512Z">
-<meta property="article:modified_time" content="2023-12-20T21:40:38.512Z">
+<meta property="article:published_time" content="2023-12-21T10:01:08.435Z">
+<meta property="article:modified_time" content="2023-12-21T10:01:08.435Z">
 <meta property="article:author" content="Ghost1372">
 <meta name="twitter:card" content="summary">
 
@@ -140,7 +140,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SetWindowSize"><span class="nav-number">1.</span> <span class="nav-text">SetWindowSize</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Window-Height-Width-Min-Max-Size"><span class="nav-number">2.</span> <span class="nav-text">Window Height&#x2F;Width Min&#x2F;Max Size</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SwitchToThisWindow"><span class="nav-number">3.</span> <span class="nav-text">SwitchToThisWindow</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">4.</span> <span class="nav-text">Demo</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SetWindowSize"><span class="nav-number">1.</span> <span class="nav-text">SetWindowSize</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Window-Height-Width-Min-Max-Size"><span class="nav-number">2.</span> <span class="nav-text">Window Height&#x2F;Width Min&#x2F;Max Size</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SwitchToThisWindow"><span class="nav-number">3.</span> <span class="nav-text">SwitchToThisWindow</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MoveAndResizeCenterScreen"><span class="nav-number">4.</span> <span class="nav-text">MoveAndResizeCenterScreen</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MoveAndResize"><span class="nav-number">5.</span> <span class="nav-text">MoveAndResize</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MoveAndResize-1"><span class="nav-number">6.</span> <span class="nav-text">MoveAndResize</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">7.</span> <span class="nav-text">Demo</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -183,6 +183,14 @@
 
 
       
+  <li class="menu-item menu-item-attach"><a href="/winUICommunityCore/attach/" rel="section">Attach</a></li>
+
+
+      
+  <li class="menu-item menu-item-command"><a href="/winUICommunityCore/command/" rel="section">Command</a></li>
+
+
+      
   <li class="menu-item menu-item-dynamiclanguage"><a href="/winUICommunityCore/dynamicLanguage/" rel="section"><i class="fas fa-tools fa-fw"></i>DynamicLanguage</a></li>
 
 
@@ -195,11 +203,23 @@
 
 
       
+  <li class="menu-item menu-item-messaging"><a href="/winUICommunityCore/messaging/" rel="section">Messaging</a></li>
+
+
+      
   <li class="menu-item menu-item-navigationservice"><a href="/winUICommunityCore/navigationService/" rel="section"><i class="fas fa-tools fa-fw"></i>NavigationService</a></li>
 
 
       
+  <li class="menu-item menu-item-persiandatetime"><a href="/winUICommunityCore/persianDateTime/" rel="section">PersianDateTime</a></li>
+
+
+      
   <li class="menu-item menu-item-rainbowframe"><a href="/winUICommunityCore/rainbowFrame/" rel="section">RainbowFrame</a></li>
+
+
+      
+  <li class="menu-item menu-item-relativedate"><a href="/winUICommunityCore/%20%7CrelativeDate%7C" rel="section">RelativeDate</a></li>
 
 
       
@@ -208,6 +228,10 @@
 
       
   <li class="menu-item menu-item-themeservice"><a href="/winUICommunityCore/themeService/" rel="section"><i class="fas fa-tools fa-fw"></i>ThemeService</a></li>
+
+
+      
+  <li class="menu-item menu-item-backdrop"><a href="/winUICommunityCore/backdrop/" rel="section">Backdrop</a></li>
 
 
       
@@ -332,11 +356,17 @@
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WindowHelper.SetWindowSize(window, <span class="number">200</span>, <span class="number">300</span>);</span><br></pre></td></tr></table></figure>
 
 <h1 id="Window-Height-Width-Min-Max-Size"><a href="#Window-Height-Width-Min-Max-Size" class="headerlink" title="Window Height/Width Min/Max Size"></a>Window Height/Width Min/Max Size</h1><p>you can set Window Height/Width Min/Max Size, first you need to register <code>RegisterWindowMinMax</code> method in your window class:</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> windowHelper = <span class="keyword">new</span> WindowHelper(Window window);</span><br><span class="line">windowHelper.RegisterWindowMinMax();</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> windowHelper = <span class="keyword">new</span> WindowHelper(window);</span><br><span class="line">windowHelper.RegisterWindowMinMax();</span><br></pre></td></tr></table></figure>
 <p>now you can change window Min/Max size:</p>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">WindowHelper.MinWindowWidth = <span class="number">500</span>;</span><br><span class="line">WindowHelper.MinWindowHeight = <span class="number">300</span>;</span><br><span class="line"></span><br><span class="line">WindowHelper.MaxWindowWidth = <span class="number">800</span>;</span><br><span class="line">WindowHelper.MaxWindowHeight = <span class="number">600</span>;</span><br></pre></td></tr></table></figure>
 
 <h1 id="SwitchToThisWindow"><a href="#SwitchToThisWindow" class="headerlink" title="SwitchToThisWindow"></a>SwitchToThisWindow</h1><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WindowHelper.SwitchToThisWindow(window);</span><br></pre></td></tr></table></figure>
+
+<h1 id="MoveAndResizeCenterScreen"><a href="#MoveAndResizeCenterScreen" class="headerlink" title="MoveAndResizeCenterScreen"></a>MoveAndResizeCenterScreen</h1><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WindowHelper.MoveAndResizeCenterScreen(window, width, height);</span><br></pre></td></tr></table></figure>
+
+<h1 id="MoveAndResize"><a href="#MoveAndResize" class="headerlink" title="MoveAndResize"></a>MoveAndResize</h1><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WindowHelper.MoveAndResize(window, x, y, width, height);</span><br></pre></td></tr></table></figure>
+
+<h1 id="MoveAndResize-1"><a href="#MoveAndResize-1" class="headerlink" title="MoveAndResize"></a>MoveAndResize</h1><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WindowHelper.Move(window, x, y);</span><br></pre></td></tr></table></figure>
 
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a target="_blank" rel="noopener" href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
 

@@ -15699,7 +15699,7 @@ Example:
 <div class="note info"><p>See <a href="https://github.com/WinUICommunity/WinUICommunity/releases">here</a> for full changes</p>
 </div>
 
-<h2 id="6-0-0"><a href="#6-0-0" class="headerlink" title="6.0.0"></a>6.0.0</h2>]]></content>
+]]></content>
   </entry>
   <entry>
     <title>Breaking Changes</title>
@@ -15707,8 +15707,7 @@ Example:
     <content><![CDATA[<p>A breaking change is a change that may require you to make changes to your application in order to avoid disruption to your integration.</p>
 <div class="note info"><p>See <a href="https://github.com/WinUICommunity/WinUICommunity/releases">here</a> for full changes</p>
 </div>
-
-<h2 id="6-0-0"><a href="#6-0-0" class="headerlink" title="6.0.0"></a>6.0.0</h2>]]></content>
+]]></content>
   </entry>
   <entry>
     <title>Controls</title>
@@ -15900,8 +15899,7 @@ Example:
     <content><![CDATA[<p>A breaking change is a change that may require you to make changes to your application in order to avoid disruption to your integration.</p>
 <div class="note info"><p>See <a href="https://github.com/WinUICommunity/WinUICommunity/releases">here</a> for full changes</p>
 </div>
-
-<h2 id="6-0-0"><a href="#6-0-0" class="headerlink" title="6.0.0"></a>6.0.0</h2>]]></content>
+]]></content>
   </entry>
   <entry>
     <title>DynamicLanguage</title>
@@ -15946,51 +15944,7 @@ Example:
   <entry>
     <title>Extensions</title>
     <url>/winUICommunityCore/extensions/index.html</url>
-    <content><![CDATA[<div class="note warning"><p>We moved all namespaces into a single namespace. No matter which (WinUICommunity) library you use, the namespace is always as follows<br>For use in the Xaml:<br><code>xmlns:wuc=&quot;using:WinUICommunity&quot;</code><br>For use in the Csharp:<br><code>using WinUICommunity;</code></p>
-</div>
-
-<h1 id="ContentDialogExtension"><a href="#ContentDialogExtension" class="headerlink" title="ContentDialogExtension"></a>ContentDialogExtension</h1><p>By default, only 1 ContentDialog can be opened, with the help of this extension you can open multiple ContentDialogs.</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ContentDialog dialog = <span class="keyword">new</span> ContentDialog()</span><br><span class="line">&#123;</span><br><span class="line">    Title = <span class="string">&quot;Title&quot;</span>,</span><br><span class="line">    Content = <span class="string">&quot;Content&quot;</span>,</span><br><span class="line">    PrimaryButtonText = <span class="string">&quot;OK&quot;</span>,</span><br><span class="line">    CloseButtonText = <span class="string">&quot;Cancel&quot;</span>,</span><br><span class="line">    DefaultButton = ContentDialogButton.Primary,</span><br><span class="line">    XamlRoot = xamlRoot</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> result = <span class="keyword">await</span> dialog.ShowAsyncQueue();</span><br></pre></td></tr></table></figure>
-
-<h1 id="ShowAsyncDraggable"><a href="#ShowAsyncDraggable" class="headerlink" title="ShowAsyncDraggable"></a>ShowAsyncDraggable</h1><h1 id="ShowAsyncQueueDraggable"><a href="#ShowAsyncQueueDraggable" class="headerlink" title="ShowAsyncQueueDraggable"></a>ShowAsyncQueueDraggable</h1><h1 id="DependencyObjectExtensions"><a href="#DependencyObjectExtensions" class="headerlink" title="DependencyObjectExtensions"></a>DependencyObjectExtensions</h1><h1 id="FrameworkElementExtensions"><a href="#FrameworkElementExtensions" class="headerlink" title="FrameworkElementExtensions"></a>FrameworkElementExtensions</h1><h1 id="DictionaryExtensions"><a href="#DictionaryExtensions" class="headerlink" title="DictionaryExtensions"></a>DictionaryExtensions</h1><h1 id="ListExtensions"><a href="#ListExtensions" class="headerlink" title="ListExtensions"></a>ListExtensions</h1><h1 id="MergedDictionariesExtensions"><a href="#MergedDictionariesExtensions" class="headerlink" title="MergedDictionariesExtensions"></a>MergedDictionariesExtensions</h1><h1 id="EnumValuesExtension"><a href="#EnumValuesExtension" class="headerlink" title="EnumValuesExtension"></a>EnumValuesExtension</h1><p>Assuming we had an Animal enum type and we wanted the user to pick one of the available names, here is the XAML syntax that allows us to create a ComboBox and display all Animal values, directly from XAML and with no code-behind:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">&lt;ComboBox</span><br><span class="line">    xmlns:wuc=<span class="string">&quot;using:WinUICommunity&quot;</span></span><br><span class="line">    xmlns:enums=<span class="string">&quot;using:MyApplication.Enums&quot;</span></span><br><span class="line">    ItemsSource=<span class="string">&quot;&#123;wuc:EnumValues Type=enums:Animal&#125;&quot;</span></span><br><span class="line">    SelectedIndex=<span class="string">&quot;0&quot;</span>/&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/EnumValueEx.png" alt="WinUICommunity"></p>
-<h1 id="ListViewExtension"><a href="#ListViewExtension" class="headerlink" title="ListViewExtension"></a>ListViewExtension</h1><h2 id="AlternateColor"><a href="#AlternateColor" class="headerlink" title="AlternateColor"></a>AlternateColor</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">wuc:ListViewExtensions.AlternateColor</span>=<span class="string">&quot;Silver&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;x:Bind MainViewModel.Items, Mode=OneWay&#125;&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Page.Resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">DataTemplate</span> <span class="attr">x:Name</span>=<span class="string">&quot;NormalTemplate&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding &quot;</span> <span class="attr">Foreground</span>=<span class="string">&quot;Green&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">DataTemplate</span> <span class="attr">x:Name</span>=<span class="string">&quot;AlternateTemplate&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding&#125;&quot;</span> <span class="attr">Foreground</span>=<span class="string">&quot;Orange&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Page.Resources</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ListView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">ItemTemplate</span>=<span class="string">&quot;&#123;StaticResource NormalTemplate&#125;&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">wuc:ListViewExtensions.AlternateItemTemplate</span>=<span class="string">&quot;&#123;StaticResource AlternateTemplate&#125;&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;x:Bind MainViewModel.Items, Mode=OneWay&#125;&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="AlternateItem"><a href="#AlternateItem" class="headerlink" title="AlternateItem"></a>AlternateItem</h2><h2 id="Command"><a href="#Command" class="headerlink" title="Command"></a>Command</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">wuc:ListViewExtensions.Command</span>=<span class="string">&quot;&#123;x:Bind MainViewModel.ItemSelectedCommand, Mode=OneWay&#125;&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">IsItemClickEnabled</span>=<span class="string">&quot;True&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;x:Bind MainViewModel.Items, Mode=OneWay&#125;&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">SelectionMode</span>=<span class="string">&quot;None&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="DeselectItem"><a href="#DeselectItem" class="headerlink" title="DeselectItem"></a>DeselectItem</h2><h2 id="DeselectAll"><a href="#DeselectAll" class="headerlink" title="DeselectAll"></a>DeselectAll</h2><h2 id="SelectAllSafe"><a href="#SelectAllSafe" class="headerlink" title="SelectAllSafe"></a>SelectAllSafe</h2><h2 id="SmoothScrollIntoView"><a href="#SmoothScrollIntoView" class="headerlink" title="SmoothScrollIntoView"></a>SmoothScrollIntoView</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">await</span> listView.SmoothScrollIntoViewWithIndexAsync(listView.SelectedIndex, ScrollItemPlacement.Center, <span class="literal">false</span>, <span class="literal">true</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="TextBoxExtensions"><a href="#TextBoxExtensions" class="headerlink" title="TextBoxExtensions"></a>TextBoxExtensions</h1><p>The Regex attached property allows text validation using a regular expression or using built in validation types.</p>
-<p>The validation has 3 modes (TextBoxExtensions.ValidationMode):</p>
-<p>Normal (Default): this mode will set the IsValid attached property to false or true whether the TextBox text is a valid or not against the Regex property.<br>Forced: this mode sets the IsValid property and removes the TextBox text if not valid when the TextBox loses focus.<br>Dynamic: this mode extends Normal and if is the newest input of the TextBox is invalid, the character which is invalid will be deleted. Note that the TextBoxExtensions.ValidationType values Email and PhoneNumber don’t support this validation mode. If you set the validation mode to Dynamic, Normal is selected automatically instead.</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Name</span>=<span class="string">&quot;PhoneNumberValidator&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">wuc:TextBoxExtensions.Regex</span>=<span class="string">&quot;^\s*\+?\s*([0-9][\s-]*)&#123;9,&#125;$&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Header</span>=<span class="string">&quot;Text box with Regex extension for phone number, validation occurs on TextChanged&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Foreground</span>=<span class="string">&quot;&#123;ThemeResource TextFillColorSecondaryBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Run</span> <span class="attr">Text</span>=<span class="string">&quot;Is valid: &quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Run</span> <span class="attr">FontWeight</span>=<span class="string">&quot;SemiBold&quot;</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding (wuc:TextBoxExtensions.IsValid), ElementName=PhoneNumberValidator&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Name</span>=<span class="string">&quot;CharactValidator&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationMode</span>=<span class="string">&quot;Dynamic&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationType</span>=<span class="string">&quot;Characters&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with ValidationType=Characters, validation occurs at input with ValidationMode=Dynamic and clear only single character when value is invalid&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;abcdef&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Foreground</span>=<span class="string">&quot;&#123;ThemeResource TextFillColorSecondaryBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">Text</span>=<span class="string">&quot;Is valid: &quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">FontWeight</span>=<span class="string">&quot;SemiBold&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding (wuc:TextBoxExtensions.IsValid), ElementName=CharactValidator&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Name</span>=<span class="string">&quot;EmailValidator&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationType</span>=<span class="string">&quot;Email&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with ValidationType=Email, validation occurs on TextChanged&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Foreground</span>=<span class="string">&quot;&#123;ThemeResource TextFillColorSecondaryBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">Text</span>=<span class="string">&quot;Is valid: &quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">FontWeight</span>=<span class="string">&quot;SemiBold&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding (wuc:TextBoxExtensions.IsValid), ElementName=EmailValidator&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Name</span>=<span class="string">&quot;DecimalValidatorForce&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationMode</span>=<span class="string">&quot;Forced&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationType</span>=<span class="string">&quot;Decimal&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with ValidationType=Decimal, validation occurs on TextChanged and force occurs on lose focus with ValidationMode=Force (333,111 or 333.111)&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Foreground</span>=<span class="string">&quot;&#123;ThemeResource TextFillColorSecondaryBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">Text</span>=<span class="string">&quot;Is valid: &quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">FontWeight</span>=<span class="string">&quot;SemiBold&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding (wuc:TextBoxExtensions.IsValid), ElementName=DecimalValidatorForce&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Name</span>=<span class="string">&quot;NumberValidatorDynamic&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationMode</span>=<span class="string">&quot;Dynamic&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationType</span>=<span class="string">&quot;Number&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with ValidationType=Number, validation occurs at input with ValidationMode=Dynamic and clear only single character when value is invalid&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Foreground</span>=<span class="string">&quot;&#123;ThemeResource TextFillColorSecondaryBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">Text</span>=<span class="string">&quot;Is valid: &quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">FontWeight</span>=<span class="string">&quot;SemiBold&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding (wuc:TextBoxExtensions.IsValid), ElementName=NumberValidatorDynamic&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/TextBoxEx.png" alt="WinUICommunity"></p>
-<h3 id="Text-mask"><a href="#Text-mask" class="headerlink" title="Text mask"></a>Text mask</h3><p>The Mask attached property allows a user to more easily enter fixed width text in TextBox control where you would like them to enter the data in a certain format, ex: phone number, postal code.</p>
-<p>The developer adds the mask property to prevent end user to enter any other format but the required one (eg. a postal code in the format “aaa-9999”).</p>
-<p>The Mask property provides 3 built-in variable characters that can be used to define a mask:</p>
-<p>a which represents [a-Z]<br>9 which represents [0-9]</p>
-<ul>
-<li>which represents a or 9</li>
-</ul>
-<p>At the post code example the user will only be allowed to enter from a to Z in the first 3 characters, then there is a fixed character - which the user can change or remove, and the last part which the user can change by entering from 0 to 9 at each character. The Mask property prevents the TextBox from having non specified characters (eg. if you entered 1 or 2 into a mask like 9999).</p>
-<p>The Mask property also supports 2 type of characters:</p>
-<p>Variable: which the user can change like a,9,*<br>Fixed: which the user can’t change and it is any non variable character (eg. the - in the first example)<br>Variable characters a represented to end user in form of placeholder so the user can know which characters he can change and which he can’t, ex mask aaa-9999 will be presented to user as ___-____. The default placeholder is _, but you can change it using the MaskPlaceholder property.</p>
-<p>You can escape variable by using \ (eg. the mask +\964 will be presented to the user as +964). This way, the 9 in the mask is treated as a fixed character, not as a variable. If you needed \ in the mask then you can write it as \ (eg. 99\99\9999 will be presented to the user as <strong>__\</strong>).</p>
-<p>In case you want to add a custom variable character you can use the CustomMask property. You can add a character that represents certain regex as c:[a-c] and once you use character c in the mask the mask will prevent any characters but from a to c inside the TextBox, also you specify multiple variable characters by adding comma , after every character and its representation. This feature is helpful if you want to allow certain language characters (eg. French or Arabic only TextBox).</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Spacing</span>=<span class="string">&quot;24&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">wuc:TextBoxExtensions.Mask</span>=<span class="string">&quot;9a9a-a9a*&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with Mask 9a9a-a9a* (9 allows from 0 to 9, a allow from a to Z and * allows both a and 9)&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;TextBoxMask&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">wuc:TextBoxExtensions.Mask</span>=<span class="string">&quot;+1999-9999&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.MaskPlaceholder</span>=<span class="string">&quot; &quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with Mask +1999-9999 and placeHolder as space (placeholder represents the characters the user can change on runtime)&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">wuc:TextBoxExtensions.Mask</span>=<span class="string">&quot;+\964 799 999 9999&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with Mask +964 799 999 9999 (Notice how we escape the first 9 with a backslash)&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">wuc:TextBoxExtensions.Mask</span>=<span class="string">&quot;99\\99\\9999&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with Mask 99\99\9999 (You can escape a backslash with another backslash)&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">wuc:TextBoxExtensions.CustomMask</span>=<span class="string">&quot;5:[1-5],c:[a-c]&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.Mask</span>=<span class="string">&quot;a5c-5c*9&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with CustomMask in case you want to define your own variable character like a, 9 and *. Mask: a5c-5c*9, 5: [1-5], c: [a-c]&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/TextBoxMaskEx.png" alt="WinUICommunity"></p>
+    <content><![CDATA[<p>Extensions</p>
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
 ]]></content>
   </entry>
@@ -16222,14 +16176,14 @@ Example:
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">themeService.RootTheme = ElementTheme.Dark;</span><br><span class="line"><span class="comment">//OR</span></span><br><span class="line">themeService.ActualTheme = ElementTheme.Dark;</span><br><span class="line"><span class="comment">//OR</span></span><br><span class="line">themeService.SetCurrentTheme(ElementTheme.Dark);</span><br></pre></td></tr></table></figure>
 
 <h1 id="Changing-SystemBackdrop"><a href="#Changing-SystemBackdrop" class="headerlink" title="Changing SystemBackdrop"></a>Changing SystemBackdrop</h1><h2 id="Auto-SystemBackdrop-Change"><a href="#Auto-SystemBackdrop-Change" class="headerlink" title="Auto SystemBackdrop Change"></a>Auto SystemBackdrop Change</h2><h3 id="RadioButton-1"><a href="#RadioButton-1" class="headerlink" title="RadioButton"></a>RadioButton</h3><p>copy this xaml in your page:</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">x:Name</span>=<span class="string">&quot;BackdropPanel&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Tag</span>=<span class="string">&quot;None&quot;</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;None&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Tag</span>=<span class="string">&quot;Mica&quot;</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Mica&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Tag</span>=<span class="string">&quot;MicaAlt&quot;</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;MicaAlt&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Desktop Acrylic&quot;</span> <span class="attr">Tag</span>=<span class="string">&quot;DesktopAcrylic&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Acrylic Base&quot;</span> <span class="attr">Tag</span>=<span class="string">&quot;AcrylicBase&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Acrylic Thin&quot;</span> <span class="attr">Tag</span>=<span class="string">&quot;AcrylicThin&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">x:Name</span>=<span class="string">&quot;BackdropPanel&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Tag</span>=<span class="string">&quot;None&quot;</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;None&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Tag</span>=<span class="string">&quot;Mica&quot;</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Mica&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Tag</span>=<span class="string">&quot;MicaAlt&quot;</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;MicaAlt&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Desktop Acrylic&quot;</span> <span class="attr">Tag</span>=<span class="string">&quot;DesktopAcrylic&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Acrylic Base&quot;</span> <span class="attr">Tag</span>=<span class="string">&quot;AcrylicBase&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Acrylic Thin&quot;</span> <span class="attr">Tag</span>=<span class="string">&quot;AcrylicThin&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioButton</span> <span class="attr">Checked</span>=<span class="string">&quot;OnBackdropRadioButtonChecked&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Transparent&quot;</span> <span class="attr">Tag</span>=<span class="string">&quot;Transparent&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>now call <code>OnBackdropRadioButtonChecked</code> method for changing and saving application systemBackdrop:</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">OnBackdropRadioButtonChecked</span>(<span class="params"><span class="built_in">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    themeService.OnBackdropRadioButtonChecked(sender);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>now if you want to selecting currect radiobutton item when page is loading, you can call <code>SetBackdropRadioButtonDefaultItem</code> method in Page <code>Loaded</code> event:</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">themeService.SetBackdropRadioButtonDefaultItem(BackdropPanel);</span><br></pre></td></tr></table></figure>
 
 <h3 id="ComboBox-1"><a href="#ComboBox-1" class="headerlink" title="ComboBox"></a>ComboBox</h3><p>copy this xaml in your page:</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ComboBox</span> <span class="attr">Name</span>=<span class="string">&quot;cmbBackdrop&quot;</span> <span class="attr">SelectionChanged</span>=<span class="string">&quot;cmbBackdrop_SelectionChanged&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;None&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;None&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;Mica&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Mica&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;MicaAlt&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;MicaAlt&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;DesktopAcrylic&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Desktop Acrylic&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;AcrylicBase&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Acrylic Base&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;AcrylicThin&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Acrylic Thin&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ComboBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ComboBox</span> <span class="attr">Name</span>=<span class="string">&quot;cmbBackdrop&quot;</span> <span class="attr">SelectionChanged</span>=<span class="string">&quot;cmbBackdrop_SelectionChanged&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;None&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;None&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;Mica&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Mica&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;MicaAlt&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;MicaAlt&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;DesktopAcrylic&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Desktop Acrylic&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;AcrylicBase&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Acrylic Base&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;AcrylicThin&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Acrylic Thin&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBoxItem</span> <span class="attr">Tag</span>=<span class="string">&quot;Transparent&quot;</span> <span class="attr">Content</span>=<span class="string">&quot;Transparent&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ComboBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>now call <code>OnBackdropComboBoxSelectionChanged</code> method for changing and saving application theme:</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">cmbBackdrop_SelectionChanged</span>(<span class="params"><span class="built_in">object</span> sender, SelectionChangedEventArgs e</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    themeService.OnBackdropComboBoxSelectionChanged(sender);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>now if you want to selecting currect combobox item when page is loading, you can call <code>SetBackdropComboBoxDefaultItem</code> method in Page <code>Loaded</code> event:</p>
@@ -16255,18 +16209,15 @@ Example:
 <h1 id="Observable"><a href="#Observable" class="headerlink" title="Observable"></a>Observable</h1><p>inherited from <code>INotifyPropertyChanged</code></p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ShellViewModel</span> : <span class="title">Observable</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">bool</span> isBackEnabled;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">bool</span> IsBackEnabled</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">get</span> &#123; <span class="keyword">return</span> isBackEnabled; &#125;</span><br><span class="line">        <span class="keyword">set</span> &#123; Set(<span class="keyword">ref</span> isBackEnabled, <span class="keyword">value</span>); &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="RelayCommand"><a href="#RelayCommand" class="headerlink" title="RelayCommand"></a>RelayCommand</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">inherited <span class="keyword">from</span> `ICommand`</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> ICommand itemInvokedCommand;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> ICommand ItemInvokedCommand =&gt; itemInvokedCommand ?? (itemInvokedCommand = <span class="keyword">new</span> RelayCommand&lt;<span class="built_in">string</span>&gt;(OnItemInvoked));</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnItemInvoked</span>(<span class="params"><span class="built_in">string</span> arg</span>)</span></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+<h1 id="Generic-Comapre"><a href="#Generic-Comapre" class="headerlink" title="Generic Comapre"></a>Generic Comapre</h1><p>Check if there is an specific item in the collection or not</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> model = <span class="keyword">new</span> Model</span><br><span class="line">&#123;</span><br><span class="line">    Id = <span class="number">1</span>,</span><br><span class="line">    Name = <span class="string">&quot;Test&quot;</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> contain = DataList.Contains(model, <span class="keyword">new</span> GenericCompare&lt;Model&gt;(x=&gt;x.Id)); </span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>Breaking Changes</title>
     <url>/winUICommunityLandingPages/breaking_changes/index.html</url>
     <content><![CDATA[<p>A breaking change is a change that may require you to make changes to your application in order to avoid disruption to your integration.</p>
 <div class="note info"><p>See <a href="https://github.com/WinUICommunity/WinUICommunity/releases">here</a> for full changes</p>
-</div>
-
-<h2 id="6-0-0"><a href="#6-0-0" class="headerlink" title="6.0.0"></a>6.0.0</h2>]]></content>
+</div>]]></content>
   </entry>
   <entry>
     <title>AllLandingPage</title>
@@ -17293,6 +17244,9 @@ Example:
 <tr>
 <td>IsWindows11_22621_OrGreater</td>
 </tr>
+<tr>
+<td>IsEqualOrGreater</td>
+</tr>
 </tbody></table>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> getOSVersion = OSVersionHelper.GetOSVersion();</span><br><span class="line"><span class="comment">//return: 10.0.22621.2</span></span><br><span class="line"><span class="keyword">var</span> isWindows11 = OSVersionHelper.IsWindows11;</span><br><span class="line"><span class="comment">//return: true/false</span></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
@@ -17380,9 +17334,118 @@ Example:
   <entry>
     <title>SecurityHelper</title>
     <url>/winUICommunityCore/helpers/securityHelper/index.html</url>
-    <content><![CDATA[<h1 id="GetMD5Hash"><a href="#GetMD5Hash" class="headerlink" title="GetMD5Hash"></a>GetMD5Hash</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> md5 = SecurityHelper.GetMD5Hash(message);</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h1 id="Hash"><a href="#Hash" class="headerlink" title="Hash"></a>Hash</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MD5</td>
+</tr>
+<tr>
+<td>SHA1</td>
+</tr>
+<tr>
+<td>SHA256</td>
+</tr>
+<tr>
+<td>SHA384</td>
+</tr>
+<tr>
+<td>SHA512</td>
+</tr>
+</tbody></table>
+<h2 id="GetHash"><a href="#GetHash" class="headerlink" title="GetHash"></a>GetHash</h2><p>generate hash from a string</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> md5 = SecurityHelper.GetHash(text, HashAlgorithm.MD5);</span><br><span class="line"><span class="comment">// C7F373BEB9BC8072DB7B41917B02A788</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> sha256 = SecurityHelper.GetHash(text, HashAlgorithm.SHA256);</span><br><span class="line"><span class="comment">//A69AC8A63339FF52973B6FC4462EB685DF1AA5B795B39FAABE809C0263C8FACB</span></span><br></pre></td></tr></table></figure>
 
-<h1 id="GetSHA256Hash"><a href="#GetSHA256Hash" class="headerlink" title="GetSHA256Hash"></a>GetSHA256Hash</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> md5 = SecurityHelper.GetSHA256Hash(message);</span><br></pre></td></tr></table></figure>
+<h2 id="GetHashFromFileAsync"><a href="#GetHashFromFileAsync" class="headerlink" title="GetHashFromFileAsync"></a>GetHashFromFileAsync</h2><p>generate hash from a file</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> md5 = <span class="keyword">await</span> SecurityHelper.GetHashFromFileAsync(filePath, HashAlgorithm.MD5);</span><br><span class="line"><span class="comment">// C7F373BEB9BC8072DB7B41917B02A788</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> sha256 = <span class="keyword">await</span> SecurityHelper.GetHashFromFileAsync(filePath, HashAlgorithm.SHA256);</span><br><span class="line"><span class="comment">//A69AC8A63339FF52973B6FC4462EB685DF1AA5B795B39FAABE809C0263C8FACB</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="EncryptBase64-DecryptBase64"><a href="#EncryptBase64-DecryptBase64" class="headerlink" title="EncryptBase64/DecryptBase64"></a>EncryptBase64/DecryptBase64</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> encText = SecurityHelper.EncryptBase64(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> decText = SecurityHelper.DecryptBase64(encText);</span><br></pre></td></tr></table></figure>
+
+<h1 id="Symmetric-Encryption"><a href="#Symmetric-Encryption" class="headerlink" title="Symmetric Encryption"></a>Symmetric Encryption</h1><h2 id="EncryptStringAes-DecryptStringAes"><a href="#EncryptStringAes-DecryptStringAes" class="headerlink" title="EncryptStringAes/DecryptStringAes"></a>EncryptStringAes/DecryptStringAes</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> encText = SecurityHelper.EncryptStringAes(<span class="string">&quot;text&quot;</span>, <span class="keyword">out</span> <span class="keyword">var</span> key, <span class="keyword">out</span> <span class="keyword">var</span> iv);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> decText = SecurityHelper.DecryptStringAes(encText, key, iv);</span><br></pre></td></tr></table></figure>
+
+<h2 id="EncryptFileAES-DecryptFileAES"><a href="#EncryptFileAES-DecryptFileAES" class="headerlink" title="EncryptFileAES/DecryptFileAES"></a>EncryptFileAES/DecryptFileAES</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">SecurityHelper.EncryptFileAES(inputFilePath, outputFilePath, <span class="keyword">out</span> <span class="keyword">var</span> aes_Key, <span class="keyword">out</span> <span class="keyword">var</span> aes_IV);</span><br><span class="line"></span><br><span class="line">SecurityHelper.DecryptFileAES(outputFilePath, newOutputFilePath, aes_Key, aes_IV);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Asymmetric-Encryption"><a href="#Asymmetric-Encryption" class="headerlink" title="Asymmetric Encryption"></a>Asymmetric Encryption</h1><h2 id="EncryptStringAsymmetric-DecryptStringAsymmetric"><a href="#EncryptStringAsymmetric-DecryptStringAsymmetric" class="headerlink" title="EncryptStringAsymmetric/DecryptStringAsymmetric"></a>EncryptStringAsymmetric/DecryptStringAsymmetric</h2><table>
+<thead>
+<tr>
+<th>Asymmetric Algorithm</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DSA_SHA1</td>
+</tr>
+<tr>
+<td>DSA_SHA256</td>
+</tr>
+<tr>
+<td>ECDSA_P256_SHA256</td>
+</tr>
+<tr>
+<td>ECDSA_P384_SHA384</td>
+</tr>
+<tr>
+<td>ECDSA_P521_SHA512</td>
+</tr>
+<tr>
+<td>RSA_OAEP_SHA1</td>
+</tr>
+<tr>
+<td>RSA_OAEP_SHA256</td>
+</tr>
+<tr>
+<td>RSA_OAEP_SHA384</td>
+</tr>
+<tr>
+<td>RSA_OAEP_SHA512</td>
+</tr>
+<tr>
+<td>RSA_PKCS1</td>
+</tr>
+<tr>
+<td>RSASIGN_PKCS1_SHA1</td>
+</tr>
+<tr>
+<td>RSASIGN_PKCS1_SHA256</td>
+</tr>
+<tr>
+<td>RSASIGN_PKCS1_SHA384</td>
+</tr>
+<tr>
+<td>RSASIGN_PKCS1_SHA512</td>
+</tr>
+<tr>
+<td>RSASIGN_PSS_SHA1</td>
+</tr>
+<tr>
+<td>RSASIGN_PSS_SHA256</td>
+</tr>
+<tr>
+<td>RSASIGN_PSS_SHA384</td>
+</tr>
+<tr>
+<td>RSASIGN_PSS_SHA512</td>
+</tr>
+<tr>
+<td>ECDSA_SHA256</td>
+</tr>
+<tr>
+<td>ECDSA_SHA384</td>
+</tr>
+<tr>
+<td>ECDSA_SHA512</td>
+</tr>
+</tbody></table>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> encText = SecurityHelper.EncryptStringAsymmetric(<span class="string">&quot;Hello&quot;</span>, publicKey);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> decText = SecurityHelper.DecryptStringAsymmetric(encText, privateKey);</span><br></pre></td></tr></table></figure>
+
+<p>if you want, you can generate Public/Private key:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> keyPair = SecurityHelper.GenerateAsymmetricKeyPair(asymmetricAlgorithm, keySize);</span><br><span class="line">IBuffer publicKeyBuffer = keyPair.ExportPublicKey();</span><br><span class="line">IBuffer privateKeyBuffer = keyPair.Export();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> encText = SecurityHelper.EncryptStringAsymmetric(<span class="string">&quot;Hello&quot;</span>, publicKeyBuffer);</span><br><span class="line"><span class="keyword">var</span> decText = SecurityHelper.DecryptStringAsymmetric(encText, privateKeyBuffer);</span><br></pre></td></tr></table></figure>
+
+<p>or you can convert IBuffer to string:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="built_in">string</span> publicKey = CryptographicBuffer.EncodeToHexString(publicKeyBuffer);</span><br><span class="line"><span class="built_in">string</span> privateKey = CryptographicBuffer.EncodeToHexString(privateKeyBuffer);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> encText = SecurityHelper.EncryptStringAsymmetric(<span class="string">&quot;Hello&quot;</span>, publicKey);</span><br><span class="line"><span class="keyword">var</span> decText = SecurityHelper.DecryptStringAsymmetric(encText, privateKey);</span><br></pre></td></tr></table></figure>
+
 
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
 ]]></content>
@@ -17438,13 +17501,1016 @@ Example:
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">WindowHelper.SetWindowSize(window, <span class="number">200</span>, <span class="number">300</span>);</span><br></pre></td></tr></table></figure>
 
 <h1 id="Window-Height-Width-Min-Max-Size"><a href="#Window-Height-Width-Min-Max-Size" class="headerlink" title="Window Height/Width Min/Max Size"></a>Window Height/Width Min/Max Size</h1><p>you can set Window Height/Width Min/Max Size, first you need to register <code>RegisterWindowMinMax</code> method in your window class:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> windowHelper = <span class="keyword">new</span> WindowHelper(Window window);</span><br><span class="line">windowHelper.RegisterWindowMinMax();</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> windowHelper = <span class="keyword">new</span> WindowHelper(window);</span><br><span class="line">windowHelper.RegisterWindowMinMax();</span><br></pre></td></tr></table></figure>
 <p>now you can change window Min/Max size:</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">WindowHelper.MinWindowWidth = <span class="number">500</span>;</span><br><span class="line">WindowHelper.MinWindowHeight = <span class="number">300</span>;</span><br><span class="line"></span><br><span class="line">WindowHelper.MaxWindowWidth = <span class="number">800</span>;</span><br><span class="line">WindowHelper.MaxWindowHeight = <span class="number">600</span>;</span><br></pre></td></tr></table></figure>
 
 <h1 id="SwitchToThisWindow"><a href="#SwitchToThisWindow" class="headerlink" title="SwitchToThisWindow"></a>SwitchToThisWindow</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">WindowHelper.SwitchToThisWindow(window);</span><br></pre></td></tr></table></figure>
 
+<h1 id="MoveAndResizeCenterScreen"><a href="#MoveAndResizeCenterScreen" class="headerlink" title="MoveAndResizeCenterScreen"></a>MoveAndResizeCenterScreen</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">WindowHelper.MoveAndResizeCenterScreen(window, width, height);</span><br></pre></td></tr></table></figure>
+
+<h1 id="MoveAndResize"><a href="#MoveAndResize" class="headerlink" title="MoveAndResize"></a>MoveAndResize</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">WindowHelper.MoveAndResize(window, x, y, width, height);</span><br></pre></td></tr></table></figure>
+
+<h1 id="MoveAndResize-1"><a href="#MoveAndResize-1" class="headerlink" title="MoveAndResize"></a>MoveAndResize</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">WindowHelper.Move(window, x, y);</span><br></pre></td></tr></table></figure>
+
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Attach</title>
+    <url>/winUICommunityCore/attach/index.html</url>
+    <content><![CDATA[<p>useful attached property</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Command</title>
+    <url>/winUICommunityCore/command/index.html</url>
+    <content><![CDATA[<p>You can use commands to use in the MVVM pattern, Different types of commands are available.</p>
+<h1 id="RelayCommand"><a href="#RelayCommand" class="headerlink" title="RelayCommand"></a>RelayCommand</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">inherited <span class="keyword">from</span> `ICommand`</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> ICommand itemInvokedCommand;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> ICommand ItemInvokedCommand =&gt; itemInvokedCommand ?? (itemInvokedCommand = <span class="keyword">new</span> RelayCommand&lt;<span class="built_in">string</span>&gt;(OnItemInvoked));</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnItemInvoked</span>(<span class="params"><span class="built_in">string</span> arg</span>)</span></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="DelegateCommand"><a href="#DelegateCommand" class="headerlink" title="DelegateCommand"></a>DelegateCommand</h1><p>Implementation of ICommand where the Execute and CanExecute callbacks are handled by delegates.</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> ICommand AddItems &#123; <span class="keyword">get</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">TestViewModel</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    AddItems = DelegateCommand.Create(OnAddItems);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">AddItemsImpl</span>(<span class="params"></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    Debug.WriteLine(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note info"><p>you can use IDelegateCommand Instead of ICommand</p>
+</div>
+
+
+]]></content>
+  </entry>
+  <entry>
+    <title>Window Message Monitor</title>
+    <url>/winUICommunityCore/messaging/index.html</url>
+    <content><![CDATA[<p>The Windows Message Monitor allows you to receive raw Windows Messaging Events and further control and monitor the Window.</p>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> monitor = <span class="keyword">new</span> WindowMessageMonitor(window); <span class="comment">// or hwnd</span></span><br><span class="line">monitor.WindowMessageReceived += OnWindowMessageReceived;</span><br></pre></td></tr></table></figure>
+
+<p>In the event handler you can then inspect these raw messages based on message id for type of message, and use the WParam and LParam according to the Windows Messaging documentation. Example:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">OnWindowMessageReceived</span>(<span class="params"><span class="built_in">object</span> sender, WindowMessageEventArgs e</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (e.MessageType == NativeValues.WindowMessage.WM_GETMINMAXINFO)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> minMaxInfo = Marshal.PtrToStructure&lt;NativeValues.MINMAXINFO&gt;(e.Message.LParam);</span><br><span class="line">        <span class="comment">// some codes</span></span><br><span class="line"></span><br><span class="line">        Marshal.StructureToPtr(minMaxInfo, e.Message.LParam, <span class="literal">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (e.MessageType == NativeValues.WindowMessage.WM_NCRBUTTONDOWN)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// some codes</span></span><br><span class="line">        e.Result = <span class="number">0</span>;</span><br><span class="line">        e.Handled = <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>PersianDateTime</title>
+    <url>/winUICommunityCore/persianDateTime/index.html</url>
+    <content><![CDATA[<p>with this class you can convert current date to Persian Date there is also some extension method for <code>DateTime.Now</code></p>
+<p>example:</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> date = PersianDateTime.Now</span><br><span class="line">Debug.WriteLine(date.DateTime);</span><br><span class="line"></span><br><span class="line"><span class="comment">// OR</span></span><br><span class="line">PersianDateTime persian = <span class="keyword">new</span> PersianDateTime(DateTime.Now);</span><br><span class="line"></span><br><span class="line">Debug.WriteLine(persian.DateTime);</span><br><span class="line"><span class="comment">//Result : 1399/10/27</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// OR</span></span><br><span class="line">PersianDateTime persian = <span class="keyword">new</span> PersianDateTime();</span><br><span class="line"></span><br><span class="line">Debug.WriteLine(persian.GetShamsiYear(DateTime.Now));</span><br><span class="line"><span class="comment">//Result : 1399</span></span><br><span class="line"></span><br><span class="line">Debug.WriteLine(persian.GetShamsiMonthName(DateTime.Now));</span><br><span class="line"><span class="comment">//Result : دی</span></span><br><span class="line"></span><br><span class="line">Debug.WriteLine(persian.GetShamsiDayString(DateTime.Now));</span><br><span class="line"><span class="comment">//Result : 03</span></span><br><span class="line"></span><br><span class="line">Debug.WriteLine(persian.GetShamsiDayName(DateTime.Now));</span><br><span class="line"><span class="comment">//Result : چهارشنبه</span></span><br><span class="line"></span><br><span class="line">Debug.WriteLine(persian.GetShamsiDayShortName(DateTime.Now));</span><br><span class="line"><span class="comment">//Result : چ</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//انواع روشهای تعریف تاریخ شمسی	</span></span><br><span class="line"><span class="keyword">var</span> dt1 = <span class="keyword">new</span> PersianDateTime(<span class="number">1399</span>, <span class="number">10</span>, <span class="number">13</span>);</span><br><span class="line"><span class="keyword">var</span> dt2 = <span class="keyword">new</span> PersianDateTime(<span class="string">&quot;1399/10/13&quot;</span>);	</span><br><span class="line"><span class="keyword">var</span> dt3 = <span class="keyword">new</span> PersianDateTime(<span class="string">&quot;1399/12/29 23:30&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> dt4 = <span class="keyword">new</span> PersianDateTime(<span class="string">&quot;1399/12/29 23:30:00&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//تعریف بر اساس تاریخ میلادی	</span></span><br><span class="line">DateTime dateTime = DateTime.Now;</span><br><span class="line"><span class="keyword">var</span> persianDateTime = <span class="keyword">new</span> PersianDateTime(dateTime);</span><br><span class="line"></span><br><span class="line"><span class="comment">//فاصله دو تاریخ	</span></span><br><span class="line"><span class="keyword">var</span> dt1 = <span class="keyword">new</span> PersianDateTime(<span class="string">&quot;1399/12/29&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> dt2 = <span class="keyword">new</span> PersianDateTime(<span class="string">&quot;1399/11/29&quot;</span>);</span><br><span class="line">Convert.ToInt32(Extensions.DateDifference(dt1,dt2));</span><br><span class="line"><span class="comment">//result: 30</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>توضیحات</th>
+<th>متد</th>
+<th>خروجی</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>PersianDateTime.Now.ToLongStringYMDHMS</td>
+<td>شنبه بیست آذر سال یکهزار سیصد و نود وهفت ساعت هفت و سی دقیقه و بیست ثانیه</td>
+</tr>
+<tr>
+<td></td>
+<td>PersianDateTime.Now.ToLongStringYMDHMS</td>
+<td>شنبه بیست آذر سال یکهزار سیصد و نود وهفت ساعت هفت و سی دقیقه</td>
+</tr>
+<tr>
+<td>تبدیل تاریخ شمسی به میلادی</td>
+<td>PersianDateTime.Now.ToGregorianDate</td>
+<td>16/01/2021</td>
+</tr>
+<tr>
+<td>تولید تاریخ</td>
+<td>PersianDateTime.Now.ToLongStringYMD</td>
+<td>شنبه بیست آذر سال یکهزار سیصد و نود وهفت</td>
+</tr>
+<tr>
+<td>تولید ساعت</td>
+<td>PersianDateTime.Now.ToLongStringHMS</td>
+<td>ساعت پانزده و سی دقیقه و ده ثانیه</td>
+</tr>
+<tr>
+<td>تولید ساعت</td>
+<td>PersianDateTime.Now.ToLongStringHM</td>
+<td>ساعت پانزده و سی دقیقه</td>
+</tr>
+<tr>
+<td>تبدیل اعداد به حروف</td>
+<td>PersianUtil.Convert(11200000)</td>
+<td>یازده میلیون و دویست هزار</td>
+</tr>
+</tbody></table>
+<h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><p><a href="https://ghost1372.github.io/winUICommunityCore/extensions/persianDateTimeExtension/#DateTime">Go Here</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>RelativeDate</title>
+    <url>/winUICommunityCore/relativeDate/index.html</url>
+    <content><![CDATA[<p>get a relative date similar to “5 minutes ago”. It supports both local and UTC dates as well as dates with offset (DateTimeOffset). It supports English and Persian.</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">DateTime dateTime = <span class="keyword">new</span> DateTime(<span class="number">2021</span>, <span class="number">09</span>, <span class="number">14</span>, <span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>, DateTimeKind.Local);</span><br><span class="line"><span class="keyword">var</span> relativeDate = RelativeDate.Get(dateTime).ToString();</span><br><span class="line"><span class="keyword">var</span> relativeDate2 = RelativeDate.Get(dateTime).ToString(format: <span class="literal">null</span>, CultureInfo.GetCultureInfo(<span class="string">&quot;fa-IR&quot;</span>));</span><br><span class="line"></span><br><span class="line">Debug.WriteLine(relativeDate);</span><br><span class="line">Debug.WriteLine(relativeDate2);</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Backdrop</title>
+    <url>/winUICommunityCore/backdrop/index.html</url>
+    <content><![CDATA[<p>there is some custom SystemBackdrop which you can use in your app:</p>
+<h1 id="AcrylicBackdrop"><a href="#AcrylicBackdrop" class="headerlink" title="AcrylicBackdrop"></a>AcrylicBackdrop</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">AcrylicBackdrop : SystemBackdrop</span><br></pre></td></tr></table></figure>
+
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Window.SystemBackdrop = <span class="keyword">new</span> AcrylicBackdrop() &#123; Kind = DesktopAcrylicKind.Base &#125;;</span><br></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Window.SystemBackdrop = <span class="keyword">new</span> AcrylicBackdrop() &#123; Kind = DesktopAcrylicKind.Thin &#125;;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/AcrylicBaseBackdrop.png" alt="WinUICommunity"></p>
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/AcrylicThinBackdrop.png" alt="WinUICommunity"></p>
+<h1 id="TransparentBackdrop"><a href="#TransparentBackdrop" class="headerlink" title="TransparentBackdrop"></a>TransparentBackdrop</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">TransparentBackdrop : SystemBackdrop</span><br></pre></td></tr></table></figure>
+
+<h2 id="Example-1"><a href="#Example-1" class="headerlink" title="Example"></a>Example</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Window.SystemBackdrop = <span class="keyword">new</span> TransparentBackdrop();</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/TransparentBackdrop.png" alt="WinUICommunity"></p>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>CollectionExtensions</title>
+    <url>/winUICommunityCore/extensions/collectionExtension/index.html</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>Available Extensions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AddRange</td>
+</tr>
+<tr>
+<td>Clone</td>
+</tr>
+<tr>
+<td>AddIfNotExists</td>
+</tr>
+<tr>
+<td>UpdateValue</td>
+</tr>
+<tr>
+<td>DeleteIfExists</td>
+</tr>
+<tr>
+<td>AreValuesNull</td>
+</tr>
+</tbody></table>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">collection.AddRange(items);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> dupcollection = collection.Clone();</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">collection.AddIfNotExists(item);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">collection.UpdateValue(item, newItem);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">collection.DeleteIfExists(item);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">bool</span> areNull = collection.AreValuesNull();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Extensions</title>
+    <url>/winUICommunityCore/extensions/generalExtension/index.html</url>
+    <content><![CDATA[<div class="note warning"><p>We moved all namespaces into a single namespace. No matter which (WinUICommunity) library you use, the namespace is always as follows<br>For use in the Xaml:<br><code>xmlns:wuc=&quot;using:WinUICommunity&quot;</code><br>For use in the Csharp:<br><code>using WinUICommunity;</code></p>
+</div>
+
+<h1 id="ContentDialogExtension"><a href="#ContentDialogExtension" class="headerlink" title="ContentDialogExtension"></a>ContentDialogExtension</h1><p>By default, only 1 ContentDialog can be opened, with the help of this extension you can open multiple ContentDialogs.</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ContentDialog dialog = <span class="keyword">new</span> ContentDialog()</span><br><span class="line">&#123;</span><br><span class="line">    Title = <span class="string">&quot;Title&quot;</span>,</span><br><span class="line">    Content = <span class="string">&quot;Content&quot;</span>,</span><br><span class="line">    PrimaryButtonText = <span class="string">&quot;OK&quot;</span>,</span><br><span class="line">    CloseButtonText = <span class="string">&quot;Cancel&quot;</span>,</span><br><span class="line">    DefaultButton = ContentDialogButton.Primary,</span><br><span class="line">    XamlRoot = xamlRoot</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> result = <span class="keyword">await</span> dialog.ShowAsyncQueue();</span><br></pre></td></tr></table></figure>
+
+<h1 id="ShowAsyncDraggable"><a href="#ShowAsyncDraggable" class="headerlink" title="ShowAsyncDraggable"></a>ShowAsyncDraggable</h1><h1 id="ShowAsyncQueueDraggable"><a href="#ShowAsyncQueueDraggable" class="headerlink" title="ShowAsyncQueueDraggable"></a>ShowAsyncQueueDraggable</h1><h1 id="DependencyObjectExtensions"><a href="#DependencyObjectExtensions" class="headerlink" title="DependencyObjectExtensions"></a>DependencyObjectExtensions</h1><h1 id="FrameworkElementExtensions"><a href="#FrameworkElementExtensions" class="headerlink" title="FrameworkElementExtensions"></a>FrameworkElementExtensions</h1><h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>DictionaryExtensions</title>
+    <url>/winUICommunityCore/extensions/dictionaryExtensions/index.html</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>Available Extensions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Clone</td>
+</tr>
+<tr>
+<td>AddIfNotExists</td>
+</tr>
+<tr>
+<td>Update</td>
+</tr>
+<tr>
+<td>DeleteIfExistsKey</td>
+</tr>
+<tr>
+<td>DeleteIfExistsValue</td>
+</tr>
+<tr>
+<td>AreValuesNull</td>
+</tr>
+<tr>
+<td>AreKeysNull</td>
+</tr>
+</tbody></table>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> dupdictionary = dictionary.Clone();</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">dictionary.AddIfNotExists(key, <span class="keyword">value</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">dictionary.Update(key, <span class="keyword">value</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">dictionary.DeleteIfExistsKey(key);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">bool</span> areNull = dictionary.AreValuesNull();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>PanelAttach</title>
+    <url>/winUICommunityCore/attach/panelAttach/index.html</url>
+    <content><![CDATA[<h1 id="ChildrenTransitions"><a href="#ChildrenTransitions" class="headerlink" title="ChildrenTransitions"></a>ChildrenTransitions</h1><p>Animation when a panel is loading</p>
+<h1 id="Available-Transitions"><a href="#Available-Transitions" class="headerlink" title="Available Transitions"></a>Available Transitions</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>None</td>
+</tr>
+<tr>
+<td>Default</td>
+</tr>
+<tr>
+<td>AddDeleteThemeTransition</td>
+</tr>
+<tr>
+<td>ContentThemeTransition</td>
+</tr>
+<tr>
+<td>EdgeUIThemeTransition</td>
+</tr>
+<tr>
+<td>EntranceThemeTransition</td>
+</tr>
+<tr>
+<td>NavigationThemeTransition</td>
+</tr>
+<tr>
+<td>PaneThemeTransition</td>
+</tr>
+<tr>
+<td>PopupThemeTransition</td>
+</tr>
+<tr>
+<td>ReorderThemeTransition</td>
+</tr>
+<tr>
+<td>RepositionThemeTransition</td>
+</tr>
+<tr>
+<td>SettingsCardTransition</td>
+</tr>
+</tbody></table>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">wuc:PanelAttach.ChildrenTransitions</span>=<span class="string">&quot;EntranceThemeTransition&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">PanelAttach.SetChildrenTransitions(control, PanelTransitionCollection.NavigationThemeTransition);</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>EnumValuesExtension</title>
+    <url>/winUICommunityCore/extensions/enumValueExtension/index.html</url>
+    <content><![CDATA[<p>Assuming we had an Animal enum type and we wanted the user to pick one of the available names, here is the XAML syntax that allows us to create a ComboBox and display all Animal values, directly from XAML and with no code-behind:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ComboBox</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:wuc</span>=<span class="string">&quot;using:WinUICommunity&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:enums</span>=<span class="string">&quot;using:MyApplication.Enums&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;wuc:EnumValues Type=enums:Animal&#125;&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">SelectedIndex</span>=<span class="string">&quot;0&quot;</span>/&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/EnumValueEx.png" alt="WinUICommunity"></p>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>ListExtensions</title>
+    <url>/winUICommunityCore/extensions/listExtensions/index.html</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>Available Extensions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Clone</td>
+</tr>
+<tr>
+<td>AddIfNotExists</td>
+</tr>
+<tr>
+<td>UpdateValue</td>
+</tr>
+<tr>
+<td>DeleteIfExists</td>
+</tr>
+<tr>
+<td>AreValuesNull</td>
+</tr>
+</tbody></table>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> dupList = list.Clone();</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">list.AddIfNotExists(item);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">list.UpdateValue(item, newItem);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">list.DeleteIfExists(item);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">bool</span> areNull = list.AreValuesNull();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>ListViewExtension</title>
+    <url>/winUICommunityCore/extensions/listViewExtension/index.html</url>
+    <content><![CDATA[<h2 id="AlternateColor"><a href="#AlternateColor" class="headerlink" title="AlternateColor"></a>AlternateColor</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">wuc:ListViewExtensions.AlternateColor</span>=<span class="string">&quot;Silver&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;x:Bind MainViewModel.Items, Mode=OneWay&#125;&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Page.Resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">DataTemplate</span> <span class="attr">x:Name</span>=<span class="string">&quot;NormalTemplate&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding &quot;</span> <span class="attr">Foreground</span>=<span class="string">&quot;Green&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">DataTemplate</span> <span class="attr">x:Name</span>=<span class="string">&quot;AlternateTemplate&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding&#125;&quot;</span> <span class="attr">Foreground</span>=<span class="string">&quot;Orange&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Page.Resources</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ListView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">ItemTemplate</span>=<span class="string">&quot;&#123;StaticResource NormalTemplate&#125;&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">wuc:ListViewExtensions.AlternateItemTemplate</span>=<span class="string">&quot;&#123;StaticResource AlternateTemplate&#125;&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;x:Bind MainViewModel.Items, Mode=OneWay&#125;&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="AlternateItem"><a href="#AlternateItem" class="headerlink" title="AlternateItem"></a>AlternateItem</h2><h2 id="Command"><a href="#Command" class="headerlink" title="Command"></a>Command</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">wuc:ListViewExtensions.Command</span>=<span class="string">&quot;&#123;x:Bind MainViewModel.ItemSelectedCommand, Mode=OneWay&#125;&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">IsItemClickEnabled</span>=<span class="string">&quot;True&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">ItemsSource</span>=<span class="string">&quot;&#123;x:Bind MainViewModel.Items, Mode=OneWay&#125;&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">SelectionMode</span>=<span class="string">&quot;None&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="DeselectItem"><a href="#DeselectItem" class="headerlink" title="DeselectItem"></a>DeselectItem</h2><h2 id="DeselectAll"><a href="#DeselectAll" class="headerlink" title="DeselectAll"></a>DeselectAll</h2><h2 id="SelectAllSafe"><a href="#SelectAllSafe" class="headerlink" title="SelectAllSafe"></a>SelectAllSafe</h2><h2 id="SmoothScrollIntoView"><a href="#SmoothScrollIntoView" class="headerlink" title="SmoothScrollIntoView"></a>SmoothScrollIntoView</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">await</span> listView.SmoothScrollIntoViewWithIndexAsync(listView.SelectedIndex, ScrollItemPlacement.Center, <span class="literal">false</span>, <span class="literal">true</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>MergedDictionariesExtensions</title>
+    <url>/winUICommunityCore/extensions/mergedDictionariesExtensions/index.html</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>Available Extensions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AddIfNotNull</td>
+</tr>
+<tr>
+<td>RemoveIfNotNull</td>
+</tr>
+<tr>
+<td>InsertOrReplace</td>
+</tr>
+<tr>
+<td>RemoveAll</td>
+</tr>
+<tr>
+<td>InsertIfNotExists</td>
+</tr>
+<tr>
+<td>Swap</td>
+</tr>
+</tbody></table>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">mergedDictionary.AddIfNotNull(resourceDictionary);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">mergedDictionary.RemoveIfNotNull(resourceDictionary);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">mergedDictionary.InsertOrReplace(index, resourceDictionary);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">mergedDictionary.InsertIfNotExists(index, resourceDictionary);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">mergedDictionary.RemoveAll();</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">mergedDictionary.Swap(index1, index2);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>PersianDateTimeExtension</title>
+    <url>/winUICommunityCore/extensions/persianDateTimeExtension/index.html</url>
+    <content><![CDATA[<h1 id="DateTime"><a href="#DateTime" class="headerlink" title="DateTime"></a>DateTime</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ToShamsiDate</td>
+<td>DateTime</td>
+<td>Convert GregorianDate to ShamsiDate</td>
+</tr>
+<tr>
+<td>ToShortShamsiDate</td>
+<td>DateTime</td>
+<td>Convert GregorianDate to ShamsiDate (Short Format)</td>
+</tr>
+<tr>
+<td>ToLongShamsiDate</td>
+<td>DateTime</td>
+<td>Convert GregorianDate to ShamsiDate (Long Format)</td>
+</tr>
+<tr>
+<td>GetDiffrenceToNow</td>
+<td>DateTime</td>
+<td>Get Diffrence between DateTime and Current DateTime</td>
+</tr>
+<tr>
+<td>ToGregorianDate</td>
+<td>DateTime</td>
+<td>Convert ShamsiDate to GregorianDate</td>
+</tr>
+<tr>
+<td>ToGregorianDate</td>
+<td>PersianDateTime</td>
+<td>Convert PersianDateTime to GregorianDate</td>
+</tr>
+</tbody></table>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Debug.WriteLine(DateTime.Now.ToShamsiDate());</span><br><span class="line"><span class="comment">//Result : 1398/11/03</span></span><br><span class="line"></span><br><span class="line">Debug.WriteLine(DateTime.Now.ToShortShamsiDate());</span><br><span class="line"><span class="comment">//Result : 98/11/03</span></span><br><span class="line"></span><br><span class="line">Debug.WriteLine(DateTime.Now.ToLongShamsiDate());</span><br><span class="line"><span class="comment">//Result : پنجشنبه 3 بهمن 1398</span></span><br><span class="line"></span><br><span class="line">Debug.WriteLine(DateTime.Now.GetDiffrenceToNow());</span><br><span class="line"></span><br><span class="line">Debug.WriteLine(DateTime.Now.ToGregorianDate());</span><br><span class="line"><span class="comment">// Result : 16/01/2021</span></span><br><span class="line"></span><br><span class="line">Debug.WriteLine(PersianDateTime.Now.ToGregorianDate());</span><br><span class="line"><span class="comment">// Result : 16/01/2021</span></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>StringExtension</title>
+    <url>/winUICommunityCore/extensions/stringExtension/index.html</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IsEmail</td>
+</tr>
+<tr>
+<td>IsDecimal</td>
+</tr>
+<tr>
+<td>IsNumeric</td>
+</tr>
+<tr>
+<td>IsPhoneNumber</td>
+</tr>
+<tr>
+<td>IsCharacterString</td>
+</tr>
+<tr>
+<td>DecodeHtml</td>
+</tr>
+<tr>
+<td>FixHtml</td>
+</tr>
+<tr>
+<td>Truncate</td>
+</tr>
+<tr>
+<td>GetHash</td>
+</tr>
+</tbody></table>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">bool</span> output1 = text.IsEmail();</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">bool</span> output2 = text.IsDecimal();</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">bool</span> output3 = text.IsNumeric();</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">bool</span> output4 = text.IsPhoneNumber();</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">bool</span> output5 = text.IsCharacterString();</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> output6 = text.DecodeHtml(); <span class="comment">//  Returns a string with HTML comments, scripts, styles, and tags removed.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> output7 = text.FixHtml(); <span class="comment">//  Returns a string with HTML comments, scripts, and styles removed.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> output8 = text.Truncate(length); <span class="comment">// Truncates a string to the specified length.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>TextBox Extensions</title>
+    <url>/winUICommunityCore/extensions/textBoxExtension/index.html</url>
+    <content><![CDATA[<p>The Regex attached property allows text validation using a regular expression or using built in validation types.</p>
+<p>The validation has 3 modes (TextBoxExtensions.ValidationMode):</p>
+<p>Normal (Default): this mode will set the IsValid attached property to false or true whether the TextBox text is a valid or not against the Regex property.<br>Forced: this mode sets the IsValid property and removes the TextBox text if not valid when the TextBox loses focus.<br>Dynamic: this mode extends Normal and if is the newest input of the TextBox is invalid, the character which is invalid will be deleted. Note that the TextBoxExtensions.ValidationType values Email and PhoneNumber don’t support this validation mode. If you set the validation mode to Dynamic, Normal is selected automatically instead.</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Name</span>=<span class="string">&quot;PhoneNumberValidator&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">wuc:TextBoxExtensions.Regex</span>=<span class="string">&quot;^\s*\+?\s*([0-9][\s-]*)&#123;9,&#125;$&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Header</span>=<span class="string">&quot;Text box with Regex extension for phone number, validation occurs on TextChanged&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Foreground</span>=<span class="string">&quot;&#123;ThemeResource TextFillColorSecondaryBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Run</span> <span class="attr">Text</span>=<span class="string">&quot;Is valid: &quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Run</span> <span class="attr">FontWeight</span>=<span class="string">&quot;SemiBold&quot;</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding (wuc:TextBoxExtensions.IsValid), ElementName=PhoneNumberValidator&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Name</span>=<span class="string">&quot;CharactValidator&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationMode</span>=<span class="string">&quot;Dynamic&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationType</span>=<span class="string">&quot;Characters&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with ValidationType=Characters, validation occurs at input with ValidationMode=Dynamic and clear only single character when value is invalid&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;abcdef&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Foreground</span>=<span class="string">&quot;&#123;ThemeResource TextFillColorSecondaryBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">Text</span>=<span class="string">&quot;Is valid: &quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">FontWeight</span>=<span class="string">&quot;SemiBold&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding (wuc:TextBoxExtensions.IsValid), ElementName=CharactValidator&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Name</span>=<span class="string">&quot;EmailValidator&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationType</span>=<span class="string">&quot;Email&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with ValidationType=Email, validation occurs on TextChanged&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Foreground</span>=<span class="string">&quot;&#123;ThemeResource TextFillColorSecondaryBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">Text</span>=<span class="string">&quot;Is valid: &quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">FontWeight</span>=<span class="string">&quot;SemiBold&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding (wuc:TextBoxExtensions.IsValid), ElementName=EmailValidator&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Name</span>=<span class="string">&quot;DecimalValidatorForce&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationMode</span>=<span class="string">&quot;Forced&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationType</span>=<span class="string">&quot;Decimal&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with ValidationType=Decimal, validation occurs on TextChanged and force occurs on lose focus with ValidationMode=Force (333,111 or 333.111)&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Foreground</span>=<span class="string">&quot;&#123;ThemeResource TextFillColorSecondaryBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">Text</span>=<span class="string">&quot;Is valid: &quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">FontWeight</span>=<span class="string">&quot;SemiBold&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding (wuc:TextBoxExtensions.IsValid), ElementName=DecimalValidatorForce&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Name</span>=<span class="string">&quot;NumberValidatorDynamic&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationMode</span>=<span class="string">&quot;Dynamic&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.ValidationType</span>=<span class="string">&quot;Number&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with ValidationType=Number, validation occurs at input with ValidationMode=Dynamic and clear only single character when value is invalid&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Foreground</span>=<span class="string">&quot;&#123;ThemeResource TextFillColorSecondaryBrush&#125;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">Text</span>=<span class="string">&quot;Is valid: &quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Run</span> <span class="attr">FontWeight</span>=<span class="string">&quot;SemiBold&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;&#123;Binding (wuc:TextBoxExtensions.IsValid), ElementName=NumberValidatorDynamic&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/TextBoxEx.png" alt="WinUICommunity"></p>
+<h1 id="Text-mask"><a href="#Text-mask" class="headerlink" title="Text mask"></a>Text mask</h1><p>The Mask attached property allows a user to more easily enter fixed width text in TextBox control where you would like them to enter the data in a certain format, ex: phone number, postal code.</p>
+<p>The developer adds the mask property to prevent end user to enter any other format but the required one (eg. a postal code in the format “aaa-9999”).</p>
+<p>The Mask property provides 3 built-in variable characters that can be used to define a mask:</p>
+<p>a which represents [a-Z]<br>9 which represents [0-9]</p>
+<ul>
+<li>which represents a or 9</li>
+</ul>
+<p>At the post code example the user will only be allowed to enter from a to Z in the first 3 characters, then there is a fixed character - which the user can change or remove, and the last part which the user can change by entering from 0 to 9 at each character. The Mask property prevents the TextBox from having non specified characters (eg. if you entered 1 or 2 into a mask like 9999).</p>
+<p>The Mask property also supports 2 type of characters:</p>
+<p>Variable: which the user can change like a,9,*<br>Fixed: which the user can’t change and it is any non variable character (eg. the - in the first example)<br>Variable characters a represented to end user in form of placeholder so the user can know which characters he can change and which he can’t, ex mask aaa-9999 will be presented to user as ___-____. The default placeholder is _, but you can change it using the MaskPlaceholder property.</p>
+<p>You can escape variable by using \ (eg. the mask +\964 will be presented to the user as +964). This way, the 9 in the mask is treated as a fixed character, not as a variable. If you needed \ in the mask then you can write it as \ (eg. 99\99\9999 will be presented to the user as <strong>__\</strong>).</p>
+<p>In case you want to add a custom variable character you can use the CustomMask property. You can add a character that represents certain regex as c:[a-c] and once you use character c in the mask the mask will prevent any characters but from a to c inside the TextBox, also you specify multiple variable characters by adding comma , after every character and its representation. This feature is helpful if you want to allow certain language characters (eg. French or Arabic only TextBox).</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Spacing</span>=<span class="string">&quot;24&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">wuc:TextBoxExtensions.Mask</span>=<span class="string">&quot;9a9a-a9a*&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with Mask 9a9a-a9a* (9 allows from 0 to 9, a allow from a to Z and * allows both a and 9)&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Text</span>=<span class="string">&quot;TextBoxMask&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">wuc:TextBoxExtensions.Mask</span>=<span class="string">&quot;+1999-9999&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.MaskPlaceholder</span>=<span class="string">&quot; &quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with Mask +1999-9999 and placeHolder as space (placeholder represents the characters the user can change on runtime)&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">wuc:TextBoxExtensions.Mask</span>=<span class="string">&quot;+\964 799 999 9999&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with Mask +964 799 999 9999 (Notice how we escape the first 9 with a backslash)&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">wuc:TextBoxExtensions.Mask</span>=<span class="string">&quot;99\\99\\9999&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with Mask 99\99\9999 (You can escape a backslash with another backslash)&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">wuc:TextBoxExtensions.CustomMask</span>=<span class="string">&quot;5:[1-5],c:[a-c]&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">wuc:TextBoxExtensions.Mask</span>=<span class="string">&quot;a5c-5c*9&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Header</span>=<span class="string">&quot;Text box with CustomMask in case you want to define your own variable character like a, 9 and *. Mask: a5c-5c*9, 5: [1-5], c: [a-c]&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/TextBoxMaskEx.png" alt="WinUICommunity"></p>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Gravatar</title>
+    <url>/winUICommunityComponents/controls/gravatar/index.html</url>
+    <content><![CDATA[<p>A way to implement random avatars for users.</p>
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Default Value</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Generator</td>
+<td>Avatar Generator</td>
+<td>GithubGravatarGenerator</td>
+<td></td>
+</tr>
+<tr>
+<td>Id</td>
+<td>UserId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Source</td>
+<td>User Profile</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">wuc:Gravatar</span> <span class="attr">Id</span>=<span class="string">&quot;User1&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/Gravatar.gif" alt="WinUICommunity"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Divider</title>
+    <url>/winUICommunityComponents/controls/divider/index.html</url>
+    <content><![CDATA[<p>The dividing line that separates the content.</p>
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Property</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Content</td>
+</tr>
+<tr>
+<td>LineStroke</td>
+</tr>
+<tr>
+<td>LineStrokeThickness</td>
+</tr>
+<tr>
+<td>LineStrokeDashArray</td>
+</tr>
+<tr>
+<td>ContentPadding</td>
+</tr>
+<tr>
+<td>HorizontalContentAlignment</td>
+</tr>
+<tr>
+<td>Orientation</td>
+</tr>
+</tbody></table>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;10&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">ChildrenTransitions</span>=<span class="string">&quot;&#123;StaticResource SettingsCardsAnimations&#125;&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">Spacing</span>=<span class="string">&quot;10&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Spacing</span>=<span class="string">&quot;10&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Width</span>=<span class="string">&quot;300&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">wuc:Divider</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">Content</span>=<span class="string">&quot;Title&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">ContentPadding</span>=<span class="string">&quot;0&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;More&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">wuc:Divider</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">LineStroke</span>=<span class="string">&quot;&#123;ThemeResource AccentAAFillColorDefaultBrush&#125;&quot;</span></span></span><br><span class="line"><span class="tag">                            <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">LineStroke</span>=<span class="string">&quot;&#123;ThemeResource SystemFillColorCriticalBrush&#125;&quot;</span></span></span><br><span class="line"><span class="tag">                            <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">LineStrokeDashArray</span>=<span class="string">&quot;2,2&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Width</span>=<span class="string">&quot;300&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">HorizontalContentAlignment</span>=<span class="string">&quot;Left&quot;</span></span></span><br><span class="line"><span class="tag">                            <span class="attr">Content</span>=<span class="string">&quot;Title&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">HorizontalContentAlignment</span>=<span class="string">&quot;Right&quot;</span></span></span><br><span class="line"><span class="tag">                            <span class="attr">Content</span>=<span class="string">&quot;Title&quot;</span></span></span><br><span class="line"><span class="tag">                            <span class="attr">ContentPadding</span>=<span class="string">&quot;10,0&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Button&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span></span></span><br><span class="line"><span class="tag">                                <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Button&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span></span></span><br><span class="line"><span class="tag">                                <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Button&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Button&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span></span></span><br><span class="line"><span class="tag">                                <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span></span></span><br><span class="line"><span class="tag">                                <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Button&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span></span></span><br><span class="line"><span class="tag">                                <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span></span></span><br><span class="line"><span class="tag">                                <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Button&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">&quot;0,16,0,0&quot;</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">Orientation</span>=<span class="string">&quot;Horizontal&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Button&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span></span></span><br><span class="line"><span class="tag">                                <span class="attr">LineStroke</span>=<span class="string">&quot;&#123;ThemeResource AccentAAFillColorTertiaryBrush&#125;&quot;</span></span></span><br><span class="line"><span class="tag">                                <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span></span></span><br><span class="line"><span class="tag">                                <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Button&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">wuc:Divider</span> <span class="attr">MaxHeight</span>=<span class="string">&quot;16&quot;</span></span></span><br><span class="line"><span class="tag">                                <span class="attr">LineStroke</span>=<span class="string">&quot;&#123;ThemeResource SystemFillColorCriticalBrush&#125;&quot;</span></span></span><br><span class="line"><span class="tag">                                <span class="attr">LineStrokeThickness</span>=<span class="string">&quot;2&quot;</span></span></span><br><span class="line"><span class="tag">                                <span class="attr">Orientation</span>=<span class="string">&quot;Vertical&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">&quot;Button&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/Divider.png" alt="WinUICommunity"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Shield</title>
+    <url>/winUICommunityComponents/controls/shield/index.html</url>
+    <content><![CDATA[<p>The badge consists of the name of the left half and the value of the right half. Click the badge to open the corresponding link.</p>
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Default Value</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Subject</td>
+<td>Name</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Value</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Color</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">x:String</span> <span class="attr">x:Key</span>=<span class="string">&quot;GitHubIcon&quot;</span>&gt;</span>M8.00662 0C3.57917 0 0 3.66665 0 8.2028C0 11.8288 2.29329 14.8981 5.4747 15.9844C5.87246 16.0661 6.01816 15.8079 6.01816 15.5908C6.01816 15.4006 6.00505 14.7488 6.00505 14.0696C3.7778 14.5586 3.31399 13.0918 3.31399 13.0918C2.95606 12.1411 2.42572 11.8968 2.42572 11.8968C1.69674 11.3943 2.47882 11.3943 2.47882 11.3943C3.28744 11.4486 3.71175 12.2363 3.71175 12.2363C4.42745 13.4856 5.58074 13.1326 6.04471 12.9153C6.11092 12.3856 6.32315 12.0189 6.5485 11.8153C4.77211 11.6251 2.90312 10.919 2.90312 7.76813C2.90312 6.8718 3.22107 6.13847 3.72486 5.56814C3.64538 5.36448 3.36693 4.52231 3.80451 3.39515C3.80451 3.39515 4.48055 3.17782 6.00488 4.23715C6.6575 4.05759 7.33054 3.96625 8.00662 3.96548C8.68266 3.96548 9.37181 4.06065 10.0082 4.23715C11.5327 3.17782 12.2087 3.39515 12.2087 3.39515C12.6463 4.52231 12.3677 5.36448 12.2882 5.56814C12.8053 6.13847 13.1101 6.8718 13.1101 7.76813C13.1101 10.919 11.2411 11.6115 9.45146 11.8153C9.74318 12.0733 9.99492 12.5621 9.99492 13.3363C9.99492 14.4363 9.98181 15.3191 9.98181 15.5906C9.98181 15.8079 10.1277 16.0661 10.5253 15.9846C13.7067 14.8979 16 11.8288 16 8.2028C16.0131 3.66665 12.4208 0 8.00662 0Z<span class="tag">&lt;/<span class="name">x:String</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Spacing</span>=<span class="string">&quot;10&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">wuc:Shield</span> <span class="attr">Click</span>=<span class="string">&quot;Shield_Click&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Status</span>=<span class="string">&quot;Components&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Subject</span>=<span class="string">&quot;WinUICommunity&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">wuc:Shield</span> <span class="attr">Click</span>=<span class="string">&quot;Shield_Click&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Status</span>=<span class="string">&quot;Core&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Subject</span>=<span class="string">&quot;WinUICommunity&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Color</span>=<span class="string">&quot;Green&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">wuc:Shield</span> <span class="attr">Click</span>=<span class="string">&quot;Shield_Click&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Status</span>=<span class="string">&quot;LandingPage&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Subject</span>=<span class="string">&quot;WinUICommunity&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Color</span>=<span class="string">&quot;Orange&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">wuc:Shield</span> <span class="attr">Click</span>=<span class="string">&quot;Shield_Click&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Status</span>=<span class="string">&quot;Github&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Color</span>=<span class="string">&quot;Violet&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">wuc:Shield.Subject</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Viewbox</span> <span class="attr">Margin</span>=<span class="string">&quot;2&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">PathIcon</span> <span class="attr">Data</span>=<span class="string">&quot;&#123;StaticResource GitHubIcon&#125;&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">Viewbox</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">wuc:Shield.Subject</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">wuc:Shield</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">wuc:Shield</span> <span class="attr">Click</span>=<span class="string">&quot;Shield_Click&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Subject</span>=<span class="string">&quot;Github&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">Color</span>=<span class="string">&quot;Violet&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">wuc:Shield.Status</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Viewbox</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">PathIcon</span> <span class="attr">Margin</span>=<span class="string">&quot;2&quot;</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">Data</span>=<span class="string">&quot;&#123;StaticResource GitHubIcon&#125;&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">Viewbox</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">wuc:Shield.Status</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">wuc:Shield</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">async</span> <span class="keyword">void</span> <span class="title">Shield_Click</span>(<span class="params"><span class="built_in">object</span> sender, Microsoft.UI.Xaml.RoutedEventArgs e</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">await</span> Launcher.LaunchUriAsync(<span class="keyword">new</span> Uri(<span class="string">&quot;https://github.com/winUICommunity/WinUICommunity&quot;</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/Shield.png" alt="WinUICommunity"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Icon Markup Extensions</title>
+    <url>/winUICommunityCore/extensions/iconMarkupExtension/index.html</url>
+    <content><![CDATA[<p>The FontIcon, FontIconSource and BitmapIcon markup extensions allow developers to easily declare these types of icons directly from XAML in a compact manner.</p>
+<p>easily use Icons in FontIcon, SymbolIcon, BitmapIcon.</p>
+<h1 id="Available-Extensions"><a href="#Available-Extensions" class="headerlink" title="Available Extensions"></a>Available Extensions</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BitmapIconExtension</td>
+</tr>
+<tr>
+<td>BitmapIconSourceExtension</td>
+</tr>
+<tr>
+<td>FontIconExtension</td>
+</tr>
+<tr>
+<td>FontIconSourceExtension</td>
+</tr>
+<tr>
+<td>SymbolIconExtension</td>
+</tr>
+<tr>
+<td>SymbolIconSourceExtension</td>
+</tr>
+</tbody></table>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><h2 id="BitmapIconExtension"><a href="#BitmapIconExtension" class="headerlink" title="BitmapIconExtension"></a>BitmapIconExtension</h2><p>The <code>BitmapIconExtension</code> markup extension is similar in structure to the two previous extensions, but it produces <code>BitmapIcon</code> instances instead of font-based icons. Here is how it can be used:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MenuFlyoutItem</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Text</span>=<span class="string">&quot;No, click me!&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Icon</span>=<span class="string">&quot;&#123;wuc:BitmapIcon Source=/Assets/myicon.png&#125;&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>or</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MenuFlyoutItem</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Text</span>=<span class="string">&quot;No, click me!&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Icon</span>=<span class="string">&quot;&#123;wuc:BitmapIcon Source=/Assets/myicon.png, ShowAsMonochrome = true&#125;&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="BitmapIconSourceExtension"><a href="#BitmapIconSourceExtension" class="headerlink" title="BitmapIconSourceExtension"></a>BitmapIconSourceExtension</h2><p>The <code>BitmapIconSourceExtension</code> class mirrors the <code>BitmapIconExtension</code> type, with the only difference being that it returns a <code>BitmapIconSource</code> instance. Here is how it can be used:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;SwipeItems Mode=&quot;Reveal&quot;&gt;</span><br><span class="line">    &lt;SwipeItem Text=&quot;Send&quot; IconSource=&quot;&#123;wuc:BitmapIconSource Source=/Assets/myicon.png&#125;&quot;/&gt;</span><br><span class="line">&lt;/SwipeItems&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="FontIconExtension"><a href="#FontIconExtension" class="headerlink" title="FontIconExtension"></a>FontIconExtension</h2><p>The <code>FontIconExtension</code> type provides the ability to create <code>FontIcon</code> instances from XAML with a more compact representation than by explicitly creating a new <code>FontIcon</code> object to assign to the target property. The property also maps all the available <code>FontIcon</code> properties, so the two APIs expose the same set of customization options, just through a different XAML syntax:</p>
+<table>
+<thead>
+<tr>
+<th>Available Property</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Glyph</td>
+<td>Example: &amp;#xE102</td>
+</tr>
+<tr>
+<td>GlyphName</td>
+<td>Choose Glyph by its name.</td>
+</tr>
+<tr>
+<td>GlyphCode</td>
+<td>Choose Glyph by its Code.</td>
+</tr>
+</tbody></table>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">CommandBar</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">AppBarButton</span> <span class="attr">Icon</span>=<span class="string">&quot;&#123;wuc:FontIcon Glyph=<span class="symbol">&amp;#xE102;</span>&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">CommandBar</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>or</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">CommandBar</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">AppBarButton</span> <span class="attr">Icon</span>=<span class="string">&quot;&#123;wuc:FontIcon GlyphName=Accept&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">CommandBar</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>or </p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">CommandBar</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">AppBarButton</span> <span class="attr">Icon</span>=<span class="string">&quot;&#123;wuc:FontIcon GlyphCode=E700&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">CommandBar</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/FontIconGlyph.png" alt="WinUICommunity"></p>
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/FontIconGlyph2.png" alt="WinUICommunity"></p>
+<h2 id="FontIconSourceExtension"><a href="#FontIconSourceExtension" class="headerlink" title="FontIconSourceExtension"></a>FontIconSourceExtension</h2><p>The <code>FontIconSourceExtension</code> class mirrors the <code>FontIconExtension</code> type, but producing <code>FontIconSource</code> instances instead of <code>FontIcon</code>:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">SwipeItems</span> <span class="attr">Mode</span>=<span class="string">&quot;Reveal&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">SwipeItem</span> <span class="attr">Text</span>=<span class="string">&quot;Accept&quot;</span> <span class="attr">IconSource</span>=<span class="string">&quot;&#123;wuc:FontIconSource Glyph=<span class="symbol">&amp;#xE10B;</span>&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">SwipeItems</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="SymbolIconExtension"><a href="#SymbolIconExtension" class="headerlink" title="SymbolIconExtension"></a>SymbolIconExtension</h2><p>The <code>SymbolIconExtension</code> type mirrors the <code>FontIcon</code> markup extension, with the main difference being that it uses a <code>Symbol</code> value to specify the icon. All the other properties from <code>FontIconExtension</code> are available, with the exception of the font family. Here is how it can be used:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">CommandBar</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">AppBarButton</span> <span class="attr">Icon</span>=<span class="string">&quot;&#123;wuc:SymbolIcon Symbol=Play&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">CommandBar</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="SymbolIconSource"><a href="#SymbolIconSource" class="headerlink" title="SymbolIconSource"></a>SymbolIconSource</h2><p>The <code>SymbolIconSourceExtension</code> type is an alternative for <code>FontIconSourceExtension</code> that takes a <code>Symbol</code> value instead of a text, and displays the icon. It’s equivalent to the <code>SymbolIconExtension</code> type, except for the fact that it returns a <code>FontIconSource</code> instance:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">SwipeItems</span> <span class="attr">Mode</span>=<span class="string">&quot;Reveal&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">SwipeItem</span> <span class="attr">Text</span>=<span class="string">&quot;Play&quot;</span> <span class="attr">IconSource</span>=<span class="string">&quot;&#123;wuc:SymbolIconSource Symbol=Play&#125;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">SwipeItems</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Growl Information notification</title>
+    <url>/winUICommunityComponents/controls/growl/index.html</url>
+    <content><![CDATA[<p>This control can be used when you want to arrange notification information from top to bottom in the right area of the window.</p>
+<h1 id="Control-effect"><a href="#Control-effect" class="headerlink" title="Control effect"></a>Control effect</h1><p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/Growl.gif" alt="WinUICommunity"></p>
+<h1 id="Basic-usage"><a href="#Basic-usage" class="headerlink" title="Basic usage"></a>Basic usage</h1><p>Step 1: Add a <code>StackPanel</code> to the container of <code>Growl</code></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">&quot;Hidden&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">wuc:Growl.GrowlParent</span>=<span class="string">&quot;True&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,10,10&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>In order to facilitate scrolling, a <code>ScrollViewer</code> is usually wrapped in the outer layer. At the same time, for the sake of beauty, we set <code>VerticalScrollBarVisibility=&quot;Hidden&quot;</code> of <code>ScrollViewer</code>. It is best to add a suitable <code>Margin</code> to <code>StackPanel</code>, which is also for aesthetics.</p>
+<div class="note warning"><p>Note the code <code>wuc:Growl.GrowlParent=&quot;True&quot;</code>。</p>
+</div>
+
+<p>Step 2: Call the relevant interface of <code>Growl</code> to display the specified message.</p>
+<div class="note info no-icon"><p>Use case: <code>Growl.Success(&quot;File saved successfully!&quot;);</code></p>
+</div>
+
+<h1 id="Display-information-notifications-in-any-StackPanel-container"><a href="#Display-information-notifications-in-any-StackPanel-container" class="headerlink" title="Display information notifications in any StackPanel container"></a>Display information notifications in any <code>StackPanel</code> container</h1><p>Step 1: set a Token to the <code>StackPanel</code></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">&quot;Hidden&quot;</span> <span class="attr">HorizontalAlignment</span>=<span class="string">&quot;Right&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">wuc:Growl.Token</span>=<span class="string">&quot;SuccessMsg&quot;</span> <span class="attr">wuc:Growl.GrowlParent</span>=<span class="string">&quot;True&quot;</span> <span class="attr">VerticalAlignment</span>=<span class="string">&quot;Top&quot;</span> <span class="attr">Margin</span>=<span class="string">&quot;0,10,10,10&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<div class="note warning"><p>Note the code<code>wuc:Growl.Token=&quot;SuccessMsg&quot;</code>。</p>
+</div>
+
+<p>Step 2: Use the token: SuccessMsg and call the relevant interface of <code>Growl</code> to display the specified message.</p>
+<div class="note info no-icon"><p>Example：<code>Growl.Success(&quot;File saved successfully!&quot;, &quot;SuccessMsg&quot;);</code></p>
+</div>
+
+<div class="note warning"><p>Now the “File saved successfully!” message will only be sent to the <code>StackPanel</code> container with the “SuccessMsg” token tag.</p>
+</div>
+
+<h1 id="Global-Usage"><a href="#Global-Usage" class="headerlink" title="Global Usage"></a>Global Usage</h1><p>you can use growl in desktop Not just the app itself<br>In this case you don’t need anything just use <code>Growl.XXXGlobal</code> to display the message</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Growl.InfoGlobal(<span class="string">&quot;GrowlInfo&quot;</span>);</span><br><span class="line"><span class="comment">//OR</span></span><br><span class="line">Growl.SuccessGlobal(<span class="string">&quot;GrowlSuccess&quot;</span>);</span><br><span class="line"><span class="comment">// OR</span></span><br><span class="line">Growl.WarningGlobal(<span class="keyword">new</span> GrowlInfo</span><br><span class="line">            &#123;</span><br><span class="line">                Message = <span class="string">&quot;GrowlWarning&quot;</span>,</span><br><span class="line">                ActionBeforeClose = isConfirmed =&gt;</span><br><span class="line">                &#123;</span><br><span class="line">                    Growl.InfoGlobal(isConfirmed.ToString());</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line"><span class="comment">// OR</span></span><br><span class="line">Growl.ErrorGlobal(<span class="string">&quot;GrowlError&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// And for Clearing growls</span></span><br><span class="line">Growl.ClearGlobal();</span><br></pre></td></tr></table></figure>
+
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GrowlPanel</td>
+<td>Currently used message container</td>
+</tr>
+</tbody></table>
+<h1 id="Additional-attribute"><a href="#Additional-attribute" class="headerlink" title="Additional attribute"></a>Additional attribute</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Token</td>
+<td>Used to set message tags</td>
+</tr>
+<tr>
+<td>GrowlParent</td>
+<td>for setting up message containers</td>
+</tr>
+<tr>
+<td>GrowlEnterTransition</td>
+<td></td>
+</tr>
+<tr>
+<td>GrowlExitTransition</td>
+<td></td>
+</tr>
+<tr>
+<td>RootGridMargin</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Info(string title)</td>
+<td></td>
+</tr>
+<tr>
+<td>Info(string title, string message)</td>
+<td></td>
+</tr>
+<tr>
+<td>Info(GrowlInfo growlInfo)</td>
+<td></td>
+</tr>
+<tr>
+<td>InfoWithToken(string title, string token)</td>
+<td></td>
+</tr>
+<tr>
+<td>InfoWithToken(string title, string message, string token)</td>
+<td></td>
+</tr>
+<tr>
+<td>InfoGlobal(string title)</td>
+<td></td>
+</tr>
+<tr>
+<td>InfoGlobal(string title, string message)</td>
+<td></td>
+</tr>
+<tr>
+<td>InfoGlobal(GrowlInfo growlInfo)</td>
+<td></td>
+</tr>
+<tr>
+<td>Info2(string title)</td>
+<td></td>
+</tr>
+<tr>
+<td>Info2(string title, string message)</td>
+<td></td>
+</tr>
+<tr>
+<td>Info2WithToken(string title, string token)</td>
+<td></td>
+</tr>
+<tr>
+<td>Info2WithToken(string title, string message, string token)</td>
+<td></td>
+</tr>
+<tr>
+<td>Info2Global(string title)</td>
+<td></td>
+</tr>
+<tr>
+<td>Info2Global(string title, string message)</td>
+<td></td>
+</tr>
+<tr>
+<td>Success(string title)</td>
+<td></td>
+</tr>
+<tr>
+<td>Success(string title, string message)</td>
+<td></td>
+</tr>
+<tr>
+<td>Success(GrowlInfo growlInfo)</td>
+<td></td>
+</tr>
+<tr>
+<td>SuccessWithToken(string title, string token)</td>
+<td></td>
+</tr>
+<tr>
+<td>SuccessWithToken(string title, string message, string token)</td>
+<td></td>
+</tr>
+<tr>
+<td>SuccessGlobal(string title)</td>
+<td></td>
+</tr>
+<tr>
+<td>SuccessGlobal(string title, string message)</td>
+<td></td>
+</tr>
+<tr>
+<td>SuccessGlobal(GrowlInfo growlInfo)</td>
+<td></td>
+</tr>
+<tr>
+<td>Warning(string title)</td>
+<td></td>
+</tr>
+<tr>
+<td>Warning(string title, string message)</td>
+<td></td>
+</tr>
+<tr>
+<td>Warning(GrowlInfo growlInfo)</td>
+<td></td>
+</tr>
+<tr>
+<td>WarningWithToken(string title, string token)</td>
+<td></td>
+</tr>
+<tr>
+<td>WarningWithToken(string title, string message, string token)</td>
+<td></td>
+</tr>
+<tr>
+<td>WarningGlobal(string title)</td>
+<td></td>
+</tr>
+<tr>
+<td>WarningGlobal(string title, string message)</td>
+<td></td>
+</tr>
+<tr>
+<td>WarningGlobal(GrowlInfo growlInfo)</td>
+<td></td>
+</tr>
+<tr>
+<td>Error(string title)</td>
+<td></td>
+</tr>
+<tr>
+<td>Error(string title, string message)</td>
+<td></td>
+</tr>
+<tr>
+<td>Error(GrowlInfo growlInfo)</td>
+<td></td>
+</tr>
+<tr>
+<td>ErrorWithToken(string title, string token)</td>
+<td></td>
+</tr>
+<tr>
+<td>ErrorWithToken(string title, string message, string token)</td>
+<td></td>
+</tr>
+<tr>
+<td>ErrorGlobal(string title)</td>
+<td></td>
+</tr>
+<tr>
+<td>ErrorGlobal(string title, string message)</td>
+<td></td>
+</tr>
+<tr>
+<td>ErrorGlobal(GrowlInfo growlInfo)</td>
+<td></td>
+</tr>
+<tr>
+<td>Ask(string title, Func&lt;object, RoutedEventArgs, bool&gt; actionBeforeClose)</td>
+<td></td>
+</tr>
+<tr>
+<td>AskWithToken(string title, string token, Func&lt;object, RoutedEventArgs, bool&gt; actionBeforeClose)</td>
+<td></td>
+</tr>
+<tr>
+<td>AskGlobal(string title, Func&lt;object, RoutedEventArgs, bool&gt; actionBeforeClose)</td>
+<td></td>
+</tr>
+<tr>
+<td>Clear</td>
+<td></td>
+</tr>
+<tr>
+<td>ClearGlobal</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="GrowlInfo"><a href="#GrowlInfo" class="headerlink" title="GrowlInfo"></a>GrowlInfo</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Title</td>
+<td></td>
+</tr>
+<tr>
+<td>Message</td>
+<td></td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td></td>
+</tr>
+<tr>
+<td>ConfirmButtonText</td>
+<td></td>
+</tr>
+<tr>
+<td>CloseButtonText</td>
+<td></td>
+</tr>
+<tr>
+<td>Token</td>
+<td></td>
+</tr>
+<tr>
+<td>Content</td>
+<td></td>
+</tr>
+<tr>
+<td>Severity</td>
+<td></td>
+</tr>
+<tr>
+<td>IconSource</td>
+<td></td>
+</tr>
+<tr>
+<td>IsClosable</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowCloseButton</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowConfirmButton</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowDateTime</td>
+<td></td>
+</tr>
+<tr>
+<td>StaysOpen</td>
+<td></td>
+</tr>
+<tr>
+<td>IsIconVisible</td>
+<td></td>
+</tr>
+<tr>
+<td>UseBlueColorForInfo</td>
+<td></td>
+</tr>
+<tr>
+<td>WaitTime</td>
+<td></td>
+</tr>
+<tr>
+<td>ConfirmButtonClicked</td>
+<td></td>
+</tr>
+<tr>
+<td>CloseButtonClicked</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h1><p><code>Error</code> and <code>Warning</code> modes are not turned off automatically.</p>
+<h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><div class="note info no-icon"><p>Ask is special, what?</p>
+</div>
+
+<p>The main focus of the Ask method is the second parameter, its type is <code>Func&lt;bool, bool&gt;</code>, let’s look at the sample code:</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">Growl.Ask(<span class="string">&quot;do you want to update?&quot;</span>, (s, e) =&gt;</span><br><span class="line">&#123;</span><br><span class="line">    Growl.Info(<span class="string">&quot;test&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>By using the Ask method, the “confirm” and “cancel” buttons are displayed by default. When you click “confirm”, the value of <code>isConfirmed</code> in the above code is <code>true</code>, and clicking “cancel” is <code>false&quot;, which can be based on </code>isConfirmed The value of <code>takes the corresponding action. Finally, if you return</code>true<code>, the Growl notification will be closed, and if </code>false` is returned, it will not be closed.</p>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
+<p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/Growl.gif" alt="WinUICommunity"></p>
 ]]></content>
   </entry>
 </search>
