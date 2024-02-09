@@ -2,7 +2,7 @@
 title: WASDK OMD
 ---
 
-here you can find OMD for WASDK versions
+here you can find OMD for  versions
 
 # v1.5
 

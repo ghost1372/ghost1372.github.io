@@ -20566,6 +20566,12 @@ Example:
     <title>WASDK OMD</title>
     <url>/wasdkOMD/index.html</url>
     <content><![CDATA[<p>here you can find OMD for WASDK versions</p>
+<h1 id="v1-5"><a href="#v1-5" class="headerlink" title="v1.5"></a>v1.5</h1><ul>
+<li><p><a href="https://ghost1372.github.io/wasdkOMD/omd/WinAppSDK1.5.240205001-preview1_v1.4.231219000.html">1.5.240205001-preview1_v1.4.231219000</a></p>
+</li>
+<li><p><a href="https://ghost1372.github.io/wasdkOMD/omd/WinAppSDK1.5.240205001-preview1_v1.5.240124002-experimental2.html">1.5.240205001-preview1_v1.5.240124002-experimental2</a></p>
+</li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -21890,16 +21896,6 @@ Generated with <a href="https://github.com/dotMorten/DotNetOMDGenerator">.NET Ob
 <script>var acc = document.getElementsByClassName("expander"); var i; for (i = 0; i < acc.length; i++) { acc[i].addEventListener("click", function () { var active = this.classList.toggle("active"); var panel = this.nextElementSibling; panel.classList.toggle("collapse"); }); }</script>
 </body>
 </html>]]></content>
-  </entry>
-  <entry>
-    <title>v1.5-preview1_v1.4.4</title>
-    <url>/wasdkOMD/v1.5-preview1_v1.4.4/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>v1.5-preview1_v1.5-experimental2</title>
-    <url>/wasdkOMD/v1.5-preview1_v1.5-exp2/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title></title>
@@ -23421,5 +23417,17 @@ Generated with <a href="https://github.com/dotMorten/DotNetOMDGenerator">.NET Ob
 <script>var acc = document.getElementsByClassName("expander"); var i; for (i = 0; i < acc.length; i++) { acc[i].addEventListener("click", function () { var active = this.classList.toggle("active"); var panel = this.nextElementSibling; panel.classList.toggle("collapse"); }); }</script>
 </body>
 </html>]]></content>
+  </entry>
+  <entry>
+    <title>WASDK OMD</title>
+    <url>/wasdkOMD/omd/index.html</url>
+    <content><![CDATA[<p>here you can find OMD for WASDK versions</p>
+<h1 id="v1-5"><a href="#v1-5" class="headerlink" title="v1.5"></a>v1.5</h1><ul>
+<li><p><a href="https://ghost1372.github.io/wasdkOMD/omd/WinAppSDK1.5.240205001-preview1_v1.4.231219000.html">1.5.240205001-preview1_v1.4.231219000</a></p>
+</li>
+<li><p><a href="https://ghost1372.github.io/wasdkOMD/omd/WinAppSDK1.5.240205001-preview1_v1.5.240124002-experimental2.html">1.5.240205001-preview1_v1.5.240124002-experimental2</a></p>
+</li>
+</ul>
+]]></content>
   </entry>
 </search>
