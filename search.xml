@@ -1035,6 +1035,10 @@
 <td>ShowSelectAllButton</td>
 <td></td>
 </tr>
+<tr>
+<td>IsTristateSortingEnabled</td>
+<td></td>
+</tr>
 </tbody></table>
 ]]></content>
   </entry>
@@ -12180,12 +12184,6 @@ Example:
 ]]></content>
   </entry>
   <entry>
-    <title>Seperator</title>
-    <url>/handycontrol/native_controls/seperator/index.html</url>
-    <content><![CDATA[<h1 id="SeparatorBaseStyle"><a href="#SeparatorBaseStyle" class="headerlink" title="SeparatorBaseStyle"></a>SeparatorBaseStyle</h1><p>The default style is not recommended. It should always be used by other styles as BasedOn.</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Slider</title>
     <url>/handycontrol/native_controls/slider/index.html</url>
     <content><![CDATA[<h1 id="SliderBaseStyle"><a href="#SliderBaseStyle" class="headerlink" title="SliderBaseStyle"></a>SliderBaseStyle</h1><p>The default style of the slider is not recommended. It should always be used by other styles as BasedOn.</p>
@@ -18274,8 +18272,12 @@ Example:
   <entry>
     <title>Backdrop</title>
     <url>/winUICommunityCore/backdrop/index.html</url>
-    <content><![CDATA[<p>there is some custom SystemBackdrop which you can use in your app:</p>
+    <content><![CDATA[<p>there are some custom SystemBackdrop which you can use in your app:</p>
 <h1 id="MicaBackdrop"><a href="#MicaBackdrop" class="headerlink" title="MicaBackdrop"></a>MicaBackdrop</h1><h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Window.SystemBackdrop = <span class="keyword">new</span> MicaBackdrop() &#123; Kind = MicaKind.Base &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>or</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Window</span> <span class="attr">...</span></span></span><br><span class="line"><span class="tag">   <span class="attr">xmlns:wuc</span>=<span class="string">&quot;using:WinUICommunity&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Window.SystemBackdrop</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">wuc:MicaBackdrop</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Window.SystemBackdrop</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Window</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 
 
 <h1 id="AcrylicBackdrop"><a href="#AcrylicBackdrop" class="headerlink" title="AcrylicBackdrop"></a>AcrylicBackdrop</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">AcrylicBackdrop : SystemBackdrop</span><br></pre></td></tr></table></figure>
@@ -18283,6 +18285,9 @@ Example:
 <h2 id="Example-1"><a href="#Example-1" class="headerlink" title="Example"></a>Example</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Window.SystemBackdrop = <span class="keyword">new</span> AcrylicBackdrop() &#123; Kind = DesktopAcrylicKind.Base &#125;;</span><br></pre></td></tr></table></figure>
 <p>or</p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Window.SystemBackdrop = <span class="keyword">new</span> AcrylicBackdrop() &#123; Kind = DesktopAcrylicKind.Thin &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>or</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Window</span> <span class="attr">...</span></span></span><br><span class="line"><span class="tag">   <span class="attr">xmlns:wuc</span>=<span class="string">&quot;using:WinUICommunity&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Window.SystemBackdrop</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">wuc:AcrylicBackdrop</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Window.SystemBackdrop</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Window</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <div class="note info"><p>if you use Acrylic or Mica Backdrop, you can change backdrop config with:<br>ConfigBackdropTintColor, ConfigBackdropFallBackColor, ConfigBackdropTintOpacity and ConfigBackdropLuminosityOpacity </p>
 </div>
@@ -18292,6 +18297,18 @@ Example:
 <h1 id="TransparentBackdrop"><a href="#TransparentBackdrop" class="headerlink" title="TransparentBackdrop"></a>TransparentBackdrop</h1><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">TransparentBackdrop : SystemBackdrop</span><br></pre></td></tr></table></figure>
 
 <h2 id="Example-2"><a href="#Example-2" class="headerlink" title="Example"></a>Example</h2><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Window.SystemBackdrop = <span class="keyword">new</span> TransparentBackdrop();</span><br></pre></td></tr></table></figure>
+
+<p>or</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">Window.SystemBackdrop = <span class="keyword">new</span> TransparentBackdrop() &#123; TintColor = WinUICommunity.ColorHelper.GetColorFromHex(<span class="string">&quot;#554444ff&quot;</span>) &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>or</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Window</span> <span class="attr">...</span></span></span><br><span class="line"><span class="tag">   <span class="attr">xmlns:wuc</span>=<span class="string">&quot;using:WinUICommunity&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Window.SystemBackdrop</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">wuc:TransparentBackdrop</span> <span class="attr">TintColor</span>=<span class="string">&quot;#554444ff&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Window.SystemBackdrop</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Window</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="CompositionBrushBackdrop"><a href="#CompositionBrushBackdrop" class="headerlink" title="CompositionBrushBackdrop"></a>CompositionBrushBackdrop</h1><p>you can use <code>CompositionBrushBackdrop</code> for creating more backdrop</p>
+<h2 id="Example-3"><a href="#Example-3" class="headerlink" title="Example"></a>Example</h2><h3 id="BlurredBackdrop"><a href="#BlurredBackdrop" class="headerlink" title="BlurredBackdrop"></a>BlurredBackdrop</h3><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">BlurredBackdrop</span> : <span class="title">CompositionBrushBackdrop</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">override</span> Windows.UI.Composition.<span class="function">CompositionBrush <span class="title">CreateBrush</span>(<span class="params">Windows.UI.Composition.Compositor compositor</span>)</span></span><br><span class="line">        =&gt; compositor.CreateHostBackdropBrush();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="ColorAnimatedBackdrop"><a href="#ColorAnimatedBackdrop" class="headerlink" title="ColorAnimatedBackdrop"></a>ColorAnimatedBackdrop</h3><figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ColorAnimatedBackdrop</span> : <span class="title">CompositionBrushBackdrop</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">override</span> Windows.UI.Composition.<span class="function">CompositionBrush <span class="title">CreateBrush</span>(<span class="params">Windows.UI.Composition.Compositor compositor</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> brush = compositor.CreateColorBrush(Windows.UI.Color.FromArgb(<span class="number">255</span>,<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>));</span><br><span class="line">        <span class="keyword">var</span> animation = compositor.CreateColorKeyFrameAnimation();</span><br><span class="line">        <span class="keyword">var</span> easing = compositor.CreateLinearEasingFunction();</span><br><span class="line">        animation.InsertKeyFrame(<span class="number">0</span>, Colors.Red, easing);</span><br><span class="line">        animation.InsertKeyFrame(<span class="number">.333</span>f, Colors.Green, easing);</span><br><span class="line">        animation.InsertKeyFrame(<span class="number">.667</span>f, Colors.Blue, easing);</span><br><span class="line">        animation.InsertKeyFrame(<span class="number">1</span>, Colors.Red, easing);</span><br><span class="line">        animation.InterpolationColorSpace = Windows.UI.Composition.CompositionColorSpace.Hsl;</span><br><span class="line">        animation.Duration = TimeSpan.FromSeconds(<span class="number">15</span>);</span><br><span class="line">        animation.IterationBehavior = Windows.UI.Composition.AnimationIterationBehavior.Forever;</span><br><span class="line">        brush.StartAnimation(<span class="string">&quot;Color&quot;</span>, animation);</span><br><span class="line">        <span class="keyword">return</span> brush;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 <p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/TransparentBackdrop.png" alt="WinUICommunity"></p>
@@ -23441,6 +23458,18 @@ Generated with <a href="https://github.com/dotMorten/DotNetOMDGenerator">.NET Ob
 <li><p><a href="https://ghost1372.github.io/wasdkOMD/omd/WinAppSDK1.5.240205001-preview1_v1.5.240124002-experimental2.html">1.5.240205001-preview1_v1.5.240124002-experimental2</a></p>
 </li>
 </ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>Welcome to WinUICommunity</title>
+    <url>/winUICommunity/index.html</url>
+    <content><![CDATA[<p>Select the documentation related to the desired library from the menu on the left</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Separator</title>
+    <url>/handycontrol/native_controls/separator/index.html</url>
+    <content><![CDATA[<h1 id="SeparatorBaseStyle"><a href="#SeparatorBaseStyle" class="headerlink" title="SeparatorBaseStyle"></a>SeparatorBaseStyle</h1><p>The default style is not recommended. It should always be used by other styles as BasedOn.</p>
 ]]></content>
   </entry>
 </search>
