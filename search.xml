@@ -15241,6 +15241,82 @@ Example:
 <div class="note warning"><p>We moved all namespaces into a single namespace. No matter which (WinUICommunity) library you use, the namespace is always as follows<br>For use in the Xaml:<br><code>xmlns:wuc=&quot;using:WinUICommunity&quot;</code><br>For use in the Csharp:<br><code>using WinUICommunity;</code></p>
 </div>
 
+<h1 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h1><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>File</td>
+<td></td>
+</tr>
+<tr>
+<td>FileName</td>
+<td></td>
+</tr>
+<tr>
+<td>Title</td>
+<td></td>
+</tr>
+<tr>
+<td>Exe</td>
+<td></td>
+</tr>
+<tr>
+<td>Param</td>
+<td></td>
+</tr>
+<tr>
+<td>Icon</td>
+<td></td>
+</tr>
+<tr>
+<td>IconDark</td>
+<td></td>
+</tr>
+<tr>
+<td>AcceptDirectory</td>
+<td></td>
+</tr>
+<tr>
+<td>AcceptDirectoryFlag</td>
+<td></td>
+</tr>
+<tr>
+<td>AcceptFile</td>
+<td></td>
+</tr>
+<tr>
+<td>AcceptFileFlag</td>
+<td></td>
+</tr>
+<tr>
+<td>AcceptExts</td>
+<td></td>
+</tr>
+<tr>
+<td>AcceptFileRegex</td>
+<td></td>
+</tr>
+<tr>
+<td>AcceptMultipleFilesFlag</td>
+<td></td>
+</tr>
+<tr>
+<td>PathDelimiter</td>
+<td></td>
+</tr>
+<tr>
+<td>ParamForMultipleFiles</td>
+<td></td>
+</tr>
+<tr>
+<td>Index</td>
+<td></td>
+</tr>
+</tbody></table>
 <p>now Create a new <code>ContextMenuItem</code></p>
 <figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">using</span> WinUICommunity;</span><br><span class="line"></span><br><span class="line">ContextMenuItem menu = <span class="keyword">new</span> ContextMenuItem</span><br><span class="line">&#123;</span><br><span class="line">    Title = <span class="string">&quot;Open App Here&quot;</span>,</span><br><span class="line">    AcceptDirectory = <span class="literal">true</span>,</span><br><span class="line">    Exe = <span class="string">&quot;App5.exe&quot;</span>,</span><br><span class="line">    Param = <span class="string">&quot;&#123;path&#125;&quot;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
@@ -15248,11 +15324,17 @@ Example:
 </div>
 
 <p>after that, we need to save our created menu:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="keyword">await</span> ContextMenuService.Ins.SaveAsync(menu);</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ContextMenuService menuService = <span class="keyword">new</span> ContextMenuService();</span><br><span class="line"><span class="keyword">await</span> menuService.SaveAsync(menu);</span><br></pre></td></tr></table></figure>
 
 <h1 id="Set-Custom-Menu-Name"><a href="#Set-Custom-Menu-Name" class="headerlink" title="Set Custom Menu Name"></a>Set Custom Menu Name</h1><p>you can change default name for Custom Menu like this:</p>
-<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">ContextMenuService.Ins.SetCustomMenuName(<span class="string">&quot;my menu text&quot;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">menuService.SetCustomMenuName(<span class="string">&quot;my menu text&quot;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>you can use other methods like <code>OpenMenusFolderAsync, OpenMenuFileAsync, DeleteAsync and etc.</code></p>
+<h1 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h1><p>there is a lot of examples here, take a look <a href="https://github.com/ikas-mc/ContextMenuForWindows11/tree/main/menuSample">here</a> to see how properties can be filled.</p>
+<h1 id="Disable-context-menu"><a href="#Disable-context-menu" class="headerlink" title="Disable context menu"></a>Disable context menu</h1><p>find guid form (your guid)</p>
+<p><code>HKEY_CLASSES_ROOT\PackagedCom\Package\</code></p>
+<p>{8F491918-259F-451A-950F-8C3EBF4864AF}</p>
+<p>add to<br><code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked</code></p>
+<h1 id="More-Deatils"><a href="#More-Deatils" class="headerlink" title="More Deatils"></a>More Deatils</h1><p>see <a href="https://github.com/ikas-mc/ContextMenuForWindows11/wiki/Help">here</a> for more details.</p>
 <h1 id="GUID"><a href="#GUID" class="headerlink" title="GUID"></a>GUID</h1><p>GUID is Necessary for single instance of context menu. you should pick up a guid from this list.</p>
 <ul>
 <li>3EB53D8C-1221-451F-80AE-50E5B67E42DF</li>
@@ -20590,18 +20672,6 @@ Example:
 
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>you can run <a href="https://github.com/WinUICommunity/WinUICommunity">demo</a> and see this feature.</p>
 <p><img src="https://raw.githubusercontent.com/WinUICommunity/Resources/main/WinUICommunityDocs/Win2d/OutlineTextControl.png" alt="WinUICommunity"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>WASDK OMD</title>
-    <url>/wasdkOMD/index.html</url>
-    <content><![CDATA[<p>here you can find OMD for WASDK versions</p>
-<h1 id="v1-5"><a href="#v1-5" class="headerlink" title="v1.5"></a>v1.5</h1><ul>
-<li><p><a href="https://ghost1372.github.io/wasdkOMD/omd/WinAppSDK1.5.240205001-preview1_v1.4.231219000.html">1.5.240205001-preview1_v1.4.231219000</a></p>
-</li>
-<li><p><a href="https://ghost1372.github.io/wasdkOMD/omd/WinAppSDK1.5.240205001-preview1_v1.5.240124002-experimental2.html">1.5.240205001-preview1_v1.5.240124002-experimental2</a></p>
-</li>
-</ul>
 ]]></content>
   </entry>
   <entry>
