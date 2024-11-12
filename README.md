@@ -5,5 +5,5 @@ This repository is only for Hosting static site for documentation
 
 > [!CAUTION]
 > It is not possible to Contribute in this repository, to contribute to the documentation, refer to [this repository](https://github.com/ghost1372/Documents)
-=======
+
 > It is not possible to Contribute in this repository, to contribute to the documentation, refer to [this repository](https://github.com/ghost1372/Documents)
