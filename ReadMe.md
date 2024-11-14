@@ -1,6 +1,6 @@
 # Documents
 
-This repository contains documentation for all products such as HandyControl, WinUICommunity and others.
+This repository contains documentation for all products such as HandyControl and others.
 
 > [!TIP]
 > The documents are written in `Markdown` files and converted into a static website by [Hexo](https://hexo.io/) (A fast, simple & powerful blog framework).
@@ -33,5 +33,4 @@ for testing in local:
 hexo server
 ```
 
-> [!Note]
-> After the publish operation (That I will do), the changes will be made on the following [repository](https://github.com/ghost1372/ghost1372.github.io) and will be publicly visible on the [ghost1372.github.io](https://ghost1372.github.io/) site
+[ghost1372.github.io](https://ghost1372.github.io/)
