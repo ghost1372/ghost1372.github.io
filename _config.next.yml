@@ -332,7 +332,7 @@ menu:
     Intellisense:
       default: /intellisense/ || fas fa-brain
   WinUICommunity - 7.0.0:
-    default: /winUICommunity/ ||
+    default: /winUICommunity/ || fab fa-microsoft
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
