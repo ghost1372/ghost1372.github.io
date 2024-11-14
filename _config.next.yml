@@ -331,7 +331,8 @@ menu:
       UpdatableMarkupExtension: /updatableMarkupExtension/ ||
     Intellisense:
       default: /intellisense/ || fas fa-brain
-
+  WinUICommunity - 7.0.0:
+    default: /winUICommunity/ ||
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
