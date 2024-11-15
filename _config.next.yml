@@ -23,10 +23,11 @@ custom_file_path:
   #header: source/_data/header.njk
   #sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
+  #postBodyStart: source/_data/post-body-start.njk
   #postBodyEnd: source/_data/post-body-end.njk
   #footer: source/_data/footer.njk
   #bodyEnd: source/_data/body-end.njk
-  #variable: source/_data/variables.styl
+  variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
   style: source/_data/styles.styl
 
@@ -57,7 +58,7 @@ favicon:
   #android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
-custom_logo: #/uploads/custom-logo.jpg
+custom_logo: #/uploads/custom-logo.png
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/about/cclicenses/
@@ -71,6 +72,19 @@ creative_commons:
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
   language:
+
+# Open graph settings
+# See: https://hexo.io/docs/helpers#open-graph
+open_graph:
+  enable: true
+  options:
+    #twitter_card: <twitter:card>
+    #twitter_id: <twitter:creator>
+    #twitter_site: <twitter:site>
+    #twitter_image: <twitter:image>
+    #google_plus: <g+:profile_link>
+    #fb_admins: <fb:admin_id>
+    #fb_app_id: <fb:app_id>
 
 
 # ---------------------------------------------------------------
@@ -346,16 +360,18 @@ menu_settings:
 # ---------------------------------------------------------------
 
 sidebar:
-  # Sidebar Position.
+  # Sidebar position. Available values: left | right
   position: left
-  #position: right
 
-  # Manual define the sidebar width. If commented, will be default for:
-  # Muse | Mist: 320
-  # Pisces | Gemini: 240
-  width: 270
+  # Sidebar width.
+  # Applicable to Muse | Mist and mobile of Pisces | Gemini.
+  width_expanded: 320
+  # Applicable to desktop of Pisces | Gemini.
+  width_dual_column: 240
 
-  # Sidebar Display (only for Muse | Mist), available values:
+  # Sidebar display.
+  # Applicable to Muse | Mist and mobile of Pisces | Gemini.
+  # Available values:
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
@@ -388,6 +404,13 @@ social:
   E-Mail: mailto:mahdidvb72@gmail.com || fa fa-envelope
   Nuget: https://www.nuget.org/packages/HandyControls || fab fa-microsoft
   Nuget (WinUICommunity): https://www.nuget.org/profiles/WinUICommunity || fab fa-microsoft
+  #Weibo: https://weibo.com/yourname || fab fa-weibo
+  #Twitter: https://twitter.com/yourname || fab fa-twitter
+  #FB Page: https://www.facebook.com/yourname || fab fa-facebook
+  #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
+  #YouTube: https://youtube.com/yourname || fab fa-youtube
+  #Instagram: https://instagram.com/yourname || fab fa-instagram
+  #Skype: skype:yourname?call|chat || fab fa-skype
 
 social_icons:
   enable: true
@@ -397,7 +420,6 @@ social_icons:
 # Blog rolls
 links_settings:
   icon: fa fa-globe
-  title: Links
   # Available values: block | inline
   layout: block
 
@@ -428,24 +450,25 @@ language_switcher: false
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
-  #since: 2021
+  since: 2021
 
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
-    name: Ghost1372
+    name: fa fa-heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
     color: "#808080"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
+  # Set to `false` to disable the copyright statement.
+  copyright: Mahdi Hosseini
 
   # Powered by Hexo & NexT
   powered: false
 
-  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
+  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
     enable: false
     icp:
@@ -453,7 +476,7 @@ footer:
     gongan_id:
     # The full num of gongan beian.
     gongan_num:
-    # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
+    # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
     gongan_icon_url:
 
 
@@ -462,7 +485,7 @@ footer:
 # See: https://theme-next.js.org/docs/theme-settings/posts
 # ---------------------------------------------------------------
 
-# Automatically excerpt description in homepage as preamble text.
+# Use `description` in front-matter to specify post excerpt.
 excerpt_description: true
 
 # Read more button
@@ -493,7 +516,6 @@ reward_settings:
   # If true, a donate button will be displayed in every article by default.
   enable: false
   animation: false
-  #comment: Buy me a coffee
 
 reward:
   #wechatpay: /images/wechatpay.png
@@ -506,21 +528,14 @@ reward:
 follow_me:
   #Twitter: https://twitter.com/username || fab fa-twitter
   #Telegram: https://t.me/channel_name || fab fa-telegram
-  #WeChat: /images/wechat_channel.jpg || fab fa-weixin
+  #WeChat: /images/wechat_channel.png || fab fa-weixin
   #RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
-# Dependencies: https://github.com/tea3/hexo-related-popular-posts
+# Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
 related_posts:
   enable: false
-  title: # Custom header, leave empty to use the default one
-  display_in_home: false
-  params:
-    maxCount: 5
-    #PPMixingRate: 0.0
-    #isDate: false
-    #isImage: false
-    #isExcerpt: false
+  icon: fa fa-signs-post
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -566,7 +581,7 @@ calendar:
 # See: https://theme-next.js.org/docs/theme-settings/miscellaneous
 # ---------------------------------------------------------------
 
-# Preconnect CDN for fonts and plugins.
+# Preload styles and preconnect CDN for fonts and plugins.
 # For more information: https://www.w3.org/TR/resource-hints/#preconnect
 preconnect: false
 
@@ -589,14 +604,14 @@ body_scrollbar:
   # Place the scrollbar over the content.
   overlay: false
   # Present the scrollbar even if the content is not overflowing.
-  stable: false 
-  
+  stable: false
+
 codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: foundation
-    dark: tomorrow-night
+    light: default
+    dark: stackoverflow-dark
   prism:
     light: prism
     dark: prism-dark
@@ -605,6 +620,10 @@ codeblock:
     enable: true
     # Available values: default | flat | mac
     style:
+  # Fold code block
+  fold:
+    enable: false
+    height: 500
 
 back2top:
   enable: true
@@ -622,7 +641,7 @@ reading_progress:
   position: top
   reversed: false
   color: "#37c6c0"
-  height: 2px
+  height: 3px
 
 # Bookmark Support
 bookmark:
@@ -637,7 +656,6 @@ bookmark:
 github_banner:
   enable: true
   permalink: https://github.com/ghost1372
-  title: Follow me on GitHub
 
 
 # ---------------------------------------------------------------
@@ -697,7 +715,7 @@ font:
 # See: https://theme-next.js.org/docs/theme-settings/seo
 # ---------------------------------------------------------------
 
-# If true, site-subtitle will be added to index page.
+# If true, site-subtitle will be added to the title of index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
 index_with_subtitle: false
 
@@ -724,21 +742,70 @@ baidu_site_verification:
 
 
 # ---------------------------------------------------------------
+# Tags Settings
+# See: https://theme-next.js.org/docs/tag-plugins/
+# ---------------------------------------------------------------
+
+# Note tag (bootstrap callout)
+note:
+  # Note tag style values:
+  #  - simple    bootstrap callout old alert style. Default.
+  #  - modern    bootstrap callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: flat
+  icons: true
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: -12
+
+# Tabs tag
+tabs:
+  # Make the nav bar of tabs with long content stick to the top.
+  sticky: false
+  transition:
+    tabs: false
+    labels: true
+
+# PDF tag
+# NexT will try to load pdf files natively, if failed, pdf.js will be used.
+# So, you have to install the dependency of pdf.js if you want to use pdf tag and make it available to all browsers.
+# Dependencies: https://github.com/next-theme/theme-next-pdf
+pdf:
+  enable: false
+  # Default height
+  height: 500px
+
+# Mermaid tag
+mermaid:
+  enable: false
+  # Available themes: default | dark | forest | neutral
+  theme:
+    light: default
+    dark: dark
+
+# WaveDrom tag
+wavedrom:
+  enable: false
+
+# ---------------------------------------------------------------
 # Third Party Plugins & Services Settings
 # See: https://theme-next.js.org/docs/third-party-services/
 # More plugins: https://github.com/next-theme/awesome-next
-# You may need to install the corresponding dependency packages
 # ---------------------------------------------------------------
 
+# ---------------------------------------------------------------
 # Math Formulas Render Support
-# Warning: Please install / uninstall the relevant renderer according to the documentation.
 # See: https://theme-next.js.org/docs/third-party-services/math-equations
+# Warning: Please install / uninstall the relevant renderer according to the documentation.
 # Server-side plugin: https://github.com/next-theme/hexo-filter-mathjax
+# ---------------------------------------------------------------
+
 math:
   # Default (false) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in front-matter.
   # If you set it to true, it will load mathjax / katex script EVERY PAGE.
-  every_page: true
+  every_page: false
 
   mathjax:
     enable: false
@@ -750,6 +817,12 @@ math:
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
     copy_tex: false
 
+
+# ---------------------------------------------------------------
+# External Libraries
+# See: https://theme-next.js.org/docs/third-party-services/external-libraries
+# ---------------------------------------------------------------
+
 # Easily enable fast Ajax navigation on your website.
 # For more information: https://github.com/next-theme/pjax
 pjax: false
@@ -758,7 +831,7 @@ pjax: false
 # For more information: https://fancyapps.com/fancybox/
 fancybox: false
 
-# A JavaScript library for zooming images like Medium.
+# Medium Zoom is a JavaScript library for zooming images like Medium.
 # Warning: Do not enable both `fancybox` and `mediumzoom`.
 # For more information: https://medium-zoom.francoischalifour.com
 mediumzoom: false
@@ -767,12 +840,12 @@ mediumzoom: false
 # For more information: https://apoorv.pro/lozad.js/demo/
 lazyload: false
 
-# Pangu Support
+# Automatically insert whitespace between CJK and half-width characters.
 # For more information: https://github.com/vinta/pangu.js
 # Server-side plugin: https://github.com/next-theme/hexo-pangu
 pangu: false
 
-# Quicklink Support
+# Prefetch links based on what is in the user's viewport.
 # For more information: https://getquick.link
 # Front-matter variable (nonsupport home archive).
 quicklink:
@@ -789,6 +862,46 @@ quicklink:
   timeout: 3000
   # Default (true) will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
   priority: true
+
+
+# ---------------------------------------------------------------
+# Animation Settings
+# ---------------------------------------------------------------
+
+# Use Animate.css to animate everything.
+# For more information: https://animate.style
+motion:
+  enable: false
+  async: false
+  transition:
+    # All available transition variants: https://theme-next.js.org/animate/
+    menu_item: fadeInDown
+    post_block: fadeIn
+    post_header: fadeInDown
+    post_body: fadeInDown
+    coll_header: fadeInLeft
+    # Only for Pisces | Gemini.
+    sidebar: fadeInUp
+
+# Progress bar in the top during page loading.
+# For more information: https://github.com/CodeByZach/pace
+pace:
+  enable: false
+  # All available colors:
+  # black | blue | green | orange | pink | purple | red | silver | white | yellow
+  color: blue
+  # All available themes:
+  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
+  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
+  theme: minimal
+
+# Generate a ribbon in your website with HTML5 canvas.
+# For more information: https://github.com/hustcc/ribbon.js
+canvas_ribbon:
+  enable: false
+  size: 300 # The width of the ribbon
+  alpha: 0.6 # The transparency of the ribbon
+  zIndex: -1 # The display level of the ribbon
 
 
 # ---------------------------------------------------------------
@@ -840,6 +953,8 @@ changyan:
   enable: false
   appid:
   appkey:
+  # Show comments count
+  count: true
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -849,7 +964,7 @@ livere_uid: # <your_uid>
 # For more information: https://gitalk.github.io
 gitalk:
   enable: false
-  github_id: ghost1372 # GitHub repo owner
+  github_id: ghost1372
   repo: ghost1372.github.io
   client_id: 2aaa67dfadbccbb97f7c
   client_secret: 4bec06ddb9bf83afbbdc4826459ff249143a85b6
@@ -866,14 +981,14 @@ gitalk:
 # For more information: https://utteranc.es
 utterances:
   enable: false
-  repo: # Github repository name
+  repo: user-name/repo-name # Github repository owner and name
   # Available values: pathname | url | title | og:title
   issue_term: pathname
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
   theme: github-light
 
 # Isso
-# For more information: https://posativ.org/isso/
+# For more information: https://isso-comments.de
 isso: # <data_isso>
 
 
@@ -882,16 +997,12 @@ isso: # <data_isso>
 # See: https://theme-next.js.org/docs/third-party-services/post-widgets
 # ---------------------------------------------------------------
 
-# Star rating support to each article.
-# To get your ID visit https://widgetpack.com
-rating:
+# AddToAny Share. See: https://www.addtoany.com
+addtoany:
   enable: false
-  id:     # <app_id>
-  color:  "#fc6423"
-
-# AddThis Share. See: https://www.addthis.com
-# Go to https://www.addthis.com/dashboard to customize your tools.
-add_this_id:
+  buttons:
+    - facebook
+    - twitter
 
 
 # ---------------------------------------------------------------
@@ -906,6 +1017,8 @@ google_analytics:
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
+  # only needed if you are using `only_pageview` mode, https://developers.google.com/analytics/devguides/collection/protocol/ga4
+  measure_protocol_api_secret:
 
 # Baidu Analytics
 # See: https://tongji.baidu.com
@@ -918,6 +1031,32 @@ growingio_analytics: # <project_id>
 # Cloudflare Web Analytics
 # See: https://www.cloudflare.com/web-analytics/
 cloudflare_analytics:
+
+# Microsoft Clarity Analytics
+# See: https://clarity.microsoft.com/
+clarity_analytics: # <project_id>
+
+# Matomo Analytics
+# See: https://matomo.org/
+matomo:
+  enable: false
+  server_url: # https://www.example.com/
+  site_id: # <your site id>
+
+# Umami Analytics
+# See: https://umami.is/
+umami:
+  enable: false
+  script_url: # https://umami.example.com/script.js
+  website_id: # <your website id>
+  host_url: # <your umami site url>
+
+# Plausible Analytics
+# See: https://plausible.io/
+plausible:
+  enable: false
+  script_url: # https://plausible.io/js/script.js
+  site_domain: # www.example.com
 
 # Show number of visitors of each article.
 # You can visit https://www.leancloud.cn to get AppID and AppKey.
@@ -969,9 +1108,6 @@ algolia_search:
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
   enable: true
-  # If auto, trigger search by changing input.
-  # If manual, trigger search by pressing enter key or search button.
-  trigger: auto
   # Show top n results per article, show all results by setting to -1
   top_n_per_article: 1
   # Unescape html strings to the readable one.
@@ -989,10 +1125,9 @@ local_search:
 # Firstly, you need to enable and configure the chat service.
 chat:
   enable: false
-  icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
-  text: Chat # Button text, change it as you wish.
+  icon: fa fa-comment # Icon name in Font Awesome, set to `false` to disable icon.
 
-# Chatra Support
+# Chatra is a functional, easy to use piece of chat software for websites.
 # For more information: https://chatra.com
 # Dashboard: https://app.chatra.io/settings/general
 chatra:
@@ -1001,101 +1136,12 @@ chatra:
   id: # Visit Dashboard to get your ChatraID
   #embed: # Unfinished experimental feature for developers. See: https://chatra.com/help/api/#injectto
 
-# Tidio Support
+# Tidio is a powerful, all-in-one customer service tool.
 # For more information: https://www.tidio.com
 # Dashboard: https://www.tidio.com/panel/dashboard
 tidio:
   enable: false
   key: # Public Key, get it from dashboard. See: https://www.tidio.com/panel/settings/developer
-
-# Gitter Support
-# For more information: https://gitter.im
-gitter:
-  enable: false
-  room:
-
-
-# ---------------------------------------------------------------
-# Tags Settings
-# See: https://theme-next.js.org/docs/tag-plugins/
-# ---------------------------------------------------------------
-
-# Note tag (bootstrap callout)
-note:
-  # Note tag style values:
-  #  - simple    bootstrap callout old alert style. Default.
-  #  - modern    bootstrap callout new (v2-v3) alert style.
-  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
-  #  - disabled  disable all CSS styles import of note tag.
-  style: flat
-  icons: false
-  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
-  # Offset also applied to label tag variables. This option can work with disabled note tag.
-  light_bg_offset: -12
-
-# Tabs tag
-tabs:
-  # Make the nav bar of tabs with long content stick to the top.
-  sticky: false
-  transition:
-    tabs: false
-    labels: true
-
-# PDF tag
-# NexT will try to load pdf files natively, if failed, pdf.js will be used.
-# So, you have to install the dependency of pdf.js if you want to use pdf tag and make it available to all browsers.
-# Dependencies: https://github.com/next-theme/theme-next-pdf
-pdf:
-  enable: false
-  # Default height
-  height: 500px
-
-# Mermaid tag
-mermaid:
-  enable: false
-  # Available themes: default | dark | forest | neutral
-  theme:
-    light: default
-    dark: dark
-
-
-# ---------------------------------------------------------------
-# Animation Settings
-# ---------------------------------------------------------------
-
-# Use Animate.css to animate everything.
-# For more information: https://animate.style
-motion:
-  enable: false
-  async: true
-  transition:
-    # All available transition variants: https://theme-next.js.org/animate/
-    post_block: fadeIn
-    post_header: fadeInDown
-    post_body: fadeInDown
-    coll_header: fadeInLeft
-    # Only for Pisces | Gemini.
-    sidebar: fadeInUp
-
-# Progress bar in the top during page loading.
-# For more information: https://github.com/CodeByZach/pace
-pace:
-  enable: false
-  # All available colors:
-  # black | blue | green | orange | pink | purple | red | silver | white | yellow
-  color: blue
-  # All available themes:
-  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
-  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: minimal
-
-# Canvas ribbon
-# For more information: https://github.com/hustcc/ribbon.js
-canvas_ribbon:
-  enable: false
-  size: 300 # The width of the ribbon
-  alpha: 0.6 # The transparency of the ribbon
-  zIndex: -1 # The display level of the ribbon
 
 
 # ---------------------------------------------------------------
@@ -1111,7 +1157,7 @@ vendors:
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
-  plugins: jsdelivr
+  plugins: cdnjs
   # Custom CDN URL
   # For example:
   # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
@@ -1120,5 +1166,7 @@ vendors:
 
 # Assets
 # Accelerate delivery of static files using a CDN
+# The js option is only valid when vendors.internal is local.
 css: css
+js: js
 images: images
