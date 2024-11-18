@@ -347,6 +347,130 @@ menu:
       default: /intellisense/ || fas fa-brain
   WinUICommunity - 7.0.0:
     default: /winUICommunity/ || fab fa-microsoft
+  DevWinUI - 8.0.0:
+    default: /DevWinUI/ || fas fa-tools
+    Breaking Changes: /breaking_changes/ || fas fa-dice-d20
+    Attach:
+      default: /attach/ ||
+      PanelAttach: /panelAttach/ ||
+      TitleBarAttach: /titleBarAttach/ ||
+    Extensions: 
+      default: /extensions/ || fas fa-tools
+      CollectionExtension: /collectionExtension/ ||
+      DictionaryExtensions: /dictionaryExtensions/ ||
+      EnumValueExtension: /enumValueExtension/ ||
+      GeneralExtension: /generalExtension/ ||
+      IconMarkupExtension: /iconMarkupExtension/ ||
+      ListExtensions: /listExtensions/ ||
+      ListViewExtension: /listViewExtension/ ||
+      ResourceDictionaryExtension: /resourceDictionaryExtension/ ||
+      PersianDateTimeExtension: /persianDateTimeExtension/ ||
+      StringExtension: /stringExtension/ ||
+      TextBoxExtension: /textBoxExtension/ ||
+    Helpers: 
+      default: /helpers/ || fas fa-tools
+      AutoSuggestBoxHelper: /autoSuggestBoxHelper/ ||
+      CompositionHelper: /compositionHelper/ ||
+      ColorHelper: /colorHelper/ ||
+      CredentialHelper: /credentialHelper/ ||
+      DragMoveAndResizeHelper: /dragMoveAndResizeHelper/ ||
+      FileAndFolderPickerHelper: /fileAndFolderPickerHelper/ ||
+      FileHelper: /fileHelper/ ||
+      GeneralHelper: /generalHelper/ ||
+      INIHelper: /iniHelper/ ||
+      NetworkHelper: /networkHelper/ ||
+      OSVersionHelper: /osVersionHelper/ ||
+      PackageHelper: /packageHelper/ ||
+      PathHelper: /pathHelper/ ||
+      ProcessInfoHelper: /processInfoHelper/ ||
+      ResourceHelper: /resourceHelper/ ||
+      SecurityHelper: /securityHelper/ ||
+      TaskbarHelper: /taskbarHelper/ ||
+      UpdateHelper: /updateHelper/ ||
+      VisualHelper: /visualHelper/ ||
+      WindowHelper: /windowHelper/ ||
+    MessageBox: /messageBox/ ||
+    Messaging: /messaging/ ||
+    NavigationService: /navigationService/
+    PersianDateTime: /persianDateTime/ ||
+    RainbowFrame: /rainbowFrame/ ||
+    RelativeDate: // |relativeDate|
+    ThemeService: /themeService/ ||
+    Backdrop: /backdrop/ ||
+    Interfaces:
+      default: /interfaces/ || fas fa-tools
+      ITitleBarAutoSuggestBoxAware: /iTitleBarAutoSuggestBoxAware/ ||
+  DevWinUI.Controls - 8.0.0:
+    default: /DevWinUIControls/ || fas fa-dice-d20
+    Breaking Changes: /breaking_changes/ || fas fa-dice-d20
+    Controls: 
+      default: /controls/ || fab fa-intercom
+      AutoScrollView: /autoScrollView/ ||
+      BreadcrumbNavigator: /breadcrumbNavigator/ ||
+      CheckBoxWithDescriptionControl: /checkBoxWithDescriptionControl/ ||
+      ColorfulShimmingEffect: /colorfulShimmingEffect/ ||
+      ColorPalette: /colorPalette/ ||
+      CopyButton: /copyButton/ ||
+      Divider: /divider/ ||
+      FlipSide: /flipSide/ ||
+      FlyoutMenuButton: /flyoutMenuButton/ ||
+      Gravatar: /gravatar/ ||
+      Growl: /growl/ ||
+      IndeterminateProgressBar: /indeterminateProgressBar/ ||
+      InlineAutoCompleteTextBox: /inlineAutoCompleteTextBox/ ||
+      IsEnabledTextBox: /isEnabledTextBox/ ||
+      KeyVisual: /keyVisual/ ||
+      LoadingIndicator: /loadingIndicator/ ||
+      LongShadowTextBlock: /longShadowTextBlock/ ||
+      OOBEPageControl: /oOBEPageControl/ ||
+      OpacityMaskView: /opacityMaskView/ ||
+      OptionsPageControl: /optionsPageControl/ ||
+      PagerControl: /pagerControl/ ||
+      PinBox: /pinBox/ ||
+      ProgressRing: /progressRing/ ||
+      SelectorBarSegmented: /selectorBarSegmented/ ||
+      SettingsCard: /settingsCard/ ||
+      SettingsGroup: /settingsGroup/ ||
+      SettingsPageControl: /settingsPageControl/ ||
+      Shield: /shield/ ||
+      SimpleSettingsGroup: /simpleSettingsGroup/ ||
+      Shortcut: /shortcut/ ||
+      SwitchPresenter: /switchPresenter/ ||
+      TileControl: /tileControl/ ||
+      UniformGrid: /uniformGrid/ ||
+      WaveProgressBar: /waveProgressBar/ ||
+      Windows 11 Settings Examples: /windows11SettingsExamples/ ||
+      Bubble: /bubble/ ||
+      Gooey: /gooey/ ||
+      OutlineTextControl: /outlineTextControl/ ||
+      Particle: /particle/ ||
+      TextBlockStrokView: /textBlockStrokView/ ||
+      TextGlitchEffect: /textGlitchEffect/ ||
+      TextMorphEffect: /textMorphEffect/ ||
+      Watermark: /watermark/ ||
+      WaveCircule: /waveCircule/ ||
+    Converters:
+      default: /converters/ || fab fa-intercom
+    Helpers: 
+      default: /helpers/ || fas fa-tools
+      BlurAnimationHelper: /blurAnimationHelper/ ||  
+    LandingPages:
+      default: /landingPages/ || fab fa-intercom
+      AllLandingPage: /allLandingPage/ ||
+      HeaderTile: /headerTile/ ||
+      ItemsPageBase: /itemsPageBase/ ||
+      MainLandingPage: /mainLandingPage/ ||
+      SectionPage: /sectionPage/ ||
+    Media:
+      default: /media/ || fab fa-intercom
+      TiledImageBrush: /tiledImageBrush/ ||
+    Styles: 
+      default: /styles/ || fas fa-palette
+    Validation:
+      default: /validation/ || fab fa-intercom
+  DevWinUIContextMenu - 8.0.0:
+      default: /DevWinUIContextMenu/ || fas fa-brain
+      Breaking Changes: /breaking_changes/ || fas fa-dice-d20
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -367,7 +491,7 @@ sidebar:
   # Applicable to Muse | Mist and mobile of Pisces | Gemini.
   width_expanded: 320
   # Applicable to desktop of Pisces | Gemini.
-  width_dual_column: 240
+  width_dual_column: 270
 
   # Sidebar display.
   # Applicable to Muse | Mist and mobile of Pisces | Gemini.
@@ -403,7 +527,7 @@ social:
   GitHub: https://github.com/ghost1372 || fab fa-github
   E-Mail: mailto:mahdidvb72@gmail.com || fa fa-envelope
   Nuget: https://www.nuget.org/packages/HandyControls || fab fa-microsoft
-  Nuget (WinUICommunity): https://www.nuget.org/profiles/WinUICommunity || fab fa-microsoft
+  Nuget (DevWinUI): https://www.nuget.org/profiles/DevWinUI || fab fa-microsoft
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
