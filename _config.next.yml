@@ -489,9 +489,9 @@ sidebar:
 
   # Sidebar width.
   # Applicable to Muse | Mist and mobile of Pisces | Gemini.
-  width_expanded: 320
+  width_expanded: 340
   # Applicable to desktop of Pisces | Gemini.
-  width_dual_column: 270
+  width_dual_column: 320
 
   # Sidebar display.
   # Applicable to Muse | Mist and mobile of Pisces | Gemini.
