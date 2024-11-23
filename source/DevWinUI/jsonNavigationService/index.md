@@ -270,8 +270,16 @@ Due to the limitation in using reflection in AOT, we have to use the following m
 - Replace `$T4_NAMESPACE$` with your app namespace
 {% endnote %}
 
+it is better to place `BreadcrumbNavigator` in `NavigationView.Header`
+
+```xml
+<NavigationView.Header>
+    <dev:BreadcrumbNavigator x:Name="BreadCrumb" />
+</NavigationView.Header>
+```
+
 ```cs
-Initializ(...).ConfigureBreadcrumbBar(breadCrumb, NavigationPageMappings.PageDictionary);
+Initializ(...).ConfigureBreadcrumbBar(BreadCrumb, NavigationPageMappings.PageDictionary);
 ```            
 
 use `dev:BreadcrumbNavigator.PageTitle` and `dev:BreadcrumbNavigator.IsHeaderVisible` attached properties on your pages, for Title and Header visiblity.
