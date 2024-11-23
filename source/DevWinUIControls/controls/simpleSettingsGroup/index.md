@@ -16,16 +16,16 @@ title: SimpleSettingsGroup
     <dev:SettingsCard Header="Keep screen on">
         <dev:SettingsCard.HeaderIcon>
             <SymbolIcon Symbol="SetLockScreen"/>
-        </wuc:SettingsCard.HeaderIcon>
+        </dev:SettingsCard.HeaderIcon>
         <ToggleSwitch/>
-    </wuc:SettingsCard>
+    </dev:SettingsCard>
     <dev:SettingsCard Header="Auto Download">
         <dev:SettingsCard.HeaderIcon>
             <SymbolIcon Symbol="Download"/>
-        </wuc:SettingsCard.HeaderIcon>
+        </dev:SettingsCard.HeaderIcon>
         <ToggleSwitch/>
-    </wuc:SettingsCard>
-</wuc:SimpleSettingsGroup>
+    </dev:SettingsCard>
+</dev:SimpleSettingsGroup>
 ```
 
 # Demo

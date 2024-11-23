@@ -11,7 +11,7 @@ title: FlyoutMenuButton
 # Example
 
 ```xml
-<dev:FlyoutMenuButton Content="Accept" Icon="{wuc:SymbolIcon Symbol=Accept}" />
+<dev:FlyoutMenuButton Content="Accept" Icon="{dev:SymbolIcon Symbol=Accept}" />
 ```
 
 # Demo

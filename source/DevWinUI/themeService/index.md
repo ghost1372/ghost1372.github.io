@@ -145,13 +145,13 @@ if you want to set defualt item for combobox or radiobuttons, and auto switch be
 ## ComboBox
 
 ```xml
-<ComboBox wuc:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}">
+<ComboBox dev:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}">
     <ComboBoxItem Content="Light" Tag="Light" />
     <ComboBoxItem Content="Dark" Tag="Dark" />
     <ComboBoxItem Content="Default" Tag="Default" />
 </ComboBox>
 
-<ComboBox wuc:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}">
+<ComboBox dev:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}">
     <ComboBoxItem Tag="None" Content="None"/>
     <ComboBoxItem Tag="Mica" Content="Mica"/>
     <ComboBoxItem Tag="MicaAlt" Content="MicaAlt"/>
@@ -165,13 +165,13 @@ if you want to set defualt item for combobox or radiobuttons, and auto switch be
 ## RadioButtons
 
 ```xml
-<StackPanel wuc:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}">
+<StackPanel dev:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}">
     <RadioButton Tag="Light" Content="Light"/>
     <RadioButton Tag="Dark"  Content="Dark" />
     <RadioButton Tag="Default" Content="Use system setting" />
 </StackPanel>
 
- <StackPanel wuc:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}">
+ <StackPanel dev:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}">
     <RadioButton Tag="None" Content="None"/>
     <RadioButton Tag="Mica" Content="Mica"/>
     <RadioButton Tag="MicaAlt" Content="MicaAlt" />
@@ -185,7 +185,7 @@ if you want to set defualt item for combobox or radiobuttons, and auto switch be
 # Auto Change Theme/Backdrop and Auto Load Default Item (Old Methods)
 
 ## ComboBox
-if you want to handle everything by yourself, first of all remove `wuc:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}"` and then add your events:
+if you want to handle everything by yourself, first of all remove `dev:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}"` and then add your events:
 
 for changing and saving application theme / backdrop:
 ```cs
@@ -204,7 +204,7 @@ themeService.SetBackdropComboBoxDefaultItem(cmb2);
 
 
 ## RadioButtons
-if you want to handle everything by yourself, first of all remove `wuc:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}"` and then add your events:
+if you want to handle everything by yourself, first of all remove `dev:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}"` and then add your events:
 
 for changing and saving application theme / backdrop:
 ```cs

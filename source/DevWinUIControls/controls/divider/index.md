@@ -28,7 +28,7 @@ The dividing line that separates the content.
             <dev:Divider Content="Title" />
             <dev:Divider ContentPadding="0">
                 <Button Content="More" />
-            </wuc:Divider>
+            </dev:Divider>
             <dev:Divider LineStroke="{ThemeResource AccentAAFillColorDefaultBrush}"
                             LineStrokeThickness="2" />
             <dev:Divider LineStroke="{ThemeResource SystemFillColorCriticalBrush}"

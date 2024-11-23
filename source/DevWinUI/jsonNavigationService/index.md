@@ -8,12 +8,12 @@ Easily implement a `NavigationView` With `Json` file (we read navigationview ite
 First Add a NavigationView:
 
 ```xml
-<NavigationView x:Name="navigationView">
+<NavigationView x:Name="NavView">
     <NavigationView.AutoSuggestBox>
         <AutoSuggestBox x:Name="autoSuggestBox">
         </AutoSuggestBox>
     </NavigationView.AutoSuggestBox>
-    <Frame x:Name="navFrame"/>
+    <Frame x:Name="NavFrame"/>
 </NavigationView>
 ```
 
@@ -274,7 +274,7 @@ Due to the limitation in using reflection in AOT, we have to use the following m
 Initializ(...).ConfigureBreadcrumbBar(breadCrumb, NavigationPageMappings.PageDictionary);
 ```            
 
-use `wuc:BreadcrumbNavigator.PageTitle` and `wuc:BreadcrumbNavigator.IsHeaderVisible` attached properties on your pages, for Title and Header visiblity.
+use `dev:BreadcrumbNavigator.PageTitle` and `dev:BreadcrumbNavigator.IsHeaderVisible` attached properties on your pages, for Title and Header visiblity.
 
 ```t4
 <#@ template language="C#" hostspecific="true" #>

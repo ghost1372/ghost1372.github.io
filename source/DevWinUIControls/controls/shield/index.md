@@ -37,8 +37,8 @@ The badge consists of the name of the left half and the value of the right half.
             <Viewbox Margin="2">
                 <PathIcon Data="{StaticResource GitHubIcon}" />
             </Viewbox>
-        </wuc:Shield.Subject>
-    </wuc:Shield>
+        </dev:Shield.Subject>
+    </dev:Shield>
     <dev:Shield Click="Shield_Click"
                 Subject="Github"
                 Color="Violet">
@@ -47,8 +47,8 @@ The badge consists of the name of the left half and the value of the right half.
                 <PathIcon Margin="2"
                         Data="{StaticResource GitHubIcon}" />
             </Viewbox>
-        </wuc:Shield.Status>
-    </wuc:Shield>
+        </dev:Shield.Status>
+    </dev:Shield>
 </StackPanel>
 ```
 

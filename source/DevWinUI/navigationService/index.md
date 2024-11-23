@@ -79,15 +79,15 @@ navigationViewService.ConfigAutoSuggestBox(autoSuggestBox);
         <AutoSuggestBox Name="autoSuggestBox" />
     </NavigationView.AutoSuggestBox>
     <NavigationView.MenuItems>
-        <NavigationViewItem wuc:NavigationHelper.NavigateTo="BlankPage1"
+        <NavigationViewItem dev:NavigationHelper.NavigateTo="BlankPage1"
                             Content="First" />
         <NavigationViewItem Content="Second">
             <NavigationViewItem.MenuItems>
-                <NavigationViewItem wuc:NavigationHelper.NavigateTo="BlankPage2"
+                <NavigationViewItem dev:NavigationHelper.NavigateTo="BlankPage2"
                                     Content="Third" />
                 <NavigationViewItem Content="Four">
                     <NavigationViewItem.MenuItems>
-                        <NavigationViewItem wuc:NavigationHelper.NavigateTo="BlankPage3"
+                        <NavigationViewItem dev:NavigationHelper.NavigateTo="BlankPage3"
                                             Content="Five" />
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>

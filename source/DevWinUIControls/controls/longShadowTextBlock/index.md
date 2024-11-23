@@ -16,8 +16,8 @@ title: LongShadowTextBlock
 <dev:LongShadowTextBlock Depth="100" TextOpacity="0.3" Color="GreenYellow">
     <dev:LongShadowTextBlock.TextBlock>
         <TextBlock FontSize="100" Text="Text" />
-    </wuc:LongShadowTextBlock.TextBlock>
-</wuc:LongShadowTextBlock>
+    </dev:LongShadowTextBlock.TextBlock>
+</dev:LongShadowTextBlock>
 ```
 
 # Demo

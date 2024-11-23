@@ -35,16 +35,16 @@ title: Bubble
 <StackPanel Orientation="Horizontal"
             Spacing="10">
     <dev:BubbleProgressButton x:Name="LikeButton"
-                              Content="{wuc:FontIcon GlyphName=Like}"
+                              Content="{dev:FontIcon GlyphName=Like}"
                               GestureRecognizerHolding="OnGestureRecognizerHolding"
                               GestureRecognizerTapped="OnGestureRecognizerTapped" />
     <dev:BubbleProgressButton x:Name="CoinButton"
-                              Content="{wuc:FontIcon GlyphName=ButtonA}"
+                              Content="{dev:FontIcon GlyphName=ButtonA}"
                               GestureRecognizerHolding="OnGestureRecognizerHolding"
                               GestureRecognizerTapped="OnGestureRecognizerTapped"
                               Value="{Binding ElementName=LikeButton, Path=Value}" />
     <dev:BubbleProgressButton x:Name="FavoriteButton"
-                              Content="{wuc:FontIcon GlyphName=Favicon}"
+                              Content="{dev:FontIcon GlyphName=Favicon}"
                               GestureRecognizerHolding="OnGestureRecognizerHolding"
                               GestureRecognizerTapped="OnGestureRecognizerTapped"
                               Value="{Binding ElementName=LikeButton, Path=Value}" />

@@ -20,7 +20,7 @@ title: SelectorBarSegmented
                         Text="Item 2" />
     <SelectorBarItem Icon="Home"
                         Text="Item 3" />
-</wuc:SelectorBarSegmented>
+</dev:SelectorBarSegmented>
 ```
 
 

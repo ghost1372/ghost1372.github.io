@@ -16,9 +16,9 @@ title: Validation
     <StackPanel Spacing="6">
         <TextBox
                 x:Name="NameBox"
-                wuc:Validation.ErrorTemplate="{StaticResource ValidationTemplate}"
-                wuc:Validation.ValidationPropertyName="Name"
-                wuc:Validation.ValidationProvider="{x:Bind UserInfo}"
+                dev:Validation.ErrorTemplate="{StaticResource ValidationTemplate}"
+                dev:Validation.ValidationPropertyName="Name"
+                dev:Validation.ValidationProvider="{x:Bind UserInfo}"
                 Header="Easy boxes with validation"
                 PlaceholderText="Name"
                 Style="{StaticResource ValidatingTextBoxStyle}"
@@ -26,9 +26,9 @@ title: Validation
 
         <TextBox
                 x:Name="MailBox"
-                wuc:Validation.ErrorTemplate="{StaticResource ValidationTemplate}"
-                wuc:Validation.ValidationPropertyName="Mail"
-                wuc:Validation.ValidationProvider="{x:Bind UserInfo}"
+                dev:Validation.ErrorTemplate="{StaticResource ValidationTemplate}"
+                dev:Validation.ValidationPropertyName="Mail"
+                dev:Validation.ValidationProvider="{x:Bind UserInfo}"
                 PlaceholderText="Mail"
                 Style="{StaticResource ValidatingTextBoxStyle}"
                 Text="{x:Bind UserInfo.Mail, Mode=TwoWay}" />

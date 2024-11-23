@@ -26,7 +26,7 @@ Animation when a panel is loading
 # Example
 
 ```xml
-<StackPanel wuc:PanelAttach.ChildrenTransitions="EntranceThemeTransition">
+<StackPanel dev:PanelAttach.ChildrenTransitions="EntranceThemeTransition">
 ```
 
 ```cs

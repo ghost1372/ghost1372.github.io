@@ -24,9 +24,9 @@ title: OpacityMaskView
             <GradientStop Offset="0.95" Color="#00FFFFFF" />
             <GradientStop Offset="1" Color="#00FFFFFF" />
         </LinearGradientBrush>
-    </wuc:OpacityMaskView.OpacityMask>
+    </dev:OpacityMaskView.OpacityMask>
     <Image Source="http://e0.ifengimg.com/03/2019/0116/4520E55BB546CF6D7F295FB28A2A205B598BD5EC_size554_w1228_h1842.jpeg" Stretch="Uniform"/>
-</wuc:OpacityMaskView>
+</dev:OpacityMaskView>
 ```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/OpacityMaskView.png)
@@ -138,7 +138,7 @@ title: OpacityMaskView
                                       Value="1.25" />
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-    </wuc:OpacityMaskView.Resources>
+    </dev:OpacityMaskView.Resources>
     <dev:OpacityMaskView.OpacityMask>
         <LinearGradientBrush MappingMode="RelativeToBoundingBox" StartPoint="0,0.2" EndPoint="1,0.8">
             <GradientStop x:Name="Stop1" Offset="-1" Color="#FFFFFFFF" />
@@ -148,11 +148,11 @@ title: OpacityMaskView
             <GradientStop x:Name="Stop5" Offset="-0.15" Color="#FFFFFFFF" />
             <GradientStop x:Name="Stop6" Offset="2" Color="#FFFFFFFF" />
         </LinearGradientBrush>
-    </wuc:OpacityMaskView.OpacityMask>
+    </dev:OpacityMaskView.OpacityMask>
     <Button Height="36"
             Click="Button_Click"
             Content="This is a Button" />
-</wuc:OpacityMaskView>
+</dev:OpacityMaskView>
 ```
 
 ```cs

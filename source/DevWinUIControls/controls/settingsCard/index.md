@@ -21,7 +21,7 @@ title: SettingsCard
 ```xml
 <dev:SettingsCard Header="Keep screen on" Description="Keep your screen on" HeaderIcon="&#xE7FB;">
     <ToggleSwitch/>
-</wuc:Setting>
+</dev:Setting>
 ```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Setting.png)
@@ -59,31 +59,31 @@ This example uses SettingsCard and SettingsExpander to showcase a complete Windo
                         Header="This is the Header">
                 <dev:SettingsCard.HeaderIcon>
                     <FontIcon Glyph="&#xE125;" />
-                </wuc:SettingsCard.HeaderIcon>
+                </dev:SettingsCard.HeaderIcon>
                 <ToggleSwitch IsOn="True" />
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
 
             <dev:SettingsExpander Description="The SettingsExpander has the same properties as a SettingsCard"
                             Header="SettingsExpander">
                 <dev:SettingsExpander.HeaderIcon>
                     <FontIcon Glyph="&#xE91B;" />
-                </wuc:SettingsExpander.HeaderIcon>
+                </dev:SettingsExpander.HeaderIcon>
                 <Button Content="Content"
                 Style="{StaticResource AccentButtonStyle}" />
 
                 <dev:SettingsExpander.Items>
                     <dev:SettingsCard Header="A basic SettingsCard within an SettingsExpander">
                         <Button Content="Button" />
-                    </wuc:SettingsCard>
+                    </dev:SettingsCard>
                     <dev:SettingsCard Description="SettingsCard within an Expander can be made clickable too!"
                                 Header="This item can be clicked"
                                 IsClickEnabled="True" />
 
                     <dev:SettingsCard ContentAlignment="Left">
                         <CheckBox Content="Here the ContentAlignment is set to Left. This is great for e.g. CheckBoxes or RadioButtons" />
-                    </wuc:SettingsCard>
-                </wuc:SettingsExpander.Items>
-            </wuc:SettingsExpander>
+                    </dev:SettingsCard>
+                </dev:SettingsExpander.Items>
+            </dev:SettingsExpander>
 
             <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}"
                 Text="Section 2" />
@@ -91,21 +91,21 @@ This example uses SettingsCard and SettingsExpander to showcase a complete Windo
                         Header="Another SettingsCard">
                 <dev:SettingsCard.HeaderIcon>
                     <FontIcon Glyph="&#xE799;" />
-                </wuc:SettingsCard.HeaderIcon>
+                </dev:SettingsCard.HeaderIcon>
                 <ComboBox SelectedIndex="0">
                     <ComboBoxItem>Option 1</ComboBoxItem>
                     <ComboBoxItem>Option 2</ComboBoxItem>
                     <ComboBoxItem>Option 3</ComboBoxItem>
                 </ComboBox>
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
 
             <dev:SettingsCard Description="Another card to show grouping of cards"
                         Header="Yet another SettingsCard">
                 <dev:SettingsCard.HeaderIcon>
                     <FontIcon Glyph="&#xE29B;" />
-                </wuc:SettingsCard.HeaderIcon>
+                </dev:SettingsCard.HeaderIcon>
                 <Button Content="Content" />
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
 
             <!--  Example 'About' section  -->
             <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}"
@@ -116,7 +116,7 @@ This example uses SettingsCard and SettingsExpander to showcase a complete Windo
                 <dev:SettingsExpander.HeaderIcon>
                     <BitmapIcon ShowAsMonochrome="False"
                         UriSource="ms-appx:///Assets/AppTitleBar.scale-200.png" />
-                </wuc:SettingsExpander.HeaderIcon>
+                </dev:SettingsExpander.HeaderIcon>
                 <TextBlock IsTextSelectionEnabled="True"
                     Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                     Style="{StaticResource CaptionTextBlockStyle}"
@@ -130,9 +130,9 @@ This example uses SettingsCard and SettingsExpander to showcase a complete Windo
                             <HyperlinkButton Content="Link 2" />
                             <HyperlinkButton Content="Link 3" />
                         </StackPanel>
-                    </wuc:SettingsCard>
-                </wuc:SettingsExpander.Items>
-            </wuc:SettingsExpander>
+                    </dev:SettingsCard>
+                </dev:SettingsExpander.Items>
+            </dev:SettingsExpander>
             <HyperlinkButton Margin="0,8,0,0"
                         Content="Send feedback" />
         </StackPanel>
@@ -163,8 +163,8 @@ private async void OnCardClicked(object sender, RoutedEventArgs e)
                 IsEnabled="{x:Bind IsCardEnabled, Mode=OneWay}">
         <dev:SettingsCard.HeaderIcon>
             <FontIcon Glyph="&#xE799;" />
-        </wuc:SettingsCard.HeaderIcon>
-    </wuc:SettingsCard>
+        </dev:SettingsCard.HeaderIcon>
+    </dev:SettingsCard>
 
     <dev:SettingsCard ActionIconToolTip="Open in new window"
                 Description="You can customize the ActionIcon and ActionIconToolTip."
@@ -174,11 +174,11 @@ private async void OnCardClicked(object sender, RoutedEventArgs e)
                 IsEnabled="{x:Bind IsCardEnabled, Mode=OneWay}">
         <dev:SettingsCard.HeaderIcon>
             <FontIcon Glyph="&#xE12B;" />
-        </wuc:SettingsCard.HeaderIcon>
+        </dev:SettingsCard.HeaderIcon>
         <dev:SettingsCard.ActionIcon>
             <FontIcon Glyph="&#xE8A7;" />
-        </wuc:SettingsCard.ActionIcon>
-    </wuc:SettingsCard>
+        </dev:SettingsCard.ActionIcon>
+    </dev:SettingsCard>
 </StackPanel>
 ```
 
@@ -198,13 +198,13 @@ SettingsCard can also be turned into a button, by setting the `IsClickEnabled` p
                         IsEnabled="{x:Bind IsCardEnabled, Mode=OneWay}">
         <dev:SettingsCard.HeaderIcon>
             <FontIcon Glyph="&#xE799;" />
-        </wuc:SettingsCard.HeaderIcon>
+        </dev:SettingsCard.HeaderIcon>
         <ComboBox SelectedIndex="0">
             <ComboBoxItem>Option 1</ComboBoxItem>
             <ComboBoxItem>Option 2</ComboBoxItem>
             <ComboBoxItem>Option 3</ComboBoxItem>
         </ComboBox>
-    </wuc:SettingsCard>
+    </dev:SettingsCard>
 
     <dev:SettingsCard Description="You can use a FontIcon, SymbolIcon or BitmapIcon to set the cards HeaderIcon."
                         Header="Icon options"
@@ -212,32 +212,32 @@ SettingsCard can also be turned into a button, by setting the `IsClickEnabled` p
         <dev:SettingsCard.HeaderIcon>
             <BitmapIcon ShowAsMonochrome="False"
                         UriSource="ms-appx:///Assets/AppTitleBar.scale-200.png" />
-        </wuc:SettingsCard.HeaderIcon>
+        </dev:SettingsCard.HeaderIcon>
         <ToggleSwitch />
-    </wuc:SettingsCard>
+    </dev:SettingsCard>
 
     <dev:SettingsCard Header="A card with custom objects as its Description"
                         IsEnabled="{x:Bind IsCardEnabled, Mode=OneWay}">
         <dev:SettingsCard.Description>
             <HyperlinkButton Content="Learn more about Phone Link" />
-        </wuc:SettingsCard.Description>
+        </dev:SettingsCard.Description>
         <Button Content="Open Phone Link"
                 Style="{StaticResource AccentButtonStyle}" />
-    </wuc:SettingsCard>
+    </dev:SettingsCard>
 
     <dev:SettingsCard Description="When resizing a SettingsCard, the Content will wrap vertically. You can override this breakpoint by setting the SettingsCardWrapThreshold resource. For edge cases, you can also hide the icon by setting SettingsCardWrapNoIconThreshold."
                         Header="Adaptive layouts"
                         IsEnabled="{x:Bind IsCardEnabled, Mode=OneWay}">
         <dev:SettingsCard.HeaderIcon>
             <FontIcon Glyph="&#xE745;" />
-        </wuc:SettingsCard.HeaderIcon>
+        </dev:SettingsCard.HeaderIcon>
         <dev:SettingsCard.Resources>
             <x:Double x:Key="SettingsCardWrapThreshold">800</x:Double>
             <x:Double x:Key="SettingsCardWrapNoIconThreshold">600</x:Double>
-        </wuc:SettingsCard.Resources>
+        </dev:SettingsCard.Resources>
         <Button Content="This control will wrap vertically!"
                 Style="{StaticResource AccentButtonStyle}" />
-    </wuc:SettingsCard>
+    </dev:SettingsCard>
 </StackPanel>
 ```
 
@@ -284,16 +284,16 @@ public ObservableCollection<MyDataModel> MyDataSet = new() {
                         ItemsSource="{x:Bind MyDataSet}">
     <dev:SettingsExpander.HeaderIcon>
         <FontIcon Glyph="&#xEA37;" />
-    </wuc:SettingsExpander.HeaderIcon>
+    </dev:SettingsExpander.HeaderIcon>
     <dev:SettingsExpander.ItemTemplate>
         <DataTemplate x:DataType="local:MyDataModel">
             <dev:SettingsCard Description="{x:Bind Info}"
                                 Header="{x:Bind Name}">
                 <HyperlinkButton Content="{x:Bind LinkDescription}"
                                     NavigateUri="{x:Bind Url}" />
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
         </DataTemplate>
-    </wuc:SettingsExpander.ItemTemplate>
+    </dev:SettingsExpander.ItemTemplate>
     <dev:SettingsExpander.ItemsHeader>
         <InfoBar Title="This is the ItemsHeader"
                         BorderThickness="0"
@@ -305,7 +305,7 @@ public ObservableCollection<MyDataModel> MyDataSet = new() {
                 <HyperlinkButton Content="It can host custom content" />
             </InfoBar.ActionButton>
         </InfoBar>
-    </wuc:SettingsExpander.ItemsHeader>
+    </dev:SettingsExpander.ItemsHeader>
     <dev:SettingsExpander.ItemsFooter>
         <InfoBar Title="This is the ItemsFooter"
                         BorderThickness="0"
@@ -317,8 +317,8 @@ public ObservableCollection<MyDataModel> MyDataSet = new() {
                 <HyperlinkButton Content="It can host custom content" />
             </InfoBar.ActionButton>
         </InfoBar>
-    </wuc:SettingsExpander.ItemsFooter>
-</wuc:SettingsExpander>
+    </dev:SettingsExpander.ItemsFooter>
+</dev:SettingsExpander>
 ```
 
 # SettingsExpander
@@ -339,7 +339,7 @@ SettingsExpander is also an ItemsControl, so its items can be driven by a collec
         <!--  TODO: This should be TwoWay bound but throws compile error in Uno.  -->
         <dev:SettingsExpander.HeaderIcon>
             <FontIcon Glyph="&#xE91B;" />
-        </wuc:SettingsExpander.HeaderIcon>
+        </dev:SettingsExpander.HeaderIcon>
         <ComboBox SelectedIndex="0">
             <ComboBoxItem>Option 1</ComboBoxItem>
             <ComboBoxItem>Option 2</ComboBoxItem>
@@ -349,14 +349,14 @@ SettingsExpander is also an ItemsControl, so its items can be driven by a collec
         <dev:SettingsExpander.Items>
             <dev:SettingsCard Header="A basic SettingsCard within an SettingsExpander">
                 <Button Content="Button" />
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
             <dev:SettingsCard Description="SettingsCard within an Expander can be made clickable too!"
                                 Header="This item can be clicked"
                                 IsClickEnabled="True" />
 
             <dev:SettingsCard ContentAlignment="Left">
                 <CheckBox Content="Here the ContentAlignment is set to Left. This is great for e.g. CheckBoxes or RadioButtons." />
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
 
             <dev:SettingsCard HorizontalContentAlignment="Left"
                                 ContentAlignment="Vertical"
@@ -388,15 +388,15 @@ SettingsExpander is also an ItemsControl, so its items can be driven by a collec
                                 CornerRadius="4" />
                     </GridViewItem>
                 </GridView>
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
             <dev:SettingsCard Description="You can override the Left indention of a SettingsCard by overriding the SettingsCardLeftIndention"
                                 Header="Customization">
                 <dev:SettingsCard.Resources>
                     <x:Double x:Key="SettingsCardLeftIndention">40</x:Double>
-                </wuc:SettingsCard.Resources>
-            </wuc:SettingsCard>
-        </wuc:SettingsExpander.Items>
-    </wuc:SettingsExpander>
+                </dev:SettingsCard.Resources>
+            </dev:SettingsCard>
+        </dev:SettingsExpander.Items>
+    </dev:SettingsExpander>
 </ScrollViewer>
 ```
 

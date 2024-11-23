@@ -13,60 +13,60 @@ Dynamic: this mode extends Normal and if is the newest input of the TextBox is i
 
 ```xml
 <TextBox Name="PhoneNumberValidator"
-        wuc:TextBoxExtensions.Regex="^\s*\+?\s*([0-9][\s-]*){9,}$"
+        dev:TextBoxExtensions.Regex="^\s*\+?\s*([0-9][\s-]*){9,}$"
         Header="Text box with Regex extension for phone number, validation occurs on TextChanged"/>
 <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}">
             <Run Text="Is valid: " />
             <Run FontWeight="SemiBold"
-                    Text="{Binding (wuc:TextBoxExtensions.IsValid), ElementName=PhoneNumberValidator}" />
+                    Text="{Binding (dev:TextBoxExtensions.IsValid), ElementName=PhoneNumberValidator}" />
 </TextBlock>
 ```
 
 ```xml
 <TextBox Name="CharactValidator"
-            wuc:TextBoxExtensions.ValidationMode="Dynamic"
-            wuc:TextBoxExtensions.ValidationType="Characters"
+            dev:TextBoxExtensions.ValidationMode="Dynamic"
+            dev:TextBoxExtensions.ValidationType="Characters"
             Header="Text box with ValidationType=Characters, validation occurs at input with ValidationMode=Dynamic and clear only single character when value is invalid"
             Text="abcdef" />
 <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}">
     <Run Text="Is valid: " />
     <Run FontWeight="SemiBold"
-            Text="{Binding (wuc:TextBoxExtensions.IsValid), ElementName=CharactValidator}" />
+            Text="{Binding (dev:TextBoxExtensions.IsValid), ElementName=CharactValidator}" />
 </TextBlock>
 ```
 
 ```xml
 <TextBox Name="EmailValidator"
-            wuc:TextBoxExtensions.ValidationType="Email"
+            dev:TextBoxExtensions.ValidationType="Email"
             Header="Text box with ValidationType=Email, validation occurs on TextChanged" />
 <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}">
     <Run Text="Is valid: " />
     <Run FontWeight="SemiBold"
-            Text="{Binding (wuc:TextBoxExtensions.IsValid), ElementName=EmailValidator}" />
+            Text="{Binding (dev:TextBoxExtensions.IsValid), ElementName=EmailValidator}" />
 </TextBlock>
 ```
 
 ```xml
 <TextBox Name="DecimalValidatorForce"
-            wuc:TextBoxExtensions.ValidationMode="Forced"
-            wuc:TextBoxExtensions.ValidationType="Decimal"
+            dev:TextBoxExtensions.ValidationMode="Forced"
+            dev:TextBoxExtensions.ValidationType="Decimal"
             Header="Text box with ValidationType=Decimal, validation occurs on TextChanged and force occurs on lose focus with ValidationMode=Force (333,111 or 333.111)"/>
 <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}">
     <Run Text="Is valid: " />
     <Run FontWeight="SemiBold"
-            Text="{Binding (wuc:TextBoxExtensions.IsValid), ElementName=DecimalValidatorForce}" />
+            Text="{Binding (dev:TextBoxExtensions.IsValid), ElementName=DecimalValidatorForce}" />
 </TextBlock>
 ```
 
 ```xml
 <TextBox Name="NumberValidatorDynamic"
-            wuc:TextBoxExtensions.ValidationMode="Dynamic"
-            wuc:TextBoxExtensions.ValidationType="Number"
+            dev:TextBoxExtensions.ValidationMode="Dynamic"
+            dev:TextBoxExtensions.ValidationType="Number"
             Header="Text box with ValidationType=Number, validation occurs at input with ValidationMode=Dynamic and clear only single character when value is invalid"/>
 <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}">
     <Run Text="Is valid: " />
     <Run FontWeight="SemiBold"
-            Text="{Binding (wuc:TextBoxExtensions.IsValid), ElementName=NumberValidatorDynamic}" />
+            Text="{Binding (dev:TextBoxExtensions.IsValid), ElementName=NumberValidatorDynamic}" />
 </TextBlock>
 ```
 
@@ -98,22 +98,22 @@ In case you want to add a custom variable character you can use the CustomMask p
 
 ```xml
 <StackPanel Spacing="24">
-<TextBox wuc:TextBoxExtensions.Mask="9a9a-a9a*"
+<TextBox dev:TextBoxExtensions.Mask="9a9a-a9a*"
             Header="Text box with Mask 9a9a-a9a* (9 allows from 0 to 9, a allow from a to Z and * allows both a and 9)"
             Text="TextBoxMask" />
 
-<TextBox wuc:TextBoxExtensions.Mask="+1999-9999"
-            wuc:TextBoxExtensions.MaskPlaceholder=" "
+<TextBox dev:TextBoxExtensions.Mask="+1999-9999"
+            dev:TextBoxExtensions.MaskPlaceholder=" "
             Header="Text box with Mask +1999-9999 and placeHolder as space (placeholder represents the characters the user can change on runtime)" />
 
-<TextBox wuc:TextBoxExtensions.Mask="+\964 799 999 9999"
+<TextBox dev:TextBoxExtensions.Mask="+\964 799 999 9999"
             Header="Text box with Mask +964 799 999 9999 (Notice how we escape the first 9 with a backslash)" />
 
-<TextBox wuc:TextBoxExtensions.Mask="99\\99\\9999"
+<TextBox dev:TextBoxExtensions.Mask="99\\99\\9999"
             Header="Text box with Mask 99\99\9999 (You can escape a backslash with another backslash)" />
 
-<TextBox wuc:TextBoxExtensions.CustomMask="5:[1-5],c:[a-c]"
-            wuc:TextBoxExtensions.Mask="a5c-5c*9"
+<TextBox dev:TextBoxExtensions.CustomMask="5:[1-5],c:[a-c]"
+            dev:TextBoxExtensions.Mask="a5c-5c*9"
             Header="Text box with CustomMask in case you want to define your own variable character like a, 9 and *. Mask: a5c-5c*9, 5: [1-5], c: [a-c]" />
 
 </StackPanel>

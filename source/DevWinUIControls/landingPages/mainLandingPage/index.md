@@ -75,34 +75,34 @@ then use MainLandingPage:
                     Link="https://Ghost1372.github.io/DevWinUI/">
                 <dev:HeaderTile.Source>
                     <Image Source="/Assets/HomeHeaderTiles/Header-WinUIGallery.png" />
-                </wuc:HeaderTile.Source>
-            </wuc:HeaderTile>
+                </dev:HeaderTile.Source>
+            </dev:HeaderTile>
             <dev:HeaderTile
                     Title="DevWinUI"
                     Description="Experience WinUI 3 quickly and easily with the help of DevWinUI, Everything you need to develop an application is gathered in one place."
                     Link="https://github.com/Ghost1372/DevWinUI">
                 <dev:HeaderTile.Source>
                     <Image Source="/Assets/HomeHeaderTiles/icon.png" />
-                </wuc:HeaderTile.Source>
-            </wuc:HeaderTile>
+                </dev:HeaderTile.Source>
+            </dev:HeaderTile>
             <dev:HeaderTile
                     Title="Core"
                     Description="Experience WinUI 3 quickly and easily with the help of Core, Everything you need to develop an application is gathered in one place."
                     Link="https://github.com/Ghost1372/DevWinUI">
                 <dev:HeaderTile.Source>
                     <Image Source="/Assets/HomeHeaderTiles/icon.png" />
-                </wuc:HeaderTile.Source>
-            </wuc:HeaderTile>
+                </dev:HeaderTile.Source>
+            </dev:HeaderTile>
             <dev:HeaderTile
                     Title="ContextMenuExtensions"
                     Description="add a new ContextMenu for Windows 11/10."
                     Link="https://github.com/Ghost1372/DevWinUI">
                 <dev:HeaderTile.Source>
                     <Image Source="/Assets/HomeHeaderTiles/icon.png" />
-                </wuc:HeaderTile.Source>
-            </wuc:HeaderTile>
+                </dev:HeaderTile.Source>
+            </dev:HeaderTile>
         </StackPanel>
-    </wuc:MainLandingPage.HeaderContent>
+    </dev:MainLandingPage.HeaderContent>
 
     <dev:MainLandingPage.FooterContent>
         <StackPanel>
@@ -111,8 +111,8 @@ then use MainLandingPage:
             <HyperlinkButton Content="App Code Samples" NavigateUri="https://docs.microsoft.com/en-us/windows/apps/get-started/samples"/>
             <HyperlinkButton Content="Windows Template Studio" NavigateUri="https://github.com/microsoft/WindowsTemplateStudio"/>
         </StackPanel>
-    </wuc:MainLandingPage.FooterContent>
-</wuc:MainLandingPage>
+    </dev:MainLandingPage.FooterContent>
+</dev:MainLandingPage>
 ```
 
 # Load Items from Json File

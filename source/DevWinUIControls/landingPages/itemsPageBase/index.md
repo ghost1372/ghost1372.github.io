@@ -107,42 +107,42 @@ in this example we use ItemsPageBase class for creating a LandingPage
                                         Link="https://Ghost1372.github.io/DevWinUI/">
                                     <dev:HeaderTile.Source>
                                         <Image Source="/Assets/HomeHeaderTiles/Header-WinUIGallery.png" />
-                                    </wuc:HeaderTile.Source>
-                                </wuc:HeaderTile>
+                                    </dev:HeaderTile.Source>
+                                </dev:HeaderTile>
                                 <dev:HeaderTile
                                         Title="DevWinUI"
                                         Description="Experience WinUI 3 quickly and easily with the help of DevWinUI, Everything you need to develop an application is gathered in one place."
                                         Link="https://github.com/Ghost1372/DevWinUI">
                                     <dev:HeaderTile.Source>
                                         <Image Source="/Assets/HomeHeaderTiles/icon.png" />
-                                    </wuc:HeaderTile.Source>
-                                </wuc:HeaderTile>
+                                    </dev:HeaderTile.Source>
+                                </dev:HeaderTile>
                                 <dev:HeaderTile
                                         Title="Core"
                                         Description="Experience WinUI 3 quickly and easily with the help of Core, Everything you need to develop an application is gathered in one place."
                                         Link="https://github.com/Ghost1372/DevWinUI">
                                     <dev:HeaderTile.Source>
                                         <Image Source="/Assets/HomeHeaderTiles/icon.png" />
-                                    </wuc:HeaderTile.Source>
-                                </wuc:HeaderTile>
+                                    </dev:HeaderTile.Source>
+                                </dev:HeaderTile>
                                 <dev:HeaderTile
                                         Title="ContextMenuExtensions"
                                         Description="add a new ContextMenu for Windows 11/10."
                                         Link="https://github.com/Ghost1372/DevWinUI">
                                     <dev:HeaderTile.Source>
                                         <Image Source="/Assets/HomeHeaderTiles/icon.png" />
-                                    </wuc:HeaderTile.Source>
-                                </wuc:HeaderTile>
+                                    </dev:HeaderTile.Source>
+                                </dev:HeaderTile>
                             </StackPanel>
-                        </wuc:TileGallery.HeaderContent>
-                    </wuc:TileGallery>
+                        </dev:TileGallery.HeaderContent>
+                    </dev:TileGallery>
                 </Grid>
             </GridView.Header>
 
             <GridView.GroupStyle>
                 <GroupStyle>
                     <GroupStyle.HeaderTemplate>
-                        <DataTemplate x:DataType="wuc:GroupInfoList">
+                        <DataTemplate x:DataType="dev:GroupInfoList">
                             <TextBlock
                                 x:Name="pageSubtitle"
                                 Margin="4,32,0,0"
@@ -155,7 +155,7 @@ in this example we use ItemsPageBase class for creating a LandingPage
             </GridView.GroupStyle>
         </GridView>
     </Grid>
-</wuc:ItemsPageBase>
+</dev:ItemsPageBase>
 
 ```
 

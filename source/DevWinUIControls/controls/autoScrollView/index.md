@@ -16,7 +16,7 @@ title: AutoScrollView
 <dev:AutoScrollView IsPlaying="True">
     <TextBlock Text="Long Text"
                TextTrimming="None" />
-</wuc:AutoScrollView>
+</dev:AutoScrollView>
 ```
 
 # Example With Button Content
@@ -30,7 +30,7 @@ title: AutoScrollView
                         IsPlaying="True">
         <TextBlock Text="Long Text"
                    TextTrimming="CharacterEllipsis" />
-    </wuc:AutoScrollView>
+    </dev:AutoScrollView>
 </ToggleButton>
 ```
 
@@ -42,7 +42,7 @@ title: AutoScrollView
                     ScrollingPixelsPreSecond="200">
     <TextBlock Text="Long Text"
                TextTrimming="None" />
-</wuc:AutoScrollView>
+</dev:AutoScrollView>
 ```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AutoScrollView.gif)
@@ -59,14 +59,14 @@ title: AutoScrollView
             <GradientStop Offset="0.98" Color="#FFFFFFFF" />
             <GradientStop Offset="1" Color="Transparent" />
         </LinearGradientBrush>
-    </wuc:OpacityMaskView.OpacityMask>
+    </dev:OpacityMaskView.OpacityMask>
     <dev:AutoScrollView Margin="0,20"
                         Padding="10,0"
                         IsPlaying="True">
         <TextBlock Text="Long Text"
                    TextTrimming="None" />
-    </wuc:AutoScrollView>
-</wuc:OpacityMaskView>
+    </dev:AutoScrollView>
+</dev:OpacityMaskView>
 ```
 
 # Example With Mouse Hover
@@ -80,7 +80,7 @@ title: AutoScrollView
                     IsPlaying="False">
     <TextBlock Text="Long Text"
                TextTrimming="CharacterEllipsis" />
-</wuc:AutoScrollView>
+</dev:AutoScrollView>
 ```
 
 ```cs

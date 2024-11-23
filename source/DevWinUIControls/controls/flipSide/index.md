@@ -19,15 +19,15 @@ title: FlipSide
                        VerticalAlignment="Center"
                        Text="Side 1" />
         </Grid>
-    </wuc:FlipSide.Side1>
+    </dev:FlipSide.Side1>
     <dev:FlipSide.Side2>
         <Grid Background="Blue">
             <TextBlock HorizontalAlignment="Center"
                        VerticalAlignment="Center"
                        Text="Side 2" />
         </Grid>
-    </wuc:FlipSide.Side2>
-</wuc:FlipSide>
+    </dev:FlipSide.Side2>
+</dev:FlipSide>
 ```
 
 # Demo

@@ -4,7 +4,7 @@ title: Windows 11 Settings Examples
 
 {% note info %}
 for using inline icons like this:
-`HeaderIcon="{wuc:BitmapIcon Source=/Assets/FluentIcons/FluentIconsAwake.png}"`
+`HeaderIcon="{dev:BitmapIcon Source=/Assets/FluentIcons/FluentIconsAwake.png}"`
 you need to install `DevWinUI` package:
 {% endnote %}
 
@@ -21,10 +21,10 @@ you need to install `DevWinUI` package:
         <StackPanel Orientation="Vertical" ChildrenTransitions="{StaticResource SettingsCardsAnimations}">
             <dev:SettingsCard
                 Header="Enable Awake"
-                HeaderIcon="{wuc:BitmapIcon Source=/Assets/FluentIcons/FluentIconsAwake.png}">
+                HeaderIcon="{dev:BitmapIcon Source=/Assets/FluentIcons/FluentIconsAwake.png}">
                 <ToggleSwitch
                     OffContent="Off" OnContent="On"/>
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
             <InfoBar
                 Title="The system administrator is forcing this setting."
                 IsClosable="False"
@@ -36,7 +36,7 @@ you need to install `DevWinUI` package:
 
                 <dev:SettingsCard Header="Mode"
                     Description="Manage the state of your device when Awake is active"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE945;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE945;}">
                     <ComboBox
                         MinWidth="{StaticResource SettingActionControlMinWidth}" SelectedIndex="0">
                         <ComboBoxItem x:Uid="Awake_NoKeepAwakeSelector" />
@@ -44,26 +44,26 @@ you need to install `DevWinUI` package:
                         <ComboBoxItem x:Uid="Awake_TemporaryKeepAwakeSelector" />
                         <ComboBoxItem x:Uid="Awake_ExpirableKeepAwakeSelector" />
                     </ComboBox>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
 
                 <dev:SettingsExpander Header="End date and time"
                     Description="Keep custom awake state until a specific date and time"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEC92;}" IsExpanded="True">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEC92;}" IsExpanded="True">
                     <dev:SettingsExpander.Items>
                         <dev:SettingsCard
                             Header="End date">
                             <DatePicker/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard
                             Header="End time">
                             <TimePicker ClockIdentifier="24HourClock"/>
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
 
                 <dev:SettingsCard
                     Header="Interval before returning to the previous awakeness state"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE916;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE916;}">
 
                     <StackPanel Orientation="Horizontal" MinWidth="{StaticResource SettingActionControlMinWidth}">
                         <NumberBox
@@ -85,24 +85,24 @@ you need to install `DevWinUI` package:
                             SmallChange="1"
                             SpinButtonPlacementMode="Compact"/>
                     </StackPanel>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
 
                 <dev:SettingsCard Header="Keep screen on"
                     Description="This setting is only available when keeping the PC awake"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE7F4;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE7F4;}">
                     <ToggleSwitch/>
-                </wuc:SettingsCard>
-            </wuc:SimpleSettingsGroup>
+                </dev:SettingsCard>
+            </dev:SimpleSettingsGroup>
         </StackPanel>
-    </wuc:SettingsPageControl.ModuleContent>
+    </dev:SettingsPageControl.ModuleContent>
 
     <dev:SettingsPageControl.PrimaryLinks>
         <dev:PageLink Link="https://aka.ms/PowerToysOverview_Awake" Text="Learn more about Awake"/>
-    </wuc:SettingsPageControl.PrimaryLinks>
+    </dev:SettingsPageControl.PrimaryLinks>
     <dev:SettingsPageControl.SecondaryLinks>
         <dev:PageLink Link="https://Awake.den.dev" Text="Den Delimarsky's Awake"/>
-    </wuc:SettingsPageControl.SecondaryLinks>
-</wuc:SettingsPageControl>
+    </dev:SettingsPageControl.SecondaryLinks>
+</dev:SettingsPageControl>
 ```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Awake_Demo.png)
@@ -124,9 +124,9 @@ you need to install `DevWinUI` package:
             Orientation="Vertical">
             <dev:SettingsCard
                 Header="Enable Color Picker"
-                HeaderIcon="{wuc:BitmapIcon Source=/Assets/FluentIcons/FluentIconsColorPicker.png}">
+                HeaderIcon="{dev:BitmapIcon Source=/Assets/FluentIcons/FluentIconsColorPicker.png}">
                 <ToggleSwitch />
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
             <InfoBar
                 Title="The system administrator is forcing this setting."
                 IsClosable="False"
@@ -134,38 +134,38 @@ you need to install `DevWinUI` package:
                 Severity="Informational" />
 
             <dev:SimpleSettingsGroup Header="Shortcut">
-                <dev:SettingsCard Header="Activation behavior" HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEC4E;}">
+                <dev:SettingsCard Header="Activation behavior" HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEC4E;}">
                     <ComboBox MinWidth="{StaticResource SettingActionControlMinWidth}" SelectedIndex="0">
                         <ComboBoxItem Content="Open editor" />
                         <ComboBoxItem Content="Pick a color and open editor" />
                         <ComboBoxItem Content="Only pick a color" />
                     </ComboBox>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
 
-            </wuc:SimpleSettingsGroup>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup Header="Picker behavior">
-                <dev:SettingsCard Header="Default color format" Description="This format will be copied to your clipboard" HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xF0E3;}">
+                <dev:SettingsCard Header="Default color format" Description="This format will be copied to your clipboard" HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xF0E3;}">
                     <ComboBox
                         MinWidth="{StaticResource SettingActionControlMinWidth}"/>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
 
                 <dev:SettingsCard Header="Show color name" Description="This will show the name of the color when picking a color">
                     <ToggleSwitch />
-                </wuc:SettingsCard>
-            </wuc:SimpleSettingsGroup>
+                </dev:SettingsCard>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup Header="Color formats">
                 <dev:SettingsCard
                     Header="Color formats"
                     Description="Configure the color formats (edit, delete, hide, reorder them)"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily},
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily},
                                                 Glyph=&#xE762;}">
                     <Button
                         Content="Add new format"
                         HorizontalAlignment="Right"
                         Style="{StaticResource AccentButtonStyle}" />
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
                 <ListView
                     HorizontalAlignment="Stretch"
                     AutomationProperties.Name="{Binding ElementName=ColorFormatsSetting, Path=Header}"
@@ -182,7 +182,7 @@ you need to install `DevWinUI` package:
                                 <dev:SettingsCard.Resources>
                                     <x:Double x:Key="SettingsCardLeftIndention">42</x:Double>
                                     <x:Double x:Key="SettingsCardActionButtonWidth">0</x:Double>
-                                </wuc:SettingsCard.Resources>
+                                </dev:SettingsCard.Resources>
                                 <StackPanel Orientation="Horizontal" Spacing="4">
                                     <ToggleSwitch
                                         OffContent=""
@@ -222,22 +222,22 @@ you need to install `DevWinUI` package:
                                         </ToolTipService.ToolTip>
                                     </Button>
                                 </StackPanel>
-                            </wuc:SettingsCard>
+                            </dev:SettingsCard>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-            </wuc:SimpleSettingsGroup>
+            </dev:SimpleSettingsGroup>
         </StackPanel>
-    </wuc:SettingsPageControl.ModuleContent>
+    </dev:SettingsPageControl.ModuleContent>
 
     <dev:SettingsPageControl.PrimaryLinks>
         <dev:PageLink Link="https://aka.ms/PowerToysOverview_ColorPicker" Text="Learn more about Color Picker"/>
-    </wuc:SettingsPageControl.PrimaryLinks>
+    </dev:SettingsPageControl.PrimaryLinks>
     <dev:SettingsPageControl.SecondaryLinks>
         <dev:PageLink Link="https://github.com/martinchrzan/ColorPicker/" Text="Martin Chrzan's Color Picker"/>
         <dev:PageLink Link="https://medium.com/@Niels9001/a-fluent-color-meter-for-powertoys-20407ededf0c" Text="Niels Laute's UX concept"/>
-    </wuc:SettingsPageControl.SecondaryLinks>
-</wuc:SettingsPageControl>
+    </dev:SettingsPageControl.SecondaryLinks>
+</dev:SettingsPageControl>
 ```
 
 ```cs
@@ -328,9 +328,9 @@ public class ColorFormatModel : Observable
         <StackPanel Orientation="Vertical" ChildrenTransitions="{StaticResource SettingsCardsAnimations}">
             <dev:SettingsCard
                 Header="Enable FancyZones"
-                HeaderIcon="{wuc:BitmapIcon Source=/Assets/FluentIcons/FluentIconsFancyZones.png}">
+                HeaderIcon="{dev:BitmapIcon Source=/Assets/FluentIcons/FluentIconsFancyZones.png}">
                 <ToggleSwitch/>
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
             <InfoBar
                 Title="The system administrator is forcing this setting."
                 IsClosable="False"
@@ -342,26 +342,26 @@ public class ColorFormatModel : Observable
                 <dev:SettingsCard
                     Header="Launch layout editor"
                     Description="Set and manage your layouts"
-                    ActionIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, FontSize=14, Glyph=&#xE8A7;}"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEB3C;}"
+                    ActionIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, FontSize=14, Glyph=&#xE8A7;}"
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEB3C;}"
                     IsClickEnabled="True" />
 
                 <dev:SettingsCard
                     Header="Activation shortcut" Description="Customize the shortcut to activate this module"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEDA7;}">
-                </wuc:SettingsCard>
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEDA7;}">
+                </dev:SettingsCard>
 
                 <dev:SettingsCard
                     Header="Launch editor on the display" Description="When using multiple displays"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xe7b5;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xe7b5;}">
                     <ComboBox
                         MinWidth="{StaticResource SettingActionControlMinWidth}"
                         SelectedIndex="0">
                         <ComboBoxItem Content="With active focus" />
                         <ComboBoxItem Content="Where the mouse pointer is" />
                     </ComboBox>
-                </wuc:SettingsCard>
-            </wuc:SimpleSettingsGroup>
+                </dev:SettingsCard>
+            </dev:SimpleSettingsGroup>
 
 
             <dev:SimpleSettingsGroup
@@ -373,19 +373,19 @@ public class ColorFormatModel : Observable
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="Hold Shift key to activate zones while dragging"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="Use a non-primary mouse button to toggle zone activation"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="Show zones on all monitors while dragging a window"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard ContentAlignment="Left">
                             <dev:CheckBoxWithDescriptionControl
                                 Content="Allow zones to span across monitors"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard Header="When multiple zones overlap">
                             <ComboBox
                                 MinWidth="{StaticResource SettingActionControlMinWidth}"
@@ -395,13 +395,13 @@ public class ColorFormatModel : Observable
                                 <ComboBoxItem Content="Split the overlapped area into multiple activation targets" />
                                 <ComboBoxItem Content="Activate the zone whose center is closest to the cursor" />
                             </ComboBox>
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
 
                 <dev:SettingsExpander Header="Zone appearance"
                     Description="Customize the way zones look"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEB3C;}"
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEB3C;}"
                     IsExpanded="True">
                     <ComboBox
                         MinWidth="{StaticResource SettingActionControlMinWidth}"
@@ -413,16 +413,16 @@ public class ColorFormatModel : Observable
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="Show zone number"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard Header="Opacity">
                             <Slider
                                 MinWidth="{StaticResource SettingActionControlMinWidth}"
                                 Maximum="100"
                                 Minimum="0"/>
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
-            </wuc:SimpleSettingsGroup>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup
                 Header="Windows">
@@ -434,47 +434,47 @@ public class ColorFormatModel : Observable
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="Keep windows in their zones when the screen resolution changes"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="During zone layout changes, windows assigned to a zone will match new size/positions"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="Move newly created windows to their last known zone"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="Move newly created windows to the current active monitor (Experimental)"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="Restore the original size of windows when unsnapping"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="Make dragged window transparent"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard ContentAlignment="Left">
                             <dev:CheckBoxWithDescriptionControl Header="Allow popup windows snapping"
                                 Description="This setting can affect all popup windows including notifications"
                                 Margin="0,0,0,6"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="Allow child windows snapping"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard
                             ContentAlignment="Left">
                             <CheckBox
                                 Content="Disable round corners when window is snapped"/>
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
 
                 <dev:SettingsExpander
                     Header="Override Windows Snap" Description="This overrides the Windows Snap shortcut (Win + arrow) to move windows between zones"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE90C;}"
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE90C;}"
                     IsExpanded="True">
                     <ToggleSwitch/>
                     <dev:SettingsExpander.Items>
@@ -509,38 +509,38 @@ public class ColorFormatModel : Observable
                                     </StackPanel>
                                 </ComboBoxItem>
                             </ComboBox>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard
                             ContentAlignment="Left">
                             <CheckBox
                                 Content="Move windows between zones across all monitors"/>
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
-            </wuc:SimpleSettingsGroup>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup
                 Header="Layouts">
                 <dev:SettingsExpander 
                     Header="Enable quick layout switch" Description="Layout-specific shortcuts can be configured in the editor"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEDA7;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEDA7;}">
                     <ToggleSwitch/>
                     <dev:SettingsExpander.Items>
                         <dev:SettingsCard
                             ContentAlignment="Left">
                             <CheckBox
                                 Content="Flash zones when switching layout"/>
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
-            </wuc:SimpleSettingsGroup>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup
                 Header="Excluded apps">
 
                 <dev:SettingsExpander
                     Header="Excluded apps" Description="Excludes an application from snapping to zones and will only react to Windows Snap - add one application name per line"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xECE4;}"
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xECE4;}"
                     IsExpanded="True">
                     <dev:SettingsExpander.Items>
                         <dev:SettingsCard ContentAlignment="Vertical" HorizontalContentAlignment="Stretch">
@@ -553,17 +553,17 @@ public class ColorFormatModel : Observable
                                 ScrollViewer.VerticalScrollBarVisibility="Visible"
                                 ScrollViewer.VerticalScrollMode="Enabled"
                                 TextWrapping="Wrap" />
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
-            </wuc:SimpleSettingsGroup>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
+            </dev:SimpleSettingsGroup>
         </StackPanel>
-    </wuc:SettingsPageControl.ModuleContent>
+    </dev:SettingsPageControl.ModuleContent>
 
     <dev:SettingsPageControl.PrimaryLinks>
         <dev:PageLink Link="https://aka.ms/PowerToysOverview_FancyZones" Text="Learn more about FancyZones"/>
-    </wuc:SettingsPageControl.PrimaryLinks>
-</wuc:SettingsPageControl>
+    </dev:SettingsPageControl.PrimaryLinks>
+</dev:SettingsPageControl>
 ```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/FancyZones_Demo.png)
@@ -578,7 +578,7 @@ public class ColorFormatModel : Observable
     <dev:SettingsPageControl.ModuleContent>
         <StackPanel ChildrenTransitions="{StaticResource SettingsCardsAnimations}" Orientation="Vertical">
             <dev:SimpleSettingsGroup Header="Version" Margin="0,-32,0,0">
-                <dev:SettingsCard Header="PowerToys V1.0" HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE895;}">
+                <dev:SettingsCard Header="PowerToys V1.0" HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE895;}">
                     <dev:SettingsCard.Description>
                         <StackPanel Orientation="Vertical">
                             <TextBlock Style="{StaticResource SecondaryTextStyle}">
@@ -590,12 +590,12 @@ public class ColorFormatModel : Observable
                                 Margin="0,2,0,0"
                                 FontWeight="SemiBold" />
                         </StackPanel>
-                    </wuc:SettingsCard.Description>
+                    </dev:SettingsCard.Description>
 
                     <Button
                             Content="Check for Update"
                             HorizontalAlignment="Right"/>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
                 <InfoBar
                     Title="PowerToys is up to date"
                     IsClosable="False"
@@ -607,33 +607,33 @@ public class ColorFormatModel : Observable
                     Description="Except on metered connections"
                     Margin="0,-6,0,0">
                     <ToggleSwitch/>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
                 <InfoBar
                     Title="The system administrator has disabled the automatic download of updates."
                     IsClosable="False"
                     IsOpen="True"
                     Severity="Informational" />
-            </wuc:SimpleSettingsGroup>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup Header="Appearance &amp; behavior" IsEnabled="True">
-                <dev:SettingsCard Header="App theme" HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE790;}">
+                <dev:SettingsCard Header="App theme" HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE790;}">
                     <dev:SettingsCard.Description>
                         <HyperlinkButton Content="Windows color settings"/>
-                    </wuc:SettingsCard.Description>
+                    </dev:SettingsCard.Description>
                     <ComboBox MinWidth="{StaticResource SettingActionControlMinWidth}" SelectedIndex="0">
                         <ComboBoxItem Content="Dark" />
                         <ComboBoxItem Content="Light" />
                         <ComboBoxItem Content="Default" />
                     </ComboBox>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
 
                 <dev:SettingsCard Header="Run at startup" Description="PowerToys will launch automatically">
                     <ToggleSwitch/>
-                </wuc:SettingsCard>
-            </wuc:SimpleSettingsGroup>
+                </dev:SettingsCard>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup Header="Backup &amp; restore" Visibility="Visible">
-                <dev:SettingsExpander Header="Backup and restore your settings" Description="PowerToys will restart automatically if needed" HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE777;}">
+                <dev:SettingsExpander Header="Backup and restore your settings" Description="PowerToys will restart automatically if needed" HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE777;}">
                     <StackPanel Orientation="Horizontal" Spacing="8">
                         <Button Content="Backup"/>
                         <Button Content="Restore"/>
@@ -664,7 +664,7 @@ public class ColorFormatModel : Observable
                                     </ToolTipService.ToolTip>
                                 </Button>
                             </StackPanel>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard
                             Header="Backup information"
                             HorizontalContentAlignment="Left"
@@ -673,7 +673,7 @@ public class ColorFormatModel : Observable
                                 <Style TargetType="TextBlock">
                                     <Setter Property="FontSize" Value="12" />
                                 </Style>
-                            </wuc:SettingsCard.Resources>
+                            </dev:SettingsCard.Resources>
                             <Grid Margin="0,0,0,6" ColumnSpacing="8">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto" />
@@ -710,10 +710,10 @@ public class ColorFormatModel : Observable
                                     Grid.Column="1"
                                     Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
                             </Grid>
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
-            </wuc:SimpleSettingsGroup>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
+            </dev:SimpleSettingsGroup>
             <InfoBar
                 Title="Result"
                 IsClosable="False"
@@ -722,17 +722,17 @@ public class ColorFormatModel : Observable
                 <dev:SettingsCard Header="Allow experimentation with new features" Description="Note: Only Windows Insider builds may be selected for experimentation">
                     <dev:SettingsCard.HeaderIcon>
                         <PathIcon Data="M1859 1758q14 23 21 47t7 51q0 40-15 75t-41 61-61 41-75 15H354q-40 0-75-15t-61-41-41-61-15-75q0-27 6-51t21-47l569-992q10-14 10-34V128H640V0h768v128h-128v604q0 19 10 35l569 991zM896 732q0 53-27 99l-331 577h972l-331-577q-27-46-27-99V128H896v604zm799 1188q26 0 44-19t19-45q0-10-2-17t-8-16l-164-287H464l-165 287q-9 15-9 33 0 26 18 45t46 19h1341z" />
-                    </wuc:SettingsCard.HeaderIcon>
+                    </dev:SettingsCard.HeaderIcon>
                     <ToggleSwitch/>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
                 <InfoBar
                     Title="The system administrator has disabled experimentation."
                     IsClosable="False"
                     IsOpen="True"
                     Severity="Informational" />
-            </wuc:SimpleSettingsGroup>
+            </dev:SimpleSettingsGroup>
         </StackPanel>
-    </wuc:SettingsPageControl.ModuleContent>
+    </dev:SettingsPageControl.ModuleContent>
     <dev:SettingsPageControl.PrimaryLinks>
         <dev:PageLink Link="https://aka.ms/powertoys"
                             Text="Documentation" />
@@ -742,14 +742,14 @@ public class ColorFormatModel : Observable
                             Text="Report a bug" />
         <dev:PageLink Link="https://aka.ms/powerToysRequestFeature"
                             Text="Request a feature" />
-    </wuc:SettingsPageControl.PrimaryLinks>
+    </dev:SettingsPageControl.PrimaryLinks>
     <dev:SettingsPageControl.SecondaryLinks>
         <dev:PageLink Link="http://go.microsoft.com/fwlink/?LinkId=521839"
                             Text="Privacy statement" />
         <dev:PageLink Link="https://github.com/microsoft/PowerToys/blob/master/NOTICE.md"
                             Text="Open-source notice" />
-    </wuc:SettingsPageControl.SecondaryLinks>
-</wuc:SettingsPageControl>
+    </dev:SettingsPageControl.SecondaryLinks>
+</dev:SettingsPageControl>
 ```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/General_Demo.png)
@@ -766,9 +766,9 @@ public class ColorFormatModel : Observable
         <StackPanel ChildrenTransitions="{StaticResource SettingsCardsAnimations}">
             <dev:SettingsCard
                 Header="Enable Image Resizer"
-                HeaderIcon="{wuc:BitmapIcon Source=/Assets/FluentIcons/FluentIconsImageResizer.png}">
+                HeaderIcon="{dev:BitmapIcon Source=/Assets/FluentIcons/FluentIconsImageResizer.png}">
                 <ToggleSwitch/>
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
 
             <InfoBar
                 Title="The system administrator is forcing this setting."
@@ -777,11 +777,11 @@ public class ColorFormatModel : Observable
                 Severity="Informational" />
 
             <dev:SimpleSettingsGroup Header="Image sizes">
-                <dev:SettingsCard Header="Presets" Description="Manage preset sizes that can be used in the editor" HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE792;}">
+                <dev:SettingsCard Header="Presets" Description="Manage preset sizes that can be used in the editor" HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE792;}">
                     <Button
                         Content="Add new size"
                         Style="{ThemeResource AccentButtonStyle}" />
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
                 <ListView
                     x:Name="ImagesSizesListView"
                     ItemsSource="{x:Bind Sizes, Mode=TwoWay}"
@@ -791,7 +791,7 @@ public class ColorFormatModel : Observable
                             <dev:SettingsCard Header="{x:Bind Name, Mode=OneWay}">
                                 <dev:SettingsCard.Resources>
                                     <x:Double x:Key="SettingsCardLeftIndention">42</x:Double>
-                                </wuc:SettingsCard.Resources>
+                                </dev:SettingsCard.Resources>
                                 <dev:SettingsCard.Description>
                                     <StackPanel
                                         Grid.Row="1"
@@ -813,7 +813,7 @@ public class ColorFormatModel : Observable
                                             Style="{ThemeResource SecondaryTextStyle}"
                                             Text="{x:Bind Unit}" />
                                     </StackPanel>
-                                </wuc:SettingsCard.Description>
+                                </dev:SettingsCard.Description>
                                 <StackPanel
                                     Grid.Column="2"
                                     HorizontalAlignment="Right"
@@ -883,11 +883,11 @@ public class ColorFormatModel : Observable
                                         FontFamily="{ThemeResource SymbolThemeFontFamily}"
                                         Style="{StaticResource SubtleButtonStyle}"/>
                                 </StackPanel>
-                            </wuc:SettingsCard>
+                            </dev:SettingsCard>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-            </wuc:SimpleSettingsGroup>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup Header="Encoding">
                 <dev:SettingsCard Header="Fallback encoder">
@@ -899,14 +899,14 @@ public class ColorFormatModel : Observable
                         <ComboBoxItem Content="WMPhoto" />
                         <ComboBoxItem Content="GIF" />
                     </ComboBox>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
 
                 <dev:SettingsCard Header="JPEG quality level">
                     <Slider
                         MinWidth="{StaticResource SettingActionControlMinWidth}"
                         Maximum="100"
                         Minimum="0"/>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
 
                 <dev:SettingsCard Header="PNG interlacing">
                     <ComboBox MinWidth="{StaticResource SettingActionControlMinWidth}" SelectedIndex="0">
@@ -914,7 +914,7 @@ public class ColorFormatModel : Observable
                         <ComboBoxItem Content="On" />
                         <ComboBoxItem Content="Off" />
                     </ComboBox>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
 
                 <dev:SettingsCard Header="TIFF compression">
                     <ComboBox MinWidth="{StaticResource SettingActionControlMinWidth}" SelectedIndex="0">
@@ -926,8 +926,8 @@ public class ColorFormatModel : Observable
                         <ComboBoxItem Content="RLE" />
                         <ComboBoxItem Content="Zip" />
                     </ComboBox>
-                </wuc:SettingsCard>
-            </wuc:SimpleSettingsGroup>
+                </dev:SettingsCard>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup Header="File">
                 <dev:SettingsCard Header="Filename format" Description="This format is used as the filename for resized images">
@@ -973,25 +973,25 @@ public class ColorFormatModel : Observable
                             </Button.Flyout>
                         </Button>
                     </StackPanel>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
 
                 <dev:SettingsCard Header="File modified timestamp" Description="Used as the 'modified timestamp' in the file properties">
                     <ComboBox MinWidth="{StaticResource SettingActionControlMinWidth}" SelectedIndex="0">
                         <ComboBoxItem Content="Original file timestamp" />
                         <ComboBoxItem Content="Timestamp of resize action" />
                     </ComboBox>
-                </wuc:SettingsCard>
-            </wuc:SimpleSettingsGroup>
+                </dev:SettingsCard>
+            </dev:SimpleSettingsGroup>
         </StackPanel>
-    </wuc:SettingsPageControl.ModuleContent>
+    </dev:SettingsPageControl.ModuleContent>
 
     <dev:SettingsPageControl.PrimaryLinks>
         <dev:PageLink Link="https://aka.ms/PowerToysOverview_ImageResizer" Text="Learn more about Image Resizer"/>
-    </wuc:SettingsPageControl.PrimaryLinks>
+    </dev:SettingsPageControl.PrimaryLinks>
     <dev:SettingsPageControl.SecondaryLinks>
         <dev:PageLink Link="https://github.com/bricelam/ImageResizer/" Text="Brice Lambson's ImageResizer"/>
-    </wuc:SettingsPageControl.SecondaryLinks>
-</wuc:SettingsPageControl>
+    </dev:SettingsPageControl.SecondaryLinks>
+</dev:SettingsPageControl>
 ```
 
 ```cs
@@ -1062,38 +1062,38 @@ public class ImageSize : Observable
     ModuleTitle="Keyboard Manager">
     <dev:SettingsPageControl.ModuleContent>
         <StackPanel ChildrenTransitions="{StaticResource SettingsCardsAnimations}">
-            <dev:SettingsCard Header="Enable Keyboard Manager" HeaderIcon="{wuc:BitmapIcon Source=/Assets/FluentIcons/FluentIconsKeyboardManager.png}">
+            <dev:SettingsCard Header="Enable Keyboard Manager" HeaderIcon="{dev:BitmapIcon Source=/Assets/FluentIcons/FluentIconsKeyboardManager.png}">
                 <ToggleSwitch/>
                 <dev:SettingsCard.Description>
                     <HyperlinkButton NavigateUri="https://aka.ms/powerToysCannotRemapKeys">
                         <TextBlock FontWeight="SemiBold" Text="Learn more about remapping limitations"/>
                     </HyperlinkButton>
-                </wuc:SettingsCard.Description>
-            </wuc:SettingsCard>
+                </dev:SettingsCard.Description>
+            </dev:SettingsCard>
 
             <dev:SimpleSettingsGroup Header="Keys" IsEnabled="False">
                 <dev:SettingsCard
                         Description="Remap keys to other keys or shortcuts"
                         Header="Remap a key"
-                        ActionIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, FontSize=14, Glyph=&#xE8A7;}"
-                        HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE92E;}"
+                        ActionIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, FontSize=14, Glyph=&#xE8A7;}"
+                        HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE92E;}"
                         IsClickEnabled="True"/>
-            </wuc:SimpleSettingsGroup>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup Header="Shortcuts" IsEnabled="False">
                 <dev:SettingsCard
                     Description="Remap shortcuts to other shortcuts or keys for all or specific applications"
                     Header="Remap a shortcut"
-                    ActionIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, FontSize=14, Glyph=&#xE8A7;}"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE92E;}"
+                    ActionIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, FontSize=14, Glyph=&#xE8A7;}"
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE92E;}"
                     IsClickEnabled="True" />
-            </wuc:SimpleSettingsGroup>
+            </dev:SimpleSettingsGroup>
         </StackPanel>
-    </wuc:SettingsPageControl.ModuleContent>
+    </dev:SettingsPageControl.ModuleContent>
     <dev:SettingsPageControl.PrimaryLinks>
         <dev:PageLink Link="https://aka.ms/PowerToysOverview_KeyboardManager" Text="Learn more about Keyboard Manager"/>
-    </wuc:SettingsPageControl.PrimaryLinks>
-</wuc:SettingsPageControl>
+    </dev:SettingsPageControl.PrimaryLinks>
+</dev:SettingsPageControl>
 ```
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/KeyboardManager_Demo.png)
 
@@ -1115,8 +1115,8 @@ public class ImageSize : Observable
                 </HyperlinkButton>
             </StackPanel>
         </StackPanel>
-    </wuc:OOBEPageControl.PageContent>
-</wuc:OOBEPageControl>
+    </dev:OOBEPageControl.PageContent>
+</dev:OOBEPageControl>
 ```
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/OOBE_Demo.png)
 
@@ -1131,9 +1131,9 @@ public class ImageSize : Observable
         <StackPanel Orientation="Vertical" ChildrenTransitions="{StaticResource SettingsCardsAnimations}">
             <dev:SettingsCard
                 Header="Enable PowerToys Run"
-                HeaderIcon="{wuc:BitmapIcon Source=/Assets/FluentIcons/FluentIconsPowerToysRun.png}">
+                HeaderIcon="{dev:BitmapIcon Source=/Assets/FluentIcons/FluentIconsPowerToysRun.png}">
                 <ToggleSwitch/>
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
             <InfoBar
                 Title="The system administrator is forcing this setting."
                 IsClosable="False"
@@ -1145,28 +1145,28 @@ public class ImageSize : Observable
                 <dev:SettingsExpander
                     Description="Customize the keyboard shortcut to activate this module"
                             Header="Activation shortcut"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily},
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily},
                                                 Glyph=&#xEDA7;}"
                     IsExpanded="True">
                     <dev:SettingsExpander.Items>
                         <dev:SettingsCard ContentAlignment="Left">
                             <dev:CheckBoxWithDescriptionControl
                                 Header="Use centralized keyboard hook" Description="Try this if there are issues with the shortcut (PowerToys Run might not get focus when triggered from an elevated window)"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="Ignore shortcuts in fullscreen mode"/>
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
-            </wuc:SimpleSettingsGroup>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup 
                 Header="Position &amp; appearance">
                 <dev:SettingsExpander
                         Description="If multiple monitors are in use, PowerToys Run can be launched on the desired monitor"
                     Header="Preferred monitor position"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xec48;}"
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xec48;}"
                     IsExpanded="True">
                     <ToggleSwitch/>
                     <dev:SettingsExpander.Items>
@@ -1178,7 +1178,7 @@ public class ImageSize : Observable
                                 Minimum="0"
                                 SmallChange="10"
                                 SpinButtonPlacementMode="Compact"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard
                             Header="Background execution plugins" Description="Affects the plugins that execute in the background by this amount. Recommended: 100-150 ms.">
                             <NumberBox
@@ -1188,16 +1188,16 @@ public class ImageSize : Observable
                                 Minimum="0"
                                 SmallChange="10"
                                 SpinButtonPlacementMode="Compact"/>
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
-            </wuc:SimpleSettingsGroup>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup
                 Header="Position &amp; appearance">
                 <dev:SettingsCard
                     Header="Preferred monitor position" Description="If multiple monitors are in use, PowerToys Run can be launched on the desired monitor"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xe78b;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xe78b;}">
                     <ComboBox
                         MinWidth="{StaticResource SettingActionControlMinWidth}"
                         SelectedIndex="0">
@@ -1205,15 +1205,15 @@ public class ImageSize : Observable
                         <ComboBoxItem Content="Run_Radio_Position_Primary_Monitor" />
                         <ComboBoxItem Content="Run_Radio_Position_Focus" />
                     </ComboBox>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
 
                 <dev:SettingsCard
                     x:Uid="ColorModeHeader"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE790;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE790;}">
                     <dev:SettingsCard.Description>
                         <HyperlinkButton
                             Content="Windows color settings"/>
-                    </wuc:SettingsCard.Description>
+                    </dev:SettingsCard.Description>
                     <ComboBox
                         MinWidth="{StaticResource SettingActionControlMinWidth}"
                         SelectedIndex="0">
@@ -1221,8 +1221,8 @@ public class ImageSize : Observable
                         <ComboBoxItem Content="Light" />
                         <ComboBoxItem Content="Default" />
                     </ComboBox>
-                </wuc:SettingsCard>
-            </wuc:SimpleSettingsGroup>
+                </dev:SettingsCard>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup
                 Header="Plugins">
@@ -1241,13 +1241,13 @@ public class ImageSize : Observable
                 <dev:SettingsCard
                         Description="You can include or remove each plugin from the global results, change the direct activation phrase and configure additional options"
                     Header="Plugins"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEA86;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEA86;}">
                     <AutoSuggestBox
                         PlaceholderText="Search this list"
                         MinWidth="{StaticResource SettingActionControlMinWidth}"
                         QueryIcon="Find">
                     </AutoSuggestBox>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
                 <InfoBar
                     Title="PowerToys Run can't provide any results without plugins"
                     IsClosable="False"
@@ -1267,17 +1267,17 @@ public class ImageSize : Observable
                         VerticalAlignment="Center"
                         Style="{ThemeResource SecondaryTextStyle}" />
                 </StackPanel>
-            </wuc:SimpleSettingsGroup>
+            </dev:SimpleSettingsGroup>
         </StackPanel>
-    </wuc:SettingsPageControl.ModuleContent>
+    </dev:SettingsPageControl.ModuleContent>
     <dev:SettingsPageControl.PrimaryLinks>
         <dev:PageLink Link="https://aka.ms/PowerToysOverview_PowerToysRun" Text="Learn more about Demo Run"/>
-    </wuc:SettingsPageControl.PrimaryLinks>
+    </dev:SettingsPageControl.PrimaryLinks>
     <dev:SettingsPageControl.SecondaryLinks>
         <dev:PageLink Link="https://github.com/Wox-launcher/Wox/" Text="Wox"/>
         <dev:PageLink Link="https://github.com/betsegaw/windowwalker/" Text="Beta Tadele's Window Walker"/>
-    </wuc:SettingsPageControl.SecondaryLinks>
-</wuc:SettingsPageControl>
+    </dev:SettingsPageControl.SecondaryLinks>
+</dev:SettingsPageControl>
 ```
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Powertoys_Demo.png)
 
@@ -1298,7 +1298,7 @@ public class ImageSize : Observable
                     Severity="Warning" />
                 <dev:SettingsExpander
                     Header="Scalable Vector Graphics" Description="File extension, should not be altered"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE91B;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE91B;}">
                     <ToggleSwitch/>
                     <dev:SettingsExpander.Items>
                         <dev:SettingsCard Header="Color mode">
@@ -1307,16 +1307,16 @@ public class ImageSize : Observable
                                 <ComboBoxItem Content="Color" />
                                 <ComboBoxItem Content="Shade" />
                             </ComboBox>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard Header="FileExplorerPreview_Preview_SVG_Checkered_Shade_Mode">
                             <ComboBox MinWidth="{StaticResource SettingActionControlMinWidth}" SelectedIndex="0">
                                 <ComboBoxItem Content="Shade_1" />
                                 <ComboBoxItem Content="Shade_2" />
                                 <ComboBoxItem Content="Shade_3" />
                             </ComboBox>
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
 
                 <InfoBar
                     Title="The system administrator is forcing this setting."
@@ -1326,9 +1326,9 @@ public class ImageSize : Observable
 
                 <dev:SettingsCard
                     Header="Markdown" Description=".md, .markdown, .mdown, .mkdn, .mkd, .mdwn, .mdtxt, .mdtext"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE943;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE943;}">
                     <ToggleSwitch/>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
 
                 <InfoBar
                     Title="The system administrator is forcing this setting."
@@ -1339,19 +1339,19 @@ public class ImageSize : Observable
 
                 <dev:SettingsExpander
                     Header="Source code files (Monaco)" Description=".cpp, .py, .json, .xml, .csproj, ..."
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE99A;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE99A;}">
                     <ToggleSwitch/>
                     <dev:SettingsExpander.Items>
                         <dev:SettingsCard
                             ContentAlignment="Left">
                             <CheckBox
                                 Content="Wrap text"/>
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard
                             ContentAlignment="Left">
                             <dev:CheckBoxWithDescriptionControl
                                 Header="Try to format the source for preview" Description="Applies to json and xml. Files remain unchanged." />
-                        </wuc:SettingsCard>
+                        </dev:SettingsCard>
                         <dev:SettingsCard
                             Header="Maximum file size to preview" Description="The maximum size, in kilobytes, for files to be displayed. This is a safety mechanism to prevent loading large files into RAM.">
                             <NumberBox
@@ -1359,9 +1359,9 @@ public class ImageSize : Observable
                                 Maximum="100"
                                 Minimum="2"
                                 SpinButtonPlacementMode="Compact"/>
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
 
                 <InfoBar
                     Title="The system administrator is forcing this setting."
@@ -1371,15 +1371,15 @@ public class ImageSize : Observable
 
                 <dev:SettingsCard
                     Header="Portable Document Format" Description=".pdf"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEA90;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xEA90;}">
                     <ToggleSwitch/>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
                 <InfoBar
                     Title="The system administrator is forcing this setting."
                     IsClosable="False"
                     IsOpen="True"
                     Severity="Informational" />
-            </wuc:SimpleSettingsGroup>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup Header="Thumbnail icon Preview" Description="Select the file types for which thumbnail previews must be rendered.">
                 <InfoBar
@@ -1396,17 +1396,17 @@ public class ImageSize : Observable
                     Severity="Warning" />
                 <dev:SettingsCard
                     Header="Scalable Vector Graphics" Description=".svg"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE91B;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE91B;}">
                     <ToggleSwitch/>
-                </wuc:SettingsCard>
-            </wuc:SimpleSettingsGroup>
+                </dev:SettingsCard>
+            </dev:SimpleSettingsGroup>
         </StackPanel>
-    </wuc:SettingsPageControl.ModuleContent>
+    </dev:SettingsPageControl.ModuleContent>
 
     <dev:SettingsPageControl.PrimaryLinks>
         <dev:PageLink Link="https://aka.ms/PowerToysOverview_FileExplorerAddOns" Text="Learn more about File Explorer add-ons"/>
-    </wuc:SettingsPageControl.PrimaryLinks>
-</wuc:SettingsPageControl>
+    </dev:SettingsPageControl.PrimaryLinks>
+</dev:SettingsPageControl>
 ```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/FileExplorer_Demo.png)
@@ -1424,9 +1424,9 @@ public class ImageSize : Observable
             Orientation="Vertical">
             <dev:SettingsCard
                 Header="Enable PowerRename"
-                HeaderIcon="{wuc:BitmapIcon Source=/Assets/FluentIcons/FluentIconsPowerRename.png}">
+                HeaderIcon="{dev:BitmapIcon Source=/Assets/FluentIcons/FluentIconsPowerRename.png}">
                 <ToggleSwitch/>
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
             <InfoBar
                 Title="The system administrator is forcing this setting."
                 IsClosable="False"
@@ -1447,10 +1447,10 @@ public class ImageSize : Observable
                         <dev:SettingsCard ContentAlignment="Left">
                             <CheckBox
                                 Content="Hide icon in context menu"/>
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
-            </wuc:SimpleSettingsGroup>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
+            </dev:SimpleSettingsGroup>
 
             <dev:SimpleSettingsGroup
                 Header="Auto-complete">
@@ -1466,32 +1466,32 @@ public class ImageSize : Observable
                                 Maximum="20"
                                 Minimum="0"
                                 SpinButtonPlacementMode="Compact" />
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
 
                 <dev:SettingsCard
                     Header="Show recently used strings"
-                    HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xe81c;}">
+                    HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xe81c;}">
                     <ToggleSwitch/>
-                </wuc:SettingsCard>
-            </wuc:SimpleSettingsGroup>
+                </dev:SettingsCard>
+            </dev:SimpleSettingsGroup>
             <dev:SimpleSettingsGroup
                 Header="Behavior">
                 <dev:SettingsCard Header="Use Boost library" Description="Provides extended features but may use different regex syntax">
                     <ToggleSwitch />
-                </wuc:SettingsCard>
-            </wuc:SimpleSettingsGroup>
+                </dev:SettingsCard>
+            </dev:SimpleSettingsGroup>
         </StackPanel>
-    </wuc:SettingsPageControl.ModuleContent>
+    </dev:SettingsPageControl.ModuleContent>
 
     <dev:SettingsPageControl.PrimaryLinks>
         <dev:PageLink Link="https://aka.ms/PowerToysOverview_PowerRename" Text="Learn more about PowerRename"/>
-    </wuc:SettingsPageControl.PrimaryLinks>
+    </dev:SettingsPageControl.PrimaryLinks>
     <dev:SettingsPageControl.SecondaryLinks>
         <dev:PageLink Link="https://github.com/chrdavis/SmartRename" Text="Chris Davis's SmartRenamer"/>
-    </wuc:SettingsPageControl.SecondaryLinks>
-</wuc:SettingsPageControl>
+    </dev:SettingsPageControl.SecondaryLinks>
+</dev:SettingsPageControl>
 ```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/PowerRename_Demo.png)
@@ -1504,9 +1504,9 @@ public class ImageSize : Observable
     ModuleTitle="Shortcut Guide">
     <dev:SettingsPageControl.ModuleContent>
         <StackPanel Orientation="Vertical" ChildrenTransitions="{StaticResource SettingsCardsAnimations}">
-            <dev:SettingsCard Header="Enable Shortcut Guide" HeaderIcon="{wuc:BitmapIcon Source=/Assets/FluentIcons/FluentIconsShortcutGuide.png}">
+            <dev:SettingsCard Header="Enable Shortcut Guide" HeaderIcon="{dev:BitmapIcon Source=/Assets/FluentIcons/FluentIconsShortcutGuide.png}">
                 <ToggleSwitch/>
-            </wuc:SettingsCard>
+            </dev:SettingsCard>
 
             <dev:KeyVisual IsTabStop="False"
                                         AutomationProperties.AccessibilityView="Raw"
@@ -1519,28 +1519,28 @@ public class ImageSize : Observable
             <dev:ShortcutWithTextLabelControl x:Name="HotkeyVidControl" Text="to toggle your microphone" />
             <Button Content="Open Shortcut Dialog" Click="Button_Click"/>
             <dev:SimpleSettingsGroup Header="Appearance &amp; behavior">
-                <dev:SettingsCard Header="Choose a mode" HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE790;}">
+                <dev:SettingsCard Header="Choose a mode" HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xE790;}">
                     <dev:SettingsCard.Description>
                         <HyperlinkButton Content="Windows color settings"/>
-                    </wuc:SettingsCard.Description>
+                    </dev:SettingsCard.Description>
                     <ComboBox MinWidth="{StaticResource SettingActionControlMinWidth}" SelectedIndex="0">
                         <ComboBoxItem Content="Dark"/>
                         <ComboBoxItem Content="Light"/>
                         <ComboBoxItem Content="Default"/>
                     </ComboBox>
-                </wuc:SettingsCard>
+                </dev:SettingsCard>
 
                 <dev:SettingsCard Header="Opacity of background">
                     <Slider
                             MinWidth="{StaticResource SettingActionControlMinWidth}"
                             Maximum="100"
                             Minimum="0"/>
-                </wuc:SettingsCard>
-            </wuc:SimpleSettingsGroup>
+                </dev:SettingsCard>
+            </dev:SimpleSettingsGroup>
             
             <dev:SimpleSettingsGroup Header="Excluded apps">
                 <dev:SettingsExpander Description="Turns off Shortcut Guide when these applications have focus - add one application name per line"
-                            Header="Exclude apps" IsExpanded="True" HeaderIcon="{wuc:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xECE4;}">
+                            Header="Exclude apps" IsExpanded="True" HeaderIcon="{dev:FontIcon FontFamily={StaticResource SymbolThemeFontFamily}, Glyph=&#xECE4;}">
                     <dev:SettingsExpander.Items>
                         <dev:SettingsCard
                             HorizontalContentAlignment="Stretch"
@@ -1554,16 +1554,16 @@ public class ImageSize : Observable
                                 ScrollViewer.VerticalScrollBarVisibility="Visible"
                                 ScrollViewer.VerticalScrollMode="Enabled"
                                 TextWrapping="Wrap" />
-                        </wuc:SettingsCard>
-                    </wuc:SettingsExpander.Items>
-                </wuc:SettingsExpander>
-            </wuc:SimpleSettingsGroup>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
+            </dev:SimpleSettingsGroup>
         </StackPanel>
-    </wuc:SettingsPageControl.ModuleContent>
+    </dev:SettingsPageControl.ModuleContent>
     <dev:SettingsPageControl.PrimaryLinks>
         <dev:PageLink Link="https://aka.ms/PowerToysOverview_ShortcutGuide" Text="Learn more about Shortcut Guide"/>
-    </wuc:SettingsPageControl.PrimaryLinks>
-</wuc:SettingsPageControl>
+    </dev:SettingsPageControl.PrimaryLinks>
+</dev:SettingsPageControl>
 ```
 
 ```cs

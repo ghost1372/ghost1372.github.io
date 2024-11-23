@@ -23,7 +23,7 @@ The `BitmapIconExtension` markup extension is similar in structure to the two pr
 ```xml
 <MenuFlyoutItem
         Text="No, click me!"
-        Icon="{wuc:BitmapIcon Source=/Assets/myicon.png}" />
+        Icon="{dev:BitmapIcon Source=/Assets/myicon.png}" />
 ```
 
 or
@@ -31,7 +31,7 @@ or
 ```xml
 <MenuFlyoutItem
         Text="No, click me!"
-        Icon="{wuc:BitmapIcon Source=/Assets/myicon.png, ShowAsMonochrome = true}" />
+        Icon="{dev:BitmapIcon Source=/Assets/myicon.png, ShowAsMonochrome = true}" />
 ```
 
 ## BitmapIconSourceExtension
@@ -40,7 +40,7 @@ The `BitmapIconSourceExtension` class mirrors the `BitmapIconExtension` type, wi
 
 ```xaml
 <SwipeItems Mode="Reveal">
-    <SwipeItem Text="Send" IconSource="{wuc:BitmapIconSource Source=/Assets/myicon.png}"/>
+    <SwipeItem Text="Send" IconSource="{dev:BitmapIconSource Source=/Assets/myicon.png}"/>
 </SwipeItems>
 ```
 
@@ -56,7 +56,7 @@ The `FontIconExtension` type provides the ability to create `FontIcon` instances
 
 ```xml
 <CommandBar>
-    <AppBarButton Icon="{wuc:FontIcon Glyph=&#xE102;}"/>
+    <AppBarButton Icon="{dev:FontIcon Glyph=&#xE102;}"/>
 </CommandBar>
 ```
 
@@ -64,7 +64,7 @@ or
 
 ```xml
 <CommandBar>
-    <AppBarButton Icon="{wuc:FontIcon GlyphName=Accept}"/>
+    <AppBarButton Icon="{dev:FontIcon GlyphName=Accept}"/>
 </CommandBar>
 ```
 
@@ -72,7 +72,7 @@ or
 
 ```xml
 <CommandBar>
-    <AppBarButton Icon="{wuc:FontIcon GlyphCode=E700}"/>
+    <AppBarButton Icon="{dev:FontIcon GlyphCode=E700}"/>
 </CommandBar>
 ```
 
@@ -87,7 +87,7 @@ The `FontIconSourceExtension` class mirrors the `FontIconExtension` type, but pr
 
 ```xml
 <SwipeItems Mode="Reveal">
-    <SwipeItem Text="Accept" IconSource="{wuc:FontIconSource Glyph=&#xE10B;}"/>
+    <SwipeItem Text="Accept" IconSource="{dev:FontIconSource Glyph=&#xE10B;}"/>
 </SwipeItems>
 ```
 
@@ -97,7 +97,7 @@ The `SymbolIconExtension` type mirrors the `FontIcon` markup extension, with the
 
 ```xml
 <CommandBar>
-    <AppBarButton Icon="{wuc:SymbolIcon Symbol=Play}"/>
+    <AppBarButton Icon="{dev:SymbolIcon Symbol=Play}"/>
 </CommandBar>
 ```
 
@@ -107,7 +107,7 @@ The `SymbolIconSourceExtension` type is an alternative for `FontIconSourceExtens
 
 ```xml
 <SwipeItems Mode="Reveal">
-    <SwipeItem Text="Play" IconSource="{wuc:SymbolIconSource Symbol=Play}"/>
+    <SwipeItem Text="Play" IconSource="{dev:SymbolIconSource Symbol=Play}"/>
 </SwipeItems>
 ```
 

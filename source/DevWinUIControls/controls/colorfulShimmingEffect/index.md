@@ -22,13 +22,13 @@ title: ColorfulShimmingEffect
                                         DurationTimeSpan="0:0:10"
                                         Z="50.0"
                                         Color="Green" />
-    </wuc:ColorfulShimmingEffect.ColorfulShimmingEffectItems>
+    </dev:ColorfulShimmingEffect.ColorfulShimmingEffectItems>
     <TextBlock HorizontalAlignment="Center"
                FontSize="140"
                FontWeight="Bold"
                Foreground="White"
                Text="DevWinUI" />
-</wuc:ColorfulShimmingEffect>
+</dev:ColorfulShimmingEffect>
 ```
 
 # Demo

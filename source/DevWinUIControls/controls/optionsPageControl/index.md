@@ -44,7 +44,7 @@ title: OptionsPageControl
                 <TextBlock FontSize="48"
                            Text="Page" />
             </Page>
-        </wuc:OptionsPageControl.PageContent>
+        </dev:OptionsPageControl.PageContent>
         <dev:OptionsPageControl.OptionsPaneContent>
             <StackPanel>
                 <NumberBox x:Name="OptionsPaneMinWidth"
@@ -75,7 +75,7 @@ title: OptionsPageControl
                 <TextBox x:Name="PageFooterHeader"
                          PlaceholderText="Page Footer Header" />
             </StackPanel>
-        </wuc:OptionsPageControl.OptionsPaneContent>
+        </dev:OptionsPageControl.OptionsPaneContent>
         <dev:OptionsPageControl.OptionsBarContent>
             <StackPanel>
                 <Button Width="32"
@@ -103,7 +103,7 @@ title: OptionsPageControl
                     </Button.Content>
                 </Button>
             </StackPanel>
-        </wuc:OptionsPageControl.OptionsBarContent>
+        </dev:OptionsPageControl.OptionsBarContent>
         <dev:OptionsPageControl.OptionsBarFooterContent>
             <StackPanel>
                 <Button Width="32"
@@ -118,14 +118,14 @@ title: OptionsPageControl
                     </Button.Content>
                 </Button>
             </StackPanel>
-        </wuc:OptionsPageControl.OptionsBarFooterContent>
+        </dev:OptionsPageControl.OptionsBarFooterContent>
         <dev:OptionsPageControl.PageFooterContent>
             <Page>
                 <TextBlock FontSize="48"
                            Text="Footer" />
             </Page>
-        </wuc:OptionsPageControl.PageFooterContent>
-    </wuc:OptionsPageControl>
+        </dev:OptionsPageControl.PageFooterContent>
+    </dev:OptionsPageControl>
 
 ```
 

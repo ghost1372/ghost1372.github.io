@@ -85,13 +85,13 @@ title: Gooey
               ItemsSource="{x:Bind strings}">
     <dev:GooeyButton.Content>
         <SymbolIcon Symbol="Add" />
-    </wuc:GooeyButton.Content>
+    </dev:GooeyButton.Content>
     <dev:GooeyButton.ItemTemplate>
         <DataTemplate>
             <SymbolIcon Symbol="{Binding}" />
         </DataTemplate>
-    </wuc:GooeyButton.ItemTemplate>
-</wuc:GooeyButton>
+    </dev:GooeyButton.ItemTemplate>
+</dev:GooeyButton>
 ```
 
 ```cs

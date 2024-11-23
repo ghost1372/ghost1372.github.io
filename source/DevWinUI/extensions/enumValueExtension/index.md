@@ -8,7 +8,7 @@ Assuming we had an Animal enum type and we wanted the user to pick one of the av
 <ComboBox
     xmlns:dev="using:DevWinUI"
     xmlns:enums="using:MyApplication.Enums"
-    ItemsSource="{wuc:EnumValues Type=enums:Animal}"
+    ItemsSource="{dev:EnumValues Type=enums:Animal}"
     SelectedIndex="0"/>
 
 ```

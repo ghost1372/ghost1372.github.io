@@ -33,8 +33,8 @@ public sealed partial class OOBEPageControl : UserControl
                 </HyperlinkButton>
             </StackPanel>
         </StackPanel>
-    </wuc:OOBEPageControl.PageContent>
-</wuc:OOBEPageControl>
+    </dev:OOBEPageControl.PageContent>
+</dev:OOBEPageControl>
 ```
 
 # Demo

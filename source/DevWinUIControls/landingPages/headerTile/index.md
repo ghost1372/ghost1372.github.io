@@ -21,8 +21,8 @@ you should use HeaderTile in a MainLandingPage
         Link="https://Ghost1372.github.io/DevWinUI/">
     <dev:HeaderTile.Source>
         <Image Source="/Assets/HomeHeaderTiles/Header-WinUIGallery.png" />
-    </wuc:HeaderTile.Source>
-</wuc:HeaderTile>
+    </dev:HeaderTile.Source>
+</dev:HeaderTile>
 ```
 
 ![LandingsPage](https://raw.githubusercontent.com/ghost1372/Resources/main/LandingsPage/HeaderTile.png)

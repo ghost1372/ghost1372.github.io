@@ -29,7 +29,7 @@ public sealed partial class SettingsPageControl : UserControl
         <StackPanel Orientation="Vertical" ChildrenTransitions="{StaticResource SettingsCardsAnimations}">
             <!-- Settings Here -->
         </StackPanel>
-    </wuc:SettingsPageControl.ModuleContent>
+    </dev:SettingsPageControl.ModuleContent>
 
     <dev:SettingsPageControl.PrimaryLinks>
         <dev:PageLink Link="https://aka.ms/powertoys"
@@ -40,15 +40,15 @@ public sealed partial class SettingsPageControl : UserControl
                             Text="Report a bug" />
         <dev:PageLink Link="https://aka.ms/powerToysRequestFeature"
                             Text="Request a feature" />
-    </wuc:SettingsPageControl.PrimaryLinks>
+    </dev:SettingsPageControl.PrimaryLinks>
 
     <dev:SettingsPageControl.SecondaryLinks>
         <dev:PageLink Link="http://go.microsoft.com/fwlink/?LinkId=521839"
                             Text="Privacy statement" />
         <dev:PageLink Link="https://github.com/microsoft/PowerToys/blob/master/NOTICE.md"
                             Text="Open-source notice" />
-    </wuc:SettingsPageControl.SecondaryLinks>
-</wuc:SettingsPageControl>
+    </dev:SettingsPageControl.SecondaryLinks>
+</dev:SettingsPageControl>
 ```
 
 # Demo

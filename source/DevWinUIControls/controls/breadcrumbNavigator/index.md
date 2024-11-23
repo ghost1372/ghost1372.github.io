@@ -77,8 +77,8 @@ then in your pages you should use attached property for Item Title and visibilit
 
 ```xml
 <Page
-wuc:BreadcrumbNavigator.PageTitle="Test"
-wuc:BreadcrumbNavigator.IsHeaderVisible="True"
+dev:BreadcrumbNavigator.PageTitle="Test"
+dev:BreadcrumbNavigator.IsHeaderVisible="True"
 
 >
 ```

@@ -51,7 +51,7 @@ make sure you have defined resources and enums
               Value="Warning" />
     <dev:Case Content="{ThemeResource SystemFillColorCriticalBrush}"
               Value="Error" />
-</wuc:SwitchConverter>
+</dev:SwitchConverter>
 </Page.Resources>
 ```
 
@@ -122,14 +122,14 @@ public partial class TemplateInformation
             <DataTemplate x:DataType="enum:TemplateInformation">
                 <StackPanel>
                     <TextBox Name="CodeValidator"
-                                wuc:TextBoxExtensions.Regex="{x:Bind Regex, Mode=OneWay}"
+                                dev:TextBoxExtensions.Regex="{x:Bind Regex, Mode=OneWay}"
                                 Header="{x:Bind Header, Mode=OneWay}"
                                 PlaceholderText="{x:Bind PlaceholderText, Mode=OneWay}" />
                     <TextBlock Text="Thanks for entering a valid code!"
-                                Visibility="{Binding (wuc:TextBoxExtensions.IsValid), ElementName=CodeValidator}" />
+                                Visibility="{Binding (dev:TextBoxExtensions.IsValid), ElementName=CodeValidator}" />
                 </StackPanel>
             </DataTemplate>
-        </wuc:SwitchPresenter.ContentTemplate>
+        </dev:SwitchPresenter.ContentTemplate>
 
         <!--  And use the value to transform our data into an object we'll use as the context for our UI  -->
 
@@ -138,18 +138,18 @@ public partial class TemplateInformation
             <enum:TemplateInformation Header="Confirmation code"
                                         PlaceholderText="6 letters"
                                         Regex="^[a-zA-Z]{6}$" />
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="E-ticket number">
             <enum:TemplateInformation Header="E-ticket number"
                                         PlaceholderText="10 or 13 numbers"
                                         Regex="(^\d{10}$)|(^\d{13}$)" />
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="Mileage Plan number">
             <enum:TemplateInformation Header="Mileage Plan #"
                                         PlaceholderText="Mileage Plan (12 digits)"
                                         Regex="(^\d{12}$)" />
-        </wuc:Case>
-    </wuc:SwitchPresenter>
+        </dev:Case>
+    </dev:SwitchPresenter>
 </StackPanel>
 ```
 
@@ -175,7 +175,7 @@ public partial class TemplateInformation
                             Style="{StaticResource CaptionTextBlockStyle}"
                             Text="Fetching data.." />
             </StackPanel>
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="False">
             <TextBlock HorizontalAlignment="Center"
                         animations:Implicit.HideAnimations="{StaticResource HideTransitions}"
@@ -187,8 +187,8 @@ public partial class TemplateInformation
                 <LineBreak />
                 <Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
             </TextBlock>
-        </wuc:Case>
-    </wuc:SwitchPresenter>
+        </dev:Case>
+    </dev:SwitchPresenter>
 </StackPanel>
 ```
 # SwitchPresenter Content Example
@@ -217,7 +217,7 @@ public partial class TemplateInformation
                 <TextBlock VerticalAlignment="Center"
                             Text="This is the Square panel" />
             </StackPanel>
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="circle">
             <StackPanel animations:Implicit.HideAnimations="{StaticResource HideTransitions}"
                         animations:Implicit.ShowAnimations="{StaticResource ShowTransitions}"
@@ -229,7 +229,7 @@ public partial class TemplateInformation
                 <TextBlock VerticalAlignment="Center"
                             Text="This is the Circle panel" />
             </StackPanel>
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="rect">
             <StackPanel animations:Implicit.HideAnimations="{StaticResource HideTransitions}"
                         animations:Implicit.ShowAnimations="{StaticResource ShowTransitions}"
@@ -240,8 +240,8 @@ public partial class TemplateInformation
                 <TextBlock VerticalAlignment="Center"
                             Text="This is the Rectangle panel" />
             </StackPanel>
-        </wuc:Case>
-    </wuc:SwitchPresenter>
+        </dev:Case>
+    </dev:SwitchPresenter>
 </StackPanel>
 ```
 
@@ -251,7 +251,7 @@ public partial class TemplateInformation
 <StackPanel>
     <ComboBox x:Name="AnimalPicker"
                     Header="Pick an Animal"
-                    ItemsSource="{wuc:EnumValues Type=enum:Animal}"
+                    ItemsSource="{dev:EnumValues Type=enum:Animal}"
                     SelectedIndex="0" />
     <dev:SwitchPresenter Padding="16"
                             TargetType="enum:Animal"
@@ -259,40 +259,40 @@ public partial class TemplateInformation
         <dev:Case Value="Bunny">
             <TextBlock FontSize="32"
                         Text="🐇" />
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="Cat">
             <TextBlock FontSize="32"
                         Text="🐈" />
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="Dog">
             <TextBlock FontSize="32"
                         Text="🐕" />
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="Giraffe">
             <TextBlock FontSize="32"
                         Text="🦒" />
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="Llama">
             <TextBlock FontSize="32"
                         Text="🦙" />
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="Otter">
             <TextBlock FontSize="32"
                         Text="🦦" />
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="Owl">
             <TextBlock FontSize="32"
                         Text="🦉" />
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="Parrot">
             <TextBlock FontSize="32"
                         Text="🦜" />
-        </wuc:Case>
+        </dev:Case>
         <dev:Case Value="Squirrel">
             <TextBlock FontSize="32"
                         Text="🐿" />
-        </wuc:Case>
-    </wuc:SwitchPresenter>
+        </dev:Case>
+    </dev:SwitchPresenter>
 </StackPanel>
 ```
 

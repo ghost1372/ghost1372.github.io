@@ -13,14 +13,14 @@ This control can be used when you want to arrange notification information from 
 Step 1: Add a `StackPanel` to the container of `Growl`
 ``` xml
 <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right">
-    <StackPanel wuc:Growl.GrowlParent="True" VerticalAlignment="Top" Margin="0,10,10,10"/>
+    <StackPanel dev:Growl.GrowlParent="True" VerticalAlignment="Top" Margin="0,10,10,10"/>
 </ScrollViewer>
 ```
 In order to facilitate scrolling, a `ScrollViewer` is usually wrapped in the outer layer. At the same time, for the sake of beauty, we set `VerticalScrollBarVisibility="Hidden"` of `ScrollViewer`. It is best to add a suitable `Margin` to `StackPanel`, which is also for aesthetics.
 
 
 {% note warning %}
-Note the code `wuc:Growl.GrowlParent="True"`。
+Note the code `dev:Growl.GrowlParent="True"`。
 {% endnote %}
 
 Step 2: Call the relevant interface of `Growl` to display the specified message.
@@ -34,11 +34,11 @@ Use case: `Growl.Success("File saved successfully!");`
 Step 1: set a Token to the `StackPanel`
 ``` xml
 <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right">
-    <StackPanel wuc:Growl.Token="SuccessMsg" wuc:Growl.GrowlParent="True" VerticalAlignment="Top" Margin="0,10,10,10"/>
+    <StackPanel dev:Growl.Token="SuccessMsg" dev:Growl.GrowlParent="True" VerticalAlignment="Top" Margin="0,10,10,10"/>
 </ScrollViewer>
 ```
 {% note warning %}
-Note the code`wuc:Growl.Token="SuccessMsg"`。
+Note the code`dev:Growl.Token="SuccessMsg"`。
 {% endnote %}
 
 Step 2: Use the token: SuccessMsg and call the relevant interface of `Growl` to display the specified message.
