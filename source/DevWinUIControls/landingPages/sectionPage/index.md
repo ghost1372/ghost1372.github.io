@@ -44,7 +44,7 @@ Navigate(typeof(SectionPage), UniqueId);
 ```
 
 {% note info %}
-if you are using JsonNavigationViewService, you dont need `Navigate(typeof(SectionPage), UniqueId);` anymore.
+if you are using JsonNavigationService, you dont need `Navigate(typeof(SectionPage), UniqueId);` anymore.
 {% endnote %}
 
 now load items and navigate to a desired pages:
@@ -61,7 +61,7 @@ private void SectionPage_OnItemClick(object sender, Microsoft.UI.Xaml.RoutedEven
 {
     var args = (ItemClickEventArgs)e;
     var item = (DataItem)args.ClickedItem;
-    jsonNavigationViewService.NavigateTo(item.UniqueId);
+    jsonNavigationService.NavigateTo(item.UniqueId);
 }
 ```
 

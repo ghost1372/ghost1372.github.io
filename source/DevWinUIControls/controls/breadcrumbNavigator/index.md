@@ -27,23 +27,23 @@ title: BreadcrumbNavigator
 |-|-|
 |IsHeaderVisible||
 |PageTitle||
-|ClearNavigation|Does not work in JsonNavigationViewService Mode|
+|ClearNavigation|Does not work in JsonNavigationService Mode|
 
 {% note info %}
-if you are using JsonNavigationViewService, we can find Page Title from json file, however if you find some issue with this you can use our PageTitle AttachedProperty. 
+if you are using JsonNavigationService, we can find Page Title from json file, however if you find some issue with this you can use our PageTitle AttachedProperty. 
 {% endnote %}
 
-# Using with JsonNavigationViewService
+# Using with JsonNavigationService
 The easiest way to use, put `BreadcrumbNavigator` in your main page for example in NavigationView Header:
 
 ```xml
 <dev:BreadcrumbNavigator x:Name="JsonBreadCrumbNavigator"/>
 ```
 
-then use `ConfigBreadcrumbBar` in `JsonNavigationViewService` 
+then use `ConfigBreadcrumbBar` in `JsonNavigationService` 
 
 ```cs
-jsonNavigationViewService.ConfigBreadcrumbBar(breadCrumb, NavigationPageMappings.PageDictionary);
+jsonNavigationService.ConfigBreadcrumbBar(breadCrumb, NavigationPageMappings.PageDictionary);
 ```
 
 everything will done automatically.

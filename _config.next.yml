@@ -389,6 +389,7 @@ menu:
       UpdateHelper: /updateHelper/ ||
       VisualHelper: /visualHelper/ ||
       WindowHelper: /windowHelper/ ||
+    JsonNavigationService: /jsonNavigationService/
     MessageBox: /messageBox/ ||
     Messaging: /messaging/ ||
     NavigationService: /navigationService/

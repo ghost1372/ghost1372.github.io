@@ -212,7 +212,7 @@ private void mainLandingPage_OnItemClick(object sender, RoutedEventArgs e)
 {
     var args = (ItemClickEventArgs)e;
     var item = (DataItem)args.ClickedItem;
-    jsonNavigationViewService.NavigateTo(item.UniqueId);
+    jsonNavigationService.NavigateTo(item.UniqueId);
 }
 
 ```

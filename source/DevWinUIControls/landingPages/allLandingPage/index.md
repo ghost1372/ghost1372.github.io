@@ -34,7 +34,7 @@ in this Page we can load all items from json file.
 |IsCacheEnabled|
 |GridViewVerticalAlignment|
 |GridViewPadding|
-|JsonNavigationViewService|
+|JsonNavigationService|
 |IsTileImage|
 
 # Override values
@@ -70,7 +70,7 @@ private void allLandingPage_OnItemClick(object sender, RoutedEventArgs e)
 {
     var args = (ItemClickEventArgs)e;
     var item = (DataItem)args.ClickedItem;
-    jsonNavigationViewService.NavigateTo(item.UniqueId);
+    jsonNavigationService.NavigateTo(item.UniqueId);
 }
 ```
 
