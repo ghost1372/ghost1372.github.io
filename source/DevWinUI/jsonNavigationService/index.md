@@ -67,6 +67,8 @@ T4 Template:
 
 // Define JSON file path variable for easy adjustment
 <# string JSON_FILE_PATH = "AppData.json"; #>
+using System;
+using System.Collections.Generic;
 
 namespace $T4_NAMESPACE$;
 public partial class NavigationPageMappings
@@ -274,12 +276,12 @@ it is better to place `BreadcrumbNavigator` in `NavigationView.Header`
 
 ```xml
 <NavigationView.Header>
-    <dev:BreadcrumbNavigator x:Name="BreadCrumb" />
+    <dev:BreadcrumbNavigator x:Name="BreadCrumbNav" />
 </NavigationView.Header>
 ```
 
 ```cs
-Initializ(...).ConfigureBreadcrumbBar(BreadCrumb, NavigationPageMappings.PageDictionary);
+Initializ(...).ConfigureBreadcrumbBar(BreadCrumbNav, NavigationPageMappings.PageDictionary);
 ```            
 
 use `dev:BreadcrumbNavigator.PageTitle` and `dev:BreadcrumbNavigator.IsHeaderVisible` attached properties on your pages, for Title and Header visiblity.
@@ -305,6 +307,8 @@ use `dev:BreadcrumbNavigator.PageTitle` and `dev:BreadcrumbNavigator.IsHeaderVis
 // |    Changes to this file may cause incorrect behavior and will be lost if the code is regenerated. |
 // | </auto-generated>                                                                                 |
 // -----------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
 
 namespace $T4_NAMESPACE$;
 public partial class BreadcrumbPageMappings
