@@ -629,16 +629,6 @@ jsonNavigationService
                 .ConfigureBreadcrumbBar(JsonBreadCrumbNavigator, BreadcrumbPageMappings.PageDictionary);
 ```
 
-# Methods and Properties
-
-there is some methods and properties that you can use them:
-
-```cs
-var jsonDataSource = jsonNavigationService.DataSource;
-
-jsonNavigationService.SearchNavigationViewItems(navigationView.MenuItems, "query")
-```
-
 # MVVM Patern
 first register a `IJsonNavigationService` service:
 
@@ -652,9 +642,9 @@ then:
 public MainPage()
 {
     this.InitializeComponent();
-    var service = App.GetService<IJsonNavigationService>() as JsonNavigationService;
+    var navService = App.GetService<IJsonNavigationService>() as JsonNavigationService;
     
-    service.Initialize(NavView, NavFrame, NavigationPageMappings.PageDictionary)
+    navService.Initialize(NavView, NavFrame, NavigationPageMappings.PageDictionary)
             .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
             .ConfigureDefaultPage(typeof(HomeLandingPage))
             .ConfigureSettingsPage(typeof(SettingsPage))
