@@ -19,10 +19,10 @@ You can simplify the operation of saving, retrieving and selecting the Applicati
 |Name|
 |-|
 |Window|
-|ConfigBackdrop|
-|ConfigTintColor|
-|ConfigFallbackColor|
-|ConfigElementTheme|
+|ConfigureBackdrop|
+|ConfigureTintColor|
+|ConfigureFallbackColor|
+|ConfigureElementTheme|
 |GetSystemBackdrop|
 |GetBackdropType|
 |GetElementTheme|
@@ -71,30 +71,30 @@ and if you want to save and restore theme manually you can set `useAutoSave = fa
 themeService.Initialize(window, false);
 ```
 
-## Config
-there are some config methods:
+## Configs
+there are some configure methods:
 
-### ConfigBackdrop
+### ConfigureBackdrop
 
-If you use the `ConfigBackdrop`, the themeService will automatically save and restore the SystemBackdrop (if useAutoSave is true)
-
-```cs
-themeService.ConfigBackdrop(BackdropType.Mica);
-```
-
-### ConfigElementTheme
-
-If you use the `ConfigElementTheme`, the themeService will automatically save and restore the ElementTheme (if useAutoSave is true)
+If you use the `ConfigureBackdrop`, the themeService will automatically save and restore the SystemBackdrop (if useAutoSave is true)
 
 ```cs
-themeService.ConfigElementTheme(ElementTheme.Default);
+themeService.Initialize(...).ConfigureBackdrop(BackdropType.Mica);
 ```
 
-### ConfigTintColor
+### ConfigureElementTheme
+
+If you use the `ConfigureElementTheme`, the themeService will automatically save and restore the ElementTheme (if useAutoSave is true)
+
+```cs
+themeService.Initialize(...).ConfigureElementTheme(ElementTheme.Default);
+```
+
+### ConfigureTintColor
 you can change system backdrop TintColor.
 
 ```cs
-themeService.ConfigTintColor();
+themeService.Initialize(...).ConfigureTintColor();
 ```
 then you can set your tint color:
 
@@ -102,11 +102,11 @@ then you can set your tint color:
 themeService.SetBackdropTintColor(Colors.Yellow);
 ```
 
-### ConfigFallbackColor
+### ConfigureFallbackColor
 you can change system backdrop FallBackColor.
 
 ```cs
-themeService.ConfigFallbackColor();
+themeService.Initialize(...).ConfigureFallbackColor();
 ```
 
 then you can set your FallBackColor
@@ -115,10 +115,17 @@ themeService.SetBackdropFallBackColor();
 ```
 
 {% note warning %}
-ConfigTintColor and ConfigFallbackColor only works if you use Acrylic or Mica Backdrop.
+ConfigureTintColor and ConfigureFallbackColor only works if you use Acrylic or Mica Backdrop.
 {% endnote %}
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TintColor.gif)
+
+### EnableRequestedTheme
+This method enables the ability to use the `Application.Current.RequestedTheme`.
+```cs
+themeService.Initialize(...).EnableRequestedTheme();
+```
+now you can use `Application.Current.RequestedTheme` in Runtime.
 
 # Changing ElementTheme in Runtime
 you can change ElementTheme in Runtime like this:

@@ -296,6 +296,27 @@ public partial class TemplateInformation
 </StackPanel>
 ```
 
+{% note warning %}
+If you encounter an error when running in AOT/Trim mode, please make the following changes:
+{% endnote %}
+
+```xml
+<ComboBox x:Name="AnimalPicker"
+          Header="Pick an Animal"
+          ItemsSource="{x:Bind Items, Mode=OneWay}" />
+```
+
+```cs
+public ObservableCollection<Animal> Items
+{
+    get { return (ObservableCollection<Animal>)GetValue(ItemsProperty); }
+    set { SetValue(ItemsProperty, value); }
+}
+
+public static readonly DependencyProperty ItemsProperty =
+    DependencyProperty.Register(nameof(Items), typeof(ObservableCollection<Animal>), typeof(SwitchPresenterPage), new PropertyMetadata(new ObservableCollection<Animal>(Enum.GetValues<Animal>())));
+```
+
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SwitchPresenter.gif)
 
 # Demo

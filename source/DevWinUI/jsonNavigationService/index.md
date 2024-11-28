@@ -488,7 +488,7 @@ Initializ(...).ConfigureSectionPage(typeof(DemoSectionPage));
 more details about [SectionPage](https://ghost1372.github.io/DevWinUIControls/landingPages/sectionPage/)
 
 ## ConfigureTitleBar
-you can use ConfigureTitleBar to auto handle `BackButton` and `PaneToggleButton`
+you can use ConfigureTitleBar to automatically handle `BackButton` and `PaneToggleButton`
 
 ```cs
 Initializ(...).ConfigureTitleBar(AppTitleBar);
@@ -697,6 +697,12 @@ public BlankPage()
     this.InitializeComponent();
 }
 ```
+
+# Notes
+
+{% note warning %}
+If you want to use `Frame.GoBack` to navigate back in the frame while maintaining the correct `NavigationViewItem` selection, you should use `JsonNavigationService.GoBack` instead. This ensures that the NavigationView stays in sync with the current page.
+{% endnote %}
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
