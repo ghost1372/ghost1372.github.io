@@ -437,6 +437,7 @@ menu:
       SimpleSettingsGroup: /simpleSettingsGroup/ ||
       Shortcut: /shortcut/ ||
       SwitchPresenter: /switchPresenter/ ||
+      TextBox: /textBox/ ||
       TileControl: /tileControl/ ||
       UniformGrid: /uniformGrid/ ||
       WaveProgressBar: /waveProgressBar/ ||
