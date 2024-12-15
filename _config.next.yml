@@ -384,6 +384,7 @@ menu:
       PathHelper: /pathHelper/ ||
       ProcessInfoHelper: /processInfoHelper/ ||
       ResourceHelper: /resourceHelper/ ||
+      RichTextFormatterHelper: /richTextFormatterHelper/ ||
       SecurityHelper: /securityHelper/ ||
       TaskbarHelper: /taskbarHelper/ ||
       UpdateHelper: /updateHelper/ ||
