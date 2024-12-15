@@ -428,6 +428,7 @@ menu:
       OptionsPageControl: /optionsPageControl/ ||
       PagerControl: /pagerControl/ ||
       PinBox: /pinBox/ ||
+      ProgressButton: /progressButton/ ||
       ProgressRing: /progressRing/ ||
       SelectorBarSegmented: /selectorBarSegmented/ ||
       SettingsCard: /settingsCard/ ||
