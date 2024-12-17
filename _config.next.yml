@@ -410,9 +410,11 @@ menu:
       AutoScrollView: /autoScrollView/ ||
       BreadcrumbNavigator: /breadcrumbNavigator/ ||
       CheckBoxWithDescriptionControl: /checkBoxWithDescriptionControl/ ||
+      CalendarWithClock: /calendarWithClock/ ||
       ColorfulShimmingEffect: /colorfulShimmingEffect/ ||
       ColorPalette: /colorPalette/ ||
       CopyButton: /copyButton/ ||
+      DateTimePicker: /dateTimePicker/ ||
       Divider: /divider/ ||
       FlipSide: /flipSide/ ||
       FlyoutMenuButton: /flyoutMenuButton/ ||
