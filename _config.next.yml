@@ -411,6 +411,8 @@ menu:
       BreadcrumbNavigator: /breadcrumbNavigator/ ||
       CheckBoxWithDescriptionControl: /checkBoxWithDescriptionControl/ ||
       CalendarWithClock: /calendarWithClock/ ||
+      CirclePanel: /circlePanel/ ||
+      Clock: /clock/ ||
       ColorfulShimmingEffect: /colorfulShimmingEffect/ ||
       ColorPalette: /colorPalette/ ||
       CopyButton: /copyButton/ ||

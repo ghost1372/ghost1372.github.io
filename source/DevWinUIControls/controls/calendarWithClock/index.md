@@ -2,6 +2,12 @@
 title: CalendarWithClock
 ---
 
+# Event
+
+|Name|
+|-|
+|SelectedTimeChanged|
+
 # Property
 
 |Name|
@@ -22,9 +28,15 @@ title: CalendarWithClock
 |SelectedTime|
 |SelectedDate|
 |TimePickerDisplayMode|
+|ShowAccentBorderOnHeader|
+|ClockMode|
+|ClockCornerRadius|
+|CalendarViewCornerRadius|
+|ClockBorderThickness|
+|ClockMargin|
 
 {% note info %}
-To combine both foreground and background colors, use font colors='hexforecolor,hexbackcolor' (colors separated by a comma).
+You can use Default WinUI Styles (`DefaultCalendarViewStyle`) or your own syles for CalendarView, just use `CalendarViewStyle` property. 
 {% endnote %}
 
 # Example
@@ -32,6 +44,14 @@ To combine both foreground and background colors, use font colors='hexforecolor,
 ```xaml
 <dev:CalendarWithClock />
 ```
+
+{% note info %}
+Use `ClockMode` for choosing between `TimePicker` or `AnalogClock`
+{% endnote %}
+
+{% note warning %}
+Some Properties only works for TimePicker and Some for AnalogClock. 
+{% endnote %}
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/CalendarWithClock.gif)
 
