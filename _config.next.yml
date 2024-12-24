@@ -445,6 +445,7 @@ menu:
       SwitchPresenter: /switchPresenter/ ||
       TextBox: /textBox/ ||
       TileControl: /tileControl/ ||
+      TransitioningContentControl: /transitioningContentControl/ ||
       UniformGrid: /uniformGrid/ ||
       WaveProgressBar: /waveProgressBar/ ||
       Windows 11 Settings Examples: /windows11SettingsExamples/ ||
