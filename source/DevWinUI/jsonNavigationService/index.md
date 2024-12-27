@@ -633,14 +633,16 @@ IJsonNavigationService jsonNavigationService;
 jsonNavigationService = new JsonNavigationService();
 jsonNavigationService
                 .Initialize(NavView, NavFrame, NavigationPageMappings.PageDictionary)
-                .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
                 .ConfigureDefaultPage(typeof(HomeLandingPage))
                 .ConfigureSettingsPage(typeof(SettingsPage))
                 .ConfigureSectionPage(typeof(DemoSectionPage))
+                .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
                 .ConfigureAutoSuggestBox(HeaderAutoSuggestBox)
                 .ConfigureBreadcrumbBar(JsonBreadCrumbNavigator, BreadcrumbPageMappings.PageDictionary);
 ```
-
+{% note warning %}
+Make sure to call `ConfigureJsonFile` method after `ConfigureDefaultPage`, this will ensure the default page loads properly in initial load.
+{% endnote %}
 # MVVM Patern
 first register a `IJsonNavigationService` service:
 
@@ -657,13 +659,16 @@ public MainPage()
     var navService = App.GetService<IJsonNavigationService>() as JsonNavigationService;
     
     navService.Initialize(NavView, NavFrame, NavigationPageMappings.PageDictionary)
-            .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
             .ConfigureDefaultPage(typeof(HomeLandingPage))
             .ConfigureSettingsPage(typeof(SettingsPage))
             .ConfigureSectionPage(typeof(DemoSectionPage))
+            .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
             .ConfigureAutoSuggestBox(HeaderAutoSuggestBox);
 }
 ```
+{% note warning %}
+Make sure to call `ConfigureJsonFile` method after `ConfigureDefaultPage`, this will ensure the default page loads properly in initial load.
+{% endnote %}
 
 # INavigationAwareEx
 you can use `INavigationAwareEx` in your ViewModel and you can access to `OnNavigatedFrom` and `OnNavigatedTo` methods.
