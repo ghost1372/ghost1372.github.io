@@ -7,6 +7,8 @@ title: Hatch
 |-|
 |HatchStyle|
 |Content|
+|Foreground|
+|Background|
 
 # Example
 
