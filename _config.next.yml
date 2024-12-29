@@ -415,6 +415,7 @@ menu:
       Clock: /clock/ ||
       ColorfulShimmingEffect: /colorfulShimmingEffect/ ||
       ColorPalette: /colorPalette/ ||
+      CompareSlider: /compareSlider/ ||
       CopyButton: /copyButton/ ||
       DateTimePicker: /dateTimePicker/ ||
       Divider: /divider/ ||
