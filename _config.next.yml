@@ -423,6 +423,7 @@ menu:
       FlyoutMenuButton: /flyoutMenuButton/ ||
       Gravatar: /gravatar/ ||
       Growl: /growl/ ||
+      Hatch: /hatch/ ||
       IndeterminateProgressBar: /indeterminateProgressBar/ ||
       InlineAutoCompleteTextBox: /inlineAutoCompleteTextBox/ ||
       IsEnabledTextBox: /isEnabledTextBox/ ||
