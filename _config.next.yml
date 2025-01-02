@@ -420,11 +420,13 @@ menu:
       DateTimePicker: /dateTimePicker/ ||
       Divider: /divider/ ||
       ElementGroup: /elementGroup/ ||
+      FlexPanel: /flexPanel/ ||
       FlipSide: /flipSide/ ||
       FlyoutMenuButton: /flyoutMenuButton/ ||
       Gravatar: /gravatar/ ||
       Growl: /growl/ ||
       Hatch: /hatch/ ||
+      HoneycombPanel: /honeycombPanel/ ||
       IndeterminateProgressBar: /indeterminateProgressBar/ ||
       InlineAutoCompleteTextBox: /inlineAutoCompleteTextBox/ ||
       IsEnabledTextBox: /isEnabledTextBox/ ||
