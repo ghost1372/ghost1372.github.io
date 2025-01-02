@@ -423,6 +423,7 @@ menu:
       FlexPanel: /flexPanel/ ||
       FlipSide: /flipSide/ ||
       FlyoutMenuButton: /flyoutMenuButton/ ||
+      GoToTop: /goToTop/ ||
       Gravatar: /gravatar/ ||
       Growl: /growl/ ||
       Hatch: /hatch/ ||
