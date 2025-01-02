@@ -419,6 +419,7 @@ menu:
       CopyButton: /copyButton/ ||
       DateTimePicker: /dateTimePicker/ ||
       Divider: /divider/ ||
+      ElementGroup: /elementGroup/ ||
       FlipSide: /flipSide/ ||
       FlyoutMenuButton: /flyoutMenuButton/ ||
       Gravatar: /gravatar/ ||
