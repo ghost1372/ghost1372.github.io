@@ -432,6 +432,7 @@ menu:
       InlineAutoCompleteTextBox: /inlineAutoCompleteTextBox/ ||
       IsEnabledTextBox: /isEnabledTextBox/ ||
       KeyVisual: /keyVisual/ ||
+      LayoutTransformer: /layoutTransformer/ ||
       LoadingIndicator: /loadingIndicator/ ||
       LongShadowTextBlock: /longShadowTextBlock/ ||
       OOBEPageControl: /oOBEPageControl/ ||
@@ -448,6 +449,7 @@ menu:
       Shield: /shield/ ||
       SimpleSettingsGroup: /simpleSettingsGroup/ ||
       Shortcut: /shortcut/ ||
+      StepBar: /stepBar/ ||
       SwitchPresenter: /switchPresenter/ ||
       TextBox: /textBox/ ||
       TileControl: /tileControl/ ||
