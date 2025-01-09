@@ -18,6 +18,11 @@ public class StepBar : ItemsControl
 |StepIndex|
 |Status|
 
+# Events
+|Property|
+|-|
+|StepChanged|
+
 # Method
 |Name|Description|
 |-|-|
