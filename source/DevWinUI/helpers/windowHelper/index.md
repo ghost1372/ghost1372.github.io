@@ -94,10 +94,21 @@ var appWindow = WindowHelper.GetAppWindow2(element);
 // Use XamlRoot
 var hwnd = WindowHelper.GetWindowHandle(element);
 
-or
+// or
 
 // Use Microsoft.UI.Composition.Visual
 var hwnd = WindowHelper.GetWindowHandle2(element);
+
+```
+
+# RemoveWindowBorderAndTitleBar
+
+```cs
+WindowHelper.RemoveWindowBorderAndTitleBar(window);
+
+// or
+
+WindowHelper.RemoveWindowBorderAndTitleBar(hwnd);
 
 ```
 
