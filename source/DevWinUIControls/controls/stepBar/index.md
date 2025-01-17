@@ -17,6 +17,7 @@ public class StepBar : ItemsControl
 |Orientation|
 |StepIndex|
 |Status|
+|ShowStepIndex|
 
 # Events
 |Property|
