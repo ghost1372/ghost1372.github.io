@@ -26,7 +26,7 @@ title: CalendarWithClock
 |CalendarViewStyle|
 |CalendarViewBorderThickness|
 |SelectedTime|
-|SelectedDate|
+|SelectedDateTime|
 |TimePickerDisplayMode|
 |ShowAccentBorderOnHeader|
 |ClockMode|
