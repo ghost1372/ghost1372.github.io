@@ -27,7 +27,7 @@ title: DateTimePicker
 |CalendarViewStyle|
 |CalendarViewBorderThickness|
 |SelectedTime|
-|SelectedDate|
+|SelectedDateTime|
 |TimePickerDisplayMode|
 |CalendarViewCornerRadius|
 |PlaceholderText|
