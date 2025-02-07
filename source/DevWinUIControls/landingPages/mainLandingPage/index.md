@@ -14,36 +14,27 @@ in this page we can load only items that is tagged as IsNew, IsUpdated and IsPre
 
 |Name|
 |-|
-|SpaceBetweenHeaderAndGridView|
-|HeaderContentMargin|
-|HeaderCornerRadius|
-|HeaderVerticalAlignment|
-|HeaderText|
-|HeaderFontSize|
-|HeaderSubtitleText|
-|HeaderSubtitleFontSize|
-|UseFullScreenHeaderImage|
-|HeaderImage|
 |HeaderImageHeight|
+|HeaderImage|
 |HeaderOverlayImage|
-|OverlayOpacity|
+|HeaderVerticalAlignment|
+|HeaderCornerRadius|
+|HeaderContentMargin|
+|HeaderSubtitleFontSize|
+|HeaderSubtitleText|
+|HeaderFontSize|
+|HeaderText|
 |Stretch|
-|NormalizedCenterPoint|
-|LazyLoadingThreshold|
-|EnableLazyLoading|
-|PlaceholderSource|
-|IsCacheEnabled|
-|GridViewVerticalAlignment|
 |GridViewPadding|
+|IsTileImage|
+|FooterContent|
+|FooterMargin|
+|UseFullScreenHeaderImage|
 |PreviewGroupText|
 |UpdatedGroupText|
 |NewGroupText|
 |HeaderContent|
 |HeaderMargin|
-|FooterContent|
-|FooterHeight|
-|FooterMargin|
-|IsTileImage|
 
 # Override values
 
@@ -65,7 +56,7 @@ then use MainLandingPage:
 <dev:MainLandingPage x:Name="mainLandingPage" Loaded="mainLandingPage_Loaded"
                         HeaderImage="ms-appx:///Assets/GalleryHeaderImage.png"
                         HeaderText="Demo App"
-                        HeaderSubtitleText="Based On WinAppSDK 1.2"
+                        HeaderSubtitleText="Based On WinAppSDK 1.7+"
                         OnItemClick="mainLandingPage_OnItemClick">
     <dev:MainLandingPage.HeaderContent>
         <StackPanel Orientation="Horizontal" Spacing="10">

@@ -112,5 +112,17 @@ WindowHelper.RemoveWindowBorderAndTitleBar(hwnd);
 
 ```
 
+# MakeTransparentWindowClickThrough
+
+```cs
+WindowHelper.MakeTransparentWindowClickThrough(window);
+
+// or
+
+WindowHelper.MakeTransparentWindowClickThrough(hwnd);
+
+```
+
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

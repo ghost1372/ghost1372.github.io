@@ -10,7 +10,7 @@ Consider the following situation:
 implement `ITitleBarAutoSuggestBoxAware` in your viewmodels:
 
 ```cs
-public partial class ServerViewModel : ITitleBarAutoSuggestBoxAware
+public partial class GalleryViewModel : ITitleBarAutoSuggestBoxAware
 {
     public void OnAutoSuggestBoxTextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
     {
@@ -27,31 +27,33 @@ public partial class ServerViewModel : ITitleBarAutoSuggestBoxAware
 and in your MainPage or wherever your box is located:
 
 ```cs
-private void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+private void OnTextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
 {
-    var viewModel = NavFrame.GetPageViewModel();
-var frameContentAOTSafe = NavFrame?.Content;
-if (frameContentAOTSafe is Page page && page?.DataContext is ITitleBarAutoSuggestBoxAware viewModelAOTSafe)
-{
-    viewModelAOTSafe.OnAutoSuggestBoxTextChanged(sender, args);
-}
-else if (viewModel != null && viewModel is ITitleBarAutoSuggestBoxAware titleBarAutoSuggestBoxAware)
-{
-    titleBarAutoSuggestBoxAware.OnAutoSuggestBoxTextChanged(sender, args);
-}
+    AutoSuggestBoxHelper.OnITitleBarAutoSuggestBoxTextChangedEvent(sender, args, NavFrame);
 }
 
-private void AutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+private void OnQuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
 {
-    var viewModel = NavFrame.GetPageViewModel();
-var frameContentAOTSafe = NavFrame?.Content;
-if (frameContentAOTSafe is Page page && page?.DataContext is ITitleBarAutoSuggestBoxAware viewModelAOTSafe)
-{
-    viewModelAOTSafe.OnAutoSuggestBoxQuerySubmitted(sender, args);
+    AutoSuggestBoxHelper.OnITitleBarAutoSuggestBoxQuerySubmittedEvent(sender, args, NavFrame);
 }
-else if (viewModel != null && viewModel is ITitleBarAutoSuggestBoxAware titleBarAutoSuggestBoxAware)
+```
+
+then you should set DataContext to your ViewModel:
+
+```cs
+public GalleryPage()
 {
-    titleBarAutoSuggestBoxAware.OnAutoSuggestBoxQuerySubmitted(sender, args);
+    ViewModel = App.GetService<GalleryViewModel>();
+    this.InitializeComponent();
+    DataContext = ViewModel;
 }
+```
+
+```cs
+public ArchivePage()
+{
+    ViewModel = App.GetService<ArchiveViewModel>();
+    this.InitializeComponent();
+    DataContext = ViewModel;
 }
 ```

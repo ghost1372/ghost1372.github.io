@@ -17,6 +17,15 @@ title: BlurAnimationHelper
 </Grid>
 ```
 
+First of all ApplyBlurEffect for your target:
+```cs
+public BlurAnimationPage()
+{
+    this.InitializeComponent();
+    BlurAnimationHelper.ApplyBlurEffect(grd, 0);
+}
+```
+
 ```cs
 private void btnLogin_PointerEntered(object sender, Microsoft.UI.Xaml.Input.PointerRoutedEventArgs e)
 {
