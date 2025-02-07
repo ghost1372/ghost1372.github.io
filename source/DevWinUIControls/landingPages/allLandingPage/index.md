@@ -29,7 +29,6 @@ in this Page we can load all items from json file.
 |IsTileImage|
 |FooterContent|
 |FooterMargin|
-|UseFullScreenHeaderImage|
 
 # Override values
 
