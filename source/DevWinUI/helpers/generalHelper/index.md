@@ -1,6 +1,11 @@
 ---
 title: GeneralHelper
 ---
+# GetApplicationData
+Get Microsoft.Windows.Storage.ApplicationData for both Packaged and UnPackaged
+```cs
+var applicationData = GeneralHelper.GetApplicationData();
+```
 
 # IsFirstRun
 Determines whether the application is running for the first time.
