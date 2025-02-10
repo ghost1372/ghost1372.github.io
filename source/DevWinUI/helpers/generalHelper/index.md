@@ -2,6 +2,13 @@
 title: GeneralHelper
 ---
 
+# IsFirstRun
+Determines whether the application is running for the first time.
+
+```cs
+bool isFirstRun =  GeneralHelper.IsFirstRun();
+```
+
 # IsAppRunningAsAdmin
 check to see if your app is running as a admin (elevated) or not.
 
