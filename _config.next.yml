@@ -372,6 +372,7 @@ menu:
       CompositionHelper: /compositionHelper/ ||
       ColorHelper: /colorHelper/ ||
       CredentialHelper: /credentialHelper/ ||
+      DisplayMonitorHelper: /displayMonitorHelper/ ||
       DragMoveAndResizeHelper: /dragMoveAndResizeHelper/ ||
       FileAndFolderPickerHelper: /fileAndFolderPickerHelper/ ||
       FileHelper: /fileHelper/ ||
@@ -386,6 +387,7 @@ menu:
       RichTextFormatterHelper: /richTextFormatterHelper/ ||
       RunTimeHelper: /runtimeHelper/ ||
       SecurityHelper: /securityHelper/ ||
+      StartupHelper: /startupHelper/ ||
       TaskbarHelper: /taskbarHelper/ ||
       UpdateHelper: /updateHelper/ ||
       VisualHelper: /visualHelper/ ||
