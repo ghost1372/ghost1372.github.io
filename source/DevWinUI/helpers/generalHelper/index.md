@@ -14,13 +14,6 @@ Determines whether the application is running for the first time.
 bool isFirstRun =  GeneralHelper.IsFirstRun();
 ```
 
-# IsAppRunningAsAdmin
-check to see if your app is running as a admin (elevated) or not.
-
-```cs
-bool isAdmin =  GeneralHelper.IsAppRunningAsAdmin();
-```
-
 # ChangeCursor
 you can change any UIElement mouse Cursor with `ChangeCursor` (reflection) method
 ```cs
