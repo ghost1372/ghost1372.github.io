@@ -79,5 +79,23 @@ If your application is UnPackaged, you do not need to call this method.
 var result = await StartupHelper.SetTaskIdForPackagedApp(taskId);
 ```
 
+# IsAppStartupWithWindowsForXamlBindingEnabled
+
+{% note warning %}
+Do not use this property directly in your C# code.
+{% endnote %}
+
+This property is intended solely for XAML binding to control app startup. 
+The property retrieves the value from the `IsAppStartupWithWindowsEnabledAsync` method.
+When setting a value, it calls `EnableAppStartupWithWindowsAsync` or `DisableAppStartupWithWindowsAsync` to enable or disable app startup accordingly.
+
+```XAML
+<dev:SettingsCard Description="Automatically launch app when you log in to Windows"
+                  Header="Run at startup"
+                  HeaderIcon="{dev:BitmapIcon Source=Assets/Fluent/Startup.png}">
+    <ToggleSwitch IsOn="{x:Bind dev:StartupHelper.IsAppStartupWithWindowsForXamlBindingEnabled, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+</dev:SettingsCard>
+```
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
