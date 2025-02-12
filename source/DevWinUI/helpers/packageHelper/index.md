@@ -38,3 +38,5 @@ packageVersion.Build.ToString();
 packageVersion.Revision.ToString();
 //return: 1.0.0.0
 ```
+
+# GetPackageFamilyName
