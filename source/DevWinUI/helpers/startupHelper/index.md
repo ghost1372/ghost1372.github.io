@@ -8,6 +8,14 @@ Provides methods to enable or disable the application startup with Windows for P
 StartupHelper automatically detects whether the application is packaged or unpackaged and uses the registry or StartupTask method.
 {% endnote %}
 
+{% note info %}
+By default we use the following options (So you don't need to pass any values ​​in the methods.):
+For Packaged applications, we automatically identify the taskId from the `first` available `StartupTask`.
+For UnPackaged applications, we use `Registry.CurrentUser`.
+
+If you want to specify a specific taskId or create a registry key in another location (for example, the LocalMachine), all of the methods below have overloads that allow you to specify a taskId or RegistryKey location.
+{% endnote %}
+
 # Packaged App
 First you need to create a StartupTask in `Package.appxmanifest`:
 
@@ -18,17 +26,12 @@ First you need to create a StartupTask in `Package.appxmanifest`:
     <uap5:StartupTask
         TaskId="MyAppStartOnLoginTask"
         Enabled="true"
-        DisplayName="ms-resource:AppDisplayName" />
+        DisplayName="MyApp" />
 </uap5:Extension>
 ```
 {% note info %}
 `TaskId` should be unique for each app.
 {% endnote %}
-
-Then you need to tell StartupHelper what the task ID is:
-```cs
-StartupHelper.SetTaskIdForPackagedApp("MyAppStartOnLoginTask");
-```
 
 now you can use `EnableAppStartupWithWindowsAsync`, `DisableAppStartupWithWindowsAsync` and `IsAppStartupWithWindowsEnabledAsync` methods.
 
