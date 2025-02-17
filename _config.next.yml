@@ -352,11 +352,13 @@ menu:
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Attach:
       default: /attach/ ||
+      BrushAttach: /brushAttach/ ||
       PanelAttach: /panelAttach/ ||
       TitleBarAttach: /titleBarAttach/ ||
     Extensions: 
       default: /extensions/ || fas fa-tools
       CollectionExtension: /collectionExtension/ ||
+      ColorBrightnessExtension: /colorBrightnessExtension/ ||
       DictionaryExtensions: /dictionaryExtensions/ ||
       EnumValueExtension: /enumValueExtension/ ||
       GeneralExtension: /generalExtension/ ||
