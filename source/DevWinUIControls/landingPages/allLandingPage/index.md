@@ -151,25 +151,4 @@ To see details and descriptions of Json's properties, refer to <ins>**[this](htt
 you can simply enable/disable items in `AppData.json` file just set `IncludedInBuild` to `true` or `false`
 
 
-# Localizer
-
-step1:
-
-add `"UsexUid": true` for every item in json file which you need to localize it.
-
-step2:
-add some resources in your resw files.
-for example: 
-
-|Key|Value|
-|-|-|
-|Nav_HomeTitle|Home|
-
-step3:
-copy and paste Key in your json file for `Title` or `subtitle`...
-
-`"Title": "Nav_HomeTitle"`
-
-everything will be done automatically.
-
 ![LandingsPage](https://raw.githubusercontent.com/ghost1372/Resources/main/LandingsPage/AllLandingsPage.png)

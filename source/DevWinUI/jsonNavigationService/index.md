@@ -494,32 +494,113 @@ you can use ConfigureTitleBar to automatically handle `BackButton` and `PaneTogg
 Initializ(...).ConfigureTitleBar(AppTitleBar);
 ```
 
-## ConfigureLocalizer
 
-step1:
+## Complete Codes
 
 ```cs
-Initializ(...).ConfigureLocalizer(resourceManager, resourceContext);
-```      
+IJsonNavigationService jsonNavigationService;
+jsonNavigationService = new JsonNavigationService();
+jsonNavigationService
+                .Initialize(NavView, NavFrame, NavigationPageMappings.PageDictionary)
+                .ConfigureDefaultPage(typeof(HomeLandingPage))
+                .ConfigureSettingsPage(typeof(SettingsPage))
+                .ConfigureSectionPage(typeof(DemoSectionPage))
+                .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
+                .ConfigureAutoSuggestBox(HeaderAutoSuggestBox)
+                .ConfigureBreadcrumbBar(JsonBreadCrumbNavigator, BreadcrumbPageMappings.PageDictionary);
+```
+{% note warning %}
+Make sure to call `ConfigureJsonFile` method after `ConfigureDefaultPage`, this will ensure the default page loads properly in initial load.
+{% endnote %}
+# MVVM Patern
+first register a `IJsonNavigationService` service:
+
+```cs
+services.AddSingleton<IJsonNavigationService, JsonNavigationService>();
+```
+
+then:
+
+```cs
+public MainPage()
+{
+    this.InitializeComponent();
+    var navService = App.GetService<IJsonNavigationService>() as JsonNavigationService;
+    
+    navService.Initialize(NavView, NavFrame, NavigationPageMappings.PageDictionary)
+            .ConfigureDefaultPage(typeof(HomeLandingPage))
+            .ConfigureSettingsPage(typeof(SettingsPage))
+            .ConfigureSectionPage(typeof(DemoSectionPage))
+            .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
+            .ConfigureAutoSuggestBox(HeaderAutoSuggestBox);
+}
+```
+{% note warning %}
+Make sure to call `ConfigureJsonFile` method after `ConfigureDefaultPage`, this will ensure the default page loads properly in initial load.
+{% endnote %}
+
+# INavigationAwareEx
+you can use `INavigationAwareEx` in your ViewModel and you can access to `OnNavigatedFrom` and `OnNavigatedTo` methods.
+
+```cs
+public partial class myViewModel : INavigationAwareEx
+
+public void OnNavigatedFrom()
+{
+
+}
+
+public async void OnNavigatedTo(object parameter)
+{
+    
+}
+
+```
+
+{% note warning %}
+you should set `DataContext`, otherwise you cant use this interface.
+{% endnote %}
+
+```cs
+public myViewModel ViewModel {get;}
+
+public BlankPage()
+{
+    ViewModel = App.GetService<myViewModel>();
+    DataContext = ViewModel;
+    this.InitializeComponent();
+}
+```
+
+# Notes
+
+{% note warning %}
+If you want to use `Frame.GoBack` to navigate back in the frame while maintaining the correct `NavigationViewItem` selection, you should use `JsonNavigationService.GoBack` instead. This ensures that the NavigationView stays in sync with the current page.
+{% endnote %}
+
+
+# Localize Strings
+
+you can use our built-in `ResourceManager/ResourceContext` or you can define your specific `ResourceManager/ResourceContext` in `ConfigureJsonFile`.
+
+step1:
+add `"UsexUid": true` for every item you want in json file.
 
 step2:
-add `"UsexUid": true` for every item in json file.
-
-step3:
-add some resources in your resw files.
+add some resources in your resw files. you should follow WinUI resource naming.
 for example: 
 
 |Key|Value|
 |-|-|
-|Nav_HomeTitle|Home|
+|Nav_HomeTitle.Title|Home|
+|Nav_HomeTitle.SecondaryTitle|My Home|
+|Nav_HomeTitle.Subtitle|First Page|
+|Nav_HomeTitle.Description|See Whats new!|
 
-step4:
-copy and paste Key in your json file for `Title` or `subtitle`...
+step3:
+use your `key` in `LocalizeId` field in json file.
 
-`"Title": "Nav_HomeTitle"`
-
-In the last step, you need to create the json file:
-create a new `json` file (`AppData.json`) in a folder called `DataModel`:
+`"LocalizeId": "Nav_HomeTitle"`
 
 
 {% note warning %}
@@ -624,90 +705,6 @@ this is your apps namespace, for example: `DevWinUI.DemoApp`
 for Navigating to a Page we used UniqueId.
 {% endnote %}
 
-
-
-## Complete Codes
-
-```cs
-IJsonNavigationService jsonNavigationService;
-jsonNavigationService = new JsonNavigationService();
-jsonNavigationService
-                .Initialize(NavView, NavFrame, NavigationPageMappings.PageDictionary)
-                .ConfigureDefaultPage(typeof(HomeLandingPage))
-                .ConfigureSettingsPage(typeof(SettingsPage))
-                .ConfigureSectionPage(typeof(DemoSectionPage))
-                .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
-                .ConfigureAutoSuggestBox(HeaderAutoSuggestBox)
-                .ConfigureBreadcrumbBar(JsonBreadCrumbNavigator, BreadcrumbPageMappings.PageDictionary);
-```
-{% note warning %}
-Make sure to call `ConfigureJsonFile` method after `ConfigureDefaultPage`, this will ensure the default page loads properly in initial load.
-{% endnote %}
-# MVVM Patern
-first register a `IJsonNavigationService` service:
-
-```cs
-services.AddSingleton<IJsonNavigationService, JsonNavigationService>();
-```
-
-then:
-
-```cs
-public MainPage()
-{
-    this.InitializeComponent();
-    var navService = App.GetService<IJsonNavigationService>() as JsonNavigationService;
-    
-    navService.Initialize(NavView, NavFrame, NavigationPageMappings.PageDictionary)
-            .ConfigureDefaultPage(typeof(HomeLandingPage))
-            .ConfigureSettingsPage(typeof(SettingsPage))
-            .ConfigureSectionPage(typeof(DemoSectionPage))
-            .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
-            .ConfigureAutoSuggestBox(HeaderAutoSuggestBox);
-}
-```
-{% note warning %}
-Make sure to call `ConfigureJsonFile` method after `ConfigureDefaultPage`, this will ensure the default page loads properly in initial load.
-{% endnote %}
-
-# INavigationAwareEx
-you can use `INavigationAwareEx` in your ViewModel and you can access to `OnNavigatedFrom` and `OnNavigatedTo` methods.
-
-```cs
-public partial class myViewModel : INavigationAwareEx
-
-public void OnNavigatedFrom()
-{
-
-}
-
-public async void OnNavigatedTo(object parameter)
-{
-    
-}
-
-```
-
-{% note warning %}
-you should set `DataContext`, otherwise you cant use this interface.
-{% endnote %}
-
-```cs
-public myViewModel ViewModel {get;}
-
-public BlankPage()
-{
-    ViewModel = App.GetService<myViewModel>();
-    DataContext = ViewModel;
-    this.InitializeComponent();
-}
-```
-
-# Notes
-
-{% note warning %}
-If you want to use `Frame.GoBack` to navigate back in the frame while maintaining the correct `NavigationViewItem` selection, you should use `JsonNavigationService.GoBack` instead. This ensures that the NavigationView stays in sync with the current page.
-{% endnote %}
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
