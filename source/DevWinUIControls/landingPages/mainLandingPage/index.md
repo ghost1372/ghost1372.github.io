@@ -192,7 +192,6 @@ protected override void OnNavigatedTo(NavigationEventArgs e)
 {
     base.OnNavigatedTo(e);
     mainLandingPage.GetDataAsync("DataModel/AppData.json");
-    mainLandingPage.OrderBy(i => i.Title);
 }
 ```
 
