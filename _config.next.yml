@@ -439,6 +439,7 @@ menu:
       LayoutTransformer: /layoutTransformer/ ||
       LoadingIndicator: /loadingIndicator/ ||
       LongShadowTextBlock: /longShadowTextBlock/ ||
+      ModalWindow: /modalWindow/ ||
       OOBEPageControl: /oOBEPageControl/ ||
       OpacityMaskView: /opacityMaskView/ ||
       OptionsPageControl: /optionsPageControl/ ||
