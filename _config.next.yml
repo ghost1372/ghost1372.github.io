@@ -355,6 +355,7 @@ menu:
       BrushAttach: /brushAttach/ ||
       PanelAttach: /panelAttach/ ||
       TitleBarAttach: /titleBarAttach/ ||
+    DelegateCommand: /delegateCommand/ ||
     Extensions: 
       default: /extensions/ || fas fa-tools
       CollectionExtension: /collectionExtension/ ||
