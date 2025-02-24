@@ -72,7 +72,8 @@ public MainWindow()
                             Style="{StaticResource AppTitleBarMenuFlyoutItemStyle}"
                             Text="Move" />
 
-            <MenuFlyoutItem Command="{x:Bind modernSystemMenu.SizeCommand}"
+            <MenuFlyoutItem x:Name="MenuSize"
+                            Command="{x:Bind modernSystemMenu.SizeCommand}"
                             CommandParameter="{x:Bind MenuSize}"
                             Style="{StaticResource AppTitleBarMenuFlyoutItemStyle}"
                             Text="Size" />
