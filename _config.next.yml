@@ -398,6 +398,7 @@ menu:
     JsonNavigationService: /jsonNavigationService/
     MessageBox: /messageBox/ ||
     Messaging: /messaging/ ||
+    ModernSystemMenu: /modernSystemMenu/ ||
     NavigationService: /navigationService/
     PersianDateTime: /persianDateTime/ ||
     RainbowFrame: /rainbowFrame/ ||
