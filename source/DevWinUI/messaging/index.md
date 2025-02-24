@@ -17,14 +17,14 @@ In the event handler you can then inspect these raw messages based on message id
 ```cs
 private void OnWindowMessageReceived(object sender, WindowMessageEventArgs e)
 {
-    if (e.MessageType == NativeValues.WindowMessage.WM_GETMINMAXINFO)
+    if (e.MessageType == (uint)NativeValues.WindowMessage.WM_GETMINMAXINFO)
     {
         var minMaxInfo = Marshal.PtrToStructure<NativeValues.MINMAXINFO>(e.Message.LParam);
         // some codes
 
         Marshal.StructureToPtr(minMaxInfo, e.Message.LParam, true);
     }
-    else if (e.MessageType == NativeValues.WindowMessage.WM_NCRBUTTONDOWN)
+    else if (e.MessageType == (uint)NativeValues.WindowMessage.WM_NCRBUTTONDOWN)
     {
         // some codes
         e.Result = 0;
