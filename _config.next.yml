@@ -395,14 +395,14 @@ menu:
       UpdateHelper: /updateHelper/ ||
       VisualHelper: /visualHelper/ ||
       WindowHelper: /windowHelper/ ||
-    JsonNavigationService: /jsonNavigationService/
+    JsonNavigationService: /jsonNavigationService/ ||
     MessageBox: /messageBox/ ||
     Messaging: /messaging/ ||
     ModernSystemMenu: /modernSystemMenu/ ||
-    NavigationService: /navigationService/
+    NavigationService: /navigationService/ ||
     PersianDateTime: /persianDateTime/ ||
     RainbowFrame: /rainbowFrame/ ||
-    RelativeDate: // |relativeDate|
+    RelativeDate: /relativeDate| ||
     ThemeService: /themeService/ ||
     Backdrop: /backdrop/ ||
     Interfaces:
