@@ -2,6 +2,8 @@
 title: Converters
 ---
 
+# EmptyStringToVisibilityConverter
+
 # NumberToPercentageConverter
 
 ```cs
@@ -16,11 +18,18 @@ title: Converters
 // Output: 25 %
 ```
 
+# NullToVisibilityConverter
 
 # BoolToVisibilityConverter
 ```xml
 <TextBlock Visibility="{x:Bind boolValue, Converter={StaticResource BoolToVisibilityConverter}}" />
 ```
 
+# BoolToObjectConverter
+```xml
+<dev:BoolToObjectConverter x:Key="BoolToXConverter"
+                             FalseValue="Collapsed"
+                             TrueValue="Visible" />
+```
 
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
