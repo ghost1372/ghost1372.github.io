@@ -402,7 +402,8 @@ menu:
     NavigationService: /navigationService/ ||
     PersianDateTime: /persianDateTime/ ||
     RainbowFrame: /rainbowFrame/ ||
-    RelativeDate: /relativeDate| ||
+    RelativeDate: /relativeDate/ ||
+    SemanticVersion: /semanticVersion/ ||
     ThemeService: /themeService/ ||
     Backdrop: /backdrop/ ||
     Interfaces:
