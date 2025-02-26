@@ -7,8 +7,16 @@ get a relative date similar to "5 minutes ago". It supports both local and UTC d
 ```cs
 DateTime dateTime = new DateTime(2021, 09, 14, 0,0,0, DateTimeKind.Local);
 var relativeDate = RelativeDate.Get(dateTime).ToString();
-var relativeDate2 = RelativeDate.Get(dateTime).ToString(format: null, CultureInfo.GetCultureInfo("fa-IR"));
+var relativeDate2 = RelativeDate.Get(dateTime).ToString("fa-IR");
 
 Debug.WriteLine(relativeDate);
 Debug.WriteLine(relativeDate2);
 ```
+
+{% note info %}
+we only support English and Persian localization.
+{% endnote %}
+
+
+# Demo
+you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
