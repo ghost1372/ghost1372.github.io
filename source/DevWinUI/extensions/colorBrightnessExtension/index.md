@@ -17,5 +17,7 @@ MarkupExtension to that can be used to brighten (positive) or darken (negative) 
 <SolidColorBrush Color = "{dev:ColorBrightness Color=Red, CorrectionFactor=-0.3}" />
 ```
 
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ColorBrightness.png)
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
