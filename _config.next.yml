@@ -355,6 +355,7 @@ menu:
       BrushAttach: /brushAttach/ ||
       PanelAttach: /panelAttach/ ||
       TitleBarAttach: /titleBarAttach/ ||
+    Backdrop: /backdrop/ ||
     DelegateCommand: /delegateCommand/ ||
     Extensions: 
       default: /extensions/ || fas fa-tools
@@ -395,6 +396,9 @@ menu:
       UpdateHelper: /updateHelper/ ||
       VisualHelper: /visualHelper/ ||
       WindowHelper: /windowHelper/ ||
+    Interfaces:
+      default: /interfaces/ || fas fa-tools
+      ITitleBarAutoSuggestBoxAware: /iTitleBarAutoSuggestBoxAware/ ||
     JsonNavigationService: /jsonNavigationService/ ||
     MessageBox: /messageBox/ ||
     Messaging: /messaging/ ||
@@ -405,10 +409,6 @@ menu:
     RelativeDate: /relativeDate/ ||
     SemanticVersion: /semanticVersion/ ||
     ThemeService: /themeService/ ||
-    Backdrop: /backdrop/ ||
-    Interfaces:
-      default: /interfaces/ || fas fa-tools
-      ITitleBarAutoSuggestBoxAware: /iTitleBarAutoSuggestBoxAware/ ||
   DevWinUI.Controls - 8.0.0:
     default: /DevWinUIControls/ || fas fa-dice-d20
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
