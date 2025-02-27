@@ -2,6 +2,27 @@
 title: WindowHelper
 ---
 
+# TrackWindow
+you can track/Save all your windows in a dictionary which can be used in ThemeService, or other stuff.
+
+```cs
+WindowHelper.TrackWindow(window);
+```
+
+# RemoveWindowFromTrack
+remove window from TrackWindow list.
+```cs
+WindowHelper.RemoveWindowFromTrack(window);
+```
+
+# GetWindowForElement
+
+return window from a UIElement:
+
+```cs
+Window window = WindowHelper.GetWindowForElement(element);
+```
+
 # SwitchToThisWindow
 
 ```cs
@@ -40,6 +61,13 @@ WindowHelper.SetWindowCornerRadius(window, NativeValues.DWM_WINDOW_CORNER_PREFER
 or
 
 WindowHelper.SetWindowCornerRadius(hwnd, NativeValues.DWM_WINDOW_CORNER_PREFERENCE.DWMWCP_ROUND);
+
+```
+
+# GetWindowCornerRadius
+
+```cs
+NativeValues.DWM_WINDOW_CORNER_PREFERENCE corner = WindowHelper.GetWindowCornerRadius(window);
 
 ```
 
@@ -124,6 +152,24 @@ WindowHelper.MakeTransparentWindowClickThrough(hwnd);
 ```
 
 # ResizeAndCenterWindowToPercentageOfWorkArea
+
+# GetScreenSize
+
+# SetWindowOwner
+
+```cs
+WindowHelper.SetWindowOwner(parentHwnd, childHwnd);
+```
+
+# FindWindow
+```cs
+var hwnd = WindowHelper.FindWindow(hwnd, "InputNonClientPointerSource");
+```
+
+# SetForegroundWindow
+```cs
+WindowHelper.SetForegroundWindow(hwnd);
+```
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
