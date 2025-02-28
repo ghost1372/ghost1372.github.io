@@ -2,6 +2,10 @@
 title: WindowHelper
 ---
 
+{% note info %}
+Most methods accept both `window` and `hwnd`
+{% endnote %}
+
 # TrackWindow
 you can track/Save all your windows in a dictionary which can be used in ThemeService, or other stuff.
 
@@ -169,6 +173,11 @@ var hwnd = WindowHelper.FindWindow(hwnd, "InputNonClientPointerSource");
 # SetForegroundWindow
 ```cs
 WindowHelper.SetForegroundWindow(hwnd);
+```
+
+# CenterOnScreen
+```cs
+var IsCentered = WindowHelper.CenterOnScreen(hwnd);
 ```
 
 # Demo
