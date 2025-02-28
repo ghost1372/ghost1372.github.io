@@ -47,7 +47,7 @@ public partial class ModernWindow : Microsoft.UI.Xaml.Window
 All properties can be used in `Xaml`, but note that Xaml Window is very limited and cannot be changed at runtime (Binding/x:Bind is not working too), but you can change properties with C# code without restrictions.
 {% endnote %}
 
-{% note Warning %}
+{% note success %}
 Properties defined in `Xaml` are only executed once when Window is `Activated`.
 {% endnote %}
 
