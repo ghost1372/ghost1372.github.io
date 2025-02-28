@@ -443,6 +443,7 @@ menu:
       LoadingIndicator: /loadingIndicator/ ||
       LongShadowTextBlock: /longShadowTextBlock/ ||
       ModalWindow: /modalWindow/ ||
+      ModernWindow: /modernWindow/ ||
       OOBEPageControl: /oOBEPageControl/ ||
       OpacityMaskView: /opacityMaskView/ ||
       OptionsPageControl: /optionsPageControl/ ||
