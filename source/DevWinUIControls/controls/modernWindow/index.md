@@ -52,7 +52,31 @@ Properties defined in `Xaml` are only executed once when Window is `Activated`.
 {% endnote %}
 
 
-# Simple Example
+# Events
+You can easily monitor window messages by subscribing events.
+
+|Name|
+|-|
+|WindowMessageReceived|
+|WindowInputNonClientPointerSourceMessageReceived|
+
+# Methods
+
+|Name|
+|-|
+|BringToFront|
+|SwitchToThisWindow|
+|ReActivateWindow|
+
+# Virtual Methods (Override)
+You can easily monitor window messages by overriding virtual methods.
+
+|Name|
+|-|
+|OnWindowMessageReceived|
+|OnWindowInputNonClientPointerSourceMessageReceived|
+
+## Simple Example
 
 Create a new Window (`SampleWindow`) and Change `Window` to `ModernWindow`
 ```xml
@@ -85,7 +109,7 @@ public sealed partial class SampleWindow : ModernWindow
 }
 ```
 
-# Window with TitleBar
+## Window with TitleBar
 ```xml
 <dev:ModernWindow x:Class="DevWinUIGallery.Views.SampleWindow"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -110,7 +134,7 @@ public sealed partial class SampleWindow : ModernWindow
 You dont need to use `ExtendContentIntoTitleBar = true` and `SetTitleBar(AppTitleBar);`
 {% endnote %}
 
-# WindowLayout : RightToLeft Window
+## WindowLayout : RightToLeft Window
 
 ```xml
 <dev:ModernWindow x:Class="DevWinUIGallery.Views.SampleWindow"
@@ -123,7 +147,7 @@ You dont need to use `ExtendContentIntoTitleBar = true` and `SetTitleBar(AppTitl
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Window-WindowLayoutRightToLeft.png)
 
 
-# LegacySystemMenuTheme
+## LegacySystemMenuTheme
 ```xml
 <dev:ModernWindow x:Class="DevWinUIGallery.Views.SampleWindow"
                  
@@ -133,7 +157,7 @@ You dont need to use `ExtendContentIntoTitleBar = true` and `SetTitleBar(AppTitl
 ```
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Window-LegacySystemMenuTheme.png)
 
-# CornerRadius
+## CornerRadius
 ```xml
 <dev:ModernWindow x:Class="DevWinUIGallery.Views.SampleWindow"
                  
@@ -143,7 +167,7 @@ You dont need to use `ExtendContentIntoTitleBar = true` and `SetTitleBar(AppTitl
 ```
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Window-CornerRadius.png)
 
-# UseModernSystemMenu
+## UseModernSystemMenu
 ```xml
 <dev:ModernWindow x:Class="DevWinUIGallery.Views.SampleWindow"
                  
@@ -153,7 +177,7 @@ You dont need to use `ExtendContentIntoTitleBar = true` and `SetTitleBar(AppTitl
 ```
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Window-UseModernSystemMenu.png)
 
-# UseRainbowFrame
+## UseRainbowFrame
 ```xml
 <dev:ModernWindow x:Class="DevWinUIGallery.Views.SampleWindow"
                  
@@ -162,6 +186,34 @@ You dont need to use `ExtendContentIntoTitleBar = true` and `SetTitleBar(AppTitl
 </dev:ModernWindow>
 ```
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Window-UseRainbowFrame.gif)
+
+## Monitor Window Messages
+The Windows Message Monitor allows you to receive raw Windows Messaging Events and further control and monitor the Window.
+You can override virtual methods or subscribe events.
+
+```cs
+protected override void OnWindowMessageReceived(object? sender, WindowMessageEventArgs e)
+{
+    base.OnWindowMessageReceived(sender, e);
+    if (e.Message.MessageId == 0x0214) //WM_SIZING event
+    {
+        string side = "";
+        switch (e.Message.WParam)
+        {
+            case 1: side = "Left"; break;
+            case 2: side = "Right"; break;
+            case 3: side = "Top"; break;
+            case 4: side = "Top-Left"; break;
+            case 5: side = "Top-Right"; break;
+            case 6: side = "Bottom"; break;
+            case 7: side = "Bottom-Left"; break;
+            case 8: side = "Bottom-Right"; break;
+        }
+        var rect = Marshal.PtrToStructure<RECT>((IntPtr)e.Message.LParam);
+        Debug.WriteLine($"WM_SIZING: Side: {side} Rect: {rect.left},{rect.top},{rect.right},{rect.bottom}");
+    }
+}
+```
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
