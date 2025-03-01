@@ -31,5 +31,11 @@ var appDataPath = await PathHelper.GetAppDataFolderPath();
 var exePath = await PathHelper.GetExecutablePathNative();
 ```
 
+# GetKnownFolderPath
+```cs
+var path = PathHelper.GetKnownFolderPath(KnownFolderOption.Downloads);
+
+```
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

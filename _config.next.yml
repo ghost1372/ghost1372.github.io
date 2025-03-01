@@ -405,6 +405,7 @@ menu:
     ModernSystemMenu: /modernSystemMenu/ ||
     NavigationService: /navigationService/ ||
     PersianDateTime: /persianDateTime/ ||
+    Pickers: /pickers/ ||
     RainbowFrame: /rainbowFrame/ ||
     RelativeDate: /relativeDate/ ||
     SemanticVersion: /semanticVersion/ ||
