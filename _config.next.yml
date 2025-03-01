@@ -378,7 +378,6 @@ menu:
       CredentialHelper: /credentialHelper/ ||
       DisplayMonitorHelper: /displayMonitorHelper/ ||
       DragMoveAndResizeHelper: /dragMoveAndResizeHelper/ ||
-      FileAndFolderPickerHelper: /fileAndFolderPickerHelper/ ||
       FileHelper: /fileHelper/ ||
       GeneralHelper: /generalHelper/ ||
       INIHelper: /iniHelper/ ||
