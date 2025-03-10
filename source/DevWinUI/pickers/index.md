@@ -2,6 +2,10 @@
 title: Pickers
 ---
 
+{% note danger %}
+This API will be removed in `WASDK v1.8` or any future version that introduces the Picker API.
+{% endnote %}
+
 SavePicker, FilePicker and FolderPicker which support AOT, Packaged/UnPackaged and Elevated Apps.
 
 {% note info %}
