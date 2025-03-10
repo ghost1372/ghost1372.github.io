@@ -33,7 +33,7 @@ var exePath = await PathHelper.GetExecutablePathNative();
 
 # GetKnownFolderPath
 ```cs
-var path = PathHelper.GetKnownFolderPath(KnownFolderOption.Downloads);
+var path = PathHelper.GetKnownFolderPath(PickerLocationId.Downloads);
 
 ```
 

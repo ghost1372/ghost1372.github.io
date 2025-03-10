@@ -9,9 +9,8 @@ you can use simple methods which return a `string` or `List<string>` or you can 
 {% endnote %}
 
 {% note info %}
-If you want to set `DefaultFileType`, you need to set your FileTypeChoices item `Key`. for example: `picker.DefaultFileType = "Images";`
+If you want to set `DefaultFileExtension`, you need to set your FileTypeChoices item `Key`. for example: `picker.DefaultFileExtension = "Images";`
 {% endnote %}
-
 
 # FilePicker
 
@@ -19,34 +18,39 @@ If you want to set `DefaultFileType`, you need to set your FileTypeChoices item 
 |Name|
 |-|
 |Options|
-|OkButtonLabel|
-|DefaultFileName|
-|DefaultFileType|
+|ShowDetailedExtension|
+|CommitButtonText|
+|SuggestedFileName|
+|DefaultFileExtension|
 |InitialDirectory|
-|InitialKnownFolder|
+|SuggestedStartLocation|
 |Title|
 |FileTypeChoices|
-|ShowAllFilesFileType|
+|ShowAllFilesOption|
 
 ## PickSingleFile/PickSingleFileAsync
 
 ``` CS
 var picker = new FilePicker();
 picker.Title = "Custom Title";
-picker.DefaultFileName = "Default FileName";
-picker.DefaultFileType = "*.*";
-picker.ShowAllFilesFileType = true;
-picker.OkButtonLabel = "Custom Confirm";
+picker.SuggestedFileName = "Default FileName";
+picker.DefaultFileExtension = "*.*";
+picker.ShowAllFilesOption = true;
+picker.CommitButtonText = "Custom Confirm";
 picker.FileTypeChoices = new Dictionary<string, List<string>>
 {
 { "Images", new List<string> { "*.png", "*.jpg", "*.jpeg", "*.bmp", "*.gif" } },
 { "Text Files", new List<string> { "*.txt", "*.md", "*.log" } }
 };
 
+// OR
+// picker.FileTypeChoices.Add("Images", new List<string> { "*.png", "*.jpg", "*.jpeg", "*.bmp", "*.gif" });
+// picker.FileTypeChoices.Add("Text Files", new List<string> { "*.txt", "*.md", "*.log" });
+
 picker.InitialDirectory = @"C:\";
 
 // Or use 
-// picker.InitialKnownFolder = KnownFolderOption.Downloads;
+// picker.SuggestedStartLocation = PickerLocationId.Downloads;
 
 var file = await picker.PickSingleFileAsync(Hwnd);
 if (file != null)
@@ -60,20 +64,24 @@ if (file != null)
 ```cs
 var picker = new FilePicker();
 picker.Title = "Custom Title";
-picker.DefaultFileName = "Default FileName";
-picker.DefaultFileType = "*.*";
-picker.ShowAllFilesFileType = true;
-picker.OkButtonLabel = "Custom Confirm";
+picker.SuggestedFileName = "Default FileName";
+picker.DefaultFileExtension = "*.*";
+picker.ShowAllFilesOption = true;
+picker.CommitButtonText = "Custom Confirm";
 picker.FileTypeChoices = new Dictionary<string, List<string>>
 {
 { "Images", new List<string> { "*.png", "*.jpg", "*.jpeg", "*.bmp", "*.gif" } },
 { "Text Files", new List<string> { "*.txt", "*.md", "*.log" } }
 };
 
+// OR
+// picker.FileTypeChoices.Add("Images", new List<string> { "*.png", "*.jpg", "*.jpeg", "*.bmp", "*.gif" });
+// picker.FileTypeChoices.Add("Text Files", new List<string> { "*.txt", "*.md", "*.log" });
+
 picker.InitialDirectory = @"C:\";
 
 // Or use 
-// picker.InitialKnownFolder = KnownFolderOption.Downloads;
+// picker.SuggestedStartLocation = PickerLocationId.Downloads;
 
 var files = await picker.PickMultipleFilesAsync(Hwnd);
 StringBuilder stringBuilder = new StringBuilder();
@@ -90,34 +98,39 @@ Txt.Text = stringBuilder.ToString();
 |Name|
 |-|
 |Options|
-|OkButtonLabel|
-|DefaultFileName|
-|DefaultFileType|
+|ShowDetailedExtension|
+|CommitButtonText|
+|SuggestedFileName|
+|DefaultFileExtension|
 |InitialDirectory|
-|InitialKnownFolder|
+|SuggestedStartLocation|
 |Title|
 |FileTypeChoices|
-|ShowAllFilesFileType|
+|ShowAllFilesOption|
 
 ## PickSaveFile/PickSaveFileAsync
 
 ```cs
 var picker = new SavePicker();
 picker.Title = "Custom Title";
-picker.DefaultFileName = "Default FileName";
-picker.DefaultFileType = "*.*";
-picker.ShowAllFilesFileType = true;
-picker.OkButtonLabel = "Custom Confirm";
+picker.SuggestedFileName = "Default FileName";
+picker.DefaultFileExtension = "*.*";
+picker.ShowAllFilesOption = true;
+picker.CommitButtonText = "Custom Confirm";
 picker.FileTypeChoices = new Dictionary<string, List<string>>
 {
 { "Images", new List<string> { "*.png", "*.jpg", "*.jpeg", "*.bmp", "*.gif" } },
 { "Text Files", new List<string> { "*.txt", "*.md", "*.log" } }
 };
 
+// OR
+// picker.FileTypeChoices.Add("Images", new List<string> { "*.png", "*.jpg", "*.jpeg", "*.bmp", "*.gif" });
+// picker.FileTypeChoices.Add("Text Files", new List<string> { "*.txt", "*.md", "*.log" });
+
 picker.InitialDirectory = @"C:\";
 
 // Or use 
-// picker.InitialKnownFolder = KnownFolderOption.Downloads;
+// picker.SuggestedStartLocation = PickerLocationId.Downloads;
 
 var file = await picker.PickSaveFileAsync(Hwnd);
 if (file != null)
@@ -132,21 +145,21 @@ if (file != null)
 |Name|
 |-|
 |Options|
-|OkButtonLabel|
-|DefaultFileName|
+|CommitButtonText|
+|SuggestedFileName|
 |InitialDirectory|
-|InitialKnownFolder|
+|SuggestedStartLocation|
 |Title|
 
 ## PickSingleFolder/PickSingleFolderAsync
 ```cs
 var picker = new FolderPicker();
 picker.Title = "Custom Title";
-picker.OkButtonLabel = "Custom Confirm";
+picker.CommitButtonText = "Custom Confirm";
 picker.InitialDirectory = @"C:\";
 
 // Or use 
-// picker.InitialKnownFolder = KnownFolderOption.Downloads;
+// picker.SuggestedStartLocation = PickerLocationId.Downloads;
 
 var file = await picker.PickSingleFolderAsync(Hwnd);
 if (file != null)
@@ -160,11 +173,11 @@ if (file != null)
 ```cs
 var picker = new FolderPicker();
 picker.Title = "Custom Title";
-picker.OkButtonLabel = "Custom Confirm";
+picker.CommitButtonText = "Custom Confirm";
 picker.InitialDirectory = @"C:\";
 
 // Or use 
-// picker.InitialKnownFolder = KnownFolderOption.Downloads;
+// picker.SuggestedStartLocation = PickerLocationId.Downloads;
 
 var files = await picker.PickMultipleFoldersAsync(Hwnd);
 StringBuilder stringBuilder = new StringBuilder();
