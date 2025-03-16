@@ -35,13 +35,13 @@ If you want to set `DefaultFileExtension`, you need to set your FileTypeChoices 
 ## PickSingleFile/PickSingleFileAsync
 
 ``` CS
-var picker = new FilePicker();
+var picker = new FilePicker(Hwnd);
 picker.Title = "Custom Title";
 picker.SuggestedFileName = "Default FileName";
 picker.DefaultFileExtension = "*.*";
 picker.ShowAllFilesOption = true;
 picker.CommitButtonText = "Custom Confirm";
-picker.FileTypeChoices = new Dictionary<string, List<string>>
+picker.FileTypeChoices = new Dictionary<string, IList<string>>
 {
 { "Images", new List<string> { "*.png", "*.jpg", "*.jpeg", "*.bmp", "*.gif" } },
 { "Text Files", new List<string> { "*.txt", "*.md", "*.log" } }
@@ -56,7 +56,7 @@ picker.InitialDirectory = @"C:\";
 // Or use 
 // picker.SuggestedStartLocation = PickerLocationId.Downloads;
 
-var file = await picker.PickSingleFileAsync(Hwnd);
+var file = await picker.PickSingleFileAsync();
 if (file != null)
 {
     Txt.Text = file.Path;
@@ -66,16 +66,16 @@ if (file != null)
 ## PickMultipleFiles/PickMultipleFilesAsync
 
 ```cs
-var picker = new FilePicker();
+var picker = new FilePicker(Hwnd);
 picker.Title = "Custom Title";
 picker.SuggestedFileName = "Default FileName";
 picker.DefaultFileExtension = "*.*";
 picker.ShowAllFilesOption = true;
 picker.CommitButtonText = "Custom Confirm";
-picker.FileTypeChoices = new Dictionary<string, List<string>>
+picker.FileTypeChoices = new Dictionary<string, IList<string>>
 {
-{ "Images", new List<string> { "*.png", "*.jpg", "*.jpeg", "*.bmp", "*.gif" } },
-{ "Text Files", new List<string> { "*.txt", "*.md", "*.log" } }
+{ "Images", new IList<string> { "*.png", "*.jpg", "*.jpeg", "*.bmp", "*.gif" } },
+{ "Text Files", new IList<string> { "*.txt", "*.md", "*.log" } }
 };
 
 // OR
@@ -87,7 +87,7 @@ picker.InitialDirectory = @"C:\";
 // Or use 
 // picker.SuggestedStartLocation = PickerLocationId.Downloads;
 
-var files = await picker.PickMultipleFilesAsync(Hwnd);
+var files = await picker.PickMultipleFilesAsync();
 StringBuilder stringBuilder = new StringBuilder();
 foreach (var item in files)
 {
@@ -115,16 +115,16 @@ Txt.Text = stringBuilder.ToString();
 ## PickSaveFile/PickSaveFileAsync
 
 ```cs
-var picker = new SavePicker();
+var picker = new SavePicker(Hwnd);
 picker.Title = "Custom Title";
 picker.SuggestedFileName = "Default FileName";
 picker.DefaultFileExtension = "*.*";
 picker.ShowAllFilesOption = true;
 picker.CommitButtonText = "Custom Confirm";
-picker.FileTypeChoices = new Dictionary<string, List<string>>
+picker.FileTypeChoices = new Dictionary<string, IList<string>>
 {
-{ "Images", new List<string> { "*.png", "*.jpg", "*.jpeg", "*.bmp", "*.gif" } },
-{ "Text Files", new List<string> { "*.txt", "*.md", "*.log" } }
+{ "Images", new IList<string> { "*.png", "*.jpg", "*.jpeg", "*.bmp", "*.gif" } },
+{ "Text Files", new IList<string> { "*.txt", "*.md", "*.log" } }
 };
 
 // OR
@@ -136,7 +136,7 @@ picker.InitialDirectory = @"C:\";
 // Or use 
 // picker.SuggestedStartLocation = PickerLocationId.Downloads;
 
-var file = await picker.PickSaveFileAsync(Hwnd);
+var file = await picker.PickSaveFileAsync();
 if (file != null)
 {
     Txt.Text = file.Path;
@@ -157,7 +157,7 @@ if (file != null)
 
 ## PickSingleFolder/PickSingleFolderAsync
 ```cs
-var picker = new FolderPicker();
+var picker = new FolderPicker(Hwnd);
 picker.Title = "Custom Title";
 picker.CommitButtonText = "Custom Confirm";
 picker.InitialDirectory = @"C:\";
@@ -165,7 +165,7 @@ picker.InitialDirectory = @"C:\";
 // Or use 
 // picker.SuggestedStartLocation = PickerLocationId.Downloads;
 
-var file = await picker.PickSingleFolderAsync(Hwnd);
+var file = await picker.PickSingleFolderAsync();
 if (file != null)
 {
     Txt.Text = file.Path;
@@ -175,7 +175,7 @@ if (file != null)
 ## PickMultipleFolders/PickMultipleFoldersAsync
 
 ```cs
-var picker = new FolderPicker();
+var picker = new FolderPicker(Hwnd);
 picker.Title = "Custom Title";
 picker.CommitButtonText = "Custom Confirm";
 picker.InitialDirectory = @"C:\";
@@ -183,7 +183,7 @@ picker.InitialDirectory = @"C:\";
 // Or use 
 // picker.SuggestedStartLocation = PickerLocationId.Downloads;
 
-var files = await picker.PickMultipleFoldersAsync(Hwnd);
+var files = await picker.PickMultipleFoldersAsync();
 StringBuilder stringBuilder = new StringBuilder();
 foreach (var item in files)
 {
