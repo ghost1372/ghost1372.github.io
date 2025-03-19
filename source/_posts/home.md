@@ -15,7 +15,7 @@ Select the documentation related to the desired library from the menu on the lef
 {% note info %}
 Want to see DevWinUI in action? Head over to our Gallery App for a hands-on experience. You’ll find practical examples, usage scenarios, and interactive demos that showcase the power of our toolkit. See [Galery App Source Code](https://github.com/Ghost1372/DevWinUI) or Download from Microsoft Store.
 
-<a href="https://apps.microsoft.com/detail/WUC%20Gallery%20App/9mswnv3wmqc1?launch=true
+<a href="https://apps.microsoft.com/detail/DevWinUI%20Gallery%20App/9nmx5x5dlsrq?launch=true
     &mode=mini">
     <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
 </a>
