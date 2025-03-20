@@ -497,6 +497,8 @@ menu:
   DevWinUIContextMenu - 8.0.0:
       default: /DevWinUIContextMenu/ || fas fa-brain
       Breaking Changes: /breaking_changes/ || fas fa-dice-d20
+  ReleaseNotes:
+      default: /ReleaseNotes/ || fab fa-microsoft
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
