@@ -361,6 +361,7 @@ menu:
       default: /extensions/ || fas fa-tools
       CollectionExtension: /collectionExtension/ ||
       ColorBrightnessExtension: /colorBrightnessExtension/ ||
+      ContentDialogExtension: /contentDialogExtension/ ||
       DictionaryExtensions: /dictionaryExtensions/ ||
       EnumValueExtension: /enumValueExtension/ ||
       GeneralExtension: /generalExtension/ ||
