@@ -4,18 +4,26 @@ title: INIHelper
 
 InIHelper class is for working with ini file in a simple way.
 
+First Create a new IniHelper:
+
+```cs
+// You can use RelativePath or AbsolutePath
+string filePath = "myiniFile.ini";
+InIHelper iniHelper = new InIHelper(filePath);
+```
+
 ## AddValue
 ``` CS
-bool result = InIHelper.AddValue("key1", "test1");
-bool result = InIHelper.AddValue("key2", "test2", "mySection");
+bool result = iniHelper.AddValue("key1", "test1");
+bool result = iniHelper.AddValue("key2", "test2", "mySection");
 
 ```
 
 ## ReadValue
 ``` CS
-Debug.WriteLine(InIHelper.ReadValue("key1"));
+Debug.WriteLine(iniHelper.ReadValue("key1"));
 // OR
-Debug.WriteLine(InIHelper.ReadValue("key2", "mySection"));
+Debug.WriteLine(iniHelper.ReadValue("key2", "mySection"));
 ```
 
 ## DeleteKey/DeleteSection
@@ -24,8 +32,8 @@ Debug.WriteLine(InIHelper.ReadValue("key2", "mySection"));
 you can delete a **key** or **section**
 {% endnote %}
 ``` CS
-InIHelper.DeleteKey("key2", "mySection");
-InIHelper.DeleteSection("mySection");
+iniHelper.DeleteKey("key2", "mySection");
+iniHelper.DeleteSection("mySection");
 ```
 
 ## IsKeyExists
@@ -35,6 +43,6 @@ you can check if a key exist or not
 {% endnote %}
 
 ``` CS
-bool result = InIHelper.IsKeyExists("key1");
-bool result = InIHelper.IsKeyExists("key2", "mySection");
+bool result = iniHelper.IsKeyExists("key1");
+bool result = iniHelper.IsKeyExists("key2", "mySection");
 ```
