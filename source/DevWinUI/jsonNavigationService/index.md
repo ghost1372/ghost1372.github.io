@@ -2,6 +2,8 @@
 title: JsonNavigationService
 ---
 
+# Normal Usage
+
 Easily implement a `NavigationView` With `Json` file (we read navigationview items from a json file)
 
 
@@ -26,22 +28,24 @@ jsonNavigationService = new JsonNavigationService();
 
 now you should call `Initialize` method with a `NavigationView`, `Frame` and `PageDictionary`
 
-for `PageDictionary`, Create a new T4 template and Copy-Paste following Script, this script help you to Auto Generate it:
+```cs
+public Dictionary<string, Type> PageDictionary { get; } = new Dictionary<string, Type>
+{
+    {"DevWinUIGallery.Views.HomeLandingPage", typeof(DevWinUIGallery.Views.HomeLandingPage)},
+    {"DevWinUIGallery.Views.BlankPage1", typeof(DevWinUIGallery.Views.BlankPage1)},
+};
 
-{% note info %}
-Due to the limitation in using reflection in AOT, we have to use the following method
-{% endnote %}
+jsonNavigationService.Initialize(NavView, NavFrame, NavigationPageMappings.PageDictionary)
+                     .ConfigureJsonFile("Assets/NavViewMenu/AppData.json");
+```
+
+# T4 Template
+You can simplify creating `PageDictionary` by Creating a new T4 template.
+Copy-Paste following Script, this script help you to Auto Generate `PageDictionary`:
 
 {% note warning %}
 - Replace `$T4_NAMESPACE$` with your app namespace
 {% endnote %}
-
-```cs
-jsonNavigationService
-                .Initialize(NavView, NavFrame, NavigationPageMappings.PageDictionary)
-                .ConfigureJsonFile("Assets/NavViewMenu/AppData.json");
-```
-T4 Template:
 
 ```t4
 <#@ template language="C#" hostspecific="true" #>
@@ -223,6 +227,8 @@ string FindProjectRoot(string directory)
 #>
 ```
 
+## Auto Generate Target
+
 {% note warning %}
 Visual Studio cannot automatically generate T4 files, to solve this problem we need to create a target to generate all T4 files when building the project.
 {% endnote %}
@@ -290,7 +296,9 @@ Initializ(...).ConfigureBreadcrumbBar(BreadCrumbNav, NavigationPageMappings.Page
 
 use `dev:BreadcrumbNavigator.PageTitle` and `dev:BreadcrumbNavigator.IsHeaderVisible` attached properties on your pages, for Title and Header visiblity.
 
-You can simplify creating `PageDictionary` by Creating a new T4 template.
+### T4 Template
+
+You can simplify creating `PageDictionary` by Creating a T4 template.
 Copy-Paste following Script, this script help you to Auto Generate `PageDictionary`:
 
 {% note warning %}
@@ -474,6 +482,8 @@ string FindProjectRoot(string directory)
 }
 ```
 
+#### Auto Generate Target
+
 {% note warning %}
 Visual Studio cannot automatically generate T4 files, to solve this problem we need to create a target to generate all T4 files when building the project.
 {% endnote %}
@@ -505,7 +515,6 @@ you can use ConfigureTitleBar to automatically handle `BackButton` and `PaneTogg
 Initializ(...).ConfigureTitleBar(AppTitleBar);
 ```
 
-
 ## Complete Codes
 
 ```cs
@@ -520,6 +529,7 @@ jsonNavigationService
                 .ConfigureAutoSuggestBox(HeaderAutoSuggestBox)
                 .ConfigureBreadcrumbBar(BreadCrumbNav, BreadcrumbPageMappings.PageDictionary);
 ```
+
 {% note warning %}
 Make sure to call `ConfigureJsonFile` method after `ConfigureDefaultPage`, this will ensure the default page loads properly in initial load.
 {% endnote %}
@@ -590,6 +600,13 @@ public BlankPage()
 If you want to use `Frame.GoBack` to navigate back in the frame while maintaining the correct `NavigationViewItem` selection, you should use `JsonNavigationService.GoBack` instead. This ensures that the NavigationView stays in sync with the current page.
 {% endnote %}
 
+{% note warning %}
+You dont need to define multiple `Target` for T4, Once you define a target, it can be used for all t4 templates.
+{% endnote %}
+
+{% note warning %}
+`JsonNavigationService.Initialize` and `ConfigureBreadcrumbBar` Both **require** a `PageDictionary`. But their types are different and the T4 templates for them are different too. So if you are using T4, note that you need both scripts but you can only use one target.
+{% endnote %}
 
 # Localize Strings
 
@@ -619,29 +636,11 @@ use your `key` in `LocalizeId` field in json file.
 - Set BuildAction for `AppData.json` to `Content` and if you are in a Unpackaged app, also set `CopyToOutput` to `Always`
 {% endnote %}
 
-{% note info %}
-To see details and descriptions of Json's properties, refer to <ins>**[this](https://ghost1372.github.io/DevWinUI/jsonFile)**</ins> page
-{% endnote %}
-
-{% note warning %}
-If you have items that use the same Page, you should set the `parameter` property in the json file to avoid navigation errors.
-
-"UniqueId": "DevWinUI.DemoApp.Pages.myPage",
-"Title": "Movie"
-"Parameter": "Movie"
-
----
-
-"UniqueId": "DevWinUI.DemoApp.Pages.myPage",
-"Title": "Series"
-"Parameter": "Series"
-
-{% endnote %}
-
 this is a json file content:
 
 ```json
 {
+  "$schema": "https://raw.githubusercontent.com/Ghost1372/DevWinUI/refs/heads/main/AppData.Schema.json",
   "Groups": [
     {
       "UniqueId": "Features",
