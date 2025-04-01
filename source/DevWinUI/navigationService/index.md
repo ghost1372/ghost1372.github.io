@@ -82,6 +82,8 @@ Initializ(...).ConfigureBreadcrumbBar(BreadCrumbNav, NavigationPageMappings.Page
 
 use `dev:BreadcrumbNavigator.PageTitle` and `dev:BreadcrumbNavigator.IsHeaderVisible` attached properties on your pages, for Title and Header visiblity.
 
+### T4 Template
+
 You can simplify creating `PageDictionary` by Creating a new T4 template.
 Copy-Paste following Script, this script help you to Auto Generate `PageDictionary`:
 
@@ -265,6 +267,8 @@ string FindProjectRoot(string directory)
     };
 }
 ```
+
+#### Auto Generate Target
 
 {% note warning %}
 Visual Studio cannot automatically generate T4 files, to solve this problem we need to create a target to generate all T4 files when building the project.
