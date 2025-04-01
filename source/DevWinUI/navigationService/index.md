@@ -74,12 +74,13 @@ it is better to place `BreadcrumbNavigator` in `NavigationView.Header`
 </NavigationView.Header>
 ```
 
+Now Call `ConfigureBreadcrumbBar` method:
+
 ```cs
 Initializ(...).ConfigureBreadcrumbBar(BreadCrumbNav, NavigationPageMappings.PageDictionary);
-```            
+```
 
 use `dev:BreadcrumbNavigator.PageTitle` and `dev:BreadcrumbNavigator.IsHeaderVisible` attached properties on your pages, for Title and Header visiblity.
-
 
 You can simplify creating `PageDictionary` by Creating a new T4 template.
 Copy-Paste following Script, this script help you to Auto Generate `PageDictionary`:
