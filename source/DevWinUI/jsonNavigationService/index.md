@@ -247,6 +247,7 @@ set Default page for NavigationView
 ```cs
 Initializ(...).ConfigureDefaultPage(typeof(HomeLandingsPage));
 ```
+
 ## ConfigureSettingsPage
 set Settings page for NavigationView
 
@@ -259,7 +260,7 @@ You can search in the autosuggestbox and be navigated to the results page
 
 ```cs
 Initializ(...).ConfigureAutoSuggestBox(autoSuggestBox);
-```            
+```
 
 ## ConfigureBreadcrumbBar
 You should have a `PageDictionary` like this, which you can define your pages:
