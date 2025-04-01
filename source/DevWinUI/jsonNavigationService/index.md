@@ -262,16 +262,16 @@ Initializ(...).ConfigureAutoSuggestBox(autoSuggestBox);
 ```            
 
 ## ConfigureBreadcrumbBar
-for `PageDictionary`, Create a new T4 template and Copy-Paste following Script, this script help you to Auto Generate it:
+You should have a `PageDictionary` like this, which you can define your pages:
 
-{% note info %}
-Due to the limitation in using reflection in AOT, we have to use the following method
-{% endnote %}
-
-{% note warning %}
-- Replace `$T4_NAMESPACE$` with your app namespace
-{% endnote %}
-
+```cs
+public Dictionary<Type, BreadcrumbPageConfig> PageDictionary = new()
+{
+    {typeof(BlankPage1), new BreadcrumbPageConfig { PageTitle = "Page 1", IsHeaderVisible = true, ClearNavigation = false}},
+    {typeof(BlankPage2), new BreadcrumbPageConfig { PageTitle = "Page 2", IsHeaderVisible = true, ClearNavigation = false}},
+    {typeof(BlankPage3), new BreadcrumbPageConfig { PageTitle = "Page 3", IsHeaderVisible = true, ClearNavigation = false}},
+};
+```
 it is better to place `BreadcrumbNavigator` in `NavigationView.Header`
 
 ```xml
@@ -285,6 +285,13 @@ Initializ(...).ConfigureBreadcrumbBar(BreadCrumbNav, NavigationPageMappings.Page
 ```            
 
 use `dev:BreadcrumbNavigator.PageTitle` and `dev:BreadcrumbNavigator.IsHeaderVisible` attached properties on your pages, for Title and Header visiblity.
+
+You can simplify creating `PageDictionary` by Creating a new T4 template.
+Copy-Paste following Script, this script help you to Auto Generate `PageDictionary`:
+
+{% note warning %}
+- Replace `$T4_NAMESPACE$` with your app namespace
+{% endnote %}
 
 ```t4
 <#@ template language="C#" hostspecific="true" #>
@@ -507,11 +514,12 @@ jsonNavigationService
                 .ConfigureSectionPage(typeof(DemoSectionPage))
                 .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
                 .ConfigureAutoSuggestBox(HeaderAutoSuggestBox)
-                .ConfigureBreadcrumbBar(JsonBreadCrumbNavigator, BreadcrumbPageMappings.PageDictionary);
+                .ConfigureBreadcrumbBar(BreadCrumbNav, BreadcrumbPageMappings.PageDictionary);
 ```
 {% note warning %}
 Make sure to call `ConfigureJsonFile` method after `ConfigureDefaultPage`, this will ensure the default page loads properly in initial load.
 {% endnote %}
+
 # MVVM Patern
 first register a `IJsonNavigationService` service:
 

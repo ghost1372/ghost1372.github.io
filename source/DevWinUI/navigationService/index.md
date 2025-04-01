@@ -1,153 +1,364 @@
 ---
-title: NavigationService
+title: NavigationServiceEx
 ---
 
-First Create a Class `myPageService` and inherit from `PageServiceEx`
+Easily implement a NavigationView!
 
-then in this class in `ctor` add your pages with a key into `_pageKeyToTypeMap` dictionary:
-
-```cs
-public class myPageService : PageServiceEx
-{
-    public myPageService()
-    {
-        _pageKeyToTypeMap = new Dictionary<string, Type>
-        {
-            { "BlankPage1", typeof(BlankPage1) },
-            { "BlankPage2", typeof(BlankPage2) },
-            { "BlankPage3", typeof(BlankPage3) },
-        };
-    }
-}
-```
-
-{% note info %}
-you can also inherit from IPageService
-{% endnote %}
-
-now create a new `myPageService` class, and here you can set DefaultPage or SettingsPage for NavigationView:
+First Add a NavigationView with your Items:
 
 ```cs
-var pageService = new myPageService();
-pageService.SetDefaultPage(typeof(HomeLandingsPage));
-pageService.SetSettingsPage(typeof(GeneralPage));
-```
-
-after creating myPageService, Create `INavigationViewServiceEx` and `INavigationServiceEx`:
-
-```cs
-INavigationViewServiceEx navigationViewService;
-INavigationServiceEx navigationService;
-
-navigationService = new NavigationServiceEx(pageService);
-navigationService.Frame = navFrame;
-navigationViewService = new NavigationViewServiceEx(navigationService, pageService);
-```
-
-as you can see, we should set `Frame` in `navigationService`.
-
-then we should call `Initialize` Method:
-
-```cs
-navigationViewService.Initialize(navigationView);
-```
-
-now you should add a `NavigateTo` in your NavigationViewItem:
-
-```xml
-<NavigationViewItem helper:NavigationHelperEx.NavigateTo="BlankPage1" Content="First" />
-```
-
-{% note info %}
-BlankPage1 is a key, you defined it in myPageService.
-{% endnote %}
-
-# Config
-there are some config methods:
-
-## ConfigAutoSuggestBox
-
-You can search in the autosuggestbox and be navigated to the results page
-```cs
-navigationViewService.ConfigAutoSuggestBox(autoSuggestBox);
-```
-
-
-```xml
-<NavigationView Name="navigationView">
-    <NavigationView.AutoSuggestBox>
-        <AutoSuggestBox Name="autoSuggestBox" />
-    </NavigationView.AutoSuggestBox>
+<NavigationView x:Name="NavView">
     <NavigationView.MenuItems>
-        <NavigationViewItem dev:NavigationHelper.NavigateTo="BlankPage1"
-                            Content="First" />
-        <NavigationViewItem Content="Second">
-            <NavigationViewItem.MenuItems>
-                <NavigationViewItem dev:NavigationHelper.NavigateTo="BlankPage2"
-                                    Content="Third" />
-                <NavigationViewItem Content="Four">
-                    <NavigationViewItem.MenuItems>
-                        <NavigationViewItem dev:NavigationHelper.NavigateTo="BlankPage3"
-                                            Content="Five" />
-                    </NavigationViewItem.MenuItems>
-                </NavigationViewItem>
-            </NavigationViewItem.MenuItems>
-        </NavigationViewItem>
+        <NavigationViewItem dev:NavigationServiceEx.NavigateTo="views:BlankPage1"
+                            Content="Page 1" />
+        <NavigationViewItem dev:NavigationServiceEx.NavigateTo="views:BlankPage2"
+                            Content="Page 2" />
+        <NavigationViewItem dev:NavigationServiceEx.NavigateTo="views:BlankPage3"
+                            Content="Page 3" />
     </NavigationView.MenuItems>
-    <Frame Name="navFrame" />
+    <Frame x:Name="NavFrame"/>
 </NavigationView>
 ```
 
-## Complete Codes
+{% note warning %}
+`NavigationServiceEx.NavigateTo` attached property allows each `NavigationViewItem` to define the destination page directly in XAML. It simplifies navigation by binding menu items to specific views without requiring explicit event handlers.
+{% endnote %}
+
+then Create a new INavigationServiceEx:
 
 ```cs
-INavigationViewServiceEx navigationViewService;
 INavigationServiceEx navigationService;
+navigationService = new NavigationServiceEx();
 
-var pageService = new myPageService();
-pageService.SetDefaultPage(typeof(HomeLandingsPage));
-pageService.SetSettingsPage(typeof(GeneralPage));
+```
+now you should call `Initialize` method with a `NavigationView` and `Frame`
 
-navigationService = new NavigationServiceEx(pageService);
-navigationService.Frame = navFrame;
+```cs
+navigationService.Initialize(NavView, NavFrame);
+```
 
-navigationViewService = new NavigationViewServiceEx(navigationService, pageService);
-navigationViewService.Initialize(navigationView);
-navigationViewService.ConfigAutoSuggestBox(autoSuggestBox);
+# Configs
+there are some configure methods:
+
+## ConfigureDefaultPage
+set Default page for NavigationView
+```cs
+Initializ(...).ConfigureDefaultPage(typeof(HomeLandingsPage));
+```
+## ConfigureSettingsPage
+set Settings page for NavigationView
+
+```cs
+Initializ(...).ConfigureSettingsPage(typeof(GeneralPage));
+```
+
+## ConfigureBreadcrumbBar
+You should have a `PageDictionary` like this, which you can define your pages:
+
+```cs
+public Dictionary<Type, BreadcrumbPageConfig> PageDictionary = new()
+{
+    {typeof(BlankPage1), new BreadcrumbPageConfig { PageTitle = "Page 1", IsHeaderVisible = true, ClearNavigation = false}},
+    {typeof(BlankPage2), new BreadcrumbPageConfig { PageTitle = "Page 2", IsHeaderVisible = true, ClearNavigation = false}},
+    {typeof(BlankPage3), new BreadcrumbPageConfig { PageTitle = "Page 3", IsHeaderVisible = true, ClearNavigation = false}},
+};
+```
+
+it is better to place `BreadcrumbNavigator` in `NavigationView.Header`
+
+```xml
+<NavigationView.Header>
+    <dev:BreadcrumbNavigator x:Name="BreadCrumbNav" />
+</NavigationView.Header>
+```
+
+```cs
+Initializ(...).ConfigureBreadcrumbBar(BreadCrumbNav, NavigationPageMappings.PageDictionary);
+```            
+
+use `dev:BreadcrumbNavigator.PageTitle` and `dev:BreadcrumbNavigator.IsHeaderVisible` attached properties on your pages, for Title and Header visiblity.
+
+
+You can simplify creating `PageDictionary` by Creating a new T4 template.
+Copy-Paste following Script, this script help you to Auto Generate `PageDictionary`:
+
+{% note warning %}
+- Replace `$T4_NAMESPACE$` with your app namespace
+{% endnote %}
+
+```t4
+<#@ template language="C#" hostspecific="true" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.IO" #>
+<#@ assembly name="System.Text.Json" #>
+<#@ assembly name="System.Memory" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Text.Json" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ assembly name="System.Xml" #>
+<#@ assembly name="System.Xml.Linq" #>
+<#@ import namespace="System.Xml.Linq" #>
+<#@ import namespace="System.Collections.Generic" #>
+// -----------------------------------------------------------------------------------------------------
+// | <auto-generated>                                                                                  |
+// |    This code was generated by a tool.                                                             |
+// |                                                                                                   |
+// |    Changes to this file may cause incorrect behavior and will be lost if the code is regenerated. |
+// | </auto-generated>                                                                                 |
+// -----------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+
+namespace $T4_NAMESPACE$;
+public partial class BreadcrumbPageMappings
+{
+    public static Dictionary<Type, BreadcrumbPageConfig> PageDictionary = new()
+    {
+<#
+// Get the directory of the project
+string rootDirectory = FindProjectRoot(Path.GetDirectoryName(Host.TemplateFile));
+List<string> xamlFiles = GetXamlClasses(rootDirectory);
+foreach (var file in xamlFiles)
+{
+    try
+    {
+        string content = File.ReadAllText(file);
+        string relativePath = GetRelativePath(rootDirectory, file);
+        ExtractAttachedProperties(content);
+    }
+    catch (Exception ex)
+    {
+#> 
+        // Output an error message as comment in the generated file
+        <#= $"// Error loading XAML file: {file} - {ex.Message}" #>
+<# 
+    }
+}
+
+void ExtractAttachedProperties(string content)
+{
+    // Extract the Type from the x:Class attribute
+    string xClassValue = GetXClassValue(content);
+    if (string.IsNullOrEmpty(xClassValue))
+    {
+        return; // Skip if no x:Class found
+    }
+
+    string pageTitle = GetAttachedPropertyValue("BreadcrumbNavigator.PageTitle", content);
+    string isHeaderVisible = GetAttachedPropertyValue("BreadcrumbNavigator.IsHeaderVisible", content);
+    string clearCache = GetAttachedPropertyValue("BreadcrumbNavigator.ClearCache", content);
+
+    // Using ternary operators to set values or default to empty strings
+    string title = !string.IsNullOrEmpty(pageTitle) ? pageTitle : string.Empty;
+
+    // Convert to bool based on string value directly
+    bool isHeaderVisibile = isHeaderVisible?.Equals("True", StringComparison.OrdinalIgnoreCase) ?? false;
+    bool clearNavigation = clearCache?.Equals("True", StringComparison.OrdinalIgnoreCase) ?? false;
+
+    if (string.IsNullOrEmpty(title) && string.IsNullOrEmpty(isHeaderVisible) && string.IsNullOrEmpty(clearCache))
+    {
+        return;
+    }
+#>
+        <#= $"{{typeof({xClassValue}), new BreadcrumbPageConfig {{ PageTitle = {(string.IsNullOrEmpty(title) ? "null" : $"\"{title}\"")}, IsHeaderVisible = {isHeaderVisibile.ToString().ToLower()}, ClearNavigation = {clearNavigation.ToString().ToLower()}}}}}," #>
+<#
+}
+string GetXClassValue(string content)
+{
+    // Simple regex to match x:Class attribute
+    var match = System.Text.RegularExpressions.Regex.Match(content, @"x:Class=""([^""]+)""");
+    if (match.Success && match.Groups.Count > 1)
+    {
+        return match.Groups[1].Value; // Return the matched class value
+    }
+    return null;
+}
+
+string GetAttachedPropertyValue(string propertyName, string content)
+{
+    // Find the property assignment in the content
+    var lines = content.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+    foreach (var line in lines)
+    {
+        if (line.Contains(propertyName))
+        {
+            // Extract the value after '=' and before the next ';' or new line
+            int startIndex = line.IndexOf('=') + 1;
+            int endIndex = line.IndexOf(';', startIndex);
+            if (endIndex == -1) endIndex = line.Length;
+
+            string value = line.Substring(startIndex, endIndex - startIndex).Trim().Trim('"');
+            return value;
+        }
+    }
+    return null;
+}
+
+List<string> GetXamlClasses(string projectDirectory)
+{
+    var xamlClasses = new List<string>();
+    var xamlFiles = Directory.GetFiles(projectDirectory, "*.xaml", SearchOption.AllDirectories);
+
+    foreach (var file in xamlFiles)
+    {
+        // Filter out files that belong to other projects (assumed by the presence of 'obj' or 'bin' folders)
+        if (file.Contains($"{Path.DirectorySeparatorChar}obj{Path.DirectorySeparatorChar}") ||
+            file.Contains($"{Path.DirectorySeparatorChar}bin{Path.DirectorySeparatorChar}"))
+        {
+            continue;
+        }
+
+        XDocument xamlDoc = null;
+        try
+        {
+            xamlDoc = XDocument.Load(file);
+        }
+        catch
+        {
+            continue;
+        }
+
+        XElement rootElement = xamlDoc.Root;
+        if (rootElement != null && rootElement.Name.LocalName != "Window" &&
+            rootElement.Name.LocalName != "Application" &&
+            rootElement.Name.LocalName != "ResourceDictionary")
+        {
+            XAttribute classAttribute = rootElement.Attribute(XName.Get("Class", "http://schemas.microsoft.com/winfx/2006/xaml"));
+            if (classAttribute != null)
+            {
+                xamlClasses.Add(file);
+            }
+        }
+    }
+
+    return xamlClasses;
+}
+
+string GetRelativePath(string basePath, string fullPath)
+{
+    Uri baseUri = new Uri(basePath + Path.DirectorySeparatorChar);
+    Uri fullUri = new Uri(fullPath);
+    return baseUri.MakeRelativeUri(fullUri).ToString().Replace('/', Path.DirectorySeparatorChar);
+}
+string FindProjectRoot(string directory)
+{
+    while (!string.IsNullOrEmpty(directory))
+    {
+        // Check for .csproj or .sln files in the current directory
+        if (Directory.GetFiles(directory, "*.csproj", SearchOption.TopDirectoryOnly).Any() ||
+            Directory.GetFiles(directory, "*.sln", SearchOption.TopDirectoryOnly).Any())
+        {
+            return directory; // Found the project root
+        }
+
+        // Move one level up in the directory hierarchy
+        directory = Directory.GetParent(directory)?.FullName;
+    }
+
+    return null; // No project root found
+}
+#>
+    };
+}
+```
+
+{% note warning %}
+Visual Studio cannot automatically generate T4 files, to solve this problem we need to create a target to generate all T4 files when building the project.
+{% endnote %}
+
+```xml
+<Target Name="TransformAllT4Templates" BeforeTargets="BeforeBuild">
+  <ItemGroup>
+    <!-- This picks up all T4 templates in the project -->
+    <T4Template Include="**\*.tt" />
+  </ItemGroup>
+
+  <!-- Check if TextTransform.exe exists before running -->
+  <Exec Command="if exist &quot;$(DevEnvDir)TextTransform.exe&quot; &quot;$(DevEnvDir)TextTransform.exe&quot; &quot;%(T4Template.FullPath)&quot;" Condition="Exists('$(DevEnvDir)TextTransform.exe')" />
+</Target>
+```
+
+## ConfigureTitleBar
+you can use ConfigureTitleBar to automatically handle `BackButton` and `PaneToggleButton`
+
+```cs
+Initializ(...).ConfigureTitleBar(AppTitleBar);
 ```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/NavigationViewHelper.gif)
 
-# MVVM Pattern
-you can use MVVM pattern:
-
-First Register your Services:
+## Complete Codes
 
 ```cs
-var services = new ServiceCollection();
-services.AddSingleton<IPageServiceEx, myPageService>();
-services.AddSingleton<INavigationServiceEx, NavigationServiceEx>();
-services.AddTransient<INavigationViewServiceEx, NavigationViewServiceEx>();
+INavigationServiceEx navigationService;
+navigationService = new NavigationServiceEx();
+navigationService.Initialize(NavView, NavFrame)
+                 .ConfigureDefaultPage(typeof(HomeLandingPage))
+                 .ConfigureSettingsPage(typeof(SettingsPage))
+                 .ConfigureBreadcrumbBar(BreadCrumbNav, BreadcrumbPageMappings.PageDictionary);
 ```
 
-then, in your `MainViewModel`
+# MVVM Pattern
+first register a `INavigationServiceEx` service:
+
 
 ```cs
-public INavigationServiceEx NavigationService { get; }
-public INavigationViewServiceEx NavigationViewService { get; }
-public MainViewModel(INavigationServiceEx navigationService, INavigationViewServiceEx navigationViewService)
+services.AddSingleton<INavigationServiceEx, NavigationServiceEx>();
+```
+
+then:
+
+```cs
+public MainPage()
 {
-    NavigationService = navigationService;
-    NavigationViewService = navigationViewService;
+    this.InitializeComponent();
+    var navService = App.GetService<INavigationServiceEx>() as NavigationServiceEx;
+    
+    navService.Initialize(NavView, NavFrame)
+            .ConfigureDefaultPage(typeof(HomeLandingPage))
+            .ConfigureSettingsPage(typeof(SettingsPage));
 }
 ```
 
-finally in your `MainPage.xaml.cs`
+# INavigationAwareEx
+you can use `INavigationAwareEx` in your ViewModel and you can access to `OnNavigatedFrom` and `OnNavigatedTo` methods.
 
 ```cs
-ViewModel.NavigationService.Frame = frame;
-ViewModel.NavigationViewService.Initialize(navigationView);
+public partial class myViewModel : INavigationAwareEx
+
+public void OnNavigatedFrom()
+{
+
+}
+
+public async void OnNavigatedTo(object parameter)
+{
+    
+}
+
 ```
+
+{% note warning %}
+you should set `DataContext`, otherwise you cant use this interface.
+{% endnote %}
+
+```cs
+public myViewModel ViewModel {get;}
+
+public BlankPage()
+{
+    ViewModel = App.GetService<myViewModel>();
+    DataContext = ViewModel;
+    this.InitializeComponent();
+}
+```
+
+# Notes
+
+{% note warning %}
+If you want to use `Frame.GoBack` to navigate back in the frame while maintaining the correct `NavigationViewItem` selection, you should use `NavigationServiceEx.GoBack` instead. This ensures that the NavigationView stays in sync with the current page.
+{% endnote %}
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
