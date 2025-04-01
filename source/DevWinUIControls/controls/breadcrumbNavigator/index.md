@@ -5,9 +5,11 @@ title: BreadcrumbNavigator
 # Attributes
 |Name|
 |-|
+|AllowDuplication|
+|NavigationTransitionInfo|
+|IsClickable|
+|HeaderVisibilityOptions|
 |BreadCrumbs|
-|Frame|
-|UseBuiltInEventForFrame|
 
 # Event
 |Name|
@@ -17,8 +19,8 @@ title: BreadcrumbNavigator
 # Method
 |Name|
 |-|
-|OnItemClicked|
-|FixIndex|
+|NavigateFromBreadcrumb|
+|Initialize|
 |AddNewItem|
 |ChangeBreadcrumbVisibility|
 
@@ -50,28 +52,33 @@ everything will done automatically.
 
 for more info [see here](https://Ghost1372.github.io/DevWinUI/navigationService/#ConfigBreadcrumbBar)
 
-# Normal/Easy Usage
+# Normal Usage
 In this method, you have to add the items yourself
 ```xml
 <dev:BreadcrumbNavigator x:Name="BasicBreadCrumbNavigator"/>
 ```
 
-now you should pass your frame to BasicBreadcrumbNavigator:
+now you should call `Initialize` method:
 
 ```cs
-BasicBreadCrumbNavigator.UseBuiltInEventForFrame = true;
-BasicBreadCrumbNavigator.Frame = yourFrame;
+public static Dictionary<Type, BreadcrumbPageConfig> pageDictionary = new()
+{
+    {typeof(DevWinUIGallery.Views.SettingsPage), new BreadcrumbPageConfig { PageTitle = null, IsHeaderVisible = true, ClearNavigation = false}},
+    {typeof(DevWinUIGallery.Views.AboutUsSettingPage), new BreadcrumbPageConfig { PageTitle = null, IsHeaderVisible = true, ClearNavigation = false}},
+    {typeof(DevWinUIGallery.Views.AppUpdateSettingPage), new BreadcrumbPageConfig { PageTitle = null, IsHeaderVisible = true, ClearNavigation = false}},
+    {typeof(DevWinUIGallery.Views.GeneralSettingPage), new BreadcrumbPageConfig { PageTitle = null, IsHeaderVisible = true, ClearNavigation = false}},
+    {typeof(DevWinUIGallery.Views.ThemeSettingPage), new BreadcrumbPageConfig { PageTitle = null, IsHeaderVisible = true, ClearNavigation = false}},
+};
+BasicBreadCrumbNavigator.Initialize(frame, navigationView, pageDictionary);
 ```
 
 {% note info %}
-if you want to use AOT feature, you should pass your `PageDictionary` to `BasicBreadCrumbNavigator` otherwise you can skip this option. 
+for more info and finding a T4 template for generating PageDictionary [see here](https://Ghost1372.github.io/DevWinUI/navigationService/#ConfigBreadcrumbBar)
 {% endnote %}
 
-```cs
-BasicBreadCrumbNavigator.PageDictionary = NavigationPageMappings.PageDictionary;
-```
-
-for more info and finding a T4 template for generating PageDictionary [see here](https://Ghost1372.github.io/DevWinUI/navigationService/#ConfigBreadcrumbBar)
+{% note info %}
+if you want to exclude a page to be shown in BreadcrumbNavigator, you can use our `IsHeaderVisibile` AttachedProperty. 
+{% endnote %}
 
 then in your pages you should use attached property for Item Title and visibility
 
@@ -83,36 +90,11 @@ dev:BreadcrumbNavigator.IsHeaderVisible="True"
 >
 ```
 
-{% note info %}
-if you want to exclude a page to be shown in BreadcrumbNavigator, you can use our `IsHeaderVisibile` AttachedProperty. 
-{% endnote %}
-
-if you set `BasicBreadCrumbNavigator.UseBuiltInEventForFrame = true;` you can bypass this section.
-when you are navigating to another pages, you should add a new item to `BreadcrumbNavigator`: (only do this if `UseBuiltInEventForFrame = false`)
+when you are navigating to another page, you should add a new item to `BreadcrumbNavigator`:
 
 ```cs
-BasicBreadcrumbNavigator.AddNewItem(targetPage, actionAfterItemAdded);
+BasicBreadcrumbNavigator.AddNewItem(targetPage);
 ```
-
-We have already prepared some codes, so clicking on the items and fixing the index of the items will be done automatically.
-If you need to do more, you can create the `ItemClicked` event, but you should know that you have to do the rest yourself.
-
-```cs
-BasicBreadcrumbNavigator.ItemClicked += OnItemClicked;
-```
-
-you can use our prepared codes or you can write your own codes here:
-
-```cs
-private void OnItemClicked(BreadcrumbBar sender, BreadcrumbBarItemClickedEventArgs args)
-{
-    BasicBreadcrumbNavigator.OnItemClicked(args);
-}
-```
-
-# Normal/Hard way
-in this way you need to handle everything, so please look for source code and see how things happened.
-
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
