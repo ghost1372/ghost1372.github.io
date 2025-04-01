@@ -39,6 +39,14 @@ jsonNavigationService.Initialize(NavView, NavFrame, NavigationPageMappings.PageD
                      .ConfigureJsonFile("Assets/NavViewMenu/AppData.json");
 ```
 
+# NavigateToCommand
+You can use a predefined command for navigating between pages. To do this, define a `CommandParameter` using the `NavigationParameter` markup extension, specifying the target page and the BreadCrumbNavigator header (if using `ConfigureBreadCrumbNavigator`). Additionally, you can set a `NavigationTransitionInfo` to customize the transition effect.
+
+```cs
+<Button Content="Navigate" Command="{x:Bind local:App.Current.NavService.NavigateToCommand}"
+                           CommandParameter="{dev:NavigationParameter PageType=views:GeneralSettingPage, BreadCrumbHeader='General'}" />
+```
+
 # T4 Template
 You can simplify creating `PageDictionary` by Creating a new T4 template.
 Copy-Paste following Script, this script help you to Auto Generate `PageDictionary`:

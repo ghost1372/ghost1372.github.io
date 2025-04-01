@@ -367,6 +367,7 @@ menu:
       GeneralExtension: /generalExtension/ ||
       IconMarkupExtension: /iconMarkupExtension/ ||
       ListExtensions: /listExtensions/ ||
+      NavigationParameterExtension: /navigationParameterExtension/ ||
       ResourceDictionaryExtension: /resourceDictionaryExtension/ ||
       PersianDateTimeExtension: /persianDateTimeExtension/ ||
       StringExtension: /stringExtension/ ||

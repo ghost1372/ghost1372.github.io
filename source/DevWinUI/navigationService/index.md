@@ -37,6 +37,14 @@ now you should call `Initialize` method with a `NavigationView` and `Frame`
 navigationService.Initialize(NavView, NavFrame);
 ```
 
+# NavigateToCommand
+You can use a predefined command for navigating between pages. To do this, define a `CommandParameter` using the `NavigationParameter` markup extension, specifying the target page and the BreadCrumbNavigator header (if using `ConfigureBreadCrumbNavigator`). Additionally, you can set a `NavigationTransitionInfo` to customize the transition effect.
+
+```cs
+<Button Content="Navigate" Command="{x:Bind local:App.Current.NavService.NavigateToCommand}"
+                           CommandParameter="{dev:NavigationParameter PageType=views:GeneralSettingPage, BreadCrumbHeader='General'}" />
+```
+
 # Configs
 there are some configure methods:
 
