@@ -42,9 +42,11 @@ there are some configure methods:
 
 ## ConfigureDefaultPage
 set Default page for NavigationView
+
 ```cs
 Initializ(...).ConfigureDefaultPage(typeof(HomeLandingsPage));
 ```
+
 ## ConfigureSettingsPage
 set Settings page for NavigationView
 
