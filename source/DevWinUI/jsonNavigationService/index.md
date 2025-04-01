@@ -282,9 +282,11 @@ it is better to place `BreadcrumbNavigator` in `NavigationView.Header`
 </NavigationView.Header>
 ```
 
+Now Call `ConfigureBreadcrumbBar` method:
+
 ```cs
 Initializ(...).ConfigureBreadcrumbBar(BreadCrumbNav, NavigationPageMappings.PageDictionary);
-```            
+```
 
 use `dev:BreadcrumbNavigator.PageTitle` and `dev:BreadcrumbNavigator.IsHeaderVisible` attached properties on your pages, for Title and Header visiblity.
 
