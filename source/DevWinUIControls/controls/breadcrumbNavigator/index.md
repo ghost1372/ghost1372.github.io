@@ -31,26 +31,44 @@ title: BreadcrumbNavigator
 |PageTitle||
 |ClearNavigation|Does not work in JsonNavigationService Mode|
 
+# Using with JsonNavigationService
+
 {% note info %}
 if you are using JsonNavigationService, we can find Page Title from json file, however if you find some issue with this you can use our PageTitle AttachedProperty. 
 {% endnote %}
 
-# Using with JsonNavigationService
 The easiest way to use, put `BreadcrumbNavigator` in your main page for example in NavigationView Header:
 
 ```xml
-<dev:BreadcrumbNavigator x:Name="JsonBreadCrumbNavigator"/>
+<dev:BreadcrumbNavigator x:Name="BreadCrumbNav"/>
 ```
 
 then use `ConfigBreadcrumbBar` in `JsonNavigationService` 
 
 ```cs
-jsonNavigationService.ConfigBreadcrumbBar(breadCrumb, NavigationPageMappings.PageDictionary);
+jsonNavigationService.ConfigBreadcrumbBar(BreadCrumbNav, NavigationPageMappings.PageDictionary);
 ```
 
 everything will done automatically.
 
-for more info [see here](https://Ghost1372.github.io/DevWinUI/navigationService/#ConfigBreadcrumbBar)
+for more info [see here](https://Ghost1372.github.io/DevWinUI/jsonNavigationService/#ConfigureBreadcrumbBar)
+
+# Using with NavigationServiceEx
+The easiest way to use, put `BreadcrumbNavigator` in your main page for example in NavigationView Header:
+
+```xml
+<dev:BreadcrumbNavigator x:Name="BreadCrumbNav"/>
+```
+
+then use `ConfigBreadcrumbBar` in `NavigationServiceEx` 
+
+```cs
+navigationServiceEx.ConfigBreadcrumbBar(BreadCrumbNav, NavigationPageMappings.PageDictionary);
+```
+
+everything will done automatically.
+
+for more info [see here](https://Ghost1372.github.io/DevWinUI/navigationService/#ConfigureBreadcrumbBar)
 
 # Normal Usage
 In this method, you have to add the items yourself
