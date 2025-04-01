@@ -273,6 +273,7 @@ public Dictionary<Type, BreadcrumbPageConfig> PageDictionary = new()
     {typeof(BlankPage3), new BreadcrumbPageConfig { PageTitle = "Page 3", IsHeaderVisible = true, ClearNavigation = false}},
 };
 ```
+
 it is better to place `BreadcrumbNavigator` in `NavigationView.Header`
 
 ```xml
