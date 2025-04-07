@@ -410,6 +410,7 @@ menu:
     RainbowFrame: /rainbowFrame/ ||
     RelativeDate: /relativeDate/ ||
     SemanticVersion: /semanticVersion/ ||
+    SingleInstanceApp: /singleInstanceApp/ ||
     ThemeService: /themeService/ ||
   DevWinUI.Controls - 8.0.0:
     default: /DevWinUIControls/ || fas fa-dice-d20
