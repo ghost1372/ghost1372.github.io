@@ -7,7 +7,11 @@ title: FlipSide
 |-|
 |Side1|
 |Side2|
-|IsActive|
+|IsFlipped|
+|Axis|
+|FlipOrientation|
+|AnimationDuration|
+|AnimationDampingRatio|
 
 # Example
 
