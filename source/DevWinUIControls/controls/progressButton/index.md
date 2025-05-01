@@ -2,6 +2,12 @@
 title: ProgressButton
 ---
 
+# Styles
+|Name|
+|-|
+|AccentProgressButtonStyle|
+|DefaultProgressButtonStyle|
+
 # Attributes
 |Property|
 |-|
