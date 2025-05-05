@@ -15,7 +15,7 @@ Lighten or Darken a color with a `ColorCorrectionFactor` property.
 
 <!-- OR -->
 
-<SolidColorBrush helpers:BrushExtensions.ColorCorrectionFactor="1.2" Color="{ThemeResource SystemAccentColor}" />
+<SolidColorBrush dev:BrushExtensions.ColorCorrectionFactor="1.2" Color="{ThemeResource SystemAccentColor}" />
 ```
 
 # Demo

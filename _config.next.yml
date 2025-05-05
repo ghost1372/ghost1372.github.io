@@ -124,6 +124,7 @@ menu:
       default: /attach/ || fas fa-paperclip
       BackgroundSwitchElement: /backgroundSwitchElement/ ||
       BorderElement: /borderElement/ ||
+      BrushAttach: /brushAttach/ ||
       DataGridAttach: /dataGridAttach/ ||
       DropDownElement: /dropDownElement/ ||
       EdgeElement: /edgeElement/ ||
@@ -325,6 +326,7 @@ menu:
       BindToEnum: /bindToEnum/ ||
       BusyIndicator: /busyIndicator/ ||
       CheckTreeView: /checkTreeView/ ||
+      ColorBrightnessExtension: /colorBrightnessExtension/ ||
       Command: /command/ ||
       DynamicLanguage: /dynamicLanguage/ ||
       Extensions: /extensions/ ||

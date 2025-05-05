@@ -268,45 +268,58 @@ bool result = RegistryHelper.DeleteSubKeyTree("subkey", "myFolder", Registry.Loc
 ```
 
 # UpdateHelper
+---
+title: UpdateHelper
+---
+
 you can use UpdateHelper for checking application updates from github release page
 
-## Methods
-| Method | Description |
-|-|-|
-| CheckUpdateAsync | Use the GitHab Release Page to check if the update is available |
-| CheckUpdate | Use the GitHab Release Page to check if the update is available |
-
-first you must create a new release tag in [github repository](https://github.com/ghost1372/HandyControls/releases/new):
-
-{% note info %}
-tag version must be in this format : 1.0.0.0
-{% endnote %}
-
+first you must create a new release tag in github repository, tag version must be in this format : `1.0.0.0`
 now we can check for update with github username and github repository
-``` CS
-var ver = await UpdateHelper.CheckUpdateAsync("ghost1372", "HandyControls");
-// var ver = UpdateHelper.CheckUpdate("ghost1372", "HandyControls");
-if(ver.IsExistNewVersion)
+
+```cs
+var update = await UpdateHelper.CheckUpdateAsync("Ghost1372", "HandyControls");
+
+if (update.StableRelease.IsExistNewVersion)
 {
-    Growl.InfoGlobal("New Version Found!");
-    lblUrl2.Text = ver.ReleaseUrl;
-    lbl1.Text = ver.CreatedAt.ToString();
-    lbl2.Text = ver.PublishedAt.ToString();
+    Debug.WriteLine(update.StableRelease.ReleaseUrl);
+    Debug.WriteLine(update.StableRelease.CreatedAt.ToString());
+    Debug.WriteLine(update.StableRelease.PublishedAt.ToString());
     
     //Asset is List so maybe there is more than one file you can use forech or increase index
-    lbl3.Text = ver.Assets[0].Url;
-    lbl4.Text = ver.IsPreRelease.ToString();
-    lbl5.Text = ver.Assets[0].Size.ToString();
-    lbl6.Text = ver.Version;
-    txtChangelog2.Text = ver.Changelog;
+    Debug.WriteLine(update.StableRelease.Assets[0].Url);
+    Debug.WriteLine(update.StableRelease.IsPreRelease.ToString());
+    Debug.WriteLine(update.StableRelease.Assets[0].Size.ToString());
+    Debug.WriteLine(update.StableRelease.Version);
+    Debug.WriteLine(update.StableRelease.Changelog);
+}
+else if (update.PreRelease.IsExistNewVersion)
+{
+    Debug.WriteLine(update.PreRelease.ReleaseUrl);
+    Debug.WriteLine(update.PreRelease.CreatedAt.ToString());
+    Debug.WriteLine(update.PreRelease.PublishedAt.ToString());
+    
+    //Asset is List so maybe there is more than one file you can use forech or increase index
+    Debug.WriteLine(update.PreRelease.Assets[0].Url);
+    Debug.WriteLine(update.PreRelease.IsPreRelease.ToString());
+    Debug.WriteLine(update.PreRelease.Assets[0].Size.ToString());
+    Debug.WriteLine(update.PreRelease.Version);
+    Debug.WriteLine(update.PreRelease.Changelog);
 }
 else
 {
-    Growl.ErrorGlobal("you are using latest version");
+    Debug.WriteLine("You are using latest version");
 }
 ```
 
 # ApplicationHelper
+
+## GetEnum
+get enum from string
+
+```cs
+var myenum = ApplicationHelper.GetEnum<MyEnum>("Dark");
+```
 
 ## IsSingleInstance
 you can use IsSingleInstance for Run only one Instance of the program at a time.
@@ -480,13 +493,13 @@ private void MainWindow_Loaded(object sender, RoutedEventArgs e)
 ## GetColorFromBrush
 Get Color from LinearGradientBrush, SolidColorBrush and Brush
 ```cs
-var color = ApplicationHelper.GetColorFromBrush(brush);
+var color = GetColorFromBrush(brush);
 ```
 
-## GetColorFromString
+## GetColorFromHex
 Creates a Color from a XAML color string.
 ```cs
-var color = GetColorFromString("#3260a8");
+var color = GetColorFromHex("#3260a8");
 ```
 
 ## GetHexFromColor
@@ -501,6 +514,48 @@ Get Hex Code from Brush
 var color = GetHexFromBrush(brush);
 ```
 
+# LightenColor
+Tints the color by the given percent.
+
+```cs
+Color ColorHelper.LightenColor(color, percent);
+```
+
+# DarkenColor
+Tints the color by the given percent.
+
+```cs
+Color ColorHelper.DarkenColor(color, percent);
+```
+
+# GetColorFromHsl
+Converts the HSL values to a Color.
+
+```cs
+Color ColorHelper.GetColorFromHsl(alpha, hue, saturation, lighting);
+```
+
+# GetBrightnessFromColor
+Gets the brightness of the color.
+
+```cs
+float ColorHelper.GetBrightnessFromColor(color);
+```
+
+# GetHueFromColor
+Gets the hue of the color.
+
+```cs
+float ColorHelper.GetHueFromColor(color);
+```
+
+# GetSaturationFromColor
+Gets the saturation of the color.
+
+```cs
+float ColorHelper.GetSaturationFromColor(color);
+```
+
 # OSVersionHelper
 get os version
 
@@ -508,41 +563,6 @@ get os version
 OSVersionHelper.GetOSVersion();
 var win10_1909 = OSVersionHelper.IsWindows10_1909_OrGreater();
 ```
-
-## Methods
-|Methods|
-|-|
-|IsWindowsNT|
-|IsWindows7|
-|IsWindows7_OrGreater|
-|IsWindows8|
-|IsWindows8_OrGreater|
-|IsWindows81|
-|IsWindows81_OrGreater|
-|IsWindows10|
-|IsWindows10_OrGreater|
-|IsWindows10_1507|
-|IsWindows10_1507_OrGreater|
-|IsWindows10_1511|
-|IsWindows10_1511_OrGreater|
-|IsWindows10_1607|
-|IsWindows10_1607_OrGreater|
-|IsWindows10_1703|
-|IsWindows10_1703_OrGreater|
-|IsWindows10_1709|
-|IsWindows10_1709_OrGreater|
-|IsWindows10_1803|
-|IsWindows10_1803_OrGreater|
-|IsWindows10_1809|
-|IsWindows10_1809_OrGreater|
-|IsWindows10_1903|
-|IsWindows10_1903_OrGreater|
-|IsWindows10_1909|
-|IsWindows10_1909_OrGreater|
-|IsWindows10_2004|
-|IsWindows10_2004_OrGreater|
-|IsWindows10_2009|
-|IsWindows10_2009_OrGreater|
 
 # GenericCompare
 
@@ -705,4 +725,28 @@ for changing Progressbar value:
 
 ```cs
 TaskbarHelper.SetProgressValue(handle, 10, 100);
+```
+
+# ProcessInfoHelper
+
+# Property
+
+|Name|
+|-|
+|Version|
+|VersionWithPrefix|
+|ProductName|
+|ProductNameAndVersion|
+|GetVersion|
+|GetFileVersionInfo|
+|GetProcess|
+
+```cs
+var stringVersion = ProcessInfoHelper.Version; // 1.0.0
+var stringVersionWithPrefix = ProcessInfoHelper.VersionWithPrefix; // v1.0.0
+var productName = ProcessInfoHelper.ProductName; // MyAppName
+var productNameAndVersion = ProcessInfoHelper.ProductNameAndVersion; // MyAppName v1.0.0
+var version = ProcessInfoHelper.GetVersion(); // 1.0.0.0
+var fileVersionInfo = ProcessInfoHelper.GetFileVersionInfo();
+var process = ProcessInfoHelper.GetProcess();
 ```
