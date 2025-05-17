@@ -263,5 +263,14 @@ if (themeService != null)
 }
 ```
 
+# Multi-Window
+if you have multiple window, you need to use `WindowHelper.TrackWindow` method, before Activate your window.
+
+```cs
+Window myWindow = new Window();
+WindowHelper.TrackWindow(myWindow);
+myWindow.Activate();
+```
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
