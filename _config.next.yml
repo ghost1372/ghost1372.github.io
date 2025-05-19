@@ -105,7 +105,7 @@ menu:
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
   Home: / || fa fa-home
-  HandyControl - 3.5.3:
+  HandyControl - 3.6.0:
     default: /handycontrol/ || fa fa-h-square
     Thanks: /tnx/ || fa fa-user
     Quick start: /quick_start/ || fa fa-h-square
@@ -207,7 +207,8 @@ menu:
       ColorPicker: /colorPicker/ ||
       ComboBox: /comboBox/ ||
       CompareSlider: /compareSlider/ ||
-      ContextMenuButton: /contextMenuButton/ || 
+      ContextMenuButton: /contextMenuButton/ ||
+      ConfettiCannon: /confettiCannon/ || 
       CoverFlow: /coverFlow/ ||
       CoverView: /coverView/ ||
       DatePicker: /datePicker/ ||
@@ -349,7 +350,7 @@ menu:
       default: /intellisense/ || fas fa-brain
   WinUICommunity - 7.0.0:
     default: /winUICommunity/ || fab fa-microsoft
-  DevWinUI - 8.0.0:
+  DevWinUI - 8.3.0:
     default: /DevWinUI/ || fas fa-tools
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Attach:
@@ -414,7 +415,7 @@ menu:
     SemanticVersion: /semanticVersion/ ||
     SingleInstanceApp: /singleInstanceApp/ ||
     ThemeService: /themeService/ ||
-  DevWinUI.Controls - 8.0.0:
+  DevWinUI.Controls - 8.3.0:
     default: /DevWinUIControls/ || fas fa-dice-d20
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Controls: 
@@ -499,7 +500,7 @@ menu:
       default: /styles/ || fas fa-palette
     Validation:
       default: /validation/ || fab fa-intercom
-  DevWinUIContextMenu - 8.0.0:
+  DevWinUIContextMenu - 8.3.0:
       default: /DevWinUIContextMenu/ || fas fa-brain
       Breaking Changes: /breaking_changes/ || fas fa-dice-d20
   Release Notes:
