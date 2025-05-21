@@ -89,6 +89,16 @@ In older versions of 2.5.1, you should add this code
 # Last step
 Add a namespace: `xmlns:hc="https://handyorg.github.io/handycontrol"`
 
+# 🚀 Explore Our Gallery App 🚀
+
+> [!NOTE]
+>  Want to see HandyControl in action? Head over to our Gallery App for a hands-on experience. You’ll find practical examples, usage scenarios, and interactive demos that showcase the power of our toolkit. Download from Microsoft Store.
+
+<a href="https://apps.microsoft.com/detail/HandyControl/9nxrsbg32mff?launch=true
+    &mode=mini">
+    <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+</a>
+
 # Extension
 
 just download and install handycontrol template from marketplace. in this way you dont need to add anything. after installing hc, create new project with handycontrol template
