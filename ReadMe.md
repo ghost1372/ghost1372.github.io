@@ -1,6 +1,6 @@
 # Documents
 
-This repository contains documentation for all products such as HandyControl and others.
+This repository contains documentation for all products such as DevWinUI, HandyControl and others.
 
 > [!TIP]
 > The documents are written in `Markdown` files and converted into a static website by [Hexo](https://hexo.io/) (A fast, simple & powerful blog framework).
