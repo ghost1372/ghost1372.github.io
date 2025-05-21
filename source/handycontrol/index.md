@@ -44,6 +44,16 @@ And other awesome features which You can see the list of all of them along with 
 Github is generally updated every day and is relatively unsuitable for production.
 {% endnote %}
 
+# 🚀 Explore Our Gallery App 🚀
+
+> [!NOTE]
+>  Want to see HandyControl in action? Head over to our Gallery App for a hands-on experience. You’ll find practical examples, usage scenarios, and interactive demos that showcase the power of our toolkit. Download from Microsoft Store.
+
+<a href="https://apps.microsoft.com/detail/HandyControl/9nxrsbg32mff?launch=true
+    &mode=mini">
+    <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+</a>
+
 # Project Structure Introduction
 
 ## the whole frame
