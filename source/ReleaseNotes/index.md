@@ -2,6 +2,55 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 8.3.0
+The following sections describe new and updated features and known issues for version 8.3.0
+
+#### [v8.3.0](https://github.com/ghost1372/DevWinUI/compare/v8.2.0...v8.3.0)
+
+> 19 May 2025
+
+- Add AccentProgressButtonStyle #42 [`ee96e45`](https://github.com/ghost1372/DevWinUI/commit/ee96e45f69f37e8dc7c3f6230a253810f7445660)
+- Update GridViewItemTemplate.xaml [`93e1f5f`](https://github.com/ghost1372/DevWinUI/commit/93e1f5fb856ad88dbee26cb797c6b25bfb90de78)
+- Add AnimationDuration and AnimationDampingRatio for FlipSide #52 [`30866f1`](https://github.com/ghost1372/DevWinUI/commit/30866f1c1da74baa51be16912bb083d4357ce795)
+- Fix Showing Legacy SystemContextMenu in ModernSystemContextMenu #54 [`1a3e86d`](https://github.com/ghost1372/DevWinUI/commit/1a3e86d63ee519e188f6984547688af32fac11d6)
+- [VSIX] Fix DeveloperMode Option [`5bbca88`](https://github.com/ghost1372/DevWinUI/commit/5bbca88e04153f07acd563c03527cec5402e6994)
+- Add AutoUpdateTitleBarCaptionButtonsColor for ThemeService #51 [`f3e1fdb`](https://github.com/ghost1372/DevWinUI/commit/f3e1fdb0d30a51f66f9047a909708ba6e333d435)
+- Update Directory.Build.props [`5c089fb`](https://github.com/ghost1372/DevWinUI/commit/5c089fb03378992896b3938fe81821a8c9f455fa)
+- Update DevWinUI.Gallery.csproj [`c951f37`](https://github.com/ghost1372/DevWinUI/commit/c951f37287a81be3574f544aa4eb9089181f24b6)
+
+
+# Version 8.2.0
+The following sections describe new and updated features and known issues for version 8.2.0
+
+#### [v8.2.0](https://github.com/ghost1372/DevWinUI/compare/v8.1.0...v8.2.2)
+
+> 17 April 2025
+
+- ReWrite NavigationServiceEx [`5000ba2`](https://github.com/ghost1372/DevWinUI/commit/5000ba2b232a0cd348e3dde2ee069b5b8907bb50)
+- Simplify BreadcrumbNavigator [`30d339e`](https://github.com/ghost1372/DevWinUI/commit/30d339e04b16c9b310fb3b351f37526c0b562a00)
+- Refactor [`d56e233`](https://github.com/ghost1372/DevWinUI/commit/d56e233b3989e55298580c301659aa932e418a49)
+- Improve INIHelper #48 [`b4bdd25`](https://github.com/ghost1372/DevWinUI/commit/b4bdd251e2b86281f7c5638860910335bf89042f)
+- Add NavigationParameterExtension and NavigateToCommand for JsonNavigationService/NavigationServiceEx [`e53dac6`](https://github.com/ghost1372/DevWinUI/commit/e53dac67d136bd76a8376be14fe467b100d79075)
+- Add SingleInstanceApp [`6b26a39`](https://github.com/ghost1372/DevWinUI/commit/6b26a399344ed59971c2be76f67248c7a669f171)
+- Refactor [`b6d9197`](https://github.com/ghost1372/DevWinUI/commit/b6d91972d21cecebf7ff67ac078c3eb7901bab13)
+- Create ContentDialogEx.cs [`4e40416`](https://github.com/ghost1372/DevWinUI/commit/4e40416de109a6d079619b48ba5027d66d34054a)
+- Improve Native Methods [`bf2d12f`](https://github.com/ghost1372/DevWinUI/commit/bf2d12fc0c9736d30de01b7c364ce76f4f2e25dc)
+- Update RainbowFrame.cs [`e7978f9`](https://github.com/ghost1372/DevWinUI/commit/e7978f92c119f756af8c85657f1f30008bf2eb9e)
+- Update README.md [`3f1783c`](https://github.com/ghost1372/DevWinUI/commit/3f1783c24fa2837a9145f155066f4ee9587a766d)
+- Update Versions [`6f63854`](https://github.com/ghost1372/DevWinUI/commit/6f6385420c83f3a5cd01779cde22dc98a27af7f2)
+- Update PredefinedCodes.cs [`6c57703`](https://github.com/ghost1372/DevWinUI/commit/6c57703edfed25ae4652d5a6a3c09dc42ba690a2)
+- Add ContrastColorBlackWhite ColorHelper #45 [`14921cc`](https://github.com/ghost1372/DevWinUI/commit/14921cc89903abf76f37f512402046030fe2bbd4)
+- Add Missing AttachedProperty [`42b5137`](https://github.com/ghost1372/DevWinUI/commit/42b513746ef3685b5e22d37a095efc319796f532)
+- Update WindowHelper.cs [`5ca73f5`](https://github.com/ghost1372/DevWinUI/commit/5ca73f5a95cc8b896d0716b8789bf5d9face35dd)
+- INIHelper Increase MAX_LENGTH #48 [`943eec4`](https://github.com/ghost1372/DevWinUI/commit/943eec479d9d7bc9adfeb905f694f1384bedc1b1)
+- Add DevWinUI ResourceDictionary [`4945833`](https://github.com/ghost1372/DevWinUI/commit/4945833e902fa7d7db85cad6ceb6ba050c16d64e)
+- Update DevWinUI_Template.csproj [`b8aa9ff`](https://github.com/ghost1372/DevWinUI/commit/b8aa9ffaf32017a21a0b50993552476f15209506)
+- NoWarn [`23e7af6`](https://github.com/ghost1372/DevWinUI/commit/23e7af659a51f15276adda6f55bd6b1a92e847d5)
+- Update BreadcrumbNavigator.cs [`3323f2f`](https://github.com/ghost1372/DevWinUI/commit/3323f2f9fac6ef53f3d9bbb79472b27fe213df65)
+- Update PredefinedLibrary VSIX [`4841c6d`](https://github.com/ghost1372/DevWinUI/commit/4841c6d303dff49e945b6cd47f3cd479fddd380c)
+- Make NavigationHelperEx and SettingsNavigationAttach Obsolete [`e4a354c`](https://github.com/ghost1372/DevWinUI/commit/e4a354c3671d672b6d8487ae9c46d2d279045438)
+- Update SingleInstanceApp.cs [`84e53e0`](https://github.com/ghost1372/DevWinUI/commit/84e53e01dddbc75fade5c8ffdcb320700f50e3dc)
+
 # Version 8.0.0 | 8.1.0
 The following sections describe new and updated features and known issues for version 8.0.0 | 8.1.0
 
