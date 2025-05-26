@@ -2,6 +2,62 @@
 title: Styles
 ---
 
+# Button
+## HyperlinkButton
+|Name|
+|-|
+|HyperlinkButtonStyle|
+
+```xml
+<HyperlinkButton Content="Click Here" Style="{ThemeResource HyperlinkButtonStyle}"/>
+```
+
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/HyperlinkButtonStyle.png)
+
+## Button
+|Name|
+|-|
+|TextButtonStyle|
+|ScrollButtonStyle|
+
+```xml
+<Button Content="Click Here" Style="{ThemeResource TextButtonStyle}"/>
+
+```
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TextButtonStyle.png)
+
+```xml
+<Button Style="{StaticResource ScrollButtonStyle}">
+    <FontIcon FontSize="{ThemeResource FlipViewButtonFontSize}"
+              Glyph="&#xedd9;" />
+</Button>
+<Button Style="{StaticResource ScrollButtonStyle}">
+    <FontIcon FontSize="{ThemeResource FlipViewButtonFontSize}"
+              Glyph="&#xEDDA;" />
+</Button>
+```
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ScrollButtonStyle.png)
+
+## DropDownButton
+|Name|
+|-|
+|AccentDropDownButtonStyle|
+
+```xml
+<DropDownButton Content="Email"
+                Style="{StaticResource AccentDropDownButtonStyle}">
+    <DropDownButton.Flyout>
+        <MenuFlyout Placement="Bottom">
+            <MenuFlyoutItem Text="Send" />
+            <MenuFlyoutItem Text="Reply" />
+            <MenuFlyoutItem Text="Reply All" />
+        </MenuFlyout>
+    </DropDownButton.Flyout>
+</DropDownButton>
+```
+
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/AccentDropDownButtonStyle.png)
+
 # TextBlock
 |Name|
 |-|
@@ -14,28 +70,6 @@ title: Styles
 ```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TextBlockStyle.png)
-
-# HyperlinkButton
-|Name|
-|-|
-|HyperlinkButtonStyle|
-
-```xml
-<HyperlinkButton Content="Click Here" Style="{ThemeResource HyperlinkButtonStyle}"/>
-```
-
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/HyperlinkButtonStyle.png)
-
-# ButtonBase
-|Name|
-|-|
-|TextButtonStyle|
-
-```xml
-<Button Content="Click Here" Style="{ThemeResource TextButtonStyle}"/>
-```
-
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TextButtonStyle.png)
 
 # ListViewItem
 |Name|
