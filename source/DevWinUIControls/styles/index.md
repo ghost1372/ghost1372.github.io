@@ -265,15 +265,18 @@ just add this:
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlueInfoBar.png)
 
-# NavigationViewItem Style
-
-just add this:
-
-```xml
-<ResourceDictionary Source="ms-appx:///DevWinUI.Controls/Themes/NavigationViewItemStyle.xaml" />
-```
-
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/NavigationViewItemStyle.gif)
-
 # AppTitleBarMenuFlyoutItemStyle
 
+
+# SelectorBar
+
+## TokenViewSelectorBarStyle
+
+```xml
+<SelectorBar Style="{StaticResource TokenViewSelectorBarStyle}">
+    <SelectorBarItem Text="Recent" />
+    <SelectorBarItem Text="New" />
+    <SelectorBarItem Text="Fav" />
+</SelectorBar>
+```
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TokenViewSelectorBarStyle.gif)
