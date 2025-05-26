@@ -83,5 +83,16 @@ var cleanText = GeneralHelper.GetDecodedStringFromHtml(html);
 # GetThemeIndex
 # GetElementThemeEnum
 
+# IsPrivacySensitiveRegion
+```cs
+private static readonly string[] PrivacySensitiveRegions =
+[
+    "CHN",
+    "USA",
+    "IRN"
+];
+var result = GeneralHelper.IsPrivacySensitiveRegion(PrivacySensitiveRegions);
+```
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
