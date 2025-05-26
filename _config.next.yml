@@ -498,6 +498,8 @@ menu:
       TiledImageBrush: /tiledImageBrush/ ||
     Styles: 
       default: /styles/ || fas fa-palette
+    Colors: 
+      default: /colors/ || fas fa-palette
     Validation:
       default: /validation/ || fab fa-intercom
   DevWinUIContextMenu - 8.3.0:

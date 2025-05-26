@@ -17,7 +17,7 @@ title: Styles
 </ComboBox>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/SubtleComboBoxStyle.gif)
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SubtleComboBoxStyle.gif)
 
 # Buttons
 ## HyperlinkButton
@@ -53,7 +53,9 @@ title: Styles
               Glyph="&#xEDDA;" />
 </Button>
 ```
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ScrollButtonStyle.png)
+
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ScrollButtonStyle.png)
+
 
 ## DropDownButton
 |Name|
@@ -73,7 +75,7 @@ title: Styles
 </DropDownButton>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/AccentDropDownButtonStyle.png)
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AccentDropDownButtonStyle.png)
 
 # TextBlock
 |Name|
