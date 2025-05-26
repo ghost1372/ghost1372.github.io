@@ -17,6 +17,8 @@ title: Styles
 </ComboBox>
 ```
 
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/SubtleComboBoxStyle.gif)
+
 # Buttons
 ## HyperlinkButton
 |Name|
