@@ -333,3 +333,34 @@ just add this:
 </SelectorBar>
 ```
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TokenViewSelectorBarStyle.gif)
+
+# NavigationView
+
+## NavigationViewStoreStyle
+
+```xml
+<NavigationView Style="{StaticResource NavigationViewStoreStyle}" IsSettingsVisible="True">
+    <NavigationView.MenuItems>
+        <NavigationViewItem Content="Home"
+                            Icon="Home">
+        </NavigationViewItem>
+        <NavigationViewItem Content="Calendar"
+                            Icon="Calendar" />
+        <NavigationViewItem Content="Downloads">
+            <NavigationViewItem.Icon>
+                <FontIcon Glyph="&#xE753;" />
+            </NavigationViewItem.Icon>
+        </NavigationViewItem>
+        <NavigationViewItem Content="Library">
+            <NavigationViewItem.Icon>
+                <FontIcon Glyph="&#xE8F1;" />
+            </NavigationViewItem.Icon>
+        </NavigationViewItem>
+    </NavigationView.MenuItems>
+    <NavigationView.FooterMenuItems>
+        <NavigationViewItem IsEnabled="False"
+                            SelectsOnInvoked="False" />
+    </NavigationView.FooterMenuItems>
+</NavigationView>
+```
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/NavigationViewStoreStyle.gif)
