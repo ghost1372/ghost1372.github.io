@@ -2,6 +2,21 @@
 title: Styles
 ---
 
+# ComboBox
+|Name|
+|-|
+|SubtleComboBoxStyle|
+
+## SubtleComboBoxStyle
+
+```xml
+<ComboBox Style="{StaticResource SubtleComboBoxStyle}">
+    <ComboBoxItem Content="Item 1" />
+    <ComboBoxItem Content="Item 2" />
+    <ComboBoxItem Content="Item 3" />
+</ComboBox>
+```
+
 # Buttons
 ## HyperlinkButton
 |Name|
