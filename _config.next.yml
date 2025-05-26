@@ -105,7 +105,7 @@ menu:
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
   Home: / || fa fa-home
-  HandyControl - 3.6.0:
+  HandyControl - 3.6.1:
     default: /handycontrol/ || fa fa-h-square
     Thanks: /tnx/ || fa fa-user
     Quick start: /quick_start/ || fa fa-h-square
@@ -350,7 +350,7 @@ menu:
       default: /intellisense/ || fas fa-brain
   WinUICommunity - 7.0.0:
     default: /winUICommunity/ || fab fa-microsoft
-  DevWinUI - 8.3.0:
+  DevWinUI - 8.4.0:
     default: /DevWinUI/ || fas fa-tools
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Attach:
@@ -415,7 +415,7 @@ menu:
     SemanticVersion: /semanticVersion/ ||
     SingleInstanceApp: /singleInstanceApp/ ||
     ThemeService: /themeService/ ||
-  DevWinUI.Controls - 8.3.0:
+  DevWinUI.Controls - 8.4.0:
     default: /DevWinUIControls/ || fas fa-dice-d20
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Controls: 
@@ -463,6 +463,7 @@ menu:
       SettingsPageControl: /settingsPageControl/ ||
       Shield: /shield/ ||
       SimpleSettingsGroup: /simpleSettingsGroup/ ||
+      Shimmer: /shimmer/ ||
       Shortcut: /shortcut/ ||
       StepBar: /stepBar/ ||
       SwitchPresenter: /switchPresenter/ ||
