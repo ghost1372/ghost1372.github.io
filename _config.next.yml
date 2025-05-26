@@ -445,6 +445,7 @@ menu:
       InlineAutoCompleteTextBox: /inlineAutoCompleteTextBox/ ||
       IsEnabledTextBox: /isEnabledTextBox/ ||
       KeyVisual: /keyVisual/ ||
+      LayeredFontIcons: /layeredFontIcons/ ||
       LayoutTransformer: /layoutTransformer/ ||
       LoadingIndicator: /loadingIndicator/ ||
       LongShadowTextBlock: /longShadowTextBlock/ ||
