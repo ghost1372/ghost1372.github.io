@@ -2,7 +2,7 @@
 title: Styles
 ---
 
-# Button
+# Buttons
 ## HyperlinkButton
 |Name|
 |-|
@@ -14,7 +14,7 @@ title: Styles
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/HyperlinkButtonStyle.png)
 
-## Button
+## ButtonBase
 |Name|
 |-|
 |TextButtonStyle|
