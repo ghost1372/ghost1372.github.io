@@ -449,6 +449,7 @@ menu:
       LayoutTransformer: /layoutTransformer/ ||
       LoadingIndicator: /loadingIndicator/ ||
       LongShadowTextBlock: /longShadowTextBlock/ ||
+      Magnifier: /magnifier/ ||
       ModalWindow: /modalWindow/ ||
       ModernWindow: /modernWindow/ ||
       OOBEPageControl: /oOBEPageControl/ ||
