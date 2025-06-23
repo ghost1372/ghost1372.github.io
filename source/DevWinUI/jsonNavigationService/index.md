@@ -744,7 +744,7 @@ Each DataGroup and DataItem can display InfoBadges using either custom styles or
 |LandingPageInfoBadgeStyle| Custom style name for the InfoBadge shown on the landing page.|
 |IsLandingPageInfoBadgeHidden| Hides the InfoBadge on the landing page when set to true.|
 |IsNavigationViewInfoBadgeHidden| Hides the InfoBadge in the NavigationView when set to true.|
-|InfoBadgeValue| Text value displayed in the InfoBadge. Used by styles like StringInfoBadgeStyle. this value will be injected to `InfoBadge.Tag` property|
+|InfoBadgeValue| Text value displayed in the InfoBadge. Used by styles like `StringInfoBadgeStyle`. this value will be injected to `InfoBadge.Tag` property|
 
 ## Example
 
