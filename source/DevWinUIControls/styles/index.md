@@ -364,3 +364,22 @@ just add this:
 </NavigationView>
 ```
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/NavigationViewStoreStyle.gif)
+
+# InfoBadge
+## StringInfoBadge
+
+```xml
+<NavigationView>
+    <NavigationView.MenuItems>
+        <NavigationViewItem Content="Home"
+                            Icon="Home">
+            <NavigationViewItem.InfoBadge>
+                <InfoBadge Margin="4,0,0,0" Tag="BETA"
+                            Style="{StaticResource StringInfoBadge}" />
+            </NavigationViewItem.InfoBadge>
+        </NavigationViewItem>
+    </NavigationView.MenuItems>
+</NavigationView>
+```
+
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/StringInfoBadge.png)
