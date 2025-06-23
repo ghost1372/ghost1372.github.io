@@ -366,7 +366,7 @@ just add this:
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/NavigationViewStoreStyle.gif)
 
 # InfoBadge
-## StringInfoBadge
+## StringInfoBadgeStyle
 
 ```xml
 <NavigationView>
@@ -375,7 +375,7 @@ just add this:
                             Icon="Home">
             <NavigationViewItem.InfoBadge>
                 <InfoBadge Margin="4,0,0,0" Tag="BETA"
-                            Style="{StaticResource StringInfoBadge}" />
+                            Style="{StaticResource StringInfoBadgeStyle}" />
             </NavigationViewItem.InfoBadge>
         </NavigationViewItem>
     </NavigationView.MenuItems>
