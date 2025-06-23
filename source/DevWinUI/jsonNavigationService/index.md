@@ -725,6 +725,52 @@ for Navigating to a Page we used UniqueId.
 {% endnote %}
 
 
+# InfoBadge
+The InfoBadge feature allows you to visually mark items or groups using a small badge indicator (such as "NEW", "1", or an icon). This is useful for highlighting updates, status changes, or important items in your app's navigation or landing page.
+Each DataGroup and DataItem can display InfoBadges using either custom styles or built-in styles.
+
+## Group Level Properties
+|Name|Remark|
+|-|-|
+|UseBuiltInNavigationViewInfoBadgeStyle| If set to true, the group will use the `DefaultBuiltInNavigationViewInfoBadgeStyle` for badges in the NavigationView.|
+|UseBuiltInLandingPageInfoBadgeStyle| If set to true, the group will use the `DefaultBuiltInLandingPageInfoBadgeStyle` for badges on the landing page.|
+|DefaultBuiltInNavigationViewInfoBadgeStyle| Name of the built-in style used for NavigationView InfoBadges.|
+|DefaultBuiltInLandingPageInfoBadgeStyle| Name of the built-in style used for landing page InfoBadges.|
+
+## Item Level Properties
+|Name|Remark|
+|-|-|
+|NavigationViewInfoBadgeStyle| Custom style name for the InfoBadge shown in the NavigationView.|
+|LandingPageInfoBadgeStyle| Custom style name for the InfoBadge shown on the landing page.|
+|IsLandingPageInfoBadgeHidden| Hides the InfoBadge on the landing page when set to true.|
+|IsNavigationViewInfoBadgeHidden| Hides the InfoBadge in the NavigationView when set to true.|
+|InfoBadgeValue| Text value displayed in the InfoBadge. Used by styles like StringInfoBadgeStyle. this value will be injected to `InfoBadge.Tag` property|
+
+## Example
+
+```json
+{
+  "UniqueId": "Common",
+  "SectionId": "DevWinUIGallery.Views.DemoSectionPage",
+  "Title": "Common",
+  "ImagePath": "ms-appx:///Assets/Fluent/Extensions.png",
+  "UseBuiltInNavigationViewInfoBadgeStyle": true,
+  "Items": [
+    {
+      "UniqueId": "DevWinUIGallery.Views.DragMoveAndResizePage",
+      "Title": "DragMoveAndResize",
+      "Subtitle": "Drag and Move Window by UIElement",
+      "ImagePath": "ms-appx:///Assets/Fluent/Extensions.png",
+      "DataInfoBadge": {
+        "NavigationViewInfoBadgeStyle": "StringInfoBadgeStyle",
+        "InfoBadgeValue": "BETA"
+      }
+    }
+  ]
+}
+```
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/JsonNavigationViewInfoBadge.png)
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
 
