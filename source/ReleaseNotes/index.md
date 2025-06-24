@@ -2,6 +2,60 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 8.4.0
+
+- Add TokenViewSelectorBarStyle
+- Add Some Button Styles
+- Add SubtleComboBoxStyle
+- Add Colors
+- Add Shimmer
+- Add NavigationViewStoreStyle
+- Add LayeredFontIcons
+- Add Magnifier
+- Add StringInfoBadgeStyle
+- Add `GeneralHelper.GetGeometryFromString` method
+- Add `GeneralHelper.IsPrivacySensitiveRegion` method
+- Improve JsonNavigationViewService
+- Improve WindowMessageMonitor
+- Improve LayoutTransformer
+- Rename `GeneralHelper.GetGeometry` to `GeneralHelper.GetGeometryFromAppResources`
+- Remove NavigationViewItemStyle
+- `Microsoft.Windows.SDK.BuildTools` Updated from `10.0.26100.1742` to `10.0.26100.4188`
+
+All notable changes to this project will be documented in this file. Dates are displayed in UTC.
+
+#### [v8.4.0](https://github.com/Ghost1372/DevWinUI/compare/v8.3.0...v8.4.0)
+
+> 24 June 2025
+
+- Add NavigationViewStoreStyle [`b18ec92`](https://github.com/Ghost1372/DevWinUI/commit/b18ec922e5f320f44bad66463ec7d40eb3f270e9)
+- Remove NavigationViewItemStyle [`f418bad`](https://github.com/Ghost1372/DevWinUI/commit/f418bad83466111ad2cdfbe8facffc925ede73d1)
+- Add Some Buttons Style [`865babe`](https://github.com/Ghost1372/DevWinUI/commit/865babe5acab87ed49ddaa3b09759c96b84e9718)
+- Add SubtleComboBoxStyle [`b0fd2de`](https://github.com/Ghost1372/DevWinUI/commit/b0fd2de909e455cbf06d605dad5e625fd7a3b8e3)
+- Improve JsonNavigationViewService InfoBadge [`8058786`](https://github.com/Ghost1372/DevWinUI/commit/8058786d2fa41d4aafd3afff967afb82e136e846)
+- Update ReadMe [`9000e06`](https://github.com/Ghost1372/DevWinUI/commit/9000e06255f661b52bedeefab4c137f7d2fd02ba)
+- Add Shimmer [`972b8ee`](https://github.com/Ghost1372/DevWinUI/commit/972b8ee798b986dccf52f015d402d38e696ec4e0)
+- Add TokenViewSelectorBarStyle [`18b476d`](https://github.com/Ghost1372/DevWinUI/commit/18b476d4ea8bb20513b473c42d6322d8fa66fe06)
+- Add Magnifier [`cf7744a`](https://github.com/Ghost1372/DevWinUI/commit/cf7744a25fdebfbe90d1582ea6ca5895eeb85ae9)
+- Add Colors [`58607f8`](https://github.com/Ghost1372/DevWinUI/commit/58607f8a2d474d3314d241882c2b65a6983ef10a)
+- Add LayeredFontIcons [`b3ec2c7`](https://github.com/Ghost1372/DevWinUI/commit/b3ec2c72186dde28990ef301172ba67ca5630887)
+- Update ValidationPage.xaml.cs [`a820377`](https://github.com/Ghost1372/DevWinUI/commit/a820377d940e76a36b648ab6bdd71f2f5474a16a)
+- Add Issue Template [`e160b69`](https://github.com/Ghost1372/DevWinUI/commit/e160b6919c2ed5151bc9fa49a5d54b41c70373b3)
+- Update ShimmerPage.xaml [`02f8bdc`](https://github.com/Ghost1372/DevWinUI/commit/02f8bdce7482180cd1e2d11ccf85a308a37dedef)
+- Update StylesPage.xaml [`adca9ce`](https://github.com/Ghost1372/DevWinUI/commit/adca9cec54da5fe6fcb15198a4a0fd391b137933)
+- Add InfoBadge Style StringInfoBadgeStyle [`4b3b8dd`](https://github.com/Ghost1372/DevWinUI/commit/4b3b8ddc718dbf626bf0ec6845642ceaa622cbe1)
+- Update Magnifier.cs [`2e2dba0`](https://github.com/Ghost1372/DevWinUI/commit/2e2dba09cb8533b03e8dab94d9aa1269f3332a96)
+- Update WindowMessageMonitor.cs [`7b9f69f`](https://github.com/Ghost1372/DevWinUI/commit/7b9f69ffc5d6c2504a5e57b6f2793731d096bc97)
+- Update LayoutTransformer.cs [`7a3c8aa`](https://github.com/Ghost1372/DevWinUI/commit/7a3c8aa1c829c1ff7d7840a7d7761e9199c87155)
+- Update Packages [`461f3a5`](https://github.com/Ghost1372/DevWinUI/commit/461f3a51481a4f0b1aa48595e2bcd2bdd555c4f8)
+- Update GeneralHelper.cs [`8c63190`](https://github.com/Ghost1372/DevWinUI/commit/8c63190a36304c5feb1935034e72d94a8f3353cc)
+- Update GeneralHelper.cs [`154026b`](https://github.com/Ghost1372/DevWinUI/commit/154026bf5550ae236524f8bbf4a47e1e611dd97d)
+- Update ValidationPage.xaml.cs [`35b4914`](https://github.com/Ghost1372/DevWinUI/commit/35b4914c74b0f83efd73345eeb719e256ad6059f)
+- Update README.md [`f5656f4`](https://github.com/Ghost1372/DevWinUI/commit/f5656f4a6f70ae85add710a630651808adf82d1d)
+- Update README.md [`e8d0d88`](https://github.com/Ghost1372/DevWinUI/commit/e8d0d88214e9ea0c51c17bfad52bbc7a5c331037)
+- Update JsonNavigationService.NavigationView.cs [`8bb29d1`](https://github.com/Ghost1372/DevWinUI/commit/8bb29d1aa333980f98499cdb25b055d4375d6efd)
+- Update App.xaml [`5c40025`](https://github.com/Ghost1372/DevWinUI/commit/5c40025fd71de9b61cc7abef8778501519c5c739)
+
 # Version 8.3.0
 The following sections describe new and updated features and known issues for version 8.3.0
 
