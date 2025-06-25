@@ -39,6 +39,55 @@ jsonNavigationService.Initialize(NavView, NavFrame, NavigationPageMappings.PageD
                      .ConfigureJsonFile("Assets/NavViewMenu/AppData.json");
 ```
 
+# Json File
+
+{% note info %}
+For a complete list of available properties and the full JSON structure, please refer to the <ins>**[JSON File](https://ghost1372.github.io/DevWinUI/jsonNavigationService/jsonFile)**</ins> Structure Documentation.
+{% endnote %}
+
+
+This is just an example:
+
+The `UniqueId` must exactly match the full namespace (including file name) of your .xaml view file (e.g., `DevWinUIGallery.Views.HomeLandingPage`).
+
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/Ghost1372/DevWinUI/refs/heads/main/AppData.Schema.json",
+  "Groups": [
+    {
+      "UniqueId": "DevWinUIGallery.Views.HomeLandingPage",
+      "ShowItemsWithoutGroup": true,
+      "Items": [
+        {
+          "UniqueId": "DevWinUIGallery.Views.HomeLandingPage",
+          "Title": "Home",
+          "HideItem": true,
+          "ImagePath": "ms-appx:///Assets/Icon.png"
+        }
+      ]
+    },
+    {
+      "UniqueId": "LandingPages",
+      "SectionId": "DevWinUIGallery.Views.DemoSectionPage",
+      "Title": "LandingPages",
+      "SecondaryTitle": "",
+      "ImagePath": "ms-appx:///Assets/Fluent/dataGrid.png",
+      "UseBuiltInNavigationViewInfoBadgeStyle": true,
+      "Items": [
+        {
+          "UniqueId": "DevWinUIGallery.Views.BlankPage1",
+          "Title": "BlankPage1",
+          "Subtitle": "",
+          "ImagePath": "ms-appx:///Assets/Fluent/DataGrid.png"
+        }
+      ]
+    }
+  ]
+}
+
+```
+
+
 # NavigateToCommand
 You can use a predefined command for navigating between pages. To do this, define a `CommandParameter` using the `NavigationParameter` markup extension, specifying the target page and the BreadCrumbNavigator header (if using `ConfigureBreadCrumbNavigator`). Additionally, you can set a `NavigationTransitionInfo` to customize the transition effect.
 

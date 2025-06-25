@@ -76,9 +76,8 @@ Set BuildAction to Content, if you are in a Unpackaged Mode, set CopyToOutput to
 {% endnote %}
 
 {% note info %}
-To see details and descriptions of Json's properties, refer to <ins>**[this](https://Ghost1372.github.io/DevWinUI/jsonFile)**</ins> page
+For a complete list of available properties and the full JSON structure, please refer to the <ins>**[JSON File](https://ghost1372.github.io/DevWinUI/jsonNavigationService/jsonFile)**</ins> Structure Documentation.
 {% endnote %}
-
 
 ```json
 {
