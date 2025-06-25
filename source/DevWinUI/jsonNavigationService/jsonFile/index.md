@@ -107,7 +107,6 @@ Inherited by `DataGroup` and `DataItem`
           "ImagePath": "ms-appx:///Assets/Modules/PT.png",
           "Description": "test description",
           "IsUpdated": true,
-          "IncludedInBuild": true,
           "Links": [
             {
               "Title": "ApplicationDataContainerPage",
@@ -126,7 +125,6 @@ Inherited by `DataGroup` and `DataItem`
           "SecondaryTitle": "Test SecondaryTitle",
           "Subtitle": "you can use AppNotificationPage for Sending Toast Notification.",
           "ImagePath": "ms-appx:///Assets/Modules/PT.png",
-          "IncludedInBuild": true,
           "Links": [
             {
               "Title": "AppNotificationPage",
@@ -149,7 +147,6 @@ Inherited by `DataGroup` and `DataItem`
           "Subtitle": "Settings Page with a Hero Image",
           "ImagePath": "ms-appx:///Assets/Modules/PT.png",
           "IsUpdated": true,
-          "IncludedInBuild": true,
         }
       ]
     }
