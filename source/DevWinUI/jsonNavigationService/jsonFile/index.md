@@ -25,44 +25,44 @@ Inherited by `DataGroup` and `DataItem`
 |Name|Type|Remark|
 |-|-|-|
 |UniqueId|string|The `UniqueId` must exactly match the full namespace (including file name) of your .xaml view file (e.g., `DevWinUIGallery.Views.HomeLandingPage`).|
-|SectionId|string||
+|SectionId|string|Defines a page as a section in the gallery. Initialize it using `.ConfigureSectionPage(typeof(DemoSectionPage))`.Make sure to provide the full namespace of the section page, for example:`DevWinUIGallery.Views.DemoSectionPage`[See example here](https://ghost1372.github.io/DevWinUI/jsonNavigationService/#ConfigureSectionPage)|
 |Title|string||
 |ApiNamespace|string||
 |SecondaryTitle|string||
 |Subtitle|string||
 |Description|string||
-|ImagePath|string||
-|IconGlyph|string||
-|LocalizeId|string||
-|IsNavigationViewItemHeader|bool||
-|UsexUid|bool||
-|DataInfoBadge|DataInfoBadge||
+|ImagePath|string|Defines the image source shown on both the LandingPage and the NavigationViewItem icon. Example: `ms-appx:///Assets/Fluent/Extensions.png`|
+|IconGlyph|string|Specifies a glyph (Unicode character) to be used as the icon for the NavigationViewItem, typically via a FontIcon. Example: `EA6A` Note: If both `IconGlyph` and `ImagePath` are defined, the NavigationViewItem will prioritize and use `IconGlyph`|
+|LocalizeId|string|Specifies the resource key used for localizing properties such as `Title`, `Subtitle`, `Description`, and `SecondaryTitle`. Example: `Nav_HomeKey` Requires `UsexUid` to be set to true. [See example here](https://ghost1372.github.io/DevWinUI/jsonNavigationService/#Localize-Strings)|
+|IsNavigationViewItemHeader|bool|Marks the item as a header within the `NavigationView`|
+|UsexUid|bool|Enables localization through `x:Uid`. Required when using `LocalizeId`.|
+|DataInfoBadge|DataInfoBadge|Assigns an `InfoBadge` to the item, allowing visual indicators like status or alerts.|
 
 # DataInfoBadge
 
 |Name|Type|Remark|
 |-|-|-|
-|NavigationViewInfoBadgeStyle|string||
-|LandingPageInfoBadgeStyle|string||
-|InfoBadgeValue|string||
-|IsLandingPageInfoBadgeHidden|bool||
-|IsNavigationViewInfoBadgeHidden|bool||
+|NavigationViewInfoBadgeStyle|string|Specifies the `style` of the `InfoBadge` in the `NavigationView`. Example: `StringInfoBadgeStyle`|
+|LandingPageInfoBadgeStyle|string|Specifies the style of the `InfoBadge` on the `LandingPage`. Example: `AttentionIconInfoBadgeStyle`|
+|InfoBadgeValue|string|Sets the `value` of the `InfoBadge` if the style is `StringInfoBadgeStyle`. Examples: "`BETA`", "`NEW`"|
+|IsLandingPageInfoBadgeHidden|bool|Controls the visibility of the InfoBadge on the LandingPage.|
+|IsNavigationViewInfoBadgeHidden|bool|Controls the visibility of the InfoBadge in the NavigationView item.|
 
 # DataGroup (inherits from BaseDataInfo)
 
 |Name|Type|Remark|
 |-|-|-|
-|DefaultBuiltInNavigationViewInfoBadgeStyle|string|default `StringInfoBadgeStyle`|
-|DefaultBuiltInLandingPageInfoBadgeStyle|string|default `AttentionIconInfoBadgeStyle`|
+|DefaultBuiltInNavigationViewInfoBadgeStyle|string|Sets the default style for `InfoBadge` in the `NavigationView`. Default: `StringInfoBadgeStyle`|
+|DefaultBuiltInLandingPageInfoBadgeStyle|string|Sets the default style for `InfoBadge` on the `LandingPage`. Default: `AttentionIconInfoBadgeStyle`|
 |IsExpanded|bool||
 |IsSpecialSection|bool||
-|HideGroup|bool||
-|ShowItemsWithoutGroup|bool||
-|IsFooterNavigationViewItem|bool||
-|Order|bool||
-|OrderByDescending|bool||
-|UseBuiltInNavigationViewInfoBadgeStyle|bool||
-|UseBuiltInLandingPageInfoBadgeStyle|bool||
+|HideGroup|bool|Hides the entire group from the `NavigationView`|
+|ShowItemsWithoutGroup|bool|Displays individual NavigationViewItems that don’t belong to any group as separate entries.|
+|IsFooterNavigationViewItem|bool|If true, the item will be placed in the footer section of the NavigationView.|
+|Order|bool|When enabled, sorts items in ascending order.|
+|OrderByDescending|bool|If true, sorts items in descending order.|
+|UseBuiltInNavigationViewInfoBadgeStyle|bool|If enabled, applies the default style defined in `DefaultBuiltInNavigationViewInfoBadgeStyle`. Automatically displays InfoBadge when `IsNew`, `IsUpdated`, or `IsPreview` are set to true.|
+|UseBuiltInLandingPageInfoBadgeStyle|bool|If enabled, applies the default style defined in `DefaultBuiltInLandingPageInfoBadgeStyle`. Automatically displays InfoBadge when `IsNew`, `IsUpdated`, or `IsPreview` are set to true.|
 |Items|ObservableCollection<DataItem>||
 
 # DataItem (inherits from BaseDataInfo)
@@ -74,9 +74,9 @@ Inherited by `DataGroup` and `DataItem`
 |IsNew|bool||
 |IsUpdated|bool||
 |IsPreview|bool||
-|HideItem|bool||
-|HideNavigationViewItem|bool||
-|IncludedInBuild|bool||
+|HideItem|bool|Hides the item from the LandingPage.|
+|HideNavigationViewItem|bool|Hides the item from the NavigationView.|
+|IncludedInBuild|bool|If false, the item will be excluded from both the Landing Page and the NavigationView.|
 |Links|ObservableCollection<DataLink>||
 |Extra|ObservableCollection<string>||
 
