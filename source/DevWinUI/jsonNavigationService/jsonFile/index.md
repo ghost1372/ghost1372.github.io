@@ -76,7 +76,7 @@ Inherited by `DataGroup` and `DataItem`
 |IsPreview|bool||
 |HideItem|bool|Hides the item from the LandingPage.|
 |HideNavigationViewItem|bool|Hides the item from the NavigationView.|
-|IncludedInBuild|bool|If false, the item will be excluded from both the Landing Page and the NavigationView.|
+|IncludedInBuild|bool||
 |Links|ObservableCollection<DataLink>||
 |Extra|ObservableCollection<string>||
 
