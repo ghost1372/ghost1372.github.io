@@ -2,105 +2,69 @@
 title: Shortcut
 ---
 
-```cs
-public sealed partial class SettingsPageControl : UserControl
-```
+# Attributes
 
-# ShortcutWithTextLabelControl
-## Attributes
+|Name|
+|-|
+|Keys|
+|IsInfo|
+|IsError|
+|IsWarning|
+|InfoTitle|
+|InfoToolTip|
+|WarningTitle|
+|WarningToolTip|
+|ErrorTitle|
+|ErrorToolTip|
+|Title|
+|CloseButtonText|
+|PrimaryButtonText|
+|SecondaryButtonText|
+|ContentDialogTitle|
 
-| Name | Class|
-|-|-|
-|Text|ShortcutWithTextLabelControl|
-|Keys|ShortcutWithTextLabelControl|
+# Events
+
+|Name|
+|-|
+|CloseButtonClick|
+|PrimaryButtonClick|
+|SecondaryButtonClick|
+
+# Methods
+
+|Name|
+|-|
+|UpdatePreviewKeys|
+|CloseContentDialog|
 
 # Example
 
 ```xml
-<StackPanel>
-    <dev:ShortcutWithTextLabelControl x:Name="HotkeyMicVidControl" Text="to toggle both your microphone and video" />
-    <dev:ShortcutWithTextLabelControl x:Name="HotkeyMicControl" Text="to toggle your microphone" />
-    <dev:ShortcutWithTextLabelControl x:Name="HotkeyVidControl" Text="to toggle your microphone" />
-
-    <Button Content="Open Shortcut Dialog" Click="Button_Click"/>
-</StackPanel>
+<dev:Shortcut x:Name="MainShortcut" PrimaryButtonClick="OnMainShortcutPrimaryButtonClick" SecondaryButtonClick="OnMainShortcutSecondaryButtonClick" CloseButtonClick="OnMainShortcutCloseButtonClick"/>
 ```
 
 ```cs
-HotkeyMicVidControl.Keys = new List<object> { "Ctrl", "Alt", "F5" };
-HotkeyMicControl.Keys = new List<object> { "Ctrl", "Alt", "F5" };
-HotkeyVidControl.Keys = new List<object> { "Ctrl", "Alt", "F5" };
-```
+MainShortcut.Keys = new List<object>() { "Win", "Alt", "F1" };
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Shortcut.png)
-
-# ShortcutDialogContentControl
-## Attributes
-
-| Name | Class|
-|-|-|
-|Keys|ShortcutDialogContentControl|
-|IsError|ShortcutDialogContentControl|
-|IsWarningAltGr|ShortcutDialogContentControl|
-
-```cs
-private ShortcutDialogContentControl c = new ShortcutDialogContentControl();
-private ContentDialog shortcutDialog;
-bool canClose = false;
-
-public void OpenDialog()
+private void OnMainShortcutPrimaryButtonClick(object sender, ContentDialogButtonClickEventArgs e)
 {
-    c.Keys = new List<object> { "Ctrl", "Alt", "F5" };
-    shortcutDialog = new ContentDialog
-    {
-        XamlRoot = Content.XamlRoot,
-        Title = "Activation shortcut",
-        Content = c,
-        PrimaryButtonText = "Save",
-        SecondaryButtonText = "Confirm",
-        CloseButtonText = "Cancel",
-        DefaultButton = ContentDialogButton.Primary,
-    };
-
-    shortcutDialog.Closing += ShortcutDialog_Closing;
-    shortcutDialog.PrimaryButtonClick += ShortcutDialog_PrimaryButtonClick;
-    shortcutDialog.SecondaryButtonClick += ShortcutDialog_SecondaryButtonClick;
-    shortcutDialog.CloseButtonClick += ShortcutDialog_CloseButtonClick;
-    await shortcutDialog.ShowAsyncQueue();
-}
-private void ShortcutDialog_CloseButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
-{
-    canClose = true;
+    MainShortcut.UpdatePreviewKeys();
+    MainShortcut.CloseContentDialog();
+    // "Primary button clicked!" + Environment.NewLine + string.Join(" + ", MainShortcut.Keys);
 }
 
-private void ShortcutDialog_Closing(ContentDialog sender, ContentDialogClosingEventArgs args)
+private void OnMainShortcutSecondaryButtonClick(object sender, ContentDialogButtonClickEventArgs e)
 {
-    args.Cancel = !canClose;
+    // "Secondary button clicked!";
 }
-private void ShortcutDialog_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
+
+private void OnMainShortcutCloseButtonClick(object sender, ContentDialogButtonClickEventArgs e)
 {
-    DisableKeys();
-}
-private void ShortcutDialog_SecondaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
-{
-    EnableKeys();
-}
-private void EnableKeys()
-{
-    shortcutDialog.IsPrimaryButtonEnabled = true;
-    c.IsError = false;
-}
-private void DisableKeys()
-{
-    shortcutDialog.IsPrimaryButtonEnabled = false;
-    c.IsError = true;
+    // "Close button clicked!";
 }
 ```
-
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Shortcut_Dialog.png)
-
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Shortcut_Dialog_Error.png)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
 
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Shortcut.gif)

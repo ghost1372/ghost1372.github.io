@@ -467,6 +467,8 @@ menu:
       SimpleSettingsGroup: /simpleSettingsGroup/ ||
       Shimmer: /shimmer/ ||
       Shortcut: /shortcut/ ||
+      ShortcutPreview: /shortcutPreview/ ||
+      ShortcutWithTextLabel: /shortcutWithTextLabel/ ||
       StepBar: /stepBar/ ||
       SwitchPresenter: /switchPresenter/ ||
       TextBox: /textBox/ ||
