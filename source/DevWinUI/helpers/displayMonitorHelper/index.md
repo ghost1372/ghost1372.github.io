@@ -15,15 +15,15 @@ List<DisplayMonitorDetails> monitors = DisplayMonitorHelper.GetMonitorInfo();
 Retrieves information about the monitor closest to the specified window or window handle (hwnd).
 
 ```cs
-List<DisplayMonitorDetails> monitors = DisplayMonitorHelper.GetMonitorInfo(hwnd);
+var monitors = DisplayMonitorHelper.GetMonitorInfo(hwnd);
 // OR
-List<DisplayMonitorDetails> monitors = DisplayMonitorHelper.GetMonitorInfo(window);
+var monitors = DisplayMonitorHelper.GetMonitorInfo(window);
 ```
 
 # GetPrimaryMonitorInfo
 Retrieves information about the primary monitor (the main display)
 ```cs
-DisplayMonitorDetails primaryMonitor = DisplayMonitorHelper.GetPrimaryMonitorInfo();
+var primaryMonitor = DisplayMonitorHelper.GetPrimaryMonitorInfo();
 ```
 
 # Demo
