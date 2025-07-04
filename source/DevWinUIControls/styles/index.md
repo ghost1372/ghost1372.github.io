@@ -215,6 +215,7 @@ public class ColorFormatModel : Observable
 |WarningBorderPanelStyle|
 |ErrorBorderPanelStyle|
 |SuccessBorderPanelStyle|
+|TokenStyle|
 
 ```xml
 <Border Style="{ThemeResource BorderPanel}">
@@ -229,15 +230,12 @@ public class ColorFormatModel : Observable
 |-|
 |GridPanel|
 |GridCardPanel|
+|CardGridStyle|
+|GlassAcrylicGridStyle|
+|HeroCardGridStyle|
 
 ```xml
-<Grid Style="{ThemeResource GridPanel}">
-
-</Grid>
-```
-
-```xml
-<Grid Style="{ThemeResource GridCardPanel}">
+<Grid Style="{ThemeResource HeroCardGridStyle}">
 
 </Grid>
 ```
@@ -247,6 +245,13 @@ public class ColorFormatModel : Observable
 |Name|
 |-|
 |StackPanelStyle|
+|CardPanelStyle|
+
+```xml
+<StackPanel Style="{ThemeResource CardPanelStyle}">
+
+</StackPanel>
+```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/StackPanelStyle.png)
 

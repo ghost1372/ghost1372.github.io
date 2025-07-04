@@ -180,5 +180,9 @@ WindowHelper.SetForegroundWindow(hwnd);
 var IsCentered = WindowHelper.CenterOnScreen(hwnd);
 ```
 
+# TryGetAllWindowIds
+```cs
+var windowIds = WindowHelper.TryGetAllWindowIds();
+```
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

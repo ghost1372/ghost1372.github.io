@@ -165,8 +165,22 @@ private void Button_Click(object sender, RoutedEventArgs e)
 }
 ```
 
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/OpacityMaskView2.gif)
+
+# Example / OverlayRadialGradient
+<dev:OpacityMaskView MaxHeight="500"
+                     Margin="0,20"
+                     Padding="0"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Center"
+                     OpacityMask="{ThemeResource OverlayRadialGradient}">
+    <Image Source="ms-appx:///Assets/Others/Girl.jpg"
+           Stretch="Uniform" />
+</dev:OpacityMaskView>
+
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/OpacityMaskView3.png)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/OpacityMaskView2.gif)
+
