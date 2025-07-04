@@ -418,6 +418,8 @@ menu:
   DevWinUI.Controls - 8.4.0:
     default: /DevWinUIControls/ || fas fa-dice-d20
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
+    Brushes: 
+      default: /brushes/ || fas fa-palette
     Controls: 
       default: /controls/ || fab fa-intercom
       AutoScrollView: /autoScrollView/ ||
@@ -503,8 +505,6 @@ menu:
       TiledImageBrush: /tiledImageBrush/ ||
     Styles: 
       default: /styles/ || fas fa-palette
-    Colors: 
-      default: /colors/ || fas fa-palette
     Validation:
       default: /validation/ || fab fa-intercom
   DevWinUIContextMenu - 8.3.0:
