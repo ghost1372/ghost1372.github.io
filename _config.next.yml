@@ -420,6 +420,9 @@ menu:
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Brushes: 
       default: /brushes/ || fas fa-palette
+    Common:
+      default: /common/ || fas fa-tools
+      BlurEffectManager: /blurEffectManager/ ||
     Controls: 
       default: /controls/ || fab fa-intercom
       AutoScrollView: /autoScrollView/ ||
