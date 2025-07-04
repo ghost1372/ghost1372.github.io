@@ -457,6 +457,7 @@ menu:
       OOBEPageControl: /oOBEPageControl/ ||
       OpacityMaskView: /opacityMaskView/ ||
       OptionsPageControl: /optionsPageControl/ ||
+      OverviewPageHeader: /overviewPageHeader/ ||
       PagerControl: /pagerControl/ ||
       PinBox: /pinBox/ ||
       ProgressButton: /progressButton/ ||
