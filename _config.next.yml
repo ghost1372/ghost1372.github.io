@@ -425,6 +425,7 @@ menu:
       BlurEffectManager: /blurEffectManager/ ||
     Controls: 
       default: /controls/ || fab fa-intercom
+      AnimatedImage: /animatedImage/ ||
       AutoScrollView: /autoScrollView/ ||
       BreadcrumbNavigator: /breadcrumbNavigator/ ||
       CheckBoxWithDescriptionControl: /checkBoxWithDescriptionControl/ ||
@@ -445,6 +446,7 @@ menu:
       Gravatar: /gravatar/ ||
       Growl: /growl/ ||
       Hatch: /hatch/ ||
+      HeaderCarousel: /headerCarousel/ ||
       HoneycombPanel: /honeycombPanel/ ||
       IndeterminateProgressBar: /indeterminateProgressBar/ ||
       InlineAutoCompleteTextBox: /inlineAutoCompleteTextBox/ ||
