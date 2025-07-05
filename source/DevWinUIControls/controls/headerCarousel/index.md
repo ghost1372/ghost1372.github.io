@@ -22,6 +22,7 @@ title: HeaderCarousel
 |HeaderVisibility|
 |IsBlurEnabled|
 |BlurAmount|
+|IsAutoScrollEnabled|
 
 # HeaderCarouselItem
 ## Property
