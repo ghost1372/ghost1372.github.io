@@ -11,6 +11,7 @@ title: Welcome to DevWinUI Release Notes
 - Add HeaderCarousel
 - Add AnimatedImage 
 - Add CompositionAnimationController
+- Add ImageLoader
 - Add CompositionImage
 - Add CompositionShadow
 - Add PerspectiveZoom
