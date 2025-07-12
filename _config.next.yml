@@ -438,7 +438,9 @@ menu:
       CalendarWithClock: /calendarWithClock/ ||
       CirclePanel: /circlePanel/ ||
       Clock: /clock/ ||
+      ColorBloomControl: /colorBloomControl/ ||
       ColorfulShimmingEffect: /colorfulShimmingEffect/ ||
+      ColorSlideControl: /colorSlideControl/ ||
       ColorPalette: /colorPalette/ ||
       CompareSlider: /compareSlider/ ||
       CompositionShadow: /compositionShadow/ ||
