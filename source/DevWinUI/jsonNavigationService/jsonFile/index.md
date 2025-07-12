@@ -37,7 +37,7 @@ Inherited by `DataGroup` and `DataItem`
 |IsNavigationViewItemHeader|bool|Marks the item as a header within the `NavigationView`|
 |UsexUid|bool|Enables localization through `x:Uid`. Required when using `LocalizeId`.|
 |DataInfoBadge|DataInfoBadge|Assigns an `InfoBadge` to the item, allowing visual indicators like status or alerts.|
-
+|HideNavigationViewItemIcon|bool||
 # DataInfoBadge
 
 |Name|Type|Remark|
