@@ -93,7 +93,7 @@ title: BlurEffectManager
                  IsMoreButtonVisible="False"
                  Color="Transparent" />
 </StackPanel>
-<dev:CompositionImage x:Name="BackdropImage"
+<Image x:Name="BackdropImage"
                       MaxHeight="500"
                       VerticalAlignment="Top"
                       Source="ms-appx:///Assets/Others/Girl.jpg"
@@ -158,9 +158,9 @@ private void CmbBlurSourceType_SelectionChanged(object sender, SelectionChangedE
             case BlurSourceType.Backdrop:
                 break;
             case BlurSourceType.Surface:
-                _blurEffectManager.SurfaceBrushSource = BackdropImage.SurfaceBrush;
-                //var surface = LoadedImageSurface.StartLoadFromUri(new Uri(BackdropImage.Source.AbsoluteUri));
-                //_blurEffectManager.SurfaceSource = surface;
+                //_blurEffectManager.SurfaceBrushSource = BackdropImage.SurfaceBrush;
+                var surface = LoadedImageSurface.StartLoadFromUri(BackdropImage.BaseUri);
+                _blurEffectManager.SurfaceSource = surface;
                 break;
             case BlurSourceType.Visual:
                 Visual visual = ElementCompositionPreview.GetElementVisual(BackdropImage);
