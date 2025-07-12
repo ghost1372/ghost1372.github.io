@@ -2,6 +2,110 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 8.5.0
+- Add Shortcut, ShortcutEditor and ShortcutWithTextLabel
+- Add TryGetAllWindowIds in WindowHelper
+- Add new gradients
+- Add OverviewPageHeader
+- Add BlurEffectManager
+- Add HeaderCarousel
+- Add AnimatedImage 
+- Add CompositionAnimationController
+- Add CompositionImage
+- Add CompositionShadow
+- Add PerspectiveZoom
+- Add ForegroundFocusEffects
+- Add ColorBloomControl
+- Add ColorSlideControl
+- Add ShimmerTextBlock
+- Add AnimatedGradient
+- Add BlurEffectControl
+- Add BlurEffectBrush 
+- Add ImageEffectBrush
+- Add HideNavigationViewItemIcon in JsonNavigationService
+- Improve ShortcutDialogContentControl
+- Removed BlurAnimationHelper
+
+All notable changes to this project will be documented in this file. Dates are displayed in UTC.
+
+#### [v8.5.0](https://github.com/ghost1372/DevWinUI/compare/v8.4.0...v8.5.0)
+
+> 12 July 2025
+
+- Add Contributing.md #68 [`#69`](https://github.com/ghost1372/DevWinUI/pull/69)
+- Fix #60 Refactor window message monitor variables to fields [`#60`](https://github.com/ghost1372/DevWinUI/issues/60)
+- Add HeaderCarousel [`e0f3e9b`](https://github.com/ghost1372/DevWinUI/commit/e0f3e9b643530ddd51596b84259f60076a801c31)
+- Add CompositionImage [`34a75bb`](https://github.com/ghost1372/DevWinUI/commit/34a75bb52031cf885dd716b1af58029708931838)
+- Rename ShortcutEditor to Shortcut [`dc4dddf`](https://github.com/ghost1372/DevWinUI/commit/dc4dddf21acf6e04244942dd662bf641ed8d7396)
+- Add ColorBloomController, ColorSlideController [`85a1c0f`](https://github.com/ghost1372/DevWinUI/commit/85a1c0f5bfb856c0ba55f7aebdb9542b260c5868)
+- Make ColorSlide/ColorBloom Controller as a Custom Control [`a2057dd`](https://github.com/ghost1372/DevWinUI/commit/a2057dd4527e851fcbe7579fd8da924b6a204703)
+- Add ForegroundFocusEffects [`4f371cd`](https://github.com/ghost1372/DevWinUI/commit/4f371cd3cfd0f97b10cb6e6ce5fb0171cedf7d50)
+- Add BlurEffectControl Sample [`53d4b2f`](https://github.com/ghost1372/DevWinUI/commit/53d4b2fe5f8a7375946d294f9cb9fc4b136cc1f0)
+- Add Shortcut, ShortcutEditor and ShortcutWithTextLabel [`c2ad0be`](https://github.com/ghost1372/DevWinUI/commit/c2ad0bebb5a29422f17abacf7f279b9d1a93be30)
+- Add BlurEffectControl and Imporve BlurEffectManager [`a108b70`](https://github.com/ghost1372/DevWinUI/commit/a108b7005352642b9c8577098c12fc721b7a788d)
+- Add BlurEffectManager [`9941a6c`](https://github.com/ghost1372/DevWinUI/commit/9941a6c886f02910e65ddfaf32c9e7c026a2c32b)
+- Add PerspectiveZoom [`02baf1e`](https://github.com/ghost1372/DevWinUI/commit/02baf1e409a942441699c68be7203d5fca7bd84e)
+- Add CompositionShadow [`b07804c`](https://github.com/ghost1372/DevWinUI/commit/b07804c6c938a88a39f6555d22bfe5ce32dea684)
+- Add BlurEffectBrush  and ImageEffectBrush [`28db6bf`](https://github.com/ghost1372/DevWinUI/commit/28db6bf45977ca0a0784d5618655a6a8e4198eb4)
+- Update Styles Sample [`fdf3429`](https://github.com/ghost1372/DevWinUI/commit/fdf34293417941250f6adfca9df38cea314f0efe)
+- Improve HeaderCarousel [`91097c0`](https://github.com/ghost1372/DevWinUI/commit/91097c007d9c611c935521920923d6a7831351e2)
+- Add CompositionAnimationController [`3eb4979`](https://github.com/ghost1372/DevWinUI/commit/3eb497901d9112dbfe868792f301f34428ad1ee4)
+- Add AnimatedGradient [`826dd0e`](https://github.com/ghost1372/DevWinUI/commit/826dd0e0d9ab2715464d8c856f6235857f5f3a32)
+- Add HeaderCarousel Sample [`537aa41`](https://github.com/ghost1372/DevWinUI/commit/537aa41263cb5a7ee51a52af649e7346a72a6a52)
+- Improve Shortcut [`16107c1`](https://github.com/ghost1372/DevWinUI/commit/16107c134f540e3b66544aa172018ec214ca98b4)
+- Add Shortcut Sample [`a45950f`](https://github.com/ghost1372/DevWinUI/commit/a45950f74d681755495ccaeb651760ca36325113)
+- Refactor panel styles and add new gradients [`1234ae1`](https://github.com/ghost1372/DevWinUI/commit/1234ae17891182846613fef2a52ec5981ae309e6)
+- Add OverviewPageHeader Sample [`0f21ace`](https://github.com/ghost1372/DevWinUI/commit/0f21acea54485e764eaeb1e0ccfb135da7b9576f)
+- Add Border, Grid and StackPanel Samples [`614fc1c`](https://github.com/ghost1372/DevWinUI/commit/614fc1c7256f65f92e06332871100cd7c64d03bc)
+- Add ShimmerTextBlock [`f39e8f2`](https://github.com/ghost1372/DevWinUI/commit/f39e8f228db5eac003176dab1b128a1101f9aeae)
+- Add Brush Samples [`3c017d8`](https://github.com/ghost1372/DevWinUI/commit/3c017d8dc3fd3b1637f7e14c3c85012ba81945cd)
+- Add OverviewPageHeader [`3a41dc4`](https://github.com/ghost1372/DevWinUI/commit/3a41dc489744db1bdf309696a66a1d8f8c6328dc)
+- Add AnimatedImage Sample [`e7334ce`](https://github.com/ghost1372/DevWinUI/commit/e7334ceaa13df417eac543519efe1da33c9613e0)
+- Add KeyVisual Missing Sample [`6d9eaca`](https://github.com/ghost1372/DevWinUI/commit/6d9eacaf26248369cc0735957f257997d085688d)
+- Improve Gallery [`0d47c14`](https://github.com/ghost1372/DevWinUI/commit/0d47c14ff068b344d8f38eb887d5debce9aed093)
+- Add BlurEffectManager [`1e3f2bc`](https://github.com/ghost1372/DevWinUI/commit/1e3f2bc08c494743b1199b7da75ddfdc3ca68f0f)
+- Update KeyVisual.cs [`e0105cc`](https://github.com/ghost1372/DevWinUI/commit/e0105cc5eedf1de1a18a8511ddf03dc37d169e35)
+- Create BlurEffectManager.cs [`62a974e`](https://github.com/ghost1372/DevWinUI/commit/62a974e0e46a1a1ed7e1249088faac561a9a570a)
+- Improve ShortcutDialogContentControl [`0d1f925`](https://github.com/ghost1372/DevWinUI/commit/0d1f925941e1e9ce1a14d39f27f8562d0222928e)
+- Add TryGetAllWindowIds in WindowHelper [`6ecd690`](https://github.com/ghost1372/DevWinUI/commit/6ecd690cd894cc42ad8cabb60049a8ac9f3e50b0)
+- Update Samples [`db18d5f`](https://github.com/ghost1372/DevWinUI/commit/db18d5f89aa92ea6cbe32a7389cd9ba77c590e86)
+- Update Sample [`94025db`](https://github.com/ghost1372/DevWinUI/commit/94025db993ae596102051f3ac2ec710fdd22bc03)
+- Update BlurEffectManager.cs [`8be0bb1`](https://github.com/ghost1372/DevWinUI/commit/8be0bb11ec16af790984d5c86be641d9065341b7)
+- Improve Styling [`074c63b`](https://github.com/ghost1372/DevWinUI/commit/074c63b346b6cbee07e29fa37a946154856243e3)
+- Add IsAutoScrollEnabled in HeaderCarousel [`e2eff76`](https://github.com/ghost1372/DevWinUI/commit/e2eff7690365a2f36d8d8a9cc3542e79c5e1191d)
+- Update HeaderCarousel [`0683ab0`](https://github.com/ghost1372/DevWinUI/commit/0683ab0ba083a4ba57179e7d00f7e191f248a392)
+- Update CONTRIBUTING.md [`06040ca`](https://github.com/ghost1372/DevWinUI/commit/06040caafe9f31d900a8950dfa9531fec03aeb09)
+- Update CONTRIBUTING.md [`e3b5b85`](https://github.com/ghost1372/DevWinUI/commit/e3b5b8539ce3fc9533770c008ea2d77e4efd1fa3)
+- Update Sample [`51aa0f5`](https://github.com/ghost1372/DevWinUI/commit/51aa0f579231e244e069c600cc48a877d5e12b79)
+- make class partial [`c5ae624`](https://github.com/ghost1372/DevWinUI/commit/c5ae6242424c9ec3aabce9c13be4f9b204c0722b)
+- Update BlurEffectManager.cs [`5d62216`](https://github.com/ghost1372/DevWinUI/commit/5d62216e63d7228ee050757fa326894195421435)
+- Update Samples [`dec1d05`](https://github.com/ghost1372/DevWinUI/commit/dec1d05c82d6bf35b5cb348028e67265c03ff2b4)
+- Add HideNavigationViewItemIcon in JsonNavigationService [`f3730ad`](https://github.com/ghost1372/DevWinUI/commit/f3730add18eaadbad0d5681b159c7fcffc8a31c6)
+- Update CONTRIBUTING.md [`a0b28b0`](https://github.com/ghost1372/DevWinUI/commit/a0b28b0dc7d4b5e19633b47cd197013ef9175240)
+- Update Directory.Build.props [`45cf1ca`](https://github.com/ghost1372/DevWinUI/commit/45cf1caa64fa5e0030bf2035700db2ee5e169ab3)
+- Update CONTRIBUTING.md [`0ead7cf`](https://github.com/ghost1372/DevWinUI/commit/0ead7cf926d2c27ed9a5f9e0f8996297b6b5d936)
+- Update AnimatedImage.xaml [`971b726`](https://github.com/ghost1372/DevWinUI/commit/971b726f60ebfb18856ee762b47c5871a3d599dc)
+- Update README.md [`c51c9f7`](https://github.com/ghost1372/DevWinUI/commit/c51c9f7e63c1af3c86867a09d5a95406418bf89c)
+- Update DevWinUI.Controls.csproj [`450fc64`](https://github.com/ghost1372/DevWinUI/commit/450fc6485419ec97fe1fd0474bb0d75e9d42c2ac)
+- Update CONTRIBUTING.md [`f33fdb3`](https://github.com/ghost1372/DevWinUI/commit/f33fdb3864992b5665a66723000b47c4837219d2)
+- Update Sample [`9bde51b`](https://github.com/ghost1372/DevWinUI/commit/9bde51b489dec102118ec197bedb0150063d1f2e)
+- Update HeaderCarousel.xaml [`0145f7c`](https://github.com/ghost1372/DevWinUI/commit/0145f7cb6ae7a9dd7d3169b535f34ee4784ca253)
+- Update WindowHelper.cs [`4231ee9`](https://github.com/ghost1372/DevWinUI/commit/4231ee98c5f488b456ac426908ee3aa197ef185f)
+- Update DevWinUI.csproj [`84d2103`](https://github.com/ghost1372/DevWinUI/commit/84d21037d5feb044f41979f671ede51ae2de4f6b)
+- Update ColorSlideControlPage.xaml [`b797bda`](https://github.com/ghost1372/DevWinUI/commit/b797bdac091809adc802095c39e94ed93178f65a)
+- Update BrushPage.xaml [`bbeddc8`](https://github.com/ghost1372/DevWinUI/commit/bbeddc89954789f5f0c37fb89744f56bbc899f9a)
+- Update BlurEffectControl.cs [`3af7302`](https://github.com/ghost1372/DevWinUI/commit/3af7302bb20ce84e2581b8a9444c2a9abce78c1d)
+- Update README.md [`57afdfe`](https://github.com/ghost1372/DevWinUI/commit/57afdfeb0cadd902965b957d4991478001f0c502)
+- Update CONTRIBUTING.md [`deabfcb`](https://github.com/ghost1372/DevWinUI/commit/deabfcb2caa721462eb986f5ecdbade05382fd2f)
+- Update CONTRIBUTING.md [`131b982`](https://github.com/ghost1372/DevWinUI/commit/131b9822d26b6167f3bbd0c768aff2cd3c74a81a)
+- Update CONTRIBUTING.md [`1ea4f42`](https://github.com/ghost1372/DevWinUI/commit/1ea4f4244403382e0589a646a0300e86a2b3f147)
+- Update CONTRIBUTING.md [`e427382`](https://github.com/ghost1372/DevWinUI/commit/e42738292d4a1d17342e5bb0946b377c7c10c642)
+- Update AppData.json [`313b062`](https://github.com/ghost1372/DevWinUI/commit/313b062eaa2d7eaeb8202d14f218f7ff37f1dee8)
+- Update ShortcutPage.xaml.cs [`8dfacec`](https://github.com/ghost1372/DevWinUI/commit/8dfacec0a3e7722d184ef76ed258f3693c1dd2e0)
+- Update README.md [`b079b15`](https://github.com/ghost1372/DevWinUI/commit/b079b15d2ce583542f418dc25f4f221ae03e8dbd)
+- Move Blur Stuffs [`22f9d4e`](https://github.com/ghost1372/DevWinUI/commit/22f9d4e375906bd289f7d3a00f4ad59f99fb9b2f)
+- Delete ToolTip.png [`9001e9b`](https://github.com/ghost1372/DevWinUI/commit/9001e9bdd56c805434b81e058c74596e1c2c3744)
+
 # Version 8.4.0
 
 - Add TokenViewSelectorBarStyle
