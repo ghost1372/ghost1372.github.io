@@ -350,7 +350,7 @@ menu:
       default: /intellisense/ || fas fa-brain
   WinUICommunity - 7.0.0:
     default: /winUICommunity/ || fab fa-microsoft
-  DevWinUI - 8.4.0:
+  DevWinUI - 8.5.0:
     default: /DevWinUI/ || fas fa-tools
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Attach:
@@ -359,6 +359,7 @@ menu:
       PanelAttach: /panelAttach/ ||
       TitleBarAttach: /titleBarAttach/ ||
     Backdrop: /backdrop/ ||
+    CompositionAnimationController: /compositionAnimationController/ ||
     DelegateCommand: /delegateCommand/ ||
     Extensions: 
       default: /extensions/ || fas fa-tools
@@ -415,18 +416,23 @@ menu:
     SemanticVersion: /semanticVersion/ ||
     SingleInstanceApp: /singleInstanceApp/ ||
     ThemeService: /themeService/ ||
-  DevWinUI.Controls - 8.4.0:
+  DevWinUI.Controls - 8.5.0:
     default: /DevWinUIControls/ || fas fa-dice-d20
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Brushes: 
       default: /brushes/ || fas fa-palette
+      BlurEffectBrush: /blurEffectBrush/ ||
+      ImageEffectBrush: /imageEffectBrush/ ||
+      ThemeBrushes: /themeBrushes/ ||
     Common:
       default: /common/ || fas fa-tools
       BlurEffectManager: /blurEffectManager/ ||
     Controls: 
       default: /controls/ || fab fa-intercom
+      AnimatedGradient: /animatedGradient/ ||
       AnimatedImage: /animatedImage/ ||
       AutoScrollView: /autoScrollView/ ||
+      BlurEffectControl: /blurEffectControl/ ||
       BreadcrumbNavigator: /breadcrumbNavigator/ ||
       CheckBoxWithDescriptionControl: /checkBoxWithDescriptionControl/ ||
       CalendarWithClock: /calendarWithClock/ ||
@@ -435,6 +441,8 @@ menu:
       ColorfulShimmingEffect: /colorfulShimmingEffect/ ||
       ColorPalette: /colorPalette/ ||
       CompareSlider: /compareSlider/ ||
+      CompositionShadow: /compositionShadow/ ||
+      CompositionImage: /compositionImage/ ||
       CopyButton: /copyButton/ ||
       DateTimePicker: /dateTimePicker/ ||
       Divider: /divider/ ||
@@ -442,6 +450,7 @@ menu:
       FlexPanel: /flexPanel/ ||
       FlipSide: /flipSide/ ||
       FlyoutMenuButton: /flyoutMenuButton/ ||
+      ForegroundFocusEffects: /foregroundFocusEffects/ ||
       GoToTop: /goToTop/ ||
       Gravatar: /gravatar/ ||
       Growl: /growl/ ||
@@ -464,6 +473,8 @@ menu:
       OptionsPageControl: /optionsPageControl/ ||
       OverviewPageHeader: /overviewPageHeader/ ||
       PagerControl: /pagerControl/ ||
+      PerspectiveHost: /perspectiveHost/ ||
+      PerspectiveZoom: /perspectiveZoom/ ||
       PinBox: /pinBox/ ||
       ProgressButton: /progressButton/ ||
       ProgressRing: /progressRing/ ||
@@ -474,6 +485,7 @@ menu:
       Shield: /shield/ ||
       SimpleSettingsGroup: /simpleSettingsGroup/ ||
       Shimmer: /shimmer/ ||
+      ShimmerTextBlock: /shimmerTextBlock/ ||
       Shortcut: /shortcut/ ||
       ShortcutPreview: /shortcutPreview/ ||
       ShortcutWithTextLabel: /shortcutWithTextLabel/ ||
@@ -496,9 +508,6 @@ menu:
       WaveCircule: /waveCircule/ ||
     Converters:
       default: /converters/ || fab fa-intercom
-    Helpers: 
-      default: /helpers/ || fas fa-tools
-      BlurAnimationHelper: /blurAnimationHelper/ ||  
     LandingPages:
       default: /landingPages/ || fab fa-intercom
       AllLandingPage: /allLandingPage/ ||

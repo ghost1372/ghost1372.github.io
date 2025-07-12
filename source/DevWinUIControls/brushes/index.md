@@ -2,20 +2,6 @@
 title: Brushes
 ---
 
-|Name|
-|-|
-|CardGradient2Brush|
-|CardGradient1Brush|
-|GlassAcrylicBackground|
-|GlassAcrylicBorderBrush|
-|OverlayRadialGradient|
+There are multiple brush effects available, such as Theme Brushes, XamlCompositionBrushes, and more.
 
-# Example
-
-```xml
-<Border Width="400"
-        Height="200"
-        Background="{ThemeResource CardGradient2Brush}" />
-```
-
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Brushes.png)
+Choose one from the top menu.

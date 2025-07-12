@@ -1,10 +1,11 @@
 ---
-title: BlurEffectManager
+title: BlurEffectControl
 ---
 
 # Property
 |Name|
 |-|
+|IsBlurEnabled|
 |IsTintEnabled|
 |TintTargetMode|
 |TintColor|
@@ -25,15 +26,9 @@ title: BlurEffectManager
 # Method
 |Name|
 |-|
-|EnableBlur|
-|DisableBlur|
-|Refresh|
+|GetBlurEffectManager|
 |GetBrush|
 |GetCompositor|
-|StartBlurAnimation|
-|StartBlurReverseAnimation|
-|StopBlurAnimation|
-|Dispose|
 
 # Example
 
@@ -41,14 +36,12 @@ title: BlurEffectManager
 <StackPanel Spacing="10">
     <ToggleSwitch x:Name="TGIsBlurEnabled"
                   Header="IsBlurEnabled"
-                  IsOn="True"
-                  Toggled="TGIsBlurEnabled_Toggled" />
+                  IsOn="True" />
     <Slider x:Name="TGSlider"
             Header="Blur Amount"
             Maximum="100"
             Minimum="0"
-            ValueChanged="TGSlider_ValueChanged"
-            Value="10" />
+            Value="2" />
     <ComboBox x:Name="CmbBlurSourceType"
               Header="Blur Source Type"
               ItemsSource="{x:Bind ViewModel.BlurSourceTypeItems, Mode=OneWay}"
@@ -76,14 +69,12 @@ title: BlurEffectManager
               SelectionChanged="CmbNoiseBlendMode_SelectionChanged" />
     <ToggleSwitch x:Name="TGUseNoise"
                   Header="Use Noise"
-                  IsOn="False"
-                  Toggled="TGUseNoise_Toggled" />
+                  IsOn="False" />
     <TextBox x:Name="TxtNoiseUri"
              Header="Noise Uri"
              IsReadOnly="True"
              Text="ms-appx:///Assets/Noise/Noise.jpg" />
     <ColorPicker x:Name="CpTintColor"
-                 ColorChanged="CpTintColor_ColorChanged"
                  IsAlphaSliderVisible="False"
                  IsAlphaTextInputVisible="False"
                  IsColorChannelTextInputVisible="False"
@@ -93,118 +84,82 @@ title: BlurEffectManager
                  IsMoreButtonVisible="False"
                  Color="Transparent" />
 </StackPanel>
-<dev:CompositionImage x:Name="BackdropImage"
-                      MaxHeight="500"
-                      VerticalAlignment="Top"
-                      Source="ms-appx:///Assets/Others/Girl.jpg"
-                      Stretch="Uniform" />
+<Grid VerticalAlignment="Top">
+    <dev:CompositionImage x:Name="BackdropImage" Source="ms-appx:///Assets/Landscapes/Landscape-9.jpg" />
+    <TextBlock HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="72"
+               Foreground="Black"
+               Text="DevWinUI"
+               TextWrapping="Wrap" />
+    <dev:BlurEffectControl x:Name="BlurEffectControlSample"
+                           BlurAmount="{x:Bind TGSlider.Value, Mode=OneWay}"
+                           IsBlurEnabled="{x:Bind TGIsBlurEnabled.IsOn, Mode=OneWay}"
+                           IsTintEnabled="True"
+                           NoiseUri="{x:Bind TxtNoiseUri.Text, Mode=OneWay}"
+                           TintColor="{x:Bind CpTintColor.Color, Mode=OneWay}"
+                           UseNoise="{x:Bind TGUseNoise.IsOn, Mode=OneWay}" />
+</Grid>
 ```
 
 ```cs
-private BlurEffectManager _blurEffectManager;
-_blurEffectManager = new BlurEffectManager(BackdropImage) { IsTintEnabled = true };
-
-private void TGIsBlurEnabled_Toggled(object sender, RoutedEventArgs e)
-{
-    if (_blurEffectManager == null)
-    {
-        return;
-    }
-
-    if (TGIsBlurEnabled.IsOn)
-    {
-        _blurEffectManager.EnableBlur();
-    }
-    else
-    {
-        _blurEffectManager.DisableBlur();
-    }
-}
-
-private void TGSlider_ValueChanged(object sender, Microsoft.UI.Xaml.Controls.Primitives.RangeBaseValueChangedEventArgs e)
-{
-    if (_blurEffectManager != null && TGIsBlurEnabled.IsOn)
-    {
-        _blurEffectManager.BlurAmount = e.NewValue;
-    }
-}
-
-private void CpTintColor_ColorChanged(ColorPicker sender, ColorChangedEventArgs args)
-{
-    if (_blurEffectManager != null && TGIsBlurEnabled.IsOn)
-    {
-        _blurEffectManager.TintColor = args.NewColor;
-    }
-}
-
-private void TGUseNoise_Toggled(object sender, RoutedEventArgs e)
-{
-    if (_blurEffectManager != null && TGIsBlurEnabled.IsOn)
-    {
-        _blurEffectManager.UseNoise = TGUseNoise.IsOn;
-        if (TGUseNoise.IsOn)
-        {
-            _blurEffectManager.NoiseUri = TxtNoiseUri.Text;
-        }
-    }
-}
-
 private void CmbBlurSourceType_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
-    if (_blurEffectManager != null && CmbBlurSourceType != null && TGIsBlurEnabled.IsOn)
+    if (CmbBlurSourceType != null && TGIsBlurEnabled.IsOn)
     {
         switch ((BlurSourceType)CmbBlurSourceType.SelectedIndex)
         {
             case BlurSourceType.Backdrop:
                 break;
             case BlurSourceType.Surface:
-                _blurEffectManager.SurfaceBrushSource = BackdropImage.SurfaceBrush;
+                BlurEffectControlSample.SurfaceBrushSource = BackdropImage.SurfaceBrush;
                 //var surface = LoadedImageSurface.StartLoadFromUri(new Uri(BackdropImage.Source.AbsoluteUri));
-                //_blurEffectManager.SurfaceSource = surface;
+                //BlurEffectControlSample.SurfaceSource = surface;
                 break;
             case BlurSourceType.Visual:
                 Visual visual = ElementCompositionPreview.GetElementVisual(BackdropImage);
-                _blurEffectManager.VisualSource = visual;
+                BlurEffectControlSample.VisualSource = visual;
                 break;
             case BlurSourceType.Custom:
-                _blurEffectManager.CustomSourceBrush = _blurEffectManager.GetCompositor().CreateColorBrush(Colors.Green);
+                BlurEffectControlSample.CustomSourceBrush = BlurEffectControlSample.GetCompositor().CreateColorBrush(Colors.Green);
                 break;
         }
-        _blurEffectManager.SourceType = (BlurSourceType)CmbBlurSourceType.SelectedIndex;
+        BlurEffectControlSample.SourceType = (BlurSourceType)CmbBlurSourceType.SelectedIndex;
     }
 }
 
 private void CmbEffectBorderMode_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
-    if (_blurEffectManager != null && CmbEffectBorderMode != null && TGIsBlurEnabled.IsOn)
+    if (CmbEffectBorderMode != null && TGIsBlurEnabled.IsOn)
     {
-        _blurEffectManager.BorderMode = (EffectBorderMode)CmbEffectBorderMode.SelectedIndex;
+        BlurEffectControlSample.BorderMode = (EffectBorderMode)CmbEffectBorderMode.SelectedIndex;
     }
 }
 
 private void CmbEffectOptimization_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
-    if (_blurEffectManager != null && CmbEffectOptimization != null && TGIsBlurEnabled.IsOn)
+    if (CmbEffectOptimization != null && TGIsBlurEnabled.IsOn)
     {
-        _blurEffectManager.Optimization = (EffectOptimization)CmbEffectOptimization.SelectedIndex;
+        BlurEffectControlSample.Optimization = (EffectOptimization)CmbEffectOptimization.SelectedIndex;
     }
 }
 
 private void CmbBlendEffectMode_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
-    if (_blurEffectManager != null && CmbBlendEffectMode != null && TGIsBlurEnabled.IsOn)
+    if (CmbBlendEffectMode != null && TGIsBlurEnabled.IsOn)
     {
-        _blurEffectManager.BlendMode = (BlendEffectMode)CmbBlendEffectMode.SelectedIndex;
+        BlurEffectControlSample.BlendMode = (BlendEffectMode)CmbBlendEffectMode.SelectedIndex;
     }
 }
 private void CmbNoiseBlendMode_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
-    if (_blurEffectManager != null && CmbNoiseBlendMode != null && TGIsBlurEnabled.IsOn)
+    if (CmbNoiseBlendMode != null && TGIsBlurEnabled.IsOn)
     {
-        _blurEffectManager.NoiseBlendMode = (BlendEffectMode)CmbNoiseBlendMode.SelectedIndex;
+        BlurEffectControlSample.NoiseBlendMode = (BlendEffectMode)CmbNoiseBlendMode.SelectedIndex;
     }
 }
 ```
+
 
 {% warning info %}
 When `BlurSourceType` is set to `Surface`, you need to provide either `SurfaceSource` (of type `ICompositionSurface`) or `SurfaceBrushSource` (of type `CompositionSurfaceBrush`). These two properties have been added for convenience.
@@ -222,43 +177,7 @@ When `BlurSourceType` is set to `Visual`, you must provide a `VisualSource` of t
 When `BlurSourceType` is set to `Custom`, you must provide a `CustomSourceBrush` of type `CompositionBrush`.
 {% endnote %}
 
-
-# Example 2
-
-```xml
-<Image x:Name="BackdropImage2"
-            MaxHeight="500"
-            VerticalAlignment="Top"
-            PointerEntered="BackdropImage_PointerEntered"
-            PointerExited="BackdropImage_PointerExited"
-            Source="ms-appx:///Assets/Others/Girl.jpg"
-            Stretch="Uniform" />
-```
-
-```cs
-private BlurEffectManager _blurEffectManager;
-_blurEffectManager = new BlurEffectManager(BackdropImage) { IsTintEnabled = true };
-
-private void BackdropImage_PointerEntered(object sender, Microsoft.UI.Xaml.Input.PointerRoutedEventArgs e)
-{
-    if (_blurEffectManager != null)
-    {
-        _blurEffectManager.StartBlurAnimation(10.0, TimeSpan.FromMilliseconds(3000));
-    }
-}
-
-private void BackdropImage_PointerExited(object sender, Microsoft.UI.Xaml.Input.PointerRoutedEventArgs e)
-{
-    if (_blurEffectManager != null)
-    {
-        _blurEffectManager.StartBlurReverseAnimation(10.0, TimeSpan.FromMilliseconds(3000));
-    }
-}
-```
-
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlurEffectManager.gif)
-
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlurEffectManager2.gif)
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlurEffectControl.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
