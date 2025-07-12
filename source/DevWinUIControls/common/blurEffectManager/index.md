@@ -35,6 +35,20 @@ title: BlurEffectManager
 |StopBlurAnimation|
 |Dispose|
 
+# BlurSourceType
+
+## Backdrop
+Any control that is composited above other content and you want to blur the background behind the control.
+
+## Surface
+`CompositionImage` or any control that renders a `Win2D` surface or LoadedImageSurface, often for blurring images or canvas-rendered content.
+
+## Visual
+Any control or content hosted via Visual, especially when you want to blur a specific part of UI or visual tree
+
+## Custom
+Fully customized scenarios where the user provides their own CompositionBrush
+
 # Example
 
 ```xml
