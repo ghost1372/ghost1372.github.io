@@ -175,19 +175,19 @@ private void CmbNoiseBlendMode_SelectionChanged(object sender, SelectionChangedE
 ```
 
 
-{% warning info %}
+{% warning %}
 When `BlurSourceType` is set to `Surface`, you need to provide either `SurfaceSource` (of type `ICompositionSurface`) or `SurfaceBrushSource` (of type `CompositionSurfaceBrush`). These two properties have been added for convenience.
 
 If you're using a standard `<Image/>` control, you'll need to manually extract a compatible `SurfaceSource` from the image. However, if you're using the `<CompositionImage/>` control, you can directly obtain the `SurfaceBrushSource` via `img.SurfaceBrush`.
 
 {% endnote %}
 
-{% warning info %}
+{% warning %}
 When `BlurSourceType` is set to `Visual`, you must provide a `VisualSource` of type `Visual`.
 
 {% endnote %}
 
-{% warning info %}
+{% warning %}
 When `BlurSourceType` is set to `Custom`, you must provide a `CustomSourceBrush` of type `CompositionBrush`.
 {% endnote %}
 
