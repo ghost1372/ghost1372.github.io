@@ -2,6 +2,53 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 8.6.0
+
+- Add GetFileFromUri, GetFileFromEmbededResources and GetFileFromEmbededResourcesOrUri
+- Fixed Native AOT bugs (Library and Gallery now work correctly with Native AOT enabled)
+- App performance is now incredibly fast and smooth.
+- Reduced Gallery app size from 107 MB to 95 MB (or 58 MB without the PDB file)
+- Fixed other bugs
+
+All notable changes to this project will be documented in this file. Dates are displayed in UTC.
+
+#### [v8.6.0](https://github.com/ghost1372/DevWinUI/compare/v8.5.0...v8.6.0)
+
+> 17 July 2025
+
+- Fix #71 [`#71`](https://github.com/ghost1372/DevWinUI/issues/71)
+- Fix #71  HeaderCarousel IsAutoScrollEnabled and blur instantly when selected [`#71`](https://github.com/ghost1372/DevWinUI/issues/71)
+- Add Logger [`25fe950`](https://github.com/ghost1372/DevWinUI/commit/25fe950fefe3b0b3bc0d9ecc23a1965cc310bbec)
+- Add GetFileFromUri, GetFileFromEmbededResources and GetFileFromEmbededResourcesOrUri [`d657bc4`](https://github.com/ghost1372/DevWinUI/commit/d657bc4372f2c67cf6cc4cc7aabf0c05747eaafd)
+- Improve Shortcut [`00609b9`](https://github.com/ghost1372/DevWinUI/commit/00609b9a20a27663275ddb369b4a7688b324d3df)
+- Fix Some NAOT Issues [`49a77dc`](https://github.com/ghost1372/DevWinUI/commit/49a77dcd0f80a27f26aa1c5016bcbeb49aa00f74)
+- Add Missing CompositionImage Sample [`d9776c0`](https://github.com/ghost1372/DevWinUI/commit/d9776c07d414a7749dcb99c9cf16f7b0672aeffe)
+- Revert "Remove Logger" [`2fcf3b3`](https://github.com/ghost1372/DevWinUI/commit/2fcf3b353c58d76c556b477aeb07ae1a23301478)
+- Remove Logger [`592f0e2`](https://github.com/ghost1372/DevWinUI/commit/592f0e2fe26b51f77a459b27981aac94e130c252)
+- Fix StepBar AOT [`344473d`](https://github.com/ghost1372/DevWinUI/commit/344473de3a0b8055610f4f69a96397677c84c819)
+- Improve Gallery AOT Support [`c068965`](https://github.com/ghost1372/DevWinUI/commit/c068965b28176d566dea08dd76ed5621a089ecbd)
+- Fix ElementGroup AOT [`e2b8f08`](https://github.com/ghost1372/DevWinUI/commit/e2b8f08a12581abc14725d94dac69e01bc36b2ed)
+- Update HeaderCarousel.cs [`78cb3ef`](https://github.com/ghost1372/DevWinUI/commit/78cb3eff4082b00391a41fb56d86e3c6ca2a9bbb)
+- Revert "Update GeneralSettingPage.xaml" [`25aba63`](https://github.com/ghost1372/DevWinUI/commit/25aba63b4b860e42752d8a0ac38e2e1a7c3a8e0f)
+- Update CheckUpdatePage.xaml.cs [`66de462`](https://github.com/ghost1372/DevWinUI/commit/66de46201c58e4eb44a84d2da13701cd30cf6430)
+- Update GeneralSettingPage.xaml [`ca7bc99`](https://github.com/ghost1372/DevWinUI/commit/ca7bc99ed4b8793958646c06f421bd75215167b5)
+- Update DragMoveAndResizePage.xaml [`babf571`](https://github.com/ghost1372/DevWinUI/commit/babf5719c39932c106892d9683e4d260775c679b)
+- Revert "Update GeneralSettingPage.xaml.cs" [`764da27`](https://github.com/ghost1372/DevWinUI/commit/764da275cace25307a7b9073c7e5a52f07f3e2a9)
+- Update GeneralSettingPage.xaml.cs [`c8adc2b`](https://github.com/ghost1372/DevWinUI/commit/c8adc2b5bb38ead56a4ea71925f210d18862c9bd)
+- Fix Some Issues [`ca28364`](https://github.com/ghost1372/DevWinUI/commit/ca2836472b9b66dad98de931950a817a05057419)
+- Update Generic.xaml [`df4c3dc`](https://github.com/ghost1372/DevWinUI/commit/df4c3dc1fd0d66ae0dc5717fe32b835b5e94ac77)
+- Update Directory.Build.props [`57d069f`](https://github.com/ghost1372/DevWinUI/commit/57d069f4b4dbc5e1fcfa7f030e207751362010e6)
+- Fix Shortcut [`0bdea77`](https://github.com/ghost1372/DevWinUI/commit/0bdea7721c17e2e3d0856782b8d5e3efc804ba89)
+- Update Shortcut [`cbc843c`](https://github.com/ghost1372/DevWinUI/commit/cbc843cff6a0c9eb14b1ba430600b3526114d72d)
+- Update publish-release.yml [`50cf3e5`](https://github.com/ghost1372/DevWinUI/commit/50cf3e51fc26e893843f414406b21b022f105478)
+- Update AppConfig.cs [`7f9a859`](https://github.com/ghost1372/DevWinUI/commit/7f9a859ee160124ce3ad354666c9d4b8b65508dd)
+- Update AppHelper.cs [`c6a342c`](https://github.com/ghost1372/DevWinUI/commit/c6a342caca7b354ce9f87ab248c2dcab503b930c)
+- Update README.md [`cc8f0f4`](https://github.com/ghost1372/DevWinUI/commit/cc8f0f46ae404bcb65010a692526812798b30bc8)
+- Update JsonNavigationService.cs [`3ea0dfc`](https://github.com/ghost1372/DevWinUI/commit/3ea0dfc36f1c0ee459c6ee675538f9e5c38d4dad)
+- Update StepBar.cs [`5b334fb`](https://github.com/ghost1372/DevWinUI/commit/5b334fb68a5427dcc43e0909be56c46db20e4d80)
+- Update AppConfig.cs [`0fcdecd`](https://github.com/ghost1372/DevWinUI/commit/0fcdecd3017df81acd17c3b4f5501918a4f1be03)
+- Update DevWinUI.Gallery.csproj [`a50be51`](https://github.com/ghost1372/DevWinUI/commit/a50be514c68d70e5c9f6c91bae82a714cc708c98)
+
 # Version 8.5.0
 - Add Shortcut, ShortcutEditor and ShortcutWithTextLabel
 - Add TryGetAllWindowIds in WindowHelper
