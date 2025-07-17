@@ -350,7 +350,7 @@ menu:
       default: /intellisense/ || fas fa-brain
   WinUICommunity - 7.0.0:
     default: /winUICommunity/ || fab fa-microsoft
-  DevWinUI - 8.5.0:
+  DevWinUI - 8.6.0:
     default: /DevWinUI/ || fas fa-tools
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Attach:
@@ -416,7 +416,7 @@ menu:
     SemanticVersion: /semanticVersion/ ||
     SingleInstanceApp: /singleInstanceApp/ ||
     ThemeService: /themeService/ ||
-  DevWinUI.Controls - 8.5.0:
+  DevWinUI.Controls - 8.6.0:
     default: /DevWinUIControls/ || fas fa-dice-d20
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Brushes: 
