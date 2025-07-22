@@ -448,6 +448,7 @@ menu:
       CopyButton: /copyButton/ ||
       DateTimePicker: /dateTimePicker/ ||
       Divider: /divider/ ||
+      DropdownColorPicker: /dropdownColorPicker/ ||
       ElementGroup: /elementGroup/ ||
       FlexPanel: /flexPanel/ ||
       FlipSide: /flipSide/ ||
@@ -491,6 +492,7 @@ menu:
       Shortcut: /shortcut/ ||
       ShortcutPreview: /shortcutPreview/ ||
       ShortcutWithTextLabel: /shortcutWithTextLabel/ ||
+      SplitCircle: /splitCircle/ ||
       StepBar: /stepBar/ ||
       SwitchPresenter: /switchPresenter/ ||
       TextBox: /textBox/ ||
