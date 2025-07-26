@@ -363,11 +363,13 @@ menu:
     DelegateCommand: /delegateCommand/ ||
     Extensions: 
       default: /extensions/ || fas fa-tools
+      AnimationExtensions: /animationExtensions/ ||
       CollectionExtension: /collectionExtension/ ||
       ColorBrightnessExtension: /colorBrightnessExtension/ ||
       ContentDialogExtension: /contentDialogExtension/ ||
       DictionaryExtensions: /dictionaryExtensions/ ||
       EnumValueExtension: /enumValueExtension/ ||
+      FrameworkElementExtensions: /frameworkElementExtensions/ ||
       GeneralExtension: /generalExtension/ ||
       IconMarkupExtension: /iconMarkupExtension/ ||
       ListExtensions: /listExtensions/ ||
@@ -429,8 +431,10 @@ menu:
       BlurEffectManager: /blurEffectManager/ ||
     Controls: 
       default: /controls/ || fab fa-intercom
+      Accordion: /accordion/ ||
       AnimatedGradient: /animatedGradient/ ||
       AnimatedImage: /animatedImage/ ||
+      ArcProgress: /arcProgress/ ||
       AutoScrollView: /autoScrollView/ ||
       BlurEffectControl: /blurEffectControl/ ||
       BreadcrumbNavigator: /breadcrumbNavigator/ ||
@@ -452,8 +456,10 @@ menu:
       ElementGroup: /elementGroup/ ||
       FlexPanel: /flexPanel/ ||
       FlipSide: /flipSide/ ||
+      FlipToReveal: /flipToReveal/ ||
       FlyoutMenuButton: /flyoutMenuButton/ ||
       ForegroundFocusEffects: /foregroundFocusEffects/ ||
+      GifImage: /gifImage/ ||
       GoToTop: /goToTop/ ||
       Gravatar: /gravatar/ ||
       Growl: /growl/ ||
@@ -492,6 +498,7 @@ menu:
       Shortcut: /shortcut/ ||
       ShortcutPreview: /shortcutPreview/ ||
       ShortcutWithTextLabel: /shortcutWithTextLabel/ ||
+      ShyHeader: /shyHeader/ ||
       SplitCircle: /splitCircle/ ||
       StepBar: /stepBar/ ||
       SwitchPresenter: /switchPresenter/ ||
