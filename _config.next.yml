@@ -525,7 +525,7 @@ menu:
       default: /converters/ || fab fa-intercom
     Extensions:
       default: /extensions/ || fas fa-tools
-      ContentDialogExtension: /contentDialogExtension/ ||
+      ContentDialogExtension: /contentDialogExtensions/ ||
     LandingPages:
       default: /landingPages/ || fab fa-intercom
       AllLandingPage: /allLandingPage/ ||
