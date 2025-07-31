@@ -25,6 +25,53 @@ title: Welcome to DevWinUI Release Notes
 - Update FileHelper
 - Fix Divider Initial Margin
 
+All notable changes to this project will be documented in this file. Dates are displayed in UTC.
+
+#### [v8.7.0](https://github.com/ghost1372/DevWinUI/compare/v8.6.0...v8.7.0)
+
+> 31 July 2025
+
+- Fix #74  Divider Initial Margin [`#74`](https://github.com/ghost1372/DevWinUI/issues/74)
+- Add StorageBar and StorageRing [`dabb4f9`](https://github.com/ghost1372/DevWinUI/commit/dabb4f9b5b34d952f62f0b7a529bb6ab454c7a34)
+- Add MessageBox, ContentDialogWindow , WindowedContentDialog, ContentDialogExtensions [`2551412`](https://github.com/ghost1372/DevWinUI/commit/255141201111c1327a598a32e1d9535c12fbdaec)
+- Add StorageBar and StorageRing Samples [`121ba00`](https://github.com/ghost1372/DevWinUI/commit/121ba009cd3d45ad4d47a4acd278f57c7d93ba1d)
+- Add WindowedContentDialog and MessageBox Samples [`9346671`](https://github.com/ghost1372/DevWinUI/commit/9346671ef7f06a9a349018bf4dcc30e799846149)
+- ReWrite ColorPalette [`9475f6f`](https://github.com/ghost1372/DevWinUI/commit/9475f6f1c6756b8190db61bbdeef56776093df87)
+- Add ConfettiCannon [`b936c0e`](https://github.com/ghost1372/DevWinUI/commit/b936c0eff7e8b2f1c690d39450c0c1613c2139b3)
+- Add DropdownColorPicker [`cf3adca`](https://github.com/ghost1372/DevWinUI/commit/cf3adca39d56033a3cdc6fda4a448ead755c813f)
+- Add Accordion [`64c978b`](https://github.com/ghost1372/DevWinUI/commit/64c978bde15e7294b3eb60e963bcc9c3d7495c06)
+- Add GifImage [`ea213a4`](https://github.com/ghost1372/DevWinUI/commit/ea213a4fe09efd0555bc8cc9dff784e36188ccde)
+- Add ShyHeader [`b228078`](https://github.com/ghost1372/DevWinUI/commit/b228078184391010c80f4b01365f261d96cc55b3)
+- Add ArcProgress [`b530482`](https://github.com/ghost1372/DevWinUI/commit/b5304825cb577811c342676ca7b9ce36a2ec255f)
+- Add DepthLayerView [`d20989c`](https://github.com/ghost1372/DevWinUI/commit/d20989c7ac6d65de1e9d0eba3ba8d4653265d0c0)
+- Add SplitCircle [`1447557`](https://github.com/ghost1372/DevWinUI/commit/144755751a16388b3b6ed6f19bfda5a76899d3d2)
+- Add AnimationExtensions [`6eda79e`](https://github.com/ghost1372/DevWinUI/commit/6eda79e2142793931d549caf7566518f28d3015f)
+- Add FlipToReveal [`5356acb`](https://github.com/ghost1372/DevWinUI/commit/5356acbeaea790fb9c2ddf0dc67e21da5b685840)
+- Update ColorPalette.cs [`ac385e7`](https://github.com/ghost1372/DevWinUI/commit/ac385e7e795f4b5f8b3483cf60812545eb995535)
+- VSIX Fix AOT Support [`3c5dc7c`](https://github.com/ghost1372/DevWinUI/commit/3c5dc7c5e65d91e185fbfd781bec0083546c944b)
+- Create FrameworkElementExtensions.cs [`3c7a6d0`](https://github.com/ghost1372/DevWinUI/commit/3c7a6d0ca924236ee7078ab927909f5dc2918993)
+- Use DispatcherQueue.GetForCurrentThread().EnsureSystemDispatcherQueue instead if custom EnsureSystemDispatcherQueue [`84b854e`](https://github.com/ghost1372/DevWinUI/commit/84b854ea97cb84ea90c05f6b72a5311b5f8f2629)
+- Fix ThemeSettingPage [`2838d51`](https://github.com/ghost1372/DevWinUI/commit/2838d51fc262ce8ae96bd7179730c9816ff141de)
+- Update FileHelper.cs [`c59d7d9`](https://github.com/ghost1372/DevWinUI/commit/c59d7d9732521410af7844bdc061148a5fb6f601)
+- Update PathHelper.cs [`69b8529`](https://github.com/ghost1372/DevWinUI/commit/69b8529848322923acc5103afe1ea7ff0a3a7b27)
+- Update SettingsCardAutomationPeer.cs [`93f346c`](https://github.com/ghost1372/DevWinUI/commit/93f346cb51472cb1c20afd0084f37982f5410d0a)
+- Update NativeMethods.cs [`51ec14b`](https://github.com/ghost1372/DevWinUI/commit/51ec14b48e91070425d9cf9290b119c437080e1c)
+- Update DepthLayerView.xaml [`6ece112`](https://github.com/ghost1372/DevWinUI/commit/6ece1123664563dcbc7e6c1423d2145fbbe8ca96)
+- Update ColorPalettePage.xaml [`13d44a5`](https://github.com/ghost1372/DevWinUI/commit/13d44a535b04a4b4a65a2d34ceac1db98a8c2c0d)
+- Rename MessageBox to LegacyMessageBox [`cc4ae4c`](https://github.com/ghost1372/DevWinUI/commit/cc4ae4c9b6cb4934e6f6141c400e64b620073f74)
+- Update PredefinedCodes.cs [`553b1e6`](https://github.com/ghost1372/DevWinUI/commit/553b1e651d45dec22d12f748a91c35a03e60c6d3)
+- Update Directory.Build.props [`505af4a`](https://github.com/ghost1372/DevWinUI/commit/505af4a4a8d073495bed2e176e13b99836c654dc)
+- [VSIX] Add &lt;WinUISDKReferences&gt;false&lt;/WinUISDKReferences&gt; [`c269e49`](https://github.com/ghost1372/DevWinUI/commit/c269e49b4f0f7f07f955c02bdab17a2494e264b8)
+- Update README.md [`7855a4c`](https://github.com/ghost1372/DevWinUI/commit/7855a4c920bf7b9decf081fe00cd0883548e14ad)
+- Update GeneralSettingPage.xaml [`41dc38a`](https://github.com/ghost1372/DevWinUI/commit/41dc38a6d65bf9f0b1c39e0aa6a45aa536e98019)
+- Update source.extension.vsixmanifest [`824c73e`](https://github.com/ghost1372/DevWinUI/commit/824c73e65192dded6e5354d453758934cef661ef)
+- Update README.md [`6701a43`](https://github.com/ghost1372/DevWinUI/commit/6701a43608ab28c86433656b1ba3d4e80816f0ec)
+- Update source.extension.vsixmanifest [`1e1dd37`](https://github.com/ghost1372/DevWinUI/commit/1e1dd372e296c2760d4deada18b90b50175acadd)
+- Update LayoutTransformer.cs [`773e055`](https://github.com/ghost1372/DevWinUI/commit/773e0555faf1f8fc29846db1b9c239d3fd598e42)
+- Update ColorItemShape.cs [`baa9af2`](https://github.com/ghost1372/DevWinUI/commit/baa9af28223ecf12a85a5afee5d737e7f7c648fb)
+- Revert "Update Directory.Build.props" [`3904d78`](https://github.com/ghost1372/DevWinUI/commit/3904d782fd9c897c9059eee5000b4840c0d5e3cf)
+- Update Directory.Build.props [`f115c22`](https://github.com/ghost1372/DevWinUI/commit/f115c2244815d89a448dd03610168769dfc16824)
+
 # Version 8.6.0
 
 - Add GetFileFromUri, GetFileFromEmbededResources and GetFileFromEmbededResourcesOrUri
