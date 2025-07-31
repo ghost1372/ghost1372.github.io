@@ -37,6 +37,7 @@ public partial class ColorPaletteItem : Control
 |ShowToolTip|
 |ColorSet|
 |ItemShape|
+|ItemsPanel|
 
 ## Events
 |Name|
@@ -88,6 +89,17 @@ You must set `ColorSet` to `Custom`, and then add your `ColorPaletteItem` instan
 The `ColorPalette` control accepts `ColorPaletteItem` elements.
 So, if you want to customize the item shape, you can override the `ColorPaletteItem` style and set its `ItemShape` property to `Custom`.
 This ensures that the control won't overwrite your custom `ControlTemplate`.
+
+# ItemsPanel
+currently we are using a WrapPanel, but if you want, you can customize ItemsPanel:
+
+```xml
+<dev:ColorPalette.ItemsPanel>
+    <ItemsPanelTemplate>
+        <dev:UniformGrid Columns="10"/>
+    </ItemsPanelTemplate>
+</dev:ColorPalette.ItemsPanel>
+```
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

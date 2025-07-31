@@ -1,5 +1,5 @@
 ---
-title: MessageBox
+title: LegacyMessageBox
 ---
 
 Legacy MessageBox
@@ -7,7 +7,7 @@ Legacy MessageBox
 # Example
 
 ```cs
-MessageBox.Show(message, title, messageboxStyle);
+LegacyMessageBox.Show(message, title, messageboxStyle);
 ```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/LegacyMessageBox.png)

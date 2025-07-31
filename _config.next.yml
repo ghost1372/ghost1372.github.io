@@ -407,7 +407,7 @@ menu:
       default: /interfaces/ || fas fa-tools
       ITitleBarAutoSuggestBoxAware: /iTitleBarAutoSuggestBoxAware/ ||
     JsonNavigationService: /jsonNavigationService/ ||
-    MessageBox: /messageBox/ ||
+    LegacyMessageBox: /legacyMessageBox/ ||
     Messaging: /messaging/ ||
     ModernSystemMenu: /modernSystemMenu/ ||
     NavigationService: /navigationService/ ||
@@ -449,8 +449,10 @@ menu:
       CompareSlider: /compareSlider/ ||
       CompositionShadow: /compositionShadow/ ||
       CompositionImage: /compositionImage/ ||
+      ConfettiCannon: /confettiCannon/ ||
       CopyButton: /copyButton/ ||
       DateTimePicker: /dateTimePicker/ ||
+      DepthLayerView: /depthLayerView/ ||
       Divider: /divider/ ||
       DropdownColorPicker: /dropdownColorPicker/ ||
       ElementGroup: /elementGroup/ ||
@@ -475,6 +477,7 @@ menu:
       LoadingIndicator: /loadingIndicator/ ||
       LongShadowTextBlock: /longShadowTextBlock/ ||
       Magnifier: /magnifier/ ||
+      MessageBox: /messageBox/ ||
       ModalWindow: /modalWindow/ ||
       ModernWindow: /modernWindow/ ||
       OOBEPageControl: /oOBEPageControl/ ||
@@ -517,8 +520,12 @@ menu:
       TextMorphEffect: /textMorphEffect/ ||
       Watermark: /watermark/ ||
       WaveCircule: /waveCircule/ ||
+      WindowedContentDialog: /windowedContentDialog/ ||
     Converters:
       default: /converters/ || fab fa-intercom
+    Extensions:
+      default: /extensions/ || fas fa-tools
+      ContentDialogExtension: /contentDialogExtension/ ||
     LandingPages:
       default: /landingPages/ || fab fa-intercom
       AllLandingPage: /allLandingPage/ ||
