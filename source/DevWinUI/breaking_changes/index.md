@@ -4,6 +4,9 @@ title: Breaking Changes
 
 A breaking change is a change that may require you to make changes to your application in order to avoid disruption to your integration.
 
+# Version 8.7.0
+- `MessageBox` renamed to `LegacyMessageBox`
+
 # Version 8.5.0
 - `BlurAnimationHelper` Removed. you can use `BlurEffectManager`.
 

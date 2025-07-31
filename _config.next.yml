@@ -504,6 +504,8 @@ menu:
       ShyHeader: /shyHeader/ ||
       SplitCircle: /splitCircle/ ||
       StepBar: /stepBar/ ||
+      StorageBar: /storageBar/ ||
+      StorageRing: /storageRing/ ||
       SwitchPresenter: /switchPresenter/ ||
       TextBox: /textBox/ ||
       TileControl: /tileControl/ ||

@@ -2,6 +2,29 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 8.7.0
+
+- Add StorageBar
+- Add StorageRing
+- Add SplitCircle
+- Add DropdownColorPicker
+- Add ArcProgress
+- Add FlipToReveal
+- Add FrameworkElementExtensions
+- Add AnimationExtensions
+- Add ShyHeader
+- Add Accordion
+- Add GifImage
+- Add DepthLayerView
+- Add ConfettiCannon
+- Add MessageBox (Based on WindowedContentDialog)
+- Add WindowedContentDialog
+- ReWrite ColorPalette
+- Rename `MessageBox` to `LegacyMessageBox`
+- Update PathHelper
+- Update FileHelper
+- Fix Divider Initial Margin
+
 # Version 8.6.0
 
 - Add GetFileFromUri, GetFileFromEmbededResources and GetFileFromEmbededResourcesOrUri
