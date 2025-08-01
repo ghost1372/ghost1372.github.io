@@ -429,6 +429,7 @@ menu:
     Common:
       default: /common/ || fas fa-tools
       BlurEffectManager: /blurEffectManager/ ||
+      ImageLoader: /imageLoader/ ||
     Controls: 
       default: /controls/ || fab fa-intercom
       Accordion: /accordion/ ||
