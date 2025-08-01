@@ -2,7 +2,7 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
-# Version 8.7.0
+# Version 8.7.0|8.8.0
 
 - Add StorageBar
 - Add StorageRing
@@ -19,6 +19,8 @@ title: Welcome to DevWinUI Release Notes
 - Add ConfettiCannon
 - Add MessageBox (Based on WindowedContentDialog)
 - Add WindowedContentDialog
+- Add BoolToVisibilityReConverter Converter
+- Improve StepBar [Add DisplayMode(Index, Icon), ItemClick event, and AutoSelectOnItemClick] 
 - ReWrite ColorPalette
 - Rename `MessageBox` to `LegacyMessageBox`
 - Update PathHelper
