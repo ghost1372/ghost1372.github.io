@@ -25,6 +25,11 @@ title: Converters
 <TextBlock Visibility="{x:Bind boolValue, Converter={StaticResource BoolToVisibilityConverter}}" />
 ```
 
+# BoolToVisibilityReConverter
+```xml
+<TextBlock Visibility="{x:Bind boolValue, Converter={StaticResource BoolToVisibilityReConverter}}" />
+```
+
 # BoolToObjectConverter
 ```xml
 <dev:BoolToObjectConverter x:Key="BoolToXConverter"
