@@ -18,11 +18,23 @@ public class StepBar : ItemsControl
 |StepIndex|
 |Status|
 |ShowStepIndex|
+|AutoSelectOnItemClick|
+|UnderWayIcon|
+|WaitingIcon|
+|CompleteIcon|
+|DisplayMode|
+
+## StepBarDisplayMode
+|Property|
+|-|
+|Index|
+|Icon|
 
 # Events
 |Property|
 |-|
 |StepChanged|
+|ItemClick|
 
 # Method
 |Name|Description|
