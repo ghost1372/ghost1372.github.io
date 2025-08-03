@@ -52,7 +52,7 @@ The `UniqueId` must exactly match the full namespace (including file name) of yo
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/Ghost1372/DevWinUI/refs/heads/main/AppData.Schema.json",
+  "$schema": "https://raw.githubusercontent.com/Ghost1372/DevWinUI/refs/heads/main/tools/AppData.Schema.json",
   "Groups": [
     {
       "UniqueId": "DevWinUIGallery.Views.HomeLandingPage",
@@ -697,7 +697,7 @@ this is a json file content:
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/Ghost1372/DevWinUI/refs/heads/main/AppData.Schema.json",
+  "$schema": "https://raw.githubusercontent.com/Ghost1372/DevWinUI/refs/heads/main/tools/AppData.Schema.json",
   "Groups": [
     {
       "UniqueId": "Features",
