@@ -6,11 +6,11 @@ JSON File Structure.
 
 💡 Schema Support:
 This JSON structure is supported by an IntelliSense schema available at:
-`https://raw.githubusercontent.com/Ghost1372/DevWinUI/refs/heads/main/AppData.Schema.json`
+`https://raw.githubusercontent.com/Ghost1372/DevWinUI/refs/heads/main/tools/AppData.Schema.json`
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/Ghost1372/DevWinUI/refs/heads/main/AppData.Schema.json",
+  "$schema": "https://raw.githubusercontent.com/Ghost1372/DevWinUI/refs/heads/main/tools/AppData.Schema.json",
   ...
 }
 
@@ -92,7 +92,7 @@ Inherited by `DataGroup` and `DataItem`
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/Ghost1372/DevWinUI/refs/heads/main/AppData.Schema.json",
+  "$schema": "https://raw.githubusercontent.com/Ghost1372/DevWinUI/refs/heads/main/tools/AppData.Schema.json",
   "Groups": [
     {
       "UniqueId": "Features",
