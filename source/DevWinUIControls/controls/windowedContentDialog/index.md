@@ -24,9 +24,13 @@ title: WindowedContentDialog
 |IsPrimaryButtonEnabled|
 |IsSecondaryButtonEnabled|
 |DefaultButton|
+|CenterInParent|
 |PrimaryButtonStyle|
 |SecondaryButtonStyle|
 |CloseButtonStyle|
+|OwnerWindow|
+|HasTitleBar|
+|IsResizable|
 
 # Events
 
