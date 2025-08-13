@@ -443,6 +443,7 @@ menu:
       BreadcrumbNavigator: /breadcrumbNavigator/ ||
       CheckBoxWithDescriptionControl: /checkBoxWithDescriptionControl/ ||
       CalendarWithClock: /calendarWithClock/ ||
+      Card: /card/ ||
       CirclePanel: /circlePanel/ ||
       Clock: /clock/ ||
       ColorBloomControl: /colorBloomControl/ ||
