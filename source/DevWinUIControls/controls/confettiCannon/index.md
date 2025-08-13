@@ -2,6 +2,13 @@
 title: ConfettiCannon
 ---
 
+# Properties
+
+|Name|
+|-|
+|ClearColor|
+|IsFixedTimeStep|
+
 # Methods
 
 |Name|
