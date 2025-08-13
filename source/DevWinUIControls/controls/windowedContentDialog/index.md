@@ -31,6 +31,8 @@ title: WindowedContentDialog
 |OwnerWindow|
 |HasTitleBar|
 |IsResizable|
+|UnderlayBackdrop|
+|UnderlayBackdropCoverMode|
 
 # Events
 
@@ -39,6 +41,8 @@ title: WindowedContentDialog
 |PrimaryButtonClick|
 |SecondaryButtonClick|
 |CloseButtonClick|
+|Closed|
+|Loaded|
 
 # Methods
 
@@ -63,6 +67,10 @@ WindowedContentDialog dialog = new()
 ContentDialogResult result = await dialog.ShowAsync(true);
 var result = result.ToString();
 ```
+
+{% note info %}
+If you want to show a Underlay Backdrop, you should specify an `OwnerWindow` and `IsModal = true`
+{% endnote %}
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/WindowedContentDialog.png)
 
