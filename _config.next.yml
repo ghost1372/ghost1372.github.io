@@ -394,6 +394,7 @@ menu:
       OSVersionHelper: /osVersionHelper/ ||
       PackageHelper: /packageHelper/ ||
       PathHelper: /pathHelper/ ||
+      PopupHelper: /popupHelper/ ||
       ProcessInfoHelper: /processInfoHelper/ ||
       ResourceHelper: /resourceHelper/ ||
       RichTextFormatterHelper: /richTextFormatterHelper/ ||
