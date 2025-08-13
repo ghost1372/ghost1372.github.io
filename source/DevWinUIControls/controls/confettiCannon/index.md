@@ -15,6 +15,13 @@ title: ConfettiCannon
 |FireSnow|
 |FireSchoolPride|
 
+# Events
+
+|Name|
+|-|
+|AnimationStarted|
+|AnimationCompleted|
+
 # Example
 
 ```cs
