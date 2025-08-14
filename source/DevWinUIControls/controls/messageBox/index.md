@@ -15,7 +15,7 @@ await MessageBox.ShowAsync(txtContent.Text?.ToString(), txtTitle.Text?.ToString(
 ```
 
 {% note info %}
-If you want to show a Underlay Backdrop, you should specify an `OwnerWindow` and `IsModal = true`
+If you want to show a Underlay (SmokeLayer or SystemBackdrop), you should specify an `OwnerWindow`.
 {% endnote %}
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/MessageBox.png)

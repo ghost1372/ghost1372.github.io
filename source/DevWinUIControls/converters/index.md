@@ -37,4 +37,17 @@ title: Converters
                              TrueValue="Visible" />
 ```
 
+# DoubleToVisibilityConverter
+```xml
+<TextBlock Visibility="{x:Bind doubleValue, Converter={StaticResource DoubleToVisibilityConverter}}" />
+```
+
+# DoubleToObjectConverter
+```xml
+<dev:DoubleToVisibilityConverter x:Name="DoubleToXConverter"
+                                       FalseValue="Collapsed"
+                                       GreaterThan="0"
+                                       TrueValue="Visible" />
+```
+
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
