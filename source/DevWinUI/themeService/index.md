@@ -10,9 +10,8 @@ You can simplify the operation of saving, retrieving and selecting the Applicati
 |None|
 |Mica|
 |MicaAlt|
-|DesktopAcrylic|
+|Acrylic|
 |AcrylicThin|
-|AcrylicBase|
 |Transparent|
 
 # Methods
@@ -161,9 +160,8 @@ if you want to set defualt item for combobox or radiobuttons, and auto switch be
 <ComboBox dev:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}">
     <ComboBoxItem Tag="None" Content="None"/>
     <ComboBoxItem Tag="Mica" Content="Mica"/>
-    <ComboBoxItem Tag="MicaAlt" Content="MicaAlt"/>
-    <ComboBoxItem Tag="DesktopAcrylic" Content="Desktop Acrylic"/>
-    <ComboBoxItem Tag="AcrylicBase" Content="Acrylic Base"/>
+    <ComboBoxItem Tag="MicaAlt" Content="Mica Alt"/>
+    <ComboBoxItem Tag="Acrylic" Content="Acrylic"/>
     <ComboBoxItem Tag="AcrylicThin" Content="Acrylic Thin"/>
     <ComboBoxItem Tag="Transparent" Content="Transparent"/>
 </ComboBox>
@@ -181,9 +179,8 @@ if you want to set defualt item for combobox or radiobuttons, and auto switch be
  <StackPanel dev:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.GetThemeService}">
     <RadioButton Tag="None" Content="None"/>
     <RadioButton Tag="Mica" Content="Mica"/>
-    <RadioButton Tag="MicaAlt" Content="MicaAlt" />
-    <RadioButton Content="Desktop Acrylic" Tag="DesktopAcrylic" />
-    <RadioButton Content="Acrylic Base" Tag="AcrylicBase" />
+    <RadioButton Tag="MicaAlt" Content="Mica Alt" />
+    <RadioButton Content="Acrylic" Tag="Acrylic" />
     <RadioButton Content="Acrylic Thin" Tag="AcrylicThin" />
     <RadioButton Content="Transparent" Tag="Transparent" />
 </StackPanel>
