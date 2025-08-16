@@ -18,16 +18,21 @@ title: Converters
 // Output: 25 %
 ```
 
-# NullToVisibilityConverter
-
-# BoolToVisibilityConverter
+# NullToObjectConverter
 ```xml
-<TextBlock Visibility="{x:Bind boolValue, Converter={StaticResource BoolToVisibilityConverter}}" />
+<dev:NullToObjectConverter x:Key="NullToXConverter"
+                             NotNullValue="Visible"
+                             NullValue="Collapsed" />
 ```
 
-# BoolToVisibilityReConverter
+## NullToVisibilityConverter
 ```xml
-<TextBlock Visibility="{x:Bind boolValue, Converter={StaticResource BoolToVisibilityReConverter}}" />
+<TextBlock Visibility="{x:Bind nullValue, Converter={StaticResource NullToVisibilityConverter}}" />
+```
+
+## NullToVisibilityReConverter
+```xml
+<TextBlock Visibility="{x:Bind nullValue, Converter={StaticResource NullToVisibilityReConverter}}" />
 ```
 
 # BoolToObjectConverter
@@ -37,9 +42,14 @@ title: Converters
                              TrueValue="Visible" />
 ```
 
-# DoubleToVisibilityConverter
+## BoolToVisibilityConverter
 ```xml
-<TextBlock Visibility="{x:Bind doubleValue, Converter={StaticResource DoubleToVisibilityConverter}}" />
+<TextBlock Visibility="{x:Bind boolValue, Converter={StaticResource BoolToVisibilityConverter}}" />
+```
+
+## BoolToVisibilityReConverter
+```xml
+<TextBlock Visibility="{x:Bind boolValue, Converter={StaticResource BoolToVisibilityReConverter}}" />
 ```
 
 # DoubleToObjectConverter
@@ -48,6 +58,11 @@ title: Converters
                                        FalseValue="Collapsed"
                                        GreaterThan="0"
                                        TrueValue="Visible" />
+```
+
+## DoubleToVisibilityConverter
+```xml
+<TextBlock Visibility="{x:Bind doubleValue, Converter={StaticResource DoubleToVisibilityConverter}}" />
 ```
 
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

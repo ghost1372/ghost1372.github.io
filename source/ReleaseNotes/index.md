@@ -2,6 +2,19 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 8.9.0|8.9.1
+
+- Add ControlTokenManager
+- Add Card
+- Add MessageBoxOptions in MessageBox
+- Public DoubleToVisibilityConverter
+- Improve ConfettiCannon (AnimationStarted/AnimationCompleted events, ClearColor/IsFixedTimeStep properties)
+- Improve ContextMenuCustomHost.dll
+- Improve WindowedContentDialog
+- Fix Shared Colors in ColorPalette
+- Remove Duplicate Acrylic Members from BackdropType (Use `Acrylic` instead of `DesktopAcrylic` and `AcrylicBase`)
+- Fix bugs
+
 # Version 8.7.0|8.8.0
 
 - Add StorageBar
