@@ -2,6 +2,35 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 8.9.2
+- Add OutOfBoxPage
+- Add MessageBox Image
+- Improve ContentDialogWindow
+- Improve NullToVisibilityConverter
+- Remove OOBEPageControl and SettingsPageControl
+
+All notable changes to this project will be documented in this file. Dates are displayed in UTC.
+
+#### [v8.9.2](https://github.com/ghost1372/DevWinUI/compare/v8.9.1...v8.9.2)
+
+> 20 August 2025
+
+- Add OutOfBoxPage Control [`b9d435c`](https://github.com/ghost1372/DevWinUI/commit/b9d435cb7ae141730bacb82323fbd7ff52bd70b3)
+- Add MessageBox Image [`b6dccc8`](https://github.com/ghost1372/DevWinUI/commit/b6dccc830f0ae8916a861b94a89fcd4e0de48d6d)
+- Improve ContentDialogWindow [`f6b8184`](https://github.com/ghost1372/DevWinUI/commit/f6b818430e6835239b901fa1021b654a4c9c8b56)
+- Add CheckUpdateControl [`46a9ffc`](https://github.com/ghost1372/DevWinUI/commit/46a9ffc07ab5bf220b0f5d32a150c0cc6683114f)
+- Remove OOBEPageControl and  SettingsPageControl [`b97233e`](https://github.com/ghost1372/DevWinUI/commit/b97233e4e5aa1b4051c643d53bba61dc7d4e857e)
+- Add PreviewKeyDownHelper [`ca52f76`](https://github.com/ghost1372/DevWinUI/commit/ca52f765f95c6a982b8729085884967118231137)
+- Add OutOfBoxPage Sample [`75457b2`](https://github.com/ghost1372/DevWinUI/commit/75457b258b846fcd9fd35a2ea39151bc7ac73661)
+- Update ContentDialogContent.cs [`c1c1aba`](https://github.com/ghost1372/DevWinUI/commit/c1c1abaf5a0e0965f576c0c28e518b0c6b023ddc)
+- Use ItemsControl Instead of ItemsRepeater in OutOfBoxPage [`26c6619`](https://github.com/ghost1372/DevWinUI/commit/26c66198b9db2dd7e9ff4b0e1a22976ae45abc0c)
+- Improve WindowedContentDialog [`57c98e8`](https://github.com/ghost1372/DevWinUI/commit/57c98e8f6c4c0706a1c34c693be1a953d5779dad)
+- Improve NullToVisibilityConverter [`e34410e`](https://github.com/ghost1372/DevWinUI/commit/e34410e3985391f954fa2a356e0ca6aa81baaa3c)
+- Improve OutOfBoxPage HeroImage [`b6f1743`](https://github.com/ghost1372/DevWinUI/commit/b6f1743d5593c5b45ddbe1de051ea7c33df5e689)
+- Update ContentDialogWindow.cs [`cd1c22c`](https://github.com/ghost1372/DevWinUI/commit/cd1c22cdb3790efa0a3bb997dee86b0a2e45704e)
+- Update Directory.Build.props [`f69d913`](https://github.com/ghost1372/DevWinUI/commit/f69d9131896c34304d5883723a0f307a6761f347)
+
+
 # Version 8.9.0|8.9.1
 
 - Add ControlTokenManager
