@@ -7,6 +7,11 @@ title: MessageBox
 |Name|
 |-|
 |ShowAsync|
+|ShowErrorAsync|
+|ShowSuccessAsync|
+|ShowInfoAsync|
+|ShowQuestionAsync|
+|ShowWarningAsync|
 
 # Example
 
