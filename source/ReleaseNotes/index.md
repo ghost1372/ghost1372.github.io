@@ -5,6 +5,7 @@ title: Welcome to DevWinUI Release Notes
 # Version 8.9.2
 - Add OutOfBoxPage
 - Add CheckUpdateControl
+- Add PreviewKeyDownHelper
 - Add MessageBox Image
 - Improve ContentDialogWindow
 - Improve NullToVisibilityConverter
