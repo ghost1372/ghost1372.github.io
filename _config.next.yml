@@ -395,6 +395,7 @@ menu:
       PackageHelper: /packageHelper/ ||
       PathHelper: /pathHelper/ ||
       PopupHelper: /popupHelper/ ||
+      PreviewKeyDownHelper: /previewKeyDownHelper/ ||
       ProcessInfoHelper: /processInfoHelper/ ||
       ResourceHelper: /resourceHelper/ ||
       RichTextFormatterHelper: /richTextFormatterHelper/ ||
@@ -444,6 +445,7 @@ menu:
       CheckBoxWithDescriptionControl: /checkBoxWithDescriptionControl/ ||
       CalendarWithClock: /calendarWithClock/ ||
       Card: /card/ ||
+      CheckUpdateControl: /checkUpdateControl/ ||
       CirclePanel: /circlePanel/ ||
       Clock: /clock/ ||
       ColorBloomControl: /colorBloomControl/ ||
