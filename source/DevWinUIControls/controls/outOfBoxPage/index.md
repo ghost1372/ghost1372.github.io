@@ -8,11 +8,8 @@ title: OutOfBoxPage
 | Name |
 |-|
 |Title|
-|TitleTemplate|
 |Description|
-|DescriptionTemplate|
 |HeroImage|
-|HeroImageTemplate|
 |HeroImageHeight|
 |UseTopHeroImage|
 |ActionContent|
@@ -23,7 +20,6 @@ title: OutOfBoxPage
 |PrimaryLinksItemTemplate|
 |SecondaryLinks|
 |SecondaryLinksHeader|
-|SecondaryLinksHeaderTemplate|
 |SecondaryLinkItemsPanelTemplate|
 |SecondaryLinksItemTemplate|
 |SecondaryLinksMargin|

@@ -11,13 +11,11 @@ title: CheckUpdateControl
 |UpdateAvailableTitle|
 |UpdateAvailableVersionTitle|
 |UpdateAvailableVersion|
-|UpdateAvailableTemplate|
-|UpdateAvailableIconTemplate|
+|UpdateAvailableIcon|
 |UpdateNotAvailableTitle|
 |LastUpdateCheckTitle|
 |LastUpdateCheckDate|
-|UpdateNotAvailableTemplate|
-|UpdateNotAvailableIconTemplate|
+|UpdateNotAvailableIcon|
 
 # Events
 

@@ -485,7 +485,6 @@ menu:
       Magnifier: /magnifier/ ||
       MessageBox: /messageBox/ ||
       ModalWindow: /modalWindow/ ||
-      ModernWindow: /modernWindow/ ||
       OutOfBoxPage: /outOfBoxPage/ ||
       OpacityMaskView: /opacityMaskView/ ||
       OptionsPageControl: /optionsPageControl/ ||
