@@ -2,7 +2,8 @@
 title: ThemeService
 ---
 
-You can simplify the operation of saving, retrieving and selecting the Application theme, backdrop and TintColors. All operations are performed automatically.
+You can simplify the operation of saving, retrieving and selecting the Application theme and backdrop. 
+All operations are performed automatically.
 
 # Backdrops
 |Name|
@@ -14,24 +15,31 @@ You can simplify the operation of saving, retrieving and selecting the Applicati
 |AcrylicThin|
 |Transparent|
 
+# Events
+|Name|
+|-|
+|ThemeChanged|
+|BackdropChanged|
+
+# Properties
+|Name|
+|-|
+|IsDark|
+|ElementTheme|
+|ActualTheme|
+|BackdropType|
+
 # Methods
 |Name|
 |-|
 |Window|
-|ConfigureBackdrop|
-|ConfigureTintColor|
-|ConfigureFallbackColor|
-|ConfigureElementTheme|
+|SetElementThemeAsync|
+|SetElementThemeWithoutSaveAsync|
+|SetBackdropTypeAsync|
+|SetBackdropTypeWithoutSaveAsync|
+|GetAcrylicSystemBackdrop|
+|GetMicaSystemBackdrop|
 |GetSystemBackdrop|
-|GetBackdropType|
-|GetElementTheme|
-|GetActualTheme|
-|SetBackdropType|
-|SetBackdropTintColor|
-|SetBackdropFallbackColor|
-|SetElementTheme|
-|SetElementThemeWithoutSave|
-|IsDarkTheme|
 |OnThemeComboBoxSelectionChanged|
 |SetThemeComboBoxDefaultItem|
 |OnBackdropComboBoxSelectionChanged|
@@ -40,109 +48,83 @@ You can simplify the operation of saving, retrieving and selecting the Applicati
 |SetThemeRadioButtonDefaultItem|
 |OnBackdropRadioButtonChecked|
 |SetBackdropRadioButtonDefaultItem|
-|UpdateCaptionButtons|
+|Dispose|
+|ConfigureAutoSave|
+|ConfigureElementTheme|
+|ConfigureBackdrop|
+|Initialize|
 
 # Simple Usage
 
-There is multipe ways you can use ThemeService:
-
-In this method, all settings are applied automatically.
-
-```cs
-var themeService = new ThemeService(window);
-```
-
-or
-
 ```cs
 var themeService = new ThemeService();
-themeService.AutoInitialize(window);
+themeService.Initialize(window);
 ```
 
-If you want to change some settings like autosave, file location, use `Initialize` method:
-
-```cs
-themeService.Initialize(window, true, @"D:\app\config.json");
-```
-
-and if you want to save and restore theme manually you can set `useAutoSave = false`
-```cs
-themeService.Initialize(window, false);
-```
-
-## Configs
+# Configs
 there are some configure methods:
 
-### ConfigureBackdrop
+## ConfigureBackdrop
 
-If you use the `ConfigureBackdrop`, the themeService will automatically save and restore the SystemBackdrop (if useAutoSave is true)
-
-```cs
-themeService.Initialize(...).ConfigureBackdrop(BackdropType.Mica);
-```
-
-### ConfigureElementTheme
-
-If you use the `ConfigureElementTheme`, the themeService will automatically save and restore the ElementTheme (if useAutoSave is true)
+If you use the `ConfigureBackdrop`, the themeService will automatically save and restore the SystemBackdrop (if `ConfigureAutoSave` is enabled (by default it is enabled))
 
 ```cs
-themeService.Initialize(...).ConfigureElementTheme(ElementTheme.Default);
+themeService.ConfigureBackdrop(BackdropType.Mica).Initialize(window);
 ```
 
-### ConfigureTintColor
-you can change system backdrop TintColor.
+## ConfigureElementTheme
+
+If you use the `ConfigureElementTheme`, the themeService will automatically save and restore the ElementTheme (if `ConfigureAutoSave` is enabled (by default it is enabled))
 
 ```cs
-themeService.Initialize(...).ConfigureTintColor();
+themeService.ConfigureElementTheme(ElementTheme.Default).Initialize(window);
 ```
-then you can set your tint color:
 
+## ConfigureAutoSave
 ```cs
-themeService.SetBackdropTintColor(Colors.Yellow);
+themeService.ConfigureAutoSave(true, filePath).Initialize(window);
 ```
-
-### ConfigureFallbackColor
-you can change system backdrop FallBackColor.
-
-```cs
-themeService.Initialize(...).ConfigureFallbackColor();
-```
-
-then you can set your FallBackColor
-```cs
-themeService.SetBackdropFallBackColor();
-```
-
-{% note warning %}
-ConfigureTintColor and ConfigureFallbackColor only works if you use Acrylic or Mica Backdrop.
-{% endnote %}
-
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TintColor.gif)
-
-### EnableRequestedTheme
-This method enables the ability to use the `Application.Current.RequestedTheme`.
-```cs
-themeService.Initialize(...).EnableRequestedTheme();
-```
-now you can use `Application.Current.RequestedTheme` in Runtime.
 
 # Changing ElementTheme in Runtime
 you can change ElementTheme in Runtime like this:
 
 ```cs
-themeService.SetElementTheme(ElementTheme.Dark);
-// themeService.GetElementTheme();
-
+await themeService.SetElementThemeAsync(ElementTheme.Dark);
 ```
 
-### Changing SystemBackdrop Type in Runtime
+# Changing SystemBackdrop Type in Runtime
 you can change SystemBackdrop Type in Runtime like this:
 
 ```cs
-themeService.SetBackdropType(BackdropType.Mica);
-// var systemBackdrop = themeService.GetSystemBackdrop();
-
+await themeService.SetBackdropTypeAsync(BackdropType.Mica);
 ```
+
+# MVVM Pattern
+first register a `IThemeService` service:
+
+```cs
+services.AddSingleton<IThemeService, ThemeService>();
+```
+then in your `App.xaml.cs`
+
+
+```cs
+var themeService = GetService<IThemeService>() as ThemeService;
+themeService.Initialize(Window);
+```
+
+# Multi-Window
+if you have multiple window, you need to use `WindowHelper.TrackWindow` method, before Activate your window.
+
+```cs
+Window myWindow = new Window();
+WindowHelper.TrackWindow(myWindow);
+myWindow.Activate();
+```
+
+# TintColor (Mica and Acrylic)
+
+**There are no built-in methods for working with `TintColor`. However, you can access the current backdrop by calling `GetAcrylicSystemBackdrop` or `GetMicaSystemBackdrop`, and then modify the `TintColor` property manually.**
 
 # Auto Change Theme/Backdrop and Auto Load Default Item
 
@@ -223,50 +205,6 @@ for selecting currect radiobutton item when page is loading, you can call `SetTh
 ```cs
 themeService.SetThemeRadioButtonDefaultItem(ThemePanel1);
 themeService.SetBackdropRadioButtonDefaultItem(ThemePanel2);
-```
-
-# Change Theme/Backdrop Manual
-
-you can change Application Theme with `RootTheme`, `ActualTheme` and `ChangeTheme` method:
-
-```cs
-themeService.RootTheme = ElementTheme.Dark;
-//OR
-themeService.ActualTheme = ElementTheme.Dark;
-//OR
-themeService.SetElementTheme(ElementTheme.Dark);
-```
-
-you can change Application SystemBackdrop:
-
-```cs
-themeService.SetBackdropType(BackdropType.Mica);
-```
-
-# MVVM Pattern
-first register a `IThemeService` service:
-
-```cs
-services.AddSingleton<IThemeService, ThemeService>();
-```
-then in your `App.xaml.cs`
-
-
-```cs
-var themeService = GetService<IThemeService>() as ThemeService;
-if (themeService != null)
-{
-    themeService.AutoInitialize(Window);
-}
-```
-
-# Multi-Window
-if you have multiple window, you need to use `WindowHelper.TrackWindow` method, before Activate your window.
-
-```cs
-Window myWindow = new Window();
-WindowHelper.TrackWindow(myWindow);
-myWindow.Activate();
 ```
 
 # Demo
