@@ -366,15 +366,11 @@ menu:
       default: /extensions/ || fas fa-tools
       AnimationExtensions: /animationExtensions/ ||
       CollectionExtension: /collectionExtension/ ||
-      ColorBrightnessExtension: /colorBrightnessExtension/ ||
       ContentDialogExtension: /contentDialogExtension/ ||
       DictionaryExtensions: /dictionaryExtensions/ ||
-      EnumValueExtension: /enumValueExtension/ ||
       FrameworkElementExtensions: /frameworkElementExtensions/ ||
       GeneralExtension: /generalExtension/ ||
-      IconMarkupExtension: /iconMarkupExtension/ ||
-      ListExtensions: /listExtensions/ ||
-      NavigationParameterExtension: /navigationParameterExtension/ ||
+      ListExtensions: /listExtensions/ ||      
       ResourceDictionaryExtension: /resourceDictionaryExtension/ ||
       PersianDateTimeExtension: /persianDateTimeExtension/ ||
       StringExtension: /stringExtension/ ||
@@ -411,6 +407,13 @@ menu:
       ITitleBarAutoSuggestBoxAware: /iTitleBarAutoSuggestBoxAware/ ||
     JsonNavigationService: /jsonNavigationService/ ||
     LegacyMessageBox: /legacyMessageBox/ ||
+    MarkupExtension:
+      default: /markupExtension/ || fas fa-tools
+      AncestorBindingExtension: /ancestorBindingExtension/ ||
+      ColorBrightnessExtension: /colorBrightnessExtension/ ||
+      EnumValueExtension: /enumValueExtension/ ||
+      IconMarkupExtension: /iconMarkupExtension/ ||
+      NavigationParameterExtension: /navigationParameterExtension/ ||
     Messaging: /messaging/ ||
     ModernSystemMenu: /modernSystemMenu/ ||
     NavigationService: /navigationService/ ||
