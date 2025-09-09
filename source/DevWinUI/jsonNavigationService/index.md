@@ -773,6 +773,12 @@ this is your apps namespace, for example: `DevWinUI.DemoApp`
 for Navigating to a Page we used UniqueId.
 {% endnote %}
 
+{% note warning %}
+if you need dynamic changes, you can call `ReInitialize()` method. 
+{% endnote %}
+
+# ReInitialize
+Reset everything and ReInitialize it.
 
 # InfoBadge
 The InfoBadge feature allows you to visually mark items or groups using a small badge indicator (such as "NEW", "1", or an icon). This is useful for highlighting updates, status changes, or important items in your app's navigation or landing page.
