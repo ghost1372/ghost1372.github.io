@@ -11,6 +11,7 @@ title: Welcome to DevWinUI Release Notes
 - Improve `WindowedContentDialog`
 - Improve `OutOfBoxPage`
 - Improve `CheckUpdateControl`
+- Change `PathHelper.GetKnownFolderPath` to Use `Microsoft.Windows.Storage.Pickers.PickerLocationId` instead of `Windows.Storage.Pickers.PickerLocationId`
 - Rename `MessageBoxImage` to `MessageBoxIcon`
 - Remove Obsolete Methods and Classes (`SettingsNavigationAttach`, `FileAndFolderPickerHelper`, `NavigationHelperEx`, `ModernWindow`, `FilePicker`, `FolderPicker`, `SavePicker`)
 - Remove Experimental `ModernWindow`
