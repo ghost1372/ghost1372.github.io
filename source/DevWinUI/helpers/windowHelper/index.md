@@ -114,7 +114,7 @@ var appWindow = WindowHelper.GetAppWindow(element);
 
 or
 
-// Use Microsoft.UI.Composition.Visual
+// Use CompositionTarget and ContentIsland
 var appWindow = WindowHelper.GetAppWindow2(element);
 
 ```
@@ -128,9 +128,30 @@ var hwnd = WindowHelper.GetWindowHandle(element);
 
 // or
 
-// Use Microsoft.UI.Composition.Visual
+// Use CompositionTarget and ContentIsland
 var hwnd = WindowHelper.GetWindowHandle2(element);
 
+```
+
+# GetAllWindowHandles
+
+```cs
+// Use CompositionTarget and ContentIsland
+var hwnds = WindowHelper.GetAllWindowHandles();
+```
+
+# GetAllWindowIds
+
+```cs
+// Use CompositionTarget and ContentIsland
+var ids = WindowHelper.GetAllWindowIds();
+```
+
+# GetAllAppWindows
+
+```cs
+// Use CompositionTarget and ContentIsland
+var windowIds = WindowHelper.GetAllAppWindows();
 ```
 
 # RemoveWindowBorderAndTitleBar
