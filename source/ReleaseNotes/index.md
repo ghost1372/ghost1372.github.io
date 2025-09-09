@@ -2,6 +2,20 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 9.0.0
+- Add `AncestorBindingExtension`
+- Add `DispatcherQueue` and `Dispatcher` `Extensions`
+- WASDK Updated to `v1.8.0`
+- `ThemeService` refactored.
+- Improve `MessageBox`
+- Improve `WindowedContentDialog`
+- Improve `OutOfBoxPage`
+- Improve `CheckUpdateControl`
+- Rename `MessageBoxImage` to `MessageBoxIcon`
+- Remove Obsolete Methods and Classes (`SettingsNavigationAttach`, `FileAndFolderPickerHelper`, `NavigationHelperEx`, `ModernWindow`, `FilePicker`, `FolderPicker`, `SavePicker`)
+- Remove Experimental `ModernWindow`
+- Fix `SelectorBarSegmented` SelectedIndex `out of range` issue
+
 # Version 8.9.2
 - Add OutOfBoxPage
 - Add CheckUpdateControl
