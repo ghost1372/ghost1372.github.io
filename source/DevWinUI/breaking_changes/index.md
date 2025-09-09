@@ -4,6 +4,16 @@ title: Breaking Changes
 
 A breaking change is a change that may require you to make changes to your application in order to avoid disruption to your integration.
 
+# Version 9.0.0
+- WASDK Updated to `v1.8.0`
+- `ThemeService` refactored.
+- Rename `MessageBoxImage` to `MessageBoxIcon`
+- Remove `SettingsNavigationAttach`
+- Remove `FileAndFolderPickerHelper`
+- Remove `NavigationHelperEx`
+- Remove Experimental `ModernWindow`
+- Remove Pickers (`FilePicker`, `FolderPicker`, `SavePicker`)
+
 # Version 8.9.1
 - `DesktopAcrylic` and `AcrylicBase` have been removed from `BackdropType`
 
