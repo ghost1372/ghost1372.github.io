@@ -7,6 +7,7 @@ A breaking change is a change that may require you to make changes to your appli
 # Version 9.0.0
 - WASDK Updated to `v1.8.0`
 - `ThemeService` refactored.
+- Change `PathHelper.GetKnownFolderPath` to Use `Microsoft.Windows.Storage.Pickers.PickerLocationId` instead of `Windows.Storage.Pickers.PickerLocationId`
 - Rename `MessageBoxImage` to `MessageBoxIcon`
 - Remove `SettingsNavigationAttach`
 - Remove `FileAndFolderPickerHelper`
