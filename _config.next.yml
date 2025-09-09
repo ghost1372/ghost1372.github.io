@@ -350,7 +350,7 @@ menu:
       default: /intellisense/ || fas fa-brain
   WinUICommunity - 7.0.0:
     default: /winUICommunity/ || fab fa-microsoft
-  DevWinUI - 8.9.2:
+  DevWinUI - 9.0.0:
     default: /DevWinUI/ || fas fa-tools
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Attach:
@@ -418,13 +418,12 @@ menu:
     ModernSystemMenu: /modernSystemMenu/ ||
     NavigationService: /navigationService/ ||
     PersianDateTime: /persianDateTime/ ||
-    Pickers: /pickers/ ||
     RainbowFrame: /rainbowFrame/ ||
     RelativeDate: /relativeDate/ ||
     SemanticVersion: /semanticVersion/ ||
     SingleInstanceApp: /singleInstanceApp/ ||
     ThemeService: /themeService/ ||
-  DevWinUI.Controls - 8.9.2:
+  DevWinUI.Controls - 9.0.0:
     default: /DevWinUIControls/ || fas fa-dice-d20
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Brushes: 
@@ -549,7 +548,7 @@ menu:
       default: /styles/ || fas fa-palette
     Validation:
       default: /validation/ || fab fa-intercom
-  DevWinUIContextMenu - 8.9.1:
+  DevWinUIContextMenu - 9.0.0:
       default: /DevWinUIContextMenu/ || fas fa-brain
       Breaking Changes: /breaking_changes/ || fas fa-dice-d20
   Release Notes:
