@@ -5,6 +5,7 @@ title: Welcome to DevWinUI Release Notes
 # Version 9.0.0
 - Add `AncestorBindingExtension`
 - Add `DispatcherQueue` and `Dispatcher` `Extensions`
+- DevWinUI now requires Windows App SDK v1.8.
 - WASDK Updated to `v1.8.0`
 - `ThemeService` refactored.
 - Improve `MessageBox`
