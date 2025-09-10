@@ -5,6 +5,7 @@ title: Breaking Changes
 A breaking change is a change that may require you to make changes to your application in order to avoid disruption to your integration.
 
 # Version 9.0.0
+- DevWinUI now requires Windows App SDK v1.8.
 - WASDK Updated to `v1.8.0`
 - `ThemeService` refactored.
 - Change `PathHelper.GetKnownFolderPath` to Use `Microsoft.Windows.Storage.Pickers.PickerLocationId` instead of `Windows.Storage.Pickers.PickerLocationId`
