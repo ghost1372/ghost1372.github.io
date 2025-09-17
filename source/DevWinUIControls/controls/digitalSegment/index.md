@@ -60,7 +60,7 @@ You should add a pattern for every character you want to support. We’ll guide 
 
 ## Define new SegmentChar
 
-Create a new class and derive it from `SegmentChar`.
+Create a new class and derive it from `SegmentChar`. if you want to create a matrix like segment, you should drive it from `MatrixSegmentChar`.
 
 ```cs
 public sealed partial class MySegmentChar : SegmentChar{
@@ -98,6 +98,25 @@ protected override void OnApplyTemplate()
 
 You should populate the `Segments` collection with your segments.
 
+### Matrix Example
+
+```cs
+public partial class MyMatrixSegmentChar : MatrixSegmentChar
+{
+    protected override int MatrixColumns => 5;
+    protected override int MatrixRows => 7;
+    protected override IReadOnlyDictionary<string, string> MatrixPatternTable => MySegmentPattern.Patterns;
+    protected override string MatrixDefaultPattern => MySegmentPattern.DefaultPattern;
+
+    public override SegmentChar Clone() => new MyMatrixSegmentChar();
+
+    public MyMatrixSegmentChar()
+    {
+        DefaultStyleKey = typeof(MyMatrixSegmentChar);
+    }
+}
+```
+
 ## Define your template
 Define your template. If you want to use colon animations and related features, you should name the segments `ColonTop` and `ColonBottom`.
 
@@ -115,6 +134,26 @@ Define your template. If you want to use colon animations and related features, 
                               Stroke="{TemplateBinding Stroke}"
                               StrokeThickness="{TemplateBinding StrokeThickness}" />
                     </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+```
+
+if you are drived it from `MatrixSegmentChar`, you should define your template like this:
+```xml
+<Style TargetType="local:MySegmentChar">
+        <Setter Property="SegmentForeground" Value="{ThemeResource AccentAAFillColorDefaultBrush}" />
+        <Setter Property="SegmentBackground" Value="{ThemeResource DividerStrokeColorDefaultBrush}" />
+        <Setter Property="Angle" Value="-5" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:MySegmentChar">
+                    <Canvas x:Name="PART_Canvas">
+                        <Canvas.RenderTransform>
+                            <SkewTransform AngleX="{Binding Angle, RelativeSource={RelativeSource Mode=TemplatedParent}}" AngleY="0" />
+                        </Canvas.RenderTransform>
+                    </Canvas>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
