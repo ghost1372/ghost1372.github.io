@@ -461,6 +461,7 @@ menu:
       CopyButton: /copyButton/ ||
       DateTimePicker: /dateTimePicker/ ||
       DepthLayerView: /depthLayerView/ ||
+      DigitalSegment: /digitalSegment/ ||
       Divider: /divider/ ||
       DropdownColorPicker: /dropdownColorPicker/ ||
       ElementGroup: /elementGroup/ ||
@@ -497,6 +498,7 @@ menu:
       PinBox: /pinBox/ ||
       ProgressButton: /progressButton/ ||
       ProgressRing: /progressRing/ ||
+      SegmentChar: /segmentChar/ ||
       SelectorBarSegmented: /selectorBarSegmented/ ||
       SettingsCard: /settingsCard/ ||
       SettingsGroup: /settingsGroup/ ||
