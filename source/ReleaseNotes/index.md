@@ -2,6 +2,13 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 9.1.0
+- Add DigitalSegment (SixteenSegmentChar, FourteenSegmentChar, Matrix5x7SegmentChar, Matrix5x8SegmentChar, Matrix8x14SegmentChar)
+- Update MainLandingPage UI
+- `TileGallery` Removed and replaced with new `HorizontalScrollContainer`
+- `HomePageHeaderImage` removed and replaced with new `HomePageHeader`
+- Following properties removed from `MainLandingPage` and `AllLandingPage` (`HeaderOverlayImage`, `HeaderVerticalAlignment`, `HeaderCornerRadius`, `HeaderContentMargin`, `UseFullScreenHeaderImage`, `HeaderMargin`)
+
 # Version 9.0.0
 - Add `AncestorBindingExtension`
 - Add `DispatcherQueue` and `Dispatcher` `Extensions`
