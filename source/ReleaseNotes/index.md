@@ -4,6 +4,8 @@ title: Welcome to DevWinUI Release Notes
 
 # Version 9.1.0
 - Add DigitalSegment (SixteenSegmentChar, FourteenSegmentChar, Matrix5x7SegmentChar, Matrix5x8SegmentChar, Matrix8x14SegmentChar)
+- Add `FlipBlock` and `FlipCards`
+- Add `SnowFlakeEffect`
 - Update MainLandingPage UI
 - `TileGallery` Removed and replaced with new `HorizontalScrollContainer`
 - `HomePageHeaderImage` removed and replaced with new `HomePageHeader`
