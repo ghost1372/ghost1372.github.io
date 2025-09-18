@@ -25,6 +25,25 @@ title: DigitalSegment
 |IsColonBlink|
 |Text|
 
+# Models
+
+|Name|
+|-|
+|SixteenSegmentChar|
+|FourteenSegmentChar|
+|Matrix5x7SegmentChar|
+|Matrix5x8SegmentChar|
+|Matrix8x14SegmentChar|
+
+# Styles
+
+There is some styles which can be applied to `SixteenSegmentChar` or `FourteenSegmentChar`
+
+|Name|
+|-|
+|WideFourteenSegmentCharStyle|
+|WideSixteenSegmentCharStyle|
+
 # Example
 
 ```xml
