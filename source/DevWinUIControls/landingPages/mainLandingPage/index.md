@@ -16,10 +16,6 @@ in this page we can load only items that is tagged as IsNew, IsUpdated and IsPre
 |-|
 |HeaderImageHeight|
 |HeaderImage|
-|HeaderOverlayImage|
-|HeaderVerticalAlignment|
-|HeaderCornerRadius|
-|HeaderContentMargin|
 |HeaderSubtitleFontSize|
 |HeaderSubtitleText|
 |HeaderFontSize|
@@ -29,12 +25,10 @@ in this page we can load only items that is tagged as IsNew, IsUpdated and IsPre
 |IsTileImage|
 |FooterContent|
 |FooterMargin|
-|UseFullScreenHeaderImage|
 |PreviewGroupText|
 |UpdatedGroupText|
 |NewGroupText|
 |HeaderContent|
-|HeaderMargin|
 
 # Override values
 

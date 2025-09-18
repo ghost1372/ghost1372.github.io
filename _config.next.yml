@@ -370,16 +370,16 @@ menu:
       DictionaryExtensions: /dictionaryExtensions/ ||
       FrameworkElementExtensions: /frameworkElementExtensions/ ||
       GeneralExtension: /generalExtension/ ||
-      ListExtensions: /listExtensions/ ||      
+      ListExtensions: /listExtensions/ ||   
+      PersianDateTimeExtension: /persianDateTimeExtension/ ||   
       ResourceDictionaryExtension: /resourceDictionaryExtension/ ||
-      PersianDateTimeExtension: /persianDateTimeExtension/ ||
       StringExtension: /stringExtension/ ||
       TextBoxExtension: /textBoxExtension/ ||
     Helpers: 
       default: /helpers/ || fas fa-tools
       AutoSuggestBoxHelper: /autoSuggestBoxHelper/ ||
-      CompositionHelper: /compositionHelper/ ||
       ColorHelper: /colorHelper/ ||
+      CompositionHelper: /compositionHelper/ ||
       CredentialHelper: /credentialHelper/ ||
       DisplayMonitorHelper: /displayMonitorHelper/ ||
       DragMoveAndResizeHelper: /dragMoveAndResizeHelper/ ||
@@ -444,19 +444,20 @@ menu:
       AutoScrollView: /autoScrollView/ ||
       BlurEffectControl: /blurEffectControl/ ||
       BreadcrumbNavigator: /breadcrumbNavigator/ ||
-      CheckBoxWithDescriptionControl: /checkBoxWithDescriptionControl/ ||
+      Bubble: /bubble/ ||
       CalendarWithClock: /calendarWithClock/ ||
       Card: /card/ ||
+      CheckBoxWithDescriptionControl: /checkBoxWithDescriptionControl/ ||
       CheckUpdateControl: /checkUpdateControl/ ||
       CirclePanel: /circlePanel/ ||
       Clock: /clock/ ||
       ColorBloomControl: /colorBloomControl/ ||
-      ColorfulShimmingEffect: /colorfulShimmingEffect/ ||
-      ColorSlideControl: /colorSlideControl/ ||
       ColorPalette: /colorPalette/ ||
+      ColorSlideControl: /colorSlideControl/ ||
+      ColorfulShimmingEffect: /colorfulShimmingEffect/ ||
       CompareSlider: /compareSlider/ ||
-      CompositionShadow: /compositionShadow/ ||
       CompositionImage: /compositionImage/ ||
+      CompositionShadow: /compositionShadow/ ||
       ConfettiCannon: /confettiCannon/ ||
       CopyButton: /copyButton/ ||
       DateTimePicker: /dateTimePicker/ ||
@@ -472,11 +473,15 @@ menu:
       ForegroundFocusEffects: /foregroundFocusEffects/ ||
       GifImage: /gifImage/ ||
       GoToTop: /goToTop/ ||
+      Gooey: /gooey/ ||
       Gravatar: /gravatar/ ||
       Growl: /growl/ ||
       Hatch: /hatch/ ||
       HeaderCarousel: /headerCarousel/ ||
+      HeaderTile: /headerTile/ ||
+      HomePageHeader: /homePageHeader/ ||
       HoneycombPanel: /honeycombPanel/ ||
+      HorizontalScrollContainer: /horizontalScrollContainer/ ||
       IndeterminateProgressBar: /indeterminateProgressBar/ ||
       InlineAutoCompleteTextBox: /inlineAutoCompleteTextBox/ ||
       IsEnabledTextBox: /isEnabledTextBox/ ||
@@ -488,11 +493,13 @@ menu:
       Magnifier: /magnifier/ ||
       MessageBox: /messageBox/ ||
       ModalWindow: /modalWindow/ ||
-      OutOfBoxPage: /outOfBoxPage/ ||
       OpacityMaskView: /opacityMaskView/ ||
       OptionsPageControl: /optionsPageControl/ ||
+      OutOfBoxPage: /outOfBoxPage/ ||
+      OutlineTextControl: /outlineTextControl/ ||
       OverviewPageHeader: /overviewPageHeader/ ||
       PagerControl: /pagerControl/ ||
+      Particle: /particle/ ||
       PerspectiveHost: /perspectiveHost/ ||
       PerspectiveZoom: /perspectiveZoom/ ||
       PinBox: /pinBox/ ||
@@ -503,34 +510,30 @@ menu:
       SettingsCard: /settingsCard/ ||
       SettingsGroup: /settingsGroup/ ||
       Shield: /shield/ ||
-      SimpleSettingsGroup: /simpleSettingsGroup/ ||
       Shimmer: /shimmer/ ||
       ShimmerTextBlock: /shimmerTextBlock/ ||
       Shortcut: /shortcut/ ||
       ShortcutPreview: /shortcutPreview/ ||
       ShortcutWithTextLabel: /shortcutWithTextLabel/ ||
       ShyHeader: /shyHeader/ ||
+      SimpleSettingsGroup: /simpleSettingsGroup/ ||
       SplitCircle: /splitCircle/ ||
       StepBar: /stepBar/ ||
       StorageBar: /storageBar/ ||
       StorageRing: /storageRing/ ||
       SwitchPresenter: /switchPresenter/ ||
+      TextBlockStrokView: /textBlockStrokView/ ||
       TextBox: /textBox/ ||
+      TextGlitchEffect: /textGlitchEffect/ ||
+      TextMorphEffect: /textMorphEffect/ ||
       TileControl: /tileControl/ ||
       TransitioningContentControl: /transitioningContentControl/ ||
       UniformGrid: /uniformGrid/ ||
-      WaveProgressBar: /waveProgressBar/ ||
-      Windows 11 Settings Examples: /windows11SettingsExamples/ ||
-      Bubble: /bubble/ ||
-      Gooey: /gooey/ ||
-      OutlineTextControl: /outlineTextControl/ ||
-      Particle: /particle/ ||
-      TextBlockStrokView: /textBlockStrokView/ ||
-      TextGlitchEffect: /textGlitchEffect/ ||
-      TextMorphEffect: /textMorphEffect/ ||
       Watermark: /watermark/ ||
       WaveCircule: /waveCircule/ ||
+      WaveProgressBar: /waveProgressBar/ ||
       WindowedContentDialog: /windowedContentDialog/ ||
+      Windows 11 Settings Examples: /windows11SettingsExamples/ ||
     Converters:
       default: /converters/ || fab fa-intercom
     Extensions:
@@ -539,7 +542,6 @@ menu:
     LandingPages:
       default: /landingPages/ || fab fa-intercom
       AllLandingPage: /allLandingPage/ ||
-      HeaderTile: /headerTile/ ||
       ItemsPageBase: /itemsPageBase/ ||
       MainLandingPage: /mainLandingPage/ ||
       SectionPage: /sectionPage/ ||

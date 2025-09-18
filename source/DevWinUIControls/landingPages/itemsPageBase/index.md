@@ -74,32 +74,16 @@ in this example we use ItemsPageBase class for creating a LandingPage
                         <RowDefinition Height="204" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <dev:HomePageHeaderImage
+                    <dev:HomePageHeader
                         Grid.RowSpan="2"
                         Height="396"
+                        HeaderSubtitleText="Version 1.0.0"
+                        HeaderText="myApp"
                         HeaderImage="ms-appx:///Assets/Images/Header.png"
                         VerticalAlignment="Top" />
-
-                    <TextBlock AutomationProperties.AutomationId="__ClickableAreaTextBlock" />
-                    <StackPanel
-                        Margin="36,0,0,0"
-                        VerticalAlignment="Center"
-                        Orientation="Vertical">
-                        <TextBlock
-                            x:Name="smallHeaderSubtitleText"
-                            FontSize="18"
-                            Text="Version 1.0.0" />
-                        <TextBlock
-                            x:Name="smallHeaderText"
-                            Style="{StaticResource TitleLargeTextBlockStyle}"
-                            Text="myApp" />
-                    </StackPanel>
-
-                    <dev:TileGallery
-                        x:Name="headerTileGallery"
-                        Grid.Row="1"
-                        Margin="0,0,0,0">
-                        <dev:TileGallery.HeaderContent>
+                    <dev:HorizontalScrollContainer
+                        Grid.Row="1">
+                        <dev:HorizontalScrollContainer.HeaderContent>
                             <StackPanel Orientation="Horizontal" Spacing="10">
                                 <dev:HeaderTile
                                         Title="Documentation Center"
@@ -134,8 +118,8 @@ in this example we use ItemsPageBase class for creating a LandingPage
                                     </dev:HeaderTile.Source>
                                 </dev:HeaderTile>
                             </StackPanel>
-                        </dev:TileGallery.HeaderContent>
-                    </dev:TileGallery>
+                        </dev:HorizontalScrollContainer.HeaderContent>
+                    </dev:HorizontalScrollContainer>
                 </Grid>
             </GridView.Header>
 

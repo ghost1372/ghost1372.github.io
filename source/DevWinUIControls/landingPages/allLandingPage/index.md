@@ -16,10 +16,6 @@ in this Page we can load all items from json file.
 |-|
 |HeaderImageHeight|
 |HeaderImage|
-|HeaderOverlayImage|
-|HeaderVerticalAlignment|
-|HeaderCornerRadius|
-|HeaderContentMargin|
 |HeaderSubtitleFontSize|
 |HeaderSubtitleText|
 |HeaderFontSize|
