@@ -121,6 +121,8 @@ Growl.ClearGlobal();
 |Property|Description|
 |-|-|
 | GrowlPanel | Currently used message container |
+|TransitionMode ||
+|TransitionStoryboard||
 
 # Additional attribute
 

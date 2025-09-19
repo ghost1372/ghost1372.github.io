@@ -142,6 +142,7 @@ menu:
       PanelElement: /panelElement/ ||
       PasswordBoxAttach: /passwordBoxAttach/ ||
       RectangleAttach: /rectangleAttach/ ||
+      SelectAllButtonAttach: /selectAllButtonAttach/ ||
       ScrollViewerAttach: /scrollViewerAttach/ ||
       StatusSwitchElement: /statusSwitchElement/ ||
       TextBlockAttach : /textBlockAttach/ ||
