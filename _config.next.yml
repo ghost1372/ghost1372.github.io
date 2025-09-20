@@ -533,6 +533,7 @@ menu:
       TileControl: /tileControl/ ||
       TransitioningContentControl: /transitioningContentControl/ ||
       UniformGrid: /uniformGrid/ ||
+      WanderingParticles: /wanderingParticles/ ||
       Watermark: /watermark/ ||
       WaveCircule: /waveCircule/ ||
       WaveProgressBar: /waveProgressBar/ ||
