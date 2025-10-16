@@ -2,6 +2,14 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 9.2.0
+- Add WanderingParticles
+- Add SpeedGraph
+- Add new Proeprties in `ProcessInfoHelper`
+- Use LoadString to load localized text for message box button
+- Improve ThemeService
+- Fix Bugs
+
 # Version 9.1.0
 - Add DigitalSegment (SixteenSegmentChar, FourteenSegmentChar, Matrix5x7SegmentChar, Matrix5x8SegmentChar, Matrix8x14SegmentChar)
 - Add `FlipBlock` and `FlipCards`
