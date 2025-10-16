@@ -521,6 +521,7 @@ menu:
       ShyHeader: /shyHeader/ ||
       SimpleSettingsGroup: /simpleSettingsGroup/ ||
       SnowFlakeEffect: /snowFlakeEffect/ ||
+      SpeedGraph: /speedGraph/ ||
       SplitCircle: /splitCircle/ ||
       StepBar: /stepBar/ ||
       StorageBar: /storageBar/ ||
