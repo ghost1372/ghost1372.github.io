@@ -423,6 +423,7 @@ menu:
     RelativeDate: /relativeDate/ ||
     SemanticVersion: /semanticVersion/ ||
     SingleInstanceApp: /singleInstanceApp/ ||
+    SystemTrayIcon: /systemTrayIcon/ ||
     ThemeService: /themeService/ ||
   DevWinUI.Controls - 9.2.0:
     default: /DevWinUIControls/ || fas fa-dice-d20
