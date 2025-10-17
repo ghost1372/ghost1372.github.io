@@ -3,6 +3,7 @@ title: Welcome to DevWinUI Release Notes
 ---
 
 # Version 9.2.0
+- Add SunTimesHelper
 - Add SystemTrayIcon
 - Add Timeline
 - Add WanderingParticles
