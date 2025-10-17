@@ -3,9 +3,15 @@ title: Welcome to DevWinUI Release Notes
 ---
 
 # Version 9.2.0
+- Add SystemTrayIcon
+- Add Timeline
 - Add WanderingParticles
 - Add SpeedGraph
+- Add Opened and Closed events and Close Method to WindowedContentDialog
 - Add new Proeprties in `ProcessInfoHelper`
+- Add `LoadNativeString` in `GeneralHelper`
+- Add `HideWindow`, `ShowWindow`, `GetDpiForWindow` and `GetWindowIcon` methods in `WindowHelper`
+- Add `KeyNameProvider` in Shortcut
 - Use LoadString to load localized text for message box button
 - Improve ThemeService
 - Fix Bugs
