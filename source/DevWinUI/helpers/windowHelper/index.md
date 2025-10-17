@@ -234,5 +234,13 @@ var iconId = WindowHelper.GetWindowIcon(hwnd);
 //var iconId = WindowHelper.GetWindowIcon(window);
 ```
 
+# SetRegion
+Create transparent regions.
+
+Create a 200x200 hole in the window, Starting at location 100,100.
+```cs
+WindowHelper.SetRegion(window, ScreenRegion.Create(new Rect(0,0, window.Width, window.Height)) - ScreenRegion.Create(new Rect(100, 100, 200, 200)));
+```
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
