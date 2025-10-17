@@ -205,5 +205,34 @@ var IsCentered = WindowHelper.CenterOnScreen(hwnd);
 ```cs
 var windowIds = WindowHelper.TryGetAllWindowIds();
 ```
+
+# HideWindow
+```cs
+WindowHelper.HideWindow(hwnd);
+// Or
+//WindowHelper.HideWindow(window);
+```
+
+# ShowWindow
+```cs
+WindowHelper.ShowWindow(hwnd);
+// Or
+//WindowHelper.ShowWindow(window);
+```
+
+# GetDpiForWindow
+```cs
+var dpi = WindowHelper.GetDpiForWindow(hwnd);
+// Or
+//var dpi = WindowHelper.GetDpiForWindow(window);
+```
+
+# GetWindowIcon 
+```cs
+var iconId = WindowHelper.GetWindowIcon(hwnd);
+// Or
+//var iconId = WindowHelper.GetWindowIcon(window);
+```
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
