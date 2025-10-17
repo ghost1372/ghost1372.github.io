@@ -21,6 +21,7 @@ title: Shortcut
 |PrimaryButtonText|
 |SecondaryButtonText|
 |ContentDialogTitle|
+|KeyNameProvider|
 
 # Events
 
@@ -62,6 +63,24 @@ private void OnMainShortcutCloseButtonClick(object sender, ContentDialogButtonCl
 {
     // "Close button clicked!";
 }
+```
+
+# Customize Keys
+you can customize keys string by providing a `KeyNameProvider`:
+
+```cs
+shortcut.KeyNameProvider = key =>
+{
+    return key switch
+    {
+        VirtualKey.LeftControl => "Left Ctrl",
+        VirtualKey.RightControl => "Right Ctrl",
+        VirtualKey.LeftShift => "Left Shift",
+        VirtualKey.RightShift => "Right Shift",
+        // Other Keys...
+        _ => key.ToString()
+    };
+};
 ```
 
 # Demo
