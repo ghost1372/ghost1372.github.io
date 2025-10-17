@@ -42,12 +42,15 @@ title: WindowedContentDialog
 |PrimaryButtonClick|
 |SecondaryButtonClick|
 |CloseButtonClick|
+|Opened|
+|Closed|
 
 # Methods
 
 |Name|
 |-|
 |ShowAsync|
+|Close|
 
 # Example
 
