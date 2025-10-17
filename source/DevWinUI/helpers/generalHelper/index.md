@@ -97,5 +97,12 @@ private static readonly string[] PrivacySensitiveRegions =
 var result = GeneralHelper.IsPrivacySensitiveRegion(PrivacySensitiveRegions);
 ```
 
+# LoadNativeString
+
+```cs
+var result = GeneralHelper.LoadNativeString(800u);
+// return OK
+```
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
