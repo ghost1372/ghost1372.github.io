@@ -399,6 +399,7 @@ menu:
       RunTimeHelper: /runtimeHelper/ ||
       SecurityHelper: /securityHelper/ ||
       StartupHelper: /startupHelper/ ||
+      SunTimesHelper: /sunTimesHelper/ ||
       TaskbarHelper: /taskbarHelper/ ||
       UpdateHelper: /updateHelper/ ||
       VisualHelper: /visualHelper/ ||
