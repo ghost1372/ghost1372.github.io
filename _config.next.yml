@@ -532,6 +532,7 @@ menu:
       TextGlitchEffect: /textGlitchEffect/ ||
       TextMorphEffect: /textMorphEffect/ ||
       TileControl: /tileControl/ ||
+      Timeline: /timeline/ ||
       TransitioningContentControl: /transitioningContentControl/ ||
       UniformGrid: /uniformGrid/ ||
       WanderingParticles: /wanderingParticles/ ||
