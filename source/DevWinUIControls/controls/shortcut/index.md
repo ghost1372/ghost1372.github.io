@@ -22,6 +22,7 @@ title: Shortcut
 |SecondaryButtonText|
 |ContentDialogTitle|
 |KeyNameProvider|
+|UseAutoValidation|
 
 # Events
 
@@ -30,6 +31,7 @@ title: Shortcut
 |CloseButtonClick|
 |PrimaryButtonClick|
 |SecondaryButtonClick|
+|ValidateShortcut|
 
 # Methods
 
@@ -82,6 +84,11 @@ shortcut.KeyNameProvider = key =>
     };
 };
 ```
+
+# Custom Keys Validation
+When `UseAutoValidation` enabled, it automatically handles key combinations and shows warnings or errors based on the keys pressed. (For example, pressing the Windows key alone will trigger an error message. You can customize the error message using ErrorTitle.)
+
+If you want to handle validation yourself, simply `disable` `UseAutoValidation` and subscribe to the `ValidateShortcut` event.
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
