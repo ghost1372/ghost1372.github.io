@@ -12,8 +12,8 @@ title: Welcome to DevWinUI Release Notes
 - Add new Proeprties in `ProcessInfoHelper`
 - Add `LoadNativeString` in `GeneralHelper`
 - Add `HideWindow`, `ShowWindow`, `GetDpiForWindow`, `SetRegion` and `GetWindowIcon` methods in `WindowHelper`
-- Add `KeyNameProvider` in Shortcut
-- Use LoadString to load localized text for message box button
+- Add `KeyNameProvider`, `UseAutoValidation` and `ValidateShortcut` in `Shortcut`
+- Use LoadString to load localized text for message box buttons
 - Improve ThemeService
 - Fix Bugs
 
