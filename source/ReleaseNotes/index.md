@@ -2,6 +2,14 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 9.3.0
+- Add LocationHelper
+- Fix Shortcut KeyVisual Cut off
+- Fix ConfettiEngine by synchronizing access
+- Fix SystemTrayIcon
+- Fix monitor enumeration logic and add direct GetMonitorInfo method
+- Adjust the height of small c in Matrix 8x14 Segment char Thanks to @xasx
+
 # Version 9.2.0
 - Add SunTimesHelper
 - Add SystemTrayIcon
