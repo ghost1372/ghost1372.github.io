@@ -49,6 +49,8 @@ SegmentedSliderSample.SegmentTitles = new List<string>
 };
 ```
 
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SegmentedSlider.gif)
+
 # Time Based Example
 
 ```xml
@@ -78,12 +80,12 @@ SegmentedSliderTimeSample.TimeSegments = new List<SegmentedSliderTimeInfo>
     }
 };
 ```
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SegmentedSlider2.gif)
 
 {% note warning %}
 If you want to use Time Based Segments, dont set SegmentCount, and if you want to use Simple Mode, dont set TotalTime.
 {% endnote %}
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SegmentedSlider.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
