@@ -512,6 +512,7 @@ menu:
       ProgressButton: /progressButton/ ||
       ProgressRing: /progressRing/ ||
       SegmentChar: /segmentChar/ ||
+      SegmentedSlider: /segmentedSlider/ ||
       SelectorBarSegmented: /selectorBarSegmented/ ||
       SettingsCard: /settingsCard/ ||
       SettingsGroup: /settingsGroup/ ||
