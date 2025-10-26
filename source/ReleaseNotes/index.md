@@ -2,6 +2,11 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 9.4.0
+- Add HorizontalSimpleGridLayout
+- Add SegmentedSlider
+- Add MenuFlyout SecondaryMenu Attach
+
 # Version 9.3.0
 - Add LocationHelper
 - Fix Shortcut KeyVisual Cut off
