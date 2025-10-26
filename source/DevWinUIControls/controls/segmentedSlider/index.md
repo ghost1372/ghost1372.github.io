@@ -24,6 +24,7 @@ title: SegmentedSlider
 |SelectedTimeChanged|
 |DragStarted|
 |DragCompleted|
+|SegmentChanged|
 
 # Methods
 
