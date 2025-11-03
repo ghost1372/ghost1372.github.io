@@ -2,6 +2,14 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 9.5.0
+- Add LoopingSelector
+- Add LoopingList
+- Add Polar Day/Night detection to SunTimesHelper
+- Enable Dot Badge for NavigationViewStoreStyle
+- Fix Acrylic backdrop misdetection caused by invalid flag comparison
+- Fix bugs
+
 # Version 9.4.0
 - Add HorizontalSimpleGridLayout
 - Add SegmentedSlider
