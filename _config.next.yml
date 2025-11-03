@@ -432,6 +432,7 @@ menu:
     Attach: 
       default: /attach/ ||
       MenuFlyoutAttach: /menuFlyoutAttach/ ||
+      StoreNavigationViewItemAttach: /storeNavigationViewItemAttach/ ||
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Brushes: 
       default: /brushes/ || fas fa-palette
