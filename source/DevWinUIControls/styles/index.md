@@ -259,12 +259,12 @@ public class ColorFormatModel : Observable
 # TabViewItem
 |Name|
 |-|
-|TabViewItemRounded|
+|TabViewItemRoundedStyle|
 
 ```xml
 <Grid>
     <Grid.Resources>
-        <Style TargetType="TabViewItem" BasedOn="{StaticResource TabViewItemRounded}"/>
+        <Style TargetType="TabViewItem" BasedOn="{StaticResource TabViewItemRoundedStyle}"/>
     </Grid.Resources>
     
     <TabView>
@@ -291,18 +291,18 @@ or
 
 ```xml
 <TabView>
-    <TabViewItem Header="Settings" Style="{ThemeResource TabViewItemRounded}">
+    <TabViewItem Header="Settings" Style="{ThemeResource TabViewItemRoundedStyle}">
         <TabViewItem.IconSource>
             <SymbolIconSource Symbol="Setting"/>
         </TabViewItem.IconSource>
         
     </TabViewItem>
-    <TabViewItem Header="History" Style="{ThemeResource TabViewItemRounded}">
+    <TabViewItem Header="History" Style="{ThemeResource TabViewItemRoundedStyle}">
         <TabViewItem.IconSource>
             <SymbolIconSource Symbol="PostUpdate"/>
         </TabViewItem.IconSource>
     </TabViewItem>
-    <TabViewItem Header="Download" Style="{ThemeResource TabViewItemRounded}">
+    <TabViewItem Header="Download" Style="{ThemeResource TabViewItemRoundedStyle}">
         <TabViewItem.IconSource>
             <SymbolIconSource Symbol="Download"/>
         </TabViewItem.IconSource>
@@ -311,7 +311,7 @@ or
 
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TabViewItemRounded.png)
+![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TabViewItemRoundedStyle.png)
 
 # InfoBar with Blue Color for Informational Severity
 
@@ -368,6 +368,14 @@ just add this:
     </NavigationView.FooterMenuItems>
 </NavigationView>
 ```
+
+if you want to show dot badge, you can use:
+
+```xml
+<NavigationViewItem dev:StoreNavigationViewItemAttach.ShowNotificationDot="True" Content="Home" Icon="Home" />
+
+```
+
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/NavigationViewStoreStyle.gif)
 
 # InfoBadge
