@@ -439,6 +439,7 @@ menu:
       BlurEffectBrush: /blurEffectBrush/ ||
       ImageEffectBrush: /imageEffectBrush/ ||
       ThemeBrushes: /themeBrushes/ ||
+      TiledImageBrush: /tiledImageBrush/ ||
     Common:
       default: /common/ || fas fa-tools
       BlurEffectManager: /blurEffectManager/ ||
@@ -563,9 +564,6 @@ menu:
       ItemsPageBase: /itemsPageBase/ ||
       MainLandingPage: /mainLandingPage/ ||
       SectionPage: /sectionPage/ ||
-    Media:
-      default: /media/ || fab fa-intercom
-      TiledImageBrush: /tiledImageBrush/ ||
     Styles: 
       default: /styles/ || fas fa-palette
     Validation:
