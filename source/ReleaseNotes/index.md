@@ -7,6 +7,9 @@ title: Welcome to DevWinUI Release Notes
 - Add LoopingSelector
 - Add LoopingList
 - Add Polar Day/Night detection to SunTimesHelper
+- Add RoundedTabViewItem Style
+- Add SmoothWindowResizer
+- Add UseEdgeColorFromImage in CompositionShadow
 - Add CardGradient3Brush Brush
 - Enable Dot Badge for NavigationViewStoreStyle
 - Fix Acrylic backdrop misdetection caused by invalid flag comparison
