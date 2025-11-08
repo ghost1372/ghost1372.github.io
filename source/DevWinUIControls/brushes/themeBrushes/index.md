@@ -4,6 +4,7 @@ title: Brushes
 
 |Name|
 |-|
+|CardGradient3Brush|
 |CardGradient2Brush|
 |CardGradient1Brush|
 |GlassAcrylicBackground|

@@ -482,6 +482,7 @@ menu:
       FlyoutMenuButton: /flyoutMenuButton/ ||
       ForegroundFocusEffects: /foregroundFocusEffects/ ||
       GifImage: /gifImage/ ||
+      GoToCard: /goToCard/ ||
       GoToTop: /goToTop/ ||
       Gooey: /gooey/ ||
       Gravatar: /gravatar/ ||

@@ -3,9 +3,11 @@ title: Welcome to DevWinUI Release Notes
 ---
 
 # Version 9.5.0
+- Add GoToCard
 - Add LoopingSelector
 - Add LoopingList
 - Add Polar Day/Night detection to SunTimesHelper
+- Add CardGradient3Brush Brush
 - Enable Dot Badge for NavigationViewStoreStyle
 - Fix Acrylic backdrop misdetection caused by invalid flag comparison
 - Fix bugs
