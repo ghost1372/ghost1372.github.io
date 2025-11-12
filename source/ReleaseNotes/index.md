@@ -3,9 +3,12 @@ title: Welcome to DevWinUI Release Notes
 ---
 
 # Version 9.5.0
+- Add Support .Net10
+- Add InfoCard
 - Add GoToCard
 - Add LoopingSelector
 - Add LoopingList
+- Add `HomePageHeaderForeground` and `HomePageHeaderSubtitleForeground` resource key in `HomePageHeader`
 - Add Polar Day/Night detection to SunTimesHelper
 - Add RoundedTabViewItem Style
 - Add SmoothWindowResizer
