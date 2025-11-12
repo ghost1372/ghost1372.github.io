@@ -54,6 +54,13 @@ title: HomePageHeader
 </dev:HomePageHeader>
 ```
 
+You can change Header and HeaderSubtitle foreground by LightWeight Styling, keys are:
+
+```xml
+HomePageHeaderForeground
+HomePageHeaderSubtitleForeground
+```
+
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/HomePageHeader.gif)
 
 # Demo
