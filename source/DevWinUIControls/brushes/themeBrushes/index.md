@@ -2,6 +2,7 @@
 title: Brushes
 ---
 
+# Background
 |Name|
 |-|
 |CardGradient3Brush|
@@ -10,6 +11,15 @@ title: Brushes
 |GlassAcrylicBackground|
 |GlassAcrylicBorderBrush|
 |OverlayRadialGradient|
+
+# Foreground
+|Name|
+|-|
+|HeaderTextInverseBrush|
+|HeaderTextPrimaryBrush|
+|HeaderTextFixPrimaryBrush|
+|HeaderTextFixInverseBrush|
+
 
 # Example
 
