@@ -53,7 +53,12 @@ private void OnMainShortcutPrimaryButtonClick(object sender, ContentDialogButton
 {
     MainShortcut.UpdatePreviewKeys();
     MainShortcut.CloseContentDialog();
-    // "Primary button clicked!" + Environment.NewLine + string.Join(" + ", MainShortcut.Keys);
+    var keys = MainShortcut.Keys.Cast<KeyVisualInfo>().ToList();
+    foreach (var item in sss)
+    {
+        var virtKey = item.Key;
+        var keyName = item.KeyName;
+    }
 }
 
 private void OnMainShortcutSecondaryButtonClick(object sender, ContentDialogButtonClickEventArgs e)
@@ -66,6 +71,11 @@ private void OnMainShortcutCloseButtonClick(object sender, ContentDialogButtonCl
     // "Close button clicked!";
 }
 ```
+
+{% note info %}
+`Keys` type is `List<object>`, after selecting keys, you can cast it to `KeyVisualInfo` and you can access Key Name and Virtual Key.
+{% endnote %}
+
 
 # Customize Keys
 you can customize keys string by providing a `KeyNameProvider`:
