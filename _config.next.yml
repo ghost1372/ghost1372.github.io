@@ -433,6 +433,7 @@ menu:
       default: /attach/ ||
       MenuFlyoutAttach: /menuFlyoutAttach/ ||
       StoreNavigationViewItemAttach: /storeNavigationViewItemAttach/ ||
+      SquircleClipAttach: /squircleClipAttach/ ||
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Brushes: 
       default: /brushes/ || fas fa-palette
