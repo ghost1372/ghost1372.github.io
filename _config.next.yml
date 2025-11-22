@@ -519,6 +519,7 @@ menu:
       PerspectiveHost: /perspectiveHost/ ||
       PerspectiveZoom: /perspectiveZoom/ ||
       PinBox: /pinBox/ ||
+      ProfileControl: /profileControl/ ||
       ProgressButton: /progressButton/ ||
       ProgressRing: /progressRing/ ||
       SegmentChar: /segmentChar/ ||
