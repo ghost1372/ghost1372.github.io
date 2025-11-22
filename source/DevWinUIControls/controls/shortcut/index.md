@@ -23,6 +23,7 @@ title: Shortcut
 |ContentDialogTitle|
 |KeyNameProvider|
 |UseAutoValidation|
+|KeysMargin|
 
 # Events
 
