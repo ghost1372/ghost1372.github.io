@@ -469,6 +469,7 @@ menu:
       CompositionImage: /compositionImage/ ||
       CompositionShadow: /compositionShadow/ ||
       ConfettiCannon: /confettiCannon/ ||
+      Countdown: /countdown/ ||
       CopyButton: /copyButton/ ||
       DateTimePicker: /dateTimePicker/ ||
       DepthLayerView: /depthLayerView/ ||
