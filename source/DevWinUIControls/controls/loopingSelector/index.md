@@ -12,8 +12,8 @@ Ported from WinUI LoopingSelector.
 |SelectedItem|
 |SelectedIndex|
 |Items|
-|ItemsWidth|
-|ItemsHeight|
+|ItemWidth|
+|ItemHeight|
 |ItemTemplate|
 
 # Method
@@ -26,11 +26,11 @@ Ported from WinUI LoopingSelector.
 # Example
 
 ```xml
-<dev:LoopingSelector x:Name="LoopingSelectorSample" ItemsHeight="40" Height="270" Padding="0,3,0,6" HorizontalContentAlignment="Center" />
+<dev:LoopingSelector x:Name="LoopingSelectorSample" ItemHeight="40" Height="270" Padding="0,3,0,6" HorizontalContentAlignment="Center" />
 ```
 
 ```cs
-LoopingSelectorSample.Items = Enumerable.Range(0, 12).Select(x => new LoopingSelectorItem { PrimaryText = x.ToString() } as object).ToList();
+LoopingSelectorSample.Items = Enumerable.Range(0, 12).Select(x => new DevWinUI.LoopingSelectorItem { PrimaryText = x.ToString() } as object).ToList();
 ```
 
 ![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/LoopingSelector.gif)
