@@ -431,6 +431,7 @@ menu:
     default: /DevWinUIControls/ || fas fa-dice-d20
     Attach: 
       default: /attach/ ||
+      FlipViewAttach: /flipViewAttach/ ||
       MenuFlyoutAttach: /menuFlyoutAttach/ ||
       StoreNavigationViewItemAttach: /storeNavigationViewItemAttach/ ||
       SquircleClipAttach: /squircleClipAttach/ ||
