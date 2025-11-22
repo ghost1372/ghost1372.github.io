@@ -509,6 +509,7 @@ menu:
       Magnifier: /magnifier/ ||
       MessageBox: /messageBox/ ||
       ModalWindow: /modalWindow/ ||
+      OffsetBox: /offsetBox/ ||
       OpacityMaskView: /opacityMaskView/ ||
       OptionsPageControl: /optionsPageControl/ ||
       OutOfBoxPage: /outOfBoxPage/ ||
