@@ -104,5 +104,11 @@ var result = GeneralHelper.LoadNativeString(800u);
 // return OK
 ```
 
+# GetUriFromObjectSource
+
+```cs
+var uri = GeneralHelper.GetUriFromObjectSource(source);
+```
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
