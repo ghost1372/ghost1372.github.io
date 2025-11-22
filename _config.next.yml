@@ -465,6 +465,7 @@ menu:
       ColorPalette: /colorPalette/ ||
       ColorSlideControl: /colorSlideControl/ ||
       ColorfulShimmingEffect: /colorfulShimmingEffect/ ||
+      ColorShadow: /colorShadow/ ||
       CompareSlider: /compareSlider/ ||
       CompositionImage: /compositionImage/ ||
       CompositionShadow: /compositionShadow/ ||
