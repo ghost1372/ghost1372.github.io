@@ -5,6 +5,14 @@ title: Halo
 The Halo is a set of interconnected UI components for circular or arc-based interfaces.
 
 # HaloPanel : Panel
+
+## Attached Properties
+
+|Name|
+|-|
+|Thickness|
+|Band|
+
 ## Example
 
 ```xml
@@ -98,6 +106,13 @@ The Halo is a set of interconnected UI components for circular or arc-based inte
 
 # HaloRingPanel : Panel
 
+## Attached Properties
+
+|Name|
+|-|
+|Angle|
+|Offset|
+
 ## Example
 
 ```xml
@@ -125,7 +140,7 @@ The Halo is a set of interconnected UI components for circular or arc-based inte
 
 # HaloRingLabel : HaloChain
 
-# Property
+## Property
 
 |Name|
 |-|
@@ -150,7 +165,7 @@ The Halo is a set of interconnected UI components for circular or arc-based inte
 
 # HaloSlice : Path
 
-# Property
+## Property
 
 |Name|
 |-|
@@ -174,7 +189,7 @@ The Halo is a set of interconnected UI components for circular or arc-based inte
 
 # HaloSlider : Control
 
-# Property
+## Property
 
 |Name|
 |-|
