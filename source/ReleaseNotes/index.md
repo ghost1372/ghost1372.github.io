@@ -2,6 +2,23 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version X
+- Add CompositionProToolkit
+- Add ImageFrame
+- Add ProfileControl
+- Add FrostedGlass
+- Add FluidBanner
+- Add ColorShadow
+- Add OffsetBox
+- Add CircleIcon
+- Add Countdown
+- Add BlendedImage
+- Add Halo (HaloPanel, HaloArc, HaloChain, HaloDisk, HaloRingPanel, HaloSlice, HaloSlider, HaloRingLabel, HaloTimePicker)
+- Add FlipViewAttach
+- Add SquircleClipAttach
+- Enable AnimatedIcon for NavigationViewStoreStyle
+- Remove Duplicate Styles
+
 # Version 9.5.0
 - Add Support .Net10
 - Add InfoCard
