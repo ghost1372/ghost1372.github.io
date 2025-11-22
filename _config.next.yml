@@ -495,6 +495,7 @@ menu:
       HomePageHeader: /homePageHeader/ ||
       HoneycombPanel: /honeycombPanel/ ||
       HorizontalScrollContainer: /horizontalScrollContainer/ ||
+      ImageFrame: /imageFrame/ ||
       IndeterminateProgressBar: /indeterminateProgressBar/ ||
       InfoCard: /infoCard/ ||
       InlineAutoCompleteTextBox: /inlineAutoCompleteTextBox/ ||
