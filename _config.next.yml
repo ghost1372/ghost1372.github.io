@@ -452,6 +452,7 @@ menu:
       AnimatedImage: /animatedImage/ ||
       ArcProgress: /arcProgress/ ||
       AutoScrollView: /autoScrollView/ ||
+      BlendedImage: /blendedImage/ ||
       BlurEffectControl: /blurEffectControl/ ||
       BreadcrumbNavigator: /breadcrumbNavigator/ ||
       Bubble: /bubble/ ||
