@@ -481,6 +481,7 @@ menu:
       FlipCards: /flipCards/ ||
       FlipSide: /flipSide/ ||
       FlipToReveal: /flipToReveal/ ||
+      FluidBanner: /fluidBanner/ ||
       FlyoutMenuButton: /flyoutMenuButton/ ||
       ForegroundFocusEffects: /foregroundFocusEffects/ ||
       FrostedGlass: /frostedGlass/ ||
