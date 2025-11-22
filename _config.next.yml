@@ -459,6 +459,7 @@ menu:
       Card: /card/ ||
       CheckBoxWithDescriptionControl: /checkBoxWithDescriptionControl/ ||
       CheckUpdateControl: /checkUpdateControl/ ||
+      CircleIcon: /circleIcon/ ||
       CirclePanel: /circlePanel/ ||
       Clock: /clock/ ||
       ColorBloomControl: /colorBloomControl/ ||
