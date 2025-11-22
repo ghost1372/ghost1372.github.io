@@ -445,6 +445,8 @@ menu:
       default: /common/ || fas fa-tools
       BlurEffectManager: /blurEffectManager/ ||
       ImageLoader: /imageLoader/ ||
+    CompositionProToolkit:
+      default: /compositionProToolkit/ || fas fa-tools
     Controls: 
       default: /controls/ || fab fa-intercom
       Accordion: /accordion/ ||
