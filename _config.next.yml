@@ -425,6 +425,7 @@ menu:
     RelativeDate: /relativeDate/ ||
     SemanticVersion: /semanticVersion/ ||
     SingleInstanceApp: /singleInstanceApp/ ||
+    SnapLayoutManager: /snapLayoutManager/ ||
     SystemTrayIcon: /systemTrayIcon/ ||
     ThemeService: /themeService/ ||
   DevWinUI.Controls - 9.5.0:
