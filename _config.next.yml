@@ -351,7 +351,7 @@ menu:
       default: /intellisense/ || fas fa-brain
   WinUICommunity - 7.0.0:
     default: /winUICommunity/ || fab fa-microsoft
-  DevWinUI - 9.5.0:
+  DevWinUI - 9.6.0:
     default: /DevWinUI/ || fas fa-tools
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Attach:
@@ -428,7 +428,7 @@ menu:
     SnapLayoutManager: /snapLayoutManager/ ||
     SystemTrayIcon: /systemTrayIcon/ ||
     ThemeService: /themeService/ ||
-  DevWinUI.Controls - 9.5.0:
+  DevWinUI.Controls - 9.6.0:
     default: /DevWinUIControls/ || fas fa-dice-d20
     Attach: 
       default: /attach/ ||
@@ -454,6 +454,7 @@ menu:
       Accordion: /accordion/ ||
       AnimatedGradient: /animatedGradient/ ||
       AnimatedImage: /animatedImage/ ||
+      AnimatedTextBlock: /animatedTextBlock/ ||
       ArcProgress: /arcProgress/ ||
       AutoScrollView: /autoScrollView/ ||
       BlendedImage: /blendedImage/ ||
