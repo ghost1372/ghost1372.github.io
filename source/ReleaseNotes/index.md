@@ -2,8 +2,10 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
-# Version X
+# Version 9.6.0
 - Add CompositionProToolkit
+- Add AnimatedTextBlock
+- Add SnapLayoutManager
 - Add ImageFrame
 - Add ProfileControl
 - Add FrostedGlass
