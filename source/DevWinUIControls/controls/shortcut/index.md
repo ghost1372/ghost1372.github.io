@@ -55,7 +55,7 @@ private void OnMainShortcutPrimaryButtonClick(object sender, ContentDialogButton
     MainShortcut.UpdatePreviewKeys();
     MainShortcut.CloseContentDialog();
     var keys = MainShortcut.Keys.Cast<KeyVisualInfo>().ToList();
-    foreach (var item in sss)
+    foreach (var item in keys)
     {
         var virtKey = item.Key;
         var keyName = item.KeyName;
