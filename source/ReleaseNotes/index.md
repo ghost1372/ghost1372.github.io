@@ -2,6 +2,19 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 9.7.0
+- Add `StoreCarousel`
+- Add `ColorAnalyzer` and `ContrastAnalyzer`
+- Add `IsRounded` and `Mask` proeprties for `ColorShadow`
+- Add `WindowManager` (Min/Max Width/Height)
+- Add `PercentageChanged` event in `ArcProgress`
+- Add `RippleLight`
+- Add `PausableDispatcherTimer`
+- Fix `ProfileControl` [Native AOT]
+- Fix `FluidBanner` [Native AOT]
+- Fix `ColorShadow` [Native AOT]
+- Fix `BlendedImage` [Native AOT]
+
 # Version 9.6.0
 - Add CompositionProToolkit
 - Add AnimatedTextBlock
