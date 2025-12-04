@@ -25,4 +25,4 @@ you should use HeaderTile in a MainLandingPage
 </dev:HeaderTile>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/HeaderTile.gif)
+![HeaderTile](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/HeaderTile.gif)

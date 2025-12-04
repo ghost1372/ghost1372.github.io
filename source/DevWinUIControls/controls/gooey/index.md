@@ -30,7 +30,7 @@ title: Gooey
 <dev:GooeyEffect />
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/GooeyEffect.gif)
+![GooeyEffect](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/GooeyEffect.gif)
 
 # GooeyFooter
 
@@ -60,7 +60,7 @@ title: Gooey
 <dev:GooeyFooterEffect />
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/GooeyFooterEffect.gif)
+![GooeyFooterEffect](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/GooeyFooterEffect.gif)
 
 # GooeyButton
 
@@ -147,7 +147,7 @@ private void gooeyButton_ItemInvoked(object sender, GooeyButton.GooeyButtonItemI
 }
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/GooeyButton.gif)
+![GooeyButton](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/GooeyButton.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

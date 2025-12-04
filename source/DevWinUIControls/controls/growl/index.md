@@ -6,7 +6,7 @@ This control can be used when you want to arrange notification information from 
 
 # Control effect
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Growl.gif)
+![Growl](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Growl.gif)
 
 # Basic usage
 
@@ -188,4 +188,4 @@ By using the Ask method, the "confirm" and "cancel" buttons are displayed by def
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Growl.gif)
+![Growl](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Growl.gif)

@@ -36,7 +36,7 @@ ImageFrame is a control which can be used for displaying images asynchronously. 
 <dev:ImageFrame Source="ms-appx:///Assets/Image.png"/>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ImageFrame.gif)
+![ImageFrame](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ImageFrame.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

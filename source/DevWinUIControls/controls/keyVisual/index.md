@@ -25,4 +25,4 @@ public sealed class KeyVisual : Control
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/KeyVisual.png)
+![KeyVisual](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/KeyVisual.png)

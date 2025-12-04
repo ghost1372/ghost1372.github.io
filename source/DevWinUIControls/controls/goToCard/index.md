@@ -35,7 +35,7 @@ title: GoToCard
 
 if you provide LaunchUri and then click on ActionButton, LaunchUri will be used and no need to subscribe to ActionClick event.
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/GoToCard.png)
+![GoToCard](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/GoToCard.png)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

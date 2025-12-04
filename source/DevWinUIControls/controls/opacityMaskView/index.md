@@ -29,7 +29,7 @@ title: OpacityMaskView
 </dev:OpacityMaskView>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/OpacityMaskView.png)
+![OpacityMaskView](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/OpacityMaskView.png)
 
 # Example / EffectButton
 
@@ -165,7 +165,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 }
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/OpacityMaskView2.gif)
+![OpacityMaskView](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/OpacityMaskView2.gif)
 
 # Example / OverlayRadialGradient
 <dev:OpacityMaskView MaxHeight="500"
@@ -178,7 +178,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
            Stretch="Uniform" />
 </dev:OpacityMaskView>
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/OpacityMaskView3.png)
+![OpacityMaskView](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/OpacityMaskView3.png)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

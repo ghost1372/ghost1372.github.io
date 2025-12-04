@@ -32,7 +32,7 @@ It provides an efficient way of displaying an acrylic background (with rounded c
                 TintOpacity="0.5" />
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/FrostedGlass.gif)
+![FrostedGlass](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/FrostedGlass.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

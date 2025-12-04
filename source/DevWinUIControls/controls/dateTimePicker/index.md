@@ -65,7 +65,7 @@ Some Properties only works for TimePicker and Some for AnalogClock.
 {% endnote %}
 
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/DateTimePicker.gif)
+![DateTimePicker](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/DateTimePicker.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
