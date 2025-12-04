@@ -22,6 +22,8 @@ ColorShadow control provides a shadow to an image. This shadow is derived from t
 |ShadowOffsetZ|
 |ShadowOpacity|
 |Stretch|
+|IsRounded|
+|Mask|
 
 # Example
 
