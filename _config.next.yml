@@ -351,7 +351,7 @@ menu:
       default: /intellisense/ || fas fa-brain
   WinUICommunity - 7.0.0:
     default: /winUICommunity/ || fab fa-microsoft
-  DevWinUI - 9.6.0:
+  DevWinUI - 9.7.0:
     default: /DevWinUI/ || fas fa-tools
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Attach:
@@ -360,8 +360,10 @@ menu:
       PanelAttach: /panelAttach/ ||
       TitleBarAttach: /titleBarAttach/ ||
     Backdrop: /backdrop/ ||
+    ColorAnalyzer: /colorAnalyzer/ ||
     CompositionAnimationController: /compositionAnimationController/ ||
     ControlTokenManager: /controlTokenManager/ ||
+    ContrastAnalyzer: /contrastAnalyzer/ ||
     DelegateCommand: /delegateCommand/ ||
     Extensions: 
       default: /extensions/ || fas fa-tools
@@ -428,7 +430,8 @@ menu:
     SnapLayoutManager: /snapLayoutManager/ ||
     SystemTrayIcon: /systemTrayIcon/ ||
     ThemeService: /themeService/ ||
-  DevWinUI.Controls - 9.6.0:
+    WindowManager: /windowManager/ ||
+  DevWinUI.Controls - 9.7.0:
     default: /DevWinUIControls/ || fas fa-dice-d20
     Attach: 
       default: /attach/ ||
@@ -447,6 +450,8 @@ menu:
       default: /common/ || fas fa-tools
       BlurEffectManager: /blurEffectManager/ ||
       ImageLoader: /imageLoader/ ||
+      Lights: /lights/ ||
+      PausableDispatcherTimer: /pausableDispatcherTimer/ ||
     CompositionProToolkit:
       default: /compositionProToolkit/ || fas fa-tools
     Controls: 
@@ -555,6 +560,7 @@ menu:
       StepBar: /stepBar/ ||
       StorageBar: /storageBar/ ||
       StorageRing: /storageRing/ ||
+      StoreCarousel: /storeCarousel/ ||
       SwitchPresenter: /switchPresenter/ ||
       TextBlockStrokView: /textBlockStrokView/ ||
       TextBox: /textBox/ ||
