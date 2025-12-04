@@ -21,6 +21,12 @@ title: ArcProgress
 |DrawArcProgress|
 |DrawArcSlice|
 
+# Events
+
+|Name|
+|-|
+|PercentageChanged|
+
 # Example
 
 ```xml
