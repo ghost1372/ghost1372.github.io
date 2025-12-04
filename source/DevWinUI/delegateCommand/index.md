@@ -59,7 +59,7 @@ private void OnCommandWithParameter(object? parameter)
 you can use IDelegateCommand Instead of ICommand
 {% endnote %}
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/DelegateCommand.gif)
+![DelegateCommand](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/DelegateCommand.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

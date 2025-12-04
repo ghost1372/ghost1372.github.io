@@ -76,9 +76,9 @@ or
 </CommandBar>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/FontIconGlyph.png)
+![FontIconGlyph](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/FontIconGlyph.png)
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/FontIconGlyph2.png)
+![FontIconGlyph](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/FontIconGlyph2.png)
 
 
 ## FontIconSourceExtension

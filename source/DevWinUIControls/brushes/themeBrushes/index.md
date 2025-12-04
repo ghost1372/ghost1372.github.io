@@ -29,4 +29,4 @@ title: Brushes
         Background="{ThemeResource CardGradient2Brush}" />
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Brushes.gif)
+![Brushes](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Brushes.gif)

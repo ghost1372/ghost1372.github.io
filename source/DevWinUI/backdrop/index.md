@@ -55,9 +55,9 @@ if you use Acrylic or Mica Backdrop, you can change backdrop config with:
 ConfigBackdropTintColor, ConfigBackdropFallBackColor, ConfigBackdropTintOpacity and ConfigBackdropLuminosityOpacity 
 {% endnote %}
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AcrylicBaseBackdrop.png)
+![AcrylicBaseBackdrop](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AcrylicBaseBackdrop.png)
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AcrylicThinBackdrop.png)
+![AcrylicThinBackdrop](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AcrylicThinBackdrop.png)
 
 
 # TransparentBackdrop
@@ -128,7 +128,7 @@ public class ColorAnimatedBackdrop : CompositionBrushBackdrop
 ```
 
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TransparentBackdrop.png)
+![TransparentBackdrop](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TransparentBackdrop.png)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

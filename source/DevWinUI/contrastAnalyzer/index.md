@@ -22,7 +22,7 @@ If you are not using a TextBlock or Control, you can directly apply the Contrast
 <TextBlock dev:ContrastAnalyzer.Opponent="Green" Text="Primary" />
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ContrastAnalyzer.png)
+![ContrastAnalyzer](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ContrastAnalyzer.png)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

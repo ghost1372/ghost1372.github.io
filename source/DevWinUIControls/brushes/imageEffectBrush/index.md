@@ -50,4 +50,4 @@ public partial class ImageEffectBrush : XamlCompositionBrushBase
  </Grid>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ImageEffectBrush.gif)
+![ImageEffectBrush](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ImageEffectBrush.gif)

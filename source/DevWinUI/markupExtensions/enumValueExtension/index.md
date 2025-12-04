@@ -13,7 +13,7 @@ Assuming we had an Animal enum type and we wanted the user to pick one of the av
 
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/EnumValueEx.png)
+![EnumValueEx](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/EnumValueEx.png)
 
 
 

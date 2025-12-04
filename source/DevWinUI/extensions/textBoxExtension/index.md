@@ -70,7 +70,7 @@ Dynamic: this mode extends Normal and if is the newest input of the TextBox is i
 </TextBlock>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TextBoxEx.png)
+![TextBoxEx](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TextBoxEx.png)
 
 
 # Text mask
@@ -120,7 +120,7 @@ In case you want to add a custom variable character you can use the CustomMask p
 
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TextBoxMaskEx.png)
+![TextBoxMaskEx](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TextBoxMaskEx.png)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

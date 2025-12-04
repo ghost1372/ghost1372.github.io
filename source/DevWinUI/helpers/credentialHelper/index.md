@@ -8,7 +8,7 @@ you can verify your users by requesting windows pin
 bool result = await CredentialHelper.RequestWindowsPIN("Please Enter your OS Pin so we can verify its you!");
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/RequestOSPin.png)
+![RequestOSPin](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/RequestOSPin.png)
 
 # PickCredential
 Get username and password with Windows Credential Picker
@@ -18,7 +18,7 @@ var password = result.CredentialPassword;
 var username = result.CredentialUserName;
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/CredentialPicker.png)
+![CredentialPicker](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/CredentialPicker.png)
 
 # AddPasswordCredential
 Add password to Windows Credential

@@ -824,7 +824,7 @@ Each DataGroup and DataItem can display InfoBadges using either custom styles or
   ]
 }
 ```
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/JsonNavigationViewInfoBadge.png)
+![JsonNavigationViewInfoBadge](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/JsonNavigationViewInfoBadge.png)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

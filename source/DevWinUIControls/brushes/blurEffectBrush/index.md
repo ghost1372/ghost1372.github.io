@@ -43,4 +43,4 @@ public partial class BlurEffectBrush  : XamlCompositionBrushBase
 </Grid>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlurEffectBrush.png)
+![BlurEffectBrush](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlurEffectBrush.png)

@@ -11,7 +11,7 @@ private void AutoSuggest_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextCh
 }
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AutoSuggestBoxHelper.png)
+![AutoSuggestBoxHelper](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AutoSuggestBoxHelper.png)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -301,7 +301,7 @@ you can use ConfigureTitleBar to automatically handle `BackButton` and `PaneTogg
 Initializ(...).ConfigureTitleBar(AppTitleBar);
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/NavigationViewHelper.gif)
+![NavigationViewHelper](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/NavigationViewHelper.gif)
 
 ## Complete Codes
 
@@ -378,4 +378,4 @@ If you want to use `Frame.GoBack` to navigate back in the frame while maintainin
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/NavigationViewHelper.gif)
+![NavigationViewHelper](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/NavigationViewHelper.gif)

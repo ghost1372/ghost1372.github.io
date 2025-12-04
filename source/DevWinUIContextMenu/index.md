@@ -72,11 +72,11 @@ drive menu support (windows 11 22621+)
 - 1.Open Visual Studio
 - 2.From `Tools` menu Select `Create GUID` option
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ContextMenuExtensionGUID.png)
+![ContextMenuExtensionGUID](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ContextMenuExtensionGUID.png)
 
 - 3.Click `New GUID`, then Change GUID Format to `Registry Format` and Finally Click on `Copy`
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ContextMenuExtensionGUID2.png)
+![ContextMenuExtensionGUID2](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ContextMenuExtensionGUID2.png)
 
 {% note warning %}
 Note that the created `GUID` is surrounded by `{` and `}`. We don't need them, so you have to delete them.
@@ -203,4 +203,4 @@ there is a lot of examples here, take a look [here](https://github.com/ikas-mc/C
 # More Deatils
 see [here](https://github.com/ikas-mc/ContextMenuForWindows11/wiki/Help) for more details.
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ContextMenu.png)
+![ContextMenu](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ContextMenu.png)
