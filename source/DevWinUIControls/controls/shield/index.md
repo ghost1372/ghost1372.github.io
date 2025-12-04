@@ -63,4 +63,4 @@ private async void Shield_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Shield.png)
+![Shield](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Shield.png)

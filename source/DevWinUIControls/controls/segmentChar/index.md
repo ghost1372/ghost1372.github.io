@@ -40,11 +40,11 @@ title: SegmentChar
 
 for more info see [here](https://ghost1372.github.io/DevWinUIControls/controls/digitalSegment/)
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SixteenSegmentChar.gif)
+![SixteenSegmentChar](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SixteenSegmentChar.gif)
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/FourteenSegmentChar.gif)
+![FourteenSegmentChar](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/FourteenSegmentChar.gif)
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/MatrixSegmentChar.gif)
+![MatrixSegmentChar](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/MatrixSegmentChar.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

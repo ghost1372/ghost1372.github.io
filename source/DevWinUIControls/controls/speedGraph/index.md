@@ -84,7 +84,7 @@ private async void StartFileCopy()
 }
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SpeedGraph.gif)
+![SpeedGraph](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SpeedGraph.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -26,7 +26,7 @@ public partial class StorageBar : RangeBase
 <dev:StorageBar Value="25"/>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/StorageBar.gif)
+![StorageBar](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/StorageBar.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

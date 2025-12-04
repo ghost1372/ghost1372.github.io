@@ -104,4 +104,4 @@ currently we are using a WrapPanel, but if you want, you can customize ItemsPane
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ColorPalette.gif)
+![ColorPalette](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ColorPalette.gif)

@@ -33,7 +33,7 @@ Ported from WinUI LoopingSelector.
 LoopingSelectorSample.Items = Enumerable.Range(0, 12).Select(x => new DevWinUI.LoopingSelectorItem { PrimaryText = x.ToString() } as object).ToList();
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/LoopingSelector.gif)
+![LoopingSelector](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/LoopingSelector.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

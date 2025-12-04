@@ -33,7 +33,7 @@ Image Visual - The innermost circular or elliptical area. This area renders the 
                     Tint="#efefef" />
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ProfileControl.gif)
+![ProfileControl](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ProfileControl.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

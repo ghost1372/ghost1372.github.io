@@ -24,7 +24,7 @@ title: SettingsCard
 </dev:Setting>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Setting.png)
+![Setting](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Setting.png)
 
 
 # SettingsPage

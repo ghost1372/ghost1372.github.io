@@ -105,7 +105,7 @@ you need to install `DevWinUI` package:
 </dev:SettingsPageControl>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Awake_Demo.png)
+![Awake_Demo](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Awake_Demo.png)
 
 # ColorPicker Page
 
@@ -312,10 +312,10 @@ public class ColorFormatModel : Observable
 }
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ColorFornat1_Demo.png)
+![ColorFornat1_Demo](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ColorFornat1_Demo.png)
 
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ColorFornat2_Demo.png)
+![ColorFornat2_Demo](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ColorFornat2_Demo.png)
 
 # FancyZones Page
 
@@ -566,7 +566,7 @@ public class ColorFormatModel : Observable
 </dev:SettingsPageControl>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/FancyZones_Demo.png)
+![FancyZones_Demo](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/FancyZones_Demo.png)
 
 # General Page
 
@@ -752,7 +752,7 @@ public class ColorFormatModel : Observable
 </dev:SettingsPageControl>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/General_Demo.png)
+![General_Demo](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/General_Demo.png)
 
 # ImageResizer Page
 
@@ -1051,7 +1051,7 @@ public class ImageSize : Observable
     }
 }
 ```
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ImageResize_Demo.png)
+![ImageResize_Demo](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ImageResize_Demo.png)
 
 # KeyboardManager Page
 
@@ -1095,7 +1095,7 @@ public class ImageSize : Observable
     </dev:SettingsPageControl.PrimaryLinks>
 </dev:SettingsPageControl>
 ```
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/KeyboardManager_Demo.png)
+![KeyboardManager_Demo](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/KeyboardManager_Demo.png)
 
 
 # OOBE Page
@@ -1118,7 +1118,7 @@ public class ImageSize : Observable
     </dev:OOBEPageControl.PageContent>
 </dev:OOBEPageControl>
 ```
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/OOBE_Demo.png)
+![OOBE_Demo](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/OOBE_Demo.png)
 
 # PowerLauncher Page
 ```xml
@@ -1279,7 +1279,7 @@ public class ImageSize : Observable
     </dev:SettingsPageControl.SecondaryLinks>
 </dev:SettingsPageControl>
 ```
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Powertoys_Demo.png)
+![Powertoys_Demo](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Powertoys_Demo.png)
 
 # PowerPreview Page
 ```xml
@@ -1409,7 +1409,7 @@ public class ImageSize : Observable
 </dev:SettingsPageControl>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/FileExplorer_Demo.png)
+![FileExplorer_Demo](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/FileExplorer_Demo.png)
 
 # PowerRename Page
 ```xml
@@ -1494,7 +1494,7 @@ public class ImageSize : Observable
 </dev:SettingsPageControl>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/PowerRename_Demo.png)
+![PowerRename_Demo](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/PowerRename_Demo.png)
 
 # ShortcutGuid Page
 ```xml
@@ -1626,7 +1626,7 @@ private void DisableKeys()
 }
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Shortcut_Demo.png)
+![Shortcut_Demo](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/Shortcut_Demo.png)
 
 
 # Demo

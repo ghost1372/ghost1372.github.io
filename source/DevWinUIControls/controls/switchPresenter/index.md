@@ -317,7 +317,7 @@ public static readonly DependencyProperty ItemsProperty =
     DependencyProperty.Register(nameof(Items), typeof(ObservableCollection<Animal>), typeof(SwitchPresenterPage), new PropertyMetadata(new ObservableCollection<Animal>(Enum.GetValues<Animal>())));
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SwitchPresenter.gif)
+![SwitchPresenter](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SwitchPresenter.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

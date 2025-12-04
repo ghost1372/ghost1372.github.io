@@ -33,4 +33,4 @@ title: TextMorphEffect
                      Text="Text1, Text2, Text3" />
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/TextMorphEffect.gif)
+![TextMorphEffect](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/TextMorphEffect.gif)

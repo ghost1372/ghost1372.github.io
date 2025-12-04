@@ -17,7 +17,7 @@ title: Styles
 </ComboBox>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SubtleComboBoxStyle.gif)
+![SubtleComboBoxStyle](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SubtleComboBoxStyle.gif)
 
 # Buttons
 ## HyperlinkButton
@@ -29,7 +29,7 @@ title: Styles
 <HyperlinkButton Content="Click Here" Style="{ThemeResource HyperlinkButtonStyle}"/>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/HyperlinkButtonStyle.png)
+![HyperlinkButtonStyle](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/HyperlinkButtonStyle.png)
 
 ## ButtonBase
 |Name|
@@ -41,7 +41,7 @@ title: Styles
 <Button Content="Click Here" Style="{ThemeResource TextButtonStyle}"/>
 
 ```
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TextButtonStyle.png)
+![TextButtonStyle](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TextButtonStyle.png)
 
 ```xml
 <Button Style="{StaticResource ScrollButtonStyle}">
@@ -54,7 +54,7 @@ title: Styles
 </Button>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ScrollButtonStyle.png)
+![ScrollButtonStyle](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ScrollButtonStyle.png)
 
 
 ## DropDownButton
@@ -75,7 +75,7 @@ title: Styles
 </DropDownButton>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AccentDropDownButtonStyle.png)
+![AccentDropDownButtonStyle](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AccentDropDownButtonStyle.png)
 
 # TextBlock
 |Name|
@@ -88,7 +88,7 @@ title: Styles
 <TextBlock Text="Test" Style="{ThemeResource SecondaryTextStyle}"/> 
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TextBlockStyle.png)
+![TextBlockStyle](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/TextBlockStyle.png)
 
 # ListViewItem
 |Name|
@@ -204,7 +204,7 @@ public class ColorFormatModel : Observable
     }
 }
 ```
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ListViewItemSettingStyle.png)
+![ListViewItemSettingStyle](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/ListViewItemSettingStyle.png)
 
 
 # Border
@@ -223,7 +223,7 @@ public class ColorFormatModel : Observable
 </Border>
 
 ```
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BorderStyle.png)
+![BorderStyle](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BorderStyle.png)
 
 # Grid
 |Name|
@@ -239,7 +239,7 @@ public class ColorFormatModel : Observable
 
 </Grid>
 ```
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/GridStyle.png)
+![GridStyle](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/GridStyle.png)
 
 # StackPanel
 |Name|
@@ -253,7 +253,7 @@ public class ColorFormatModel : Observable
 </StackPanel>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/StackPanelStyle.png)
+![StackPanelStyle](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/StackPanelStyle.png)
 
 
 # TabViewItem
@@ -311,7 +311,7 @@ or
 
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TabViewItemRoundedStyle.png)
+![TabViewItemRoundedStyle](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TabViewItemRoundedStyle.png)
 
 # InfoBar with Blue Color for Informational Severity
 
@@ -321,7 +321,7 @@ just add this:
 <ResourceDictionary Source="ms-appx:///DevWinUI.Controls/Themes/InfoBarInformationalColor.xaml" />
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlueInfoBar.png)
+![BlueInfoBar](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlueInfoBar.png)
 
 # AppTitleBarMenuFlyoutItemStyle
 
@@ -337,7 +337,7 @@ just add this:
     <SelectorBarItem Text="Fav" />
 </SelectorBar>
 ```
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TokenViewSelectorBarStyle.gif)
+![TokenViewSelectorBarStyle](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TokenViewSelectorBarStyle.gif)
 
 # NavigationView
 
@@ -376,7 +376,7 @@ if you want to show dot badge, you can use:
 
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/NavigationViewStoreStyle.gif)
+![NavigationViewStoreStyle](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/NavigationViewStoreStyle.gif)
 
 # InfoBadge
 ## StringInfoBadgeStyle
@@ -395,4 +395,4 @@ if you want to show dot badge, you can use:
 </NavigationView>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/StringInfoBadge.png)
+![StringInfoBadge](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/StringInfoBadge.png)

@@ -62,7 +62,7 @@ private void OnItemClick(object sender, ItemClickEventArgs e)
 }
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/PerspectiveZoom.gif)
+![PerspectiveZoom](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/PerspectiveZoom.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -59,14 +59,14 @@ See the Demo app to see how to use it
 
 ![GalleryApp](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/GalleryApp.png)
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/0.png)
+![Settings](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/0.png)
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/1.png)
+![Settings](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/1.png)
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/5.png)
+![Settings](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/5.png)
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/2.png)
+![Settings](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/2.png)
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/3.png)
+![Settings](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/3.png)
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/4.png)
+![Settings](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/4.png)
