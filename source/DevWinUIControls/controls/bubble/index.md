@@ -131,7 +131,7 @@ you can use BubbleView to create your custom controls. see BubbleButton Source c
 
 
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/Bubble.gif)
+![Bubble](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/Bubble.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

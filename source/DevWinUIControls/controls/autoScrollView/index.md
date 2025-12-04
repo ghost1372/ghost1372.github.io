@@ -45,7 +45,7 @@ title: AutoScrollView
 </dev:AutoScrollView>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AutoScrollView.gif)
+![AutoScrollView](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AutoScrollView.gif)
 
 
 # Example with OpacityMaskView
@@ -103,4 +103,4 @@ private void AutoScrollHoverEffectView_PointerExited(object sender, Microsoft.UI
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AutoScrollView2.gif)
+![AutoScrollView2](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AutoScrollView2.gif)

@@ -20,7 +20,7 @@ Create a dynamic blend of two images.
                                   SecondaryImageSource="ms-appx:///Assets/Others/Image2.jpg"/>
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlendedImage.gif)
+![BlendedImage](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlendedImage.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

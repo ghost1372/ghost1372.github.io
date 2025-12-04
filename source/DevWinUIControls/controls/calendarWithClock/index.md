@@ -53,7 +53,7 @@ Use `ClockMode` for choosing between `TimePicker` or `AnalogClock`
 Some Properties only works for TimePicker and Some for AnalogClock. 
 {% endnote %}
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/CalendarWithClock.gif)
+![CalendarWithClock](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/CalendarWithClock.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

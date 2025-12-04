@@ -48,7 +48,7 @@ You can Write Your Own Effects. Define a new effect class and implement the `ITe
 Draw the text by using Win2D API.
 {% endnote %}
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AnimatedTextBlock.gif)
+![AnimatedTextBlock](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AnimatedTextBlock.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

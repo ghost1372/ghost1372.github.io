@@ -191,7 +191,7 @@ When `BlurSourceType` is set to `Visual`, you must provide a `VisualSource` of t
 When `BlurSourceType` is set to `Custom`, you must provide a `CustomSourceBrush` of type `CompositionBrush`.
 {% endnote %}
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlurEffectControl.gif)
+![BlurEffectControl](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlurEffectControl.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

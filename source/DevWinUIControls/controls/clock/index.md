@@ -43,7 +43,7 @@ for changing `Minute`, you can use mouse wheel on Minute Hand, or Drag/Drap Minu
 <dev:Clock />
 ```
 
-![DevWinUI](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Clock.gif)
+![Clock](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Clock.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
