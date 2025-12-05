@@ -17,8 +17,15 @@ var pathToAsset = PathHelper.GetFullPathToAsset("logo.png");
 ```
 
 # GetFilePath
+take a uri or string and convert it to a valid uri for Packaged/UnPackaged.
+
 ```cs
+Uri filePath = new uri("ms-appx:///Assets/1.png");
 var path = await PathHelper.GetFilePath(filePath);
+//path.OriginalString: 
+//Packaged: ms-appx:///Assets/1.png
+//UnPackaged: C:\MyApp\Assets\1.png
+
 ```
 
 # GetAppDataFolderPath
