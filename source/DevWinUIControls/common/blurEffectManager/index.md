@@ -251,7 +251,7 @@ When `BlurSourceType` is set to `Custom`, you must provide a `CustomSourceBrush`
 
 ```cs
 private BlurEffectManager _blurEffectManager;
-_blurEffectManager = new BlurEffectManager(BackdropImage) { IsTintEnabled = true };
+_blurEffectManager = new BlurEffectManager(BackdropImage2) { IsTintEnabled = true };
 
 private void BackdropImage_PointerEntered(object sender, Microsoft.UI.Xaml.Input.PointerRoutedEventArgs e)
 {
