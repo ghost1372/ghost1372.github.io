@@ -31,11 +31,16 @@ title: Styles
 
 ![HyperlinkButtonStyle](https://raw.githubusercontent.com/ghost1372/Resources/main/SettingsUI/Samples/HyperlinkButtonStyle.png)
 
-## ButtonBase
+## Button
 |Name|
 |-|
 |TextButtonStyle|
+|TextBoxButtonStyle|
 |ScrollButtonStyle|
+|HeaderNavigationButtonStyle|
+|AccentHeaderNavigationButtonStyle|
+|NavigationButtonStyle|
+|AccentNavigationButtonStyle|
 
 ```xml
 <Button Content="Click Here" Style="{ThemeResource TextButtonStyle}"/>
