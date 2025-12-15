@@ -2,6 +2,23 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 9.8.0
+- Add `OrbitLoadingIndicator`
+- Add `LinearGradientBlurPanel`
+- Add `SpectrumVisualizer`
+- Add `AudioWave`
+- Add `CycleCollection`
+- Add `BannerView`
+- Add `Stars`
+- Add `EasyCarouselPanel`
+- Add `CarouselView`
+- Add `CarouselView2`
+- Add `ContentSlider`
+- Add `CoverFlow`
+- Add `LoopPanel`
+- Add `Color` and `Intensity` properties in `AmbLight`
+- Add `Composition` Extensions
+
 # Version 9.7.0
 - Add `StoreCarousel`
 - Add `ColorAnalyzer` and `ContrastAnalyzer`
