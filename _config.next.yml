@@ -364,6 +364,7 @@ menu:
     CompositionAnimationController: /compositionAnimationController/ ||
     ControlTokenManager: /controlTokenManager/ ||
     ContrastAnalyzer: /contrastAnalyzer/ ||
+    CycleCollections: /cycleCollections/ ||
     DelegateCommand: /delegateCommand/ ||
     Extensions: 
       default: /extensions/ || fas fa-tools
@@ -461,13 +462,17 @@ menu:
       AnimatedImage: /animatedImage/ ||
       AnimatedTextBlock: /animatedTextBlock/ ||
       ArcProgress: /arcProgress/ ||
+      AudioWave: /audioWave/ ||
       AutoScrollView: /autoScrollView/ ||
+      BannerView: /bannerView/ ||
       BlendedImage: /blendedImage/ ||
       BlurEffectControl: /blurEffectControl/ ||
       BreadcrumbNavigator: /breadcrumbNavigator/ ||
       Bubble: /bubble/ ||
       CalendarWithClock: /calendarWithClock/ ||
       Card: /card/ ||
+      CarouselView: /carouselView/ ||
+      CarouselView2: /carouselView2/ ||
       CheckBoxWithDescriptionControl: /checkBoxWithDescriptionControl/ ||
       CheckUpdateControl: /checkUpdateControl/ ||
       CircleIcon: /circleIcon/ ||
@@ -482,13 +487,16 @@ menu:
       CompositionImage: /compositionImage/ ||
       CompositionShadow: /compositionShadow/ ||
       ConfettiCannon: /confettiCannon/ ||
+      ContentSlider: /contentSlider/ ||
       Countdown: /countdown/ ||
       CopyButton: /copyButton/ ||
+      CoverFlow: /coverFlow/ ||
       DateTimePicker: /dateTimePicker/ ||
       DepthLayerView: /depthLayerView/ ||
       DigitalSegment: /digitalSegment/ ||
       Divider: /divider/ ||
       DropdownColorPicker: /dropdownColorPicker/ ||
+      EasyCarouselPanel: /easyCarouselPanel/ ||
       ElementGroup: /elementGroup/ ||
       FlexPanel: /flexPanel/ ||
       FlipBlock: /flipBlock/ ||
@@ -520,9 +528,11 @@ menu:
       KeyVisual: /keyVisual/ ||
       LayeredFontIcons: /layeredFontIcons/ ||
       LayoutTransformer: /layoutTransformer/ ||
+      LinearGradientBlurPanel: /linearGradientBlurPanel/ ||
       LoadingIndicator: /loadingIndicator/ ||
       LongShadowTextBlock: /longShadowTextBlock/ ||
       LoopingList: /loopingList/ ||
+      LoopPanel: /loopPanel/ ||
       LoopingSelector: /loopingSelector/ ||
       Magnifier: /magnifier/ ||
       MessageBox: /messageBox/ ||
@@ -530,6 +540,7 @@ menu:
       OffsetBox: /offsetBox/ ||
       OpacityMaskView: /opacityMaskView/ ||
       OptionsPageControl: /optionsPageControl/ ||
+      OrbitLoadingIndicator: /orbitLoadingIndicator/ ||
       OutOfBoxPage: /outOfBoxPage/ ||
       OutlineTextControl: /outlineTextControl/ ||
       OverviewPageHeader: /overviewPageHeader/ ||
@@ -556,7 +567,9 @@ menu:
       SimpleSettingsGroup: /simpleSettingsGroup/ ||
       SnowFlakeEffect: /snowFlakeEffect/ ||
       SpeedGraph: /speedGraph/ ||
+      SpectrumVisualizer: /spectrumVisualizer/ ||
       SplitCircle: /splitCircle/ ||
+      Stars: /stars/ ||
       StepBar: /stepBar/ ||
       StorageBar: /storageBar/ ||
       StorageRing: /storageRing/ ||
