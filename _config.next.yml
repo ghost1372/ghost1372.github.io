@@ -370,6 +370,7 @@ menu:
       default: /extensions/ || fas fa-tools
       AnimationExtensions: /animationExtensions/ ||
       CollectionExtension: /collectionExtension/ ||
+      CompositionExtensions: /compositionExtensions/ ||
       ContentDialogExtension: /contentDialogExtension/ ||
       DictionaryExtensions: /dictionaryExtensions/ ||
       FrameworkElementExtensions: /frameworkElementExtensions/ ||
