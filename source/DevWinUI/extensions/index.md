@@ -5,7 +5,7 @@ title: Extensions
 # Extensions
 |Name|Target|
 |-|-|
-|StartShadowBlurRadiusAnimation|
+|StartShadowBlurRadiusAnimation|DropShadow|
 |Create|Random|
 |GetValues|Enum|
 |FlickDirection|ManipulationCompletedRoutedEventArgs|
