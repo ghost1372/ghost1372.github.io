@@ -372,7 +372,7 @@ menu:
       CollectionExtension: /collectionExtension/ ||
       ColorExtensions: /colorExtensions/ ||
       CompositionExtensions: /compositionExtensions/ ||
-      ContentDialogExtension: /contentDialogExtension/ ||
+      ContentDialogExtensions: /contentDialogExtensions/ ||
       DateTimeExtensions: /dateTimeExtensions/ ||
       DependencyObjectExtensions: /dependencyObjectExtensions/ ||
       DictionaryExtensions: /dictionaryExtensions/ ||
