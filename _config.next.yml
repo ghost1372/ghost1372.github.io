@@ -568,6 +568,7 @@ menu:
       SimpleSettingsGroup: /simpleSettingsGroup/ ||
       SnowFlakeEffect: /snowFlakeEffect/ ||
       SpeedGraph: /speedGraph/ ||
+      SpectrumAnalyzer: /spectrumAnalyzer/ ||
       SpectrumVisualizer: /spectrumVisualizer/ ||
       SplitCircle: /splitCircle/ ||
       Stars: /stars/ ||
@@ -586,6 +587,7 @@ menu:
       UniformGrid: /uniformGrid/ ||
       WanderingParticles: /wanderingParticles/ ||
       Watermark: /watermark/ ||
+      WaveformTimeline: /waveformTimeline/ ||
       WaveCircule: /waveCircule/ ||
       WaveProgressBar: /waveProgressBar/ ||
       WindowedContentDialog: /windowedContentDialog/ ||
