@@ -370,16 +370,26 @@ menu:
       default: /extensions/ || fas fa-tools
       AnimationExtensions: /animationExtensions/ ||
       CollectionExtension: /collectionExtension/ ||
+      ColorExtensions: /colorExtensions/ ||
       CompositionExtensions: /compositionExtensions/ ||
       ContentDialogExtension: /contentDialogExtension/ ||
+      DateTimeExtensions: /dateTimeExtensions/ ||
+      DependencyObjectExtensions: /dependencyObjectExtensions/ ||
       DictionaryExtensions: /dictionaryExtensions/ ||
+      DoubleExtensions: /doubleExtensions/ ||
+      FloatExtensions: /floatExtensions/ ||
       FrameworkElementExtensions: /frameworkElementExtensions/ ||
       GeneralExtension: /generalExtension/ ||
       ListExtensions: /listExtensions/ ||   
-      PersianDateTimeExtension: /persianDateTimeExtension/ ||   
+      ObservableCollectionExtensions: /observableCollectionExtensions/ ||
+      PersianDateTimeExtension: /persianDateTimeExtension/ ||
       ResourceDictionaryExtension: /resourceDictionaryExtension/ ||
+      ScrollViewerExtensions: /scrollViewerExtensions/ ||
       StringExtension: /stringExtension/ ||
       TextBoxExtension: /textBoxExtension/ ||
+      UIElementExtensions: /uIElementExtensions/ ||
+      VectorExtensions: /vectorExtensions/ ||
+      VisualExtensions: /visualExtensions/ ||
     Helpers: 
       default: /helpers/ || fas fa-tools
       AutoSuggestBoxHelper: /autoSuggestBoxHelper/ ||
@@ -596,7 +606,7 @@ menu:
       default: /converters/ || fab fa-intercom
     Extensions:
       default: /extensions/ || fas fa-tools
-      ContentDialogExtension: /contentDialogExtensions/ ||
+      ContentDialogWindowedExtension: /contentDialogWindowedExtensions/ ||
     LandingPages:
       default: /landingPages/ || fab fa-intercom
       AllLandingPage: /allLandingPage/ ||

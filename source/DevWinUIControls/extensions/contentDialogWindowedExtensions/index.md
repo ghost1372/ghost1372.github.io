@@ -1,5 +1,5 @@
 ---
-title: ContentDialogExtensions
+title: ContentDialogWindowedExtensions
 ---
 
 # Methods

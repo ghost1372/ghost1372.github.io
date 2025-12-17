@@ -13,6 +13,13 @@ title: StringExtension
 |FixHtml|
 |Truncate|
 |GetHash|
+|ConvertToPersianDigit|
+|ConvertToPersianChar|
+|ConvertToEnglishDigit|
+|GetSolidColorBrush|
+|FormatRichTextBlock|
+|FormatTextBlock|
+|ToBitmapImage|
 
 # Example
 

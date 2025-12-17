@@ -5,21 +5,11 @@ title: Extensions
 # Extensions
 |Name|Target|
 |-|-|
-|ChangeAlpha|Color|
-|GetSolidColorBrush|string|
-|FormatRichTextBlock|string|
-|FormatTextBlock|string|
-|ToBitmapImage|string|
-|ToFloat|double|
-|ToInt|float|
-|RelativePosition|UIElement|
+|StartShadowBlurRadiusAnimation|
 |Create|Random|
-|IsFullyVisibile|FrameworkElement|
-|ScrollToElement|ScrollViewer|
-|ScrollToElementAsync|ScrollViewer|
-|ChangeViewAsync|ScrollViewer|
-|ContrastColorBlackWhite|Color|
 |GetValues|Enum|
+|FlickDirection|ManipulationCompletedRoutedEventArgs|
+|FillAnimation|ManipulationCompletedRoutedEventArgs|
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
