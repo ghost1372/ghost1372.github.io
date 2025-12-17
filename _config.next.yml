@@ -379,7 +379,6 @@ menu:
       DoubleExtensions: /doubleExtensions/ ||
       FloatExtensions: /floatExtensions/ ||
       FrameworkElementExtensions: /frameworkElementExtensions/ ||
-      GeneralExtension: /generalExtension/ ||
       ListExtensions: /listExtensions/ ||   
       ObservableCollectionExtensions: /observableCollectionExtensions/ ||
       PersianDateTimeExtension: /persianDateTimeExtension/ ||
