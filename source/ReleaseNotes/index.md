@@ -3,6 +3,8 @@ title: Welcome to DevWinUI Release Notes
 ---
 
 # Version 9.8.0
+- Add `SpectrumAnalyzer`
+- Add `WaveformTimeline`
 - Add `OrbitLoadingIndicator`
 - Add `LinearGradientBlurPanel`
 - Add `SpectrumVisualizer`
@@ -18,6 +20,7 @@ title: Welcome to DevWinUI Release Notes
 - Add `LoopPanel`
 - Add `Color` and `Intensity` properties in `AmbLight`
 - Add `Composition` Extensions
+- Refactor Extensions (Add `ObservableCollectionExtensions`, `CompositionExtensions`, `DependencyObjectExtensions`, `FrameworkElementExtensions`, `ColorExtensions`, `ContentDialogExtensions`, `DateTimeExtensions`, `DoubleExtensions`, `FloatExtensions`, `ScrollViewerExtensions`, `StringExtensions`, `VectorExtensions`, `VisualExtensions`)
 
 # Version 9.7.0
 - Add `StoreCarousel`
