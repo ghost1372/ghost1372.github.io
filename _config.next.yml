@@ -577,6 +577,7 @@ menu:
       ShortcutPreview: /shortcutPreview/ ||
       ShortcutWithTextLabel: /shortcutWithTextLabel/ ||
       ShyHeader: /shyHeader/ ||
+      SidebarView: /sidebarView/ ||
       SimpleSettingsGroup: /simpleSettingsGroup/ ||
       SnowFlakeEffect: /snowFlakeEffect/ ||
       SpeedGraph: /speedGraph/ ||
