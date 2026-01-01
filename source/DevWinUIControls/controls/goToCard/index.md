@@ -14,12 +14,15 @@ title: GoToCard
 |ShowActionIcon|
 |ShowActionButton|
 |LaunchUri|
+|IsOpen|
+|ShowCloseButton|
 
 # Events
 
 | Name |
 |-|
 |ActionClick|
+|CloseRequested|
 
 # Example
 
