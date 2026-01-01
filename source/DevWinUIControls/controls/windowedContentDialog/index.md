@@ -34,6 +34,8 @@ title: WindowedContentDialog
 |BorderThickness|
 |FlowDirection|
 |RequestedTheme|
+|ContentMinWidth|
+|ContentFlowDirection|
 
 # Events
 
