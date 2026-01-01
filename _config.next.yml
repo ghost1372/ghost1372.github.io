@@ -392,6 +392,7 @@ menu:
     Helpers: 
       default: /helpers/ || fas fa-tools
       AutoSuggestBoxHelper: /autoSuggestBoxHelper/ ||
+      AppLanguageHelper: /appLanguageHelper/ ||
       ColorHelper: /colorHelper/ ||
       CompositionHelper: /compositionHelper/ ||
       CredentialHelper: /credentialHelper/ ||
