@@ -595,6 +595,7 @@ menu:
       TextMorphEffect: /textMorphEffect/ ||
       TileControl: /tileControl/ ||
       Timeline: /timeline/ ||
+      Toolbar: /toolbar/ ||
       TransitioningContentControl: /transitioningContentControl/ ||
       UniformGrid: /uniformGrid/ ||
       WanderingParticles: /wanderingParticles/ ||
