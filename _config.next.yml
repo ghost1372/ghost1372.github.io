@@ -398,6 +398,7 @@ menu:
       CredentialHelper: /credentialHelper/ ||
       DisplayMonitorHelper: /displayMonitorHelper/ ||
       DragMoveAndResizeHelper: /dragMoveAndResizeHelper/ ||
+      FileExtensionHelpers: /fileExtensionHelpers/ ||
       FileHelper: /fileHelper/ ||
       GeneralHelper: /generalHelper/ ||
       INIHelper: /iniHelper/ ||
