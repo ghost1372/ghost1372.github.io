@@ -54,7 +54,15 @@ In `Debug` mode, the property appends `Dev` to indicate it is a development buil
 
 In Release mode, they behave like the normal property.
 
+You need to set IsDebug to True/False
+
 ```cs
+#if Debug
+ProcessInfoHelper.IsDebug = true;
+#else
+ProcessInfoHelper.IsDebug = false;
+#endif
+
 // Product name in Debug mode
 Console.WriteLine(ProductNameDev);                 // Output: "MyApp.Product Dev"
 Console.WriteLine(ProductNameDisplayDev);          // Output: "MyApp Product Dev"
