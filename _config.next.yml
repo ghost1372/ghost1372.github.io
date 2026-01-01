@@ -480,6 +480,7 @@ menu:
       BannerView: /bannerView/ ||
       BlendedImage: /blendedImage/ ||
       BlurEffectControl: /blurEffectControl/ ||
+      BreadcrumbBar: /breadcrumbBar/ ||
       BreadcrumbNavigator: /breadcrumbNavigator/ ||
       Bubble: /bubble/ ||
       CalendarWithClock: /calendarWithClock/ ||
