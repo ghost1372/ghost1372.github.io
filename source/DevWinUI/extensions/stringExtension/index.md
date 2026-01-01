@@ -20,6 +20,8 @@ title: StringExtension
 |FormatRichTextBlock|
 |FormatTextBlock|
 |ToBitmapImage|
+|GetLocalizedResource|
+|GetEnum|
 
 # Example
 
