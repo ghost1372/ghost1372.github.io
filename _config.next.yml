@@ -565,6 +565,7 @@ menu:
       ProfileControl: /profileControl/ ||
       ProgressButton: /progressButton/ ||
       ProgressRing: /progressRing/ ||
+      SamplePanel: /samplePanel/ ||
       SegmentChar: /segmentChar/ ||
       SegmentedSlider: /segmentedSlider/ ||
       SelectorBarSegmented: /selectorBarSegmented/ ||
