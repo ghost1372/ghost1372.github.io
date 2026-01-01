@@ -7,6 +7,7 @@ title: AnimatedImage
 |Name|
 |-|
 |ImageUrl|
+|ImageSource|
 |Stretch|
 
 # Example
