@@ -593,6 +593,7 @@ menu:
       TextBox: /textBox/ ||
       TextGlitchEffect: /textGlitchEffect/ ||
       TextMorphEffect: /textMorphEffect/ ||
+      ThemedIcon: /themedIcon/ ||
       TileControl: /tileControl/ ||
       Timeline: /timeline/ ||
       Toolbar: /toolbar/ ||
