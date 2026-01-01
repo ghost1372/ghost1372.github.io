@@ -432,6 +432,7 @@ menu:
       EnumValueExtension: /enumValueExtension/ ||
       IconMarkupExtension: /iconMarkupExtension/ ||
       NavigationParameterExtension: /navigationParameterExtension/ ||
+      ResourceStringExtension: /resourceStringExtension/ ||
     Messaging: /messaging/ ||
     ModernSystemMenu: /modernSystemMenu/ ||
     NavigationService: /navigationService/ ||
