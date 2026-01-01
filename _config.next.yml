@@ -425,8 +425,8 @@ menu:
       ITitleBarAutoSuggestBoxAware: /iTitleBarAutoSuggestBoxAware/ ||
     JsonNavigationService: /jsonNavigationService/ ||
     LegacyMessageBox: /legacyMessageBox/ ||
-    MarkupExtension:
-      default: /markupExtension/ || fas fa-tools
+    MarkupExtensions:
+      default: /markupExtensions/ || fas fa-tools
       AncestorBindingExtension: /ancestorBindingExtension/ ||
       ColorBrightnessExtension: /colorBrightnessExtension/ ||
       EnumValueExtension: /enumValueExtension/ ||
@@ -620,6 +620,9 @@ menu:
       ItemsPageBase: /itemsPageBase/ ||
       MainLandingPage: /mainLandingPage/ ||
       SectionPage: /sectionPage/ ||
+    MarkupExtensions:
+      default: /markupExtensions/ || fas fa-tools
+      ThemedIconExtension: /themedIconExtension/ ||
     Styles: 
       default: /styles/ || fas fa-palette
     Validation:
