@@ -40,7 +40,7 @@ public partial ObservableCollection<FolderItem> SidebarViewItems { get; set; } =
 {
         new FolderItem()
     {
-        Text = "Home",
+        FolderText = "Home",
         Path = "C:\\Fonts",
         Icon = new ImageIconSource()
         {
@@ -49,7 +49,7 @@ public partial ObservableCollection<FolderItem> SidebarViewItems { get; set; } =
     },
     new FolderItem()
     {
-        Text = "Folder",
+        FolderText = "Folder",
         Path = "C:\\Folder",
         IsExpanded = true,
         Icon = new ImageIconSource()
@@ -60,7 +60,7 @@ public partial ObservableCollection<FolderItem> SidebarViewItems { get; set; } =
         {
             new FolderItem()
             {
-                Text = "SubFolder1",
+                FolderText = "SubFolder1",
                 Path = "C:\\Folder\\SubFolder1",
                 Icon = new ImageIconSource()
                 {
@@ -69,7 +69,7 @@ public partial ObservableCollection<FolderItem> SidebarViewItems { get; set; } =
             },
             new FolderItem()
             {
-                Text = "SubFolder2",
+                FolderText = "SubFolder2",
                 Path = "C:\\Folder\\SubFolder2",
                 Icon = new ImageIconSource()
                 {
@@ -80,7 +80,7 @@ public partial ObservableCollection<FolderItem> SidebarViewItems { get; set; } =
     },
     new FolderItem()
     {
-        Text = "Drive",
+        FolderText = "Drive",
         Path = "D:\\Drive",
         Icon = new ImageIconSource()
         {
@@ -89,6 +89,42 @@ public partial ObservableCollection<FolderItem> SidebarViewItems { get; set; } =
     },
 };
 ```
+
+if you are using `MVVM` and `ObservableObject` you can use:
+
+```cs
+public sealed partial class FolderItem : ObservableObject, ISidebarItemModel
+{
+    [ObservableProperty]
+    public partial string FolderText { get; set; } = "";
+
+    [ObservableProperty]
+    public partial string Path { get; set; } = "";
+
+    [ObservableProperty]
+    public partial ImageIconSource Icon { get; set; } = new ImageIconSource();
+
+    public object? Children { get; set; } = null;
+
+    public IconSource? IconSource => Icon;
+
+    public bool IsExpanded { get; set; } = false;
+
+    public object ToolTip => Path;
+
+    public bool PaddedItem => false;
+
+    public string Text => FolderText;
+
+    partial void OnIconChanged(ImageIconSource value)
+    {
+        // Notify that IconSource also changed when Icon changes
+        OnPropertyChanged(nameof(IconSource));
+    }
+}
+```
+
+or if you prefer regular `INotifyPropertyChanged` you can use:
 
 ```cs
 public sealed partial class FolderItem : ISidebarItemModel, INotifyPropertyChanged
