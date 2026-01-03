@@ -2,6 +2,24 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 9.9.0
+- Add Support Visual Studio `IntelliSense` for Resources
+- Add Files `ThemedIcon`
+- Add Files `SidebarView`
+- Add Files `SamplePanel`
+- Add Files `BreadcrumbBar`
+- Add Files `Toolbar`
+- Add `ContentMinWidth` and `ContentFlowDirection` for `WindowedContentDialog`
+- Add `FileExtensionHelpers`
+- Add `AppLanguageHelper`
+- Add `GetLocalizedResource` in `StringExtensions`
+- Add `ResourceStringExtension` markup
+- Add `ThemedIconExtension` markup
+- Add `ImageSource` for `AnimatedImage`
+- Improve GoToCard by Adding `IsOpen`, `ShowCloseButton` and `CloseRequested`
+- Fix GoToCard `ActionClick` Event
+- Fix `ProcessInfoHelper`
+
 # Version 9.8.0
 - Add `SpectrumAnalyzer`
 - Add `WaveformTimeline`
