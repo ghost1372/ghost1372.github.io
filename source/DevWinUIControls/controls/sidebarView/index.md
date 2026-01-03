@@ -143,10 +143,6 @@ public sealed partial class FolderItem : ISidebarItemModel, INotifyPropertyChang
 }
 ```
 
-{% note warning %}
-SidebarView does not support NativeAOT.
-{% endnote %}
-
 ![SidebarView](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SidebarView.gif)
 
 # Demo
