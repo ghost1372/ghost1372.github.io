@@ -351,7 +351,7 @@ menu:
       default: /intellisense/ || fas fa-brain
   WinUICommunity - 7.0.0:
     default: /winUICommunity/ || fab fa-microsoft
-  DevWinUI - 9.9.0:
+  DevWinUI - 9.9.2:
     default: /DevWinUI/ || fas fa-tools
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Attach:
@@ -445,7 +445,7 @@ menu:
     SystemTrayIcon: /systemTrayIcon/ ||
     ThemeService: /themeService/ ||
     WindowManager: /windowManager/ ||
-  DevWinUI.Controls - 9.9.0:
+  DevWinUI.Controls - 9.9.2:
     default: /DevWinUIControls/ || fas fa-dice-d20
     Attach: 
       default: /attach/ ||
@@ -630,6 +630,12 @@ menu:
   DevWinUIContextMenu - 9.9.0:
       default: /DevWinUIContextMenu/ || fas fa-brain
       Breaking Changes: /breaking_changes/ || fas fa-dice-d20
+  DevWinUISourceGenerator - 9.9.0:
+      default: /DevWinUISourceGenerator/ || fas fa-brain      
+      Breaking Changes: /breaking_changes/ || fas fa-dice-d20
+      BreadcrumbPageMappingsGenerator: /breadcrumbPageMappingsGenerator/ ||
+      NavigationPageMappingsGenerator: /navigationPageMappingsGenerator/ ||
+      StringsPropertyGenerator: /stringsPropertyGenerator/ ||
   Release Notes:
       default: /ReleaseNotes/ || fab fa-microsoft
 
