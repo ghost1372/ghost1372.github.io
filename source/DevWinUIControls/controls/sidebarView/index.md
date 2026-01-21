@@ -16,6 +16,15 @@ title: SidebarView
 |SelectedItem|
 |MenuItemsSource|
 
+# Events
+
+|Name|
+|-|
+|ItemInvoked|
+|ItemContextInvoked|
+|ItemDragOver|
+|ItemDropped|
+
 # ISidebarItemModel
 ## Property
 
