@@ -91,7 +91,7 @@ BasicBreadCrumbNavigator.Initialize(frame, navigationView, pageDictionary);
 ```
 
 {% note info %}
-for more info and finding a T4 template for generating PageDictionary [see here](https://Ghost1372.github.io/DevWinUI/navigationService/#ConfigBreadcrumbBar)
+for more info and finding a Source Generator for generating PageDictionary [see here](https://Ghost1372.github.io/DevWinUI/navigationService/#ConfigBreadcrumbBar)
 {% endnote %}
 
 {% note info %}
