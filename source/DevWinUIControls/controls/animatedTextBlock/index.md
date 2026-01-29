@@ -36,7 +36,7 @@ A TextBlock control which animates the text with customizable effects.
 
 ```xml
 <dev:AnimatedTextBlock Text="DevWinUI">
-    <dev:TextBlockFX.TextEffect>
+    <dev:AnimatedTextBlock.TextEffect>
         <dev:TextDefaultEffect/>
     </dev:TextBlockFX.TextEffect>
 </dev:AnimatedTextBlock>    
