@@ -2,6 +2,17 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 9.9.3
+- Add `Spoiler`
+- Add `ValidatingDevWinUITextBoxStyle` for `dev:TextBox` control.
+- Fix Slow `AnimatedImage`
+
+# Version 9.9.2
+- Improve `JsonNavigationService` NavigationView `Icon` Quality
+
+# Version 9.9.1
+- Fix `SidebarView` Bindings and Support `NAOT`
+
 # Version 9.9.0
 - Add Support Visual Studio `IntelliSense` for Resources
 - Add Files `ThemedIcon`
