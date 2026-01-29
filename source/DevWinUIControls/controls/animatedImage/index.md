@@ -9,6 +9,7 @@ title: AnimatedImage
 |ImageUrl|
 |ImageSource|
 |Stretch|
+|OpacityAnimationDuration|
 
 # Example
 
