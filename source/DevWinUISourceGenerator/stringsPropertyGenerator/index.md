@@ -15,8 +15,8 @@ Just add an `AdditionalFiles` entry to your .csproj.
 
 ```xml
 <ItemGroup>
-  <AdditionalFiles Include="Strings\en-US\Resources.resw" />
-  <!-- OR  <AdditionalFiles Include="Strings\en-US\Resources.Error.resw" /> -->
+  <AdditionalFiles Include="Strings\en-US\Resources.resw" Link="%(RecursiveDir)%(Filename)%(Extension)"/>
+  <!-- OR  <AdditionalFiles Include="Strings\en-US\Resources.Error.resw" Link="%(RecursiveDir)%(Filename)%(Extension)"/> -->
 </ItemGroup>
 ```
 

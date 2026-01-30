@@ -106,7 +106,7 @@ You can simplify creating `PageDictionary` by installing our `DevWinUI.SourceGen
 
 ```xml
 <ItemGroup>
-  <AdditionalFiles Include="Assets\NavViewMenu\AppData.json" />
+  <AdditionalFiles Include="Assets\NavViewMenu\AppData.json" Link="%(RecursiveDir)%(Filename)%(Extension)"/>
 </ItemGroup>
 ```
 
@@ -171,7 +171,7 @@ You can simplify creating `PageDictionary` by installing our `DevWinUI.SourceGen
 
 ```xml
 <ItemGroup>
-  <AdditionalFiles Include="**\*.xaml" />
+  <AdditionalFiles Include="**\*.xaml" Link="%(RecursiveDir)%(Filename)%(Extension)"/>
 </ItemGroup>
 ```
 

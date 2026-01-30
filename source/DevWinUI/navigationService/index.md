@@ -100,7 +100,7 @@ You can simplify creating `PageDictionary` by installing our `DevWinUI.SourceGen
 
 ```xml
 <ItemGroup>
-  <AdditionalFiles Include="**\*.xaml" />
+  <AdditionalFiles Include="**\*.xaml" Link="%(RecursiveDir)%(Filename)%(Extension)"/>
 </ItemGroup>
 ```
 
