@@ -15,6 +15,7 @@ title: SystemTrayIcon
 |-|
 |CloseFlyout|
 |SetIcon|
+|SetTheme|
 
 # Events
 
