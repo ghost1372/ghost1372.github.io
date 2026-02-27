@@ -16,6 +16,7 @@ Demonstrates how to apply drop shadows to Xaml elements
 |ShadowOpacity|
 |Content|
 |Mask|
+|IsRounded|
 
 # Example
 
@@ -31,6 +32,45 @@ Demonstrates how to apply drop shadows to Xaml elements
 
 # Using Mask
 
+## Example 1
+
+```xml
+<dev:CompositionShadow x:Name="RenderShadow"
+                       Width="100"
+                       Height="100"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Color="Red">
+```
+
+```cs
+var compositor = ElementCompositionPreview.GetElementVisual(this).Compositor;
+
+float width = (float)RenderShadow.ActualWidth;
+float height = (float)RenderShadow.ActualHeight;
+float radius = MathF.Min(width, height) / 2f;
+
+var ellipse = compositor.CreateEllipseGeometry();
+ellipse.Center = new Vector2(width / 2f, height / 2f);
+ellipse.Radius = new Vector2(radius, radius);
+
+var shape = compositor.CreateSpriteShape(ellipse);
+shape.FillBrush = compositor.CreateColorBrush(Colors.White);
+
+var shapeVisual = compositor.CreateShapeVisual();
+shapeVisual.Size = new Vector2(width, height);
+shapeVisual.Shapes.Add(shape);
+
+var visualSurface = compositor.CreateVisualSurface();
+visualSurface.SourceVisual = shapeVisual;
+visualSurface.SourceSize = new Vector2(width, height);
+
+var maskBrush = compositor.CreateSurfaceBrush(visualSurface);
+
+RenderShadow.Mask = maskBrush;
+```
+
+## Example 2
 ```xml
 <ToggleSwitch x:Name="TGMask" Header="Toggle Mask" Toggled="TGMask_Toggled" />
 
