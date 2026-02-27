@@ -40,7 +40,7 @@ Demonstrates how to apply drop shadows to Xaml elements
                        Height="100"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Top"
-                       Color="Red">
+                       Color="Red"/>
 ```
 
 ```cs
