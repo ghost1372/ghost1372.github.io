@@ -117,7 +117,7 @@ public MainWindow()
 ```
 
 {% note warning %}
-Make sure you are using `ExtendsContentIntoTitleBar = true;` and `DevWinUI.Controls` package is installed. For MenuFlyoutItem we use custom style called `ModernSystemMenuFlyoutItemStyle` which is included in the `DevWinUI.Controls` package.
+Make sure you are using `ExtendsContentIntoTitleBar = true;` and `DevWinUI` package is installed. For MenuFlyoutItem we use custom style called `ModernSystemMenuFlyoutItemStyle` which is included in the `DevWinUI` package.
 {% endnote %}
 
 ![ModernSystemMenu](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ModernSystemMenu.png)

@@ -351,8 +351,8 @@ menu:
       default: /intellisense/ || fas fa-brain
   WinUICommunity - 7.0.0:
     default: /winUICommunity/ || fab fa-microsoft
-  DevWinUI - 9.9.3:
-    default: /DevWinUI/ || fas fa-tools
+  DevWinUI.Base - 10.0.0:
+    default: /DevWinUIBase/ || fas fa-tools
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Attach:
       default: /attach/ ||
@@ -445,8 +445,8 @@ menu:
     SystemTrayIcon: /systemTrayIcon/ ||
     ThemeService: /themeService/ ||
     WindowManager: /windowManager/ ||
-  DevWinUI.Controls - 9.9.3:
-    default: /DevWinUIControls/ || fas fa-dice-d20
+  DevWinUI - 10.0.0:
+    default: /DevWinUI/ || fas fa-dice-d20
     Attach: 
       default: /attach/ ||
       FlipViewAttach: /flipViewAttach/ ||
