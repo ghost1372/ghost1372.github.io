@@ -18,6 +18,14 @@ Demonstrates how to apply drop shadows to Xaml elements
 |Mask|
 |IsRounded|
 
+# Methods
+
+|Name|
+|-|
+|GetDropShadow|
+|StartBreath|
+|StopBreath|
+
 # Example
 
 ```xml
