@@ -27,6 +27,8 @@ title: DropdownColorPicker
 |TintBoxCornerRadius|
 |TintBoxWidth|
 |TintBoxHeight|
+|Header|
+|HeaderTemplate|
 
 # Events
 |Name|
