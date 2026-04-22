@@ -602,6 +602,7 @@ menu:
       Timeline: /timeline/ ||
       Toolbar: /toolbar/ ||
       TransitioningContentControl: /transitioningContentControl/ ||
+      UacStyleDialogWindow: /uacStyleDialogWindow/ ||
       UniformGrid: /uniformGrid/ ||
       WanderingParticles: /wanderingParticles/ ||
       Watermark: /watermark/ ||
@@ -614,7 +615,6 @@ menu:
       default: /converters/ || fab fa-intercom
     Extensions:
       default: /extensions/ || fas fa-tools
-      ContentDialogWindowedExtension: /contentDialogWindowedExtensions/ ||
     LandingPages:
       default: /landingPages/ || fab fa-intercom
       AllLandingPage: /allLandingPage/ ||

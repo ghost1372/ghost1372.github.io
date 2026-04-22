@@ -16,12 +16,8 @@ title: MessageBox
 # Example
 
 ```cs
-await MessageBox.ShowAsync(txtContent.Text?.ToString(), txtTitle.Text?.ToString(), MessageBoxButtons.OKCancel);
+await MessageBox.ShowAsync("message", "title");
 ```
-
-{% note info %}
-If you want to show a Underlay (SmokeLayer or SystemBackdrop), you should specify an `OwnerWindow`.
-{% endnote %}
 
 ![MessageBox](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/MessageBox.png)
 

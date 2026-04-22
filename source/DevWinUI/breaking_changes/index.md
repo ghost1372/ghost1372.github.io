@@ -6,6 +6,8 @@ A breaking change is a change that may require you to make changes to your appli
 
 # Version 10.0.0
 - DevWinUI now requires Windows App SDK `v2.0.0`
+- WindowedContentDialog rewritten
+- MessageBox rewritten
 - Package Renamed from `DevWinUI.Controls` To `DevWinUI`
 You will need to update all references in your code from `DevWinUI.Controls` to `DevWinUI`.
 

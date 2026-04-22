@@ -1,5 +1,5 @@
 ---
-title: WindowedContentDialog
+title: UacStyleDialogWindow
 ---
 
 # Property
@@ -22,7 +22,6 @@ title: WindowedContentDialog
 |DefaultButton|
 |IsPrimaryButtonEnabled|
 |IsSecondaryButtonEnabled|
-|ButtonOrientation|
 |PrimaryButtonStyle|
 |SecondaryButtonStyle|
 |CloseButtonStyle|
@@ -36,7 +35,10 @@ title: WindowedContentDialog
 |FlowDirection|
 |MinHeight|
 |MinWidth|
-|CanDragMoveWindow|
+|Severity|
+|ExtendedHeader|
+|ExtendedHeaderTemplate|
+|ExtendedHeaderBackground|
 
 # Events
 
@@ -55,9 +57,10 @@ title: WindowedContentDialog
 # Example
 
 ```cs
-WindowedContentDialog dialog = new()
+UacStyleDialogWindow dialog = new()
 {
     Header = "YourTitle",
+    ExtendedHeader = "ExtendedHeader",
     Content = "YourContent",
     PrimaryButtonContent = "YourPrimaryButtonText",
     SecondaryButtonContent = "YourSecondaryButtonText",
@@ -65,9 +68,12 @@ WindowedContentDialog dialog = new()
     DefaultButton = ContentDialogButton.Primary,
     Owner = App.Current.MainWindow
 };
-ContentDialogResult result = await dialog.ShowAsync();
-var result = result.ToString();
+dialog.ShowDialog();
 ```
+
+{% note info %}
+you need to use `ExtendedHeader` when you are using `Severity` 
+{% endnote %}
 
 
 {% note info %}
@@ -76,7 +82,7 @@ If you want to prevent dialog from closing after buttons clicked, please handle 
 `dialog.PrimaryButtonClick += (o, e) => e.Cancel = true;`
 {% endnote %}
 
-![WindowedContentDialog](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/WindowedContentDialog.png)
+![UacStyleDialogWindow](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/UacStyleDialogWindow.png)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -7,6 +7,9 @@ title: Welcome to DevWinUI Release Notes
 - Use WindowsAppSDK (`Microsoft.WindowsAppSDK.WinUI`) Meta Package.
 - Package Renamed from `DevWinUI` To `DevWinUI.Base`
 - Package Renamed from `DevWinUI.Controls` To `DevWinUI`
+- Added UacStyleDialogWindow
+- rewritten WindowedContentDialog
+- rewritten MessageBox
 
 {% note warning %}
 This version contains breaking changes. Please refer to the Breaking Changes section for full details.
