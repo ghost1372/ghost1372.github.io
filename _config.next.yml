@@ -397,7 +397,7 @@ menu:
       CompositionHelper: /compositionHelper/ ||
       CredentialHelper: /credentialHelper/ ||
       DisplayMonitorHelper: /displayMonitorHelper/ ||
-      DragMoveAndResizeHelper: /dragMoveAndResizeHelper/ ||
+      DragMoveHelper: /dragMoveHelper/ ||
       FileExtensionHelpers: /fileExtensionHelpers/ ||
       FileHelper: /fileHelper/ ||
       GeneralHelper: /generalHelper/ ||

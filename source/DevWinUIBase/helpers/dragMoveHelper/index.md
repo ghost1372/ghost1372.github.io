@@ -1,5 +1,5 @@
 ---
-title: DragMoveAndResizeHelper
+title: DragMoveHelper
 ---
 
 Drag your window by set a UIElement as a Drag Region
@@ -7,13 +7,14 @@ Drag your window by set a UIElement as a Drag Region
 # SetDragMove
 
 ```cs
-DragMoveAndResizeHelper.SetDragMove(window, element);
+DragMoveHelper dragMove = new DragMoveHelper(myWindow);
+dragMove.SetDragMove(element);
 ```
 
 # UnsetDragMove
 
 ```cs
-DragMoveAndResizeHelper.UnsetDragMove(element);
+dragMove.UnsetDragMove(element);
 ```
 
 # Demo
