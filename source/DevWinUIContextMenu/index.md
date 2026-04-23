@@ -68,6 +68,11 @@ After installing, add the following codes to `Package.appxmanifest`
 drive menu support (windows 11 22621+)
 {% endnote %}
 
+{% note warning %}
+for WPF Projects you need to update `ContextMenuCustomHost.dll` `Path` in `SurrogateServer`:
+`<com:Class Id="YOUR_GUID" Path="MyWpfApp\ContextMenuCustomHost.dll" ThreadingModel="STA"/>`
+{% endnote %}
+
 ## How to Create GUID?
 - 1.Open Visual Studio
 - 2.From `Tools` menu Select `Create GUID` option
@@ -198,7 +203,7 @@ menuService.SetCustomMenuName("MyApp Main Menu");
 ```
 
 # Examples
-there is a lot of examples here, take a look [here](https://github.com/ikas-mc/ContextMenuForWindows11/tree/main/menuSample) to see how properties can be filled.
+there is a lot of examples here, take a look [here](https://github.com/ikas-mc/ContextMenuForWindows11/tree/main/menuSample) and [here](https://github.com/ikas-mc/ContextMenuForWindows11/discussions/categories/menus) to see how properties can be filled.
 
 # More Deatils
 see [here](https://github.com/ikas-mc/ContextMenuForWindows11/wiki/Help) for more details.
