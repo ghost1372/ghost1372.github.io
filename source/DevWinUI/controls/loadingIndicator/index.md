@@ -21,6 +21,15 @@ title: LoadingIndicator
 |Pulse|LoadingIndicatorPulseStyle|
 |Ring|LoadingIndicatorRingStyle|
 |ThreeDots|LoadingIndicatorThreeDotsStyle|
+|Bar|
+|Cog|
+|Cupertino|
+|DotCircle|
+|Grid|
+|Piston|
+|Ring2|
+|Swirl|
+|Twist|
 
 # Example
 
