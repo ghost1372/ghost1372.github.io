@@ -436,6 +436,8 @@ menu:
     Messaging: /messaging/ ||
     ModernSystemMenu: /modernSystemMenu/ ||
     NavigationService: /navigationService/ ||
+    NTPClient: /ntpClient/ ||
+    NTPServer: /ntpServer/ ||
     PersianDateTime: /persianDateTime/ ||
     RainbowFrame: /rainbowFrame/ ||
     RelativeDate: /relativeDate/ ||
@@ -443,6 +445,7 @@ menu:
     SingleInstanceApp: /singleInstanceApp/ ||
     SnapLayoutManager: /snapLayoutManager/ ||
     SystemTrayIcon: /systemTrayIcon/ ||
+    QRCode: /qRCode/ ||
     ThemeService: /themeService/ ||
     WindowManager: /windowManager/ ||
   DevWinUI - 10.0.0:
