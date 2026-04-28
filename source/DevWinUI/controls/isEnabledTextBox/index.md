@@ -7,6 +7,7 @@ title: IsEnabledTextBox
 | Name |
 |-|
 |Text|
+|IsTextSelectionEnabled|
 
 # Example
 
