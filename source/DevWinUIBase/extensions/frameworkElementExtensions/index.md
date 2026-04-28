@@ -44,6 +44,24 @@ title: FrameworkElementExtensions
 |ScaleDeltaX|
 |ScaleDeltaY|
 |GetCompositeTransform|
+|Ancestor|
+|AncestorType|
+
+# Ancestor | AncestorType
+
+Useful when you want to bind outside of a ItemTemplate
+
+```xml
+<ItemsControl x:Name="ShortcutsControl" ItemsSource="{TemplateBinding Keys}">
+    <ItemsControl.ItemTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Vertical">
+                <local:KeyVisual2 local:FrameworkElementExtensions.AncestorType="local:ShortcutWithTextLabel2" Content="{Binding}" IsTabStop="False" Style="{Binding (local:FrameworkElementExtensions.Ancestor).KeyVisualStyle, RelativeSource={RelativeSource Self}}" />
+            </StackPanel>
+        </DataTemplate>
+    </ItemsControl.ItemTemplate>
+</ItemsControl>
+```
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
