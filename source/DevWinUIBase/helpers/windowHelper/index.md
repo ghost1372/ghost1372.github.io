@@ -247,5 +247,11 @@ WindowHelper.SetRegion(window, ScreenRegion.Create(new Rect(0,0, window.Width, w
 WindowHelper.SetWindowSize(window, width, height);
 ```
 
+# ShakeWindowAsync
+```cs
+await WindowHelper.ShakeWindowAsync(window);
+```
+
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
