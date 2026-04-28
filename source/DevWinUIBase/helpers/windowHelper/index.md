@@ -252,6 +252,9 @@ WindowHelper.SetWindowSize(window, width, height);
 await WindowHelper.ShakeWindowAsync(window);
 ```
 
+# MoveWindowToBottomRight
+
+# CenterWindowOnDisplay
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
