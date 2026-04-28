@@ -543,6 +543,8 @@ menu:
       InlineAutoCompleteTextBox: /inlineAutoCompleteTextBox/ ||
       IsEnabledTextBox: /isEnabledTextBox/ ||
       KeyVisual: /keyVisual/ ||
+      KeyVisual2: /keyVisual2/ ||
+      KeyCharPresenter: /keyCharPresenter/ ||
       LayeredFontIcons: /layeredFontIcons/ ||
       LayoutTransformer: /layoutTransformer/ ||
       LinearGradientBlurPanel: /linearGradientBlurPanel/ ||
@@ -581,6 +583,7 @@ menu:
       Shortcut: /shortcut/ ||
       ShortcutPreview: /shortcutPreview/ ||
       ShortcutWithTextLabel: /shortcutWithTextLabel/ ||
+      ShortcutWithTextLabel2: /shortcutWithTextLabel2/ ||
       ShyHeader: /shyHeader/ ||
       SidebarView: /sidebarView/ ||
       SimpleSettingsGroup: /simpleSettingsGroup/ ||
