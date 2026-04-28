@@ -110,5 +110,13 @@ var result = GeneralHelper.LoadNativeString(800u);
 var uri = GeneralHelper.GetUriFromObjectSource(source);
 ```
 
+# GetDpiScale
+
+# ScaleToPhysicalPixels
+
+# ScaleToDip
+
+# GetEffectiveDpi
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
