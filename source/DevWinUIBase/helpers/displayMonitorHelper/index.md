@@ -26,5 +26,7 @@ Retrieves information about the primary monitor (the main display)
 var primaryMonitor = DisplayMonitorHelper.GetPrimaryMonitorInfo();
 ```
 
+# TryGetDisplayAreaAtCursor
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
