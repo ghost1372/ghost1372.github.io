@@ -33,6 +33,9 @@ title: Shortcut
 |PrimaryButtonClick|
 |SecondaryButtonClick|
 |ValidateShortcut|
+|OpenedContentDialog|
+|ClosedContentDialog|
+|ClosingContentDialog|
 
 # Methods
 
