@@ -389,6 +389,7 @@ menu:
       UIElementExtensions: /uIElementExtensions/ ||
       VectorExtensions: /vectorExtensions/ ||
       VisualExtensions: /visualExtensions/ ||
+    EyeDropper: /eyeDropper/ ||
     Helpers: 
       default: /helpers/ || fas fa-tools
       AutoSuggestBoxHelper: /autoSuggestBoxHelper/ ||
@@ -420,6 +421,10 @@ menu:
       UpdateHelper: /updateHelper/ ||
       VisualHelper: /visualHelper/ ||
       WindowHelper: /windowHelper/ ||
+    Hooks:
+      default: /hooks/ || fas fa-tools
+      GlobalMouseHook: /globalMouseHook/ ||
+      GlobalKeyboardHook: /globalKeyboardHook/ ||
     Interfaces:
       default: /interfaces/ || fas fa-tools
       ITitleBarAutoSuggestBoxAware: /iTitleBarAutoSuggestBoxAware/ ||
@@ -441,6 +446,7 @@ menu:
     PersianDateTime: /persianDateTime/ ||
     RainbowFrame: /rainbowFrame/ ||
     RelativeDate: /relativeDate/ ||
+    RestartManager: /restartManager/ ||
     SemanticVersion: /semanticVersion/ ||
     SingleInstanceApp: /singleInstanceApp/ ||
     SnapLayoutManager: /snapLayoutManager/ ||
