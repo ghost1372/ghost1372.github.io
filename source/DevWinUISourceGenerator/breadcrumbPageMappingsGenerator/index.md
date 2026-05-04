@@ -13,7 +13,7 @@ Just add an `AdditionalFiles` entry to your .csproj.
 
 ```xml
 <ItemGroup>
-  <AdditionalFiles Include="**\*.xaml" Link="%(RecursiveDir)%(Filename)%(Extension)"/>
+    <AdditionalFiles Include="@(Page)" />
 </ItemGroup>
 ```
 
