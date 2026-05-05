@@ -6,9 +6,10 @@ title: SpeedGraph
 
 |Name|
 |-|
-|MaxSpeed|
-|Total|
-|BackgroundCircleDistance|
+|Mode|
+|BackgroundMode|
+|BackgroundShapeDistance|
+|NoDataText|
 |SpeedLineVisibility|
 |SpeedTextVisibility|
 |SpeedText|
@@ -18,12 +19,11 @@ title: SpeedGraph
 # Methods
 |Name|
 |-|
-|AddPoint|
 |SetSpeed|
 |ResetGraph|
-|Error|
-|Pause|
-|Normal|
+|ErrorGraph|
+|PauseGraph|
+|NormalGraph|
 
 # Example
 
@@ -34,7 +34,6 @@ title: SpeedGraph
 ```cs
 ulong _totalBytes = 1024UL * 1024 * 500; // 500 MB
 SpeedGraphSample.Total = _totalBytes;
-SpeedGraphSample.MaxSpeed = 1024;
 SpeedGraphSample.SetSpeed(50, 500);
 ```
 
@@ -46,19 +45,18 @@ private Random _random = new();
 
 private async void StartFileCopy()
 {
-    ulong _totalBytes = 1024UL * 1024 * 500; // 500 MB
+    SpeedGraphSample.ResetGraph();
 
-    SpeedGraphSample.Normal();
+    ulong _totalBytes = 1024UL * 1024 * (ulong)NBFileSize.Value;
+
+    SpeedGraphSample.NormalGraph();
 
     if (_isSimulating)
         return;
 
-    SpeedGraphSample.ResetGraph();
-
     _isSimulating = true;
 
     ulong copiedBytes = 0;
-    SpeedGraphSample.Total = _totalBytes;
 
     while (copiedBytes < _totalBytes)
     {
