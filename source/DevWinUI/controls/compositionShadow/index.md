@@ -17,6 +17,9 @@ Demonstrates how to apply drop shadows to Xaml elements
 |Content|
 |Mask|
 |IsRounded|
+|IsBreathing|
+|UseCornerRadius|
+|CornerRadius|
 
 # Methods
 
