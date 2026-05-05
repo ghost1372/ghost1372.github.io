@@ -24,6 +24,7 @@ ColorShadow control provides a shadow to an image. This shadow is derived from t
 |Stretch|
 |IsRounded|
 |Mask|
+|IsBreathing|
 
 # Example
 
