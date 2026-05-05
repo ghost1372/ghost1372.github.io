@@ -84,6 +84,10 @@ private async void StartFileCopy()
 }
 ```
 
+{% note warning %}
+you need to clamp or control percent or speed values, `SpeedGraph` does not care about input values!
+{% endnote %}
+
 ![SpeedGraph](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SpeedGraph.gif)
 
 # Demo
