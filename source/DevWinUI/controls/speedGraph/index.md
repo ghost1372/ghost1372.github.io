@@ -6,7 +6,6 @@ title: SpeedGraph
 
 |Name|
 |-|
-|Mode|
 |BackgroundMode|
 |BackgroundShapeDistance|
 |NoDataText|
