@@ -371,6 +371,7 @@ menu:
       ModernSystemMenu: /modernSystemMenu/ ||
       NTPClient: /ntpClient/ ||
       NTPServer: /ntpServer/ ||
+      PasswordGenerator: /passwordGenerator/ ||
       PersianDateTime: /persianDateTime/ ||
       QRCode: /qRCode/ ||
       RainbowFrame: /rainbowFrame/ ||
