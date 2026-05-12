@@ -555,6 +555,7 @@ menu:
       LayeredFontIcons: /layeredFontIcons/ ||
       LayoutTransformer: /layoutTransformer/ ||
       LinearGradientBlurPanel: /linearGradientBlurPanel/ ||
+      LiveGraph: /liveGraph/ ||
       LoadingIndicator: /loadingIndicator/ ||
       LongShadowTextBlock: /longShadowTextBlock/ ||
       LoopingList: /loopingList/ ||
