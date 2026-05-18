@@ -7,6 +7,8 @@ title: Welcome to DevWinUI Release Notes
 - Use WindowsAppSDK (`Microsoft.WindowsAppSDK.WinUI`) Meta Package.
 - Package Renamed from `DevWinUI` To `DevWinUI.Base`
 - Package Renamed from `DevWinUI.Controls` To `DevWinUI`
+- Add `LiveGraph`
+- Add `PasswordGenerator`
 - Add `EyeDropper`
 - Add `GlobalMouseHook`
 - Add `GlobalKeyboardHook`
@@ -21,10 +23,12 @@ title: Welcome to DevWinUI Release Notes
 - Add `ShortcutWithTextLabel2`
 - Add `opened` and `closed` events for `Shortcut`
 - Improve `CompositionShadow` with new properties (`IsBreathing`, `UseCornerRadius`, `CornerRadius`)
+- Improve `ThemeService`
 - rewritten `SpeedGraph`
 - rewritten `WindowedContentDialog`
 - rewritten `DragMoveHelper`
 - Update Icons
+- Improve `StoreCarousel` and `ImageFrame` Performance
 
 {% note warning %}
 This version contains breaking changes. Please refer to the Breaking Changes section for full details.
