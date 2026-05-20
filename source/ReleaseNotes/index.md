@@ -14,7 +14,7 @@ title: Welcome to DevWinUI Release Notes
 - Add `GlobalKeyboardHook`
 - Add `RestartManager`
 - Add `NTPServer` and `NTPClient`
-- Add `QRCode`
+- Add `QRCode` and `Barcode`
 - Add 9 More Styles for `LoadingIndicator`
 - Added `UacStyleDialogWindow`
 - Add `ShakeWindowAsync` in `WindowHelper`
