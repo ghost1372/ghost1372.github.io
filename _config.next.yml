@@ -360,6 +360,7 @@ menu:
     Backdrop: /backdrop/ || fas fa-tools
     Common:
       default: /common/ || fas fa-tools
+      Barcode: /barcode/ ||
       ColorAnalyzer: /colorAnalyzer/ ||
       CompositionAnimationController: /compositionAnimationController/ ||
       ContrastAnalyzer: /contrastAnalyzer/ ||

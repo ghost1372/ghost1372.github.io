@@ -71,6 +71,7 @@ var customSvg = standardQr.ToSvg(new QRCodeSvgOptions
     LightColor = "#ffffff",
 });
 ```
+Logo images are currently supported in the SVG renderer only.
 
 ### Render as PNG
 
