@@ -400,6 +400,29 @@ SettingsExpander is also an ItemsControl, so its items can be driven by a collec
 </ScrollViewer>
 ```
 
+# Nested SettingsExpander
+
+```xml
+<dev:SettingsExpander Header="Test Setting Expander Header"
+                                  Description="Test Setting Expander Description"
+                                  ItemContainerStyleSelector="{StaticResource CustomSettingsExpanderItemStyleSelector}">
+    
+    <dev:SettingsExpander.Items>
+        <dev:SettingsCard Header="Test Setting Card Header"
+                                      Description="Test Setting Card Description" />
+        <dev:SettingsExpander Header="Test Nested Setting Expander Header"
+                                          Description="Test Nested Setting Expander Description"
+                                          ItemContainerStyleSelector="{StaticResource NestedCustomSettingsExpanderItemStyleSelector}">
+            <dev:SettingsExpander.Items>
+                <dev:SettingsCard Header="Test Nested Setting Card Header"
+                                              Description="Test Nested Setting Card Description"/>
+            </dev:SettingsExpander.Items>
+        </dev:SettingsExpander>
+        <dev:SettingsCard Header="Test Setting Card Header"
+                                      Description="Test Setting Card Description" />
+    </dev:SettingsExpander.Items>
+</dev:SettingsExpander>
+```
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
