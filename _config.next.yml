@@ -485,6 +485,7 @@ menu:
       AnimatedGradient: /animatedGradient/ ||
       AnimatedImage: /animatedImage/ ||
       AnimatedTextBlock: /animatedTextBlock/ ||
+      AnimationPath: /animationPath/ ||
       ArcProgress: /arcProgress/ ||
       AudioWave: /audioWave/ ||
       AutoScrollView: /autoScrollView/ ||
