@@ -8,6 +8,8 @@ title: Welcome to DevWinUI Release Notes
 - Package Renamed from `DevWinUI` To `DevWinUI.Base`
 - Package Renamed from `DevWinUI.Controls` To `DevWinUI`
 - Add `LiveGraph`
+- Add `AnimationPath`
+- Add `MorphingAnimation`
 - Add `PasswordGenerator`
 - Add `EyeDropper`
 - Add `GlobalMouseHook`
@@ -16,6 +18,7 @@ title: Welcome to DevWinUI Release Notes
 - Add `NTPServer` and `NTPClient`
 - Add `QRCode` and `Barcode`
 - Add 9 More Styles for `LoadingIndicator`
+- Add Support Nested `SettingsExpander`
 - Added `UacStyleDialogWindow`
 - Add `ShakeWindowAsync` in `WindowHelper`
 - Add `FrameworkElementExtensions.Ancestor`
