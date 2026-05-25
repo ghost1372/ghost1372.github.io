@@ -566,6 +566,7 @@ menu:
       Magnifier: /magnifier/ ||
       MessageBox: /messageBox/ ||
       ModalWindow: /modalWindow/ ||
+      MorphingAnimation: /morphingAnimation/ ||
       OffsetBox: /offsetBox/ ||
       OpacityMaskView: /opacityMaskView/ ||
       OptionsPageControl: /optionsPageControl/ ||
