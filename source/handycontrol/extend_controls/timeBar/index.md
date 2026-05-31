@@ -21,6 +21,7 @@ public class TimeBar : Control
 |ShowSpeStr|Whether to show the scale|false||
 |TimeFormat|Time Format|yyyy-MM-dd HH:mm:ss||
 |SelectedTime|Currently selected time||||
+|SpeStr||||
 
 # Events
 |Name|Description|

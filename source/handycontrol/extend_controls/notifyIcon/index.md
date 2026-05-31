@@ -35,6 +35,7 @@ public class NotifyIcon : FrameworkElement, IDisposable
 |-|-|
 | Click | Triggered when clicked |
 | MouseDoubleClick | Triggered on double click |
+|BalloonTipClicked||
 
 # Case
 

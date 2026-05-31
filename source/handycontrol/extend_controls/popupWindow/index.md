@@ -21,6 +21,7 @@ public class PopupWindow : System.Windows.Window
 |ShowTitle|Whether to show the title|true||
 |ShowCancel|Whether to show the cancel button|false||
 |ShowBorder|Whether to show the border|false|||
+|ContentStr||||
 
 # Method
 |Name|Description|
