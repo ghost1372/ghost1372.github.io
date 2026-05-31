@@ -118,13 +118,14 @@ to this:
 |Index||
 |ShowWindowFlag||
 |WorkingDirectory||
+|AcceptMultipleFilesRuleFlag||
+|RunAsFlag||
 
 # Methods
 
 |Name|
 |-|
 |QueryAllAsync|
-|GetMenusFolderAsync|
 |SaveAsync|
 |ReadAsync|
 |RenameMenuFile|
@@ -140,9 +141,8 @@ to this:
 |GetCustomMenuName|
 |SetCustomMenuName|
 |ClearAllMenus|
-|ReplaceMenu|
-|RefreshMenuAsync|
-|CheckMenuExistsAsync|
+|CopyMenuFrom|
+|CreateDefualtMenusFolderAsync|
 
 # Create a New Menu
 Open Your `App.xaml.cs` file and in your `OnLaunched` method, Create a new `ContextMenuItem`.
@@ -166,8 +166,8 @@ protected async override void OnLaunched(LaunchActivatedEventArgs args)
         Icon = ProcessInfoHelper.GetFileVersionInfo().FileName,
         Exe = "YOUR_APPNAME"
     };
-
-    ContextMenuService menuService = new ContextMenuService();
+    var menuFolder = await ContextMenuService.CreateDefualtMenusFolderAsync();
+    ContextMenuService menuService = new ContextMenuService(menuFolder);
     await menuService.SaveAsync(menu);
 }
 ```
