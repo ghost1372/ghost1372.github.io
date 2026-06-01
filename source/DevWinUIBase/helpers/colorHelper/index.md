@@ -72,5 +72,10 @@ Gets the saturation of the color.
 float ColorHelper.GetSaturationFromColor(color);
 ```
 
+# GetInterpolatedColor
+```cs
+Color color = ColorHelper.GetInterpolatedColor(progress, startColor, targetColor);
+```
+
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
