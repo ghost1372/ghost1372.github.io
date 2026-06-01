@@ -65,4 +65,10 @@ title: Converters
 <TextBlock Visibility="{x:Bind doubleValue, Converter={StaticResource DoubleToVisibilityConverter}}" />
 ```
 
+## BoolNegationConverter
+```xml
+<ToggleSwitch IsOn="{x:Bind boolValue, Converter={StaticResource BoolNegationConverter}}" />
+```
+
+
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
