@@ -69,13 +69,6 @@ ContentDialogResult result = await dialog.ShowAsync();
 var result = result.ToString();
 ```
 
-
-{% note info %}
-If you want to prevent dialog from closing after buttons clicked, please handle click event and set e.Cancel = true where e is ContentDialogWindowButtonClickEventArgs.
-
-`dialog.PrimaryButtonClick += (o, e) => e.Cancel = true;`
-{% endnote %}
-
 ![WindowedContentDialog](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/WindowedContentDialog.png)
 
 # Demo
