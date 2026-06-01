@@ -68,18 +68,11 @@ UacStyleDialogWindow dialog = new()
     DefaultButton = ContentDialogButton.Primary,
     Owner = App.Current.MainWindow
 };
-dialog.ShowDialog();
+await dialog.ShowDialogAsync();
 ```
 
 {% note info %}
 you need to use `ExtendedHeader` when you are using `Severity` 
-{% endnote %}
-
-
-{% note info %}
-If you want to prevent dialog from closing after buttons clicked, please handle click event and set e.Cancel = true where e is ContentDialogWindowButtonClickEventArgs.
-
-`dialog.PrimaryButtonClick += (o, e) => e.Cancel = true;`
 {% endnote %}
 
 ![UacStyleDialogWindow](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/UacStyleDialogWindow.png)
