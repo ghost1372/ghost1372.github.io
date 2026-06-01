@@ -409,6 +409,7 @@ menu:
       VisualExtensions: /visualExtensions/ ||
     Helpers: 
       default: /helpers/ || fas fa-tools
+      AnimationEasingHelper: /animationEasingHelper/ ||
       AutoSuggestBoxHelper: /autoSuggestBoxHelper/ ||
       AppLanguageHelper: /appLanguageHelper/ ||
       ColorHelper: /colorHelper/ ||
