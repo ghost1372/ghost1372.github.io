@@ -70,5 +70,24 @@ title: Converters
 <ToggleSwitch IsOn="{x:Bind boolValue, Converter={StaticResource BoolNegationConverter}}" />
 ```
 
+## EmptyObjectToObjectConverter
+```xml
+<dev:EmptyObjectToObjectConverter x:Name="EmptyToObj"
+                                       EmptyValue="Collapsed"
+                                       NotEmptyValue="Visible"
+                                       />
+```
+## EmptyStringToObjectConverter
+```xml
+<dev:EmptyObjectToObjectConverter x:Name="EmptyToObj"
+                                       EmptyValue="Collapsed"
+                                       NotEmptyValue="Visible"
+                                       />
+```
+
+## StringVisibilityConverter
+```xml
+<ToggleSwitch Visiblity="{x:Bind strValue, Converter={StaticResource StringVisibilityConverter}}" />
+```
 
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
