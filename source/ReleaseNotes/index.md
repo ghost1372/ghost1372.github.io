@@ -8,6 +8,7 @@ title: Welcome to DevWinUI Release Notes
 - Package Renamed from `DevWinUI` To `DevWinUI.Base`
 - Package Renamed from `DevWinUI.Controls` To `DevWinUI`
 - Add `LiveGraph`
+- Add `BetterLyric`
 - Add `AnimationPath`
 - Add `MorphingAnimation`
 - Add `PasswordGenerator`
