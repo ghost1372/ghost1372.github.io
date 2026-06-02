@@ -491,6 +491,7 @@ menu:
       AudioWave: /audioWave/ ||
       AutoScrollView: /autoScrollView/ ||
       BannerView: /bannerView/ ||
+      BetterLyric: /betterLyric/ ||
       BlendedImage: /blendedImage/ ||
       BlurEffectControl: /blurEffectControl/ ||
       BreadcrumbBar: /breadcrumbBar/ ||
