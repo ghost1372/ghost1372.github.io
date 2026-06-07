@@ -647,6 +647,42 @@ menu:
       default: /styles/ || fas fa-palette
     Validation:
       default: /validation/ || fab fa-intercom
+  DevWinUI.Shader - 10.0.0:
+    default: /DevWinUIShader/ || fas fa-tools
+    Breaking Changes: /breaking_changes/ || fas fa-dice-d20
+    Controls:
+      default: /controls/ || fas fa-tools
+      ShaderBackground: /shaderBackground/ ||
+    Renderers:
+      default: /renderers/ || fas fa-tools
+      CosmicRenderer: /cosmicRenderer/ ||
+      CoverBackgroundRenderer: /coverBackgroundRenderer/ ||
+      FireRenderer: /fireRenderer/ ||
+      FogRenderer: /fogRenderer/ ||
+      IceAndFireRenderer: /iceAndFireRenderer/ ||
+      MatrixRainRenderer: /matrixRainRenderer/ ||
+      PureColorBackgroundRenderer: /pureColorBackgroundRenderer/ ||
+      RaindropRenderer: /raindropRenderer/ ||
+      SeventiesMeltRenderer: /seventiesMeltRenderer/ ||
+      SnowRenderer: /snowRenderer/ ||
+      SparkRenderer: /sparkRenderer/ ||
+      SpectrumRenderer: /spectrumRenderer/ ||
+      StarNestRenderer: /starNestRenderer/ ||
+      StarNoiseRenderer: /starNoiseRenderer/ ||
+    Shaders:
+      default: /shaders/ || fas fa-tools
+      CosmicShader: /cosmicShader/ ||
+      FireShader: /fireShader/ ||
+      FluidBackgroundShader: /fluidBackgroundShader/ ||
+      FogShader: /fogShader/ ||
+      IceAndFireShader: /iceAndFireShader/ ||
+      MatrixRainShader: /matrixRainShader/ ||
+      RaindropShader: /raindropShader/ ||
+      SeventiesMeltShader: /seventiesMeltShader/ ||
+      SnowShader: /snowShader/ ||
+      SparkShader: /sparkShader/ ||
+      StarNestShader: /starNestShader/ ||
+      StarNoiseShader: /starNoiseShader/ ||
   DevWinUIContextMenu - 9.9.0:
       default: /DevWinUIContextMenu/ || fas fa-brain
       Breaking Changes: /breaking_changes/ || fas fa-dice-d20

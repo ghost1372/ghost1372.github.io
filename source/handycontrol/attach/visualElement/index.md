@@ -11,6 +11,7 @@ title: VisualElement
 | HighlightBorderBrush | Set the highlight border color of the control |
 | HighlightForeground | Set the highlight foreground color of the control |
 | Text | Set text content |
+|StaysHighlighted||
 
 # Use Cases
 
