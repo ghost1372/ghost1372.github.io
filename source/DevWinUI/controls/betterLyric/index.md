@@ -170,7 +170,6 @@ public static LyricData GetEnglishSample()
 ```cs
 private DispatcherQueueTimer? _playbackTimer = App.Current.Resources.DispatcherQueue.CreateTimer();
 private bool _isDraggingSlider = false;
-    private int TotalMs => MyBetterLyric.CurrentLyricsData?.LyricsLines.Max(l => l.EndMs) ?? 0;
 
 MyBetterLyric.CurrentLyricsData = LyricData.GetEnglishWithTranslationSample();
 
@@ -187,7 +186,7 @@ private void OnLineClicked(object? sender, int lineIndex)
 
 private void ApplyLyricsDataToSlider()
 {
-    var totalMs = TotalMs;
+    var totalMs = (int)MyBetterLyric?.CurrentLyricsData?.Duration.TotalMiliseconds;
     ProgressSlider.Minimum = 0;
     ProgressSlider.Maximum = totalMs;
     ProgressSlider.StepFrequency = 100;
@@ -207,7 +206,7 @@ private void StartPlaybackTimer()
             if (_isDraggingSlider) return;
 
             var newMs = ProgressSlider.Value + 100;
-            if (newMs > TotalMs) newMs = 0;
+            if (newMs > (int)MyBetterLyric?.CurrentLyricsData?.Duration.TotalMiliseconds) newMs = 0;
 
             ProgressSlider.Value = newMs;
         };
@@ -225,7 +224,7 @@ private void ProgressSlider_ValueChanged(object sender, Microsoft.UI.Xaml.Contro
 
     var current = TimeSpan.FromMilliseconds(ms);
     var total = TimeSpan.FromMilliseconds(TotalMs);
-    PositionText.Text = $"{(int)current.TotalMinutes}:{current.Seconds:D2} / {(int)total.TotalMinutes}:{total.Seconds:D2}";
+    PositionText.Text = $"{(int)current.TotalMinutes}:{current.Seconds:D2} / {(int)MyBetterLyric?.CurrentLyricsData?.Duration.TotalMinutes}:{MyBetterLyric?.CurrentLyricsData?.Duration.Seconds:D2}";
 }
 
 private void ProgressSlider_PointerPressed(object sender, PointerRoutedEventArgs e)
