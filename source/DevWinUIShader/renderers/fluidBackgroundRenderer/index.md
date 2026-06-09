@@ -17,6 +17,7 @@ title: FluidBackgroundRenderer
 |AccentColor2|
 |AccentColor3|
 |AccentColor4|
+|IsStatic|
 
 # Example
 
