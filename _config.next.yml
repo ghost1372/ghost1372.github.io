@@ -578,6 +578,7 @@ menu:
       OutlineTextControl: /outlineTextControl/ ||
       OverviewPageHeader: /overviewPageHeader/ ||
       PagerControl: /pagerControl/ ||
+      ParallaxTilt: /parallaxTilt/ ||
       Particle: /particle/ ||
       PerspectiveHost: /perspectiveHost/ ||
       PerspectiveZoom: /perspectiveZoom/ ||
