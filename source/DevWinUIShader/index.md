@@ -6,7 +6,7 @@ title: Welcome to DevWinUI.Shader
 
 |Nuget|Github|
 |-|-|
-|[DevWinUI](https://www.nuget.org/packages/DevWinUI.Shader/)|[Github](https://github.com/Ghost1372/DevWinUIShader)
+|[DevWinUI.Shader](https://www.nuget.org/packages/DevWinUI.Shader/)|[Github](https://github.com/Ghost1372/DevWinUIShader)
 
 
 {% note warning %}
