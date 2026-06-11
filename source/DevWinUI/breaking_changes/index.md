@@ -4,29 +4,62 @@ title: Breaking Changes
 
 A breaking change is a change that may require you to make changes to your application in order to avoid disruption to your integration.
 
-# Version 9.0.0
-- DevWinUI now requires Windows App SDK v1.8.
-- WASDK Updated to `v1.8.0`
-- `ThemeService` refactored.
-- Change `PathHelper.GetKnownFolderPath` to Use `Microsoft.Windows.Storage.Pickers.PickerLocationId` instead of `Windows.Storage.Pickers.PickerLocationId`
-- Rename `MessageBoxImage` to `MessageBoxIcon`
-- Remove `SettingsNavigationAttach`
-- Remove `FileAndFolderPickerHelper`
-- Remove `NavigationHelperEx`
-- Remove Experimental `ModernWindow`
-- Remove Pickers (`FilePicker`, `FolderPicker`, `SavePicker`)
+# Version 10.0.0
+- DevWinUI now requires `Microsoft.WindowsAppSDK.WinUI` `v1.8.260204000` (Microsoft.WindowsAppSDK v2.2.0)
+- WindowedContentDialog rewritten
+- DragMoveHelper rewritten
+- Updated Icons
+- MessageBox rewritten
+- SpeedGraph rewritten
+- Package Renamed from `DevWinUI.Controls` To `DevWinUI`
+You will need to update all references in your code from `DevWinUI.Controls` to `DevWinUI`.
 
-# Version 8.9.1
-- `DesktopAcrylic` and `AcrylicBase` have been removed from `BackdropType`
+Rename
+`<ResourceDictionary Source="ms-appx:///DevWinUI.Controls/Themes/Generic.xaml" />`
+To
+`<ResourceDictionary Source="ms-appx:///DevWinUI/Themes/Generic.xaml" />`
 
-# Version 8.7.0
-- `MessageBox` renamed to `LegacyMessageBox`
+## ⚠️ Important: Package Renaming (v10.0.0+)
 
-# Version 8.5.0
-- `BlurAnimationHelper` Removed. you can use `BlurEffectManager`.
+This version introduces **breaking changes** related to package renaming to support meta packages.
 
-# Version 8.4.0
+### Package Changes
 
-- `Microsoft.Windows.SDK.BuildTools` Updated from `10.0.26100.1742` to `10.0.26100.4188`
-- Rename `GeneralHelper.GetGeometry` to `GeneralHelper.GetGeometryFromAppResources`
-- Remove NavigationViewItemStyle
+| Version | Core Library | Controls Library |
+|---------|--------------|------------------|
+| **v9.9.4 and below** | `DevWinUI` | `DevWinUI.Controls` |
+| **v10.0.0+** | `DevWinUI.Base` | `DevWinUI` |
+
+### ResourceDictionary Path Changes
+
+| Version | ResourceDictionary Path |
+|---------|------------------------|
+| **v9.9.4 and below** | `ms-appx:///DevWinUI.Controls/Themes/Generic.xaml` |
+| **v10.0.0+** | `ms-appx:///DevWinUI/Themes/Generic.xaml` |
+
+### Migration Guide
+
+**If you are using v9.9.4 or below:**
+- Install `DevWinUI` for core utilities (services, helpers, extensions, managers)
+- Install `DevWinUI.Controls` for custom controls, styles, and XAML resources (includes DevWinUI core)
+
+**If you are using v10.0.0 or above:**
+- Install `DevWinUI.Base` for core utilities only
+- Install `DevWinUI` for the full package (controls + core) — recommended for most users
+
+### Note for Upgrading from v9.9.4 → v10.0.0+
+
+Simply replace `DevWinUI.Controls` with `DevWinUI` in your project references and update the ResourceDictionary path as shown above. The `DevWinUI` package now includes everything from the old `DevWinUI.Controls` plus the core library.
+
+# Version 9.1.0
+- TileGallery Removed and replaced with new `HorizontalScrollContainer`
+- `HomePageHeaderImage` removed and replaced with new `HomePageHeader`
+- Following proeprties removed from `MainLandingPage` and `AllLandingPage` (HeaderOverlayImage, HeaderVerticalAlignment, HeaderCornerRadius, HeaderContentMargin, UseFullScreenHeaderImage, HeaderMargin)
+
+# Version 8.9.2
+- `OOBEPageControl` Removed (Use `OutOfBoxPage`)
+- `SettingsPageControl` Removed (Use `OutOfBoxPage`)
+
+{% note info %}
+See [here](https://github.com/Ghost1372/DevWinUI/releases) for full changes
+{% endnote %}

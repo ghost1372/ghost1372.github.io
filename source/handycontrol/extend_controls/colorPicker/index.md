@@ -21,6 +21,8 @@ public class ColorPicker : Control, ISingleOpen
 |Property|Description|Default Value|Remarks|
 |-|-|-|-|
 |SelectedBrush|Selected color|Brushes.White|||
+|SelectedBrushWithoutOpacity||||
+|BackColor||||
 
 # Events
 |Event|Description|Remarks|

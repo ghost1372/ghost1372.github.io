@@ -13,7 +13,7 @@ Just add an `AdditionalFiles` entry to your .csproj.
 
 ```xml
 <ItemGroup>
-  <AdditionalFiles Include="Assets\NavViewMenu\AppData.json" Link="%(RecursiveDir)%(Filename)%(Extension)"/>
+  <AdditionalFiles Include="Assets\NavViewMenu\AppData.json" Link="%(RecursiveDir)%(Filename)%(Extension)" Visible="false"/>
 </ItemGroup>
 ```
 

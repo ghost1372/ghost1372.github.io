@@ -22,6 +22,13 @@ public class ImageViewer : Control
 |MoveGesture||||
 |Uri||||
 |IsFullScreen|Is it in full screen display|false|||
+|ShowCloseButton||||
+|ShowSmallImgInternal||||
+|ScaleStr||||
+|ImageHeight||||
+|ImageWidth||||
+|ImageMargin||||
+|ShowFullScreenButton||||
 
 # Case
 

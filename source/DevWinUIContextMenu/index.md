@@ -68,6 +68,11 @@ After installing, add the following codes to `Package.appxmanifest`
 drive menu support (windows 11 22621+)
 {% endnote %}
 
+{% note warning %}
+for WPF Projects you need to update `ContextMenuCustomHost.dll` `Path` in `SurrogateServer`:
+`<com:Class Id="YOUR_GUID" Path="MyWpfApp\ContextMenuCustomHost.dll" ThreadingModel="STA"/>`
+{% endnote %}
+
 ## How to Create GUID?
 - 1.Open Visual Studio
 - 2.From `Tools` menu Select `Create GUID` option
@@ -113,13 +118,14 @@ to this:
 |Index||
 |ShowWindowFlag||
 |WorkingDirectory||
+|AcceptMultipleFilesRuleFlag||
+|RunAsFlag||
 
 # Methods
 
 |Name|
 |-|
 |QueryAllAsync|
-|GetMenusFolderAsync|
 |SaveAsync|
 |ReadAsync|
 |RenameMenuFile|
@@ -135,9 +141,8 @@ to this:
 |GetCustomMenuName|
 |SetCustomMenuName|
 |ClearAllMenus|
-|ReplaceMenu|
-|RefreshMenuAsync|
-|CheckMenuExistsAsync|
+|CopyMenuFrom|
+|CreateDefualtMenusFolderAsync|
 
 # Create a New Menu
 Open Your `App.xaml.cs` file and in your `OnLaunched` method, Create a new `ContextMenuItem`.
@@ -161,8 +166,8 @@ protected async override void OnLaunched(LaunchActivatedEventArgs args)
         Icon = ProcessInfoHelper.GetFileVersionInfo().FileName,
         Exe = "YOUR_APPNAME"
     };
-
-    ContextMenuService menuService = new ContextMenuService();
+    var menuFolder = await ContextMenuService.CreateDefualtMenusFolderAsync();
+    ContextMenuService menuService = new ContextMenuService(menuFolder);
     await menuService.SaveAsync(menu);
 }
 ```
@@ -198,7 +203,7 @@ menuService.SetCustomMenuName("MyApp Main Menu");
 ```
 
 # Examples
-there is a lot of examples here, take a look [here](https://github.com/ikas-mc/ContextMenuForWindows11/tree/main/menuSample) to see how properties can be filled.
+there is a lot of examples here, take a look [here](https://github.com/ikas-mc/ContextMenuForWindows11/tree/main/menuSample) and [here](https://github.com/ikas-mc/ContextMenuForWindows11/discussions/categories/menus) to see how properties can be filled.
 
 # More Deatils
 see [here](https://github.com/ikas-mc/ContextMenuForWindows11/wiki/Help) for more details.
