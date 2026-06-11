@@ -5,7 +5,7 @@ title: Breaking Changes
 A breaking change is a change that may require you to make changes to your application in order to avoid disruption to your integration.
 
 # Version 10.0.0
-- DevWinUI now requires Windows App SDK `v2.0.0`
+- DevWinUI now requires Windows App SDK `v2.2.0`
 - Package Renamed from `DevWinUI` To `DevWinUI.Base`
 
 # Version 9.0.0
