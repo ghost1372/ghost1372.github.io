@@ -9,6 +9,7 @@ title: Welcome to DevWinUI Release Notes
 - Package Renamed from `DevWinUI.Controls` To `DevWinUI`
 - Add `LiveGraph`
 - Add New `Shaders` Library
+- Add `ParallaxTilt`
 - Add `MaterialAttach`
 - Add `BetterLyric`
 - Add `AnimationPath`
