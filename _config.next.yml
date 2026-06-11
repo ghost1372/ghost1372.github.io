@@ -462,6 +462,7 @@ menu:
     Attach: 
       default: /attach/ ||
       FlipViewAttach: /flipViewAttach/ ||
+      MaterialAttach: /materialAttach/ ||
       MenuFlyoutAttach: /menuFlyoutAttach/ ||
       StoreNavigationViewItemAttach: /storeNavigationViewItemAttach/ ||
       SquircleClipAttach: /squircleClipAttach/ ||
