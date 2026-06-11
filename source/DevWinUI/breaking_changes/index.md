@@ -5,7 +5,7 @@ title: Breaking Changes
 A breaking change is a change that may require you to make changes to your application in order to avoid disruption to your integration.
 
 # Version 10.0.0
-- DevWinUI now requires `Microsoft.WindowsAppSDK.WinUI` `v1.8.260204000` (Microsoft.WindowsAppSDK v1.8.3)
+- DevWinUI now requires `Microsoft.WindowsAppSDK.WinUI` `v1.8.260204000` (Microsoft.WindowsAppSDK v2.2.0)
 - WindowedContentDialog rewritten
 - DragMoveHelper rewritten
 - Updated Icons
