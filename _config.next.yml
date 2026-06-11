@@ -656,34 +656,51 @@ menu:
       ShaderBackground: /shaderBackground/ ||
     Renderers:
       default: /renderers/ || fas fa-tools
+      AbstractMovementBackgroundRenderer: /abstractMovementBackgroundRenderer/ ||
+      ColourfulBubblesRenderer: /colourfulBubblesRenderer/ ||
       CosmicRenderer: /cosmicRenderer/ ||
       CoverBackgroundRenderer: /coverBackgroundRenderer/ ||
       FireRenderer: /fireRenderer/ ||
+      FluidBackgroundRenderer: /fluidBackgroundRenderer/ ||
       FogRenderer: /fogRenderer/ ||
+      GradientFlowRenderer: /gradientFlowRenderer/ ||
       IceAndFireRenderer: /iceAndFireRenderer/ ||
       MatrixRainRenderer: /matrixRainRenderer/ ||
+      PS3XMBBackgroundRenderer: /pS3XMBBackgroundRenderer/ ||
       PureColorBackgroundRenderer: /pureColorBackgroundRenderer/ ||
       RaindropRenderer: /raindropRenderer/ ||
+      ResidualBackgroundRadiationRenderer: /residualBackgroundRadiationRenderer/ ||
       SeventiesMeltRenderer: /seventiesMeltRenderer/ ||
       SnowRenderer: /snowRenderer/ ||
       SparkRenderer: /sparkRenderer/ ||
       SpectrumRenderer: /spectrumRenderer/ ||
       StarNestRenderer: /starNestRenderer/ ||
       StarNoiseRenderer: /starNoiseRenderer/ ||
+      triangleGradientBackgroundRenderer: /triangleGradientBackgroundRenderer/ ||
+      WallpaperRenderer: /wallpaperRenderer/ ||
+      WavyBackgroundRenderer: /wavyBackgroundRenderer/ ||
     Shaders:
       default: /shaders/ || fas fa-tools
+      AbstractMovementBackgroundShader: /abstractMovementBackgroundShader/ ||
+      ColourfulBubblesShader: /colourfulBubblesShader/ ||
       CosmicShader: /cosmicShader/ ||
       FireShader: /fireShader/ ||
       FluidBackgroundShader: /fluidBackgroundShader/ ||
       FogShader: /fogShader/ ||
+      GradientFlowShader: /gradientFlowShader/ ||
       IceAndFireShader: /iceAndFireShader/ ||
       MatrixRainShader: /matrixRainShader/ ||
+      PS3XMBBackgroundShader: /pS3XMBBackgroundShader/ ||
       RaindropShader: /raindropShader/ ||
+      ResidualBackgroundRadiationShader: /residualBackgroundRadiationShader/ ||
       SeventiesMeltShader: /seventiesMeltShader/ ||
       SnowShader: /snowShader/ ||
       SparkShader: /sparkShader/ ||
       StarNestShader: /starNestShader/ ||
       StarNoiseShader: /starNoiseShader/ ||
+      TriangleGradientBackgroundShader: /triangleGradientBackgroundShader/ ||
+      WalpaperShader: /walpaperShader/ ||
+      WavyBackgroundShader: /wavyBackgroundShader/ ||
   DevWinUIContextMenu - 9.9.0:
       default: /DevWinUIContextMenu/ || fas fa-brain
       Breaking Changes: /breaking_changes/ || fas fa-dice-d20
