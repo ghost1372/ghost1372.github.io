@@ -4,10 +4,12 @@ title: Welcome to DevWinUI Release Notes
 
 # Version 10.0.0
 - Introducing the Meta Package. DevWinUI now represents our complete library (including custom controls and core components), while DevWinUI.Base contains only the core library.
-- Use WindowsAppSDK (`Microsoft.WindowsAppSDK.WinUI`) Meta Package.
+- Use WindowsAppSDK (`Microsoft.WindowsAppSDK.WinUI`) Meta Package (v2.2.0).
 - Package Renamed from `DevWinUI` To `DevWinUI.Base`
 - Package Renamed from `DevWinUI.Controls` To `DevWinUI`
 - Add `LiveGraph`
+- Add New `Shaders` Library
+- Add `MaterialAttach`
 - Add `BetterLyric`
 - Add `AnimationPath`
 - Add `MorphingAnimation`
