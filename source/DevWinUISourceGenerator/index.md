@@ -8,6 +8,10 @@ title: Welcome to DevWinUI Source Generator
 ```
 Install-Package DevWinUI.SourceGenerator
 ```
+Or
+```
+dotnet add package DevWinUI.SourceGenerator
+```
 
 ## Example
 For generating `BreadcrumbPageMappings` you need to define `<AdditionalFiles Include="@(Page)" />`, for `NavigationPageMappings` you need to define `<AdditionalFiles Include="Assets\NavViewMenu\AppData.json" Link="%(RecursiveDir)%(Filename)%(Extension)" Visible="false"/>` and for `StringsPropertyGenerator` you need to define `<AdditionalFiles Include="Strings\en-US\Resources.resw" Link="%(RecursiveDir)%(Filename)%(Extension)" Visible="false"/>`

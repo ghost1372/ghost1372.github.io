@@ -17,6 +17,10 @@ Github is generally updated every day and is relatively unsuitable for productio
 ```
 Install-Package DevWinUI
 ```
+Or
+```
+dotnet add package DevWinUI
+```
 
 After installing, add the following resource to `app.xaml`
 

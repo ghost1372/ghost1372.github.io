@@ -17,6 +17,10 @@ You can use `DevWinUI.ContextMenu` in any .Net >= 8.0 apps which supports Packag
 ```
 Install-Package DevWinUI.ContextMenu
 ```
+Or
+```
+dotnet add package DevWinUI.ContextMenu
+```
 
 After installing, add the following codes to `Package.appxmanifest`
 

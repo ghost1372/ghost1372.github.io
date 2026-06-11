@@ -13,6 +13,10 @@ title: Welcome to DevWinUI.Base
 ```
 Install-Package DevWinUI.Base
 ```
+Or
+```
+dotnet add package DevWinUI.Base
+```
 
 See the Demo app to see how to use it
 

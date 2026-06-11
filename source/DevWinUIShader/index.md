@@ -17,6 +17,10 @@ Github is generally updated every day and is relatively unsuitable for productio
 ```
 Install-Package DevWinUI.Shader
 ```
+Or
+```
+dotnet add package DevWinUI.Shader
+```
 
 {% note warning %}
 you need TargetFramework 22621+
