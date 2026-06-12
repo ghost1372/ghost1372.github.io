@@ -700,7 +700,7 @@ menu:
       StarNestShader: /starNestShader/ ||
       StarNoiseShader: /starNoiseShader/ ||
       TriangleGradientBackgroundShader: /triangleGradientBackgroundShader/ ||
-      WalpaperShader: /walpaperShader/ ||
+      WallpaperShader: /wallpaperShader/ ||
       WavyBackgroundShader: /wavyBackgroundShader/ ||
   DevWinUIContextMenu - 9.9.0:
       default: /DevWinUIContextMenu/ || fas fa-brain
