@@ -24,7 +24,7 @@ title: ShaderBackground
 # Example
 
 ```xml
-<dev:ShaderBackgroind>
+<dev:ShaderBackground>
     <dev:CosmicRenderer/>
     <dev:RaindropRenderer/>
 </dev:ShaderBackground>
