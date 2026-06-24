@@ -628,6 +628,7 @@ menu:
       StartupHelper: /startupHelper/ ||
       SunTimesHelper: /sunTimesHelper/ ||
       TaskbarHelper: /taskbarHelper/ ||
+      TextBlockHelper: /textBlockHelper/ ||
       UpdateHelper: /updateHelper/ ||
       VisualHelper: /visualHelper/ ||
       WindowHelper: /windowHelper/ ||

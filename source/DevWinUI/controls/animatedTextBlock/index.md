@@ -31,6 +31,7 @@ A TextBlock control which animates the text with customizable effects.
 |TextMotionBlurEffect|
 |TextPivotEffect|
 |TextZoomEffect|
+|TextElasticSlideFadeEffect|
 
 # Example
 
