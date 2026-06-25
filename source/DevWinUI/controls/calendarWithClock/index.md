@@ -34,6 +34,9 @@ title: CalendarWithClock
 |CalendarViewCornerRadius|
 |ClockBorderThickness|
 |ClockMargin|
+|DateTimeFormat|
+|MinuteIncrement|
+
 
 {% note info %}
 You can use Default WinUI Styles (`DefaultCalendarViewStyle`) or your own syles for CalendarView, just use `CalendarViewStyle` property. 

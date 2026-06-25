@@ -399,6 +399,7 @@ menu:
       CircleIcon: /circleIcon/ ||
       CirclePanel: /circlePanel/ ||
       Clock: /clock/ ||
+      ClockPicker: /clockPicker/ ||
       ColorBloomControl: /colorBloomControl/ ||
       ColorPalette: /colorPalette/ ||
       ColorSlideControl: /colorSlideControl/ ||

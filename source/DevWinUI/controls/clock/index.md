@@ -28,6 +28,7 @@ title: Clock
 |OffsetAngle|
 |Diameter|
 |HeaderMargin|
+|MinuteIncrement|
 
 {% note info %}
 for changing `Second`, use your mouse wheel or touchpad, on Display Time TextBlock.
