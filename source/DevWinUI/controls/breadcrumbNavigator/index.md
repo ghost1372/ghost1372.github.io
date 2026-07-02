@@ -51,7 +51,7 @@ jsonNavigationService.ConfigBreadcrumbBar(BreadCrumbNav, NavigationPageMappings.
 
 everything will done automatically.
 
-for more info [see here](https://Ghost1372.github.io/DevWinUI/jsonNavigationService/#ConfigureBreadcrumbBar)
+for more info [see here](https://Ghost1372.github.io/DevWinUIBase/jsonNavigationService/#ConfigureBreadcrumbBar)
 
 # Using with NavigationServiceEx
 The easiest way to use, put `BreadcrumbNavigator` in your main page for example in NavigationView Header:
@@ -68,7 +68,7 @@ navigationServiceEx.ConfigBreadcrumbBar(BreadCrumbNav, NavigationPageMappings.Pa
 
 everything will done automatically.
 
-for more info [see here](https://Ghost1372.github.io/DevWinUI/navigationService/#ConfigureBreadcrumbBar)
+for more info [see here](https://Ghost1372.github.io/DevWinUIBase/navigationService/#ConfigureBreadcrumbBar)
 
 # Normal Usage
 In this method, you have to add the items yourself
@@ -91,7 +91,7 @@ BasicBreadCrumbNavigator.Initialize(frame, navigationView, pageDictionary);
 ```
 
 {% note info %}
-for more info and finding a Source Generator for generating PageDictionary [see here](https://Ghost1372.github.io/DevWinUI/navigationService/#ConfigBreadcrumbBar)
+for more info and finding a Source Generator for generating PageDictionary [see here](https://Ghost1372.github.io/DevWinUIBase/navigationService/#ConfigBreadcrumbBar)
 {% endnote %}
 
 {% note info %}
