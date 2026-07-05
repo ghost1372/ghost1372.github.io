@@ -33,39 +33,24 @@ public class Program : SingleInstanceApp
 
     protected override void OnActivated(object sender, AppActivationArguments args)
     {
-        ExtendedActivationKind kind = args.Kind;
-        Debug.WriteLine("Activated");
+        WindowActivationService.Activate();
     }
 }
 ```
 
-## More Control
-If you want more control over how the app is launched and you don’t want to pass the `new App()` directly, you can use an overload of the `Run` method that does not require you to pass the `new App()` instance at the Main method. Instead, you need to `override` the `OnLaunched` method in your class.
+# 3. Register SingleInstanceWindowActivator in OnLuanched Method
+
+Register your mainwindow in App.xaml.cs before Activating your MainWindow.
 
 ```cs
-public class Program : SingleInstanceApp
+
+protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
 {
-    [STAThread]
-    static int Main(string[] args)
-    {
-        return Run(args, "MySingleInstanceApp", () => new Program());
-    }
+    MainWindow = new MainWindow();
 
-    protected override void OnLaunched()
-    {
-        Application.Start(p =>
-        {
-            var context = new DispatcherQueueSynchronizationContext(DispatcherQueue.GetForCurrentThread());
-            SynchronizationContext.SetSynchronizationContext(context);
-            _ = new App();
-        });
-    }
+    SingleInstanceWindowActivator.Register(MainWindow);
 
-    protected override void OnActivated(object sender, AppActivationArguments args)
-    {
-        ExtendedActivationKind kind = args.Kind;
-        Debug.WriteLine("Activated");
-    }
+    MainWindow.Activate();
 }
 ```
 
