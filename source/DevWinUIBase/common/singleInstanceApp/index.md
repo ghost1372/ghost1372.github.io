@@ -31,7 +31,7 @@ public class Program : SingleInstanceApp
         return Run(args, "MySingleInstanceApp", () => new Program(), () => new App());
     }
 
-    protected override void OnActivated(object sender, AppActivationArguments args)
+    protected override void OnActivated(AppActivationArguments args)
     {
         WindowActivationService.Activate();
     }
