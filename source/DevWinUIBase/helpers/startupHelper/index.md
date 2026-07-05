@@ -35,6 +35,29 @@ First you need to create a StartupTask in `Package.appxmanifest`:
 
 now you can use `EnableAppStartupWithWindowsAsync`, `DisableAppStartupWithWindowsAsync` and `IsAppStartupWithWindowsEnabledAsync` methods.
 
+## How to know App Auto Started?
+
+```cs
+protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
+{
+    MainWindow = new MainWindow();
+
+    AppActivationArguments appActivationArguments = Microsoft.Windows.AppLifecycle.AppInstance.GetCurrent().GetActivatedEventArgs();
+
+    if (appActivationArguments.Kind is ExtendedActivationKind.StartupTask)
+    {
+        if (MainWindow.AppWindow.Presenter is OverlappedPresenter presenter)
+        {
+            MainWindow.AppWindow.Hide();
+        }
+    }
+    else
+    {
+        MainWindow.Activate();
+    }
+}
+```
+
 # UnPackaged App
 Unpackaged application uses registry for auto Startup.
 
