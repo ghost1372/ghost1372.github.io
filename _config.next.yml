@@ -479,6 +479,7 @@ menu:
       ProfileControl: /profileControl/ ||
       ProgressButton: /progressButton/ ||
       ProgressRing: /progressRing/ ||
+      RichButton: /richButton/ ||
       SamplePanel: /samplePanel/ ||
       SegmentChar: /segmentChar/ ||
       SegmentedSlider: /segmentedSlider/ ||
@@ -497,6 +498,7 @@ menu:
       SimpleSettingsGroup: /simpleSettingsGroup/ ||
       SnowFlakeEffect: /snowFlakeEffect/ ||
       SpeedGraph: /speedGraph/ ||
+      SpeedGraph2: /speedGraph2/ ||
       SpectrumAnalyzer: /spectrumAnalyzer/ ||
       SpectrumVisualizer: /spectrumVisualizer/ ||
       SplitCircle: /splitCircle/ ||
