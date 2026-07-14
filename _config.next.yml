@@ -349,7 +349,7 @@ menu:
       UpdatableMarkupExtension: /updatableMarkupExtension/ ||
     Intellisense:
       default: /intellisense/ || fas fa-brain
-  DevWinUI - 10.0.0:
+  DevWinUI - 10.1.0:
     default: /DevWinUI/ || fas fa-dice-d20
     Attach: 
       default: /attach/ ||
@@ -544,7 +544,7 @@ menu:
       default: /styles/ || fas fa-palette
     Validation:
       default: /validation/ || fab fa-intercom
-  DevWinUI.Base - 10.0.0:
+  DevWinUI.Base - 10.1.0:
     default: /DevWinUIBase/ || fas fa-tools
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Attach:
@@ -653,7 +653,7 @@ menu:
       ResourceStringExtension: /resourceStringExtension/ ||
     NavigationService: /navigationService/ || fas fa-tools   
     ThemeService: /themeService/ || fas fa-tools
-  DevWinUI.Shader - 10.0.0:
+  DevWinUI.Shader - 10.1.0:
     default: /DevWinUIShader/ || fas fa-tools
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Controls:
@@ -706,10 +706,10 @@ menu:
       TriangleGradientBackgroundShader: /triangleGradientBackgroundShader/ ||
       WallpaperShader: /wallpaperShader/ ||
       WavyBackgroundShader: /wavyBackgroundShader/ ||
-  DevWinUIContextMenu - 9.9.0:
+  DevWinUIContextMenu - 10.0.0:
       default: /DevWinUIContextMenu/ || fas fa-brain
       Breaking Changes: /breaking_changes/ || fas fa-dice-d20
-  DevWinUISourceGenerator - 9.9.0:
+  DevWinUISourceGenerator - 10.1.0:
       default: /DevWinUISourceGenerator/ || fas fa-brain      
       Breaking Changes: /breaking_changes/ || fas fa-dice-d20
       BreadcrumbPageMappingsGenerator: /breadcrumbPageMappingsGenerator/ ||
