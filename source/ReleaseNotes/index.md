@@ -2,6 +2,20 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 10.1.0
+
+- Added `ClockPicker`, and improves `DateTimePicker`.
+- Add `TextElasticSlideFadeEffect` for `AnimatedTextBlock`
+- Add `TextBlockHelper`
+- Add `MinuteIncrement` support to time picker controls
+- Add `SpeedGraph2`
+- Improve `BreadcrumbNavigator`
+- Improve `SingleInstanceApp`
+- Add Parallax effect for some renderers
+- Optimize `MatrixRainRenderer` text layout caching
+- Fix Internal Resources not localized
+
+
 # Version 10.0.0
 - Introducing the Meta Package. DevWinUI now represents our complete library (including custom controls and core components), while DevWinUI.Base contains only the core library.
 - Use WindowsAppSDK (`Microsoft.WindowsAppSDK.WinUI`) Meta Package (v2.2.0).
