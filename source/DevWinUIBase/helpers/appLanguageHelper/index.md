@@ -25,21 +25,31 @@ title: AppLanguageHelper
 ```
 
 ```cs
- public ObservableCollection<AppLanguageItem> AppLanguages => AppLanguageHelper.SupportedLanguages;
-
-private int selectedAppLanguageIndex;
-public int SelectedAppLanguageIndex
+public sealed partial class BlankPage1 : Page, INotifyPropertyChanged
 {
-    get => selectedAppLanguageIndex;
-    set
+    public event PropertyChangedEventHandler? PropertyChanged;
+    private void OnPropertyChanged([CallerMemberName] String propertyName = "")
     {
-        if (AppLanguageHelper.TryChange(value))
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+    public ObservableCollection<AppLanguageItem> AppLanguages => AppLanguageHelper.SupportedLanguages;
+
+    private int selectedAppLanguageIndex = AppLanguageHelper.SupportedLanguages.IndexOf(AppLanguageHelper.PreferredLanguage);
+
+    public int SelectedAppLanguageIndex
+    {
+        get => selectedAppLanguageIndex;
+        set
         {
-            selectedAppLanguageIndex = value;
-            OnPropertyChanged(nameof(SelectedAppLanguageIndex));
+            if (AppLanguageHelper.TryChange(value))
+            {
+                selectedAppLanguageIndex = value;
+                OnPropertyChanged(nameof(SelectedAppLanguageIndex));
+            }
         }
     }
 }
+
 ```
 
 # Demo
