@@ -349,7 +349,7 @@ menu:
       UpdatableMarkupExtension: /updatableMarkupExtension/ ||
     Intellisense:
       default: /intellisense/ || fas fa-brain
-  DevWinUI - 10.1.0:
+  DevWinUI - 10.2.0:
     default: /DevWinUI/ || fas fa-dice-d20
     Attach: 
       default: /attach/ ||
@@ -545,7 +545,7 @@ menu:
       default: /styles/ || fas fa-palette
     Validation:
       default: /validation/ || fab fa-intercom
-  DevWinUI.Base - 10.1.0:
+  DevWinUI.Base - 10.2.0:
     default: /DevWinUIBase/ || fas fa-tools
     Breaking Changes: /breaking_changes/ || fas fa-dice-d20
     Attach:
