@@ -349,7 +349,7 @@ menu:
       UpdatableMarkupExtension: /updatableMarkupExtension/ ||
     Intellisense:
       default: /intellisense/ || fas fa-brain
-  DevWinUI - 10.2.0:
+  DevWinUI - 10.3.0:
     default: /DevWinUI/ || fas fa-dice-d20
     Attach: 
       default: /attach/ ||
@@ -389,6 +389,7 @@ menu:
       BlurEffectControl: /blurEffectControl/ ||
       BreadcrumbBar: /breadcrumbBar/ ||
       BreadcrumbNavigator: /breadcrumbNavigator/ ||
+      BruteForce: /bruteForce/ ||
       Bubble: /bubble/ ||
       CalendarWithClock: /calendarWithClock/ ||
       Card: /card/ ||
