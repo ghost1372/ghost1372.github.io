@@ -4,7 +4,7 @@ export const devWinUISidebar = [
   collapsed: false,
   items: [
   {
-    text: 'QuickStart', collapsed: true,
+    text: 'Quick Start', collapsed: true,
     items: [
       {text: 'Getting Started DevWinUI', link: '/QuickStart/DevWinUIQuickStart'},
       {text: 'Getting Started DevWinUI.Base', link: '/QuickStart/BaseQuickStart'},
