@@ -4,6 +4,7 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { useData, useRoute } from 'vitepress'
 import { NolebaseBreadcrumbs } from '@nolebase/vitepress-plugin-breadcrumbs/client'
+import SidebarFilter from './components/SidebarFilter.vue'
 
 import './style.css'
 import './custom.css'
@@ -15,6 +16,7 @@ export default {
     const route = useRoute()
 
     return h(DefaultTheme.Layout, null, {
+      'sidebar-nav-before': () => h(SidebarFilter),
       'doc-before': () => {
         const { frontmatter, page } = useData()
 
