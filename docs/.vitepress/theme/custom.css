@@ -38,6 +38,126 @@
   font-weight: 700;
 }
 
+.page-reading-time {
+  margin: 0.65rem 0 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  min-height: 1.95rem;
+  padding: 0 0.45rem 0 0.72rem;
+  background-color: color-mix(in srgb, var(--vp-c-bg-soft) 65%, var(--vp-c-bg));
+  color: var(--vp-c-text-2);
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.page-reading-time__icon {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.page-reading-time__text {
+  white-space: nowrap;
+}
+
+.page-reading-time__value {
+  display: inline;
+  color: var(--vp-c-brand-1);
+  font-size: 0.86rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.back-to-top-button {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  padding: 0.42rem 0.58rem 0.42rem 0.42rem;
+  background: color-mix(in srgb, var(--vp-c-bg) 88%, transparent);
+  color: var(--vp-c-text-1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.back-to-top-button:hover {
+  transform: translateY(-2px);
+  border-color: var(--vp-c-brand-1);
+  background: color-mix(in srgb, var(--vp-c-brand-soft) 45%, var(--vp-c-bg));
+}
+
+.back-to-top-button:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
+}
+
+.back-to-top-button__icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.back-to-top-button__progress {
+  position: relative;
+  display: inline-flex;
+  width: 2.2rem;
+  height: 2.2rem;
+  flex: 0 0 2.2rem;
+}
+
+.back-to-top-button__progress-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.back-to-top-button__progress-track,
+.back-to-top-button__progress-ring {
+  fill: none;
+  stroke-width: 3;
+}
+
+.back-to-top-button__progress-track {
+  stroke: color-mix(in srgb, var(--vp-c-text-3) 35%, transparent);
+}
+
+.back-to-top-button__progress-ring {
+  stroke: var(--vp-c-brand-1);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.15s linear;
+}
+
+.back-to-top-button__label {
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .back-to-top-button {
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.42rem;
+  }
+
+  .back-to-top-button__label {
+    display: none;
+  }
+}
+
 /* Sidebar filter */
 .sidebar-filter {
   padding: 0.65rem 0.0rem 0.0rem 0.0rem;
