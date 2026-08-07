@@ -14,7 +14,7 @@ public class CircleProgressBar : RangeBase
 |-|-|-|-|
 |ArcThickness|Circle thickness|4|The default value is provided by the theme|
 |ShowText|Whether to display text|true||
-|Text|Text content|<empty>|Progress text|
+|Text|Text content|`<empty>`|Progress text|
 |IsIndeterminate||false|||
 
 # Styles

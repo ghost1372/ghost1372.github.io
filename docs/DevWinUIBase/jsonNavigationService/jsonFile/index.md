@@ -63,7 +63,7 @@ Inherited by `DataGroup` and `DataItem`
 |OrderByDescending|bool|If true, sorts items in descending order.|
 |UseBuiltInNavigationViewInfoBadgeStyle|bool|If enabled, applies the default style defined in `DefaultBuiltInNavigationViewInfoBadgeStyle`. Automatically displays InfoBadge when `IsNew`, `IsUpdated`, or `IsPreview` are set to true.|
 |UseBuiltInLandingPageInfoBadgeStyle|bool|If enabled, applies the default style defined in `DefaultBuiltInLandingPageInfoBadgeStyle`. Automatically displays InfoBadge when `IsNew`, `IsUpdated`, or `IsPreview` are set to true.|
-|Items|ObservableCollection<DataItem>||
+|Items|`ObservableCollection<DataItem>`||
 
 # DataItem (inherits from BaseDataInfo)
 
@@ -77,8 +77,8 @@ Inherited by `DataGroup` and `DataItem`
 |HideItem|bool|Hides the item from the LandingPage.|
 |HideNavigationViewItem|bool|Hides the item from the NavigationView.|
 |IncludedInBuild|bool||
-|Links|ObservableCollection<DataLink>||
-|Extra|ObservableCollection<string>||
+|Links|`ObservableCollection<DataLink>`||
+|Extra|`ObservableCollection<string>`||
 
 # DataLink
 

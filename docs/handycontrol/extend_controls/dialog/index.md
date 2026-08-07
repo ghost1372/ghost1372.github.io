@@ -24,7 +24,7 @@ public class Dialog : ContentControl
 |Name|Description|
 |-|-|
 | Show(object, string) | Show carried content |
-| Show<T>(string) | Display the bearer content (automatically instantiate the bearer content) |
+| `Show<T>(string)` | Display the bearer content (automatically instantiate the bearer content) |
 | Close() | Close |
 | Register(string, FrameworkElement) | Register a message tag for the specified element |
 | Unregister(string, Panel) | Unregister the message mark for the specified element |
