@@ -62,7 +62,6 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'DevWinUI', link: '/QuickStart/DevWinUIQuickStart' },
       { text: 'HandyControl', link: '/handycontrol/' },
-      { text: 'Breaking Changes', link: '/BreakingChanges/DevWinUIBreakingChanges' },
       { 
         text: 'Nuget',
         items: [
@@ -75,6 +74,8 @@ export default defineConfig({
         ]
       },
       { text: 'VSIX', link: 'https://marketplace.visualstudio.com/items?itemName=MahdiHosseini.DevWinUITemplates' },
+      { text: 'Breaking Changes', link: '/BreakingChanges/DevWinUIBreakingChanges' },
+      { text: 'Contributers', link: '/Contributers/Team/' },
     ],
 
     sidebar: {
