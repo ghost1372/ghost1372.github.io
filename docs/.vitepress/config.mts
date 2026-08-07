@@ -47,7 +47,7 @@ export default defineConfig({
       label: 'On this page'
     },
     editLink: {
-      pattern: 'https://github.com/ghost1372/ghost1372.github.io/edit/main/docs/:path',
+      pattern: 'https://github.com/ghost1372/ghost1372.github.io/edit/master/docs/:path',
       text: 'Edit this page on GitHub'
     },
     // Last updated text
