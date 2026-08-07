@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
-import { devWinUISidebar } from './devWinUI'
-import { handycontrolSidebar } from './handycontrol'
+import { devWinUISidebar } from './devWinUI.ts'
+import { handycontrolSidebar } from './handycontrol.ts'
 
 import { generateBreadcrumbsData } from '@nolebase/vitepress-plugin-breadcrumbs/vitepress'
 
