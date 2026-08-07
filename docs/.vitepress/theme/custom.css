@@ -1,0 +1,39 @@
+/* Breadcrumb + Page Title */
+.page-header {
+  margin-bottom: 1.8rem;
+}
+
+.vp-nolebase-breadcrumbs {
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  color: var(--vp-c-text-2);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.vp-nolebase-breadcrumbs a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.vp-nolebase-breadcrumbs a:hover {
+  color: var(--vp-c-brand-2);
+  text-decoration: underline;
+}
+
+.vp-nolebase-breadcrumbs-separator {
+  color: var(--vp-c-text-3);
+  user-select: none;
+}
+
+.page-title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 1.3;
+  font-size: 2rem;
+  font-weight: 700;
+}

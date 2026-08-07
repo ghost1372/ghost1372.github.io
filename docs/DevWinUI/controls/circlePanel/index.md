@@ -1,0 +1,22 @@
+---
+title: CirclePanel
+---
+
+# Property
+
+|Name|
+|-|
+|Diameter|
+|KeepVertical|
+|OffsetAngle|
+
+# Example
+
+```xml
+<dev:CirclePanel />
+```
+
+![CirclePanel](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/CirclePanel.gif)
+
+# Demo
+you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
