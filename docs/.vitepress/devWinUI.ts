@@ -363,10 +363,7 @@ export const devWinUISidebar = [
       text: 'ThemeService', link: '/DevWinUIBase/themeService/index'
     },
   ]
-  },  
-  {
-    text: 'DevWinUI.ContextMenu', collapsed: true, link: '/DevWinUIBase/themeService/index'            
-  },
+  },    
   {
     text: 'DevWinUI.Shader',
     collapsed: true,
@@ -449,6 +446,9 @@ export const devWinUISidebar = [
         ]
       },
     ]
+  },
+  {
+    text: 'DevWinUI.ContextMenu', collapsed: true, link: '/DevWinUIBase/themeService/index'            
   },
   ]
 },
