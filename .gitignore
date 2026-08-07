@@ -6,3 +6,8 @@ node_modules/
 .deploy*/
 dist
 .temp
+temp
+/docs/.vitepress/cache
+/docs/.vitepress/cache/deps
+.cache
+cache
