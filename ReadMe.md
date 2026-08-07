@@ -3,7 +3,7 @@
 This repository contains documentation for all products such as DevWinUI, HandyControl and others.
 
 > [!TIP]
-> The documents are written in `Markdown` files and converted into a static website by [Hexo](https://VitePress.dev/) 
+> The documents are written in `Markdown` files and converted into a static website by [VitePress](https://VitePress.dev/) 
 
 # Contribute
 Contributions (PR) are welcomed!
