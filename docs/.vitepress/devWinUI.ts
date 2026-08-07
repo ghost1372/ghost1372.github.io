@@ -3,6 +3,7 @@ export const devWinUISidebar = [
   text: 'Documentations',
   collapsed: false,
   items: [
+  { text: 'Release Notes', link: '/ReleaseNotes/' },
   {
     text: 'Quick Start', collapsed: true,
     items: [

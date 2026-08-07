@@ -62,12 +62,23 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'DevWinUI', link: '/QuickStart/DevWinUIQuickStart' },
       { text: 'HandyControl', link: '/handycontrol/' },
-      { text: 'Release Notes', link: '/ReleaseNotes/' },
       { text: 'Breaking Changes', link: '/BreakingChanges/DevWinUIBreakingChanges' },
-
+      { 
+        text: 'Nuget',
+        items: [
+          { text: 'DevWinUI', link: 'https://www.nuget.org/packages/DevWinUI' },
+          { text: 'DevWinUI.Base', link: 'https://www.nuget.org/packages/DevWinUI.Base' },
+          { text: 'DevWinUI.ContextMenu', link: 'https://www.nuget.org/packages/DevWinUI.ContextMenu' },
+          { text: 'DevWinUI.Shader', link: 'https://www.nuget.org/packages/DevWinUI.Shader' },
+          { text: 'DevWinUI.SourceGenerator', link: 'https://www.nuget.org/packages/DevWinUI.SourceGenerator' },
+          { text: 'HandyControls', link: 'https://www.nuget.org/packages/HandyControls' },
+        ]
+      },
+      { text: 'VSIX', link: 'https://marketplace.visualstudio.com/items?itemName=MahdiHosseini.DevWinUITemplates' },
     ],
 
     sidebar: {
+      '/ReleaseNotes/': devWinUISidebar,
       '/QuickStart/': devWinUISidebar,
       '/DevWinUI/': devWinUISidebar,
       '/DevWinUIBase/': devWinUISidebar,
