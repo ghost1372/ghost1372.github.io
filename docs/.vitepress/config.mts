@@ -64,7 +64,6 @@ export default defineConfig({
       { text: 'HandyControl', link: '/handycontrol/' },
       { text: 'Release Notes', link: '/ReleaseNotes/' },
       { text: 'Breaking Changes', link: '/BreakingChanges/DevWinUIBreakingChanges' },
-      { text: 'Test', link: '/test' },
 
     ],
 
