@@ -50,14 +50,6 @@ export default defineConfig({
       pattern: 'https://github.com/ghost1372/ghost1372.github.io/edit/master/docs/:path',
       text: 'Edit this page on GitHub'
     },
-    // Last updated text
-    lastUpdated: {
-      text: 'Last updated',
-      formatOptions: {
-        dateStyle: 'medium',
-        timeStyle: 'short'
-      }
-    },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'DevWinUI', link: '/QuickStart/DevWinUIQuickStart' },
