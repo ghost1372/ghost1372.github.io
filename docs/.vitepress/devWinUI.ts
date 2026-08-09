@@ -431,19 +431,13 @@ export const devWinUISidebar = [
     collapsed: true,
     items: [
       {
-        text: 'BreadcrumbPageMappingsGenerator', collapsed: true, items: [
-          { text: 'BreadcrumbPageMappingsGenerator', link: '/DevWinUISourceGenerator/breadcrumbPageMappingsGenerator/index' },
-        ]
+        text: 'BreadcrumbPageMappingsGenerator', link: '/DevWinUISourceGenerator/breadcrumbPageMappingsGenerator/index'
       },
       {
-        text: 'NavigationPageMappingsGenerator', collapsed: true, items: [
-          { text: 'NavigationPageMappingsGenerator', link: '/DevWinUISourceGenerator/navigationPageMappingsGenerator/index' },
-        ]
+        text: 'NavigationPageMappingsGenerator', link: '/DevWinUISourceGenerator/navigationPageMappingsGenerator/index'
       },
       {
-        text: 'StringsPropertyGenerator', collapsed: true, items: [
-          { text: 'StringsPropertyGenerator', link: '/DevWinUISourceGenerator/stringsPropertyGenerator/index' },
-        ]
+        text: 'StringsPropertyGenerator', link: '/DevWinUISourceGenerator/stringsPropertyGenerator/index'
       },
     ]
   },
