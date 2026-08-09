@@ -442,7 +442,7 @@ export const devWinUISidebar = [
     ]
   },
   {
-    text: 'DevWinUI.ContextMenu', collapsed: true, link: '/DevWinUIBase/themeService/index'            
+    text: 'DevWinUI.ContextMenu', collapsed: true, link: '/DevWinUIContextMenu/index'            
   },
   ]
 },
