@@ -16,7 +16,7 @@ const members = [
     title: 'Creator',
     links: [
       { icon: 'github', link: 'https://github.com/ghost1372' },
-      { icon: 'messenger', link: 'https://t.me/MMahdi72' },
+      { icon: 'telegram', link: 'https://t.me/MMahdi72' },
     ]
   },
   {

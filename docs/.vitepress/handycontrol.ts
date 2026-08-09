@@ -3,8 +3,13 @@ export const handycontrolSidebar = [
     text: 'HandyControl',
     collapsed: true,
     items: [
-    {
-        text: 'Attach', collapsed: true, items: [
+        { text: 'Welcome to HandyControl', link: '/handycontrol/index' },
+        { text: 'Breaking Changes', link: '/handycontrol/breaking_changes/index'},
+        { text: 'Intellisense', link: '/handycontrol/intellisense/index' },
+        { text: 'Quick start', link: '/handycontrol/quick_start/index' },
+        { text: 'Thanks', link: '/handycontrol/tnx/index' },
+
+        {text: 'Attach', collapsed: true, items: [
         { text: 'BackgroundSwitchElement', link: '/handycontrol/attach/backgroundSwitchElement/index' },
         { text: 'BorderElement', link: '/handycontrol/attach/borderElement/index' },
         { text: 'BrushAttach', link: '/handycontrol/attach/brushAttach/index' },
@@ -48,11 +53,6 @@ export const handycontrolSidebar = [
         { text: 'Geometric shape', link: '/handycontrol/basic_xaml/geometries/index' },
         { text: 'Path', link: '/handycontrol/basic_xaml/paths/index' },
         { text: 'Size', link: '/handycontrol/basic_xaml/sizes/index' },
-    ]
-    },
-    {
-    text: 'Breaking_changes', collapsed: true, items: [
-        { text: 'Breaking Changes', link: '/handycontrol/breaking_changes/index' },
     ]
     },
     {
@@ -174,16 +174,6 @@ export const handycontrolSidebar = [
     ]
     },
     {
-    text: 'Index.md', collapsed: true, items: [
-        { text: 'Welcome to HandyControl', link: '/handycontrol/index' },
-    ]
-    },
-    {
-    text: 'Intellisense', collapsed: true, items: [
-        { text: 'Intellisense', link: '/handycontrol/intellisense/index' },
-    ]
-    },
-    {
     text: 'Interactivity', collapsed: true, items: [
         { text: 'Behaviors', link: '/handycontrol/interactivity/behaviors/index' },
         { text: 'Commands', link: '/handycontrol/interactivity/commands/index' },
@@ -275,20 +265,10 @@ export const handycontrolSidebar = [
     ]
     },
     {
-    text: 'Quick_start', collapsed: true, items: [
-        { text: 'Quick start', link: '/handycontrol/quick_start/index' },
-    ]
-    },
-    {
     text: 'Theme', collapsed: true, items: [
         { text: 'ColorPresetResources', link: '/handycontrol/theme/colorPreset/index' },
         { text: 'Theme', link: '/handycontrol/theme/handyControl' },
         { text: 'Theme', link: '/handycontrol/theme/index' },
-    ]
-    },
-    {
-    text: 'Tnx', collapsed: true, items: [
-        { text: 'Thanks', link: '/handycontrol/tnx/index' },
     ]
     },
     {
