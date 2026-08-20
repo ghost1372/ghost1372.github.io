@@ -46,7 +46,7 @@ Displays a stereo waveform and allows a user to change playback position.
 ```
 
 > [!WARNING]
-> it is best to use `NAudio` library to generate data, however NAudio does not support AOT.
+> it is best to use `NAudio` library to generate data.
 
 ## AudioGraphEngine
 
