@@ -41,7 +41,7 @@ Lightweight real-time audio visualizer capturing system or mic input, displaying
 
 # Example
 
-First you need to implement `ISpectrumAnalyzer` and define your analyzer, you can use `NAudio` library which does not support AOT or `AudioGraph` which does support AOT to analyze audio files.
+First you need to implement `ISpectrumAnalyzer` and define your analyzer, you can use `NAudio` library or `AudioGraph` to analyze audio files.
 
 ## AudioGraphSpectrumAnalyzer
 ```cs
