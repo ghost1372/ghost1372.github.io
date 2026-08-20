@@ -53,7 +53,7 @@ Displays audio level and frequency data.
 ```
 
 > [!WARNING]
-> it is best to use `NAudio` library to generate data, however NAudio does not support AOT.
+> it is best to use `NAudio` library to generate data.
 
 ## AudioGraphEngine
 
