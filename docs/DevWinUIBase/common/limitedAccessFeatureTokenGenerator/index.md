@@ -33,7 +33,13 @@ The following featureId values are built in:
 { "com.microsoft.windows.holographic.xrruntime.2", "58AA36EF-7C1A-4A56-9308-FC882F56465A" },
 { "com.microsoft.windows.holographic.xrruntime.1", "036EFF74-8BF2-4249-82AF-92235C6E1A10" },
 { "com.microsoft.windows.holographic.shell", "527f4968-f193-419a-b91f-46b9106e1129" },
-{ "com.microsoft.windows.holographic.keyboardcursor_v1", "FE676B8B-E396-4A80-9573-B67542840E5C" }
+{ "com.microsoft.windows.holographic.keyboardcursor_v1", "FE676B8B-E396-4A80-9573-B67542840E5C" },
+{ "com.microsoft.windows.callcontrolpublicapi_v1", "6e7e52aa-cddb-4e57-9f1c-7dd511ad7d01" },
+{ "com.microsoft.windows.applicationwindow", "e5a85131-319b-4a56-9577-1c1d9c781218" },
+{ "com.microsoft.windows.applicationmodel.phonelinetransportdevice_v1", "cb9WIvVfhp+8lFhaSrB6V6zUBGqctteKi/f/9AIeoZ4" },
+{ "com.microsoft.windows.applicationmodel.conversationalagent_v1", "hhrovbOc/z8TgeoWheL4RF5vLLJrKNAQpdyvhlTee6I" },
+{ "com.microsoft.services.cortana.cortanaactionableinsights_v1", "nEVyyzytE6ankNk1CIAu6sZsh8vKLw3Q7glTOHB11po=" },
+{ "com.microsoft.windows.composition.engine", "26ef12c7-bf7e-4fa7-ac71-9665b27be6f7" }
 ```
 
 # Demo
