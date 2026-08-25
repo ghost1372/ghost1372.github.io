@@ -1,0 +1,40 @@
+---
+title: LimitedAccessFeatureTokenGenerator
+---
+
+Generate a token to unlock LAF without requesting a token from Microsoft.
+
+# Methods
+|Name|
+|-|
+|GenerateTokenFromFeatureId|
+|GenerateAttestation|
+
+```cs
+var featureId = "com.microsoft.windows.composition.engine";
+var token = LimitedAccessFeatureTokenGenerator.GenerateTokenFromFeatureId(featureId);
+var attestation = LimitedAccessFeatureTokenGenerator.GenerateAttestation(featureId);
+
+var accessResult = LimitedAccessFeatures.TryUnlockFeature(featureId, token, attestation);
+```
+
+> [!WARNING]
+> If the featureId is not available in our built-in dictionary, you can provide the featureId and its corresponding code directly:
+> `LimitedAccessFeatureTokenGenerator.GenerateTokenFromFeatureId("com.microsoft.windows.composition.engine", "26ef12c7-bf7e-4fa7-ac71-9665b27be6f7");`
+
+The following featureId values are built in:
+
+```cs
+{ "com.microsoft.windows.windowdecorations", "425261a8-7f73-4319-8a53-fc13f87e1717" },
+{ "com.microsoft.windows.updateorchestrator.1", "20C662033A4007A55375BF00D986C280B41A418F" },
+{ "com.microsoft.windows.update.1", "01B2AEA8-7DD5-4066-A081-1E4CD1479CCA" },
+{ "com.microsoft.windows.taskbar.requestPinSecondaryTile", "04c19204-10d9-450a-95c4-2910c8f72be3" },
+{ "com.microsoft.windows.richeditmath", "RDZCQjY2M0YtQkFDMi00NkIwLUI3NzEtODg4NjMxMEVENkFF" },
+{ "com.microsoft.windows.holographic.xrruntime.2", "58AA36EF-7C1A-4A56-9308-FC882F56465A" },
+{ "com.microsoft.windows.holographic.xrruntime.1", "036EFF74-8BF2-4249-82AF-92235C6E1A10" },
+{ "com.microsoft.windows.holographic.shell", "527f4968-f193-419a-b91f-46b9106e1129" },
+{ "com.microsoft.windows.holographic.keyboardcursor_v1", "FE676B8B-E396-4A80-9573-B67542840E5C" }
+```
+
+# Demo
+you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
