@@ -22,6 +22,7 @@ export default defineConfig({
       ]
     } 
   }, 
+  cleanUrls: true,
   title: "DevWinUI",
   description: "DevWinUI is a collection of useful classes, controls, styles, and codes for WinUI 3. Create a WinUI 3 app in less than a minute with the built-in project templates and scaffolding tools.",
   lastUpdated: true,
