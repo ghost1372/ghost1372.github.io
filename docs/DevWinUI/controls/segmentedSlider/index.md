@@ -40,7 +40,7 @@ title: SegmentedSlider
 ```
 
 ```cs
-SegmentedSliderSample.SegmentTitles = new List<string>
+SegmentedSliderSample.SegmentTitles = new ObservableCollection<string>
 {
     "Very Low",
     "Low",
@@ -59,7 +59,7 @@ SegmentedSliderSample.SegmentTitles = new List<string>
 ```
 
 ```cs
-SegmentedSliderTimeSample.TimeSegments = new List<SegmentedSliderTimeInfo>
+SegmentedSliderTimeSample.TimeSegments = new ObservableCollection<SegmentedSliderTimeInfo>
 {
     new SegmentedSliderTimeInfo
     {
