@@ -6,7 +6,7 @@ title: Converter
 
 This converter is used to invert Boolean types
 
-# Boolean2StrConverter
+# Boolean2StringConverter
 
 The converter needs to provide a string as a parameter. The general form of the string is: `[string0];[string1]`, when the value obtained by the converter is `true`, it will return `[character String 0]`, otherwise return `[string 1]`.
 
