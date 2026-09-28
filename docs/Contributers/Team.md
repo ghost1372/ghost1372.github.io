@@ -91,12 +91,20 @@ const members = [
       { icon: 'github', link: 'https://github.com/ryanlua' },
     ]
   },
-    {
+  {
     avatar: 'https://avatars.githubusercontent.com/u/51733876?v=4',
     name: 'AlexanderBlackman',
     title: 'Contributer',
     links: [
       { icon: 'github', link: 'https://github.com/AlexanderBlackman' },
+    ]
+  },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/51733876?v=4',
+    name: 'YBTopaz8',
+    title: 'Contributer',
+    links: [
+      { icon: 'github', link: 'https://github.com/YBTopaz8' },
     ]
   },
 ]
