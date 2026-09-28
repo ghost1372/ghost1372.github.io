@@ -100,7 +100,7 @@ const members = [
     ]
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/51733876?v=4',
+    avatar: 'https://avatars.githubusercontent.com/u/41630728?v=4',
     name: 'YBTopaz8',
     title: 'Contributer',
     links: [
