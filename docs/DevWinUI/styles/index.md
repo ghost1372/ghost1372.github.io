@@ -2,6 +2,50 @@
 title: Styles
 ---
 
+# RadioButtun
+
+|Name|
+|-|
+|TokenViewRadioButtonStyle|
+|PillRadioButtonStyle|
+
+```xml
+<StackPanel Orientation="Horizontal" Spacing="8">
+    <RadioButton Content="Recent" GroupName="PillRadioButtonExample" IsChecked="True" Style="{StaticResource PillRadioButtonStyle}" />
+    <RadioButton Content="New" GroupName="PillRadioButtonExample" Style="{StaticResource PillRadioButtonStyle}" />
+    <RadioButton Content="Fav" GroupName="PillRadioButtonExample" Style="{StaticResource PillRadioButtonStyle}" />
+</StackPanel>
+```
+
+![TokenViewSelectorBarStyle](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/RadioButtonStyle.gif)
+
+# SelectorBar
+|Name|
+|-|
+|PillSelectorBarStyle|
+|TokenViewSelectorBarStyle|
+
+## PillSelectorBarStyle
+```xml
+<SelectorBar Style="{StaticResource PillSelectorBarStyle}">
+    <SelectorBarItem Text="Recent" />
+    <SelectorBarItem Text="New" />
+    <SelectorBarItem Text="Fav" />
+</SelectorBar>
+```
+
+## TokenViewSelectorBarStyle
+
+```xml
+<SelectorBar Style="{StaticResource TokenViewSelectorBarStyle}">
+    <SelectorBarItem Text="Recent" />
+    <SelectorBarItem Text="New" />
+    <SelectorBarItem Text="Fav" />
+</SelectorBar>
+```
+
+![TokenViewSelectorBarStyle](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SelectorBarStyle.gif)
+
 # ComboBox
 |Name|
 |-|
@@ -329,20 +373,6 @@ just add this:
 ![BlueInfoBar](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlueInfoBar.png)
 
 # AppTitleBarMenuFlyoutItemStyle
-
-
-# SelectorBar
-
-## TokenViewSelectorBarStyle
-
-```xml
-<SelectorBar Style="{StaticResource TokenViewSelectorBarStyle}">
-    <SelectorBarItem Text="Recent" />
-    <SelectorBarItem Text="New" />
-    <SelectorBarItem Text="Fav" />
-</SelectorBar>
-```
-![TokenViewSelectorBarStyle](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/TokenViewSelectorBarStyle.gif)
 
 # NavigationView
 
