@@ -199,6 +199,7 @@ export const devWinUISidebar = [
         { text: 'WaveCircle', link: '/DevWinUI/controls/waveCircle/index' },
         { text: 'WaveformTimeline', link: '/DevWinUI/controls/waveformTimeline/index' },
         { text: 'WaveProgressBar', link: '/DevWinUI/controls/waveProgressBar/index' },
+        { text: 'WelcomeHero', link: '/DevWinUI/controls/welcomeHero/index' },
         { text: 'WindowedContentDialog', link: '/DevWinUI/controls/windowedContentDialog/index' },
         { text: 'Windows 11 Settings Examples', link: '/DevWinUI/controls/windows11SettingsExamples/index' },
       ]
