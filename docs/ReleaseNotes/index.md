@@ -2,6 +2,42 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 10.5.0
+
+- Add `WelcomeHero`
+- Add RadioButton Styles `TokenViewRadioButtonStyle` and `PillRadioButtonStyle `
+- Add SelectorBar Style `PillSelectorBarStyle`
+- Remove Obsolete `GenerateAutoSaveOnChangeAttribute`
+- Improve `SystemTrayIcon` 
+
+# Version 10.4.2
+
+- Improve SegmentedSlider
+- Fixed a bug where DateTimePicker's flyout defaulted to current time
+- Fix https://github.com/ghost1372/DevWinUI/issues/206
+- Fixed a bug where DateTimePicker defaulted to current time on opening despite being set in another session
+
+# Version 10.4.0
+
+- Add SystemCompositionHelper
+- Add LimitedAccessFeatureTokenGenerator
+- Improve SystemTrayIcon
+- Fix SelectorBarSegmented SelectedIndex TwoWay Binding https://github.com/ghost1372/DevWinUI/issues/205
+
+# Version 10.3.0
+
+- Fix https://github.com/ghost1372/DevWinUI/issues/202
+- Add BruteForce
+- Improve DigitalSegment
+
+# Version 10.2.0
+
+- Add RealClock by @AlexanderBlackman 
+- Fix missing LiveGraph Control's width change by @hoshiizumiya 
+- Fix SelectorBarSegmented and DropDownColorPicker by @tinodin 
+- Fix the default TextBox in the ValidatingTextBoxStyle
+- Sync TextBox Style for Validation and dev:TextBox control with Latest WinUI Style. also there is no need to use separate Validating style for dev:TextBox, so ValidatingDevWinUITextBoxStyle removed.
+
 # Version 10.1.0
 
 - Added `ClockPicker`, and improves `DateTimePicker`.
