@@ -33,7 +33,7 @@ public class Program : SingleInstanceApp
 
     protected override void OnActivated(AppActivationArguments args)
     {
-        WindowActivationService.Activate();
+        SingleInstanceWindowActivator.Activate();
     }
 }
 ```
