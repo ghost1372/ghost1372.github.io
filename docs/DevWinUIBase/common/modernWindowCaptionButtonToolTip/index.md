@@ -8,7 +8,7 @@ A helper to replace the win32 caption button tooltip for WinUI3 Window using Win
 # Usage
 
 ```xml
-<dev:ModernWindowCaptionButtonToolTip x:Name="CaptionToolTip" />
+<dev:ModernWindowCaptionButtonToolTip x:Name="CaptionToolTip" Window="{x:Bind}"/>
 ```
 
 ```cs
@@ -17,7 +17,6 @@ public MainWindow()
 
     this.InitializeComponent();
     ExtendsContentIntoTitleBar = true;
-    CaptionToolTip.Window = this;
 }
 ```
 
