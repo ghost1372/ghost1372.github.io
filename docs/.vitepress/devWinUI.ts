@@ -254,6 +254,7 @@ export const devWinUISidebar = [
         { text: 'LegacyMessageBox', link: '/DevWinUIBase/common/legacyMessageBox/index' },
         { text: 'LimitedAccessFeatureTokenGenerator', link: '/DevWinUIBase/common/limitedAccessFeatureTokenGenerator/index' },        
         { text: 'ModernSystemMenu', link: '/DevWinUIBase/common/modernSystemMenu/index' },
+        { text: 'ModernWindowCaptionButtonToolTip', link: '/DevWinUIBase/common/modernWindowCaptionButtonToolTip/index' },
         { text: 'NTPClient', link: '/DevWinUIBase/common/ntpClient/index' },
         { text: 'NTPServer', link: '/DevWinUIBase/common/ntpServer/index' },
         { text: 'PasswordGenerator', link: '/DevWinUIBase/common/passwordGenerator/index' },
