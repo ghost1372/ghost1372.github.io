@@ -29,6 +29,9 @@ in this page we can load only items that is tagged as IsNew, IsUpdated and IsPre
 |UpdatedGroupText|
 |NewGroupText|
 |HeaderContent|
+|EmptyIcon|
+|EmptyTitle|
+|EmptySubtitle|
 
 # Override values
 

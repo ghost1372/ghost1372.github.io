@@ -9,6 +9,8 @@ easily use Icons in FontIcon, SymbolIcon, BitmapIcon.
 # Available Extensions
 |Name|
 |-|
+|ImageIconExtension|
+|ImageIconSourceExtension|
 |BitmapIconExtension|
 |BitmapIconSourceExtension|
 |FontIconExtension|
@@ -110,6 +112,10 @@ The `SymbolIconSourceExtension` type is an alternative for `FontIconSourceExtens
     <SwipeItem Text="Play" IconSource="{dev:SymbolIconSource Symbol=Play}"/>
 </SwipeItems>
 ```
+
+## ImageIconExtension
+
+## ImageIconSourceExtension
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

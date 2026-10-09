@@ -14,6 +14,9 @@ Inherited from Page and INotifyPropertyChanged. AllLandingPage and MainLandingPa
 |Name|
 |-|
 |Items|
+||EmptyIcon|
+|EmptyTitle|
+|EmptySubtitle|
 
 # Example
 

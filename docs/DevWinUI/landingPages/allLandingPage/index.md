@@ -25,6 +25,9 @@ in this Page we can load all items from json file.
 |IsTileImage|
 |FooterContent|
 |FooterMargin|
+|EmptyIcon|
+|EmptyTitle|
+|EmptySubtitle|
 
 # Override values
 
