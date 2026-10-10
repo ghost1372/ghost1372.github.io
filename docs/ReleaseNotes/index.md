@@ -2,6 +2,23 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 10.7.0
+Its All about Time
+
+- Add `ModernWindowCaptionButtonToolTip`
+- Add `EcoQoSHelper` 
+- Improve and Speed Up `JsonNavigationService`
+- Improve `LandingPages`
+- Improve `Shortcut`
+- Improve `ColorAnalyzer`, `PersianDateTime`, `StringExtensions` and `DataSource`
+
+With this release, page loading is deferred to deliver faster navigation and a smoother experience with Zero lags and delays. Enjoy a more responsive app, even when loading windows!
+
+Want even faster window startup? You can now deserialize the navigation JSON file on a background task by enabling `ConfigureJsonFile(useTaskForDeserialization: true)`.
+
+# Version 10.6.0
+- Fix Missing TargetFrameworks
+
 # Version 10.5.0
 
 - Add `WelcomeHero`
