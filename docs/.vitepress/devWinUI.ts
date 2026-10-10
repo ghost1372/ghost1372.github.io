@@ -321,6 +321,7 @@ export const devWinUISidebar = [
         { text: 'PopupHelper', link: '/DevWinUIBase/helpers/popupHelper/index' },
         { text: 'PreviewKeyDownHelper', link: '/DevWinUIBase/helpers/previewKeyDownHelper/index' },
         { text: 'ProcessInfoHelper', link: '/DevWinUIBase/helpers/processInfoHelper/index' },
+        { text: 'EcoQosHelper', link: '/DevWinUIBase/helpers/ecoQosHelper/index' },
         { text: 'ResourceHelper', link: '/DevWinUIBase/helpers/resourceHelper/index' },
         { text: 'RichTextFormatterHelper', link: '/DevWinUIBase/helpers/richTextFormatterHelper/index' },
         { text: 'RuntimeHelper', link: '/DevWinUIBase/helpers/runtimeHelper/index' },
