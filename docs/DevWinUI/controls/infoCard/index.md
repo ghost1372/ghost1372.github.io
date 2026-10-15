@@ -10,11 +10,13 @@ title: InfoCard
 |Title|
 |Description|
 |InfoBadge|
+|Tag|
+|IsTagVisible|
 
 # Example
 
 ```xml
-<dev:InfoCard Title="Title" Description="Description" Icon="ms-appx:///Assets/Icon.png"/>              
+<dev:InfoCard Tag="Preview" IsTagVisible="True" Title="Title" Description="Description" Icon="ms-appx:///Assets/Icon.png"/>              
 ```
 
 
