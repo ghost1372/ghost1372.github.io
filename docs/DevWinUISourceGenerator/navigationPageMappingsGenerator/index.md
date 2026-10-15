@@ -42,3 +42,6 @@ public partial class NavigationPageMappings
 }
 ```
 
+> [!NOTE]  
+> Each valid JSON file generates its own mapping class. A single file keeps the `NavigationPageMappings` name; with multiple files, `AppData.json` (or the first file by path if absent) generates `NavigationPageMappings`, while other files use their filename as a suffix (for example, `AppDataGlyph.json` generates `NavigationPageMappingsAppDataGlyph`).
+

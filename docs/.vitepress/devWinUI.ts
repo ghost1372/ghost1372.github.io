@@ -307,6 +307,7 @@ export const devWinUISidebar = [
         { text: 'ColorHelper', link: '/DevWinUIBase/helpers/colorHelper/index' },
         { text: 'CompositionHelper', link: '/DevWinUIBase/helpers/compositionHelper/index' },
         { text: 'CredentialHelper', link: '/DevWinUIBase/helpers/credentialHelper/index' },
+        { text: 'DateTimeHelper', link: '/DevWinUIBase/helpers/dateTimeHelper/index' },        
         { text: 'DisplayMonitorHelper', link: '/DevWinUIBase/helpers/displayMonitorHelper/index' },
         { text: 'DragMoveHelper', link: '/DevWinUIBase/helpers/dragMoveHelper/index' },
         { text: 'FileExtensionHelpers', link: '/DevWinUIBase/helpers/fileExtensionHelpers/index' },

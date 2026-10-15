@@ -2,6 +2,18 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 10.8.0
+Its All about Time
+
+- Add `DateTimeHelper`
+- Add `ConfigureDefer` in `JsonNavigationService`
+- `NavigationPageMapperGenerator` now supports multiple valid json files.
+- Improve navigation and landing-page data loading 
+- Refine deferred navigation and selection handling
+- Improve JSON-backed landing and section page loading
+- Fix `BreadcrumbPageMappingGenerator`
+- Fix time format detection to reflect Windows settings changes instead of relying on cached culture information
+
 # Version 10.7.0
 Its All about Time
 
