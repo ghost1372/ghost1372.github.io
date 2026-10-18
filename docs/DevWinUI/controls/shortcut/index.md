@@ -17,6 +17,8 @@ title: Shortcut
 |ErrorTitle|
 |ErrorToolTip|
 |Title|
+|TitleTemplate|
+|Footer|
 |CloseButtonText|
 |PrimaryButtonText|
 |SecondaryButtonText|
