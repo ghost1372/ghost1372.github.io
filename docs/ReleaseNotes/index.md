@@ -2,6 +2,61 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 10.9.0
+🚀 **The Biggest DevWinUI Release Yet!**
+
+🔥 35+ New Controls. Countless Enhancements. One Massive Release.
+
+Bigger, better, and more powerful than ever!
+
+And we're not stopping here...
+
+👀 Stay tuned! 10+ more brand-new controls are coming soon in v11.0.0!
+
+The best is yet to come! 💜
+
+- Add `IsTagVisible` property to `InfoCard`
+- Add `Footer` property and support objects in `Shortcut`
+- Add `IssueLabel`
+- Add `LoadingState`
+- Add more styles to `LoadingIndicator`
+- Add `DonutChart`
+- Add `StatusMark`
+- Add `StarBorder`
+- Add `FizzyCover`
+- Add `LineSidebar`
+- Add `BorderBeam`
+- Add `BranchedMenu`
+- Add `ColorArchiveScroll`
+- Add `DiffView`
+- Add `EyeTracking`
+- Add `GitHubActivityGrid`
+- Add `HoldToConfirm`
+- Add `OrbitCard`
+- Add `Reasoning`
+- Add `ExpandingCards`
+- Add `ScrambledText`
+- Add `ScrollSplitCard`
+- Add `ShowMore`
+- Add `TextHighlight`
+- Add `TextScribble`
+- Add `AnimatedToc`
+- Add `UnderlineAnimation`
+- Add `BankCard`
+- Add `FillButton`
+- Add `GlowingBorder`
+- Add `MorphingWizard`
+- Add `TableOfContents`
+- Add `PlayStationParticles`
+- Add `FlightStatusCard`
+- Add `DotMatrixText`
+- Add `Radar`
+- Add `SegmentedMeter`
+- Add support for separators in `JsonNavigationService`
+- Fix `OutOfBoxPage`
+
+**A massive release packed with new controls, enhancements, and fixes!** 🎉
+
 # Version 10.8.0
 Its All about Time
 
