@@ -21,15 +21,35 @@ title: LoadingIndicator
 |Pulse|LoadingIndicatorPulseStyle|
 |Ring|LoadingIndicatorRingStyle|
 |ThreeDots|LoadingIndicatorThreeDotsStyle|
-|Bar|
-|Cog|
-|Cupertino|
-|DotCircle|
-|Grid|
-|Piston|
-|Ring2|
-|Swirl|
-|Twist|
+|Bar|LoadingIndicatorBarStyle|
+|Cog|LoadingIndicatorCogStyle|
+|Cupertino|LoadingIndicatorCupertinoStyle|
+|DotCircle|LoadingIndicatorDotCircleStyle|
+|Grid|LoadingIndicatorGridStyle|
+|Piston|LoadingIndicatorPistonStyle|
+|Ring2|LoadingIndicatorRing2Style|
+|Swirl|LoadingIndicatorSwirlStyle|
+|Twist|LoadingIndicatorTwistStyle|
+|Atom|LoadingIndicatorEpicStyle|
+|Flower|LoadingIndicatorEpicStyle|
+|Pixel|LoadingIndicatorEpicStyle|
+|HollowDots|LoadingIndicatorEpicStyle|
+|IntersectingCircles|LoadingIndicatorEpicStyle|
+|Orbit|LoadingIndicatorEpicStyle|
+|Radar|LoadingIndicatorEpicStyle|
+|ScalingSquares|LoadingIndicatorEpicStyle|
+|HalfCircle|LoadingIndicatorEpicStyle|
+|TrinityRings|LoadingIndicatorEpicStyle|
+|FulfillingSquare|LoadingIndicatorEpicStyle|
+|CirclesToRhombuses|LoadingIndicatorEpicStyle|
+|Semipolar|LoadingIndicatorEpicStyle|
+|SelfBuildingSquare|LoadingIndicatorEpicStyle|
+|SwappingSquares|LoadingIndicatorEpicStyle|
+|FulfillingBouncingCircle|LoadingIndicatorEpicStyle|
+|Fingerprint|LoadingIndicatorEpicStyle|
+|Spring|LoadingIndicatorEpicStyle|
+|LoopingRhombuses|LoadingIndicatorEpicStyle|
+|BreedingRhombus|LoadingIndicatorEpicStyle|
 
 # Example
 
