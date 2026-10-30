@@ -22,8 +22,6 @@ title: ExpandingCards
 |Name|Description|
 |-|-|
 |ExpandingCardItem|Item with `Source` (image uri string), `Alt` and `Title`.|
-|[ExpandingCardFrame](../ExpandingCardFrame)|The control used to render each card.|
-|[FlexRowPanel](../FlexRowPanel)|The panel that lays the cards out in a row.|
 
 # Example
 

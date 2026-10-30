@@ -60,12 +60,6 @@ title: FizzyCover
 ```
 
 > [!NOTE]
-> `Trigger` accepts `Hover` or `Toggle`. With `Toggle`, each tap flips `Pressed` and the fill stays until it is toggled again.
-
-> [!NOTE]
-> `ParticleShape` accepts `Mixed`, `Circle`, `Square`, `Triangle` or `Cross`.
-
-> [!NOTE]
 > The fill is drawn in `InkColor` and the content that sits over the fill is drawn in `InvertColor`. If a color is left transparent (the default), it follows the current theme.
 
 > [!NOTE]

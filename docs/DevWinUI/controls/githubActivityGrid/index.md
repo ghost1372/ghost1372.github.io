@@ -39,7 +39,7 @@ Days = Enumerable.Range(0, 365)
 > [!NOTE]
 > Leave `MaxCount` as `null` to scale the intensity levels from the highest count in `Days`.
 
-![GitHubActivityGrid](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/GitHubActivityGrid.gif)
+![GitHubActivityGrid](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/GithubActivityGrid.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

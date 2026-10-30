@@ -2,7 +2,7 @@
 title: BankCard
 ---
 
-`BankCard` inherits from [Hover3DCard](../Hover3DCard/index.md), so `MaxTilt`, `HoverScale`, `Perspective` and `SmoothingMs` are also available.
+`BankCard` inherits from [Hover3DCard](../hover3DCard/index.md), so `MaxTilt`, `HoverScale`, `Perspective` and `SmoothingMs` are also available.
 
 # Property
 

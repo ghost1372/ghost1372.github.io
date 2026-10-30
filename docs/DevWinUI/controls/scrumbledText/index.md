@@ -27,13 +27,6 @@ title: ScrambledText
 |Blur|
 |Magnify|
 
-# Related Types
-
-|Name|Description|
-|-|-|
-|ScrambledTextAutomationPeer|Automation peer. It reports the control as text and uses `Text` as the name when none is set.|
-|[WordWrapPanel](../WordWrapPanel)|The panel that wraps the letters word by word.|
-
 # Example
 
 ```xml

@@ -21,7 +21,7 @@ title: ExpandingCardFrame
 ```
 
 > [!NOTE]
-> `Progress` is a double from 0 (collapsed) to 1 (expanded). `TitleOpacity` is read-only and follows `Progress` squared, so the title fades in as the card expands. `ExpandingCardFrame` is normally created by [ExpandingCards](../ExpandingCards).
+> `Progress` is a double from 0 (collapsed) to 1 (expanded). `TitleOpacity` is read-only and follows `Progress` squared, so the title fades in as the card expands.
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -2,7 +2,7 @@
 title: MeterLegendPanel
 ---
 
-`MeterLegendPanel` inherits from `Panel`. It is the legend panel used by [SegmentedMeter](../SegmentedMeter/index.md), and it can be used on its own.
+`MeterLegendPanel` inherits from `Panel`. It is the legend panel used by [SegmentedMeter](../segmentedMeter/index.md), and it can be used on its own.
 
 # Property
 

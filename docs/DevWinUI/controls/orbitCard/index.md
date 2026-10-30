@@ -40,8 +40,5 @@ Person = new OrbitCardItem(
 > [!NOTE]
 > `PaletteIndex` selects one of six palettes and wraps around. The link button is shown only when `Item.Href` is set.
 
-> [!NOTE]
-> `OrbitCard` is usually created by [OrbitCardStack](../OrbitCardStack).
-
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

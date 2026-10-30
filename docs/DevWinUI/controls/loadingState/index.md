@@ -28,9 +28,6 @@ title: LoadingState
 ```
 
 > [!NOTE]
-> `Mode` accepts `Drive`, `Dots` or `Orbit`.
-
-> [!NOTE]
 > `Elapsed` is read-only. The timer starts when the control is loaded, and you can reset it at any time by calling `Restart()`.
 
 ![LoadingState](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/LoadingState.gif)

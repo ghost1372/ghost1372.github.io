@@ -35,7 +35,6 @@ title: ScrollSplitCard
 |Name|Description|
 |-|-|
 |ScrollSplitCardItem|Record with `Title`, `Description` and `Eyebrow`.|
-|[ScrollSplitCardPanel](../ScrollSplitCardPanel)|The control used to render each slice.|
 
 # Example
 

@@ -38,9 +38,6 @@ title: StatusMark
 ```
 
 > [!NOTE]
-> `Status` accepts `Pending`, `Running`, `Done`, `Failed` or `Cancelled`.
-
-> [!NOTE]
 > While `Status` is `Running`, leaving `Progress` as `NaN` (the default) shows an indeterminate spinning arc. Set `Progress` to show a determinate arc.
 
 > [!NOTE]
@@ -51,9 +48,6 @@ title: StatusMark
 
 > [!WARNING]
 > `ArcLength` is the share of the ring covered by the spinning arc, from 0 to 1. `SpinDuration` and `DrawDuration` are in milliseconds.
-
-> [!WARNING]
-> This control requires the `Microsoft.Graphics.Win2D` package.
 
 ![StatusMark](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/StatusMark.gif)
 
