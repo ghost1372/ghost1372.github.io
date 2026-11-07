@@ -190,6 +190,7 @@ export const devWinUISidebar = [
         { text: 'ScrambledText', link: '/DevWinUI/controls/scrambledText/index' },
         { text: 'ScrollSplitCard', link: '/DevWinUI/controls/scrollSplitCard/index' },
         { text: 'ScrollSplitCardPanel', link: '/DevWinUI/controls/scrollSplitCardPanel/index' },
+        { text: 'SearchBox', link: '/DevWinUI/controls/searchBox/index' },
         { text: 'SegmentChar', link: '/DevWinUI/controls/segmentChar/index' },
         { text: 'SegmentedMeter', link: '/DevWinUI/controls/segmentedMeter/index' },
         { text: 'SegmentedSlider', link: '/DevWinUI/controls/segmentedSlider/index' },
