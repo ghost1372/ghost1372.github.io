@@ -159,6 +159,7 @@ export const devWinUISidebar = [
         { text: 'MessageBox', link: '/DevWinUI/controls/messageBox/index' },
         { text: 'MeterLegendPanel', link: '/DevWinUI/controls/meterLegendPanel/index' },
         { text: 'ModalWindow', link: '/DevWinUI/controls/modalWindow/index' },
+        { text: 'MotionWall', link: '/DevWinUI/controls/motionWall/index' },
         { text: 'MorphHost', link: '/DevWinUI/controls/morphHost/index' },
         { text: 'MorphingAnimation', link: '/DevWinUI/controls/morphingAnimation/index' },
         { text: 'MorphingWizard', link: '/DevWinUI/controls/morphingWizard/index' },
