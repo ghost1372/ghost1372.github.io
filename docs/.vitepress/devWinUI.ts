@@ -237,6 +237,7 @@ export const devWinUISidebar = [
         { text: 'Timeline', link: '/DevWinUI/controls/timeline/index' },
         { text: 'Toolbar', link: '/DevWinUI/controls/toolbar/index' },
         { text: 'TransitioningContentControl', link: '/DevWinUI/controls/transitioningContentControl/index' },
+        { text: 'typeFlow', link: '/DevWinUI/controls/typeFlow/index' },
         { text: 'UacStyleDialogWindow', link: '/DevWinUI/controls/uacStyleDialogWindow/index' },
         { text: 'UnderlineAnimation', link: '/DevWinUI/controls/underlineAnimation/index' },
         { text: 'UniformGrid', link: '/DevWinUI/controls/uniformGrid/index' },
