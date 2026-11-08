@@ -52,6 +52,7 @@ export const devWinUISidebar = [
         { text: 'AnimatedTextBlock', link: '/DevWinUI/controls/animatedTextBlock/index' },
         { text: 'AnimatedToc', link: '/DevWinUI/controls/animatedToc/index' },
         { text: 'AnimationPath', link: '/DevWinUI/controls/animationPath/index' },
+        { text: 'Antigravity', link: '/DevWinUI/controls/antigravity/index' },
         { text: 'ArcProgress', link: '/DevWinUI/controls/arcProgress/index' },
         { text: 'AudioWave', link: '/DevWinUI/controls/audioWave/index' },
         { text: 'AutoScrollView', link: '/DevWinUI/controls/autoScrollView/index' },
