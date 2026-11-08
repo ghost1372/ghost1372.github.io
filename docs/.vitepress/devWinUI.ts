@@ -240,6 +240,7 @@ export const devWinUISidebar = [
         { text: 'UacStyleDialogWindow', link: '/DevWinUI/controls/uacStyleDialogWindow/index' },
         { text: 'UnderlineAnimation', link: '/DevWinUI/controls/underlineAnimation/index' },
         { text: 'UniformGrid', link: '/DevWinUI/controls/uniformGrid/index' },
+        { text: 'VisualStepper', link: '/DevWinUI/controls/visualStepper/index' },
         { text: 'WanderingParticles', link: '/DevWinUI/controls/wanderingParticles/index' },
         { text: 'Watermark', link: '/DevWinUI/controls/watermark/index' },
         { text: 'WaveCircle', link: '/DevWinUI/controls/waveCircle/index' },
