@@ -183,6 +183,7 @@ export const devWinUISidebar = [
         { text: 'ProfileControl', link: '/DevWinUI/controls/profileControl/index' },
         { text: 'ProgressButton', link: '/DevWinUI/controls/progressButton/index' },
         { text: 'ProgressRing', link: '/DevWinUI/controls/progressRing/index' },
+        { text: 'ProgressStepper', link: '/DevWinUI/controls/progressStepper/index' },
         { text: 'Radar', link: '/DevWinUI/controls/radar/index' },
         { text: 'RealClock', link: '/DevWinUI/controls/realClock/index' },
         { text: 'Reasoning', link: '/DevWinUI/controls/reasoning/index' },
