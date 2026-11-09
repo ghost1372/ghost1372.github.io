@@ -236,6 +236,7 @@ export const devWinUISidebar = [
         { text: 'ThemedIcon', link: '/DevWinUI/controls/themedIcon/index' },
         { text: 'TileControl', link: '/DevWinUI/controls/tileControl/index' },
         { text: 'Timeline', link: '/DevWinUI/controls/timeline/index' },
+        { text: 'Timeline2', link: '/DevWinUI/controls/timeline2/index' },
         { text: 'Toolbar', link: '/DevWinUI/controls/toolbar/index' },
         { text: 'TransitioningContentControl', link: '/DevWinUI/controls/transitioningContentControl/index' },
         { text: 'typeFlow', link: '/DevWinUI/controls/typeFlow/index' },
