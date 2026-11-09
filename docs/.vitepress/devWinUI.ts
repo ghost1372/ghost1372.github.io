@@ -156,6 +156,7 @@ export const devWinUISidebar = [
         { text: 'LoopingList', link: '/DevWinUI/controls/loopingList/index' },
         { text: 'LoopingSelector', link: '/DevWinUI/controls/loopingSelector/index' },
         { text: 'LoopPanel', link: '/DevWinUI/controls/loopPanel/index' },
+        { text: 'MagicKeyboard', link: '/DevWinUI/controls/magicKeyboard/index' },
         { text: 'Magnifier', link: '/DevWinUI/controls/magnifier/index' },
         { text: 'MessageBox', link: '/DevWinUI/controls/messageBox/index' },
         { text: 'MeterLegendPanel', link: '/DevWinUI/controls/meterLegendPanel/index' },
