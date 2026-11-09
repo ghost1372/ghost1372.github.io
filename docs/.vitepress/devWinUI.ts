@@ -189,6 +189,7 @@ export const devWinUISidebar = [
         { text: 'RealClock', link: '/DevWinUI/controls/realClock/index' },
         { text: 'Reasoning', link: '/DevWinUI/controls/reasoning/index' },
         { text: 'RichButton', link: '/DevWinUI/controls/richButton/index' },
+        { text: 'Roadmap', link: '/DevWinUI/controls/roadmap/index' },
         { text: 'SamplePanel', link: '/DevWinUI/controls/samplePanel/index' },
         { text: 'ScrambledText', link: '/DevWinUI/controls/scrambledText/index' },
         { text: 'ScrollSplitCard', link: '/DevWinUI/controls/scrollSplitCard/index' },
