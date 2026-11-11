@@ -177,6 +177,7 @@ export const devWinUISidebar = [
         { text: 'PagerControl', link: '/DevWinUI/controls/pagerControl/index' },
         { text: 'ParallaxTilt', link: '/DevWinUI/controls/parallaxTilt/index' },
         { text: 'Particle', link: '/DevWinUI/controls/particle/index' },
+        { text: 'ParticleGlobe', link: '/DevWinUI/controls/particleGlobe/index' },
         { text: 'PerspectiveHost', link: '/DevWinUI/controls/perspectiveHost/index' },
         { text: 'PerspectiveZoom', link: '/DevWinUI/controls/perspectiveZoom/index' },
         { text: 'PinBox', link: '/DevWinUI/controls/pinBox/index' },
@@ -254,6 +255,7 @@ export const devWinUISidebar = [
         { text: 'WindowedContentDialog', link: '/DevWinUI/controls/windowedContentDialog/index' },
         { text: 'Windows 11 Settings Examples', link: '/DevWinUI/controls/windows11SettingsExamples/index' },
         { text: 'WordWrapPanel', link: '/DevWinUI/controls/wordWrapPanel/index' },
+        { text: 'WorldMap', link: '/DevWinUI/controls/worldMap/index' },
       ]
     },
     {
