@@ -94,6 +94,7 @@ export const devWinUISidebar = [
         { text: 'CoverFlow', link: '/DevWinUI/controls/coverFlow/index' },
         { text: 'DateTimePicker', link: '/DevWinUI/controls/dateTimePicker/index' },
         { text: 'DepthLayerView', link: '/DevWinUI/controls/depthLayerView/index' },
+        { text: 'Diagram', link: '/DevWinUI/controls/diagram/index' },
         { text: 'DiffView', link: '/DevWinUI/controls/diffView/index' },
         { text: 'DigitalSegment', link: '/DevWinUI/controls/digitalSegment/index' },
         { text: 'Divider', link: '/DevWinUI/controls/divider/index' },
