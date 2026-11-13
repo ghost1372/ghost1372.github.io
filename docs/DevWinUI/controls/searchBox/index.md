@@ -20,7 +20,7 @@ Search.Results.Add(new SearchResultItem
 {
     Title = "Italy 2026 Itinerary",
     Subtitle = "25 minutes ago • Word",
-    Glyph = "\uE8A5",
+     IconSource = new FontIconSource { Glyph = "\uE8A5" },
     IconBrush = new SolidColorBrush(Microsoft.UI.ColorHelper.FromArgb(255, 43, 87, 154)),
     Details = new List<SearchBoxDetailRow>
     {
@@ -87,7 +87,7 @@ The flyout closes after `ResultInvoked`.
 | --- | --- | --- |
 | `Title` | `string` | Primary text. Also used as the accessible name of the row. |
 | `Subtitle` | `string` | Secondary text. |
-| `Glyph` | `string` | Icon glyph. Defaults to `"\uE8A5"`. |
+| `IconSource ` | `IconSource` | Icon. Defaults to Glyph `"\uE8A5"`. |
 | `IconBrush` | `Brush?` | Icon color. When `null`, the accent text color is used. |
 | `Preview` | `ImageSource?` | Image shown in the details panel of the selected item. |
 | `Details` | `IList<SearchBoxDetailRow>` | Name and value rows shown in the details panel of the selected item. |
@@ -108,15 +108,15 @@ new SearchBoxDetailRow("File Size", "812 KB")
 | Property | Type | Description |
 | --- | --- | --- |
 | `Text` | `string` | Command text. |
-| `Glyph` | `string?` | Optional icon glyph. |
+| `IconSource` | `IconSource` | Optional icon. |
 | `Tag` | `object?` | Identifier you can check in `MenuItemInvoked`. |
 | `IsSeparator` | `bool` | Renders a separator instead of a command. |
 | `Action` | `Action<SearchResultItem>?` | Callback run before `MenuItemInvoked` is raised. |
 
 ```csharp
-Search.DefaultMenuItems.Add(new SearchMenuItem { Text = "Open", Glyph = "\uE8E5", Tag = "open" });
+Search.DefaultMenuItems.Add(new SearchMenuItem { Text = "Open", IconSource = new FontIconSource { Glyph = "\uE8E5" }, Tag = "open" });
 Search.DefaultMenuItems.Add(new SearchMenuItem { IsSeparator = true });
-Search.DefaultMenuItems.Add(new SearchMenuItem { Text = "Remove from list", Glyph = "\uE74D", Tag = "remove" });
+Search.DefaultMenuItems.Add(new SearchMenuItem { Text = "Remove from list", IconSource = new FontIconSource { Glyph = "\uE74D" }, Tag = "remove" });
 
 private void Search_MenuItemInvoked(object sender, SearchMenuItemEventArgs e)
 {
