@@ -223,6 +223,7 @@ export const devWinUISidebar = [
         { text: 'Spoiler', link: '/DevWinUI/controls/spoiler/index' },
         { text: 'StarBorder', link: '/DevWinUI/controls/starBorder/index' },
         { text: 'Stars', link: '/DevWinUI/controls/stars/index' },
+        { text: 'StatusCenter', link: '/DevWinUI/controls/statusCenter/index' },
         { text: 'StatusMark', link: '/DevWinUI/controls/statusMark/index' },
         { text: 'StepBar', link: '/DevWinUI/controls/stepBar/index' },
         { text: 'StorageBar', link: '/DevWinUI/controls/storageBar/index' },
