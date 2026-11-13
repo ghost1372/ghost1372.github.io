@@ -178,6 +178,14 @@ const members = [
     { icon: 'github', link: 'https://github.com/varKeytrap' },
   ],
 },
+{
+  avatar: 'https://avatars0.githubusercontent.com/u/10808242?s=64&v=4',
+  name: 'lihongfang16',
+  title: 'Contributer',
+  links: [
+    { icon: 'github', link: 'https://github.com/lihongfang16' },
+  ],
+},
 ]
 const sortedMembers = [
   ...members.filter(member => member.title === 'Creator'),
