@@ -19,7 +19,7 @@ title: LoadingIndicator
 |DoubleBounce|LoadingIndicatorDoubleBounceStyle|
 |FlipPlane|LoadingIndicatorFlipPlaneStyle|
 |Pulse|LoadingIndicatorPulseStyle|
-|Ring|LoadingIndicatorRingStyle|
+|PulseRing|LoadingIndicatorPulseRingStyle|
 |ThreeDots|LoadingIndicatorThreeDotsStyle|
 |Bar|LoadingIndicatorBarStyle|
 |Cog|LoadingIndicatorCogStyle|
@@ -27,7 +27,6 @@ title: LoadingIndicator
 |DotCircle|LoadingIndicatorDotCircleStyle|
 |Grid|LoadingIndicatorGridStyle|
 |Piston|LoadingIndicatorPistonStyle|
-|Ring2|LoadingIndicatorRing2Style|
 |Swirl|LoadingIndicatorSwirlStyle|
 |Twist|LoadingIndicatorTwistStyle|
 |Atom|LoadingIndicatorEpicStyle|
@@ -50,6 +49,8 @@ title: LoadingIndicator
 |Spring|LoadingIndicatorEpicStyle|
 |LoopingRhombuses|LoadingIndicatorEpicStyle|
 |BreedingRhombus|LoadingIndicatorEpicStyle|
+|ProgressRing|LoadingIndicatorEpicStyle|
+|IndeterminateBar|LoadingIndicatorEpicStyle|
 
 # Example
 
