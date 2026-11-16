@@ -11,7 +11,6 @@ A status center that tracks the progress of operations, from long-running tasks 
 |Name|
 |-|
 |FlyoutPlacement|
-|ViewModel|
 
 ### Methods
 
@@ -27,43 +26,9 @@ The flyout panel hosted inside `StatusCenterButton`.
 
 |Name|
 |-|
-|ViewModel|
-
-## StatusCenterViewModel
-
-### Property
-
-|Name|
-|-|
-|Instance|
 |StatusCenterItems|
-|InProgressItemCount|
-|HasAnyItemInProgress|
 |HasAnyItem|
-|AverageOperationProgressValue|
-|ShowProgressRing|
-|InfoBadgeState|
-|InfoBadgeValue|
-
-### Methods
-
-|Name|
-|-|
-|RemoveItem|
-|RemoveAllCompletedItems|
-|AddItem|
-|NotifyChanges|
-|UpdateAverageProgressValue|
-|OnStatusCenterFlyoutOpened|
-
-### Events
-
-|Name|
-|-|
-|NewItemAdded|
-
-> [!NOTE]
-> `StatusCenterViewModel.Instance` is a singleton shared by all status-center UI and helper methods, so operations added in one part of the app appear in every status-center flyout.
+|EmptyStateVisibility|
 
 ## StatusCenterHelper
 
@@ -79,10 +44,15 @@ The flyout panel hosted inside `StatusCenterButton`.
 |-|
 |ToSizeString|
 |AddCard|
+|RemoveItem|
+|RemoveAllCompletedItems|
 |UpdateCardStrings|
 
 > [!NOTE]
 > `SizeUnitFormat` affects all status center cards. `BinaryUnits` uses `KiB`/`MiB`/`GiB` (1024-based), `DecimalUnits` uses `KB`/`MB`/`GB` (1000-based).
+
+> [!NOTE]
+> Status center items are shared application-wide: operations added through `StatusCenterHelper` appear in every `StatusCenterButton` flyout.
 
 ### StatusCenterHelper.AddCard
 
@@ -151,6 +121,7 @@ public static StatusCenterItem AddCard(
 |CancellationToken|Cancelled by `CancelCommand`; observe it and return `ReturnResult.Cancelled`.|
 |PauseCommand|Toggles `IsPaused` when `IsPausable` and `IsInProgress` are `true`.|
 |CancelCommand|Cancels `CancellationToken`; the card shows an indeterminate bar and a `Canceling - ` header prefix until the operation returns.|
+|RemoveCommand|Removes the card from the status center.|
 |Progress|The `StatusCenterItemProgressModel` tracking the operation.|
 |ProgressEventSource|`Progress<StatusCenterItemProgressModel>` to report to.|
 |SpeedGraphValues|Speed history points for the graph; populated automatically.|
@@ -272,7 +243,7 @@ private async void Copy_Click(object sender, RoutedEventArgs e)
 
     var result = await SimulateFileOperationAsync(banner.ProgressEventSource, source, totalSize, banner.CancellationToken, banner);
 
-    StatusCenterViewModel.Instance.RemoveItem(banner);
+    StatusCenterHelper.RemoveItem(banner);
     AddCard_Copy(result, source, destination, banner.TotalItemsCount, totalSize);
 }
 
