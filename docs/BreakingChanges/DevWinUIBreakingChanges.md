@@ -4,6 +4,11 @@ title: Breaking Changes
 
 A breaking change is a change that may require you to make changes to your application in order to avoid disruption to your integration.
 
+# Version 11.0.0
+- ReWrite `Growl`
+- ReWrite `SidebarView`
+- Move `ProgressRing` and `IndeterminateProgressBar` into `LoadingIndicator`
+
 # Version 10.0.0
 - DevWinUI now requires `Microsoft.WindowsAppSDK.WinUI` `v2.2.0` (Microsoft.WindowsAppSDK v2.2.0)
 - WindowedContentDialog rewritten
