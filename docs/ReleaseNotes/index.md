@@ -2,6 +2,37 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 11.0.0
+### New Controls & Features
+- Add `MotionWall`
+- Add `SearchBox`
+- Add `Antigravity`
+- Add `ProgressStepper`
+- Add `VisualStepper`
+- Add `TypeFlow`
+- Add `MagicKeyboard`
+- Add `Roadmap`
+- Add `Timeline2`
+- Add `CrystalBall` Shader
+- Add `WorldMap`
+- Add `ParticleGlobe`
+- Add `Diagram`
+
+### UI & Design Improvements
+- Refactor all samples
+- Introduce a brand-new Home Page design
+- Redesign the Control Example page
+- Rewrite `Growl` with a new interface and enhanced capabilities
+- Rewrite `SidebarView`
+
+### Control Updates & Refactoring
+- Move `ProgressRing` and `IndeterminateProgressBar` into `LoadingIndicator`
+
+### Bug Fixes & Improvements
+- Numerous bug fixes, performance improvements, and enhancements across existing controls and components:
+
+`Accordion`, `AnimatedImage`, `ArcProgress`, `ColorPalette`, `ColorfulShimmingEffect`, `CompareSlider`, `DropdownColorPicker`, `ElementGroup`, `GoToCard`, `HeaderCarousel`, `SegmentedSlider`, `StepBar`, `DigitalSegment`, `AudioWave`, `BannerView`, `BlurEffectManager`, `ConfettiEffect`, `EdgeLighting`, `ForegroundFocusEffects`, `Particles`, `SpeedGraph`, `SpeedGraph2`, `StoreCarousel`, `Glitch`, `TextMorphEffect`, `Watermark`, `BlendedImage`, `ContentSlider`, `Stars`, `WaveCircle`, `LiveGraph`, `EyeDropper`, and `ThemeService`.
+
 # Version 10.9.0
 🚀 **The Biggest DevWinUI Release Yet!**
 
