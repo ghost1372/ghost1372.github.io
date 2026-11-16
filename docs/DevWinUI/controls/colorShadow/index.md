@@ -41,7 +41,7 @@ ColorShadow control provides a shadow to an image. This shadow is derived from t
                 ShadowOpacity="0.5" />
 ```
 
-![ColorShadow](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ColorShadow.png)
+![ColorShadow](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/ColorShadow.png)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

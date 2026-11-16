@@ -29,7 +29,7 @@ title: SpeedGraph2
 SpeedGraphSample2.Points.Add(new Vector2(percent, speed));
 ```
 
-![AnimationPath](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SpeedGraph2.gif)
+![AnimationPath](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/SpeedGraph2.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

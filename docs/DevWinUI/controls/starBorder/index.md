@@ -44,7 +44,7 @@ title: StarBorder
 > [!WARNING]
 > `Duration` is in seconds (minimum 0.2), `TrailLength` and `Glow` should be from 0 to 1, and `Stars` is limited to 1 to 6.
 
-![StarBorder](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/StarBorder.gif)
+![StarBorder](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/StarBorder.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

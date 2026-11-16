@@ -51,7 +51,7 @@ A TextBlock control which animates the text with customizable effects.
 > [!WARNING]
 > Use `AnimatedTextBlock` inside a `Grid`. If you place it in a `StackPanel` or other panels, make sure to set its width and height; otherwise, the control will not be visible.
 
-![AnimatedTextBlock](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AnimatedTextBlock.gif)
+![AnimatedTextBlock](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/AnimatedTextBlock.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

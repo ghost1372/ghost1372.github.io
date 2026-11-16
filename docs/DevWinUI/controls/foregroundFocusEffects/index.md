@@ -75,7 +75,7 @@ private void ContentDialog_PrimaryButtonClick(ContentDialog sender, ContentDialo
 }
 ```
 
-![ForegroundFocusEffect](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ForegroundFocusEffect.gif)
+![ForegroundFocusEffect](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/ForegroundFocusEffect.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

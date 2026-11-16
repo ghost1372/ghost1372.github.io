@@ -30,7 +30,7 @@ title: EdgeLighting
 </dev:EdgeLighting>
 ```
 
-![EdgeLighting](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/EdgeLighting.gif)
+![EdgeLighting](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/EdgeLighting.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

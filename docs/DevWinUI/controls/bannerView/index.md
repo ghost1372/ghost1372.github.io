@@ -61,7 +61,7 @@ list.Add(new Uri("ms-appx:///Assets/BannerView/9.jpeg"));
 CycleList = new CycleCollection<Uri>(list);
 ```
 
-![BannerView](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BannerView.gif)
+![BannerView](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/BannerView.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -24,7 +24,7 @@ A decorative field of drifting, twinkling particles rendered with Win2D.
 > [!WARNING]
 > Only `SolidColorBrush` is supported for `ParticleBrush`, any other brush falls back to white. `Speed` is a double clamped from 0 to 4.
 
-![PlayStationParticles](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/PlayStationParticles.gif)
+![PlayStationParticles](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/PlayStationParticles.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -180,10 +180,10 @@ All resources have a high-contrast variant.
 > - In `Neon` mode, place the control on a dark background for the best result. Set `RequestedTheme="Dark"` on a parent so text uses light theme colours.
 > - The Win2D layer reads colours from brushes. For gradient brushes it uses the first gradient stop, and for acrylic brushes it uses the fallback colour.
 
-![Roadmap](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Roadmap.gif)
-![Roadmap](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Roadmap2.gif)
-![Roadmap](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Roadmap3.gif)
-![Roadmap](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Roadmap4.gif)
+![Roadmap](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/Roadmap.gif)
+![Roadmap](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/Roadmap2.gif)
+![Roadmap](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/Roadmap3.gif)
+![Roadmap](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/Roadmap4.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

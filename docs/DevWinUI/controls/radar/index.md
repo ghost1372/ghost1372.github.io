@@ -191,11 +191,11 @@ public class AircraftMapper : IRadarBlipMapper
 > [!WARNING]
 > `Angle`, `StartAngle` and `EndAngle` are in degrees, measured clockwise from the top. `Distance` is relative to the radar radius, where 1 is the outer ring.
 
-![Radar](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Radar1.gif)
+![Radar](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/Radar1.gif)
 
-![Radar](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Radar2.gif)
+![Radar](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/Radar2.gif)
 
-![Radar](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Radar3.gif)
+![Radar](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/Radar3.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -56,7 +56,7 @@ private void StartAnimationButton_Click(object sender, RoutedEventArgs e)
 }
 ```
 
-![LinearGradientBlurPanel](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/LinearGradientBlurPanel.gif)
+![LinearGradientBlurPanel](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/LinearGradientBlurPanel.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

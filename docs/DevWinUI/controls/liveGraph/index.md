@@ -137,7 +137,7 @@ if you need a line follow points, you need to define your line:
  </dev:LiveGraph>
 ```
 
-![LiveGraph](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/LiveGraph.gif)
+![LiveGraph](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/LiveGraph.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -462,8 +462,8 @@ Adding or removing entries updates the wall automatically.
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
 
-![MotionWall](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/MotionWall.gif)
-![MotionWall](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/MotionWall2.gif)
-![MotionWall](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/MotionWall3.gif)
-![MotionWall](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/MotionWall4.gif)
+![MotionWall](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/MotionWall.gif)
+![MotionWall](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/MotionWall2.gif)
+![MotionWall](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/MotionWall3.gif)
+![MotionWall](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/MotionWall4.gif)
 

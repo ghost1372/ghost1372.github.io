@@ -33,7 +33,7 @@ title: MorphingAnimation
 >
 > To achieve smoother and more predictable morphing animations, it is recommended to provide source and target geometries with identical point counts whenever possible.
 
-![MorphingAnimation](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/MorphingAnimation.gif)
+![MorphingAnimation](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/MorphingAnimation.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -61,7 +61,7 @@ public partial class ContentSliderItem
 }
 ```
 
-![ContentSlider](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ContentSlider.gif)
+![ContentSlider](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/ContentSlider.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

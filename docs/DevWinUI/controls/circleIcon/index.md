@@ -20,7 +20,7 @@ CircleIcon is a circular control with customizable border, gradient background, 
 <dev:CircleIcon Content="D"/>
 ```
 
-![CircleIcon](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/CircleIcon.gif)
+![CircleIcon](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/CircleIcon.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

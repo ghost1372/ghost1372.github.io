@@ -16,7 +16,7 @@ A composition-based loading indicator with orbiting animations to show progress.
 <dev:OrbitLoadingIndicator IsBusy="true"/>
 ```
 
-![OrbitLoadingIndicator](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/OrbitLoadingIndicator.gif)
+![OrbitLoadingIndicator](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/OrbitLoadingIndicator.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

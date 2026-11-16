@@ -61,7 +61,7 @@ title: GlowingBorder
 > [!NOTE]
 > `Duration` is in seconds. `Range` and `Spot` only affect `Cursor`. `Glow` and `InnerGlow` are from 0 to 1. Padding creates an outer frame around the content.
 
-![GlowingBorder](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/GlowingBorder.gif)
+![GlowingBorder](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/GlowingBorder.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

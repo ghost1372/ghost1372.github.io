@@ -251,7 +251,7 @@ private static void SetTimeout(Action action, int delayMilliseconds)
 }
 ```
 
-![ConfettiCannon](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ConfettiCannon.gif)
+![ConfettiCannon](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/ConfettiCannon.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

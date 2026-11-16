@@ -128,7 +128,7 @@ private async void StoreCarouselSample_ItemClick(object sender, StoreCarouselEve
 }
 ```
 
-![StoreCarousel](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/StoreCarousel.gif)
+![StoreCarousel](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/StoreCarousel.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

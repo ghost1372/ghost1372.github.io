@@ -244,7 +244,7 @@ private void ProgressSlider_PointerReleased(object sender, PointerRoutedEventArg
 > [!NOTE]
 > By default, the `ScrollViewer` for lyrics is `enabled`. You can scroll using the `mouse wheel` and `click` on any item to jump to it.  If you want to `disable` it, set `IsScrollViewerEnabled` to `false`.
 
-![BetterLyric](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BetterLyric.gif)
+![BetterLyric](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/BetterLyric.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

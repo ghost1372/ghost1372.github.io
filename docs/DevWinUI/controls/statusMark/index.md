@@ -49,7 +49,7 @@ title: StatusMark
 > [!WARNING]
 > `ArcLength` is the share of the ring covered by the spinning arc, from 0 to 1. `SpinDuration` and `DrawDuration` are in milliseconds.
 
-![StatusMark](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/StatusMark.gif)
+![StatusMark](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/StatusMark.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

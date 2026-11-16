@@ -265,9 +265,9 @@ private void BackdropImage_PointerExited(object sender, Microsoft.UI.Xaml.Input.
 }
 ```
 
-![BlurEffectManager](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlurEffectManager.gif)
+![BlurEffectManager](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/BlurEffectManager.gif)
 
-![BlurEffectManager2](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlurEffectManager2.gif)
+![BlurEffectManager2](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/BlurEffectManager2.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

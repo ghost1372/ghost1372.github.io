@@ -19,7 +19,7 @@ Animated sky background with stars
 <dev:Stars Height="300" />
 ```
 
-![Stars](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Stars.gif)
+![Stars](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/Stars.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -45,7 +45,7 @@ title: BorderBeam
 > [!WARNING]
 > This control requires the `Microsoft.Graphics.Win2D` package.
 
-![BorderBeam](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BorderBeam.gif)
+![BorderBeam](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/BorderBeam.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

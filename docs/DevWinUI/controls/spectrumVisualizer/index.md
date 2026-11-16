@@ -386,7 +386,7 @@ SpectrumVisualizerSample.CustomColorProvider = (intensity, i) =>
 ```
 
 
-![SpectrumVisualizer](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/SpectrumVisualizer.gif)
+![SpectrumVisualizer](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/SpectrumVisualizer.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -265,7 +265,7 @@ Globe.StartTour();
 
 Each marker has latitude, longitude, label, optional color, and a `Tag` property for arbitrary application data.
 
-![ParticleGlobe](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ParticleGlobe.gif)
+![ParticleGlobe](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/ParticleGlobe.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

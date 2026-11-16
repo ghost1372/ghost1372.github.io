@@ -42,7 +42,7 @@ Banner.ItemsSource = items;
 ```
 
 
-![FluidBanner](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/FluidBanner.gif)
+![FluidBanner](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/FluidBanner.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

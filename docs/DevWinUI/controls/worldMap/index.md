@@ -140,7 +140,7 @@ Map.SetCountryValues(new Dictionary<string, double>
 Map.ToolTipFormatter = country => $"{country.Name} ({country.Code})";
 ```
 
-![WorldMap](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/WorldMap.gif)
+![WorldMap](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/WorldMap.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

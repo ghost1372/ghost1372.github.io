@@ -48,7 +48,7 @@ private float[] OnFakeWaveData()
 }
 ```
 
-![AudioWave](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/AudioWave.gif)
+![AudioWave](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/AudioWave.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

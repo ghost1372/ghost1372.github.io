@@ -45,7 +45,7 @@ private void OnSizeChanged(object sender, SizeChangedEventArgs e)
 }
 ```
 
-![ColorSlideControl](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ColorSlideControl.gif)
+![ColorSlideControl](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/ColorSlideControl.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

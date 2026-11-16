@@ -48,7 +48,7 @@ public class CarouselItemSource : ICarouselViewItemSource
 }
 ```
 
-![CarouselView](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/CarouselView.gif)
+![CarouselView](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/CarouselView.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

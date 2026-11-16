@@ -56,7 +56,7 @@ title: ShyHeader
 > [!WARNING]
 > If you place a `GridView` inside a `ScrollViewer`, the `ShyHeader` might not function correctly. In such cases, make sure to explicitly set a `Height` for the `ShyHeader`.
 
-![ShyHeader](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/ShyHeader.gif)
+![ShyHeader](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/ShyHeader.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

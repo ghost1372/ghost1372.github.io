@@ -156,7 +156,7 @@ Override the resource in your app resources:
 The canvas is created on `Loaded` and disposed on `Unloaded`. Navigating away and back rebuilds the field, so the intro plays again. Set `Intro="False"` to start with the particles already in place.
 
 
-![Antigravity](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Antigravity.gif)
+![Antigravity](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/Antigravity.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

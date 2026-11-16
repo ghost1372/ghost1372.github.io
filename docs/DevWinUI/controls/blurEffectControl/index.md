@@ -186,7 +186,7 @@ private void CmbNoiseBlendMode_SelectionChanged(object sender, SelectionChangedE
 > [!WARNING]
 > When `BlurSourceType` is set to `Custom`, you must provide a `CustomSourceBrush` of type `CompositionBrush`.
 
-![BlurEffectControl](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/BlurEffectControl.gif)
+![BlurEffectControl](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/BlurEffectControl.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.

@@ -56,7 +56,7 @@ title: FlightStatusCard
 > [!WARNING]
 > `Progress` is a double and should be from 0 to 100. `ProgressBrush` supports `SolidColorBrush` and `LinearGradientBrush`. The other brushes support `SolidColorBrush` only.
 
-![FlightStatusCard](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/FlightStatusCard.gif)
+![FlightStatusCard](https://raw.githubusercontent.com/ghost1372/DevWinUI-Resources/refs/heads/main/DevWinUI-Docs/Win2d/FlightStatusCard.gif)
 
 # Demo
 you can run [demo](https://github.com/Ghost1372/DevWinUI) and see this feature.
