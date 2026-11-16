@@ -11,12 +11,24 @@ A status center that tracks the progress of operations, from long-running tasks 
 |Name|
 |-|
 |FlyoutPlacement|
+|SizeUnitFormat|
+|ShowProgressRing|
+|AverageOperationProgressValue|
+|InfoBadgeValue|
+|InfoBadgeState|
+
+> [!NOTE]
+> `ShowProgressRing`, `AverageOperationProgressValue`, `InfoBadgeValue` and `InfoBadgeState` are read-only state mirrors for the control template.
 
 ### Methods
 
 |Name|
 |-|
 |Open|
+|AddCard|
+|RemoveItem|
+|RemoveAllCompletedItems|
+|UpdateCardStrings|
 
 ## StatusCenter
 
@@ -29,35 +41,26 @@ The flyout panel hosted inside `StatusCenterButton`.
 |StatusCenterItems|
 |HasAnyItem|
 |EmptyStateVisibility|
-
-## StatusCenterHelper
-
-### Property
-
-|Name|
-|-|
 |SizeUnitFormat|
 
 ### Methods
 
 |Name|
 |-|
-|ToSizeString|
 |AddCard|
 |RemoveItem|
 |RemoveAllCompletedItems|
 |UpdateCardStrings|
 
 > [!NOTE]
-> `SizeUnitFormat` affects all status center cards. `BinaryUnits` uses `KiB`/`MiB`/`GiB` (1024-based), `DecimalUnits` uses `KB`/`MB`/`GB` (1000-based).
+> `SizeUnitFormat` — `BinaryUnits` uses `KiB`/`MiB`/`GiB` (1024-based), `DecimalUnits` uses `KB`/`MB`/`GB` (1000-based).
 
-> [!NOTE]
-> Status center items are shared application-wide: operations added through `StatusCenterHelper` appear in every `StatusCenterButton` flyout.
+### AddCard
 
-### StatusCenterHelper.AddCard
+Available on both `StatusCenterButton` and `StatusCenter`.
 
 ```csharp
-public static StatusCenterItem AddCard(
+public StatusCenterItem AddCard(
     ReturnResult status,
     string header,
     string subHeader,
@@ -94,8 +97,8 @@ public static StatusCenterItem AddCard(
 |ProgressPercentage|Current progress percentage.|
 |ProgressPercentageText|Progress percentage as display text (e.g. `42%`).|
 |SpeedText|Formatted speed text (e.g. `12.3 MiB/s` or `450 items/s`); updated on progress reports.|
+|SizeUnitFormat|Size unit format for this card's size strings (`BinaryUnits`/`DecimalUnits`); mirrors the owning control's `SizeUnitFormat`.|
 |CurrentProcessingItemName|Name of the item currently being processed.|
-|CurrentProcessedSizeHumanized|Processed size display text; currently unused — superseded by `Message`.|
 |IsExpanded|Card expansion state.|
 |AnimatedIconState|State of the animated expand icon (`NormalOn`/`NormalOff`).|
 |IsSpeedAndProgressAvailable|Determines whether the card can be expanded.|
@@ -122,7 +125,7 @@ public static StatusCenterItem AddCard(
 |PauseCommand|Toggles `IsPaused` when `IsPausable` and `IsInProgress` are `true`.|
 |CancelCommand|Cancels `CancellationToken`; the card shows an indeterminate bar and a `Canceling - ` header prefix until the operation returns.|
 |RemoveCommand|Removes the card from the status center.|
-|Progress|The `StatusCenterItemProgressModel` tracking the operation.|
+|Progress|Convenience `StatusCenterItemProgressModel` that reports through `ProgressEventSource`.|
 |ProgressEventSource|`Progress<StatusCenterItemProgressModel>` to report to.|
 |SpeedGraphValues|Speed history points for the graph; populated automatically.|
 
@@ -132,9 +135,10 @@ public static StatusCenterItem AddCard(
 |-|
 |ExecutePauseCommandAsync|
 |ExecuteCancelCommand|
+|UpdateCardStrings|
 
 > [!NOTE]
-> Set `IsPausable = true` on an in-progress item and provide `OnPauseAsync`/`OnResumeAsync` to support pausing. Your operation must observe `IsPaused` and wait for it to take effect.
+> Set `IsPausable = true` and wire `OnPauseAsync`/`OnResumeAsync` to suspend the underlying operation — `IsPaused` is only a flag; your operation must observe it to actually pause.
 
 ## StatusCenterItemProgressModel
 
@@ -188,7 +192,7 @@ public StatusCenterItemProgressModel(
 
 |Name|Remark|
 |-|-|
-|InProgress|Operation is still running. `StatusCenterHelper.AddCard` creates a cancellation token for this state.|
+|InProgress|Operation is still running. `AddCard` creates a cancellation token for this state.|
 |Success|Operation completed successfully.|
 |Failed|Operation failed.|
 |Cancelled|Operation was cancelled.|
@@ -239,15 +243,15 @@ private async void Copy_Click(object sender, RoutedEventArgs e)
     string[] source = FilePaths(@"C:\Users\Public\Documents", fileCount);
     string[] destination = FilePaths(@"C:\Users\Public\Downloads", fileCount);
     var totalSize = fileCount * Random.Shared.NextInt64(24, 97) * 1024 * 1024;
-    var banner = AddCard_Copy(ReturnResult.InProgress, source, destination, 0, totalSize);
+    var banner = AddCard_Copy(StatusCenterButtonSample, ReturnResult.InProgress, source, destination, 0, totalSize);
 
     var result = await SimulateFileOperationAsync(banner.ProgressEventSource, source, totalSize, banner.CancellationToken, banner);
 
-    StatusCenterHelper.RemoveItem(banner);
-    AddCard_Copy(result, source, destination, banner.TotalItemsCount, totalSize);
+    StatusCenterButtonSample.RemoveItem(banner);
+    AddCard_Copy(StatusCenterButtonSample, result, source, destination, banner.TotalItemsCount, totalSize);
 }
 
-private static StatusCenterItem AddCard_Copy(
+private StatusCenterItem AddCard_Copy(StatusCenterButton statusCenterButton,
     ReturnResult returnStatus,
     string[] source,
     string[] destination,
@@ -279,9 +283,9 @@ private static StatusCenterItem AddCard_Copy(
     string Message(StatusCenterItemProgressModel progress)
         => progress.Percentage is null
             ? progress.EnumerationCompleted ? "Processing items..." : "Discovering items..."
-            : $"{StatusCenterHelper.ToSizeString(progress.ProcessedSize)} of {StatusCenterHelper.ToSizeString(progress.TotalSize)} processed";
+            : $"{progress.ProcessedSize.ToSizeString(statusCenterButton.SizeUnitFormat)} of {progress.TotalSize.ToSizeString(statusCenterButton.SizeUnitFormat)} processed";
 
-    var card = StatusCenterHelper.AddCard(
+    var card = statusCenterButton.AddCard(
         returnStatus,
         Header(itemsCount),
         SubHeader(itemsCount),
