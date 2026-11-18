@@ -14,6 +14,8 @@ title: HoldToConfirm
 |Confirmed|
 |IconGlyph|
 |IsAnimationEnabled|
+|CanBeCanceled|
+
 
 # Methods
 
@@ -26,6 +28,7 @@ title: HoldToConfirm
 |Name|
 |-|
 |Confirm|
+|Canceled|
 
 # Enums
 
