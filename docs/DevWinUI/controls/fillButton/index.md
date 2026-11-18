@@ -12,6 +12,12 @@ title: FillButton
 |Size|
 |Icon|
 |NavigateUri|
+|Label|
+|CommandBarLabelPosition|
+|IsCompact|
+|IsInOverflow|
+|DynamicOverflowOrder|
+|IsIconOnlyFillEnabled|
 
 # Enums
 
