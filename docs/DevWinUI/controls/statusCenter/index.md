@@ -12,6 +12,7 @@ A status center that tracks the progress of operations, from long-running tasks 
 |-|
 |FlyoutPlacement|
 |SizeUnitFormat|
+|Icon|
 |ShowProgressRing|
 |AverageOperationProgressValue|
 |InfoBadgeValue|
