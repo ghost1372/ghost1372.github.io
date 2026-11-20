@@ -12,6 +12,16 @@ title: BorderBeam
 |BorderWidth|
 |ColorFrom|
 |ColorTo|
+|Mode|
+|MirrorOrigin|
+|MirrorEdge|
+|MirrorStart|
+|MirrorLag|
+|ChaseOrigin|
+|ChaseEdge|
+|ChaseDirection|
+|BeamCount|
+|Speed|
 
 # Example
 
