@@ -2,6 +2,15 @@
 title: Welcome to DevWinUI Release Notes
 ---
 
+# Version 11.1.0
+- Add Support .Net 11
+- Add StatusCenter
+- Enable Nullable
+- Improve GotoTop
+- Improve HoldToConfirm
+- Improve FillButton
+- Improve BorderBeam
+
 # Version 11.0.0
 ### New Controls & Features
 - Add `MotionWall`
