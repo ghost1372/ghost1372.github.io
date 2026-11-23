@@ -13,6 +13,7 @@ A status center that tracks the progress of operations, from long-running tasks 
 |FlyoutPlacement|
 |SizeUnitFormat|
 |Icon|
+|NoItemsText|
 |ShowProgressRing|
 |AverageOperationProgressValue|
 |InfoBadgeValue|
@@ -42,6 +43,7 @@ The flyout panel hosted inside `StatusCenterButton`.
 |StatusCenterItems|
 |HasAnyItem|
 |EmptyStateVisibility|
+|NoItemsText|
 |SizeUnitFormat|
 
 ### Methods
@@ -77,7 +79,7 @@ public StatusCenterItem AddCard(
 |-|-|-|
 |status|`ReturnResult`|Operation state. `InProgress` creates a cancellation token.|
 |header|string|Main card text.|
-|subHeader|string|Secondary card text; not displayed.|
+|subHeader|string|Detailed description shown in the header tooltip; `header` is used when empty.|
 |message|string|Progress text for determinate in-progress cards.|
 |iconKind|`StatusCenterItemIconKind`|Icon for `InProgress` and `Cancelled` cards.|
 |canProvideProgress|bool|`false` shows indeterminate progress and hides details.|
@@ -93,7 +95,7 @@ public StatusCenterItem AddCard(
 |-|-|
 |Header|Main card text.|
 |HeaderTooltip|Tooltip shown for the header text.|
-|SubHeader|Secondary card text; not displayed.|
+|SubHeader|Detailed description shown in the header tooltip; `Header` is used when empty.|
 |Message|Progress text; hidden when `IsIndeterminateProgress` is `true`.|
 |ProgressPercentage|Current progress percentage.|
 |ProgressPercentageText|Progress percentage as display text (e.g. `42%`).|
@@ -423,16 +425,14 @@ private static string GetParentDir(string? path)
 ### Programmatic open
 
 > [!NOTE]
-> Call `Open()` to toggle the status center flyout programmatically — it opens the flyout, or closes it if it is already open. To bind a keyboard shortcut, add a `KeyboardAccelerator` on a parent element (for example the window root) and call `Open()` from its `Invoked` handler:
+> Call `Open()` to toggle the status center flyout programmatically — it opens the flyout, or closes it if it is already open.
 
 ```xml
-<Window.KeyboardAccelerators>
-    <KeyboardAccelerator Key="J" Modifiers="Control" Invoked="OpenStatusCenter" />
-</Window.KeyboardAccelerators>
+<KeyboardAccelerator Key="J" Modifiers="Control" Invoked="ToggleStatusCenter" />
 ```
 
 ```csharp
-private void OpenStatusCenter(KeyboardAccelerator sender, KeyboardAcceleratorInvokedEventArgs args)
+private void ToggleStatusCenter(KeyboardAccelerator sender, KeyboardAcceleratorInvokedEventArgs args)
 {
     StatusCenterButtonSample.Open();
     args.Handled = true;
