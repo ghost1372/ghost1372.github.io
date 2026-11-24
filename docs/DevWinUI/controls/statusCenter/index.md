@@ -16,11 +16,12 @@ A status center that tracks the progress of operations, from long-running tasks 
 |NoItemsText|
 |ShowProgressRing|
 |AverageOperationProgressValue|
+|IsOperationProgressIndeterminate|
 |InfoBadgeValue|
 |InfoBadgeState|
 
 > [!NOTE]
-> `ShowProgressRing`, `AverageOperationProgressValue`, `InfoBadgeValue` and `InfoBadgeState` are read-only state mirrors for the control template.
+> `ShowProgressRing`, `AverageOperationProgressValue`, `IsOperationProgressIndeterminate`, `InfoBadgeValue` and `InfoBadgeState` are read-only state mirrors for the control template.
 
 ### Methods
 
@@ -119,7 +120,7 @@ public StatusCenterItem AddCard(
 |ItemIconKind|Built-in icon kind.|
 |IconSource|Custom icon; accepts `PathIconSource`, `FontIconSource`, `BitmapIconSource`, `SymbolIconSource`, or `AnimatedIconSource`. For `FontIconSource`, set `FontSize` to `16`.|
 |IconBackgroundCircleBorderOpacity|Opacity of the icon background circle.|
-|FileSystemOperationReturnResult|The card's `ReturnResult` state.|
+|OperationReturnResult|The card's `ReturnResult` state.|
 |TotalItemsCount|Number of items in the operation.|
 |TotalSize|Total size in bytes.|
 |IsInProgress|Whether the operation is still running.|
