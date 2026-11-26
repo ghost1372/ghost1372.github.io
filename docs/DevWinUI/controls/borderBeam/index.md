@@ -22,6 +22,10 @@ title: BorderBeam
 |ChaseDirection|
 |BeamCount|
 |Speed|
+|IsActive|
+|FadeOut|
+|CycleCount|
+|FadeOutDuration|
 
 # Example
 
